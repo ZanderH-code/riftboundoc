@@ -51,11 +51,11 @@ def make_rule_row(rule_id: str, content: str, row_type: str, level: int = 0) -> 
     )
 
 
-def format_page(page_num: int, raw_text: str) -> str:
+def parse_page_rows(raw_text: str):
     lines = [normalize_line(x) for x in raw_text.splitlines()]
     lines = [x for x in lines if x]
 
-    out = [f"### Page {page_num}", '<div class="rule-sheet">']
+    rows = []
     last_numbered = False
 
     for line in lines:
@@ -68,13 +68,17 @@ def format_page(page_num: int, raw_text: str) -> str:
             lvl = level_from_num(num_raw)
 
             if not text:
-                out.append(make_rule_row(num, "", "rule-plain", lvl))
+                rows.append({"id": num, "text": "", "type": "rule-plain", "level": lvl})
             elif lvl == 0 and num_raw.endswith("00") and is_short_heading(text):
-                out.append(make_rule_row(num, text, "rule-chapter", lvl))
+                rows.append(
+                    {"id": num, "text": text, "type": "rule-chapter", "level": lvl}
+                )
             elif is_short_heading(text):
-                out.append(make_rule_row(num, text, "rule-heading", lvl))
+                rows.append(
+                    {"id": num, "text": text, "type": "rule-heading", "level": lvl}
+                )
             else:
-                out.append(make_rule_row(num, text, "rule-plain", lvl))
+                rows.append({"id": num, "text": text, "type": "rule-plain", "level": lvl})
 
             last_numbered = True
             continue
@@ -83,27 +87,83 @@ def format_page(page_num: int, raw_text: str) -> str:
         bm = BULLET_RE.match(line)
         if bm:
             text = "* " + bm.group("text")
-            out.append(make_rule_row("", text, "rule-bullet", 1))
+            rows.append({"id": "", "text": text, "type": "rule-bullet", "level": 1})
             last_numbered = False
             continue
 
         # Continuation lines (often wrapped from previous rule).
         if last_numbered:
-            out.append(make_rule_row("", line, "rule-cont", 1))
+            rows.append({"id": "", "text": line, "type": "rule-cont", "level": 1})
         else:
-            out.append(make_rule_row("", line, "rule-plain", 0))
+            rows.append({"id": "", "text": line, "type": "rule-plain", "level": 0})
 
         last_numbered = False
 
+    return rows
+
+
+def can_cross_page_merge(prev_row, next_row) -> bool:
+    if not prev_row or not next_row:
+        return False
+    if next_row["id"] != "":
+        return False
+    if next_row["type"] != "rule-plain":
+        return False
+    if prev_row["type"] not in ("rule-plain", "rule-cont"):
+        return False
+
+    prev = prev_row["text"].strip()
+    nxt = next_row["text"].strip()
+    if not prev or not nxt:
+        return False
+
+    # Avoid merging page headers.
+    if nxt.startswith("Riftbound Core Rules") or nxt.startswith("Last Updated:"):
+        return False
+
+    # Merge when previous line likely got cut at page boundary.
+    if prev[-1] in ".!?;:":
+        return False
+
+    starts_like_continuation = nxt[0].islower() or nxt[0] in "),.;:"
+    return starts_like_continuation
+
+
+def merge_cross_page_continuations(page_rows):
+    for i in range(1, len(page_rows)):
+        prev_rows = page_rows[i - 1]
+        cur_rows = page_rows[i]
+        if not prev_rows or not cur_rows:
+            continue
+
+        while prev_rows and cur_rows and can_cross_page_merge(prev_rows[-1], cur_rows[0]):
+            prev_rows[-1]["text"] = (
+                f"{prev_rows[-1]['text']} {cur_rows[0]['text']}".strip()
+            )
+            del cur_rows[0]
+
+
+def render_page(page_num: int, rows) -> str:
+    out = [f"### Page {page_num}", '<div class="rule-sheet">']
+    for row in rows:
+        out.append(
+            make_rule_row(row["id"], row["text"], row["type"], row.get("level", 0))
+        )
     out.append("</div>")
     return "\n\n".join(out)
 
 
 def convert_pdf(pdf_path: Path) -> str:
     reader = PdfReader(str(pdf_path))
-    pages = []
+    page_rows = []
     for i, page in enumerate(reader.pages, start=1):
-        pages.append(format_page(i, page.extract_text() or ""))
+        page_rows.append(parse_page_rows(page.extract_text() or ""))
+
+    merge_cross_page_continuations(page_rows)
+
+    pages = []
+    for i, rows in enumerate(page_rows, start=1):
+        pages.append(render_page(i, rows))
     return "\n\n---\n\n".join(pages).strip() + "\n"
 
 

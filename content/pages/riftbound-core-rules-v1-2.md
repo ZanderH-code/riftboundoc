@@ -54,7 +54,7 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.1.</div><div class="rule-text">Cards included in your Deck must abide by your Domain Identity.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.2.</div><div class="rule-text">Your deck&#x27;s Domain Identity is dictated by the domains of your Champion Legend. In the default card frame, these domains appear as symbols in the legend&#x27;s upper</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.2.</div><div class="rule-text">Your deck&#x27;s Domain Identity is dictated by the domains of your Champion Legend. In the default card frame, these domains appear as symbols in the legend&#x27;s upper left corner.</div></div>
 
 </div>
 
@@ -63,8 +63,6 @@
 ### Page 2
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">left corner.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.3.</div><div class="rule-text">If a card has a single Domain , then that card is permitted in the Domain Identity that corresponds to the same Domain.</div></div>
 
@@ -546,7 +544,7 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.1.</div><div class="rule-text">Rules text sometimes contains symbols that express game concepts. Each symbol also has a shorthand used to represent it in written text.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.2.</div><div class="rule-text">The cost of Exhausting a Permanent is represented by the &quot;exhaust symbol,&quot; which resembles a card turning sideways. Its shorthand is [E]. (Some previous rules</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.2.</div><div class="rule-text">The cost of Exhausting a Permanent is represented by the &quot;exhaust symbol,&quot; which resembles a card turning sideways. Its shorthand is [E]. (Some previous rules information has given its shorthand as [T].)</div></div>
 
 </div>
 
@@ -555,8 +553,6 @@
 ### Page 11
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">information has given its shorthand as [T].)</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.3.</div><div class="rule-text">Might is represented by the &quot;Might symbol,&quot; which resembles a sword and shield. Its shorthand is [M]. (Some previous rules information has given its shorthand as [S].)</div></div>
 
@@ -1062,7 +1058,7 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">184.3.a.</div><div class="rule-text">Contested is a temporary status applied to the battlefield when a Unit controlled by a Player who does not currently Control that Battlefield Moves or otherwise becomes present there.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">184.3.a.1.</div><div class="rule-text">Units moving to or being played to a battlefield apply Contested status if that battlefield is not already contested and that Unit &#x27;s controller does not already</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">184.3.a.1.</div><div class="rule-text">Units moving to or being played to a battlefield apply Contested status if that battlefield is not already contested and that Unit &#x27;s controller does not already control that battlefield.</div></div>
 
 </div>
 
@@ -1071,8 +1067,6 @@
 ### Page 20
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">control that battlefield.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">184.3.b.</div><div class="rule-text">A Battlefield remains Contested until Control is established or re-established.</div></div>
 
@@ -3022,7 +3016,7 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">439.1.</div><div class="rule-text">If more than one Battlefield has Units controlled by opposing players at it at the same time, the Turn Player decides which Combat to resolve first.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">439.2.</div><div class="rule-text">If Staged Combats stop being Staged before the Steps of Combat are initiated, they are not resolved</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">439.2.</div><div class="rule-text">If Staged Combats stop being Staged before the Steps of Combat are initiated, they are not resolved or executed.</div></div>
 
 </div>
 
@@ -3031,8 +3025,6 @@
 ### Page 59
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">or executed.</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">440.</div><div class="rule-text">Combat can only occur between Units controlled by exactly two players.</div></div>
 
@@ -3910,7 +3902,7 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">735.2.</div><div class="rule-text">If a Unit has Deflect, or has been granted Deflect, and is granted Deflect by an additional source, the Deflect Value of all granted Deflect keywords is summed.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">735.3.</div><div class="rule-text">Deflect, and whether or not a permanent has Deflect, is a characteristic of the permanent and may</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">735.3.</div><div class="rule-text">Deflect, and whether or not a permanent has Deflect, is a characteristic of the permanent and may be checked or referenced by other Game Effects.</div></div>
 
 </div>
 
@@ -3919,8 +3911,6 @@
 ### Page 76
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">be checked or referenced by other Game Effects.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">736.</div><div class="rule-text">Ganking</div></div>
 
@@ -3962,7 +3952,7 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.1.</div><div class="rule-text">A hidden unit must be played to that battlefield.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.2.</div><div class="rule-text">If a hidden spell or a play effect of a hidden permanent chooses any targets, those targets must be chosen from among options at that battlefield, unless the ability explicitly restricts targeting in a way that makes this impossible. Example: Blastcone Fae is a unit with Hidden and &quot;When you play me, give a unit -2 [M] this turn, to a minimum of 1 [M].&quot; Because this is a play effect, its target must be chosen from among units at the same battlefield if Blastcone Fae was played from Hidden. Example: Tideturner is a unit with Hidden and &quot;When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location.&quot; Because its play ability has a targeting</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.2.</div><div class="rule-text">If a hidden spell or a play effect of a hidden permanent chooses any targets, those targets must be chosen from among options at that battlefield, unless the ability explicitly restricts targeting in a way that makes this impossible. Example: Blastcone Fae is a unit with Hidden and &quot;When you play me, give a unit -2 [M] this turn, to a minimum of 1 [M].&quot; Because this is a play effect, its target must be chosen from among units at the same battlefield if Blastcone Fae was played from Hidden. Example: Tideturner is a unit with Hidden and &quot;When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location.&quot; Because its play ability has a targeting restriction that can never be fulfilled by a unit at its battlefield, its target may be chosen freely from among the available options.</div></div>
 
 </div>
 
@@ -3971,8 +3961,6 @@
 ### Page 77
 
 <div class="rule-sheet">
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">restriction that can never be fulfilled by a unit at its battlefield, its target may be chosen freely from among the available options.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.3.</div><div class="rule-text">If a hidden spell or a play effect of a hidden permanent causes you to play a unit, you must choose to play that unit at that battlefield.</div></div>
 
