@@ -63,13 +63,14 @@ function renderErrata(items, target, options = {}) {
   }
   target.innerHTML = asItems(items)
     .map((it) => {
+      const preview = String(it.content || "")
+        .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
+        .replace(/[#*_`>-]/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 220);
+
       if (compact) {
-        const preview = String(it.content || "")
-          .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
-          .replace(/[#*_`>-]/g, "")
-          .replace(/\s+/g, " ")
-          .trim()
-          .slice(0, 220);
         return `
       <article class="item">
         <h3>${it.title || "Untitled errata"}</h3>
@@ -80,19 +81,14 @@ function renderErrata(items, target, options = {}) {
       </article>
     `;
       }
-      const body = String(it.content || "").trim();
-      const rendered =
-        window.marked && typeof window.marked.parse === "function"
-          ? window.marked.parse(body)
-          : `<pre>${body}</pre>`;
       return `
       <article class="item">
         <h3>${it.title || "Untitled errata"}</h3>
-        <p class="muted">Entry ID: ${it.id || "-"} | <a href="${it.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a></p>
-        <div class="errata-content">${rendered}</div>
+        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
           it.publishedAt || "-"
         } | Updated: ${it.updatedAt || "-"}</p>
+        <a href="errata-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
       </article>
     `;
     })
@@ -270,6 +266,31 @@ async function initErrataPage() {
   renderErrata(sortByUpdated(errata), q("#errata-list"));
 }
 
+async function initErrataDetail() {
+  const id = new URLSearchParams(window.location.search).get("id");
+  const errata = await getJson("data/errata.json", []);
+  const ordered = sortByUpdated(errata);
+  const one = ordered.find((it) => it.id === id) || ordered[0];
+  if (!one) return;
+
+  if (q("#errata-title")) q("#errata-title").textContent = one.title || "Errata";
+  if (q("#errata-meta")) {
+    q("#errata-meta").textContent = `ID: ${one.id || "-"} | Published: ${
+      one.publishedAt || "-"
+    } | Updated: ${one.updatedAt || "-"}`;
+  }
+  if (q("#errata-source")) {
+    q("#errata-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
+  }
+
+  const body = String(one.content || "").trim();
+  if (window.marked && typeof window.marked.parse === "function") {
+    q("#errata-content").innerHTML = window.marked.parse(body);
+  } else {
+    q("#errata-content").innerHTML = `<pre>${body}</pre>`;
+  }
+}
+
 function initReader() {
   const src = new URLSearchParams(window.location.search).get("src");
   if (!src) {
@@ -317,6 +338,7 @@ window.site = {
   initFaqPage,
   initRulePage,
   initErrataPage,
+  initErrataDetail,
   initReader,
   initPage,
   initPageList,

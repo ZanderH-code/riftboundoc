@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Errata - Riftbound Hub</title>
+    <title>Errata Detail - Riftbound Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/site.js"></script>
@@ -22,13 +22,18 @@
       </div>
     </header>
     <main class="container">
-      <h1>Errata Files</h1>
-      <p class="muted">Browse official errata entries and click "Read online" for full content.</p>
-      <div id="errata-list" class="list"></div>
+      <article class="doc-shell">
+        <div class="doc-meta" id="errata-meta">Loading...</div>
+        <div id="page-content-wrap">
+          <h1 id="errata-title" style="padding: 16px 22px 0; margin: 0">Loading...</h1>
+          <p id="errata-source" class="muted" style="padding: 0 22px"></p>
+          <div id="errata-content" class="errata-content" style="padding: 0 22px 24px"></div>
+        </div>
+      </article>
     </main>
     <script>
       window.site.navActive();
-      window.site.initErrataPage();
+      window.site.initErrataDetail();
     </script>
   </body>
 </html>
