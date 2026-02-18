@@ -1,10 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDF Reader - Riftbound Hub</title>
+    <title>Errata - Riftbound Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/site.js"></script>
   </head>
   <body>
@@ -20,14 +21,14 @@
         </nav>
       </div>
     </header>
-    <main class="container" id="reader-wrap">
-      <h1 id="reader-title">PDF Reader</h1>
-      <iframe id="pdf-view" class="pdf-frame" title="pdf reader"></iframe>
+    <main class="container">
+      <h1>Errata</h1>
+      <p class="muted">Official card errata updates imported from Riftbound news.</p>
+      <div id="errata-list" class="list"></div>
     </main>
     <script>
       window.site.navActive();
-      window.site.initReader();
+      window.site.initErrataPage();
     </script>
   </body>
 </html>
-

@@ -53,6 +53,49 @@ function renderFaq(items, target) {
     .join("");
 }
 
+function renderErrata(items, target, options = {}) {
+  const compact = Boolean(options.compact);
+  if (!target) return;
+  if (!asItems(items).length) {
+    target.innerHTML =
+      '<article class="item"><h3>No errata yet</h3><p class="muted">Add entries in data/errata.json.</p></article>';
+    return;
+  }
+  target.innerHTML = asItems(items)
+    .map((it) => {
+      if (compact) {
+        const preview = String(it.content || "")
+          .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
+          .replace(/[#*_`>-]/g, "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .slice(0, 220);
+        return `
+      <article class="item">
+        <h3>${it.title || "Untitled errata"}</h3>
+        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
+        <p class="muted">Published: ${it.publishedAt || "-"} | Updated: ${it.updatedAt || "-"}</p>
+      </article>
+    `;
+      }
+      const body = String(it.content || "").trim();
+      const rendered =
+        window.marked && typeof window.marked.parse === "function"
+          ? window.marked.parse(body)
+          : `<pre>${body}</pre>`;
+      return `
+      <article class="item">
+        <h3>${it.title || "Untitled errata"}</h3>
+        <div class="errata-content">${rendered}</div>
+        <p class="muted">Source: ${it.source || "Official"} | Published: ${
+          it.publishedAt || "-"
+        } | Updated: ${it.updatedAt || "-"}</p>
+      </article>
+    `;
+    })
+    .join("");
+}
+
 function renderRules(files, target) {
   if (!target) return;
   if (!asItems(files).length) {
@@ -187,19 +230,23 @@ function buildPageToc() {
 async function initHome() {
   const pages = await getJson("data/pages.json", []);
   const faqs = await getJson("data/faqs.json", []);
+  const errata = await getJson("data/errata.json", []);
   const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
   const rules = normalizeRuleIndex(rulesIndex);
 
   const statsPages = q("#stats-pages");
   const statsFaq = q("#stats-faq");
+  const statsErrata = q("#stats-errata");
   const statsRules = q("#stats-rules");
   const statsUpdate = q("#stats-update");
   if (statsPages) statsPages.textContent = asItems(pages).length;
   if (statsFaq) statsFaq.textContent = asItems(faqs).length;
+  if (statsErrata) statsErrata.textContent = asItems(errata).length;
   if (statsRules) statsRules.textContent = asItems(rules).length;
   if (statsUpdate) statsUpdate.textContent = today();
 
   renderFaq(sortByUpdated(faqs).slice(0, 4), q("#home-faq"));
+  renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
   const homePages = q("#home-pages");
   renderPages(sortByUpdated(pages).slice(0, 4), homePages);
   bindPageCards(homePages);
@@ -213,6 +260,11 @@ async function initFaqPage() {
 async function initRulePage() {
   const local = await getJson("content/rules/index.json", { rules: [] });
   renderRules(sortByUpdated(normalizeRuleIndex(local)), q("#rule-list"));
+}
+
+async function initErrataPage() {
+  const errata = await getJson("data/errata.json", []);
+  renderErrata(sortByUpdated(errata), q("#errata-list"));
 }
 
 function initReader() {
@@ -261,6 +313,7 @@ window.site = {
   initHome,
   initFaqPage,
   initRulePage,
+  initErrataPage,
   initReader,
   initPage,
   initPageList,

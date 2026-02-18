@@ -3,6 +3,7 @@
 Static website for Riftbound players with:
 
 - FAQ list (`data/faqs.json`)
+- Errata list (`data/errata.json`)
 - Rules PDF index (`content/rules/index.json`)
 - Online PDF reader (`reader.html`)
 - Community pages in Markdown (`content/pages/*.md` + `data/pages.json`)
@@ -18,6 +19,7 @@ Static website for Riftbound players with:
 ### Option A: Edit files directly
 
 - Add FAQ entries in `data/faqs.json`
+- Add errata entries in `data/errata.json`
 - Add/update page records in `data/pages.json`
 - Add page Markdown files in `content/pages/`
 - Add/update rules in `content/rules/index.json`
@@ -81,3 +83,11 @@ If you want the rulebook as readable/searchable web text, convert PDF to Markdow
    `{ "id": "rulebook-v1", "title": "Rulebook V1", "summary": "...", "file": "content/pages/rulebook-v1.md", "updatedAt": "2026-02-18" }`
 
 Note: If the PDF is image-scanned (not selectable text), text extraction quality may be poor. In that case, OCR is needed.
+
+## Import Official FAQ/Errata
+
+FAQ:
+`python tools/import_official_faqs.py data/faqs.json <faq_url_1> <faq_url_2>`
+
+Errata:
+`python tools/import_official_errata.py data/errata.json <errata_url_1> <errata_url_2>`

@@ -124,6 +124,27 @@ main {
   margin: 0 0 8px;
 }
 
+.errata-content {
+  line-height: 1.65;
+}
+
+.errata-content h1,
+.errata-content h2,
+.errata-content h3,
+.errata-content h4 {
+  margin-top: 1em;
+  margin-bottom: 0.45em;
+  font-family: "Literata", serif;
+}
+
+.errata-content p {
+  margin: 0.5em 0;
+}
+
+.errata-content ul {
+  margin: 0.4em 0 0.8em 1.2em;
+}
+
 .page-card {
   cursor: pointer;
   transition: border-color 0.15s ease, transform 0.15s ease;
