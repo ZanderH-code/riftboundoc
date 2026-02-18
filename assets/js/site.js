@@ -55,13 +55,22 @@ function renderFaq(items, target) {
 
 function renderRules(files, target) {
   if (!target) return;
+  if (!asItems(files).length) {
+    target.innerHTML =
+      '<article class="item"><h3>No rule files yet</h3><p class="muted">Add entries in content/rules/index.json.</p></article>';
+    return;
+  }
   target.innerHTML = asItems(files)
     .map(
       (it) => `
       <article class="item">
         <h3>${it.title || it.name || "Untitled file"}</h3>
         <p class="muted">Source: ${it.source || "Manual"} | Updated: ${it.updatedAt || "-"}</p>
-        <a href="reader.html?src=${encodeURIComponent(it.url || "")}">Read online</a>
+        <a href="${
+          it.type === "page"
+            ? `page.html?id=${encodeURIComponent(it.pageId || "")}`
+            : `reader.html?src=${encodeURIComponent(it.url || "")}`
+        }">Read online</a>
       </article>
     `
     )
