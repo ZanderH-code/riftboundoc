@@ -74,7 +74,9 @@ function renderErrata(items, target, options = {}) {
       <article class="item">
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
-        <p class="muted">Published: ${it.publishedAt || "-"} | Updated: ${it.updatedAt || "-"}</p>
+        <p class="muted">ID: ${it.id || "-"} | Published: ${it.publishedAt || "-"} | Updated: ${
+          it.updatedAt || "-"
+        }</p>
       </article>
     `;
       }
@@ -86,6 +88,7 @@ function renderErrata(items, target, options = {}) {
       return `
       <article class="item">
         <h3>${it.title || "Untitled errata"}</h3>
+        <p class="muted">Entry ID: ${it.id || "-"} | <a href="${it.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a></p>
         <div class="errata-content">${rendered}</div>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
           it.publishedAt || "-"

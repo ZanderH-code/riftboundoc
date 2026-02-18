@@ -6,6 +6,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import urlopen
+from urllib.parse import urlparse
 
 
 NEXT_DATA_RE = re.compile(
@@ -57,7 +58,10 @@ def parse_errata_page(page_html: str, url: str):
     rich_blade = next((b for b in blades if b.get("type") == "articleRichText"), {})
     raw_body = (rich_blade.get("richText") or {}).get("body", "")
     content = html_to_markdown(raw_body)
+    path = urlparse(url).path.rstrip("/")
+    slug = path.split("/")[-1] if path else "official-errata"
     return {
+        "id": slug,
         "title": page.get("title", "Official Errata"),
         "content": content,
         "source": "Riftbound Official",
