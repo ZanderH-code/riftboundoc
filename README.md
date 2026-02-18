@@ -34,3 +34,16 @@ Static website for Riftbound players with:
 
 - This project is fully static; no backend is required.
 - No auto-fetch/sync is enabled by default.
+
+## Convert PDF to Text Page
+
+If you want the rulebook as readable/searchable web text, convert PDF to Markdown:
+
+1. Install dependency:
+   `pip install pypdf`
+2. Convert:
+   `python tools/pdf_to_md.py <input.pdf> content/pages/<page-id>.md --title "<Page Title>"`
+3. Add/update the page entry in `data/pages.json`, for example:
+   `{ "id": "rulebook-v1", "title": "Rulebook V1", "summary": "...", "file": "content/pages/rulebook-v1.md", "updatedAt": "2026-02-18" }`
+
+Note: If the PDF is image-scanned (not selectable text), text extraction quality may be poor. In that case, OCR is needed.
