@@ -56,6 +56,15 @@ function docPreview(item, maxLen = 180) {
   return `${plain.slice(0, maxLen).trim()}...`;
 }
 
+function formatDate(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "-";
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
+  const d = new Date(raw);
+  if (Number.isNaN(d.getTime())) return raw;
+  return d.toISOString().slice(0, 10);
+}
+
 function renderFaq(items, target, options = {}) {
   const compact = Boolean(options.compact);
   if (!target) return;
@@ -82,10 +91,10 @@ function renderFaq(items, target, options = {}) {
         it.id || ""
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled FAQ"}</h3>
-        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
+        <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
-          it.publishedAt || "-"
-        } | Updated: ${it.updatedAt || "-"}</p>
+          formatDate(it.publishedAt)
+        } | Updated: ${formatDate(it.updatedAt)}</p>
         <a href="faq-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
       </article>
     `;
@@ -111,9 +120,9 @@ function renderErrata(items, target, options = {}) {
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
-          it.publishedAt || "-"
+          formatDate(it.publishedAt)
         } | Updated: ${
-          it.updatedAt || "-"
+          formatDate(it.updatedAt)
         }</p>
       </article>
     `;
@@ -125,8 +134,8 @@ function renderErrata(items, target, options = {}) {
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
-          it.publishedAt || "-"
-        } | Updated: ${it.updatedAt || "-"}</p>
+          formatDate(it.publishedAt)
+        } | Updated: ${formatDate(it.updatedAt)}</p>
         <a href="errata-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
       </article>
     `;
@@ -148,7 +157,7 @@ function renderRules(files, target) {
       <article class="item page-card" data-href="${link.href}" tabindex="0" role="link">
         <h3>${it.title || it.name || "Untitled rule"}</h3>
         <p>${it.summary || ""}</p>
-        <p class="muted">Source: ${it.source || "Manual"} | Updated: ${it.updatedAt || "-"}</p>
+        <p class="muted">Source: ${it.source || "Manual"} | Updated: ${formatDate(it.updatedAt)}</p>
         <a href="${link.href}"${link.target ? ` target="${link.target}" rel="${link.rel}"` : ""}>Read online</a>
       </article>
     `
@@ -202,7 +211,7 @@ function renderPages(items, target) {
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled page"}</h3>
         <p>${it.summary || ""}</p>
-        <p class="muted">Updated: ${it.updatedAt || "-"}</p>
+        <p class="muted">Updated: ${formatDate(it.updatedAt)}</p>
       </article>
     `
     )
@@ -341,8 +350,10 @@ async function initFaqDetail() {
 
   if (q("#faq-title")) q("#faq-title").textContent = one.title || "FAQ";
   if (q("#faq-meta")) {
-    q("#faq-meta").textContent = `ID: ${one.id || "-"} | Published: ${one.publishedAt || "-"} | Updated: ${
-      one.updatedAt || "-"
+    q("#faq-meta").textContent = `ID: ${one.id || "-"} | Published: ${formatDate(
+      one.publishedAt
+    )} | Updated: ${
+      formatDate(one.updatedAt)
     }`;
   }
   if (q("#faq-source")) {
@@ -380,8 +391,8 @@ async function initErrataDetail() {
   if (q("#errata-title")) q("#errata-title").textContent = one.title || "Errata";
   if (q("#errata-meta")) {
     q("#errata-meta").textContent = `ID: ${one.id || "-"} | Published: ${
-      one.publishedAt || "-"
-    } | Updated: ${one.updatedAt || "-"}`;
+      formatDate(one.publishedAt)
+    } | Updated: ${formatDate(one.updatedAt)}`;
   }
   if (q("#errata-source")) {
     q("#errata-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
@@ -416,7 +427,7 @@ async function initPage() {
   q("#page-title").textContent = one.title;
   q("#page-summary").textContent = one.summary || "";
   if (q("#doc-meta")) {
-    q("#doc-meta").textContent = `Updated: ${one.updatedAt || "-"} | ID: ${one.id}`;
+    q("#doc-meta").textContent = `Updated: ${formatDate(one.updatedAt)} | ID: ${one.id}`;
   }
 
   const md = await fetch(one.file, { cache: "no-store" }).then((r) => r.text());
