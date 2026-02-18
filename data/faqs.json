@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "question": "Where can I add FAQ entries?",
     "answer": "Edit data/faqs.json or use the Admin page JSON editor.",
