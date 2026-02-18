@@ -39,6 +39,7 @@ function slugify(text) {
 }
 
 function renderFaq(items, target) {
+  if (!target) return;
   target.innerHTML = asItems(items)
     .map(
       (it) => `
@@ -53,6 +54,7 @@ function renderFaq(items, target) {
 }
 
 function renderRules(files, target) {
+  if (!target) return;
   target.innerHTML = asItems(files)
     .map(
       (it) => `
@@ -67,6 +69,7 @@ function renderRules(files, target) {
 }
 
 function renderPages(items, target) {
+  if (!target) return;
   target.innerHTML = asItems(items)
     .map(
       (it) => `
@@ -143,10 +146,14 @@ async function initHome() {
   const faqs = await getJson("data/faqs.json", []);
   const rules = await getJson("content/rules/index.json", { files: [] });
 
-  q("#stats-pages").textContent = asItems(pages).length;
-  q("#stats-faq").textContent = asItems(faqs).length;
-  q("#stats-rules").textContent = asItems(rules.files).length;
-  q("#stats-update").textContent = today();
+  const statsPages = q("#stats-pages");
+  const statsFaq = q("#stats-faq");
+  const statsRules = q("#stats-rules");
+  const statsUpdate = q("#stats-update");
+  if (statsPages) statsPages.textContent = asItems(pages).length;
+  if (statsFaq) statsFaq.textContent = asItems(faqs).length;
+  if (statsRules) statsRules.textContent = asItems(rules.files).length;
+  if (statsUpdate) statsUpdate.textContent = today();
 
   renderFaq(sortByUpdated(faqs).slice(0, 4), q("#home-faq"));
   const homePages = q("#home-pages");
