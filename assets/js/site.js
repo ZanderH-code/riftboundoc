@@ -57,24 +57,58 @@ function renderRules(files, target) {
   if (!target) return;
   if (!asItems(files).length) {
     target.innerHTML =
-      '<article class="item"><h3>No rule files yet</h3><p class="muted">Add entries in content/rules/index.json.</p></article>';
+      '<article class="item"><h3>No rules yet</h3><p class="muted">Add entries in content/rules/index.json.</p></article>';
     return;
   }
   target.innerHTML = asItems(files)
-    .map(
-      (it) => `
+    .map((it) => {
+      const link = resolveRuleLink(it);
+      return `
       <article class="item">
-        <h3>${it.title || it.name || "Untitled file"}</h3>
+        <h3>${it.title || it.name || "Untitled rule"}</h3>
+        <p>${it.summary || ""}</p>
         <p class="muted">Source: ${it.source || "Manual"} | Updated: ${it.updatedAt || "-"}</p>
-        <a href="${
-          it.type === "page"
-            ? `page.html?id=${encodeURIComponent(it.pageId || "")}`
-            : `reader.html?src=${encodeURIComponent(it.url || "")}`
-        }">Read online</a>
+        <a href="${link.href}"${link.target ? ` target="${link.target}" rel="${link.rel}"` : ""}>Read online</a>
       </article>
     `
-    )
+    })
     .join("");
+}
+
+function resolveRuleLink(item) {
+  const kind = String(item.kind || item.type || "pdf").toLowerCase();
+  if (kind === "page") {
+    return {
+      href: `page.html?id=${encodeURIComponent(item.pageId || item.id || "")}`,
+      target: "",
+      rel: "",
+    };
+  }
+  if (kind === "external") {
+    return {
+      href: item.url || "#",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    };
+  }
+  return {
+    href: `reader.html?src=${encodeURIComponent(item.url || "")}`,
+    target: "",
+    rel: "",
+  };
+}
+
+function normalizeRuleIndex(indexData) {
+  if (Array.isArray(indexData)) return indexData;
+  if (!indexData || typeof indexData !== "object") return [];
+  if (Array.isArray(indexData.rules)) return indexData.rules;
+  if (Array.isArray(indexData.files)) {
+    return indexData.files.map((it) => ({
+      ...it,
+      kind: it.kind || it.type || "pdf",
+    }));
+  }
+  return [];
 }
 
 function renderPages(items, target) {
@@ -153,7 +187,8 @@ function buildPageToc() {
 async function initHome() {
   const pages = await getJson("data/pages.json", []);
   const faqs = await getJson("data/faqs.json", []);
-  const rules = await getJson("content/rules/index.json", { files: [] });
+  const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
+  const rules = normalizeRuleIndex(rulesIndex);
 
   const statsPages = q("#stats-pages");
   const statsFaq = q("#stats-faq");
@@ -161,7 +196,7 @@ async function initHome() {
   const statsUpdate = q("#stats-update");
   if (statsPages) statsPages.textContent = asItems(pages).length;
   if (statsFaq) statsFaq.textContent = asItems(faqs).length;
-  if (statsRules) statsRules.textContent = asItems(rules.files).length;
+  if (statsRules) statsRules.textContent = asItems(rules).length;
   if (statsUpdate) statsUpdate.textContent = today();
 
   renderFaq(sortByUpdated(faqs).slice(0, 4), q("#home-faq"));
@@ -176,8 +211,8 @@ async function initFaqPage() {
 }
 
 async function initRulePage() {
-  const local = await getJson("content/rules/index.json", { files: [] });
-  renderRules(sortByUpdated(local.files), q("#rule-list"));
+  const local = await getJson("content/rules/index.json", { rules: [] });
+  renderRules(sortByUpdated(normalizeRuleIndex(local)), q("#rule-list"));
 }
 
 function initReader() {
