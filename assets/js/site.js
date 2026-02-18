@@ -259,7 +259,6 @@ function renderCoreRuleCard(pages, rules, target) {
     <article class="item page-card featured-card" data-href="${href}" tabindex="0" role="link">
       <h3>${title}</h3>
       <p>${summary}</p>
-      <p class="muted">Primary entry for players. Click anywhere on this card to open.</p>
       <a href="${href}">Open Core Rules</a>
     </article>
   `;
