@@ -38,18 +38,43 @@ function slugify(text) {
     .replace(/-+/g, "-");
 }
 
-function renderFaq(items, target) {
+function renderFaq(items, target, options = {}) {
+  const compact = Boolean(options.compact);
   if (!target) return;
+  if (!asItems(items).length) {
+    target.innerHTML =
+      '<article class="item"><h3>No FAQ yet</h3><p class="muted">Add entries in data/faqs.json.</p></article>';
+    return;
+  }
   target.innerHTML = asItems(items)
-    .map(
-      (it) => `
+    .map((it) => {
+      // Backward compatibility for legacy flat QA rows.
+      if (it.question || it.answer) {
+        return `
       <article class="item">
         <h3>${it.question || "Untitled question"}</h3>
         <p>${it.answer || ""}</p>
         <p class="muted">Source: ${it.source || "Unknown"} | Updated: ${it.updatedAt || "-"}</p>
       </article>
-    `
-    )
+    `;
+      }
+      const preview = String(it.summary || it.content || "")
+        .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
+        .replace(/[#*_`>-]/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 220);
+      return `
+      <article class="item">
+        <h3>${it.title || "Untitled FAQ"}</h3>
+        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
+        <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
+          it.publishedAt || "-"
+        } | Updated: ${it.updatedAt || "-"}</p>
+        <a href="faq-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
+      </article>
+    `;
+    })
     .join("");
 }
 
@@ -244,7 +269,7 @@ async function initHome() {
   if (statsRules) statsRules.textContent = asItems(rules).length;
   if (statsUpdate) statsUpdate.textContent = today();
 
-  renderFaq(sortByUpdated(faqs).slice(0, 4), q("#home-faq"));
+  renderFaq(sortByUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
   renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
   const homePages = q("#home-pages");
   renderPages(sortByUpdated(pages).slice(0, 4), homePages);
@@ -254,6 +279,30 @@ async function initHome() {
 async function initFaqPage() {
   const faqs = await getJson("data/faqs.json", []);
   renderFaq(sortByUpdated(faqs), q("#faq-list"));
+}
+
+async function initFaqDetail() {
+  const id = new URLSearchParams(window.location.search).get("id");
+  const faqs = await getJson("data/faqs.json", []);
+  const ordered = sortByUpdated(faqs);
+  const one = ordered.find((it) => it.id === id) || ordered[0];
+  if (!one) return;
+
+  if (q("#faq-title")) q("#faq-title").textContent = one.title || "FAQ";
+  if (q("#faq-meta")) {
+    q("#faq-meta").textContent = `ID: ${one.id || "-"} | Published: ${one.publishedAt || "-"} | Updated: ${
+      one.updatedAt || "-"
+    }`;
+  }
+  if (q("#faq-source")) {
+    q("#faq-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
+  }
+  const body = String(one.content || "").trim();
+  if (window.marked && typeof window.marked.parse === "function") {
+    q("#faq-content").innerHTML = window.marked.parse(body);
+  } else {
+    q("#faq-content").innerHTML = `<pre>${body}</pre>`;
+  }
 }
 
 async function initRulePage() {
@@ -336,6 +385,7 @@ window.site = {
   navActive,
   initHome,
   initFaqPage,
+  initFaqDetail,
   initRulePage,
   initErrataPage,
   initErrataDetail,

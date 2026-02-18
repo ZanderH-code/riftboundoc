@@ -5,6 +5,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 from urllib.request import urlopen
 
 
@@ -15,15 +16,26 @@ NEXT_DATA_RE = re.compile(
 
 def fetch_text(url: str) -> str:
     with urlopen(url, timeout=45) as resp:  # nosec B310
-        return resp.read().decode("utf-8", errors="replace")
+        raw = resp.read()
+    return raw.decode("utf-8", errors="replace")
 
 
-def html_to_text(raw_html: str) -> str:
+def html_to_markdown(raw_html: str) -> str:
     text = raw_html
+    text = re.sub(
+        r'<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+        lambda m: f"[{strip_tags(m.group(2)).strip()}]({m.group(1)})",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<h2[^>]*>(.*?)</h2>", r"\n## \1\n", text, flags=re.IGNORECASE | re.DOTALL)
+    text = re.sub(r"<h3[^>]*>(.*?)</h3>", r"\n### \1\n", text, flags=re.IGNORECASE | re.DOTALL)
+    text = re.sub(r"<h4[^>]*>(.*?)</h4>", r"\n#### \1\n", text, flags=re.IGNORECASE | re.DOTALL)
+    text = re.sub(r"<li[^>]*>", "\n- ", text, flags=re.IGNORECASE)
+    text = re.sub(r"</li>", "", text, flags=re.IGNORECASE)
     text = re.sub(r"</p>", "\n\n", text, flags=re.IGNORECASE)
-    text = re.sub(r"<li[^>]*>", "- ", text, flags=re.IGNORECASE)
-    text = re.sub(r"</li>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<p[^>]*>", "", text, flags=re.IGNORECASE)
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text)
     text = re.sub(r"[ \t]+\n", "\n", text)
@@ -31,83 +43,76 @@ def html_to_text(raw_html: str) -> str:
     return text.strip()
 
 
-def parse_faq_items(page_html: str):
+def strip_tags(raw_html: str) -> str:
+    out = re.sub(r"<[^>]+>", "", raw_html)
+    return html.unescape(out)
+
+
+def build_from_accordion(blades):
+    blocks = []
+    for blade in blades:
+        if blade.get("type") != "articleRichTextAccordion":
+            continue
+        header = blade.get("header") or {}
+        section = (
+            header.get("subtitle") or header.get("title") or blade.get("fragmentId") or "FAQ Section"
+        )
+        block = [f"## {section}"]
+        for group in blade.get("groups") or []:
+            question = str(group.get("label") or "").strip()
+            body = (group.get("content") or {}).get("body", "")
+            answer = html_to_markdown(body)
+            if not question and not answer:
+                continue
+            if question:
+                block.append(f"### {question}")
+            if answer:
+                block.append(answer)
+        if len(block) > 1:
+            blocks.append("\n\n".join(block))
+    return "\n\n".join(blocks).strip()
+
+
+def build_from_rich_text(blades):
+    chunks = []
+    for blade in blades:
+        if blade.get("type") != "articleRichText":
+            continue
+        body = (blade.get("richText") or {}).get("body", "")
+        md = html_to_markdown(body)
+        if md:
+            chunks.append(md)
+    return "\n\n".join(chunks).strip()
+
+
+def parse_faq_document(page_html: str, url: str):
     m = NEXT_DATA_RE.search(page_html)
     if not m:
-        return []
+        return None
     root = json.loads(m.group(1))
-
     page = root.get("props", {}).get("pageProps", {}).get("page", {})
     blades = page.get("blades", [])
-    published = page.get("displayedPublishDate", "")
-    title = page.get("title", "Official FAQ")
 
-    out = []
-    for blade in blades:
-        btype = blade.get("type")
-        if btype == "articleRichTextAccordion":
-            header = blade.get("header") or {}
-            section = header.get("subtitle") or header.get("title") or blade.get("fragmentId") or "FAQ"
-            for group in blade.get("groups") or []:
-                q = str(group.get("label", "")).strip()
-                body = (group.get("content") or {}).get("body", "")
-                a = html_to_text(body)
-                if q and a:
-                    out.append(
-                        {
-                            "question": q,
-                            "answer": a,
-                            "source": title,
-                            "section": section,
-                            "publishedAt": published,
-                        }
-                    )
+    accordion_md = build_from_accordion(blades)
+    rich_md = build_from_rich_text(blades)
+    content = accordion_md if accordion_md else rich_md
+    if not content:
+        return None
 
-        if btype == "articleRichText":
-            raw_body = (blade.get("richText") or {}).get("body", "")
-            text = html_to_text(raw_body)
-            out.extend(parse_qas_from_text(text, title, published))
+    first_line = next((ln for ln in content.splitlines() if ln.strip()), "")
+    summary = first_line.replace("#", "").strip()[:160]
 
-    # De-duplicate by question text.
-    seen = set()
-    unique = []
-    for row in out:
-        key = row["question"].strip().lower()
-        if not key or key in seen:
-            continue
-        seen.add(key)
-        unique.append(row)
-    return unique
-
-
-def parse_qas_from_text(text: str, source: str, published: str):
-    lines = [ln.strip() for ln in text.splitlines()]
-    lines = [ln for ln in lines if ln]
-    out = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        if not line.startswith("Q:"):
-            i += 1
-            continue
-        question = line
-        i += 1
-        answer_lines = []
-        while i < len(lines) and not lines[i].startswith("Q:"):
-            answer_lines.append(lines[i])
-            i += 1
-        answer = "\n".join(answer_lines).strip()
-        if answer:
-            out.append(
-                {
-                    "question": question,
-                    "answer": answer,
-                    "source": source,
-                    "section": "FAQ",
-                    "publishedAt": published,
-                }
-            )
-    return out
+    path = urlparse(url).path.rstrip("/")
+    slug = path.split("/")[-1] if path else "official-faq"
+    return {
+        "id": slug,
+        "title": page.get("title", "Official FAQ"),
+        "summary": summary,
+        "content": content,
+        "source": "Riftbound Official",
+        "publishedAt": page.get("displayedPublishDate", ""),
+        "originUrl": url,
+    }
 
 
 def main():
@@ -116,22 +121,21 @@ def main():
     parser.add_argument("urls", nargs="+", help="Official FAQ URLs")
     args = parser.parse_args()
 
-    all_rows = []
+    rows = []
     for url in args.urls:
         html_text = fetch_text(url)
-        items = parse_faq_items(html_text)
-        for row in items:
-            row["originUrl"] = url
-        all_rows.extend(items)
+        row = parse_faq_document(html_text, url)
+        if row:
+            rows.append(row)
 
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    for row in all_rows:
+    for row in rows:
         row["updatedAt"] = stamp
 
     output = Path(args.output_json)
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(all_rows, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Imported {len(all_rows)} FAQ entries -> {output}")
+    output.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Imported {len(rows)} FAQ entries -> {output}")
 
 
 if __name__ == "__main__":

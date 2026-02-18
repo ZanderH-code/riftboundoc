@@ -89,5 +89,7 @@ Note: If the PDF is image-scanned (not selectable text), text extraction quality
 FAQ:
 `python tools/import_official_faqs.py data/faqs.json <faq_url_1> <faq_url_2>`
 
+Note: FAQ import writes one entry per source URL (for example Origins FAQ and Spiritforged FAQ as two separate entries).
+
 Errata:
 `python tools/import_official_errata.py data/errata.json <errata_url_1> <errata_url_2>`
