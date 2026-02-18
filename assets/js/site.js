@@ -65,7 +65,9 @@ function renderFaq(items, target, options = {}) {
         .trim()
         .slice(0, 220);
       return `
-      <article class="item">
+      <article class="item page-card" data-href="faq-detail.html?id=${encodeURIComponent(
+        it.id || ""
+      )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled FAQ"}</h3>
         <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
@@ -107,7 +109,9 @@ function renderErrata(items, target, options = {}) {
     `;
       }
       return `
-      <article class="item">
+      <article class="item page-card" data-href="errata-detail.html?id=${encodeURIComponent(
+        it.id || ""
+      )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
@@ -131,7 +135,7 @@ function renderRules(files, target) {
     .map((it) => {
       const link = resolveRuleLink(it);
       return `
-      <article class="item">
+      <article class="item page-card" data-href="${link.href}" tabindex="0" role="link">
         <h3>${it.title || it.name || "Untitled rule"}</h3>
         <p>${it.summary || ""}</p>
         <p class="muted">Source: ${it.source || "Manual"} | Updated: ${it.updatedAt || "-"}</p>
@@ -212,6 +216,36 @@ function bindPageCards(container) {
   });
 }
 
+function renderCoreRuleCard(pages, rules, target) {
+  if (!target) return;
+  const corePage =
+    asItems(pages).find((it) => it.id === "riftbound-core-rules-v1-2") || asItems(pages)[0];
+  const coreRuleEntry =
+    asItems(rules).find((it) => String(it.pageId || it.id).includes("riftbound-core-rules-v1-2")) ||
+    asItems(rules)[0];
+  if (!corePage && !coreRuleEntry) {
+    target.innerHTML =
+      '<article class="item"><h3>Core Rules not found</h3><p class="muted">Add or update the core rule entry in data/pages.json or content/rules/index.json.</p></article>';
+    return;
+  }
+  const href = corePage
+    ? `page.html?id=${encodeURIComponent(corePage.id)}`
+    : resolveRuleLink(coreRuleEntry).href;
+  const title = corePage?.title || coreRuleEntry?.title || "Riftbound Core Rules";
+  const summary =
+    corePage?.summary ||
+    coreRuleEntry?.summary ||
+    "Official core rules text version for web reading.";
+  target.innerHTML = `
+    <article class="item page-card featured-card" data-href="${href}" tabindex="0" role="link">
+      <h3>${title}</h3>
+      <p>${summary}</p>
+      <p class="muted">Primary entry for players. Click anywhere on this card to open.</p>
+      <a href="${href}">Open Core Rules</a>
+    </article>
+  `;
+}
+
 function buildPageToc() {
   const toc = q("#page-toc");
   const content = q("#page-content");
@@ -273,12 +307,19 @@ async function initHome() {
   renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
   const homePages = q("#home-pages");
   renderPages(sortByUpdated(pages).slice(0, 4), homePages);
+  renderCoreRuleCard(pages, rules, q("#home-core-rule"));
   bindPageCards(homePages);
+  bindPageCards(q("#home-faq"));
+  bindPageCards(q("#home-errata"));
+  bindPageCards(q("#home-core-rule"));
+  bindPageCards(q(".hero .grid"));
 }
 
 async function initFaqPage() {
   const faqs = await getJson("data/faqs.json", []);
-  renderFaq(sortByUpdated(faqs), q("#faq-list"));
+  const list = q("#faq-list");
+  renderFaq(sortByUpdated(faqs), list);
+  bindPageCards(list);
 }
 
 async function initFaqDetail() {
@@ -307,12 +348,16 @@ async function initFaqDetail() {
 
 async function initRulePage() {
   const local = await getJson("content/rules/index.json", { rules: [] });
-  renderRules(sortByUpdated(normalizeRuleIndex(local)), q("#rule-list"));
+  const list = q("#rule-list");
+  renderRules(sortByUpdated(normalizeRuleIndex(local)), list);
+  bindPageCards(list);
 }
 
 async function initErrataPage() {
   const errata = await getJson("data/errata.json", []);
-  renderErrata(sortByUpdated(errata), q("#errata-list"));
+  const list = q("#errata-list");
+  renderErrata(sortByUpdated(errata), list);
+  bindPageCards(list);
 }
 
 async function initErrataDetail() {

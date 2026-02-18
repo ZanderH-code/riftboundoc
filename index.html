@@ -23,14 +23,18 @@
     <main class="container">
       <section class="hero">
         <h1>Riftbound FAQ and Rules Portal</h1>
-        <p class="muted">Upload PDFs, read online, and maintain custom pages with Markdown.</p>
+        <p class="muted">Read official FAQs, errata, and searchable rules in one consistent hub.</p>
         <div class="grid">
-          <article class="card"><h2>Pages</h2><p id="stats-pages">-</p></article>
-          <article class="card"><h2>FAQ</h2><p id="stats-faq">-</p></article>
-          <article class="card"><h2>Errata</h2><p id="stats-errata">-</p></article>
-          <article class="card"><h2>Rule Files</h2><p id="stats-rules">-</p></article>
+          <article class="card stat-card page-card" data-href="page.html" tabindex="0" role="link"><h2>Pages</h2><p id="stats-pages">-</p></article>
+          <article class="card stat-card page-card" data-href="faq.html" tabindex="0" role="link"><h2>FAQ</h2><p id="stats-faq">-</p></article>
+          <article class="card stat-card page-card" data-href="errata.html" tabindex="0" role="link"><h2>Errata</h2><p id="stats-errata">-</p></article>
+          <article class="card stat-card page-card" data-href="rules.html" tabindex="0" role="link"><h2>Rule Files</h2><p id="stats-rules">-</p></article>
           <article class="card"><h2>Updated</h2><p id="stats-update">-</p></article>
         </div>
+      </section>
+      <section>
+        <h2>Core Rules</h2>
+        <div id="home-core-rule" class="list"></div>
       </section>
       <section>
         <h2>Latest FAQ</h2>
