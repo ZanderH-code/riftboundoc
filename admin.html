@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Riftbound Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/admin.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html">Riftbound Hub</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rules.html">Rules</a>
+          <a href="page.html">Pages</a>
+          <a href="admin.html" class="active">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Admin</h1>
+      <p class="muted">Use your GitHub token to write files directly into this repository.</p>
+
+      <section class="card">
+        <h2>Repository Config</h2>
+        <div class="toolbar">
+          <input id="owner" placeholder="owner" />
+          <input id="repo" placeholder="repo" />
+          <input id="branch" placeholder="branch (main)" value="main" />
+          <input id="token" placeholder="GitHub token" type="password" />
+          <button id="save-config" type="button">Save Config</button>
+          <button id="load-data" type="button" class="secondary">Load Data</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Pages (Markdown)</h2>
+        <div id="page-list" class="toolbar"></div>
+        <div class="toolbar">
+          <input id="page-id" placeholder="page id" />
+          <input id="page-title" placeholder="title" />
+          <input id="page-summary" placeholder="summary" />
+          <button id="new-page" type="button" class="secondary">New</button>
+          <button id="save-page" type="button">Save Page</button>
+        </div>
+        <textarea id="page-md" placeholder="# Markdown content"></textarea>
+      </section>
+
+      <section class="card">
+        <h2>FAQ JSON</h2>
+        <textarea id="faq-json" placeholder="[ ... ]"></textarea>
+        <button id="save-faq" type="button">Save FAQ JSON</button>
+      </section>
+
+      <section class="card">
+        <h2>Rule Index JSON</h2>
+        <textarea id="rule-json" placeholder="{ &quot;updatedAt&quot;: &quot;YYYY-MM-DD&quot;, &quot;files&quot;: [] }"></textarea>
+        <button id="save-rule-index" type="button">Save Rule Index</button>
+      </section>
+
+      <section class="card">
+        <h2>Upload PDF</h2>
+        <div class="toolbar">
+          <input id="pdf-title" placeholder="Display title" />
+          <input id="pdf-file" type="file" accept="application/pdf" />
+          <button id="upload-pdf" type="button">Upload PDF</button>
+        </div>
+      </section>
+
+      <p id="status" class="muted"></p>
+    </main>
+  </body>
+</html>

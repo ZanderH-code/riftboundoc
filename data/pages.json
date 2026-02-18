@@ -1,0 +1,9 @@
+﻿[
+  {
+    "id": "welcome",
+    "title": "Welcome to Riftbound Hub",
+    "summary": "Find FAQs, rulebook PDFs, and community pages in one place.",
+    "file": "content/pages/welcome.md",
+    "updatedAt": "2026-02-18"
+  }
+]

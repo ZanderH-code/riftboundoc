@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riftbound Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html">Riftbound Hub</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rules.html">Rules</a>
+          <a href="page.html">Pages</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1>Riftbound FAQ and Rules Portal</h1>
+        <p class="muted">Upload PDFs, read online, and maintain custom pages with Markdown.</p>
+        <div class="grid">
+          <article class="card"><h2>Pages</h2><p id="stats-pages">-</p></article>
+          <article class="card"><h2>FAQ</h2><p id="stats-faq">-</p></article>
+          <article class="card"><h2>Rule Files</h2><p id="stats-rules">-</p></article>
+          <article class="card"><h2>Updated</h2><p id="stats-update">-</p></article>
+        </div>
+      </section>
+      <section>
+        <h2>Latest FAQ</h2>
+        <div id="home-faq" class="list"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">Hosted on GitHub Pages</div>
+    </footer>
+    <script>
+      window.site.navActive();
+      window.site.initHome();
+    </script>
+  </body>
+</html>

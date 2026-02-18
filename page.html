@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages - Riftbound Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html">Riftbound Hub</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rules.html">Rules</a>
+          <a href="page.html">Pages</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Community Pages</h1>
+      <p class="muted">Add or edit Markdown pages from the admin panel.</p>
+      <div class="two-col">
+        <section>
+          <h2>Page List</h2>
+          <div id="page-list" class="list"></div>
+        </section>
+        <article class="card">
+          <h2 id="page-title">Loading...</h2>
+          <p id="page-summary" class="muted"></p>
+          <div id="page-content"></div>
+        </article>
+      </div>
+    </main>
+    <script>
+      window.site.navActive();
+      window.site.initPageList();
+      window.site.initPage();
+    </script>
+  </body>
+</html>

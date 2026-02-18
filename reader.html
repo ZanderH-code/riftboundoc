@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Reader - Riftbound Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html">Riftbound Hub</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rules.html">Rules</a>
+          <a href="page.html">Pages</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container" id="reader-wrap">
+      <h1 id="reader-title">PDF Reader</h1>
+      <iframe id="pdf-view" class="pdf-frame" title="pdf reader"></iframe>
+    </main>
+    <script>
+      window.site.navActive();
+      window.site.initReader();
+    </script>
+  </body>
+</html>

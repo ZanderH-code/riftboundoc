@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Riftbound Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html">Riftbound Hub</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rules.html">Rules</a>
+          <a href="page.html">Pages</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>FAQ</h1>
+      <p class="muted">Maintained manually from JSON or admin editor.</p>
+      <div id="faq-list" class="list"></div>
+    </main>
+    <script>
+      window.site.navActive();
+      window.site.initFaqPage();
+    </script>
+  </body>
+</html>
