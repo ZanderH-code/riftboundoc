@@ -47,6 +47,15 @@ def strip_tags(raw_html: str) -> str:
     out = re.sub(r"<[^>]+>", "", raw_html)
     return html.unescape(out)
 
+def markdown_to_plain(text: str) -> str:
+    out = text
+    out = re.sub(r"\[\[([^\]]+)\]\]\([^)]+\)", r"\1", out)
+    out = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", out)
+    out = re.sub(r"^#+\s*", "", out, flags=re.MULTILINE)
+    out = re.sub(r"[*_`>-]", "", out)
+    out = re.sub(r"\s+", " ", out)
+    return out.strip()
+
 
 def build_from_accordion(blades):
     blocks = []
@@ -99,12 +108,12 @@ def parse_faq_document(page_html: str, url: str):
     if not content:
         return None
 
-    first_line = next((ln for ln in content.splitlines() if ln.strip()), "")
-    summary = first_line.replace("#", "").strip()[:160]
+    summary = markdown_to_plain(content)[:180]
 
     path = urlparse(url).path.rstrip("/")
     slug = path.split("/")[-1] if path else "official-faq"
     return {
+        "kind": "faq",
         "id": slug,
         "title": page.get("title", "Official FAQ"),
         "summary": summary,

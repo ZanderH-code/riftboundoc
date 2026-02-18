@@ -93,3 +93,6 @@ Note: FAQ import writes one entry per source URL (for example Origins FAQ and Sp
 
 Errata:
 `python tools/import_official_errata.py data/errata.json <errata_url_1> <errata_url_2>`
+
+Unified document fields for FAQ/Errata entries:
+`kind`, `id`, `title`, `summary`, `content`, `source`, `publishedAt`, `originUrl`, `updatedAt`

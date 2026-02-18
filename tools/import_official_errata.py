@@ -47,6 +47,16 @@ def strip_tags(raw_html: str) -> str:
     out = re.sub(r"<[^>]+>", "", raw_html)
     return html.unescape(out)
 
+def markdown_to_plain(text: str) -> str:
+    out = text
+    out = re.sub(r"\[\[([^\]]+)\]\]\([^)]+\)", r"\1", out)
+    out = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", out)
+    out = re.sub(r"^#+\s*", "", out, flags=re.MULTILINE)
+    out = re.sub(r"[*_`>-]", "", out)
+    out = re.sub(r"\s+", " ", out)
+    out = re.sub(r"^Download Card Errata\s*", "", out, flags=re.IGNORECASE)
+    return out.strip()
+
 
 def parse_errata_page(page_html: str, url: str):
     m = NEXT_DATA_RE.search(page_html)
@@ -61,8 +71,10 @@ def parse_errata_page(page_html: str, url: str):
     path = urlparse(url).path.rstrip("/")
     slug = path.split("/")[-1] if path else "official-errata"
     return {
+        "kind": "errata",
         "id": slug,
         "title": page.get("title", "Official Errata"),
+        "summary": markdown_to_plain(content)[:180],
         "content": content,
         "source": "Riftbound Official",
         "publishedAt": page.get("displayedPublishDate", ""),

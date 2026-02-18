@@ -38,6 +38,24 @@ function slugify(text) {
     .replace(/-+/g, "-");
 }
 
+function markdownToPlain(text) {
+  return String(text || "")
+    .replace(/\[\[([^\]]+)\]\]\(([^)]+)\)/g, "$1")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/^#+\s*/gm, "")
+    .replace(/[*_`>-]/g, "")
+    .replace(/^Download Card Errata\s*/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function docPreview(item, maxLen = 180) {
+  const raw = item.summary || item.content || item.answer || item.question || "";
+  const plain = markdownToPlain(raw);
+  if (plain.length <= maxLen) return plain;
+  return `${plain.slice(0, maxLen).trim()}...`;
+}
+
 function renderFaq(items, target, options = {}) {
   const compact = Boolean(options.compact);
   if (!target) return;
@@ -58,12 +76,7 @@ function renderFaq(items, target, options = {}) {
       </article>
     `;
       }
-      const preview = String(it.summary || it.content || "")
-        .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
-        .replace(/[#*_`>-]/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-        .slice(0, 220);
+      const preview = docPreview(it, 180);
       return `
       <article class="item page-card" data-href="faq-detail.html?id=${encodeURIComponent(
         it.id || ""
@@ -90,19 +103,16 @@ function renderErrata(items, target, options = {}) {
   }
   target.innerHTML = asItems(items)
     .map((it) => {
-      const preview = String(it.content || "")
-        .replace(/\[[^\]]+\]\(([^)]+)\)/g, "$1")
-        .replace(/[#*_`>-]/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-        .slice(0, 220);
+      const preview = docPreview(it, 180);
 
       if (compact) {
         return `
       <article class="item">
         <h3>${it.title || "Untitled errata"}</h3>
-        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
-        <p class="muted">ID: ${it.id || "-"} | Published: ${it.publishedAt || "-"} | Updated: ${
+        <p>${preview}</p>
+        <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
+          it.publishedAt || "-"
+        } | Updated: ${
           it.updatedAt || "-"
         }</p>
       </article>
@@ -113,7 +123,7 @@ function renderErrata(items, target, options = {}) {
         it.id || ""
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled errata"}</h3>
-        <p>${preview}${preview.length >= 220 ? "..." : ""}</p>
+        <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
           it.publishedAt || "-"
         } | Updated: ${it.updatedAt || "-"}</p>
