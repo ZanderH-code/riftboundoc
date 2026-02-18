@@ -1,87 +1,117 @@
 ﻿#!/usr/bin/env python3
 import argparse
+import html
 import re
 from pathlib import Path
 
 from pypdf import PdfReader
 
-
-HEADING_RE = re.compile(r"^(?P<num>\d{3}(?:\.[0-9a-z]+)*)\.\s+(?P<text>.+)$", re.IGNORECASE)
+NUMBERED_RE = re.compile(r"^(?P<num>\d{3}(?:\.[0-9a-z]+)*)\.\s*(?P<text>.*)$", re.IGNORECASE)
+BULLET_RE = re.compile(r"^[*\-]\s+(?P<text>.+)$")
 
 
 def normalize_line(line: str) -> str:
-    cleaned = re.sub(r"\s+", " ", line).strip()
-    cleaned = cleaned.replace("\u201c", '"').replace("\u201d", '"')
-    cleaned = cleaned.replace("\u2018", "'").replace("\u2019", "'")
-    return cleaned
+    line = re.sub(r"\s+", " ", line).strip()
+    # Normalize common ligatures from PDF extraction.
+    line = (
+        line.replace("\ufb01", "fi")
+        .replace("\ufb02", "fl")
+        .replace("\u201c", '"')
+        .replace("\u201d", '"')
+        .replace("\u2018", "'")
+        .replace("\u2019", "'")
+        .replace("\u2014", "-")
+    )
+    return line
 
 
-def is_heading_text(text: str) -> bool:
+def is_short_heading(text: str) -> bool:
     words = text.split()
-    if not words:
-        return False
-    if len(words) > 9:
+    if not words or len(words) > 10:
         return False
     if text.startswith("*"):
         return False
-    if text.endswith(('.', '!', '?', ';', ':')):
+    if text.endswith((".", ",", ";", ":", "!", "?")):
         return False
     return True
 
 
-def classify_line(line: str) -> str:
-    if not line:
-        return ""
-
-    if line.startswith("*"):
-        return f"- {line.lstrip('* ').strip()}"
-
-    m = HEADING_RE.match(line)
-    if m:
-        num = m.group("num")
-        text = m.group("text").strip()
-        if text.startswith("*"):
-            return f"- **{num}.** {text.lstrip('* ').strip()}"
-        if is_heading_text(text):
-            return f"#### {num}. {text}"
-        return f"**{num}.** {text}"
-
-    return line
+def level_from_num(num: str) -> int:
+    return max(0, num.count("."))
 
 
-def format_page_text(page_num: int, raw_text: str) -> str:
-    out = [f"### Page {page_num}"]
+def make_rule_row(rule_id: str, content: str, row_type: str, level: int = 0) -> str:
+    rid = html.escape(rule_id)
+    txt = html.escape(content)
+    return (
+        f'<div class="rule-row {row_type} level-{level}">'
+        f'<div class="rule-id">{rid}</div>'
+        f'<div class="rule-text">{txt}</div>'
+        "</div>"
+    )
+
+
+def format_page(page_num: int, raw_text: str) -> str:
     lines = [normalize_line(x) for x in raw_text.splitlines()]
     lines = [x for x in lines if x]
 
-    for line in lines:
-        out.append(classify_line(line))
+    out = [f"### Page {page_num}", '<div class="rule-sheet">']
+    last_numbered = False
 
+    for line in lines:
+        # Numbered rule lines: 103.1.b.2. text
+        m = NUMBERED_RE.match(line)
+        if m:
+            num_raw = m.group("num")
+            num = num_raw + "."
+            text = m.group("text").strip()
+            lvl = level_from_num(num_raw)
+
+            if not text:
+                out.append(make_rule_row(num, "", "rule-plain", lvl))
+            elif lvl == 0 and num_raw.endswith("00") and is_short_heading(text):
+                out.append(make_rule_row(num, text, "rule-chapter", lvl))
+            elif is_short_heading(text):
+                out.append(make_rule_row(num, text, "rule-heading", lvl))
+            else:
+                out.append(make_rule_row(num, text, "rule-plain", lvl))
+
+            last_numbered = True
+            continue
+
+        # Bullet lines become sub-points visually.
+        bm = BULLET_RE.match(line)
+        if bm:
+            text = "* " + bm.group("text")
+            out.append(make_rule_row("", text, "rule-bullet", 1))
+            last_numbered = False
+            continue
+
+        # Continuation lines (often wrapped from previous rule).
+        if last_numbered:
+            out.append(make_rule_row("", line, "rule-cont", 1))
+        else:
+            out.append(make_rule_row("", line, "rule-plain", 0))
+
+        last_numbered = False
+
+    out.append("</div>")
     return "\n\n".join(out)
 
 
-def extract_pdf_markdown(pdf_path: Path) -> str:
+def convert_pdf(pdf_path: Path) -> str:
     reader = PdfReader(str(pdf_path))
-    chunks = []
-
+    pages = []
     for i, page in enumerate(reader.pages, start=1):
-        text = page.extract_text() or ""
-        chunks.append(format_page_text(i, text))
-
-    return "\n\n---\n\n".join(chunks).strip() + "\n"
+        pages.append(format_page(i, page.extract_text() or ""))
+    return "\n\n---\n\n".join(pages).strip() + "\n"
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Convert a PDF rulebook into structured markdown text."
-    )
+    parser = argparse.ArgumentParser(description="Convert PDF to styled rule markdown.")
     parser.add_argument("input_pdf", help="Input PDF path")
-    parser.add_argument("output_md", help="Output Markdown path")
-    parser.add_argument(
-        "--title",
-        default="Rulebook",
-        help="Markdown H1 title (default: Rulebook)",
-    )
+    parser.add_argument("output_md", help="Output markdown path")
+    parser.add_argument("--title", default="Rulebook", help="Top title")
     args = parser.parse_args()
 
     input_pdf = Path(args.input_pdf)
@@ -91,9 +121,12 @@ def main() -> None:
         raise SystemExit(f"Input PDF not found: {input_pdf}")
 
     output_md.parent.mkdir(parents=True, exist_ok=True)
+    body = convert_pdf(input_pdf)
 
-    body = extract_pdf_markdown(input_pdf)
-    header = f"# {args.title}\n\n> Converted from PDF for web reading.\n\n"
+    header = (
+        f"# {args.title}\n\n"
+        "> Converted from official PDF with structured rule layout.\n\n"
+    )
     output_md.write_text(header + body, encoding="utf-8")
     print(f"Saved markdown: {output_md}")
 

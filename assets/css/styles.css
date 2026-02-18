@@ -298,3 +298,110 @@ button.secondary {
     grid-template-columns: 1fr;
   }
 }
+/* Rule-sheet layout (close to official PDF rhythm) */
+.rule-sheet {
+  border: 1px solid #cfd5db;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.rule-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border-bottom: 1px solid #e2e6eb;
+}
+
+.rule-row:last-child {
+  border-bottom: 0;
+}
+
+.rule-id {
+  padding: 8px 10px;
+  border-right: 1px solid #d6dbe1;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  color: #223342;
+}
+
+.rule-text {
+  padding: 8px 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #1f2f3d;
+}
+
+.rule-row.rule-chapter {
+  grid-template-columns: 130px 1fr;
+  background: #f9fbfd;
+}
+
+.rule-row.rule-chapter .rule-id,
+.rule-row.rule-chapter .rule-text {
+  font-family: "Literata", serif;
+  font-size: 2.05rem;
+  font-weight: 700;
+  line-height: 1.15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #1d2d3c;
+  border-bottom: 2px solid #1d2d3c;
+}
+
+.rule-row.rule-heading .rule-text {
+  font-size: 1.65rem;
+  font-weight: 700;
+  font-family: "Literata", serif;
+  border-top: 2px solid #1d2d3c;
+  border-bottom: 1px solid #d8dde3;
+}
+
+.rule-row.rule-heading .rule-id {
+  font-size: 1.65rem;
+  font-family: "Literata", serif;
+  font-weight: 700;
+  border-top: 2px solid #1d2d3c;
+}
+
+.rule-row.rule-heading.level-1 .rule-text,
+.rule-row.rule-heading.level-1 .rule-id,
+.rule-row.rule-heading.level-2 .rule-text,
+.rule-row.rule-heading.level-2 .rule-id {
+  font-size: 1.25rem;
+}
+
+.rule-row.rule-bullet .rule-text {
+  padding-left: 18px;
+}
+
+.rule-row.rule-cont .rule-id {
+  color: transparent;
+}
+
+.rule-row.level-1 .rule-text {
+  padding-left: 20px;
+}
+
+.rule-row.level-2 .rule-text {
+  padding-left: 38px;
+}
+
+.rule-row.level-3 .rule-text {
+  padding-left: 56px;
+}
+
+.rule-row.level-4 .rule-text {
+  padding-left: 74px;
+}
+
+@media (max-width: 860px) {
+  .rule-row {
+    grid-template-columns: 88px 1fr;
+  }
+
+  .rule-row.rule-chapter .rule-id,
+  .rule-row.rule-chapter .rule-text,
+  .rule-row.rule-heading .rule-id,
+  .rule-row.rule-heading .rule-text {
+    font-size: 1.35rem;
+  }
+}
