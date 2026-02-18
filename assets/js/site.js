@@ -51,6 +51,21 @@ function renderRules(files, target) {
     .join("");
 }
 
+function renderPages(items, target) {
+  target.innerHTML = asItems(items)
+    .map(
+      (it) => `
+      <article class="item">
+        <h3>${it.title || "Untitled page"}</h3>
+        <p>${it.summary || ""}</p>
+        <p class="muted">Updated: ${it.updatedAt || "-"}</p>
+        <a href="page.html?id=${encodeURIComponent(it.id || "")}">Open</a>
+      </article>
+    `
+    )
+    .join("");
+}
+
 async function initHome() {
   const pages = await getJson("data/pages.json", []);
   const faqs = await getJson("data/faqs.json", []);
@@ -62,6 +77,7 @@ async function initHome() {
   q("#stats-update").textContent = today();
 
   renderFaq(asItems(faqs).slice(0, 4), q("#home-faq"));
+  renderPages(asItems(pages).slice(0, 4), q("#home-pages"));
 }
 
 async function initFaqPage() {
@@ -98,18 +114,7 @@ async function initPage() {
 
 async function initPageList() {
   const pages = await getJson("data/pages.json", []);
-  q("#page-list").innerHTML = asItems(pages)
-    .map(
-      (it) => `
-      <article class="item">
-        <h3>${it.title}</h3>
-        <p>${it.summary || ""}</p>
-        <p class="muted">Updated: ${it.updatedAt || "-"}</p>
-        <a href="page.html?id=${encodeURIComponent(it.id)}">Open</a>
-      </article>
-    `
-    )
-    .join("");
+  renderPages(asItems(pages), q("#page-list"));
 }
 
 window.site = {
