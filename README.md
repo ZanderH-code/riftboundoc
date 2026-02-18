@@ -14,6 +14,12 @@ Static website for Riftbound players with:
 2. In repository settings, enable **Pages** and choose branch `main` and folder `/ (root)`.
 3. Open: `https://<owner>.github.io/<repo>/`
 
+Clean share URLs (no `.html`):
+- `https://<owner>.github.io/<repo>/faq/`
+- `https://<owner>.github.io/<repo>/errata/`
+- `https://<owner>.github.io/<repo>/rules/`
+- `https://<owner>.github.io/<repo>/pages/`
+
 ## Content Management
 
 ### Option A: Edit files directly

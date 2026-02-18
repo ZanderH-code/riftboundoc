@@ -2,38 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Errata Detail - Riftbound Hub</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="assets/js/site.js"></script>
+    <title>Redirecting...</title>
+    <script>
+      const q = window.location.search || "";
+      window.location.replace(`errata-detail/${q}`);
+    </script>
   </head>
   <body>
-    <header class="topbar">
-      <div class="container">
-        <a class="brand" href="index.html">Riftbound Hub</a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="faq.html">FAQ</a>
-          <a href="errata.html">Errata</a>
-          <a href="rules.html">Rules</a>
-          <a href="page.html">Pages</a>
-        </nav>
-      </div>
-    </header>
-    <main class="container">
-      <article class="doc-shell">
-        <div class="doc-meta" id="errata-meta">Loading...</div>
-        <div id="page-content-wrap">
-          <h1 id="errata-title" style="padding: 16px 22px 0; margin: 0">Loading...</h1>
-          <p id="errata-source" class="muted" style="padding: 0 22px"></p>
-          <div id="errata-content" class="errata-content" style="padding: 0 22px 24px"></div>
-        </div>
-      </article>
-    </main>
-    <script>
-      window.site.navActive();
-      window.site.initErrataDetail();
-    </script>
+    <a href="errata-detail/">Go to Errata Detail</a>
   </body>
 </html>

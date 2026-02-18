@@ -1,54 +1,14 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pages - Riftbound Hub</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="assets/js/site.js"></script>
+    <title>Redirecting...</title>
+    <script>
+      const q = window.location.search || "";
+      window.location.replace(`pages/${q}`);
+    </script>
   </head>
   <body>
-    <header class="topbar">
-      <div class="container">
-        <a class="brand" href="index.html">Riftbound Hub</a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="faq.html">FAQ</a>
-          <a href="errata.html">Errata</a>
-          <a href="rules.html">Rules</a>
-          <a href="page.html">Pages</a>
-        </nav>
-      </div>
-    </header>
-    <main class="container">
-      <h1>Community Pages</h1>
-      <p class="muted">Read structured rules and guides in web-native format.</p>
-      <div class="reading-layout">
-        <aside class="side-panel">
-          <section class="card">
-            <h2>Page List</h2>
-            <div id="page-list" class="list"></div>
-          </section>
-          <nav class="toc" id="page-toc">
-            <strong>On This Page</strong>
-            <p class="muted">Headings will appear after loading.</p>
-          </nav>
-        </aside>
-        <article class="doc-shell">
-          <div class="doc-meta" id="doc-meta">Ready</div>
-          <div id="page-content-wrap">
-            <h2 id="page-title" style="padding: 16px 22px 0; margin: 0">Loading...</h2>
-            <p id="page-summary" class="muted" style="padding: 0 22px"></p>
-            <div id="page-content"></div>
-          </div>
-        </article>
-      </div>
-    </main>
-    <script>
-      window.site.navActive();
-      window.site.initPageList();
-      window.site.initPage();
-    </script>
+    <a href="pages/">Go to Pages</a>
   </body>
 </html>

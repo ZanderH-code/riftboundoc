@@ -1,5 +1,30 @@
-﻿const q = (selector) => document.querySelector(selector);
+const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
+const ROOT_RESERVED = new Set([
+  "faq",
+  "faq-detail",
+  "errata",
+  "errata-detail",
+  "rules",
+  "pages",
+  "reader",
+  "assets",
+  "content",
+  "data",
+  "tools",
+]);
+
+function siteBase() {
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  if (!parts.length) return "/";
+  if (ROOT_RESERVED.has(parts[0])) return "/";
+  return `/${parts[0]}/`;
+}
+
+function route(path) {
+  const clean = String(path || "").replace(/^\/+/, "");
+  return `${siteBase()}${clean}`;
+}
 
 async function getJson(path, fallback = null) {
   try {
@@ -13,9 +38,13 @@ async function getJson(path, fallback = null) {
 }
 
 function navActive() {
-  const name = window.location.pathname.split("/").pop() || "index.html";
+  const normalize = (pathOrHref) => {
+    const url = new URL(pathOrHref, window.location.href);
+    return url.pathname.replace(/index\.html$/i, "").replace(/\/+$/, "/");
+  };
+  const now = normalize(window.location.pathname);
   document.querySelectorAll("nav a").forEach((a) => {
-    if (a.getAttribute("href") === name) a.classList.add("active");
+    if (normalize(a.getAttribute("href") || "") === now) a.classList.add("active");
   });
 }
 
@@ -86,16 +115,15 @@ function renderFaq(items, target, options = {}) {
     `;
       }
       const preview = docPreview(it, 180);
+      const href = route(`faq-detail/?id=${encodeURIComponent(it.id || "")}`);
       return `
-      <article class="item page-card" data-href="faq-detail.html?id=${encodeURIComponent(
-        it.id || ""
-      )}" tabindex="0" role="link">
+      <article class="item page-card" data-href="${href}" tabindex="0" role="link">
         <h3>${it.title || "Untitled FAQ"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
           formatDate(it.publishedAt)
         } | Updated: ${formatDate(it.updatedAt)}</p>
-        <a href="faq-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
+        <a href="${href}">Read online</a>
       </article>
     `;
     })
@@ -127,16 +155,15 @@ function renderErrata(items, target, options = {}) {
       </article>
     `;
       }
+      const href = route(`errata-detail/?id=${encodeURIComponent(it.id || "")}`);
       return `
-      <article class="item page-card" data-href="errata-detail.html?id=${encodeURIComponent(
-        it.id || ""
-      )}" tabindex="0" role="link">
+      <article class="item page-card" data-href="${href}" tabindex="0" role="link">
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
           formatDate(it.publishedAt)
         } | Updated: ${formatDate(it.updatedAt)}</p>
-        <a href="errata-detail.html?id=${encodeURIComponent(it.id || "")}">Read online</a>
+        <a href="${href}">Read online</a>
       </article>
     `;
     })
@@ -169,7 +196,7 @@ function resolveRuleLink(item) {
   const kind = String(item.kind || item.type || "pdf").toLowerCase();
   if (kind === "page") {
     return {
-      href: `page.html?id=${encodeURIComponent(item.pageId || item.id || "")}`,
+      href: route(`pages/?id=${encodeURIComponent(item.pageId || item.id || "")}`),
       target: "",
       rel: "",
     };
@@ -181,8 +208,9 @@ function resolveRuleLink(item) {
       rel: "noopener noreferrer",
     };
   }
+  const src = item.url && /^https?:\/\//i.test(String(item.url)) ? item.url : route(item.url || "");
   return {
-    href: `reader.html?src=${encodeURIComponent(item.url || "")}`,
+    href: route(`reader/?src=${encodeURIComponent(src)}`),
     target: "",
     rel: "",
   };
@@ -206,8 +234,8 @@ function renderPages(items, target) {
   target.innerHTML = asItems(items)
     .map(
       (it) => `
-      <article class="item page-card" data-href="page.html?id=${encodeURIComponent(
-        it.id || ""
+      <article class="item page-card" data-href="${route(
+        `pages/?id=${encodeURIComponent(it.id || "")}`
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled page"}</h3>
         <p>${it.summary || ""}</p>
@@ -248,7 +276,7 @@ function renderCoreRuleCard(pages, rules, target) {
     return;
   }
   const href = corePage
-    ? `page.html?id=${encodeURIComponent(corePage.id)}`
+    ? route(`pages/?id=${encodeURIComponent(corePage.id)}`)
     : resolveRuleLink(coreRuleEntry).href;
   const title = corePage?.title || coreRuleEntry?.title || "Riftbound Core Rules";
   const summary =

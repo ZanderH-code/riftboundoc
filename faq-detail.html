@@ -2,38 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ Detail - Riftbound Hub</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="assets/js/site.js"></script>
+    <title>Redirecting...</title>
+    <script>
+      const q = window.location.search || "";
+      window.location.replace(`faq-detail/${q}`);
+    </script>
   </head>
   <body>
-    <header class="topbar">
-      <div class="container">
-        <a class="brand" href="index.html">Riftbound Hub</a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="faq.html">FAQ</a>
-          <a href="errata.html">Errata</a>
-          <a href="rules.html">Rules</a>
-          <a href="page.html">Pages</a>
-        </nav>
-      </div>
-    </header>
-    <main class="container">
-      <article class="doc-shell">
-        <div class="doc-meta" id="faq-meta">Loading...</div>
-        <div id="page-content-wrap">
-          <h1 id="faq-title" style="padding: 16px 22px 0; margin: 0">Loading...</h1>
-          <p id="faq-source" class="muted" style="padding: 0 22px"></p>
-          <div id="faq-content" class="errata-content" style="padding: 0 22px 24px"></div>
-        </div>
-      </article>
-    </main>
-    <script>
-      window.site.navActive();
-      window.site.initFaqDetail();
-    </script>
+    <a href="faq-detail/">Go to FAQ Detail</a>
   </body>
 </html>
