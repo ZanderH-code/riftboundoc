@@ -2,8 +2,6 @@
 
 > Converted from official PDF with structured rule layout.
 
-### Page 1
-
 <div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Riftbound Core Rules</div></div>
@@ -56,14 +54,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.2.</div><div class="rule-text">Your deck&#x27;s Domain Identity is dictated by the domains of your Champion Legend. In the default card frame, these domains appear as symbols in the legend&#x27;s upper left corner.</div></div>
 
-</div>
-
----
-
-### Page 2
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.3.</div><div class="rule-text">If a card has a single Domain , then that card is permitted in the Domain Identity that corresponds to the same Domain.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.1.b.4.</div><div class="rule-text">If a card has more than one Domain , then that card is permitted only in a Domain Identity that contains all of the indicated Domains on that card.</div></div>
@@ -101,14 +91,6 @@
 <div class="rule-row rule-heading level-1"><div class="rule-id">103.3.</div><div class="rule-text">Rune Deck</div></div>
 
 <div class="rule-row rule-heading level-2"><div class="rule-id">103.3.a.</div><div class="rule-text">12 Rune Cards</div></div>
-
-</div>
-
----
-
-### Page 3
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">103.3.a.1.</div><div class="rule-text">Cards in this deck must be of the Domain Identity of your Champion Legend.</div></div>
 
@@ -162,14 +144,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">106.4.e.</div><div class="rule-text">Facedown Zones are not locations.</div></div>
 
-</div>
-
----
-
-### Page 4
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-heading level-1"><div class="rule-id">106.5.</div><div class="rule-text">The Legend Zone</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">106.5.a.</div><div class="rule-text">The space for each player&#x27;s Champion Legend.</div></div>
@@ -220,14 +194,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">107.4.b.</div><div class="rule-text">Primarily houses the face-down runes during gameplay.</div></div>
 
-</div>
-
----
-
-### Page 5
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">107.4.c.</div><div class="rule-text">The order of runes in the deck is Secret Information during the course of play. See rule 127. Privacy for more information.</div></div>
 
 <div class="rule-row rule-heading level-1"><div class="rule-id">107.5.</div><div class="rule-text">Banishment</div></div>
@@ -273,14 +239,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">108.2.</div><div class="rule-text">The State of all Game Objects in the Play Area is also Public Information. Examples: If a Unit is Buffed If a Gear is Exhausted Etc.</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">109.</div><div class="rule-text">Whenever a Game Object changes zones to or from a Non-Board Zone , all Temporary Modifications of all kinds cease to be tracked on it in all capacities. Examples: Damage is cleared. Buffs are removed.</div></div>
-
-</div>
-
----
-
-### Page 6
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Temporarily granted Keywords are no longer granted.</div></div>
 
@@ -336,14 +294,6 @@
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">123.</div><div class="rule-text">Game Objects include, but are not limited to, the following: Main Deck cards in any zone Runes in any zone Legends</div></div>
 
-</div>
-
----
-
-### Page 7
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Battlefields Tokens Abilities of any type on the chain Buffs and other status markers</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">124.</div><div class="rule-text">Cards</div></div>
@@ -388,14 +338,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">129.5.</div><div class="rule-text">The term face up is used to describe the state during regular play of having a card&#x27;s front face presented</div></div>
 
-</div>
-
----
-
-### Page 8
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">129.6.</div><div class="rule-text">Cards are considered to be Public Information while in this state, even if obscured by other cards in a pile. Example: The Trash is Public Information because all cards there have their front face presented even while stacked.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">130.</div><div class="rule-text">Cost</div></div>
@@ -435,14 +377,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">132.4.</div><div class="rule-text">Main Deck Cards begin the game in the Main Deck or (in the case of a Chosen Champion ) the Champion Zone.</div></div>
 
 <div class="rule-row rule-heading level-2"><div class="rule-id">132.4.a.</div><div class="rule-text">Permanents</div></div>
-
-</div>
-
----
-
-### Page 9
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">132.4.a.1.</div><div class="rule-text">An umbrella sub-category encompassing Main Deck Game Objects that remain on the board after being played.</div></div>
 
@@ -487,14 +421,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">133.1.</div><div class="rule-text">Most cards belong to one or more of six Domains , identified by one or more symbols in the lower right corner.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">133.2.</div><div class="rule-text">Each Domain has an associated color, a unique symbol, and a shorthand used to represent that symbol in written text.</div></div>
-
-</div>
-
----
-
-### Page 10
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">133.2.a.</div><div class="rule-text">Fury is associated with the color red and represented by a circular symbol with three projecting points. Its shorthand is [R].</div></div>
 
@@ -546,14 +472,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.2.</div><div class="rule-text">The cost of Exhausting a Permanent is represented by the &quot;exhaust symbol,&quot; which resembles a card turning sideways. Its shorthand is [E]. (Some previous rules information has given its shorthand as [T].)</div></div>
 
-</div>
-
----
-
-### Page 11
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.3.</div><div class="rule-text">Might is represented by the &quot;Might symbol,&quot; which resembles a sword and shield. Its shorthand is [M]. (Some previous rules information has given its shorthand as [S].)</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">134.2.e.4.</div><div class="rule-text">Power of a specific Domain is represented by its domain symbol and the corresponding shorthand. See rule 133. Domain for more information.</div></div>
@@ -595,14 +513,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">136.</div><div class="rule-text">2 A card&#x27;s Might Bonus can be +0.</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">136.</div><div class="rule-text">3 A card&#x27;s Might Bonus modulates the Might of the card to which the card that has the Might Bonus is Attached . See rule 716 Attachment for more information.</div></div>
-
-</div>
-
----
-
-### Page 12
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">136.3.</div><div class="rule-text">a The Might Bonus is applied while Attached and stops applying as soon as the card with the Might Bonus is no longer Attached.</div></div>
 
@@ -653,14 +563,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">141.1.</div><div class="rule-text">Damage is not a Game Object.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">141.2.</div><div class="rule-text">Damage is a value tracked per-Unit.</div></div>
-
-</div>
-
----
-
-### Page 13
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">141.3.</div><div class="rule-text">Damage tracks how close a Unit is to being Killed. See rule 415. Kill for more information.</div></div>
 
@@ -718,14 +620,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">143.4.a.</div><div class="rule-text">Units may move from their Base to a Battlefield.</div></div>
 
-</div>
-
----
-
-### Page 14
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">143.4.a.1.</div><div class="rule-text">Units cannot Move to a Battlefield that already has units from 2 other players present.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">143.4.b.</div><div class="rule-text">Units may move from a Battlefield to their Base.</div></div>
@@ -776,14 +670,6 @@
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">147.</div><div class="rule-text">Gear have several Intrinsic Properties unique to them.</div></div>
 
-</div>
-
----
-
-### Page 15
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">147.1.</div><div class="rule-text">Gear enters play Ready.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">147.2.</div><div class="rule-text">Gear can only be played to a player&#x27;s Base.</div></div>
@@ -829,14 +715,6 @@
 <div class="rule-row rule-heading level-2"><div class="rule-id">155.2.a.</div><div class="rule-text">Action</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">155.2.a.1.</div><div class="rule-text">This indicates that, in addition to being able to be played during an Open State , this spell may also be played during Open States during Showdowns.</div></div>
-
-</div>
-
----
-
-### Page 16
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-heading level-2"><div class="rule-id">155.2.b.</div><div class="rule-text">Reaction</div></div>
 
@@ -888,14 +766,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">160.2.b.</div><div class="rule-text">Recycle this: [Reaction] - Add [C].</div></div>
 
-</div>
-
----
-
-### Page 17
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">160.2.b.1.</div><div class="rule-text">The Power added this way corresponds to the Domain of the Rune that is being Recycled.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">161.</div><div class="rule-text">Rune Pools</div></div>
@@ -945,14 +815,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">166.9.</div><div class="rule-text">Battlefields can have Triggered Abilities. See rule 375. Triggered Abilities for more information.</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">167.</div><div class="rule-text">Battlefields are not Permanents.</div></div>
-
-</div>
-
----
-
-### Page 18
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">168.</div><div class="rule-text">The number of Battlefields on the Board is determined by the Mode of Play.</div></div>
 
@@ -1006,14 +868,6 @@
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">179.</div><div class="rule-text">Tokens are not cards.</div></div>
 
-</div>
-
----
-
-### Page 19
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">179.1.</div><div class="rule-text">Tokens have some properties in common with cards.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">179.1.a.</div><div class="rule-text">Tokens are played by their owner if their card type is played, following all the applicable steps for playing a card plus any restrictions or modifications from the effect that created the token. See rule 346. Playing Cards for more information.</div></div>
@@ -1060,14 +914,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">184.3.a.1.</div><div class="rule-text">Units moving to or being played to a battlefield apply Contested status if that battlefield is not already contested and that Unit &#x27;s controller does not already control that battlefield.</div></div>
 
-</div>
-
----
-
-### Page 20
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">184.3.b.</div><div class="rule-text">A Battlefield remains Contested until Control is established or re-established.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">184.3.c.</div><div class="rule-text">While a Battlefield remains Contested, Control of a Battlefield cannot change.</div></div>
@@ -1105,14 +951,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">185.2.b.</div><div class="rule-text">That player chooses modes.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">185.2.c.</div><div class="rule-text">That player pays costs.</div></div>
-
-</div>
-
----
-
-### Page 21
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">185.3.</div><div class="rule-text">For Permanents and Runes , when they Enter the Board , that player is assigned as that Game Object&#x27;s Controller.</div></div>
 
@@ -1163,14 +1001,6 @@
 <div class="rule-row rule-heading level-0"><div class="rule-id">307.</div><div class="rule-text">States of the Turn</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">308.</div><div class="rule-text">At any given time, the turn is in either a Neutral State or a Showdown State.</div></div>
-
-</div>
-
----
-
-### Page 22
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">308.1.</div><div class="rule-text">If a Showdown is in progress, the turn is in a Showdown State.</div></div>
 
@@ -1226,14 +1056,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">313.1.</div><div class="rule-text">Focus is the permission to take appropriately timed Discretionary Actions when the turn is in a Showdown Open State.</div></div>
 
-</div>
-
----
-
-### Page 23
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">See rule 307. States of the Turn for more information.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">313.1.a.</div><div class="rule-text">The player with Focus must obey any additional restrictions on which Discretionary Actions may be performed. Example: A player with Focus may not play spells or activate abilities that don&#x27;t have the Action or Reaction keywords.</div></div>
@@ -1286,14 +1108,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">315.4.b.1.</div><div class="rule-text">If there are no cards remaining in their Main Deck to draw, the Turn Player has been Burned Out . See rule 418. Burn Out for more information.</div></div>
 
-</div>
-
----
-
-### Page 24
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">315.4.b.2.</div><div class="rule-text">After completing the Burn Out the Turn Player still Draws 1.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">315.4.c.</div><div class="rule-text">Perform any actions as instructed by game objects during this time.</div></div>
@@ -1341,14 +1155,6 @@
 <div class="rule-row rule-plain level-3"><div class="rule-id">316.5.b.1.</div><div class="rule-text">Showdowns that occur as a result of a player moving to an empty Battlefield are a stand-alone Phase and do not create a Combat.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">316.5.c.</div><div class="rule-text">A Showdown is a structured Window of Opportunity where Players may play cards and activate abilities with Action or Reaction. See rule 337. Showdowns for more information.</div></div>
-
-</div>
-
----
-
-### Page 25
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">316.6.</div><div class="rule-text">When a player has no more Discretionary Actions they wish to execute, they must indicate they are ending their turn.</div></div>
 
@@ -1406,14 +1212,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">322.1.</div><div class="rule-text">1. If a player has as many points as the Victory Score , that player wins.</div></div>
 
-</div>
-
----
-
-### Page 26
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-heading level-0"><div class="rule-id">322.</div><div class="rule-text">2 2. Handle outstanding board state</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">322.</div><div class="rule-text">3 2a. All Units that have non-zero Damage marked on them equalling or exceeding their Might that have Deathknell abilities will trigger their Deathknell ability now, making note of their current location, attributes, and other information relevant to add the trigger as a Pending Item See rule 734 Deathknell for more information .</div></div>
@@ -1453,14 +1251,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">323.</div><div class="rule-text">Special Cleanups are Cleanup steps invoked at specific times that have additional steps not present in a normal Cleanup.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">323.1.</div><div class="rule-text">When a Special Cleanup is invoked, the unique steps added will be inserted and defined by the sub-section that invokes it. Example: When a Combat Cleanup is invoked, the Combat section defines what steps are added to the Cleanup.</div></div>
-
-</div>
-
----
-
-### Page 27
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">323.2.</div><div class="rule-text">If events during a Special Cleanup require another Cleanup, a normal Cleanup is invoked, not another iteration of the Special Cleanup .</div></div>
 
@@ -1522,14 +1312,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">333.1.b.</div><div class="rule-text">Each Item is Finalized in the order it was appended to the Chain.</div></div>
 
-</div>
-
----
-
-### Page 28
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">333.1.c.</div><div class="rule-text">Abilities that Add resources, Units , and Gear resolve immediately when Finalized and do not progress to Step 2: Execute. See rule 346. Playing Cards for more information.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">333.1.c.1.</div><div class="rule-text">If the Chain is empty, play proceeds in an Open State.</div></div>
@@ -1579,14 +1361,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">336.1.</div><div class="rule-text">The newest item on the Chain resolves. Execute its game effects in their entirety. See rule 346. Playing Cards for more information on resolving spells. See rule 386. Playing or Activating Abilities for more information on resolving abilities.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">336.2.</div><div class="rule-text">If the Chain is empty, play proceeds in an Open State.</div></div>
-
-</div>
-
----
-
-### Page 29
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">336.3.</div><div class="rule-text">If the Chain is not empty and there are one or more Pending Items , return to Step 1: Finalize.</div></div>
 
@@ -1638,14 +1412,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">344.3.</div><div class="rule-text">Pass.</div></div>
 
-</div>
-
----
-
-### Page 30
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">344.3.a.</div><div class="rule-text">If all Players have passed once in sequence, the Showdown ends.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">344.3.a.1.</div><div class="rule-text">Perform a Cleanup.</div></div>
@@ -1696,14 +1462,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">351.3.</div><div class="rule-text">If another Card Effect or ability is currently resolving, continue resolving it before proceeding with any further steps of this process.</div></div>
 
-</div>
-
----
-
-### Page 31
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id">352.</div><div class="rule-text">2. Make necessary choices.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">352.1.</div><div class="rule-text">If the card is a spell, or has an effect that specifies a choice &quot;As I am played,&quot; those choices are made now.</div></div>
@@ -1744,14 +1502,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">352.8.b.</div><div class="rule-text">It meets all targeting restrictions. e.g., A unit is a valid target for a spell that refers to a &quot;unit at a battlefield,&quot; &quot;enemy unit,&quot; &quot;unit you control,&quot; or &quot;unit with Might 4 or greater&quot; only if it meets the appropriate criteria.</div></div>
 
-</div>
-
----
-
-### Page 32
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">352.8.c.</div><div class="rule-text">It is not the spell or ability itself. e.g., A spell that says &quot;Counter a spell&quot; cannot target itself. e.g., An ability of a permanent can target that permanent, because abilities and their sources are separate objects.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">352.9.</div><div class="rule-text">If a spell or ability requires one or more players to choose objects, players, or zones that are not targets, those choices are made on resolution.</div></div>
@@ -1774,14 +1524,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">352.10.c.1.</div><div class="rule-text">This includes costs within instructions, identified by phrases like &quot;[do X] to [do Y].&quot; The cost within that instruction is &quot;[do X].&quot; e.g., &quot;When I hold, you may kill another friendly unit here to draw 1&quot; does not target anything. e.g., &quot;When you play me, you may spend a buff to move a friendly unit&quot; targets the friendly unit, but not the buff.</div></div>
 
-</div>
-
----
-
-### Page 33
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">352.10.d.</div><div class="rule-text">It is programmatically selected based on its characteristics rather than chosen by the spell or ability&#x27;s controller. e.g., &quot;Kill all units at a battlefield&quot; targets a battlefield, but does not target any units. e.g., &quot;Kill all units at battlefields&quot; doesn&#x27;t target anything. e.g., &quot;Destroy a unit. Its controller draws 2 cards&quot; targets the unit, but not its controller. e.g., &quot;Ready your legend&quot; doesn&#x27;t target anything, because you can only have one legend. e.g., &quot;Ready a friendly legend&quot; targets a legend, because in a 2v2 game there are two friendly legends. e.g., &quot;Recycle all cards in your trash&quot; doesn&#x27;t target anything, because it affects all cards and you only have one trash.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">352.10.d.1.</div><div class="rule-text">This exception applies solely to objects for which no choice is ever possible.</div></div>
@@ -1803,14 +1545,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">352.13.</div><div class="rule-text">If a card specifies that a player chooses &quot;any number&quot; or &quot;up to&quot; some number of Game Objects to be affected, they may choose any number of available targets, including zero. If they choose zero, the spell or ability can be played without any targets.</div></div>
 
 <div class="rule-row rule-heading level-1"><div class="rule-id">352.14.</div><div class="rule-text">Splitting</div></div>
-
-</div>
-
----
-
-### Page 34
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">352.14.a.</div><div class="rule-text">If a card specifies that an amount of damage may be split among some number of Units , then each Unit chosen is Targeted.</div></div>
 
@@ -1850,14 +1584,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">353.2.a.1.</div><div class="rule-text">Some Additional Costs specified by Passive Abilities on the card being played or another card are Mandatory , and must be paid to complete playing the card. They use the phrase &quot;as an additional cost&quot; and don&#x27;t include the word &quot;may.&quot; Example: A unit has the passive ability &quot;As an additional cost to play me, kill a friendly unit.&quot; To play that unit, a player must kill a friendly unit.</div></div>
 
-</div>
-
----
-
-### Page 35
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">See rule 360. Passive Abilities for more information.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">353.2.a.2.</div><div class="rule-text">The cost imposed by the Deflect keyword is a Mandatory Additional Cost. See rule 735. Deflect for more information.</div></div>
@@ -1887,14 +1613,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">354.</div><div class="rule-text">4. Pay the card&#x27;s costs.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">354.1.</div><div class="rule-text">In total, pay the combined Energy cost (if any) and Power cost (if any).</div></div>
-
-</div>
-
----
-
-### Page 36
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">354.1.a.</div><div class="rule-text">During this step, the spell&#x27;s controller can use activated abilities with the Reaction tag that Add resources to add Energy and Power to pay the spell&#x27;s costs. See rule 161. Rune Pools and rule 416. Add for more information.</div></div>
 
@@ -1936,14 +1654,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">356.3.d.</div><div class="rule-text">Otherwise, execute the game effect of the spell, from top to bottom of the rules text of the card and then place the card in the Trash of the owning player.</div></div>
 
-</div>
-
----
-
-### Page 37
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-heading level-2"><div class="rule-id">356.3.e.</div><div class="rule-text">Handling illegal and impossible instructions</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">356.3.e.1.</div><div class="rule-text">The spell resolves even if some or all of its targets are illegal.</div></div>
@@ -1963,14 +1673,6 @@
 <div class="rule-row rule-plain level-3"><div class="rule-id">356.3.e.8.</div><div class="rule-text">If an instruction has more than one Target and fewer than all of the Targets become Invalid or Unavailable by the time the spell is finished being played, the instruction will execute, with only the Targets available and valid being operated on.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">356.3.e.9.</div><div class="rule-text">The process for a card&#x27;s choice becoming Invalid or Unavailable is referred to as mistargeting. Example: A spell has the instruction &quot;Deal 2 to a unit at a battlefield.&quot; Before that instruction can execute, the chosen unit is moved to its base. The instruction will not be executed, because it specifies that the unit it chooses must be at a Battlefield, and by the time it attempted to execute, the unit was no longer valid as a choice.</div></div>
-
-</div>
-
----
-
-### Page 38
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">356.3.e.10.</div><div class="rule-text">It is possible for none of a spell&#x27;s instructions to be executed as it resolves, due to all of them requiring targets to act on and all of those targets becoming Invalid or Unavailable . In this case, the spell has no effect but is still considered played. Example: A player plays a spell that reads &quot;Deal 2 to a unit at a battlefield&quot; with no other instructions, and chooses an enemy unit at a battlefield. They also control a unit with the ability &quot;When you play a spell, give me +1 [M] this turn.&quot; Before the spell resolves, the chosen unit is moved to its base. The spell resolves and its only instruction cannot be executed, but the unit&#x27;s ability still triggers as the spell resolves and gives it +1 [M].</div></div>
 
@@ -1993,14 +1695,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">361.</div><div class="rule-text">Conditions, rules, constraints, or statements that affect the course of regular play.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">361.1.</div><div class="rule-text">These abilities have a wide variety of formats to recognize. Example: &quot;I get +1[M] while you have 2 or more cards in your hand.&quot;</div></div>
-
-</div>
-
----
-
-### Page 39
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Example: &quot;Friendly Yordles at my battlefield have [Shield].&quot;</div></div>
 
@@ -2050,14 +1744,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">370.2.a.</div><div class="rule-text">Declare activation of the Ability.</div></div>
 
-</div>
-
----
-
-### Page 40
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">370.2.a.1.</div><div class="rule-text">The ability goes on the chain but has no card to represent it, so players need to take note that it is now a Closed State.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">370.2.b.</div><div class="rule-text">Proceed with executing the Chain.</div></div>
@@ -2096,14 +1782,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">376.2.c.1.</div><div class="rule-text">If a Game Object with a Triggered Ability that is active in a specific zone, it is evaluated and subsequently triggered if it enters that zone at the same time that its Trigger &#x27;s condition is met. Example: Immortal Phoenix says &quot;When you kill a unit with a spell, you may pay [1][C] to play me from your trash.&quot; This ability triggers if Immortal Phoenix is in your trash immediately after you kill a unit with a spell, even if the unit you killed with a spell was that Immortal Phoenix.</div></div>
 
-</div>
-
----
-
-### Page 41
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">376.2.c.2.</div><div class="rule-text">A Game Object will not be able to successfully be able to evaluate its Trigger Condition , however, if it leaves the zone that its Trigger is active from at the same time that its Trigger is satisfied. Example: Viktor, Leader says &quot;When another non-Recruit unit you control dies, play a 1 [M] Recruit unit token into your base.&quot; This ability triggers if Viktor is on the board immediately after another non-Recruit unit you control dies. It does not trigger if Viktor and another non-Recruit unit you control die during the same game action (for instance, if they are both killed in the same Cleanup due to the damage dealt by Unchecked Power).</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">376.3.</div><div class="rule-text">When a Condition is met, a Triggered Ability behaves like an Activated Ability and is placed on the Chain.</div></div>
@@ -2137,14 +1815,6 @@
 <div class="rule-row rule-plain level-4"><div class="rule-id">376.4.b.2.b.</div><div class="rule-text">The Conquer Abilities of anything that references the player Conquering is put on the Chain as a Pending Item when the Condition that the player that controls the triggering source has performed a Conquer and gained 1 Victory Point.</div></div>
 
 <div class="rule-row rule-plain level-4"><div class="rule-id">376.4.b.2.c.</div><div class="rule-text">If the act of gaining one point from Conquering is negated or replaced in any way, the Conquer Effect will still trigger.</div></div>
-
-</div>
-
----
-
-### Page 42
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">376.4.b.3.</div><div class="rule-text">These Triggered Abilities can be referred to as Conquer Effects.</div></div>
 
@@ -2190,14 +1860,6 @@
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">378.</div><div class="rule-text">Presence on Cards outside of the Board</div></div>
 
-</div>
-
----
-
-### Page 43
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">378.1.</div><div class="rule-text">Triggered Abilities on cards outside of the Board rely on the Information Level of the zone they are in.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">378.2.</div><div class="rule-text">Triggered Abilities outside of the Board will self-describe their context. Example: The triggered ability &quot;When you conquer, you may discard 1 to return this from your trash to your hand.&quot; triggers while the card it&#x27;s on is in the trash, and not anywhere else.</div></div>
@@ -2235,14 +1897,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">384.</div><div class="rule-text">Delayed Abilities will resolve or be active just like the ability they augment, but only during the specified time in the effect that created the Delayed Ability. Example: Ravenborn Tome reads &quot;The next spell you play this turn deals 1 Bonus Damage&quot; is a Delayed Passive Ability that passively adds 1 damage to just the next spell played. The next spell is a specific time, and the 1 Bonus Damage is a passive ability. Example: Noxian Guillotine reads &quot;Choose a unit. Kill it the next time it takes damage this turn.&quot; When the chosen unit takes damage is the specified time, and killing it is the condition for a Delayed Triggered Ability.</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">385.</div><div class="rule-text">Delayed Abilities are not associated with Units or Gear; they are created by other Abilities or Spells . As such they are executed when their condition and/or specified time occurs regardless of whether the source of the Delayed Ability is still on the board or not.</div></div>
-
-</div>
-
----
-
-### Page 44
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">386.</div><div class="rule-text">Playing or Activating Abilities</div></div>
 
@@ -2292,14 +1946,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">392.2.a.</div><div class="rule-text">This is not an Ability being countered.</div></div>
 
-</div>
-
----
-
-### Page 45
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-heading level-0"><div class="rule-id">393.</div><div class="rule-text">5. Check Legality</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">393.1.</div><div class="rule-text">Ensure that the Ability&#x27;s targets are still legal.</div></div>
@@ -2343,14 +1989,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">398.2.a.</div><div class="rule-text">A Limited Action is a game action that a spell, ability, or circumstance of the turn&#x27;s progression causes the player to perform. A player cannot perform these actions at-will.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">398.2.b.</div><div class="rule-text">These actions can only be taken when a player is instructed to do so as the execution of an effect or during their specified occasion during the turn. Example: A player may Draw during the Draw Step of the Beginning Phase of their turn or when instructed to do so by a spell or ability. They can&#x27;t choose to</div></div>
-
-</div>
-
----
-
-### Page 46
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Draw at any other time.</div></div>
 
@@ -2406,14 +2044,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">402.1.c.</div><div class="rule-text">If a Unit is instructed to be Readied while it is already Ready , nothing additional happens.</div></div>
 
-</div>
-
----
-
-### Page 47
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">402.2.</div><div class="rule-text">&quot;Ready&quot; is a state for Game Objects that other game effects and rules can reference.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">402.3.</div><div class="rule-text">This is a Limited Action.</div></div>
@@ -2455,14 +2085,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">404.1.b.</div><div class="rule-text">To Deal Damage to Units, mark the specified amount of Damage on the Unit.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">404.1.c.</div><div class="rule-text">Damage is marked on each unit separately.</div></div>
-
-</div>
-
----
-
-### Page 48
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">404.1.d.</div><div class="rule-text">Damage can be Dealt to more than one Unit at the same time.</div></div>
 
@@ -2509,14 +2131,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">405.3.a.</div><div class="rule-text">Players may only Heal units when game effects instruct them to, or at specific points in the turn.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">406.</div><div class="rule-text">Play</div></div>
-
-</div>
-
----
-
-### Page 49
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">406.1.</div><div class="rule-text">A player Plays cards by paying costs associated with that card. See rule 346. Playing Cards for more information.</div></div>
 
@@ -2566,14 +2180,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">408.4.</div><div class="rule-text">If a facedown card would be put into a zone whose Privacy is Private or Secret , or if the game ends, its owner reveals it to all players.</div></div>
 
-</div>
-
----
-
-### Page 50
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">See rule 127. Privacy for more information.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">409.</div><div class="rule-text">Discard</div></div>
@@ -2615,14 +2221,6 @@
 <div class="rule-row rule-heading level-0"><div class="rule-id">411.</div><div class="rule-text">Reveal</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">411.1.</div><div class="rule-text">Revealing is the act of presenting a card to all players from a zone that one or more players do not have access to the information of.</div></div>
-
-</div>
-
----
-
-### Page 51
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">411.1.a.</div><div class="rule-text">Revealed is a temporary state and is not a zone.</div></div>
 
@@ -2668,14 +2266,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">413.1.a.</div><div class="rule-text">A Buff is also an object.</div></div>
 
-</div>
-
----
-
-### Page 52
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">413.1.b.</div><div class="rule-text">To Buff a unit, place a Buff Counter on it if it does not have one already</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">413.1.b.1.</div><div class="rule-text">If the unit already has a Buff Counter on it, it does not get another one.</div></div>
@@ -2716,14 +2306,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">415.1.a.1.</div><div class="rule-text">Active Kill is when the action is taken when instructed by a game effect or as a cost for a card or ability.</div></div>
 
-</div>
-
----
-
-### Page 53
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-4"><div class="rule-id">415.1.a.1.a.</div><div class="rule-text">This is referred to as a Kill Instruction.</div></div>
 
 <div class="rule-row rule-plain level-4"><div class="rule-id">415.1.a.1.b.</div><div class="rule-text">When a unit with a Deathknell is to be put in the Trash due to a Kill Instruction , it first has its Deathknell added to the chain as a Pending Item. Note the unit&#x27;s location, attributes, and other relevant information to process its Deathknell when finalized before completing this Kill Instruction .</div></div>
@@ -2762,14 +2344,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">416.2.a.</div><div class="rule-text">Priority and Focus will not pass from Add abilities being finalized, and will resolve before any other outstanding items on the chain are finalized.</div></div>
 
-</div>
-
----
-
-### Page 54
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">416.3.</div><div class="rule-text">Activated abilities that Add resources and have the Reaction tag can be activated during the playing or resolution of other spells and abilities, any time that those spells or abilities require that resources be paid. Example: A player can add Energy and Power through any means before initiating the process of playing a spell. After initiating that process, in the Pay Costs step, they may activate Add Reactions to add Energy or Power to pay costs.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">416.4.</div><div class="rule-text">Adding is a Limited Action.</div></div>
@@ -2805,14 +2379,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">418.2.</div><div class="rule-text">To Burn Out , a player does the following in sequence:</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">418.2.a.</div><div class="rule-text">Performs as much of the prescribed action as possible.</div></div>
-
-</div>
-
----
-
-### Page 55
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">418.2.b.</div><div class="rule-text">Recycles their trash into their Main Deck. Reminder: When multiple cards are Recycled to the Main Deck at the same time, those cards must be randomized</div></div>
 
@@ -2855,14 +2421,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">420.2.</div><div class="rule-text">a Players may only swap when Game Effects direct them to do so.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">421.</div><div class="rule-text">Attach</div></div>
-
-</div>
-
----
-
-### Page 56
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">421.1.</div><div class="rule-text">Attaching is the act of linking two cards on the board together to combine their effects in some way. This causes one or more cards to become Attached and at least one card to become a Top-Most Card. See rule 716 Attachment for more information.</div></div>
 
@@ -2908,14 +2466,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">422.1.c.</div><div class="rule-text">The card being Detached has its Effect Text become Inactive and its Rules Text cease being Inactive.</div></div>
 
-</div>
-
----
-
-### Page 57
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">422.1.d.</div><div class="rule-text">The Top-Most Card ceases to have the Effect Text of the card being Detached appended to its Rules Text.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">422.1.e.</div><div class="rule-text">The Top-Most Card ceases to have its Might modulated by the Might Bonus of the card being Detached.</div></div>
@@ -2959,14 +2509,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">425.2.b.</div><div class="rule-text">If an action would require a Move that would cause a Unit to become present in a Location where it cannot move for any reason, such as a Battlefield with two players that are not the controller of the Unit performing this Move action are in a Combat or such a Combat is Staged , it instead Recalls. See rule 432. Recalls for more information.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">425.3.</div><div class="rule-text">Units are the only Permanents that can Move.</div></div>
-
-</div>
-
----
-
-### Page 58
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">426.</div><div class="rule-text">Players may choose to move their Units with the Standard Move. See rule 142. for more information on the Standard Move.</div></div>
 
@@ -3018,14 +2560,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">439.2.</div><div class="rule-text">If Staged Combats stop being Staged before the Steps of Combat are initiated, they are not resolved or executed.</div></div>
 
-</div>
-
----
-
-### Page 59
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id">440.</div><div class="rule-text">Combat can only occur between Units controlled by exactly two players.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">440.1.</div><div class="rule-text">In Modes of Play with more than two players, Battlefields with Staged Combats or Combats in Progress are Invalid Destinations for Moves of all kinds ( Standard Moves or otherwise) by Units controlled by Players who don&#x27;t already have Units at that Battlefield. See rule 425.2.a. for more information on Invalid Destinations.</div></div>
@@ -3064,14 +2598,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">442.1.b.1.</div><div class="rule-text">The Attacking player, who has Focus , places Triggered Abilities on the Chain first, followed by all non- Defender players in Turn Order , followed by the Defending Player.</div></div>
 
-</div>
-
----
-
-### Page 60
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">442.1.c.</div><div class="rule-text">The State Closes if an Initial Chain was created.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">442.1.c.1.</div><div class="rule-text">Otherwise the Showdown continues, with the State Open as normal.</div></div>
@@ -3108,14 +2634,6 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">443.1.d.6.</div><div class="rule-text">If multiple Units have abilities or effects that require a player to assign them damage with the same priority, that player may assign damage to those units in any order. Example: A player is assigning damage to the following units: two units with Tank (&quot;I must be assigned combat damage first.&quot;) and one unit with no abilities. That player chooses one of the units with Tank and assigns combat damage to it. Then they must assign any remaining damage first to the other unit with Tank, then to the unit with no abilities.</div></div>
 
-</div>
-
----
-
-### Page 61
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">443.1.d.7.</div><div class="rule-text">If a Unit has one or more Abilities or effects applying to it that demand it be assigned damage in a specific way that is exclusionary, then the assigning player chooses only one of those abilities to apply when assigning damage. Example: Caitlyn, Patrolling (&quot;I must be assigned combat damage last.&quot;) has been given the Tank ability (&quot;I must be assigned combat damage first.&quot;). A player is assigning damage to this Caitlyn with Tank and two units with no abilities. That player can&#x27;t fulfill both of Caitlyn&#x27;s damage requirements, so they may choose to assign damage to Caitlyn first, fulfilling the Tank requirement, or last, fulfilling Caitlyn&#x27;s printed requirement. They can&#x27;t choose to apply damage to Caitlyn in between the other two units, because that wouldn&#x27;t fulfill either requirement.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">443.1.d.8.</div><div class="rule-text">If there is more than one unit in which this situation applies to, each unit is dealt with individually. The assigning player chooses which ability or effect applies, and then resolves the assignment. If this creates a situation where now more than one unit must be assigned with the same priority, those units may be assigned damage in any order as normal within that priority. Example: Two copies of Caitlyn, Patrolling (&quot;I must be assigned combat damage last.&quot;) have been given the Tank ability (&quot;I must be assigned combat damage first.&quot;). A player assigning damage to these two Caitlyns and one unit with no abilities could choose to fulfill both Caitlyns&#x27; Tank requirements by assigning them both damage before the other unit.</div></div>
@@ -3149,14 +2667,6 @@
 <div class="rule-row rule-heading level-0"><div class="rule-id">445.</div><div class="rule-text">Scoring</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">446.</div><div class="rule-text">A player Scores in one of two ways:</div></div>
-
-</div>
-
----
-
-### Page 62
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">446.1.</div><div class="rule-text">Conquer: A player gains Control of a Battlefield they did not yet Score this turn.</div></div>
 
@@ -3206,14 +2716,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">453.2.</div><div class="rule-text">When a sequence of applications completes, recur the process, and evaluate each layer again applying any effects that may now be applicable.</div></div>
 
-</div>
-
----
-
-### Page 63
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">453.3.</div><div class="rule-text">The removal or disqualification of an effect is separate from the application of the effect, but still can only be applied once. Example: Fiora, Victorious has printed Might 4 and says &quot;While I&#x27;m Mighty, I have Deflect, Ganking, and Shield.&quot; If a player places a buff on Fiora, her Might is increased in the Arithmetic layer, after the layer for Ability-Altering Effects. The Ability-Altering Effect layer is then re-checked and the abilities Deflect, Ganking, and Shield applied. Since each effect has been applied once and there are no other effects to apply, Fiora&#x27;s characteristics are finalized as 5 Might with Deflect, Ganking, and Shield. While a buffed Fiora, Victorious is in combat as a defender, an additional +1 Might will be applied in the Arithmetic layer, giving her 6 Might and the 3 keywords. Example: A buffed Fiora, Victorious is in combat as a defender when her buff is removed. Reevaluating the layers in sequence, she no longer gains Deflect, Ganking, and Shield during the Ability-Altering Effect layer, so when the Arithmetic layer is evaluated, neither the buff (which is gone) nor Shield (which she no longer has) apply. She goes directly from 6 Might with three keywords to 4 Might with no keywords..</div></div>
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">454.</div><div class="rule-text">Layers are applied in the following order:</div></div>
@@ -3235,14 +2737,6 @@
 <div class="rule-row rule-plain level-2"><div class="rule-id">454.2.a.</div><div class="rule-text">This layer deals with effects that grant, remove, or replace the abilities or rules text of Game Objects . Keywords Passive Abilities Appending rules text Removing rules text Duplicating Rules Text from one Game Object to another</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">454.2.b.</div><div class="rule-text">Effects for this layer can be identified by the phrase &quot;become(s),&quot; &quot;give,&quot; &quot;lose(s),&quot; &quot;have,&quot; &quot;has,&quot; &quot;is,&quot; or &quot;are&quot; in the text. Example: A permanent has the ability &quot;Other friendly units have [Vision].&quot; Other friendly units gain the Vision keyword in this layer.</div></div>
-
-</div>
-
----
-
-### Page 64
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">454.2.c.</div><div class="rule-text">Abilities of Effect Text of Attached cards are appended in this layer.</div></div>
 
@@ -3285,14 +2779,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">457.</div><div class="rule-text">If more than one effect applies in the same layer but no dependency is established, then Timestamp order is applied to the effects within that layer and sublayer</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">457.1.</div><div class="rule-text">When an effect begins applying, it establishes a time for which it is compared against other Game Effects for purposes of resolving Layered effects as its Timestamp.</div></div>
-
-</div>
-
----
-
-### Page 65
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">457.1.a.</div><div class="rule-text">Timestamps are not rote values.</div></div>
 
@@ -3352,14 +2838,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">462.4.a.</div><div class="rule-text">Each player provides three (3) Battlefields , included in their deck during deck building. Only</div></div>
 
-</div>
-
----
-
-### Page 66
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">1 will be used, chosen during setup.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">462.5.</div><div class="rule-text">Setup: Each player randomly selects one (1) of their three (3) Battlefields . The other two are removed and will not be used for this game. The selected Battlefields are placed in the Battlefield Zone.</div></div>
@@ -3401,14 +2879,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">464.5.</div><div class="rule-text">Setup: Each player randomly selects one (1) of their three (3) Battlefields . The other two are discarded and will not be used for this game. The selected Battlefields are placed between the three Players before play and will be used for this game.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">464.6.</div><div class="rule-text">Format: Best of 1. The first player to reach the Victory Score in Points wins the Match.</div></div>
-
-</div>
-
----
-
-### Page 67
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">464.7.</div><div class="rule-text">First Turn Process: The player going first does not draw a card during their first Draw Phase of the game. The player going last channels an extra Rune from their Rune Deck during their first Channel Phase of the game.</div></div>
 
@@ -3459,14 +2929,6 @@
 <div class="rule-row rule-plain level-3"><div class="rule-id">466.5.b.3.</div><div class="rule-text">If allies are sitting next to each other, turn order is passed across the table.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">466.6.</div><div class="rule-text">Format: Best of 1. The first team to reach the Victory Score in Points wins the Match.</div></div>
-
-</div>
-
----
-
-### Page 68
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">466.6.a.</div><div class="rule-text">Teammates win or lose together.</div></div>
 
@@ -3520,14 +2982,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">651.2.</div><div class="rule-text">If more than one player remains after a concession, follow the steps for the Removal of a Player.</div></div>
 
-</div>
-
----
-
-### Page 69
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">651.3.</div><div class="rule-text">Removal of a player involves them no longer being able to make choices or otherwise influence the game.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">651.4.</div><div class="rule-text">If the player has Teammates due to the Mode of Play , that player&#x27;s Teammates also lose and are removed from the game.</div></div>
@@ -3573,14 +3027,6 @@
 <div class="rule-row rule-plain level-0"><div class="rule-id">702.</div><div class="rule-text">Buffs are objects placed on Units.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">702.1.</div><div class="rule-text">Buffs can be tracked with a buff reminder card from a Riftbound booster pack or with any spare object in your surroundings.</div></div>
-
-</div>
-
----
-
-### Page 70
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">702.2.</div><div class="rule-text">Buffs can be added or spent.</div></div>
 
@@ -3628,14 +3074,6 @@
 
 <div class="rule-row rule-plain level-0"><div class="rule-id">715.</div><div class="rule-text">Bonus Damage applies to the total damage Dealt by one instance of the action.</div></div>
 
-</div>
-
----
-
-### Page 71
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">715.1.</div><div class="rule-text">If the Deal action has a single target, the amount of Damage to that target will be increased by the Bonus Damage granted to it.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">715.2.</div><div class="rule-text">If the Deal action has multiple targets, the amount of Damage dealt to each target is increased by Bonus Damage individually and separately. Example: Singularity is a spell that says &quot;Deal 6 to each of up to two units.&quot; A player plays Singularity while they also control Annie, Fiery, a unit that says &quot;Your spells and abilities deal 1 Bonus Damage.&quot; Singularity deals 1 Bonus Damage to both of its targets, dealing 7 to each.</div></div>
@@ -3680,14 +3118,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">719.3.</div><div class="rule-text">A Top-Most Card and all cards Attached to it are at the same location.</div></div>
 
-</div>
-
----
-
-### Page 72
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">719.3.a.</div><div class="rule-text">When the Top-Most Card moves, all Attached cards move with it.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">719.4.</div><div class="rule-text">The Exhausted and Ready state of the Top-Most card does not affect nor change the status of the Attached cards and vice versa.</div></div>
@@ -3731,14 +3161,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">727.2.</div><div class="rule-text">Keywords can be identified by having a colored highlight behind them.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">727.2.a.</div><div class="rule-text">The color of the highlight has no effect on gameplay.</div></div>
-
-</div>
-
----
-
-### Page 73
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">727.3.</div><div class="rule-text">Keywords can be referenced or specified by other Game Effects.</div></div>
 
@@ -3790,14 +3212,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">732.1.</div><div class="rule-text">Action is a Permissive keyword.</div></div>
 
-</div>
-
----
-
-### Page 74
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-2"><div class="rule-id">732.1.a.</div><div class="rule-text">It can be present on Spells , Units , Rune Abilities, Legend Abilities or Permanent Abilities.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">732.1.b.</div><div class="rule-text">Action grants the corresponding card or effect permission to be played or activated during Showdowns, even when it is not the Controlling player&#x27;s turn.</div></div>
@@ -3845,14 +3259,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">733.3.</div><div class="rule-text">Assault, and whether or not a unit has Assault, is a characteristic of the Unit and may be checked or referenced by other Game Effects.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">734.</div><div class="rule-text">Deathknell</div></div>
-
-</div>
-
----
-
-### Page 75
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">734.1.</div><div class="rule-text">Deathknell is a Triggered Ability keyword.</div></div>
 
@@ -3904,14 +3310,6 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">735.3.</div><div class="rule-text">Deflect, and whether or not a permanent has Deflect, is a characteristic of the permanent and may be checked or referenced by other Game Effects.</div></div>
 
-</div>
-
----
-
-### Page 76
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-heading level-0"><div class="rule-id">736.</div><div class="rule-text">Ganking</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">736.1.</div><div class="rule-text">Ganking is a Passive Ability keyword.</div></div>
@@ -3953,14 +3351,6 @@
 <div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.1.</div><div class="rule-text">A hidden unit must be played to that battlefield.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.2.</div><div class="rule-text">If a hidden spell or a play effect of a hidden permanent chooses any targets, those targets must be chosen from among options at that battlefield, unless the ability explicitly restricts targeting in a way that makes this impossible. Example: Blastcone Fae is a unit with Hidden and &quot;When you play me, give a unit -2 [M] this turn, to a minimum of 1 [M].&quot; Because this is a play effect, its target must be chosen from among units at the same battlefield if Blastcone Fae was played from Hidden. Example: Tideturner is a unit with Hidden and &quot;When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location.&quot; Because its play ability has a targeting restriction that can never be fulfilled by a unit at its battlefield, its target may be chosen freely from among the available options.</div></div>
-
-</div>
-
----
-
-### Page 77
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">737.1.d.3.</div><div class="rule-text">If a hidden spell or a play effect of a hidden permanent causes you to play a unit, you must choose to play that unit at that battlefield.</div></div>
 
@@ -4005,14 +3395,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">739.1.</div><div class="rule-text">Reaction is a Permissive keyword.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">739.1.a.</div><div class="rule-text">It can be present on Spells, Units, Rune Abilities, Legend Abilities and Permanent</div></div>
-
-</div>
-
----
-
-### Page 78
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Abilities.</div></div>
 
@@ -4063,14 +3445,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">740.2.</div><div class="rule-text">If a Unit has Shield, or has been granted Shield, and is granted Shield by an additional source, the Shield Value of all granted Shield keywords is summed. Example: Stalwart Poro has Shield. It is chosen as the target of Block, which says &quot;Give a unit [Shield 3] and [Tank] this turn.&quot; After Block resolves, Stalwart Poro has Shield 4 this turn.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">740.3.</div><div class="rule-text">Shield, and whether or not a unit has Shield, is a characteristic of the Unit and may be checked or referenced by other Game Effects.</div></div>
-
-</div>
-
----
-
-### Page 79
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">741.</div><div class="rule-text">Tank</div></div>
 
@@ -4125,14 +3499,6 @@
 <div class="rule-row rule-heading level-0"><div class="rule-id">744.</div><div class="rule-text">Equip</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">744.1.</div><div class="rule-text">Equip is an Activated Ability keyword.</div></div>
-
-</div>
-
----
-
-### Page 80
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">744.1.a.</div><div class="rule-text">Equip is normally present on Gear with the tag Equipment.</div></div>
 
@@ -4206,14 +3572,6 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">745.1.d.</div><div class="rule-text">Quick-Draw is functionally short for &quot; [Reaction] &quot; and &quot;When you play this, attach it to a Unit you control.&quot; See rule 716 Attachment for more information.</div></div>
 
-</div>
-
----
-
-### Page 81
-
-<div class="rule-sheet">
-
 <div class="rule-row rule-plain level-1"><div class="rule-id">745.2.</div><div class="rule-text">Multiple instances of Quick-Draw do not trigger separately and have no effect beyond the first.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">745.3.</div><div class="rule-text">Quick-Draw has no function while on the board.</div></div>
@@ -4251,14 +3609,6 @@
 <div class="rule-row rule-plain level-1"><div class="rule-id">746.4.</div><div class="rule-text">Repeat , and whether or not a spell has Repeat , is a characteristic of the Spell and may be checked or referenced by other Game Effects.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">747.</div><div class="rule-text">Weaponmaster</div></div>
-
-</div>
-
----
-
-### Page 82
-
-<div class="rule-sheet">
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">747.1.</div><div class="rule-text">Weaponmaster is a Triggered Ability keyword.</div></div>
 

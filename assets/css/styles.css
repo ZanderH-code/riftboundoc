@@ -1,14 +1,15 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Literata:opsz,wght@7..72,600;7..72,700&display=swap");
 
 :root {
-  --bg: #f5efe3;
-  --surface: #ffffff;
-  --ink: #1e2a32;
-  --subtle: #5b6770;
-  --brand: #0b5d6f;
-  --brand-2: #118ba3;
-  --line: #d5d8dc;
-  --accent: #ffe4a8;
+  --bg: #0b0f14;
+  --surface: #151b23;
+  --surface-2: #1b2430;
+  --ink: #e8edf3;
+  --subtle: #98a5b3;
+  --brand: #4cc9f0;
+  --brand-2: #72efdd;
+  --line: #2a3644;
+  --accent: #ffd166;
 }
 
 * {
@@ -20,8 +21,8 @@ body {
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 10% 0%, #fff8e8 0, transparent 34%),
-    radial-gradient(circle at 90% 0%, #e9f8fb 0, transparent 30%),
+    radial-gradient(circle at 10% 0%, #14212c 0, transparent 34%),
+    radial-gradient(circle at 90% 0%, #1a1f35 0, transparent 30%),
     var(--bg);
 }
 
@@ -36,7 +37,7 @@ a {
 
 .topbar {
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(9, 12, 18, 0.86);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -84,7 +85,7 @@ main {
 .hero {
   padding: 28px;
   border: 1px solid var(--line);
-  background: linear-gradient(140deg, #fffdf7, #ffffff 60%, #f7fdff);
+  background: linear-gradient(140deg, #121923, #151b23 60%, #192433);
   border-radius: 18px;
   box-shadow: 0 8px 30px rgba(11, 93, 111, 0.06);
 }
@@ -115,12 +116,22 @@ main {
 .item {
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #fff;
+  background: var(--surface-2);
   padding: 13px;
 }
 
 .item h3 {
   margin: 0 0 8px;
+}
+
+.page-card {
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.page-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
 }
 
 .toolbar {
@@ -137,7 +148,9 @@ button {
   font: inherit;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid #bcc4c6;
+  border: 1px solid #3b4653;
+  background: #0f141c;
+  color: var(--ink);
 }
 
 textarea {
@@ -153,9 +166,9 @@ button {
 }
 
 button.secondary {
-  background: #fff;
+  background: #1a2330;
   color: var(--ink);
-  border-color: #bcc4c6;
+  border-color: #3b4653;
 }
 
 .two-col {
@@ -179,7 +192,7 @@ button.secondary {
 .toc {
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #fff;
+  background: var(--surface);
   padding: 12px;
   margin-top: 12px;
   max-height: 62vh;
@@ -196,14 +209,14 @@ button.secondary {
 .doc-shell {
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: linear-gradient(180deg, #ffffff, #fffdf8);
-  box-shadow: 0 12px 34px rgba(9, 57, 67, 0.08);
+  background: linear-gradient(180deg, #111822, #131c27);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
   overflow: hidden;
 }
 
 .doc-meta {
   padding: 14px 18px;
-  background: #f8fbfc;
+  background: #0f1721;
   border-bottom: 1px solid var(--line);
   font-size: 0.9rem;
 }
@@ -220,7 +233,7 @@ button.secondary {
   font-family: "Literata", serif;
   margin-top: 1.15em;
   margin-bottom: 0.5em;
-  color: #132a36;
+  color: #eaf2ff;
 }
 
 #page-content h1 {
@@ -231,7 +244,7 @@ button.secondary {
 
 #page-content h2 {
   font-size: 1.4rem;
-  border-bottom: 1px solid #e9edf0;
+  border-bottom: 1px solid #2f3b4c;
   padding-bottom: 5px;
 }
 
@@ -244,25 +257,25 @@ button.secondary {
 }
 
 #page-content strong {
-  color: #0f3f53;
+  color: #8bd3ff;
 }
 
 #page-content blockquote {
   border-left: 4px solid var(--brand-2);
   margin: 1em 0;
   padding: 0.4em 0.9em;
-  background: #f2fbfe;
+  background: #10202a;
 }
 
 #page-content code {
-  background: #f2f4f7;
+  background: #1e2936;
   padding: 0.1em 0.3em;
   border-radius: 4px;
 }
 
 #page-content hr {
   border: 0;
-  border-top: 1px dashed #cad2d9;
+  border-top: 1px dashed #3e4b5a;
   margin: 1.4em 0;
 }
 
@@ -300,16 +313,16 @@ button.secondary {
 }
 /* Rule-sheet layout (close to official PDF rhythm) */
 .rule-sheet {
-  border: 1px solid #cfd5db;
+  border: 1px solid #334352;
   border-radius: 8px;
   overflow: hidden;
-  background: #fff;
+  background: #111922;
 }
 
 .rule-row {
   display: grid;
   grid-template-columns: 130px 1fr;
-  border-bottom: 1px solid #e2e6eb;
+  border-bottom: 1px solid #2f3d4b;
 }
 
 .rule-row:last-child {
@@ -318,21 +331,21 @@ button.secondary {
 
 .rule-id {
   padding: 8px 10px;
-  border-right: 1px solid #d6dbe1;
+  border-right: 1px solid #2f3d4b;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
-  color: #223342;
+  color: #b8c6d6;
 }
 
 .rule-text {
   padding: 8px 12px;
   font-family: "IBM Plex Sans", sans-serif;
-  color: #1f2f3d;
+  color: #dbe7f3;
 }
 
 .rule-row.rule-chapter {
   grid-template-columns: 130px 1fr;
-  background: #f9fbfd;
+  background: #182433;
 }
 
 .rule-row.rule-chapter .rule-id,
@@ -343,23 +356,23 @@ button.secondary {
   line-height: 1.15;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 2px solid #1d2d3c;
-  border-bottom: 2px solid #1d2d3c;
+  border-top: 2px solid #87c9ff;
+  border-bottom: 2px solid #87c9ff;
 }
 
 .rule-row.rule-heading .rule-text {
   font-size: 1.65rem;
   font-weight: 700;
   font-family: "Literata", serif;
-  border-top: 2px solid #1d2d3c;
-  border-bottom: 1px solid #d8dde3;
+  border-top: 2px solid #5f7b95;
+  border-bottom: 1px solid #334352;
 }
 
 .rule-row.rule-heading .rule-id {
   font-size: 1.65rem;
   font-family: "Literata", serif;
   font-weight: 700;
-  border-top: 2px solid #1d2d3c;
+  border-top: 2px solid #5f7b95;
 }
 
 .rule-row.rule-heading.level-1 .rule-text,

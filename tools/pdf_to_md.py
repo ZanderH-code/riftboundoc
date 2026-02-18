@@ -143,8 +143,8 @@ def merge_cross_page_continuations(page_rows):
             del cur_rows[0]
 
 
-def render_page(page_num: int, rows) -> str:
-    out = [f"### Page {page_num}", '<div class="rule-sheet">']
+def render_document(rows) -> str:
+    out = ['<div class="rule-sheet">']
     for row in rows:
         out.append(
             make_rule_row(row["id"], row["text"], row["type"], row.get("level", 0))
@@ -161,10 +161,10 @@ def convert_pdf(pdf_path: Path) -> str:
 
     merge_cross_page_continuations(page_rows)
 
-    pages = []
-    for i, rows in enumerate(page_rows, start=1):
-        pages.append(render_page(i, rows))
-    return "\n\n---\n\n".join(pages).strip() + "\n"
+    merged_rows = []
+    for rows in page_rows:
+        merged_rows.extend(rows)
+    return render_document(merged_rows).strip() + "\n"
 
 
 def main() -> None:

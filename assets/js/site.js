@@ -70,15 +70,33 @@ function renderPages(items, target) {
   target.innerHTML = asItems(items)
     .map(
       (it) => `
-      <article class="item">
+      <article class="item page-card" data-href="page.html?id=${encodeURIComponent(
+        it.id || ""
+      )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled page"}</h3>
         <p>${it.summary || ""}</p>
         <p class="muted">Updated: ${it.updatedAt || "-"}</p>
-        <a href="page.html?id=${encodeURIComponent(it.id || "")}">Open</a>
       </article>
     `
     )
     .join("");
+}
+
+function bindPageCards(container) {
+  if (!container) return;
+  container.querySelectorAll(".page-card").forEach((card) => {
+    const go = () => {
+      const href = card.getAttribute("data-href");
+      if (href) window.location.href = href;
+    };
+    card.addEventListener("click", go);
+    card.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter" || ev.key === " ") {
+        ev.preventDefault();
+        go();
+      }
+    });
+  });
 }
 
 function buildPageToc() {
@@ -87,7 +105,11 @@ function buildPageToc() {
   if (!toc || !content) return;
 
   const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
-  if (headings.length === 0) {
+  const ruleHeadings = Array.from(
+    content.querySelectorAll(".rule-row.rule-chapter, .rule-row.rule-heading")
+  );
+
+  if (headings.length === 0 && ruleHeadings.length === 0) {
     toc.innerHTML = "<strong>On This Page</strong><p class=\"muted\">No headings found.</p>";
     return;
   }
@@ -98,6 +120,20 @@ function buildPageToc() {
     const level = Number(el.tagName.slice(1));
     const margin = level === 2 ? 0 : level === 3 ? 14 : 28;
     html += `<a href=\"#${el.id}\" style=\"margin-left:${margin}px\">${el.textContent}</a>`;
+  });
+
+  ruleHeadings.forEach((row, idx) => {
+    const idCell = row.querySelector(".rule-id");
+    const textCell = row.querySelector(".rule-text");
+    const label = `${idCell?.textContent || ""} ${textCell?.textContent || ""}`.trim();
+    if (!label) return;
+    if (!row.id) row.id = `rule-${slugify(label)}-${idx + 1}`;
+    const level = row.classList.contains("level-0")
+      ? 0
+      : row.classList.contains("level-1")
+      ? 14
+      : 28;
+    html += `<a href=\"#${row.id}\" style=\"margin-left:${level}px\">${label}</a>`;
   });
   toc.innerHTML = html;
 }
@@ -113,7 +149,9 @@ async function initHome() {
   q("#stats-update").textContent = today();
 
   renderFaq(sortByUpdated(faqs).slice(0, 4), q("#home-faq"));
-  renderPages(sortByUpdated(pages).slice(0, 4), q("#home-pages"));
+  const homePages = q("#home-pages");
+  renderPages(sortByUpdated(pages).slice(0, 4), homePages);
+  bindPageCards(homePages);
 }
 
 async function initFaqPage() {
@@ -162,7 +200,9 @@ async function initPage() {
 
 async function initPageList() {
   const pages = await getJson("data/pages.json", []);
-  renderPages(sortByUpdated(pages), q("#page-list"));
+  const pageList = q("#page-list");
+  renderPages(sortByUpdated(pages), pageList);
+  bindPageCards(pageList);
 }
 
 window.site = {
