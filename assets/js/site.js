@@ -1,7 +1,8 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.10";
+const SITE_VERSION = "2026.02.20.11";
 const ROOT_RESERVED = new Set([
+  "cards",
   "faq",
   "faq-detail",
   "errata",
@@ -342,6 +343,57 @@ function renderPages(items, target) {
     .join("");
 }
 
+function normalizeCardsData(data) {
+  if (Array.isArray(data)) return data;
+  if (data && typeof data === "object" && Array.isArray(data.cards)) return data.cards;
+  return [];
+}
+
+function renderCards(items, target) {
+  if (!target) return;
+  const rows = asItems(items);
+  if (!rows.length) {
+    target.innerHTML =
+      '<article class="item"><h3>No cards yet</h3><p class="muted">Run tools/import_official_cards.py to sync official card gallery data.</p></article>';
+    return;
+  }
+  target.innerHTML = rows
+    .map((it) => {
+      const title = escapeHtml(it.name || "Untitled card");
+      const setName = escapeHtml(it.set || "-");
+      const code = escapeHtml(it.publicCode || "-");
+      const rarity = escapeHtml(it.rarity || "-");
+      const type = escapeHtml(asItems(it.cardTypes).join(", ") || "-");
+      const domains = escapeHtml(asItems(it.domains).join(", ") || "-");
+      const ability = escapeHtml(String(it.abilityText || "").slice(0, 260));
+      const img = escapeHtml(it.imageUrl || "");
+      const alt = escapeHtml(it.imageAlt || it.name || "Card image");
+      const stats = [
+        it.energy ? `Energy ${escapeHtml(it.energy)}` : "",
+        it.might ? `Might ${escapeHtml(it.might)}` : "",
+        it.power ? `Power ${escapeHtml(it.power)}` : "",
+      ]
+        .filter(Boolean)
+        .join(" | ");
+
+      return `
+      <article class="item card-item">
+        <div class="card-media">
+          ${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : "<div class=\"card-media-empty\">No image</div>"}
+        </div>
+        <div class="card-body">
+          <h3>${title}</h3>
+          <p class="muted">Code: ${code} | Set: ${setName}</p>
+          <p class="muted">Type: ${type} | Domain: ${domains} | Rarity: ${rarity}</p>
+          ${stats ? `<p class="muted">${stats}</p>` : ""}
+          ${ability ? `<p>${ability}${String(it.abilityText || "").length > 260 ? "..." : ""}</p>` : ""}
+        </div>
+      </article>
+    `;
+    })
+    .join("");
+}
+
 function bindPageCards(container) {
   if (!container) return;
   container.querySelectorAll(".page-card").forEach((card) => {
@@ -490,7 +542,7 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
       out.push(`## ${line}`);
       continue;
     }
-    if (/^Q:\s+/i.test(line) || /^Q锛歕s+/.test(line)) {
+    if (/^Q:\s+/i.test(line) || /^Q：\s+/.test(line)) {
       out.push(`### ${line}`);
       continue;
     }
@@ -632,7 +684,7 @@ function initReaderPrefs() {
   });
 }
 
-async function buildSearchIndex(pages, faqs, errata, rules) {
+async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
   const docs = [];
 
   for (const page of asItems(pages)) {
@@ -677,6 +729,29 @@ async function buildSearchIndex(pages, faqs, errata, rules) {
       title: item.title || item.name || "Untitled rule",
       href: link.href || "#",
       text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.source || ""}`),
+    });
+  }
+
+  for (const item of asItems(cards)) {
+    docs.push({
+      kind: "Card",
+      title: item.name || item.publicCode || "Untitled card",
+      href: route("cards/"),
+      text: markdownToPlain(
+        [
+          item.name,
+          item.publicCode,
+          item.set,
+          asItems(item.cardTypes).join(" "),
+          asItems(item.superTypes).join(" "),
+          asItems(item.domains).join(" "),
+          asItems(item.tags).join(" "),
+          item.rarity,
+          item.abilityText,
+        ]
+          .filter(Boolean)
+          .join("\n")
+      ),
     });
   }
 
@@ -840,7 +915,7 @@ async function initHomeSearch(data) {
   const modeSel = q("#home-search-mode");
   if (!input || !button || !meta || !list || !pager || !kindSel || !modeSel) return;
 
-  const docs = await buildSearchIndex(data.pages, data.faqs, data.errata, data.rules);
+  const docs = await buildSearchIndex(data.pages, data.faqs, data.errata, data.rules, data.cards);
   meta.textContent = `Index ready: ${docs.length} documents.`;
   let currentPage = 1;
   let latestResults = [];
@@ -916,16 +991,20 @@ async function initHome() {
   const pages = await getJson("data/pages.json", []);
   const faqs = await getJson("data/faqs.json", []);
   const errata = await getJson("data/errata.json", []);
+  const cardsRaw = await getJson("data/cards.json", { cards: [] });
+  const cards = normalizeCardsData(cardsRaw);
   const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
   const rules = normalizeRuleIndex(rulesIndex);
 
   const statsFaq = q("#stats-faq");
   const statsErrata = q("#stats-errata");
   const statsRules = q("#stats-rules");
+  const statsCards = q("#stats-cards");
   const statsUpdate = q("#stats-update");
   if (statsFaq) statsFaq.textContent = asItems(faqs).length;
   if (statsErrata) statsErrata.textContent = asItems(errata).length;
   if (statsRules) statsRules.textContent = asItems(rules).length;
+  if (statsCards) statsCards.textContent = asItems(cards).length;
   if (statsUpdate) statsUpdate.textContent = today();
 
   renderFaq(sortByPublishedThenUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
@@ -935,7 +1014,7 @@ async function initHome() {
   bindPageCards(q("#home-errata"));
   bindPageCards(q("#home-rules"));
   bindPageCards(q(".hero .grid"));
-  initHomeSearch({ pages, faqs, errata, rules });
+  initHomeSearch({ pages, faqs, errata, rules, cards });
 }
 
 async function initFaqPage() {
@@ -1033,6 +1112,78 @@ async function initErrataDetail() {
   buildTocFor("#errata-content", "#errata-toc");
   initMobileTocDrawer();
   highlightQueryIn("#errata-content");
+}
+
+async function initCardsPage() {
+  const raw = await getJson("data/cards.json", { cards: [] });
+  const cards = normalizeCardsData(raw);
+  const list = q("#cards-list");
+  const meta = q("#cards-meta");
+  const pager = q("#cards-pager");
+  const searchInput = q("#cards-search-input");
+  const searchBtn = q("#cards-search-btn");
+  const setFilter = q("#cards-set-filter");
+  const typeFilter = q("#cards-type-filter");
+  if (!list || !meta || !pager || !searchInput || !searchBtn || !setFilter || !typeFilter) return;
+
+  const sets = Array.from(
+    new Set(cards.map((x) => String(x.set || "").trim()).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
+  const types = Array.from(
+    new Set(cards.flatMap((x) => asItems(x.cardTypes)).map((x) => String(x || "").trim()).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
+
+  setFilter.innerHTML = '<option value="all">All Sets</option>' + sets.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
+  typeFilter.innerHTML = '<option value="all">All Types</option>' + types.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
+
+  const pageSize = 24;
+  let currentPage = 1;
+
+  const filtered = () => {
+    const term = markdownToPlain(searchInput.value).toLowerCase();
+    const setVal = String(setFilter.value || "all");
+    const typeVal = String(typeFilter.value || "all");
+    return cards.filter((c) => {
+      if (setVal !== "all" && String(c.set || "") !== setVal) return false;
+      if (typeVal !== "all" && !asItems(c.cardTypes).includes(typeVal)) return false;
+      if (!term) return true;
+      const hay = markdownToPlain(
+        [
+          c.name,
+          c.publicCode,
+          c.set,
+          c.rarity,
+          asItems(c.cardTypes).join(" "),
+          asItems(c.superTypes).join(" "),
+          asItems(c.domains).join(" "),
+          asItems(c.tags).join(" "),
+          c.abilityText,
+        ]
+          .filter(Boolean)
+          .join("\n")
+      ).toLowerCase();
+      return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
+    });
+  };
+
+  const render = (page = 1) => {
+    const rows = filtered();
+    const pageCount = Math.max(1, Math.ceil(rows.length / pageSize));
+    currentPage = Math.min(Math.max(1, page), pageCount);
+    const start = (currentPage - 1) * pageSize;
+    const view = rows.slice(start, start + pageSize);
+    renderCards(view, list);
+    meta.textContent = `${rows.length} card(s) | Page ${currentPage}/${pageCount} | Source: ${raw.source || "Riftbound Official"}`;
+    renderSearchPager(rows.length, currentPage, pageSize, pager, (p) => render(p));
+  };
+
+  searchBtn.addEventListener("click", () => render(1));
+  searchInput.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") render(1);
+  });
+  setFilter.addEventListener("change", () => render(1));
+  typeFilter.addEventListener("change", () => render(1));
+  render(1);
 }
 
 function initReader() {
@@ -1224,7 +1375,9 @@ function initReader() {
     const errata = await getJson("data/errata.json", []);
     const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
     const rules = normalizeRuleIndex(rulesIndex);
-    const docs = await buildSearchIndex(pages, faqs, errata, rules);
+    const cardsRaw = await getJson("data/cards.json", { cards: [] });
+    const cards = normalizeCardsData(cardsRaw);
+    const docs = await buildSearchIndex(pages, faqs, errata, rules, cards);
     const hits = searchDocs(query, docs, { kind: "Rule", mode: "hits" }).slice(0, 20);
     if (searchMeta) searchMeta.textContent = `${hits.length} rule hit(s) for "${query}".`;
     if (!searchResults) return;
@@ -1342,6 +1495,7 @@ async function initUpdatesPage() {
 window.site = {
   navActive,
   initHome,
+  initCardsPage,
   initFaqPage,
   initFaqDetail,
   initRulePage,

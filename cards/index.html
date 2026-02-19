@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ - riftboundoc</title>
+    <title>Cards - riftboundoc</title>
     <link rel="stylesheet" href="../assets/css/styles.css?v=20260220d" />
     <script src="../assets/js/site.js?v=20260220l"></script>
   </head>
@@ -22,31 +22,32 @@
       </div>
     </header>
     <main class="container">
-      <h1>FAQ Files</h1>
-      <p class="muted">Browse official FAQ entries and click "Read online" for full content.</p>
-      <div id="faq-list" class="list"></div>
+      <h1>Card Gallery</h1>
+      <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>
+      <section class="search-panel">
+        <div class="search-row">
+          <input id="cards-search-input" type="search" placeholder="Search by name, text, code, tag..." />
+          <button id="cards-search-btn" type="button">Search</button>
+        </div>
+        <div class="search-row">
+          <select id="cards-set-filter">
+            <option value="all">All Sets</option>
+          </select>
+          <select id="cards-type-filter">
+            <option value="all">All Types</option>
+          </select>
+        </div>
+        <p id="cards-meta" class="muted">Loading cards...</p>
+      </section>
+      <div id="cards-list" class="cards-list"></div>
+      <div id="cards-pager" class="search-pager"></div>
     </main>
     <footer class="footer"><div class="container"><span id="site-version">v-</span></div></footer>
     <script>
       window.site.navActive();
-      window.site.initFaqPage();
+      window.site.initCardsPage();
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
