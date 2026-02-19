@@ -13,6 +13,7 @@
   --reader-font-scale: 1;
   --reader-line-height: 1.72;
   --reader-max-width: 100%;
+  --anchor-offset: 112px;
 }
 
 * {
@@ -642,6 +643,14 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   margin: 0.65em 0;
 }
 
+/* Keep anchored headings visible below sticky top bar when jumping from TOC. */
+#page-content [id],
+#faq-content [id],
+#errata-content [id],
+.rule-sheet [id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
 #page-content strong {
   color: #8bd3ff;
 }
@@ -768,6 +777,10 @@ body.reader-immersive .pdf-frame {
 
   .search-row {
     grid-template-columns: 1fr;
+  }
+
+  :root {
+    --anchor-offset: 132px;
   }
 
   .cards-list {
