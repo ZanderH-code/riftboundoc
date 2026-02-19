@@ -1,5 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
+const SITE_VERSION = "2026.02.19";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -8,6 +9,7 @@ const ROOT_RESERVED = new Set([
   "rules",
   "pages",
   "reader",
+  "updates",
   "assets",
   "content",
   "data",
@@ -26,6 +28,25 @@ function route(path) {
   return `${siteBase()}${clean}`;
 }
 
+function withQuery(href, key, value) {
+  const url = new URL(href, window.location.href);
+  if (value) url.searchParams.set(key, value);
+  return url.pathname + (url.search || "");
+}
+
+function showStatus(message) {
+  const main = document.querySelector("main");
+  if (!main) return;
+  let box = document.querySelector("#status-banner");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "status-banner";
+    box.className = "status-banner";
+    main.prepend(box);
+  }
+  box.textContent = message;
+}
+
 async function getJson(path, fallback = null) {
   try {
     const res = await fetch(route(path), { cache: "no-store" });
@@ -33,6 +54,7 @@ async function getJson(path, fallback = null) {
     return await res.json();
   } catch (error) {
     console.warn(`Read failed: ${path}`, error);
+    showStatus(`Failed to load ${path}. Please refresh or check repository files.`);
     return fallback;
   }
 }
@@ -46,6 +68,8 @@ function navActive() {
   document.querySelectorAll("nav a").forEach((a) => {
     if (normalize(a.getAttribute("href") || "") === now) a.classList.add("active");
   });
+  const ver = document.querySelector("#site-version");
+  if (ver) ver.textContent = `v${SITE_VERSION}`;
 }
 
 function asItems(list) {
@@ -302,6 +326,80 @@ function renderCoreRuleCard(pages, rules, target) {
   `;
 }
 
+function buildTocFor(contentSelector, tocSelector) {
+  const content = q(contentSelector);
+  const toc = q(tocSelector);
+  if (!content || !toc) return;
+  const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
+  if (!headings.length) {
+    toc.innerHTML = "<strong>On This Page</strong><p class=\"muted\">No headings found.</p>";
+    return;
+  }
+  let html = "<strong>On This Page</strong>";
+  headings.forEach((el, idx) => {
+    if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
+    const level = Number(el.tagName.slice(1));
+    const margin = level === 2 ? 0 : level === 3 ? 14 : 28;
+    html += `<a href=\"#${el.id}\" style=\"margin-left:${margin}px\">${escapeHtml(el.textContent)}</a>`;
+  });
+  toc.innerHTML = html;
+}
+
+function highlightQueryIn(containerSelector) {
+  const container = q(containerSelector);
+  if (!container) return;
+  const term = new URLSearchParams(window.location.search).get("q");
+  const needle = markdownToPlain(term);
+  if (!needle) return;
+  const safe = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`(${safe})`, "ig");
+  container.innerHTML = container.innerHTML.replace(re, "<mark>$1</mark>");
+  const first = container.querySelector("mark");
+  if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function initReaderPrefs() {
+  const keys = {
+    scale: "rb_reader_scale",
+    line: "rb_reader_line",
+    width: "rb_reader_width",
+  };
+  const root = document.documentElement;
+  const apply = () => {
+    root.style.setProperty("--reader-font-scale", localStorage.getItem(keys.scale) || "1");
+    root.style.setProperty("--reader-line-height", localStorage.getItem(keys.line) || "1.72");
+    root.style.setProperty("--reader-max-width", localStorage.getItem(keys.width) || "100%");
+  };
+  apply();
+  const host = q("#reader-prefs");
+  if (!host) return;
+  host.innerHTML = `
+    <div class="reader-prefs">
+      <label>Font <input id="pref-scale" type="range" min="0.9" max="1.3" step="0.05" value="${localStorage.getItem(
+        keys.scale
+      ) || "1"}" /></label>
+      <label>Line <input id="pref-line" type="range" min="1.4" max="2.0" step="0.05" value="${localStorage.getItem(
+        keys.line
+      ) || "1.72"}" /></label>
+      <label>Width <input id="pref-width" type="range" min="60" max="100" step="5" value="${(
+        localStorage.getItem(keys.width) || "100%"
+      ).replace("%", "")}" /></label>
+    </div>
+  `;
+  q("#pref-scale")?.addEventListener("input", (e) => {
+    localStorage.setItem(keys.scale, e.target.value);
+    apply();
+  });
+  q("#pref-line")?.addEventListener("input", (e) => {
+    localStorage.setItem(keys.line, e.target.value);
+    apply();
+  });
+  q("#pref-width")?.addEventListener("input", (e) => {
+    localStorage.setItem(keys.width, `${e.target.value}%`);
+    apply();
+  });
+}
+
 async function buildSearchIndex(pages, faqs, errata, rules) {
   const docs = [];
 
@@ -353,7 +451,9 @@ async function buildSearchIndex(pages, faqs, errata, rules) {
   return docs;
 }
 
-function searchDocs(query, docs) {
+function searchDocs(query, docs, options = {}) {
+  const mode = options.mode || "hits";
+  const kindFilter = options.kind || "all";
   const tokens = markdownToPlain(query)
     .toLowerCase()
     .split(/\s+/)
@@ -362,6 +462,7 @@ function searchDocs(query, docs) {
 
   const matchedDocs = [];
   for (const doc of docs) {
+    if (kindFilter !== "all" && doc.kind !== kindFilter) continue;
     const hay = String(doc.text || "").toLowerCase();
     if (!tokens.every((t) => hay.includes(t))) continue;
 
@@ -376,6 +477,13 @@ function searchDocs(query, docs) {
     matchedDocs.push({ ...doc, score });
   }
   matchedDocs.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
+
+  if (mode === "docs") {
+    return matchedDocs.map((doc) => ({
+      ...doc,
+      snippet: buildSearchSnippetAt(doc.text, tokens, 0),
+    }));
+  }
 
   // Flatten to hit-level results: one result per matched snippet.
   const flattened = [];
@@ -475,10 +583,11 @@ function renderSearchResults(results, target, meta, pager, query, page = 1, page
   target.innerHTML = view
     .map((r) => {
       const snippet = r.snippet || "";
+      const link = withQuery(r.href, "q", query);
       return `
       <article class="item search-result">
         <div class="result-head">
-          <h3><a href="${r.href}">${escapeHtml(r.title)}</a></h3>
+          <h3><a href="${link}">${escapeHtml(r.title)}</a></h3>
           <span class="result-kind">${r.kind}</span>
         </div>
         <p class="result-snippet">${snippet}</p>
@@ -495,7 +604,9 @@ async function initHomeSearch(data) {
   const meta = q("#home-search-meta");
   const list = q("#home-search-results");
   const pager = q("#home-search-pager");
-  if (!input || !button || !meta || !list || !pager) return;
+  const kindSel = q("#home-search-kind");
+  const modeSel = q("#home-search-mode");
+  if (!input || !button || !meta || !list || !pager || !kindSel || !modeSel) return;
 
   const docs = await buildSearchIndex(data.pages, data.faqs, data.errata, data.rules);
   meta.textContent = `Index ready: ${docs.length} documents.`;
@@ -505,7 +616,10 @@ async function initHomeSearch(data) {
 
   const run = (page = 1) => {
     const query = input.value.trim();
-    latestResults = searchDocs(query, docs);
+    latestResults = searchDocs(query, docs, {
+      kind: kindSel.value || "all",
+      mode: modeSel.value || "hits",
+    });
     currentPage = page;
     renderSearchResults(latestResults, list, meta, pager, query, currentPage, pageSize, (p) => {
       run(p);
@@ -521,6 +635,8 @@ async function initHomeSearch(data) {
       renderSearchResults([], list, meta, pager, "", 1, pageSize, () => {});
     }
   });
+  kindSel.addEventListener("change", () => run(1));
+  modeSel.addEventListener("change", () => run(1));
 }
 
 function buildPageToc() {
@@ -624,6 +740,9 @@ async function initFaqDetail() {
   } else {
     q("#faq-content").innerHTML = `<pre>${body}</pre>`;
   }
+  initReaderPrefs();
+  buildTocFor("#faq-content", "#faq-toc");
+  highlightQueryIn("#faq-content");
 }
 
 async function initRulePage() {
@@ -663,6 +782,9 @@ async function initErrataDetail() {
   } else {
     q("#errata-content").innerHTML = `<pre>${body}</pre>`;
   }
+  initReaderPrefs();
+  buildTocFor("#errata-content", "#errata-toc");
+  highlightQueryIn("#errata-content");
 }
 
 function initReader() {
@@ -689,14 +811,20 @@ async function initPage() {
     q("#doc-meta").textContent = `Updated: ${formatDate(one.updatedAt)} | ID: ${one.id}`;
   }
 
-  const md = await fetch(route(one.file), { cache: "no-store" }).then((r) => r.text());
-  if (window.marked && typeof window.marked.parse === "function") {
-    q("#page-content").innerHTML = window.marked.parse(md);
-  } else {
-    q("#page-content").innerHTML = `<pre>${md}</pre>`;
+  try {
+    const md = await fetch(route(one.file), { cache: "no-store" }).then((r) => r.text());
+    if (window.marked && typeof window.marked.parse === "function") {
+      q("#page-content").innerHTML = window.marked.parse(md);
+    } else {
+      q("#page-content").innerHTML = `<pre>${md}</pre>`;
+    }
+  } catch (error) {
+    showStatus(`Failed to load page content: ${one.file}`);
   }
 
   buildPageToc();
+  initReaderPrefs();
+  highlightQueryIn("#page-content");
 }
 
 async function initPageList() {
@@ -704,6 +832,54 @@ async function initPageList() {
   const pageList = q("#page-list");
   renderPages(sortByUpdated(pages), pageList);
   bindPageCards(pageList);
+}
+
+async function initUpdatesPage() {
+  const wrap = q("#updates-list");
+  if (!wrap) return;
+  const pages = await getJson("data/pages.json", []);
+  const faqs = await getJson("data/faqs.json", []);
+  const errata = await getJson("data/errata.json", []);
+  const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
+  const rules = normalizeRuleIndex(rulesIndex);
+
+  const items = [
+    ...asItems(pages).map((x) => ({
+      kind: "Page",
+      title: x.title || "Untitled page",
+      updatedAt: x.updatedAt,
+      href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
+    })),
+    ...asItems(faqs).map((x) => ({
+      kind: "FAQ",
+      title: x.title || "Untitled FAQ",
+      updatedAt: x.updatedAt,
+      href: route(`faq-detail/?id=${encodeURIComponent(x.id || "")}`),
+    })),
+    ...asItems(errata).map((x) => ({
+      kind: "Errata",
+      title: x.title || "Untitled errata",
+      updatedAt: x.updatedAt,
+      href: route(`errata-detail/?id=${encodeURIComponent(x.id || "")}`),
+    })),
+    ...asItems(rules).map((x) => ({
+      kind: "Rule",
+      title: x.title || "Untitled rule",
+      updatedAt: x.updatedAt,
+      href: resolveRuleLink(x).href,
+    })),
+  ].sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")));
+
+  wrap.innerHTML = items
+    .map(
+      (it) => `
+    <article class="item">
+      <h3><a href="${it.href}">${escapeHtml(it.title)}</a></h3>
+      <p class="muted">Type: ${it.kind} | Updated: ${formatDate(it.updatedAt)}</p>
+    </article>
+  `
+    )
+    .join("");
 }
 
 window.site = {
@@ -717,4 +893,5 @@ window.site = {
   initReader,
   initPage,
   initPageList,
+  initUpdatesPage,
 };

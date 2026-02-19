@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,22 +18,38 @@
           <a href="../errata/">Errata</a>
           <a href="../rules/">Rules</a>
           <a href="../pages/">Pages</a>
+          <a href="../updates/">Updates</a>
         </nav>
       </div>
     </header>
     <main class="container">
-      <article class="doc-shell">
-        <div class="doc-meta" id="faq-meta">Loading...</div>
-        <div id="page-content-wrap">
-          <h1 id="faq-title" style="padding: 16px 22px 0; margin: 0">Loading...</h1>
-          <p id="faq-source" class="muted" style="padding: 0 22px"></p>
-          <div id="faq-content" class="errata-content" style="padding: 0 22px 24px"></div>
-        </div>
-      </article>
+      <div class="reading-layout">
+        <aside class="side-panel">
+          <section class="card">
+            <h2>Reader</h2>
+            <div id="reader-prefs"></div>
+          </section>
+          <nav class="toc" id="faq-toc">
+            <strong>On This Page</strong>
+            <p class="muted">Headings will appear after loading.</p>
+          </nav>
+        </aside>
+        <article class="doc-shell doc-body">
+          <div class="doc-meta" id="faq-meta">Loading...</div>
+          <div id="page-content-wrap">
+            <h1 id="faq-title" style="padding: 16px 22px 0; margin: 0">Loading...</h1>
+            <p id="faq-source" class="muted" style="padding: 0 22px"></p>
+            <div id="faq-content" class="errata-content" style="padding: 0 22px 24px"></div>
+          </div>
+        </article>
+      </div>
     </main>
+    <footer class="footer"><div class="container"><span id="site-version">v-</span></div></footer>
     <script>
       window.site.navActive();
       window.site.initFaqDetail();
     </script>
   </body>
 </html>
+
+

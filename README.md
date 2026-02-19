@@ -7,6 +7,8 @@ Static website for Riftbound players with:
 - Rules PDF index (`content/rules/index.json`)
 - Online PDF reader (`reader.html`)
 - Community pages in Markdown (`content/pages/*.md` + `data/pages.json`)
+- Home search across FAQ/Errata/Rules/Pages
+- Updates timeline (`updates/`) and RSS feed (`rss.xml`)
 
 ## Deploy on GitHub Pages
 
@@ -19,6 +21,7 @@ Clean share URLs (no `.html`):
 - `https://<owner>.github.io/<repo>/errata/`
 - `https://<owner>.github.io/<repo>/rules/`
 - `https://<owner>.github.io/<repo>/pages/`
+- `https://<owner>.github.io/<repo>/updates/`
 
 ## Content Management
 
@@ -102,3 +105,18 @@ Errata:
 
 Unified document fields for FAQ/Errata entries:
 `kind`, `id`, `title`, `summary`, `content`, `source`, `publishedAt`, `originUrl`, `updatedAt`
+
+## Maintenance Scripts
+
+- Validate schema:
+  `python tools/validate_content_schema.py`
+- Check internal links:
+  `python tools/check_links.py`
+- One-click sync + validate:
+  `python tools/sync_all.py`
+
+CI (`.github/workflows/qa.yml`) runs schema and link checks on push/PR.
+
+## i18n Reserve
+
+Language dictionaries are reserved under `data/i18n/` (`en.json`, `zh-CN.json`) for future multilingual UI expansion.

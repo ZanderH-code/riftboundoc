@@ -10,6 +10,9 @@
   --brand-2: #72efdd;
   --line: #2a3644;
   --accent: #ffd166;
+  --reader-font-scale: 1;
+  --reader-line-height: 1.72;
+  --reader-max-width: 100%;
 }
 
 * {
@@ -255,6 +258,31 @@ main > section h2 {
   border-radius: 3px;
 }
 
+.status-banner {
+  border: 1px solid #6c4040;
+  border-radius: 10px;
+  background: #2a1518;
+  color: #ffd4d8;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.reader-prefs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.reader-prefs label {
+  font-size: 0.85rem;
+  color: var(--subtle);
+}
+
+.reader-prefs input[type="range"] {
+  width: 150px;
+}
+
 input,
 textarea,
 select,
@@ -337,7 +365,16 @@ button.secondary {
 
 #page-content {
   padding: 20px 22px 28px;
-  line-height: 1.72;
+  line-height: var(--reader-line-height);
+  font-size: calc(1rem * var(--reader-font-scale));
+  max-width: var(--reader-max-width);
+}
+
+#faq-content,
+#errata-content {
+  line-height: var(--reader-line-height);
+  font-size: calc(1rem * var(--reader-font-scale));
+  max-width: var(--reader-max-width);
 }
 
 #page-content h1,

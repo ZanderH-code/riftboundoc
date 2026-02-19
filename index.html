@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Riftbound Hub: searchable FAQ, errata, rules, and player pages." />
+    <meta property="og:title" content="Riftbound Hub" />
+    <meta property="og:description" content="Search official FAQ, errata, and rules in one place." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zanderh-code.github.io/riftboundoc/" />
+    <link rel="alternate" type="application/rss+xml" title="Riftbound Hub Updates" href="rss.xml" />
     <title>Riftbound Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/site.js?v=20260219b"></script>
@@ -17,6 +23,7 @@
           <a href="errata/">Errata</a>
           <a href="rules/">Rules</a>
           <a href="pages/">Pages</a>
+          <a href="updates/">Updates</a>
         </nav>
       </div>
     </header>
@@ -37,6 +44,19 @@
         <div class="search-row">
           <input id="home-search-input" type="search" placeholder="Search rules, FAQ, errata, pages..." />
           <button id="home-search-btn" type="button">Search</button>
+        </div>
+        <div class="search-row">
+          <select id="home-search-kind">
+            <option value="all">All Types</option>
+            <option value="FAQ">FAQ</option>
+            <option value="Errata">Errata</option>
+            <option value="Rule">Rule</option>
+            <option value="Page">Page</option>
+          </select>
+          <select id="home-search-mode">
+            <option value="hits">By Hit</option>
+            <option value="docs">By Document</option>
+          </select>
         </div>
         <p id="home-search-meta" class="muted">Index is loading...</p>
         <div id="home-search-results" class="list"></div>
@@ -60,7 +80,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">Hosted on GitHub Pages</div>
+      <div class="container">Hosted on GitHub Pages | <span id="site-version">v-</span></div>
     </footer>
     <script>
       window.site.navActive();
