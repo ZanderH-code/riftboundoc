@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="riftboundoc" description="riftboundoc: searchable FAQ, errata, and rules.">
+  <main class="container">
+    <section class="hero">
+      <h1>Riftbound FAQ and Rules Portal</h1>
+      <p class="muted">Read official FAQs, errata, and searchable rules in one consistent hub.</p>
+      <div class="grid">
+        <article class="card stat-card page-card" data-href="cards/" tabindex="0" role="link"><h2>Cards</h2><p id="stats-cards">-</p></article>
+        <article class="card stat-card page-card" data-href="faq/" tabindex="0" role="link"><h2>FAQ</h2><p id="stats-faq">-</p></article>
+        <article class="card stat-card page-card" data-href="errata/" tabindex="0" role="link"><h2>Errata</h2><p id="stats-errata">-</p></article>
+        <article class="card stat-card page-card" data-href="rules/" tabindex="0" role="link"><h2>Rule Files</h2><p id="stats-rules">-</p></article>
+        <article class="card"><h2>Updated</h2><p id="stats-update">-</p></article>
+      </div>
+    </section>
+    <section class="search-panel">
+      <h2>Search</h2>
+      <div class="search-row">
+        <input id="home-search-input" type="search" placeholder="Search rules, FAQ, errata..." />
+        <button id="home-search-btn" type="button">Search</button>
+      </div>
+      <div class="search-row">
+        <select id="home-search-kind">
+          <option value="all">All Types</option>
+          <option value="Card">Card</option>
+          <option value="FAQ">FAQ</option>
+          <option value="Errata">Errata</option>
+          <option value="Rule">Rule</option>
+        </select>
+        <select id="home-search-mode">
+          <option value="hits">By Hit</option>
+          <option value="docs">By Document</option>
+        </select>
+      </div>
+      <p id="home-search-meta" class="muted">Index is loading...</p>
+      <div id="home-search-results" class="list"></div>
+      <div id="home-search-pager" class="search-pager"></div>
+    </section>
+    <section>
+      <h2>Latest Rules</h2>
+      <div id="home-rules" class="list"></div>
+    </section>
+    <section>
+      <h2>Latest FAQ</h2>
+      <div id="home-faq" class="list"></div>
+    </section>
+    <section>
+      <h2>Latest Errata</h2>
+      <div id="home-errata" class="list"></div>
+    </section>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initHome();
+  </script>
+</BaseLayout>
+

@@ -37,7 +37,7 @@ def main():
     if not rules:
         raise RuntimeError("content/rules/index.json has no rules")
 
-    for route_dir in ["faq", "errata", "rules"]:
+    for route_dir in ["cards", "faq", "errata", "rules"]:
         ensure_path(f"{route_dir}/index.html")
 
     print("Predeploy checks passed.")

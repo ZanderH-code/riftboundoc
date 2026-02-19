@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Errata - riftboundoc">
+  <main class="container">
+    <h1>Errata Files</h1>
+    <p class="muted">Browse official errata entries.</p>
+    <div id="errata-list" class="list"></div>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initErrataPage();
+  </script>
+</BaseLayout>
+

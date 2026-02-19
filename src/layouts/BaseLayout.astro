@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  includeMarked?: boolean;
+}
+
+const { title, description = "riftboundoc", includeMarked = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="stylesheet" href={`${base}assets/css/styles.css?v=20260220d`} />
+    {includeMarked && <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>}
+    <script src={`${base}assets/js/site.js?v=20260220l`}></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href={base}>riftboundoc</a>
+        <nav>
+          <a href={base}>Home</a>
+          <a href={`${base}cards/`}>Cards</a>
+          <a href={`${base}faq/`}>FAQ</a>
+          <a href={`${base}errata/`}>Errata</a>
+          <a href={`${base}rules/`}>Rules</a>
+          <a href={`${base}updates/`}>Updates</a>
+        </nav>
+      </div>
+    </header>
+    <slot />
+    <footer class="footer"><div class="container"><span id="site-version">v-</span></div></footer>
+  </body>
+</html>
+

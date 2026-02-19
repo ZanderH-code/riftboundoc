@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="PDF Reader - riftboundoc">
+  <main class="container">
+    <section id="reader-wrap" class="two-col">
+      <article>
+        <h1 id="reader-title">Loading...</h1>
+        <p class="muted" id="reader-meta">Reader ready.</p>
+        <div class="toolbar">
+          <input id="reader-page" type="number" min="1" value="1" style="width: 110px" />
+          <button id="reader-go" type="button">Go</button>
+          <button id="reader-retry" type="button" class="secondary">Retry</button>
+          <button id="reader-share" type="button" class="secondary">Copy Share Link</button>
+          <button id="reader-bookmark-add" type="button" class="secondary">Bookmark Page</button>
+          <button id="reader-immersive" type="button" class="secondary">Immersive</button>
+          <a id="reader-fallback" href="../rules/" class="secondary">Back to Rules</a>
+        </div>
+        <iframe id="pdf-view" class="pdf-frame" title="PDF Reader"></iframe>
+      </article>
+      <aside class="side-panel">
+        <section class="card">
+          <h2>Bookmarks</h2>
+          <div id="reader-bookmarks" class="list"></div>
+        </section>
+        <section class="card">
+          <h2>Search Rules</h2>
+          <div class="search-row">
+            <input id="reader-search-input" type="search" placeholder="Search rules..." />
+            <button id="reader-search-btn" type="button">Search</button>
+          </div>
+          <p id="reader-search-meta" class="muted">Type a keyword to search rule content.</p>
+          <div id="reader-search-results" class="list"></div>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initReader();
+  </script>
+</BaseLayout>
+

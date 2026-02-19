@@ -24,8 +24,16 @@ def exists_local(base: Path, href: str) -> bool:
     else:
         p = (base / href).resolve()
     if p.is_dir():
-        return (p / "index.html").exists()
-    return p.exists()
+        if (p / "index.html").exists():
+            return True
+    elif p.exists():
+        return True
+
+    # Allow links inside mirrored folders (e.g., public/) to resolve against repo root.
+    root_guess = ROOT / href.lstrip("./")
+    if root_guess.is_dir():
+        return (root_guess / "index.html").exists()
+    return root_guess.exists()
 
 
 def main():

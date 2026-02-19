@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Updates - riftboundoc">
+  <main class="container">
+    <h1>Updates</h1>
+    <p class="muted">Latest updates across FAQ, Errata, Rules, and pages.</p>
+    <div id="updates-list" class="list"></div>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initUpdatesPage();
+  </script>
+</BaseLayout>
+

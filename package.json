@@ -1,0 +1,17 @@
+{
+  "name": "riftboundoc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "python tools/sync_public.py && astro build",
+    "preview": "astro preview",
+    "sync:public": "python tools/sync_public.py"
+  },
+  "devDependencies": {
+    "astro": "^5.2.0",
+    "typescript": "^5.7.3"
+  }
+}
+

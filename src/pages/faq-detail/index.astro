@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="FAQ Detail - riftboundoc" includeMarked={true}>
+  <main class="container">
+    <article class="reading-layout">
+      <aside class="side-panel">
+        <section class="card">
+          <h2>Reader</h2>
+          <div id="reader-prefs"></div>
+        </section>
+        <nav class="toc" id="faq-toc">
+          <strong>Contents</strong>
+          <p class="muted">Sections appear after loading.</p>
+        </nav>
+      </aside>
+      <article class="doc-shell">
+        <div class="doc-meta">
+          <h1 id="faq-title" style="margin: 0 0 8px">Loading...</h1>
+          <p class="muted" id="faq-meta">-</p>
+          <p id="faq-source"></p>
+        </div>
+        <div id="faq-content" style="padding: 18px 22px"></div>
+      </article>
+    </article>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initFaqDetail();
+  </script>
+</BaseLayout>
+

@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Rules - riftboundoc">
+  <main class="container">
+    <h1>Rule Files</h1>
+    <p class="muted">Browse rule resources.</p>
+    <div id="rule-list" class="list"></div>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initRulePage();
+  </script>
+</BaseLayout>
+

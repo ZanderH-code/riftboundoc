@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="FAQ - riftboundoc">
+  <main class="container">
+    <h1>FAQ Files</h1>
+    <p class="muted">Browse official FAQ entries.</p>
+    <div id="faq-list" class="list"></div>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initFaqPage();
+  </script>
+</BaseLayout>
+

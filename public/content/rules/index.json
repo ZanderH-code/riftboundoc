@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-02-18",
+  "rules": [
+    {
+      "id": "core-rules-v1-2-text",
+      "title": "Riftbound Core Rules v1.2 (Text Version)",
+      "kind": "page",
+      "pageId": "riftbound-core-rules-v1-2",
+      "summary": "Structured text version converted from the official PDF.",
+      "source": "Converted from PDF",
+      "updatedAt": "2026-02-18"
+    }
+  ]
+}

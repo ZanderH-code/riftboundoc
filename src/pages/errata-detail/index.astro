@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Errata Detail - riftboundoc" includeMarked={true}>
+  <main class="container">
+    <article class="reading-layout">
+      <aside class="side-panel">
+        <section class="card">
+          <h2>Reader</h2>
+          <div id="reader-prefs"></div>
+        </section>
+        <nav class="toc" id="errata-toc">
+          <strong>Contents</strong>
+          <p class="muted">Sections appear after loading.</p>
+        </nav>
+      </aside>
+      <article class="doc-shell">
+        <div class="doc-meta">
+          <h1 id="errata-title" style="margin: 0 0 8px">Loading...</h1>
+          <p class="muted" id="errata-meta">-</p>
+          <p id="errata-source"></p>
+        </div>
+        <div id="errata-content" style="padding: 18px 22px"></div>
+      </article>
+    </article>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initErrataDetail();
+  </script>
+</BaseLayout>
+

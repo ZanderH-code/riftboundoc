@@ -39,6 +39,7 @@ def main():
         ]
     )
     run([sys.executable, "tools/normalize_content.py"])
+    run([sys.executable, "tools/sync_public.py"])
     run([sys.executable, "tools/predeploy_check.py"])
     print("Sync complete.")
 
