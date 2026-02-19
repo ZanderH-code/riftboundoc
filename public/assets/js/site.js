@@ -1210,6 +1210,8 @@ async function initErrataDetail() {
 
 async function initCardsPage() {
   const raw = await getJson("data/cards.json", { cards: [] });
+  const faqs = await getJson("data/faqs.json", []);
+  const errata = await getJson("data/errata.json", []);
   const cards = normalizeCardsData(raw);
   const list = q("#cards-list");
   const meta = q("#cards-meta");
@@ -1253,6 +1255,10 @@ async function initCardsPage() {
   const modalStats = q("#cards-modal-stats");
   const modalTags = q("#cards-modal-tags");
   const modalText = q("#cards-modal-text");
+  const modalFaqWrap = q("#cards-modal-faq-wrap");
+  const modalFaqList = q("#cards-modal-faq-list");
+  const modalErrataWrap = q("#cards-modal-errata-wrap");
+  const modalErrataList = q("#cards-modal-errata-list");
   if (
     !list ||
     !meta ||
@@ -1295,7 +1301,11 @@ async function initCardsPage() {
     !modalMeta ||
     !modalStats ||
     !modalTags ||
-    !modalText
+    !modalText ||
+    !modalFaqWrap ||
+    !modalFaqList ||
+    !modalErrataWrap ||
+    !modalErrataList
   ) {
     return;
   }
@@ -1472,6 +1482,72 @@ async function initCardsPage() {
     return bag;
   };
 
+  const findRelatedDocs = (docs, cardName) => {
+    const full = String(cardName || "").trim();
+    if (!full) return [];
+    const base = full.split(",")[0].trim();
+    const needles = Array.from(new Set([full, base].filter(Boolean).map((x) => x.toLowerCase())));
+    const toHay = (doc) =>
+      markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
+
+    const makeSnippet = (text) => {
+      const plain = String(text || "");
+      const lower = plain.toLowerCase();
+      let pos = -1;
+      let hit = "";
+      needles.some((n) => {
+        const i = lower.indexOf(n);
+        if (i >= 0) {
+          pos = i;
+          hit = n;
+          return true;
+        }
+        return false;
+      });
+      if (pos < 0) return plain.slice(0, 180).trim();
+      const start = Math.max(0, pos - 70);
+      const end = Math.min(plain.length, pos + hit.length + 110);
+      const snippet = plain.slice(start, end).trim();
+      return `${start > 0 ? "..." : ""}${escapeHtml(snippet)}${end < plain.length ? "..." : ""}`;
+    };
+
+    return asItems(docs)
+      .map((doc) => {
+        const hay = toHay(doc);
+        const lower = hay.toLowerCase();
+        const matched = needles.some((n) => lower.includes(n));
+        if (!matched) return null;
+        return {
+          id: doc.id || "",
+          title: doc.title || "Untitled",
+          snippet: makeSnippet(hay),
+        };
+      })
+      .filter(Boolean)
+      .slice(0, 4);
+  };
+
+  const renderRelatedDocs = (rows, wrap, listEl, kind) => {
+    if (!rows.length) {
+      wrap.hidden = true;
+      listEl.innerHTML = "";
+      return;
+    }
+    wrap.hidden = false;
+    const toHref = (id) =>
+      kind === "faq" ? route(`faq-detail/?id=${encodeURIComponent(id)}`) : route(`errata-detail/?id=${encodeURIComponent(id)}`);
+    listEl.innerHTML = rows
+      .map(
+        (x) => `
+      <article class="cards-related-item">
+        <h4><a href="${toHref(x.id)}">${escapeHtml(x.title)}</a></h4>
+        <p class="muted">${x.snippet}</p>
+      </article>
+    `
+      )
+      .join("");
+  };
+
   const setupRange = (name, minInput, maxInput, valueEl, range) => {
     minInput.min = String(range.min);
     minInput.max = String(range.max);
@@ -1602,6 +1678,10 @@ async function initCardsPage() {
     } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
     modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
     modalText.innerHTML = renderCardAbilityText(card.abilityText);
+    const relatedFaq = findRelatedDocs(faqs, card.name);
+    const relatedErrata = findRelatedDocs(errata, card.name);
+    renderRelatedDocs(relatedFaq, modalFaqWrap, modalFaqList, "faq");
+    renderRelatedDocs(relatedErrata, modalErrataWrap, modalErrataList, "errata");
     modal.hidden = false;
     document.body.classList.add("modal-open");
   };

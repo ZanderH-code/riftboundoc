@@ -690,6 +690,37 @@ main > section h2 {
   text-transform: uppercase;
 }
 
+.cards-modal-related {
+  border-top: 1px solid #314052;
+  margin-top: 12px;
+  padding-top: 10px;
+}
+
+.cards-modal-related h3 {
+  margin: 0 0 8px;
+}
+
+.cards-related-list {
+  display: grid;
+  gap: 8px;
+}
+
+.cards-related-item {
+  border: 1px solid #30465c;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #132031;
+}
+
+.cards-related-item h4 {
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+}
+
+.cards-related-item p {
+  margin: 0;
+}
+
 .search-result mark {
   background: #3e5f1d;
   color: #f5ffd9;
