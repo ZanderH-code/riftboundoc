@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.8";
+const SITE_VERSION = "2026.02.20.9";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -80,6 +80,16 @@ function sortByUpdated(items) {
   return [...asItems(items)].sort((a, b) =>
     String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""))
   );
+}
+
+function sortByPublishedThenUpdated(items) {
+  return [...asItems(items)].sort((a, b) => {
+    const bp = String(b.publishedAt || "");
+    const ap = String(a.publishedAt || "");
+    const byPublished = bp.localeCompare(ap);
+    if (byPublished !== 0) return byPublished;
+    return String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+  });
 }
 
 function slugify(text) {
@@ -872,9 +882,9 @@ async function initHome() {
   if (statsRules) statsRules.textContent = asItems(rules).length;
   if (statsUpdate) statsUpdate.textContent = today();
 
-  renderFaq(sortByUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
-  renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
-  renderRules(sortByUpdated(rules).slice(0, 3), q("#home-rules"));
+  renderFaq(sortByPublishedThenUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
+  renderErrata(sortByPublishedThenUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
+  renderRules(sortByPublishedThenUpdated(rules).slice(0, 3), q("#home-rules"));
   bindPageCards(q("#home-faq"));
   bindPageCards(q("#home-errata"));
   bindPageCards(q("#home-rules"));
@@ -1280,6 +1290,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
