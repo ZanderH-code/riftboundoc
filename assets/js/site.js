@@ -28,7 +28,7 @@ function route(path) {
 
 async function getJson(path, fallback = null) {
   try {
-    const res = await fetch(path, { cache: "no-store" });
+    const res = await fetch(route(path), { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } catch (error) {
@@ -457,7 +457,7 @@ async function initPage() {
     q("#doc-meta").textContent = `Updated: ${formatDate(one.updatedAt)} | ID: ${one.id}`;
   }
 
-  const md = await fetch(one.file, { cache: "no-store" }).then((r) => r.text());
+  const md = await fetch(route(one.file), { cache: "no-store" }).then((r) => r.text());
   if (window.marked && typeof window.marked.parse === "function") {
     q("#page-content").innerHTML = window.marked.parse(md);
   } else {
