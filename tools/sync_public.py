@@ -14,14 +14,6 @@ FILES_TO_COPY = [
     "robots.txt",
     "sitemap.xml",
     "rss.xml",
-    "faq.html",
-    "faq-detail.html",
-    "errata.html",
-    "errata-detail.html",
-    "rules.html",
-    "reader.html",
-    "page.html",
-    "cards.html",
 ]
 
 
@@ -45,6 +37,8 @@ def copy_file(name: str):
 
 
 def main():
+    if PUBLIC.exists():
+        shutil.rmtree(PUBLIC)
     PUBLIC.mkdir(parents=True, exist_ok=True)
     for name in DIRS_TO_COPY:
         copy_dir(name)
@@ -55,4 +49,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

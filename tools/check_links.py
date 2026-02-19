@@ -5,7 +5,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML = list(ROOT.rglob("*.html"))
+EXCLUDE_PARTS = {"node_modules", "dist", "public", ".astro"}
+HTML = [
+    p
+    for p in ROOT.rglob("*.html")
+    if not any(part in EXCLUDE_PARTS for part in p.relative_to(ROOT).parts)
+]
 HREF_RE = re.compile(r'href="([^"]+)"')
 
 

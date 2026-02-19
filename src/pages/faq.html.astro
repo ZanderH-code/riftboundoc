@@ -2,17 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=faq/" />
     <title>Redirecting...</title>
+    <script>
+      const q = window.location.search || "";
+      window.location.replace(`faq/${q}`);
+    </script>
   </head>
   <body>
     <a href="faq/">Go to FAQ</a>
   </body>
 </html>
-
-
-
-
-
-
 

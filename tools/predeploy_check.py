@@ -37,8 +37,19 @@ def main():
     if not rules:
         raise RuntimeError("content/rules/index.json has no rules")
 
-    for route_dir in ["cards", "faq", "errata", "rules"]:
-        ensure_path(f"{route_dir}/index.html")
+    for route in [
+        "src/pages/index.astro",
+        "src/pages/cards/index.astro",
+        "src/pages/faq/index.astro",
+        "src/pages/faq-detail/index.astro",
+        "src/pages/errata/index.astro",
+        "src/pages/errata-detail/index.astro",
+        "src/pages/rules/index.astro",
+        "src/pages/pages/index.astro",
+        "src/pages/reader/index.astro",
+        "src/pages/updates/index.astro",
+    ]:
+        ensure_path(route)
 
     print("Predeploy checks passed.")
 
