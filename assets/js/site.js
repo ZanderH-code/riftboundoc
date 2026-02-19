@@ -410,6 +410,39 @@ function renderCards(items, target) {
     .join("");
 }
 
+function renderCardAbilityText(text) {
+  const raw = String(text || "").replace(/\r\n?/g, "\n");
+  if (!raw.trim()) return "No ability text.";
+
+  const runeIcon = {
+    body: route("assets/img/domains/body.webp"),
+    calm: route("assets/img/domains/calm.webp"),
+    mind: route("assets/img/domains/mind.webp"),
+    order: route("assets/img/domains/order.webp"),
+    chaos: route("assets/img/domains/chaos.webp"),
+    fury: route("assets/img/domains/fury.webp"),
+  };
+
+  let html = escapeHtml(raw);
+  html = html.replace(/:rb_energy_(\d+):/gi, (_m, n) => {
+    return `<span class="rb-token rb-energy" title="Energy ${n}">${escapeHtml(n)}</span>`;
+  });
+  html = html.replace(/:rb_rune_([a-z]+):/gi, (_m, keyRaw) => {
+    const key = String(keyRaw || "").toLowerCase();
+    const src = runeIcon[key];
+    if (!src) {
+      if (key === "rainbow") {
+        return '<span class="rb-token rb-rainbow" title="Any rune"></span>';
+      }
+      return `<span class="rb-token rb-rune-text">${escapeHtml(key)}</span>`;
+    }
+    return `<img class="rb-token rb-rune" src="${escapeHtml(src)}" alt="${escapeHtml(
+      key
+    )} rune" title="${escapeHtml(key)} rune" />`;
+  });
+  return html.replace(/\n/g, "<br />");
+}
+
 function bindPageCards(container) {
   if (!container) return;
   container.querySelectorAll(".page-card").forEach((card) => {
@@ -1537,7 +1570,7 @@ async function initCardsPage() {
       asItems(card.domains).join(", ") || "-"
     } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
     modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
-    modalText.textContent = card.abilityText || "No ability text.";
+    modalText.innerHTML = renderCardAbilityText(card.abilityText);
     modal.hidden = false;
     document.body.classList.add("modal-open");
   };

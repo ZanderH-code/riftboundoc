@@ -611,6 +611,48 @@ main > section h2 {
   white-space: pre-wrap;
 }
 
+.cards-modal-text .rb-token {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.cards-modal-text .rb-energy {
+  width: 1.18em;
+  height: 1.18em;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #17212d;
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.cards-modal-text .rb-rune {
+  width: 1.08em;
+  height: 1.08em;
+  object-fit: contain;
+}
+
+.cards-modal-text .rb-rainbow {
+  width: 1.02em;
+  height: 1.02em;
+  border-radius: 999px;
+  border: 1px solid #cfd9e4;
+  background: conic-gradient(#e74c3c, #f1c40f, #2ecc71, #3498db, #9b59b6, #e74c3c);
+}
+
+.cards-modal-text .rb-rune-text {
+  border-radius: 999px;
+  border: 1px solid #3b546a;
+  padding: 0.05em 0.4em;
+  color: #b6cadf;
+  font-size: 0.78em;
+  text-transform: uppercase;
+}
+
 .search-result mark {
   background: #3e5f1d;
   color: #f5ffd9;
