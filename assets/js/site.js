@@ -332,10 +332,10 @@ function buildTocFor(contentSelector, tocSelector) {
   if (!content || !toc) return;
   const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
   if (!headings.length) {
-    toc.innerHTML = "<strong>On This Page</strong><p class=\"muted\">No headings found.</p>";
+    toc.innerHTML = '<div class="toc-title">On This Page</div><p class="muted">No headings found.</p>';
     return;
   }
-  let html = "<strong>On This Page</strong>";
+  let html = '<div class="toc-title">On This Page</div>';
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
@@ -650,11 +650,11 @@ function buildPageToc() {
   );
 
   if (headings.length === 0 && ruleHeadings.length === 0) {
-    toc.innerHTML = "<strong>On This Page</strong><p class=\"muted\">No headings found.</p>";
+    toc.innerHTML = '<div class="toc-title">On This Page</div><p class="muted">No headings found.</p>';
     return;
   }
 
-  let html = "<strong>On This Page</strong>";
+  let html = '<div class="toc-title">On This Page</div>';
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
