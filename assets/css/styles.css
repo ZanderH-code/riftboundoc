@@ -331,6 +331,10 @@ button.secondary {
   top: 88px;
 }
 
+.toc-drawer-head {
+  display: none;
+}
+
 .toc {
   border: 1px solid #314052;
   border-radius: 14px;
@@ -527,14 +531,9 @@ button.secondary {
     order: 2;
   }
 
-  .side-panel {
-    position: static;
-    margin-top: 2px;
-  }
-
   .toc {
-    max-height: 34vh;
-    margin-top: 8px;
+    max-height: min(60vh, 520px);
+    margin-top: 6px;
   }
 
   .toc .toc-link {
@@ -544,6 +543,105 @@ button.secondary {
 
   .side-panel .card {
     padding: 10px;
+  }
+
+  .toc-fab {
+    position: fixed;
+    right: 14px;
+    bottom: 16px;
+    z-index: 80;
+    border-radius: 999px;
+    padding: 10px 14px;
+    border: 1px solid #3f6280;
+    background: linear-gradient(135deg, #21405e, #1a3148);
+    color: #e9f5ff;
+    font-weight: 600;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.38);
+  }
+
+  .toc-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 8, 14, 0.58);
+    backdrop-filter: blur(1px);
+    z-index: 68;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    border: 0;
+  }
+
+  .side-panel.toc-drawer {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    top: 78px;
+    bottom: 12px;
+    z-index: 72;
+    margin-top: 0;
+    padding: 10px;
+    border: 1px solid #34495d;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #121b27, #101722);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.48);
+    overflow: auto;
+    transform: translateY(12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .side-panel.toc-drawer .card {
+    margin-bottom: 10px;
+  }
+
+  .side-panel.toc-drawer .toc {
+    margin-top: 0;
+    max-height: none;
+  }
+
+  .toc-drawer-head {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: -2px -2px 8px;
+    padding: 8px 10px;
+    border: 1px solid #304357;
+    border-radius: 10px;
+    background: #152130;
+  }
+
+  .toc-drawer-head strong {
+    font-size: 0.92rem;
+    color: #ecf5ff;
+  }
+
+  .toc-drawer-close {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #3f5c78;
+    background: #1b3045;
+    color: #cfe9ff;
+    font-size: 0.84rem;
+  }
+
+  body.toc-drawer-open .toc-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.toc-drawer-open .side-panel.toc-drawer {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.toc-drawer-open {
+    overflow: hidden;
   }
 }
 
@@ -570,6 +668,14 @@ button.secondary {
 
   .search-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 981px) {
+  .toc-fab,
+  .toc-backdrop,
+  .toc-drawer-head {
+    display: none !important;
   }
 }
 /* Rule-sheet layout (close to official PDF rhythm) */

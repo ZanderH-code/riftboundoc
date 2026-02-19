@@ -358,6 +358,67 @@ function highlightQueryIn(containerSelector) {
   if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
+function initMobileTocDrawer() {
+  const root = q(".reading-layout");
+  const panel = q(".reading-layout .side-panel");
+  const toc = panel ? panel.querySelector(".toc") : null;
+  if (!root || !panel || !toc) return;
+  if (q("#toc-fab")) return;
+
+  const openBtn = document.createElement("button");
+  openBtn.type = "button";
+  openBtn.id = "toc-fab";
+  openBtn.className = "toc-fab";
+  openBtn.setAttribute("aria-controls", "toc-drawer");
+  openBtn.setAttribute("aria-expanded", "false");
+  openBtn.textContent = "Contents";
+
+  const backdrop = document.createElement("button");
+  backdrop.type = "button";
+  backdrop.id = "toc-backdrop";
+  backdrop.className = "toc-backdrop";
+  backdrop.setAttribute("aria-label", "Close contents");
+
+  panel.id = panel.id || "toc-drawer";
+  panel.classList.add("toc-drawer");
+
+  const header = document.createElement("div");
+  header.className = "toc-drawer-head";
+  header.innerHTML = '<strong>On This Page</strong>';
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "toc-drawer-close";
+  closeBtn.setAttribute("aria-label", "Close contents");
+  closeBtn.textContent = "Close";
+  header.appendChild(closeBtn);
+
+  if (!panel.querySelector(".toc-drawer-head")) panel.prepend(header);
+  document.body.appendChild(backdrop);
+  document.body.appendChild(openBtn);
+
+  const closeDrawer = () => {
+    document.body.classList.remove("toc-drawer-open");
+    openBtn.setAttribute("aria-expanded", "false");
+  };
+  const openDrawer = () => {
+    document.body.classList.add("toc-drawer-open");
+    openBtn.setAttribute("aria-expanded", "true");
+  };
+
+  openBtn.addEventListener("click", openDrawer);
+  closeBtn.addEventListener("click", closeDrawer);
+  backdrop.addEventListener("click", closeDrawer);
+  panel.addEventListener("click", (ev) => {
+    if (ev.target && ev.target.closest(".toc-link")) closeDrawer();
+  });
+  window.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") closeDrawer();
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) closeDrawer();
+  });
+}
+
 function initReaderPrefs() {
   const keys = {
     scale: "rb_reader_scale",
@@ -742,6 +803,7 @@ async function initFaqDetail() {
   }
   initReaderPrefs();
   buildTocFor("#faq-content", "#faq-toc");
+  initMobileTocDrawer();
   highlightQueryIn("#faq-content");
 }
 
@@ -784,6 +846,7 @@ async function initErrataDetail() {
   }
   initReaderPrefs();
   buildTocFor("#errata-content", "#errata-toc");
+  initMobileTocDrawer();
   highlightQueryIn("#errata-content");
 }
 
@@ -824,6 +887,7 @@ async function initPage() {
 
   buildPageToc();
   initReaderPrefs();
+  initMobileTocDrawer();
   highlightQueryIn("#page-content");
 }
 
