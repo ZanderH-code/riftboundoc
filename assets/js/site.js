@@ -1513,16 +1513,32 @@ async function initCardsPage() {
       const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
       const sections = [];
       let current = { heading: "", body: [] };
-      lines.forEach((line) => {
-        // Split card/entry blocks only by level-2 headings.
-        // Keep level-3 Q headings inside the same card section.
+      const isErrataDoc = String(doc.kind || "").toLowerCase() === "errata";
+      for (let i = 0; i < lines.length; i += 1) {
+        const line = String(lines[i] || "");
+        const trimmed = line.trim();
+        let heading = "";
+        // Base split by level-2 headings.
         if (/^##\s+/.test(line)) {
+          heading = line.replace(/^##\s+/, "").trim();
+        } else if (isErrataDoc && /^###\s+/.test(line) && !/^###\s+q[:：]/i.test(line)) {
+          // Errata often uses level-3 card headings.
+          heading = line.replace(/^###\s+/, "").trim();
+        } else if (isErrataDoc && trimmed && !trimmed.startsWith("#")) {
+          // Spiritforged Errata has entries like "Falling Star" without markdown heading.
+          let j = i + 1;
+          while (j < lines.length && !String(lines[j] || "").trim()) j += 1;
+          if (j < lines.length && /^####\s+\[NEW TEXT\]/i.test(String(lines[j] || ""))) {
+            heading = trimmed;
+          }
+        }
+        if (heading) {
           if (current.heading || current.body.length) sections.push(current);
-          current = { heading: line.replace(/^##\s+/, "").trim(), body: [] };
-          return;
+          current = { heading, body: [] };
+          continue;
         }
         current.body.push(line);
-      });
+      }
       if (current.heading || current.body.length) sections.push(current);
 
       const toParagraphs = (section) =>
@@ -1611,12 +1627,23 @@ async function initCardsPage() {
         return {
           id: doc.id || "",
           title: doc.title || "Untitled",
+          publishedAt: doc.publishedAt || "",
+          updatedAt: doc.updatedAt || "",
           snippet: picked.snippet,
           query: picked.query,
           sourceTitle: doc.title || "Source",
         };
       })
       .filter(Boolean)
+      .sort((a, b) => {
+        const bp = String(b.publishedAt || "");
+        const ap = String(a.publishedAt || "");
+        let cmp = bp.localeCompare(ap);
+        if (cmp === 0) {
+          cmp = String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+        }
+        return cmp;
+      })
       .slice(0, 4);
   };
 
