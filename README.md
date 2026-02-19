@@ -2,7 +2,17 @@
 
 Live site: https://zanderh-code.github.io/riftboundoc/
 
-`riftboundoc` is a player-friendly website that organizes official Riftbound rules content in one place.
+`riftboundoc` is a community-friendly Riftbound reference site that consolidates official game information into one readable hub.
+
+It brings together:
+
+- Core rules and rules text pages
+- Official FAQ entries
+- Official card errata entries
+- Card Gallery data (card image + key card info)
+- Cross-content search and card-level related FAQ/Errata links
+
+The goal is simple: give players one stable link to quickly find current official rulings and card updates.
 
 ## What This Site Is For
 
