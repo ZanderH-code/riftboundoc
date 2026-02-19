@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.2";
+const SITE_VERSION = "2026.02.20.3";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -331,7 +331,14 @@ function buildTocFor(contentSelector, tocSelector) {
   const toc = q(tocSelector);
   if (!content || !toc) return;
   const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
-  if (!headings.length) {
+  const questionRows =
+    contentSelector === "#faq-content"
+      ? Array.from(content.querySelectorAll("p, li")).filter((el) =>
+          /^Q[:：]\s+/i.test(String(el.textContent || "").trim())
+        )
+      : [];
+
+  if (!headings.length && !questionRows.length) {
     toc.innerHTML = '<div class="toc-title">Contents</div><p class="muted">No sections found.</p>';
     return;
   }
@@ -342,6 +349,15 @@ function buildTocFor(contentSelector, tocSelector) {
     const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
     html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
+
+  if (questionRows.length) {
+    html += '<div class="toc-title" style="margin-top:8px">Questions</div>';
+    questionRows.forEach((el, idx) => {
+      if (!el.id) el.id = `faq-q-${idx + 1}`;
+      const label = String(el.textContent || "").trim();
+      html += `<a href=\"#${el.id}\" class="toc-link toc-l3">${escapeHtml(label)}</a>`;
+    });
+  }
   toc.innerHTML = html;
 }
 
@@ -1161,6 +1177,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
