@@ -383,15 +383,16 @@ function searchDocs(query, docs) {
   scored.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
   return scored.slice(0, 30).map((row) => ({
     ...row,
-    snippet: buildSearchSnippet(row.text, tokens, row.firstHit),
+    snippets: buildSearchSnippets(row.text, tokens, 3),
   }));
 }
 
-function buildSearchSnippet(text, tokens, firstHit) {
+function buildSearchSnippetAt(text, tokens, hitIndex) {
   const plain = String(text || "").trim();
   if (!plain) return "";
-  const start = Math.max(0, (firstHit >= 0 ? firstHit : 0) - 70);
-  const end = Math.min(plain.length, (firstHit >= 0 ? firstHit : 0) + 170);
+  const idx = hitIndex >= 0 ? hitIndex : 0;
+  const start = Math.max(0, idx - 70);
+  const end = Math.min(plain.length, idx + 170);
   const prefix = start > 0 ? "..." : "";
   const suffix = end < plain.length ? "..." : "";
   let snippet = `${prefix}${plain.slice(start, end).trim()}${suffix}`;
@@ -404,6 +405,36 @@ function buildSearchSnippet(text, tokens, firstHit) {
     snippet = snippet.replace(re, "<mark>$1</mark>");
   }
   return snippet;
+}
+
+function buildSearchSnippets(text, tokens, maxSnippets = 3) {
+  const plain = String(text || "").trim();
+  if (!plain) return [];
+  const lower = plain.toLowerCase();
+  const hitIndexes = [];
+  for (const token of tokens) {
+    if (!token) continue;
+    let idx = lower.indexOf(token.toLowerCase());
+    while (idx >= 0) {
+      hitIndexes.push(idx);
+      idx = lower.indexOf(token.toLowerCase(), idx + token.length);
+    }
+  }
+
+  if (!hitIndexes.length) return [];
+  hitIndexes.sort((a, b) => a - b);
+
+  // Keep snippets apart so each one shows a different hit region.
+  const selected = [];
+  const minGap = 120;
+  for (const idx of hitIndexes) {
+    if (!selected.length || idx - selected[selected.length - 1] >= minGap) {
+      selected.push(idx);
+      if (selected.length >= maxSnippets) break;
+    }
+  }
+  if (!selected.length) selected.push(hitIndexes[0]);
+  return selected.map((idx) => buildSearchSnippetAt(plain, tokens, idx));
 }
 
 function renderSearchResults(results, target, meta, query) {
@@ -427,7 +458,9 @@ function renderSearchResults(results, target, meta, query) {
           <h3><a href="${r.href}">${escapeHtml(r.title)}</a></h3>
           <span class="result-kind">${r.kind}</span>
         </div>
-        <p class="result-snippet">${snippet}</p>
+        ${(r.snippets || [])
+          .map((s) => `<p class="result-snippet">${s}</p>`)
+          .join("")}
       </article>
     `;
     })
