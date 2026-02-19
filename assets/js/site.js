@@ -360,7 +360,7 @@ function searchDocs(query, docs) {
     .filter(Boolean);
   if (!tokens.length) return [];
 
-  const scored = [];
+  const matchedDocs = [];
   for (const doc of docs) {
     const hay = String(doc.text || "").toLowerCase();
     if (!tokens.every((t) => hay.includes(t))) continue;
@@ -373,18 +373,22 @@ function searchDocs(query, docs) {
         idx = hay.indexOf(token, idx + token.length);
       }
     }
-    let firstHit = -1;
-    for (const token of tokens) {
-      const idx = hay.indexOf(token);
-      if (idx >= 0 && (firstHit < 0 || idx < firstHit)) firstHit = idx;
-    }
-    scored.push({ ...doc, score, firstHit });
+    matchedDocs.push({ ...doc, score });
   }
-  scored.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
-  return scored.slice(0, 30).map((row) => ({
-    ...row,
-    snippets: buildSearchSnippets(row.text, tokens, 3),
-  }));
+  matchedDocs.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
+
+  // Flatten to hit-level results: one result per matched snippet.
+  const flattened = [];
+  for (const doc of matchedDocs) {
+    const snippets = buildAllSearchSnippets(doc.text, tokens);
+    for (const snippet of snippets) {
+      flattened.push({
+        ...doc,
+        snippet,
+      });
+    }
+  }
+  return flattened;
 }
 
 function buildSearchSnippetAt(text, tokens, hitIndex) {
@@ -407,49 +411,68 @@ function buildSearchSnippetAt(text, tokens, hitIndex) {
   return snippet;
 }
 
-function buildSearchSnippets(text, tokens, maxSnippets = 3) {
+function buildAllSearchSnippets(text, tokens, limitPerDoc = 200) {
   const plain = String(text || "").trim();
   if (!plain) return [];
   const lower = plain.toLowerCase();
-  const hitIndexes = [];
+  const hitIndexes = new Set();
   for (const token of tokens) {
     if (!token) continue;
     let idx = lower.indexOf(token.toLowerCase());
     while (idx >= 0) {
-      hitIndexes.push(idx);
+      hitIndexes.add(idx);
       idx = lower.indexOf(token.toLowerCase(), idx + token.length);
     }
   }
 
-  if (!hitIndexes.length) return [];
-  hitIndexes.sort((a, b) => a - b);
-
-  // Keep snippets apart so each one shows a different hit region.
-  const selected = [];
-  const minGap = 120;
-  for (const idx of hitIndexes) {
-    if (!selected.length || idx - selected[selected.length - 1] >= minGap) {
-      selected.push(idx);
-      if (selected.length >= maxSnippets) break;
-    }
-  }
-  if (!selected.length) selected.push(hitIndexes[0]);
-  return selected.map((idx) => buildSearchSnippetAt(plain, tokens, idx));
+  return Array.from(hitIndexes)
+    .sort((a, b) => a - b)
+    .slice(0, limitPerDoc)
+    .map((idx) => buildSearchSnippetAt(plain, tokens, idx));
 }
 
-function renderSearchResults(results, target, meta, query) {
+function renderSearchPager(total, page, pageSize, target, onPage) {
+  if (!target) return;
+  target.innerHTML = "";
+  const pageCount = Math.max(1, Math.ceil(total / pageSize));
+  if (pageCount <= 1) return;
+
+  const mk = (label, to, active = false, disabled = false) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = label;
+    if (active) btn.classList.add("active");
+    btn.disabled = disabled;
+    btn.addEventListener("click", () => onPage(to));
+    return btn;
+  };
+
+  target.appendChild(mk("Prev", page - 1, false, page <= 1));
+  for (let p = 1; p <= pageCount; p += 1) {
+    target.appendChild(mk(String(p), p, p === page));
+  }
+  target.appendChild(mk("Next", page + 1, false, page >= pageCount));
+}
+
+function renderSearchResults(results, target, meta, pager, query, page = 1, pageSize = 12, onPage) {
   if (!target || !meta) return;
   if (!query) {
     meta.textContent = "Type keywords to search all indexed content.";
     target.innerHTML = "";
+    if (pager) pager.innerHTML = "";
     return;
   }
-  meta.textContent = `${results.length} result(s) for "${query}"`;
+  const pageCount = Math.max(1, Math.ceil(results.length / pageSize));
+  const current = Math.min(Math.max(1, page), pageCount);
+  const start = (current - 1) * pageSize;
+  const view = results.slice(start, start + pageSize);
+  meta.textContent = `${results.length} hit(s) for "${query}" | Page ${current}/${pageCount}`;
   if (!results.length) {
     target.innerHTML = '<article class="item"><p class="muted">No matching content.</p></article>';
+    if (pager) pager.innerHTML = "";
     return;
   }
-  target.innerHTML = results
+  target.innerHTML = view
     .map((r) => {
       const snippet = r.snippet || "";
       return `
@@ -458,13 +481,12 @@ function renderSearchResults(results, target, meta, query) {
           <h3><a href="${r.href}">${escapeHtml(r.title)}</a></h3>
           <span class="result-kind">${r.kind}</span>
         </div>
-        ${(r.snippets || [])
-          .map((s) => `<p class="result-snippet">${s}</p>`)
-          .join("")}
+        <p class="result-snippet">${snippet}</p>
       </article>
     `;
     })
     .join("");
+  renderSearchPager(results.length, current, pageSize, pager, onPage);
 }
 
 async function initHomeSearch(data) {
@@ -472,22 +494,32 @@ async function initHomeSearch(data) {
   const button = q("#home-search-btn");
   const meta = q("#home-search-meta");
   const list = q("#home-search-results");
-  if (!input || !button || !meta || !list) return;
+  const pager = q("#home-search-pager");
+  if (!input || !button || !meta || !list || !pager) return;
 
   const docs = await buildSearchIndex(data.pages, data.faqs, data.errata, data.rules);
   meta.textContent = `Index ready: ${docs.length} documents.`;
+  let currentPage = 1;
+  let latestResults = [];
+  const pageSize = 12;
 
-  const run = () => {
+  const run = (page = 1) => {
     const query = input.value.trim();
-    const results = searchDocs(query, docs);
-    renderSearchResults(results, list, meta, query);
+    latestResults = searchDocs(query, docs);
+    currentPage = page;
+    renderSearchResults(latestResults, list, meta, pager, query, currentPage, pageSize, (p) => {
+      run(p);
+    });
   };
-  button.addEventListener("click", run);
+  button.addEventListener("click", () => run(1));
   input.addEventListener("keydown", (ev) => {
-    if (ev.key === "Enter") run();
+    if (ev.key === "Enter") run(1);
   });
   input.addEventListener("input", () => {
-    if (!input.value.trim()) renderSearchResults([], list, meta, "");
+    if (!input.value.trim()) {
+      latestResults = [];
+      renderSearchResults([], list, meta, pager, "", 1, pageSize, () => {});
+    }
   });
 }
 

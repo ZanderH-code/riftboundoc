@@ -231,6 +231,23 @@ main > section h2 {
   margin-top: 6px;
 }
 
+.search-pager {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-pager button {
+  background: #1c2a3a;
+  border-color: #39506a;
+}
+
+.search-pager button.active {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
 .search-result mark {
   background: #3e5f1d;
   color: #f5ffd9;
