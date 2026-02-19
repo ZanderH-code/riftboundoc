@@ -31,6 +31,7 @@ def main():
             "https://riftbound.leagueoflegends.com/en-us/news/rules-and-releases/riftbound-spiritforged-errata/",
         ]
     )
+    run([sys.executable, "tools/normalize_content.py"])
     run([sys.executable, "tools/predeploy_check.py"])
     print("Sync complete.")
 

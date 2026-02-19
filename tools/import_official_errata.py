@@ -8,6 +8,8 @@ from pathlib import Path
 from urllib.request import urlopen
 from urllib.parse import urlparse
 
+from text_normalizer import markdown_to_plain, normalize_markdown_document
+
 
 NEXT_DATA_RE = re.compile(
     r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL | re.IGNORECASE
@@ -47,17 +49,6 @@ def strip_tags(raw_html: str) -> str:
     out = re.sub(r"<[^>]+>", "", raw_html)
     return html.unescape(out)
 
-def markdown_to_plain(text: str) -> str:
-    out = text
-    out = re.sub(r"\[\[([^\]]+)\]\]\([^)]+\)", r"\1", out)
-    out = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", out)
-    out = re.sub(r"^#+\s*", "", out, flags=re.MULTILINE)
-    out = re.sub(r"[*_`>-]", "", out)
-    out = re.sub(r"\s+", " ", out)
-    out = re.sub(r"^Download Card Errata\s*", "", out, flags=re.IGNORECASE)
-    return out.strip()
-
-
 def parse_errata_page(page_html: str, url: str):
     m = NEXT_DATA_RE.search(page_html)
     if not m:
@@ -67,7 +58,7 @@ def parse_errata_page(page_html: str, url: str):
     blades = page.get("blades", [])
     rich_blade = next((b for b in blades if b.get("type") == "articleRichText"), {})
     raw_body = (rich_blade.get("richText") or {}).get("body", "")
-    content = html_to_markdown(raw_body)
+    content = normalize_markdown_document(html_to_markdown(raw_body), kind="errata")
     path = urlparse(url).path.rstrip("/")
     slug = path.split("/")[-1] if path else "official-errata"
     return {

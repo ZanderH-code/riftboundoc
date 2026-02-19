@@ -8,6 +8,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
+from text_normalizer import markdown_to_plain, normalize_markdown_document
+
 
 NEXT_DATA_RE = re.compile(
     r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL | re.IGNORECASE
@@ -46,16 +48,6 @@ def html_to_markdown(raw_html: str) -> str:
 def strip_tags(raw_html: str) -> str:
     out = re.sub(r"<[^>]+>", "", raw_html)
     return html.unescape(out)
-
-def markdown_to_plain(text: str) -> str:
-    out = text
-    out = re.sub(r"\[\[([^\]]+)\]\]\([^)]+\)", r"\1", out)
-    out = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", out)
-    out = re.sub(r"^#+\s*", "", out, flags=re.MULTILINE)
-    out = re.sub(r"[*_`>-]", "", out)
-    out = re.sub(r"\s+", " ", out)
-    return out.strip()
-
 
 def build_from_accordion(blades):
     blocks = []
@@ -108,6 +100,7 @@ def parse_faq_document(page_html: str, url: str):
     if not content:
         return None
 
+    content = normalize_markdown_document(content, kind="faq")
     summary = markdown_to_plain(content)[:180]
 
     path = urlparse(url).path.rstrip("/")

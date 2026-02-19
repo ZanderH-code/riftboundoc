@@ -1,4 +1,4 @@
-﻿# Riftbound Hub
+# Riftbound Hub
 
 This is a community-maintained portal for Riftbound resources:
 
@@ -7,4 +7,3 @@ This is a community-maintained portal for Riftbound resources:
 - Custom pages (strategy guides, glossary, events)
 
 Use direct Markdown/JSON edits to maintain content.
-

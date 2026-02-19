@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.4";
+const SITE_VERSION = "2026.02.20.5";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -333,9 +333,10 @@ function buildTocFor(contentSelector, tocSelector) {
   const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
   const questionRows =
     contentSelector === "#faq-content"
-      ? Array.from(content.querySelectorAll("p, li")).filter((el) =>
-          /^Q[:：]\s+/i.test(String(el.textContent || "").trim())
-        )
+      ? Array.from(content.querySelectorAll("p, li")).filter((el) => {
+          const txt = String(el.textContent || "").trim();
+          return /^Q:\s+/i.test(txt) || /^Q：\s+/.test(txt);
+        })
       : [];
 
   if (!headings.length && !questionRows.length) {
@@ -374,8 +375,13 @@ function highlightQueryIn(containerSelector) {
   if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
-function normalizeSpiritforgedFaqMarkdown(markdown) {
-  let text = String(markdown || "");
+function normalizeDocumentMarkdown(markdown, kind = "generic") {
+  let text = String(markdown || "")
+    .replace(/\r\n?/g, "\n")
+    .replace(/\u00a0/g, " ")
+    .replace(/\u200b/g, "")
+    .replace(/\ufeff/g, "");
+
   text = text
     .replace(
       /design shorthand!Origins FAQ Outstanding Issues and ErrataSome categories/gi,
@@ -397,24 +403,36 @@ function normalizeSpiritforgedFaqMarkdown(markdown) {
     "Spiritforged Functional Errata",
     "Rules Clarifications",
     "Cards that Reduce Might",
+    "Origins Cards",
+    "Spiritforged Cards",
   ]);
 
-  const lines = text.split(/\r?\n/);
+  const lines = text.split("\n");
   const out = [];
   for (let i = 0; i < lines.length; i += 1) {
     const raw = lines[i];
     const line = String(raw || "").trim();
+    const prev = String(lines[i - 1] || "").trim();
+    const next = String(lines[i + 1] || "").trim();
+
     if (!line) {
+      out.push("");
+      continue;
+    }
+    if (line.startsWith("#") || line.startsWith("- ") || line.startsWith("* ") || line.startsWith("<")) {
       out.push(raw);
       continue;
     }
-
     if (sectionTitles.has(line)) {
       out.push(`## ${line}`);
       continue;
     }
-    if (/^Q[:：]\s+/i.test(line)) {
+    if (/^Q:\s+/i.test(line) || /^Q：\s+/.test(line)) {
       out.push(`### ${line}`);
+      continue;
+    }
+    if (line.toUpperCase() === "[NEW TEXT]" || line.toUpperCase() === "[OLD TEXT]") {
+      out.push(`#### ${line}`);
       continue;
     }
     if (/\(revised text\)$/i.test(line)) {
@@ -422,31 +440,30 @@ function normalizeSpiritforgedFaqMarkdown(markdown) {
       continue;
     }
     if (
-      /^[A-Z][A-Za-z0-9�?`",.!?&\- ]{1,70}$/.test(line) &&
+      !prev &&
+      next &&
+      line.length <= 72 &&
+      /^[A-Z0-9].*/.test(line) &&
+      !/[.!?:]$/.test(line) &&
+      !line.startsWith("[")
+    ) {
+      out.push(`### ${line}`);
+      continue;
+    }
+    if (
+      (kind === "faq" || kind === "errata") &&
+      /^[A-Z][A-Za-z0-9'`",.!?&\- ]{2,70}$/.test(line) &&
       !/[.:?]$/.test(line) &&
       !/^\[/.test(line) &&
-      !/^(Yes|No)\b/.test(line) &&
-      !line.includes(" ")
+      !prev &&
+      next
     ) {
       out.push(`#### ${line}`);
       continue;
     }
-    if (
-      /^[A-Z][A-Za-z0-9�?`",.!?&\- ]{2,70}$/.test(line) &&
-      !/[.:?]$/.test(line) &&
-      !/^\[/.test(line) &&
-      !line.startsWith("- ")
-    ) {
-      const prev = String(lines[i - 1] || "").trim();
-      const next = String(lines[i + 1] || "").trim();
-      if (!prev && !next) {
-        out.push(`#### ${line}`);
-        continue;
-      }
-    }
     out.push(raw);
   }
-  return out.join("\n");
+  return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
 function initMobileTocDrawer() {
@@ -882,9 +899,7 @@ async function initFaqDetail() {
     q("#faq-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
   }
   let body = String(one.content || "").trim();
-  if (one.id === "riftbound-spiritforged-faq") {
-    body = normalizeSpiritforgedFaqMarkdown(body);
-  }
+  body = normalizeDocumentMarkdown(body, "faq");
   if (window.marked && typeof window.marked.parse === "function") {
     q("#faq-content").innerHTML = window.marked.parse(body);
   } else {
@@ -927,7 +942,7 @@ async function initErrataDetail() {
     q("#errata-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
   }
 
-  const body = String(one.content || "").trim();
+  const body = normalizeDocumentMarkdown(String(one.content || "").trim(), "errata");
   if (window.marked && typeof window.marked.parse === "function") {
     q("#errata-content").innerHTML = window.marked.parse(body);
   } else {
@@ -1170,10 +1185,11 @@ async function initPage() {
 
   try {
     const md = await fetch(route(one.file), { cache: "no-store" }).then((r) => r.text());
+    const normalized = md.includes('<div class="rule-sheet">') ? md : normalizeDocumentMarkdown(md, "page");
     if (window.marked && typeof window.marked.parse === "function") {
-      q("#page-content").innerHTML = window.marked.parse(md);
+      q("#page-content").innerHTML = window.marked.parse(normalized);
     } else {
-      q("#page-content").innerHTML = `<pre>${md}</pre>`;
+      q("#page-content").innerHTML = `<pre>${normalized}</pre>`;
     }
   } catch (error) {
     showStatus(`Failed to load page content: ${one.file}`);
@@ -1255,6 +1271,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
