@@ -429,6 +429,9 @@ function renderCardAbilityText(text) {
   html = html.replace(/:rb_energy_(\d+):/gi, (_m, n) => {
     return `<span class="rb-token rb-energy" title="Energy ${n}">${escapeHtml(n)}</span>`;
   });
+  html = html.replace(/:rb_might:/gi, () => {
+    return '<span class="rb-token rb-might" title="Might"></span>';
+  });
   html = html.replace(/:rb_rune_([a-z]+):/gi, (_m, keyRaw) => {
     const key = String(keyRaw || "").toLowerCase();
     const src = runeIcon[key];
