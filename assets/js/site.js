@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.3";
+const SITE_VERSION = "2026.02.20.4";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -372,6 +372,81 @@ function highlightQueryIn(containerSelector) {
   container.innerHTML = container.innerHTML.replace(re, "<mark>$1</mark>");
   const first = container.querySelector("mark");
   if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function normalizeSpiritforgedFaqMarkdown(markdown) {
+  let text = String(markdown || "");
+  text = text
+    .replace(
+      /design shorthand!Origins FAQ Outstanding Issues and ErrataSome categories/gi,
+      "design shorthand!\n\n## Origins FAQ Outstanding Issues and Errata\n\nSome categories"
+    )
+    .replace(
+      /Spiritforged Functional ErrataA handful of cards in Spiritforged/gi,
+      "## Spiritforged Functional Errata\n\nA handful of cards in Spiritforged"
+    )
+    .replace(
+      /Rules ClarificationsThere are a few cards in Spiritforged/gi,
+      "## Rules Clarifications\n\nThere are a few cards in Spiritforged"
+    );
+
+  const sectionTitles = new Set([
+    "Origins FAQ Outstanding Issues and Errata",
+    "Cards that Tell You to Play Other Cards from Your Deck",
+    "Reflexive Triggers on Spiritforged Cards",
+    "Spiritforged Functional Errata",
+    "Rules Clarifications",
+    "Cards that Reduce Might",
+  ]);
+
+  const lines = text.split(/\r?\n/);
+  const out = [];
+  for (let i = 0; i < lines.length; i += 1) {
+    const raw = lines[i];
+    const line = String(raw || "").trim();
+    if (!line) {
+      out.push(raw);
+      continue;
+    }
+
+    if (sectionTitles.has(line)) {
+      out.push(`## ${line}`);
+      continue;
+    }
+    if (/^Q[:ï¼š]\s+/i.test(line)) {
+      out.push(`### ${line}`);
+      continue;
+    }
+    if (/\(revised text\)$/i.test(line)) {
+      out.push(`### ${line}`);
+      continue;
+    }
+    if (
+      /^[A-Z][A-Za-z0-9â€?`",.!?&\- ]{1,70}$/.test(line) &&
+      !/[.:?]$/.test(line) &&
+      !/^\[/.test(line) &&
+      !/^(Yes|No)\b/.test(line) &&
+      !line.includes(" ")
+    ) {
+      out.push(`#### ${line}`);
+      continue;
+    }
+    if (
+      /^[A-Z][A-Za-z0-9â€?`",.!?&\- ]{2,70}$/.test(line) &&
+      !/[.:?]$/.test(line) &&
+      !/^\[/.test(line) &&
+      !line.startsWith("- ")
+    ) {
+      const prev = String(lines[i - 1] || "").trim();
+      const next = String(lines[i + 1] || "").trim();
+      if (!prev && !next) {
+        out.push(`#### ${line}`);
+        continue;
+      }
+    }
+    out.push(raw);
+  }
+  return out.join("\n");
 }
 
 function initMobileTocDrawer() {
@@ -806,7 +881,10 @@ async function initFaqDetail() {
   if (q("#faq-source")) {
     q("#faq-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
   }
-  const body = String(one.content || "").trim();
+  let body = String(one.content || "").trim();
+  if (one.id === "riftbound-spiritforged-faq") {
+    body = normalizeSpiritforgedFaqMarkdown(body);
+  }
   if (window.marked && typeof window.marked.parse === "function") {
     q("#faq-content").innerHTML = window.marked.parse(body);
   } else {
@@ -1177,6 +1255,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
