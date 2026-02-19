@@ -1189,7 +1189,10 @@ async function initCardsPage() {
   const setSelect = q("#cards-set-select");
   const typeSelect = q("#cards-type-select");
   const supertypeSelect = q("#cards-supertype-select");
-  const variantSelect = q("#cards-variant-select");
+  const variantMulti = q("#cards-variant-multi");
+  const variantToggle = q("#cards-variant-toggle");
+  const variantLabel = q("#cards-variant-label");
+  const variantMenu = q("#cards-variant-menu");
   const raritySelect = q("#cards-rarity-select");
   const energyMin = q("#cards-energy-min");
   const energyMax = q("#cards-energy-max");
@@ -1222,7 +1225,10 @@ async function initCardsPage() {
     !setSelect ||
     !typeSelect ||
     !supertypeSelect ||
-    !variantSelect ||
+    !variantMulti ||
+    !variantToggle ||
+    !variantLabel ||
+    !variantMenu ||
     !raritySelect ||
     !energyMin ||
     !energyMax ||
@@ -1256,7 +1262,7 @@ async function initCardsPage() {
   const supertypes = Array.from(
     new Set(cards.flatMap((x) => asItems(x.superTypes)).map((x) => String(x || "").trim()).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
-  const variants = unique(cards.map((x) => x.variant || x.variantName));
+  const variantOptions = ["Standard", "Foil", "Alt Art", "Overnumber", "Signed", "Promo"];
   const rarities = unique(cards.map((x) => x.rarity));
   const allDomains = unique(cards.flatMap((x) => asItems(x.domains)));
   const domainOrder = ["Fury", "Calm", "Mind", "Body", "Chaos", "Order"];
@@ -1279,7 +1285,7 @@ async function initCardsPage() {
     set: "all",
     type: "all",
     supertype: "all",
-    variant: "all",
+    variants: new Set(),
     rarity: "all",
     domains: new Set(),
     ranges: {
@@ -1315,7 +1321,6 @@ async function initCardsPage() {
   fillSelect(setSelect, sets, "All");
   fillSelect(typeSelect, types, "All");
   fillSelect(supertypeSelect, supertypes, "All");
-  fillSelect(variantSelect, variants, "All");
   fillSelect(raritySelect, rarities, "All");
 
   sortKeySelect.value = state.sortKey;
@@ -1349,6 +1354,57 @@ async function initCardsPage() {
       const domain = btn.getAttribute("data-domain") || "";
       btn.classList.toggle("active", state.domains.has(domain));
     });
+  };
+
+  const getCardVariantSet = (card) => {
+    const bag = new Set();
+    const text = markdownToPlain(
+      [card.variant, card.variantName, asItems(card.tags).join(" ")]
+        .filter(Boolean)
+        .join(" ")
+    ).toLowerCase();
+    if (/\bfoil\b/.test(text)) bag.add("Foil");
+    if (/\balt\s*art\b|\balternate\s*art\b|\baltart\b/.test(text)) bag.add("Alt Art");
+    if (/\bovernumber\b|\bover-number\b|\bserialized\b/.test(text)) bag.add("Overnumber");
+    if (/\bsigned\b|\bautograph\b/.test(text)) bag.add("Signed");
+    if (/\bpromo\b/.test(text)) bag.add("Promo");
+    if (/\bstandard\b/.test(text) || bag.size === 0) bag.add("Standard");
+    return bag;
+  };
+
+  const updateVariantLabel = () => {
+    if (!state.variants.size) {
+      variantLabel.textContent = "All";
+      return;
+    }
+    if (state.variants.size === 1) {
+      variantLabel.textContent = Array.from(state.variants)[0];
+      return;
+    }
+    variantLabel.textContent = `${state.variants.size} selected`;
+  };
+
+  const renderVariantMenu = () => {
+    variantMenu.innerHTML = variantOptions
+      .map(
+        (name) => `
+      <label class="cards-multi-item">
+        <input type="checkbox" value="${escapeHtml(name)}" ${state.variants.has(name) ? "checked" : ""} />
+        <span>${escapeHtml(name)}</span>
+      </label>
+    `
+      )
+      .join("");
+    variantMenu.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+      input.addEventListener("change", () => {
+        const name = input.value;
+        if (input.checked) state.variants.add(name);
+        else state.variants.delete(name);
+        updateVariantLabel();
+        render(1);
+      });
+    });
+    updateVariantLabel();
   };
 
   const setupRange = (name, minInput, maxInput, valueEl, range) => {
@@ -1431,7 +1487,17 @@ async function initCardsPage() {
         if (state.set !== "all" && String(c.set || "") !== state.set) return false;
         if (state.type !== "all" && !asItems(c.cardTypes).includes(state.type)) return false;
         if (state.supertype !== "all" && !asItems(c.superTypes).includes(state.supertype)) return false;
-        if (state.variant !== "all" && String(c.variant || c.variantName || "") !== state.variant) return false;
+        if (state.variants.size) {
+          const rowVariants = getCardVariantSet(c);
+          let hit = false;
+          for (const v of state.variants) {
+            if (rowVariants.has(v)) {
+              hit = true;
+              break;
+            }
+          }
+          if (!hit) return false;
+        }
         if (state.rarity !== "all" && String(c.rarity || "") !== state.rarity) return false;
         if (!matchesDomains(c.domains)) return false;
         if (!inNumberRange(c.energy, state.ranges.energy, limits.energy)) return false;
@@ -1520,9 +1586,17 @@ async function initCardsPage() {
     state.supertype = supertypeSelect.value || "all";
     render(1);
   });
-  variantSelect.addEventListener("change", () => {
-    state.variant = variantSelect.value || "all";
-    render(1);
+  renderVariantMenu();
+  variantToggle.addEventListener("click", () => {
+    const open = !variantMenu.hidden;
+    variantMenu.hidden = open;
+    variantToggle.setAttribute("aria-expanded", open ? "false" : "true");
+  });
+  document.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if (!t || !t.closest || t.closest("#cards-variant-multi")) return;
+    variantMenu.hidden = true;
+    variantToggle.setAttribute("aria-expanded", "false");
   });
   raritySelect.addEventListener("change", () => {
     state.rarity = raritySelect.value || "all";
@@ -1565,6 +1639,10 @@ async function initCardsPage() {
     if (t && t.closest && t.closest("[data-cards-close='1']")) closeCardModal();
   });
   document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && !variantMenu.hidden) {
+      variantMenu.hidden = true;
+      variantToggle.setAttribute("aria-expanded", "false");
+    }
     if (ev.key === "Escape" && !modal.hidden) closeCardModal();
   });
 

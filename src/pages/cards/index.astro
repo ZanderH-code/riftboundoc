@@ -40,7 +40,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
               </label>
               <label class="cards-select-field">
                 <span>Variant</span>
-                <select id="cards-variant-select"></select>
+                <div class="cards-multi" id="cards-variant-multi">
+                  <button id="cards-variant-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span id="cards-variant-label">All</span>
+                  </button>
+                  <div id="cards-variant-menu" class="cards-multi-menu" hidden></div>
+                </div>
               </label>
               <label class="cards-select-field">
                 <span>Rarity</span>
