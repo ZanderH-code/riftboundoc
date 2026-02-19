@@ -26,3 +26,17 @@ Live site: https://zanderh-code.github.io/riftboundoc/
 - Rules can include PDF files and text pages
 - New entries can be added by updating JSON/Markdown files in this repo
 
+## Release Workflow (Stable + Test)
+
+- `main` = stable production branch (GitHub Pages deploys from this branch)
+- `test` = testing branch for new changes
+
+Standard flow:
+
+1. Switch to `test` and make changes there.
+2. Run local checks (`npm run build`) and verify pages/features.
+3. Push `test` for review/testing.
+4. After validation, merge `test` into `main`.
+5. Push `main` to publish stable updates.
+
+Current stable baseline tag: `stable-2026-02-19`.
