@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.19.3";
+const SITE_VERSION = "2026.02.19.4";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -415,8 +415,8 @@ function initMobileTocDrawer() {
     if (ev.key === "Escape") closeDrawer();
   });
 
-  // Open by default on reading pages; user can close as needed.
-  openDrawer();
+  // Open by default on desktop; keep collapsed on mobile.
+  if (window.matchMedia("(min-width: 981px)").matches) openDrawer();
 }
 
 function initReaderPrefs() {
@@ -956,5 +956,6 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
