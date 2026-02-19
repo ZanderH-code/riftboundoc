@@ -1490,25 +1490,44 @@ async function initCardsPage() {
     const toHay = (doc) => markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
 
     const pickMatchedSnippets = (doc) => {
-      const body = markdownToPlain(String(doc.content || doc.summary || ""));
-      const chunks = body
-        .split(/\n+|(?<=[.!?])\s+/)
-        .map((x) => x.trim())
-        .filter(Boolean);
-      const hits = [];
-      let firstNeedle = "";
-      for (const chunk of chunks) {
-        const low = chunk.toLowerCase();
-        const matched = needles.find((n) => low.includes(n));
-        if (!matched) continue;
-        if (!firstNeedle) firstNeedle = matched;
-        const clipped = chunk.length > 180 ? `${chunk.slice(0, 180).trim()}...` : chunk;
-        hits.push(escapeHtml(clipped));
-        if (hits.length >= 2) break;
+      const markdown = String(doc.content || doc.summary || "");
+      const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
+      const sections = [];
+      let current = { heading: "", body: [] };
+      lines.forEach((line) => {
+        if (/^#{2,4}\s+/.test(line)) {
+          if (current.heading || current.body.length) sections.push(current);
+          current = { heading: line.replace(/^#{2,4}\s+/, "").trim(), body: [] };
+          return;
+        }
+        current.body.push(line);
+      });
+      if (current.heading || current.body.length) sections.push(current);
+
+      const toParagraphs = (section) =>
+        String(section.body.join("\n"))
+          .split(/\n\s*\n+/)
+          .map((x) => markdownToPlain(x))
+          .map((x) => x.trim())
+          .filter(Boolean);
+
+      for (const section of sections) {
+        const paragraphs = toParagraphs(section);
+        for (const paragraph of paragraphs) {
+          const lower = paragraph.toLowerCase();
+          const hit = needles.find((n) => lower.includes(n));
+          if (!hit) continue;
+          const start = lower.indexOf(hit);
+          const clipped = paragraph.slice(Math.max(0, start)).trim();
+          return {
+            snippet: escapeHtml(clipped),
+            query: hit || needles[0] || "",
+          };
+        }
       }
-      if (hits.length) return { snippet: hits.join(" ... "), query: firstNeedle || needles[0] || "" };
-      const fallback = body.slice(0, 180).trim();
-      return { snippet: escapeHtml(fallback) + (body.length > 180 ? "..." : ""), query: needles[0] || "" };
+
+      const fallback = markdownToPlain(markdown).slice(0, 200).trim();
+      return { snippet: escapeHtml(fallback) + (fallback.length >= 200 ? "..." : ""), query: needles[0] || "" };
     };
 
     return asItems(docs)
