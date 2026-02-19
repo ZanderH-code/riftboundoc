@@ -141,10 +141,11 @@ function renderErrata(items, target, options = {}) {
   target.innerHTML = asItems(items)
     .map((it) => {
       const preview = docPreview(it, 180);
+      const href = route(`errata-detail/?id=${encodeURIComponent(it.id || "")}`);
 
       if (compact) {
         return `
-      <article class="item">
+      <article class="item page-card" data-href="${href}" tabindex="0" role="link">
         <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
@@ -152,10 +153,10 @@ function renderErrata(items, target, options = {}) {
         } | Updated: ${
           formatDate(it.updatedAt)
         }</p>
+        <a href="${href}">Read online</a>
       </article>
     `;
       }
-      const href = route(`errata-detail/?id=${encodeURIComponent(it.id || "")}`);
       return `
       <article class="item page-card" data-href="${href}" tabindex="0" role="link">
         <h3>${it.title || "Untitled errata"}</h3>
