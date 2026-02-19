@@ -430,7 +430,7 @@ function renderCardAbilityText(text) {
     return `<span class="rb-token rb-energy" title="Energy ${n}">${escapeHtml(n)}</span>`;
   });
   html = html.replace(/:rb_might:/gi, () => {
-    return '<span class="rb-token rb-might" title="Might"></span>';
+    return "might";
   });
   html = html.replace(/:rb_rune_([a-z]+):/gi, (_m, keyRaw) => {
     const key = String(keyRaw || "").toLowerCase();
