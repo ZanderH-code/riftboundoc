@@ -71,6 +71,22 @@ function navActive() {
   });
   const ver = document.querySelector("#site-version");
   if (ver) ver.textContent = `v${SITE_VERSION}`;
+  updateAnchorOffsetVar();
+  window.addEventListener("resize", updateAnchorOffsetVar);
+}
+
+function getTopbarHeight() {
+  const bar = q(".topbar");
+  if (!bar) return 0;
+  return Math.max(0, Math.round(bar.getBoundingClientRect().height));
+}
+
+function updateAnchorOffsetVar() {
+  const topbar = getTopbarHeight();
+  const vh = window.innerHeight || 800;
+  const fallback = vh <= 800 ? 170 : 146;
+  const dynamic = Math.max(fallback, topbar + 24);
+  document.documentElement.style.setProperty("--anchor-offset", `${dynamic}px`);
 }
 
 function asItems(list) {
@@ -450,12 +466,32 @@ function flashAnchorTarget(targetId) {
   window.setTimeout(() => el.classList.remove("anchor-focus"), 1600);
 }
 
+function scrollToAnchorTarget(targetId) {
+  if (!targetId) return;
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  updateAnchorOffsetVar();
+  const topbar = getTopbarHeight();
+  const viewport = window.innerHeight || 0;
+  // Keep target in the upper-middle viewport area.
+  const preferredOffset = Math.max(topbar + 20, Math.round(viewport * 0.32));
+  const targetTop = Math.max(0, window.scrollY + el.getBoundingClientRect().top - preferredOffset);
+  window.scrollTo({ top: targetTop, behavior: "smooth" });
+}
+
 function bindTocHighlights(toc) {
   if (!toc) return;
   toc.querySelectorAll('a[href^="#"]').forEach((a) => {
-    a.addEventListener("click", () => {
+    a.addEventListener("click", (ev) => {
       const id = String(a.getAttribute("href") || "").replace(/^#/, "");
-      window.setTimeout(() => flashAnchorTarget(id), 30);
+      if (!id) return;
+      ev.preventDefault();
+      scrollToAnchorTarget(id);
+      try {
+        const base = window.location.pathname + window.location.search;
+        window.history.replaceState({}, "", `${base}#${id}`);
+      } catch {}
+      window.setTimeout(() => flashAnchorTarget(id), 120);
     });
   });
 }
