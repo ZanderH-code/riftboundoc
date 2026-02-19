@@ -544,6 +544,48 @@ main > section h2 {
   margin: 0.35em 0;
 }
 
+.card-ability-preview .rb-token {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.card-ability-preview .rb-energy {
+  width: 1.12em;
+  height: 1.12em;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #17212d;
+  font-weight: 700;
+  font-size: 0.86em;
+  line-height: 1;
+}
+
+.card-ability-preview .rb-rune {
+  width: 1.02em;
+  height: 1.02em;
+  object-fit: contain;
+}
+
+.card-ability-preview .rb-rainbow {
+  width: 0.96em;
+  height: 0.96em;
+  border-radius: 999px;
+  border: 1px solid #cfd9e4;
+  background: conic-gradient(#e74c3c, #f1c40f, #2ecc71, #3498db, #9b59b6, #e74c3c);
+}
+
+.card-ability-preview .rb-rune-text {
+  border-radius: 999px;
+  border: 1px solid #3b546a;
+  padding: 0.05em 0.36em;
+  color: #b6cadf;
+  font-size: 0.74em;
+  text-transform: uppercase;
+}
+
 .cards-modal {
   position: fixed;
   inset: 0;

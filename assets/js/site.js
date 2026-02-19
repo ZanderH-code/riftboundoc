@@ -381,7 +381,9 @@ function renderCards(items, target) {
       const rarity = escapeHtml(it.rarity || "-");
       const type = escapeHtml(asItems(it.cardTypes).join(", ") || "-");
       const domains = escapeHtml(asItems(it.domains).join(", ") || "-");
-      const ability = escapeHtml(String(it.abilityText || "").slice(0, 260));
+      const abilityRaw = String(it.abilityText || "");
+      const abilityCut = abilityRaw.slice(0, 260);
+      const ability = renderCardAbilityText(abilityCut);
       const img = escapeHtml(it.imageUrl || "");
       const alt = escapeHtml(it.imageAlt || it.name || "Card image");
       const stats = [
@@ -402,7 +404,7 @@ function renderCards(items, target) {
           <p class="muted">Code: ${code} | Set: ${setName}</p>
           <p class="muted">Type: ${type} | Domain: ${domains} | Rarity: ${rarity}</p>
           ${stats ? `<p class="muted">${stats}</p>` : ""}
-          ${ability ? `<p>${ability}${String(it.abilityText || "").length > 260 ? "..." : ""}</p>` : ""}
+          ${ability ? `<p class="card-ability-preview">${ability}${abilityRaw.length > 260 ? "..." : ""}</p>` : ""}
         </div>
       </article>
     `;
