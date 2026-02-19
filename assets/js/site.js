@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.7";
+const SITE_VERSION = "2026.02.20.8";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -166,7 +166,6 @@ function renderFaq(items, target, options = {}) {
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
           formatDate(it.publishedAt)
         } | Updated: ${formatDate(it.updatedAt)}</p>
-        <a href="${href}">Read online</a>
       </article>
     `;
     })
@@ -189,14 +188,13 @@ function renderErrata(items, target, options = {}) {
       if (compact) {
         return `
       <article class="item page-card" data-href="${href}" tabindex="0" role="link">
-        <h3><a href="${href}">${it.title || "Untitled errata"}</a></h3>
+        <h3>${it.title || "Untitled errata"}</h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
           formatDate(it.publishedAt)
         } | Updated: ${
           formatDate(it.updatedAt)
         }</p>
-        <a href="${href}">Read online</a>
       </article>
     `;
       }
@@ -207,7 +205,6 @@ function renderErrata(items, target, options = {}) {
         <p class="muted">Source: ${it.source || "Official"} | Published: ${
           formatDate(it.publishedAt)
         } | Updated: ${formatDate(it.updatedAt)}</p>
-        <a href="${href}">Read online</a>
       </article>
     `;
     })
@@ -229,7 +226,6 @@ function renderRules(files, target) {
         <h3>${it.title || it.name || "Untitled rule"}</h3>
         <p>${it.summary || ""}</p>
         <p class="muted">Source: ${it.source || "Manual"} | Updated: ${formatDate(it.updatedAt)}</p>
-        <a href="${link.href}"${link.target ? ` target="${link.target}" rel="${link.rel}"` : ""}>Read online</a>
       </article>
     `
     })
@@ -331,7 +327,6 @@ function renderCoreRuleCard(pages, rules, target) {
     <article class="item page-card featured-card" data-href="${href}" tabindex="0" role="link">
       <h3>${title}</h3>
       <p>${summary}</p>
-      <a href="${href}">Open Core Rules</a>
     </article>
   `;
 }
@@ -347,7 +342,7 @@ function buildTocFor(contentSelector, tocSelector) {
     contentSelector === "#faq-content"
       ? Array.from(content.querySelectorAll("p, li")).filter((el) => {
           const txt = String(el.textContent || "").trim();
-          return /^Q:\s+/i.test(txt) || /^Q锛歕s+/.test(txt);
+          return /^Q:\s+/i.test(txt) || /^Q：\s+/.test(txt);
         })
       : [];
 
@@ -1285,6 +1280,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
