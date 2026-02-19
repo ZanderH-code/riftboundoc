@@ -69,6 +69,10 @@ def normalize_card(row: dict) -> dict:
         if isinstance(x, str) and x.strip()
     ]
     ability_html = pick_values(row, ("text", "richText", "body"), "")
+    effect_html = pick_values(row, ("effect", "richText", "body"), "")
+    ability_text = html_to_text(ability_html)
+    effect_text = html_to_text(effect_html)
+    merged_text = "\n\n".join(x for x in (ability_text, effect_text) if x).strip()
     return {
         "id": row.get("id", ""),
         "name": row.get("name", ""),
@@ -87,7 +91,7 @@ def normalize_card(row: dict) -> dict:
         "orientation": row.get("orientation", ""),
         "imageUrl": pick_values(row, ("cardImage", "url"), ""),
         "imageAlt": pick_values(row, ("cardImage", "accessibilityText"), ""),
-        "abilityText": html_to_text(ability_html),
+        "abilityText": merged_text,
     }
 
 
@@ -144,4 +148,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
