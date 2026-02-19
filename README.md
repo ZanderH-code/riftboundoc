@@ -1,128 +1,28 @@
-# Riftbound Hub (GitHub Pages)
+# riftboundoc
 
 Live site: https://zanderh-code.github.io/riftboundoc/
 
-Static website for Riftbound players with:
+`riftboundoc` is a player-friendly website that organizes official Riftbound rules content in one place.
 
-- FAQ list (`data/faqs.json`)
-- Errata list (`data/errata.json`)
-- Rules PDF index (`content/rules/index.json`)
-- Online PDF reader (`reader.html`)
-- Rules text pages in Markdown (`content/pages/*.md` + `data/pages.json`)
-- Home search across FAQ/Errata/Rules (type/scope/snippet controls)
-- Updates timeline (`updates/`) and RSS feed (`rss.xml`)
-- Modular frontend scripts in `assets/js/` (`core`, `renderers`, `search`, `reading-drawer`, `home`, `site`)
+## What This Site Is For
 
-## Deploy on GitHub Pages
+- Read official FAQ updates in a clean, searchable format
+- Read official errata updates by set
+- Read core rules online (including text-formatted rule pages)
+- Quickly search across FAQ, errata, and rules content
+- Give players one stable link to check the latest official clarifications
 
-1. Push this repo to GitHub.
-2. In repository settings, enable **Pages** and choose branch `main` and folder `/ (root)`.
-3. Open: `https://<owner>.github.io/<repo>/`
+## Main Sections
 
-Clean share URLs (no `.html`):
-- `https://<owner>.github.io/<repo>/faq/`
-- `https://<owner>.github.io/<repo>/errata/`
-- `https://<owner>.github.io/<repo>/rules/`
-- `https://<owner>.github.io/<repo>/updates/`
+- `Home`: latest rules, FAQ, and errata
+- `FAQ`: official FAQ entries
+- `Errata`: official errata entries
+- `Rules`: rulebook resources and rule pages
+- `Updates`: recent content updates
 
-## Content Management
+## Content Source Notes
 
-### Option A: Edit files directly
-
-- Add FAQ entries in `data/faqs.json`
-- Add errata entries in `data/errata.json`
-- Add/update page records in `data/pages.json`
-- Add page Markdown files in `content/pages/`
-- Add/update rules in `content/rules/index.json`
-- `data/pages.json` is reserved for rules text pages (`kind: rule_page`)
-
-Rules index format:
-
-```json
-{
-  "updatedAt": "2026-02-18",
-  "rules": [
-    {
-      "id": "core-rules-v1-2-text",
-      "title": "Riftbound Core Rules v1.2 (Text Version)",
-      "kind": "page",
-      "pageId": "riftbound-core-rules-v1-2",
-      "summary": "Structured text version converted from the official PDF.",
-      "source": "Converted from PDF",
-      "updatedAt": "2026-02-18"
-    },
-    {
-      "id": "core-rules-v1-2-pdf",
-      "title": "Riftbound Core Rules v1.2 (PDF)",
-      "kind": "pdf",
-      "url": "content/rules/files/riftbound-core-rules-v1-2.pdf",
-      "summary": "Original PDF file.",
-      "source": "Official release",
-      "updatedAt": "2026-02-18"
-    },
-    {
-      "id": "origins-faq",
-      "title": "Riftbound Origins FAQ",
-      "kind": "external",
-      "url": "https://riftbound.leagueoflegends.com/en-us/news/rules-and-releases/riftbound-origins-faq/",
-      "summary": "Official web page.",
-      "source": "Riftbound Official",
-      "updatedAt": "2026-02-18"
-    }
-  ]
-}
-```
-
-`kind` meaning:
-- `page`: links to `pages/?id=<pageId>`
-- `pdf`: links to `reader/?src=<url>`
-- `external`: opens the original URL
-
-## Notes
-
-- This project is fully static; no backend is required.
-- No auto-fetch/sync is enabled by default.
-
-## Convert PDF to Text Page
-
-If you want the rulebook as readable/searchable web text, convert PDF to Markdown:
-
-1. Install dependency:
-   `pip install pypdf`
-2. Convert:
-   `python tools/pdf_to_md.py <input.pdf> content/pages/<page-id>.md --title "<Page Title>"`
-3. Add/update the page entry in `data/pages.json`, for example:
-   `{ "id": "rulebook-v1", "title": "Rulebook V1", "summary": "...", "file": "content/pages/rulebook-v1.md", "updatedAt": "2026-02-18" }`
-
-Note: If the PDF is image-scanned (not selectable text), text extraction quality may be poor. In that case, OCR is needed.
-
-## Import Official FAQ/Errata
-
-FAQ:
-`python tools/import_official_faqs.py data/faqs.json <faq_url_1> <faq_url_2>`
-
-Note: FAQ import writes one entry per source URL (for example Origins FAQ and Spiritforged FAQ as two separate entries).
-
-Errata:
-`python tools/import_official_errata.py data/errata.json <errata_url_1> <errata_url_2>`
-
-Unified document fields for FAQ/Errata entries:
-`kind`, `id`, `title`, `summary`, `content`, `source`, `publishedAt`, `originUrl`, `updatedAt`
-
-## Maintenance Scripts
-
-- Validate schema:
-  `python tools/validate_content_schema.py`
-- Check internal links:
-  `python tools/check_links.py`
-- Predeploy gate (schema + links + non-empty critical datasets + route presence):
-  `python tools/predeploy_check.py`
-- One-click sync + validate:
-  `python tools/sync_all.py`
-
-CI (`.github/workflows/qa.yml`) runs predeploy checks on push/PR.
-
-## i18n Reserve
-
-Language dictionaries are reserved under `data/i18n/` (`en.json`, `zh-CN.json`) for future multilingual UI expansion.
+- FAQ and Errata content comes from official Riftbound pages
+- Rules can include PDF files and text pages
+- New entries can be added by updating JSON/Markdown files in this repo
 
