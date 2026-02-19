@@ -1481,9 +1481,11 @@ async function initCardsPage() {
       const sections = [];
       let current = { heading: "", body: [] };
       lines.forEach((line) => {
-        if (/^#{2,4}\s+/.test(line)) {
+        // Split card/entry blocks only by level-2 headings.
+        // Keep level-3 Q headings inside the same card section.
+        if (/^##\s+/.test(line)) {
           if (current.heading || current.body.length) sections.push(current);
-          current = { heading: line.replace(/^#{2,4}\s+/, "").trim(), body: [] };
+          current = { heading: line.replace(/^##\s+/, "").trim(), body: [] };
           return;
         }
         current.body.push(line);
