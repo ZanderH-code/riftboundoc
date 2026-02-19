@@ -1485,7 +1485,10 @@ async function initCardsPage() {
     const full = String(cardName || "").trim();
     if (!full) return [];
     const base = full.split(",")[0].trim();
-    const needles = Array.from(new Set([full, base].filter(Boolean).map((x) => x.toLowerCase())));
+    const useBaseNeedle = base.length >= 3;
+    const needles = Array.from(
+      new Set([full, useBaseNeedle ? base : ""].filter(Boolean).map((x) => x.toLowerCase()))
+    );
     const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const matchNeedleIndex = (textLower, needleLower) => {
       if (!textLower || !needleLower) return -1;
