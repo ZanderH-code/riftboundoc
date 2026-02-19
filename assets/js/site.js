@@ -1219,11 +1219,21 @@ async function initCardsPage() {
   const sortKeySelect = q("#cards-sort-key");
   const sortDirBtn = q("#cards-sort-dir");
   const domainWrap = q("#cards-domain-icons");
-  const setSelect = q("#cards-set-select");
-  const typeSelect = q("#cards-type-select");
-  const supertypeSelect = q("#cards-supertype-select");
-  const variantSelect = q("#cards-variant-select");
-  const raritySelect = q("#cards-rarity-select");
+  const setToggle = q("#cards-set-toggle");
+  const setLabel = q("#cards-set-label");
+  const setMenu = q("#cards-set-menu");
+  const typeToggle = q("#cards-type-toggle");
+  const typeLabel = q("#cards-type-label");
+  const typeMenu = q("#cards-type-menu");
+  const supertypeToggle = q("#cards-supertype-toggle");
+  const supertypeLabel = q("#cards-supertype-label");
+  const supertypeMenu = q("#cards-supertype-menu");
+  const variantToggle = q("#cards-variant-toggle");
+  const variantLabel = q("#cards-variant-label");
+  const variantMenu = q("#cards-variant-menu");
+  const rarityToggle = q("#cards-rarity-toggle");
+  const rarityLabel = q("#cards-rarity-label");
+  const rarityMenu = q("#cards-rarity-menu");
   const energyMin = q("#cards-energy-min");
   const energyMax = q("#cards-energy-max");
   const powerMin = q("#cards-power-min");
@@ -1252,11 +1262,21 @@ async function initCardsPage() {
     !sortKeySelect ||
     !sortDirBtn ||
     !domainWrap ||
-    !setSelect ||
-    !typeSelect ||
-    !supertypeSelect ||
-    !variantSelect ||
-    !raritySelect ||
+    !setToggle ||
+    !setLabel ||
+    !setMenu ||
+    !typeToggle ||
+    !typeLabel ||
+    !typeMenu ||
+    !supertypeToggle ||
+    !supertypeLabel ||
+    !supertypeMenu ||
+    !variantToggle ||
+    !variantLabel ||
+    !variantMenu ||
+    !rarityToggle ||
+    !rarityLabel ||
+    !rarityMenu ||
     !energyMin ||
     !energyMax ||
     !powerMin ||
@@ -1309,11 +1329,11 @@ async function initCardsPage() {
     query: "",
     sortKey: "card",
     sortDir: "asc",
-    set: "all",
-    type: "all",
-    supertype: "all",
-    variant: "all",
-    rarity: "all",
+    sets: new Set(),
+    types: new Set(),
+    supertypes: new Set(),
+    variants: new Set(),
+    rarities: new Set(),
     domains: new Set(),
     ranges: {
       energy: { ...limits.energy },
@@ -1340,17 +1360,6 @@ async function initCardsPage() {
     Chaos: route("assets/img/domains/chaos.webp"),
     Fury: route("assets/img/domains/fury.webp"),
   };
-  const fillSelect = (el, rows, allLabel) => {
-    el.innerHTML = [`<option value="all">${escapeHtml(allLabel)}</option>`]
-      .concat(rows.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`))
-      .join("");
-  };
-  fillSelect(setSelect, sets, "All");
-  fillSelect(typeSelect, types, "All");
-  fillSelect(supertypeSelect, supertypes, "All");
-  fillSelect(variantSelect, variantOptions, "All");
-  fillSelect(raritySelect, rarities, "All");
-
   sortKeySelect.value = state.sortKey;
   sortDirBtn.textContent = "Asc";
 
@@ -1382,6 +1391,67 @@ async function initCardsPage() {
       const domain = btn.getAttribute("data-domain") || "";
       btn.classList.toggle("active", state.domains.has(domain));
     });
+  };
+
+  const multiMenus = [];
+  const closeMultiMenus = (except = null) => {
+    multiMenus.forEach((m) => {
+      if (except && m === except) return;
+      m.hidden = true;
+    });
+    [
+      setToggle,
+      typeToggle,
+      supertypeToggle,
+      variantToggle,
+      rarityToggle,
+    ].forEach((btn) => {
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  const bindMultiFilter = ({ toggle, label, menu, options, selected }) => {
+    multiMenus.push(menu);
+    const updateLabel = () => {
+      if (!selected.size) {
+        label.textContent = "All";
+        return;
+      }
+      if (selected.size === 1) {
+        label.textContent = Array.from(selected)[0];
+        return;
+      }
+      label.textContent = `${selected.size} selected`;
+    };
+    const renderMenu = () => {
+      menu.innerHTML = options
+        .map(
+          (name) => `
+        <label class="cards-multi-item">
+          <input type="checkbox" value="${escapeHtml(name)}" ${selected.has(name) ? "checked" : ""} />
+          <span>${escapeHtml(name)}</span>
+        </label>
+      `
+        )
+        .join("");
+      menu.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+        input.addEventListener("change", () => {
+          const name = input.value;
+          if (input.checked) selected.add(name);
+          else selected.delete(name);
+          updateLabel();
+          render(1);
+        });
+      });
+    };
+    toggle.addEventListener("click", () => {
+      const willOpen = menu.hidden;
+      closeMultiMenus(menu);
+      menu.hidden = !willOpen;
+      toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
+    updateLabel();
+    renderMenu();
   };
 
   const getCardVariantSet = (card) => {
@@ -1473,15 +1543,24 @@ async function initCardsPage() {
     return false;
   };
 
+  const matchesAnySelected = (values, selected) => {
+    if (!selected.size) return true;
+    const row = new Set(asItems(values).map((x) => String(x)));
+    for (const value of selected) {
+      if (row.has(String(value))) return true;
+    }
+    return false;
+  };
+
   const filtered = () => {
     const term = markdownToPlain(state.query).toLowerCase();
     return getSorted(
       cards.filter((c) => {
-        if (state.set !== "all" && String(c.set || "") !== state.set) return false;
-        if (state.type !== "all" && !asItems(c.cardTypes).includes(state.type)) return false;
-        if (state.supertype !== "all" && !asItems(c.superTypes).includes(state.supertype)) return false;
-        if (state.variant !== "all" && !getCardVariantSet(c).has(state.variant)) return false;
-        if (state.rarity !== "all" && String(c.rarity || "") !== state.rarity) return false;
+        if (!matchesAnySelected([String(c.set || "")], state.sets)) return false;
+        if (!matchesAnySelected(asItems(c.cardTypes), state.types)) return false;
+        if (!matchesAnySelected(asItems(c.superTypes), state.supertypes)) return false;
+        if (!matchesAnySelected(Array.from(getCardVariantSet(c)), state.variants)) return false;
+        if (!matchesAnySelected([String(c.rarity || "")], state.rarities)) return false;
         if (!matchesDomains(c.domains)) return false;
         if (!inNumberRange(c.energy, state.ranges.energy, limits.energy)) return false;
         if (!inNumberRange(c.power, state.ranges.power, limits.power)) return false;
@@ -1557,25 +1636,40 @@ async function initCardsPage() {
     renderSearchPager(rows.length, state.page, pageSize, pager, (p) => render(p));
   };
 
-  setSelect.addEventListener("change", () => {
-    state.set = setSelect.value || "all";
-    render(1);
+  bindMultiFilter({
+    toggle: setToggle,
+    label: setLabel,
+    menu: setMenu,
+    options: sets,
+    selected: state.sets,
   });
-  typeSelect.addEventListener("change", () => {
-    state.type = typeSelect.value || "all";
-    render(1);
+  bindMultiFilter({
+    toggle: typeToggle,
+    label: typeLabel,
+    menu: typeMenu,
+    options: types,
+    selected: state.types,
   });
-  supertypeSelect.addEventListener("change", () => {
-    state.supertype = supertypeSelect.value || "all";
-    render(1);
+  bindMultiFilter({
+    toggle: supertypeToggle,
+    label: supertypeLabel,
+    menu: supertypeMenu,
+    options: supertypes,
+    selected: state.supertypes,
   });
-  variantSelect.addEventListener("change", () => {
-    state.variant = variantSelect.value || "all";
-    render(1);
+  bindMultiFilter({
+    toggle: variantToggle,
+    label: variantLabel,
+    menu: variantMenu,
+    options: variantOptions,
+    selected: state.variants,
   });
-  raritySelect.addEventListener("change", () => {
-    state.rarity = raritySelect.value || "all";
-    render(1);
+  bindMultiFilter({
+    toggle: rarityToggle,
+    label: rarityLabel,
+    menu: rarityMenu,
+    options: rarities,
+    selected: state.rarities,
   });
   sortKeySelect.addEventListener("change", () => {
     state.sortKey = sortKeySelect.value || "card";
@@ -1600,7 +1694,7 @@ async function initCardsPage() {
   searchInput.addEventListener("keydown", (ev) => {
     if (ev.key === "/") {
       ev.preventDefault();
-      setSelect.focus();
+      setToggle.focus();
     }
     if (ev.key === "Enter") {
       state.query = searchInput.value || "";
@@ -1613,7 +1707,13 @@ async function initCardsPage() {
     const t = ev.target;
     if (t && t.closest && t.closest("[data-cards-close='1']")) closeCardModal();
   });
+  document.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if (t && t.closest && t.closest(".cards-multi")) return;
+    closeMultiMenus();
+  });
   document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") closeMultiMenus();
     if (ev.key === "Escape" && !modal.hidden) closeCardModal();
   });
 
