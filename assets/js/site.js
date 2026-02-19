@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.19.1";
+const SITE_VERSION = "2026.02.19.2";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -415,6 +415,9 @@ function initMobileTocDrawer() {
   window.addEventListener("keydown", (ev) => {
     if (ev.key === "Escape") closeDrawer();
   });
+
+  // Open by default on reading pages; user can close as needed.
+  openDrawer();
 }
 
 function initReaderPrefs() {

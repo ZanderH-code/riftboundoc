@@ -415,7 +415,6 @@ body.has-toc-drawer .toc-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(3, 8, 14, 0.58);
-  backdrop-filter: blur(1px);
   z-index: 68;
   opacity: 0;
   pointer-events: none;
