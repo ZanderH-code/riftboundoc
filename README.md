@@ -1,4 +1,6 @@
-﻿# Riftbound Hub (GitHub Pages)
+# Riftbound Hub (GitHub Pages)
+
+Live site: https://zanderh-code.github.io/riftboundoc/
 
 Static website for Riftbound players with:
 
@@ -6,8 +8,8 @@ Static website for Riftbound players with:
 - Errata list (`data/errata.json`)
 - Rules PDF index (`content/rules/index.json`)
 - Online PDF reader (`reader.html`)
-- Community pages in Markdown (`content/pages/*.md` + `data/pages.json`)
-- Home search across FAQ/Errata/Rules/Pages
+- Rules text pages in Markdown (`content/pages/*.md` + `data/pages.json`)
+- Home search across FAQ/Errata/Rules
 - Updates timeline (`updates/`) and RSS feed (`rss.xml`)
 
 ## Deploy on GitHub Pages
@@ -20,7 +22,6 @@ Clean share URLs (no `.html`):
 - `https://<owner>.github.io/<repo>/faq/`
 - `https://<owner>.github.io/<repo>/errata/`
 - `https://<owner>.github.io/<repo>/rules/`
-- `https://<owner>.github.io/<repo>/pages/`
 - `https://<owner>.github.io/<repo>/updates/`
 
 ## Content Management
@@ -71,8 +72,8 @@ Rules index format:
 ```
 
 `kind` meaning:
-- `page`: links to `page.html?id=<pageId>`
-- `pdf`: links to `reader.html?src=<url>`
+- `page`: links to `pages/?id=<pageId>`
+- `pdf`: links to `reader/?src=<url>`
 - `external`: opens the original URL
 
 ## Notes
@@ -120,3 +121,4 @@ CI (`.github/workflows/qa.yml`) runs schema and link checks on push/PR.
 ## i18n Reserve
 
 Language dictionaries are reserved under `data/i18n/` (`en.json`, `zh-CN.json`) for future multilingual UI expansion.
+
