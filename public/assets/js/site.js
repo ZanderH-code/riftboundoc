@@ -1496,16 +1496,19 @@ async function initCardsPage() {
         .map((x) => x.trim())
         .filter(Boolean);
       const hits = [];
+      let firstNeedle = "";
       for (const chunk of chunks) {
         const low = chunk.toLowerCase();
-        if (!needles.some((n) => low.includes(n))) continue;
+        const matched = needles.find((n) => low.includes(n));
+        if (!matched) continue;
+        if (!firstNeedle) firstNeedle = matched;
         const clipped = chunk.length > 180 ? `${chunk.slice(0, 180).trim()}...` : chunk;
         hits.push(escapeHtml(clipped));
         if (hits.length >= 2) break;
       }
-      if (hits.length) return hits.join(" ... ");
+      if (hits.length) return { snippet: hits.join(" ... "), query: firstNeedle || needles[0] || "" };
       const fallback = body.slice(0, 180).trim();
-      return escapeHtml(fallback) + (body.length > 180 ? "..." : "");
+      return { snippet: escapeHtml(fallback) + (body.length > 180 ? "..." : ""), query: needles[0] || "" };
     };
 
     return asItems(docs)
@@ -1514,10 +1517,12 @@ async function initCardsPage() {
         const lower = hay.toLowerCase();
         const matched = needles.some((n) => lower.includes(n));
         if (!matched) return null;
+        const picked = pickMatchedSnippets(doc);
         return {
           id: doc.id || "",
           title: doc.title || "Untitled",
-          snippet: pickMatchedSnippets(doc),
+          snippet: picked.snippet,
+          query: picked.query,
         };
       })
       .filter(Boolean)
@@ -1531,13 +1536,18 @@ async function initCardsPage() {
       return;
     }
     wrap.hidden = false;
-    const toHref = (id) =>
-      kind === "faq" ? route(`faq-detail/?id=${encodeURIComponent(id)}`) : route(`errata-detail/?id=${encodeURIComponent(id)}`);
+    const toHref = (id, query) => {
+      const baseHref =
+        kind === "faq"
+          ? route(`faq-detail/?id=${encodeURIComponent(id)}`)
+          : route(`errata-detail/?id=${encodeURIComponent(id)}`);
+      return withQuery(baseHref, "q", query || "");
+    };
     listEl.innerHTML = rows
       .map(
         (x) => `
       <article class="cards-related-item">
-        <h4><a href="${toHref(x.id)}">${escapeHtml(x.title)}</a></h4>
+        <h4><a href="${toHref(x.id, x.query)}">${escapeHtml(x.title)}</a></h4>
         <p class="muted">${x.snippet}</p>
       </article>
     `
