@@ -364,6 +364,7 @@ function initMobileTocDrawer() {
   const toc = panel ? panel.querySelector(".toc") : null;
   if (!root || !panel || !toc) return;
   if (q("#toc-fab")) return;
+  document.body.classList.add("has-toc-drawer");
 
   const openBtn = document.createElement("button");
   openBtn.type = "button";
@@ -413,9 +414,6 @@ function initMobileTocDrawer() {
   });
   window.addEventListener("keydown", (ev) => {
     if (ev.key === "Escape") closeDrawer();
-  });
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 980) closeDrawer();
   });
 }
 
