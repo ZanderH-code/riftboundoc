@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.19.2";
+const SITE_VERSION = "2026.02.19.3";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -374,12 +374,6 @@ function initMobileTocDrawer() {
   openBtn.setAttribute("aria-expanded", "false");
   openBtn.textContent = "Contents";
 
-  const backdrop = document.createElement("button");
-  backdrop.type = "button";
-  backdrop.id = "toc-backdrop";
-  backdrop.className = "toc-backdrop";
-  backdrop.setAttribute("aria-label", "Close contents");
-
   panel.id = panel.id || "toc-drawer";
   panel.classList.add("toc-drawer");
 
@@ -394,7 +388,6 @@ function initMobileTocDrawer() {
   header.appendChild(closeBtn);
 
   if (!panel.querySelector(".toc-drawer-head")) panel.prepend(header);
-  document.body.appendChild(backdrop);
   document.body.appendChild(openBtn);
 
   const closeDrawer = () => {
@@ -408,9 +401,15 @@ function initMobileTocDrawer() {
 
   openBtn.addEventListener("click", openDrawer);
   closeBtn.addEventListener("click", closeDrawer);
-  backdrop.addEventListener("click", closeDrawer);
   panel.addEventListener("click", (ev) => {
     if (ev.target && ev.target.closest(".toc-link")) closeDrawer();
+  });
+  document.addEventListener("click", (ev) => {
+    if (!document.body.classList.contains("toc-drawer-open")) return;
+    const target = ev.target;
+    if (!target) return;
+    if (panel.contains(target) || openBtn.contains(target)) return;
+    closeDrawer();
   });
   window.addEventListener("keydown", (ev) => {
     if (ev.key === "Escape") closeDrawer();
@@ -957,4 +956,5 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
