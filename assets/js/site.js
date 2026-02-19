@@ -373,10 +373,37 @@ function searchDocs(query, docs) {
         idx = hay.indexOf(token, idx + token.length);
       }
     }
-    scored.push({ ...doc, score });
+    let firstHit = -1;
+    for (const token of tokens) {
+      const idx = hay.indexOf(token);
+      if (idx >= 0 && (firstHit < 0 || idx < firstHit)) firstHit = idx;
+    }
+    scored.push({ ...doc, score, firstHit });
   }
   scored.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
-  return scored.slice(0, 30);
+  return scored.slice(0, 30).map((row) => ({
+    ...row,
+    snippet: buildSearchSnippet(row.text, tokens, row.firstHit),
+  }));
+}
+
+function buildSearchSnippet(text, tokens, firstHit) {
+  const plain = String(text || "").trim();
+  if (!plain) return "";
+  const start = Math.max(0, (firstHit >= 0 ? firstHit : 0) - 70);
+  const end = Math.min(plain.length, (firstHit >= 0 ? firstHit : 0) + 170);
+  const prefix = start > 0 ? "..." : "";
+  const suffix = end < plain.length ? "..." : "";
+  let snippet = `${prefix}${plain.slice(start, end).trim()}${suffix}`;
+
+  // Highlight matched tokens in preview.
+  for (const token of tokens) {
+    if (!token) continue;
+    const safe = token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(${safe})`, "ig");
+    snippet = snippet.replace(re, "<mark>$1</mark>");
+  }
+  return snippet;
 }
 
 function renderSearchResults(results, target, meta, query) {
@@ -393,14 +420,14 @@ function renderSearchResults(results, target, meta, query) {
   }
   target.innerHTML = results
     .map((r) => {
-      const snippet = escapeHtml(String(r.text || "").slice(0, 220));
+      const snippet = r.snippet || "";
       return `
       <article class="item search-result">
         <div class="result-head">
           <h3><a href="${r.href}">${escapeHtml(r.title)}</a></h3>
           <span class="result-kind">${r.kind}</span>
         </div>
-        <p class="result-snippet">${snippet}${String(r.text || "").length > 220 ? "..." : ""}</p>
+        <p class="result-snippet">${snippet}</p>
       </article>
     `;
     })

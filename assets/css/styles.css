@@ -231,6 +231,13 @@ main > section h2 {
   margin-top: 6px;
 }
 
+.search-result mark {
+  background: #3e5f1d;
+  color: #f5ffd9;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
 input,
 textarea,
 select,
