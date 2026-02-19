@@ -1674,12 +1674,12 @@ async function initCardsPage() {
     listEl.innerHTML = rows
       .map(
         (x) => `
-      <article class="cards-related-item">
+      <a class="cards-related-item cards-related-link" href="${toHref(x.id, x.query)}">
         <p class="muted cards-related-snippet">${x.snippet}</p>
         <div class="cards-related-foot">
-          <a href="${toHref(x.id, x.query)}">${escapeHtml(x.sourceTitle || x.title)}</a>
+          <span>${escapeHtml(x.sourceTitle || x.title)}</span>
         </div>
-      </article>
+      </a>
     `
       )
       .join("");

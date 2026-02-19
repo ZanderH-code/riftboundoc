@@ -632,6 +632,7 @@ main > section h2 {
   background: linear-gradient(180deg, #111a25, #101722);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   padding: 14px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
 }
 
 .cards-modal-close {
@@ -754,6 +755,18 @@ main > section h2 {
   background: #132031;
 }
 
+.cards-related-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards-related-link:hover,
+.cards-related-link:focus-visible {
+  border-color: #4b6c8d;
+  background: #18283b;
+}
+
 .cards-related-item p {
   margin: 0;
 }
@@ -768,7 +781,7 @@ main > section h2 {
   justify-content: flex-end;
 }
 
-.cards-related-foot a {
+.cards-related-foot span {
   font-size: 0.85rem;
   color: #9ecfff;
   text-decoration: none;
@@ -1368,12 +1381,13 @@ body.reader-immersive .pdf-frame {
     top: 0;
     transform: none;
     width: 100vw;
-    max-height: 100vh;
-    min-height: 100vh;
+    max-height: 100dvh;
+    min-height: 100dvh;
     border-radius: 0;
     border-left: 0;
     border-right: 0;
     padding: 10px;
+    padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px));
   }
 
   .cards-modal-close {
