@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Riftbound Hub: searchable FAQ, errata, rules, and player pages." />
+    <meta name="description" content="Riftbound Hub: searchable FAQ, errata, and rules." />
     <meta property="og:title" content="Riftbound Hub" />
     <meta property="og:description" content="Search official FAQ, errata, and rules in one place." />
     <meta property="og:type" content="website" />
@@ -22,7 +22,6 @@
           <a href="faq/">FAQ</a>
           <a href="errata/">Errata</a>
           <a href="rules/">Rules</a>
-          <a href="pages/">Pages</a>
           <a href="updates/">Updates</a>
         </nav>
       </div>
@@ -32,7 +31,6 @@
         <h1>Riftbound FAQ and Rules Portal</h1>
         <p class="muted">Read official FAQs, errata, and searchable rules in one consistent hub.</p>
         <div class="grid">
-          <article class="card stat-card page-card" data-href="pages/" tabindex="0" role="link"><h2>Pages</h2><p id="stats-pages">-</p></article>
           <article class="card stat-card page-card" data-href="faq/" tabindex="0" role="link"><h2>FAQ</h2><p id="stats-faq">-</p></article>
           <article class="card stat-card page-card" data-href="errata/" tabindex="0" role="link"><h2>Errata</h2><p id="stats-errata">-</p></article>
           <article class="card stat-card page-card" data-href="rules/" tabindex="0" role="link"><h2>Rule Files</h2><p id="stats-rules">-</p></article>
@@ -42,7 +40,7 @@
       <section class="search-panel">
         <h2>Search</h2>
         <div class="search-row">
-          <input id="home-search-input" type="search" placeholder="Search rules, FAQ, errata, pages..." />
+          <input id="home-search-input" type="search" placeholder="Search rules, FAQ, errata..." />
           <button id="home-search-btn" type="button">Search</button>
         </div>
         <div class="search-row">
@@ -51,7 +49,6 @@
             <option value="FAQ">FAQ</option>
             <option value="Errata">Errata</option>
             <option value="Rule">Rule</option>
-            <option value="Page">Page</option>
           </select>
           <select id="home-search-mode">
             <option value="hits">By Hit</option>
@@ -73,10 +70,6 @@
       <section>
         <h2>Latest Errata</h2>
         <div id="home-errata" class="list"></div>
-      </section>
-      <section>
-        <h2>Latest Pages</h2>
-        <div id="home-pages" class="list"></div>
       </section>
     </main>
     <footer class="footer">

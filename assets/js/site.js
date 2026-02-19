@@ -472,7 +472,7 @@ async function buildSearchIndex(pages, faqs, errata, rules) {
       }
     }
     docs.push({
-      kind: "Page",
+      kind: "Rule",
       title: page.title || "Untitled page",
       href: route(`pages/?id=${encodeURIComponent(page.id || "")}`),
       text: markdownToPlain(`${page.title || ""}\n${page.summary || ""}\n${body}`),
@@ -744,12 +744,10 @@ async function initHome() {
   const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
   const rules = normalizeRuleIndex(rulesIndex);
 
-  const statsPages = q("#stats-pages");
   const statsFaq = q("#stats-faq");
   const statsErrata = q("#stats-errata");
   const statsRules = q("#stats-rules");
   const statsUpdate = q("#stats-update");
-  if (statsPages) statsPages.textContent = asItems(pages).length;
   if (statsFaq) statsFaq.textContent = asItems(faqs).length;
   if (statsErrata) statsErrata.textContent = asItems(errata).length;
   if (statsRules) statsRules.textContent = asItems(rules).length;
@@ -757,10 +755,7 @@ async function initHome() {
 
   renderFaq(sortByUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
   renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
-  const homePages = q("#home-pages");
-  renderPages(sortByUpdated(pages).slice(0, 4), homePages);
   renderCoreRuleCard(pages, rules, q("#home-core-rule"));
-  bindPageCards(homePages);
   bindPageCards(q("#home-faq"));
   bindPageCards(q("#home-errata"));
   bindPageCards(q("#home-core-rule"));
@@ -906,12 +901,6 @@ async function initUpdatesPage() {
   const rules = normalizeRuleIndex(rulesIndex);
 
   const items = [
-    ...asItems(pages).map((x) => ({
-      kind: "Page",
-      title: x.title || "Untitled page",
-      updatedAt: x.updatedAt,
-      href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
-    })),
     ...asItems(faqs).map((x) => ({
       kind: "FAQ",
       title: x.title || "Untitled FAQ",
@@ -930,6 +919,14 @@ async function initUpdatesPage() {
       updatedAt: x.updatedAt,
       href: resolveRuleLink(x).href,
     })),
+    ...asItems(pages)
+      .filter((x) => asItems(rules).some((r) => String(r.pageId || r.id) === String(x.id || "")))
+      .map((x) => ({
+        kind: "Rule",
+        title: x.title || "Untitled rule page",
+        updatedAt: x.updatedAt,
+        href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
+      })),
   ].sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")));
 
   wrap.innerHTML = items
