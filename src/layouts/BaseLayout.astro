@@ -2,10 +2,9 @@
 interface Props {
   title: string;
   description?: string;
-  includeMarked?: boolean;
 }
 
-const { title, description = "riftboundoc", includeMarked = false } = Astro.props;
+const { title, description = "riftboundoc" } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 <!doctype html>
@@ -16,7 +15,7 @@ const base = import.meta.env.BASE_URL;
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="stylesheet" href={`${base}assets/css/styles.css?v=20260220d`} />
-    {includeMarked && <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>}
+    <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src={`${base}assets/js/site.js?v=20260220l`}></script>
   </head>
   <body>
@@ -37,4 +36,3 @@ const base = import.meta.env.BASE_URL;
     <footer class="footer"><div class="container"><span id="site-version">v-</span></div></footer>
   </body>
 </html>
-
