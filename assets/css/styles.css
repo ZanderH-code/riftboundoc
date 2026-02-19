@@ -200,6 +200,20 @@ main > section h2 {
   margin-bottom: 14px;
 }
 
+.list-sort-toolbar {
+  align-items: center;
+}
+
+.list-sort-toolbar .muted {
+  margin-right: 2px;
+}
+
+.list-sort-toolbar button.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
 .search-panel {
   border: 1px solid var(--line);
   border-radius: 14px;

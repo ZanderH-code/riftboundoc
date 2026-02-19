@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.9";
+const SITE_VERSION = "2026.02.20.10";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -90,6 +90,52 @@ function sortByPublishedThenUpdated(items) {
     if (byPublished !== 0) return byPublished;
     return String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
   });
+}
+
+function sortByTime(items, order = "desc") {
+  const asc = order === "asc";
+  return [...asItems(items)].sort((a, b) => {
+    const aPrimary = String(a.publishedAt || a.updatedAt || "");
+    const bPrimary = String(b.publishedAt || b.updatedAt || "");
+    const aUpdated = String(a.updatedAt || "");
+    const bUpdated = String(b.updatedAt || "");
+
+    let cmp = aPrimary.localeCompare(bPrimary);
+    if (cmp === 0) cmp = aUpdated.localeCompare(bUpdated);
+    if (cmp === 0) cmp = String(a.title || a.name || "").localeCompare(String(b.title || b.name || ""));
+    return asc ? cmp : -cmp;
+  });
+}
+
+function mountTimeSortControls(listEl, onChange, defaultOrder = "desc") {
+  if (!listEl || !listEl.parentElement || typeof onChange !== "function") return;
+  const host = listEl.parentElement;
+
+  const toolbar = document.createElement("div");
+  toolbar.className = "toolbar list-sort-toolbar";
+  toolbar.innerHTML = `
+    <span class="muted">Sort by time</span>
+    <button type="button" class="secondary" data-order="desc">Newest first</button>
+    <button type="button" class="secondary" data-order="asc">Oldest first</button>
+  `;
+  host.insertBefore(toolbar, listEl);
+
+  const buttons = Array.from(toolbar.querySelectorAll("button[data-order]"));
+  const setActive = (order) => {
+    buttons.forEach((btn) => {
+      btn.classList.toggle("active", btn.getAttribute("data-order") === order);
+    });
+  };
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const order = btn.getAttribute("data-order") || "desc";
+      setActive(order);
+      onChange(order);
+    });
+  });
+
+  setActive(defaultOrder);
 }
 
 function slugify(text) {
@@ -895,8 +941,13 @@ async function initHome() {
 async function initFaqPage() {
   const faqs = await getJson("data/faqs.json", []);
   const list = q("#faq-list");
-  renderFaq(sortByUpdated(faqs), list);
-  bindPageCards(list);
+  if (!list) return;
+  const render = (order = "desc") => {
+    renderFaq(sortByTime(faqs, order), list);
+    bindPageCards(list);
+  };
+  mountTimeSortControls(list, render, "desc");
+  render("desc");
 }
 
 async function initFaqDetail() {
@@ -933,15 +984,26 @@ async function initFaqDetail() {
 async function initRulePage() {
   const local = await getJson("content/rules/index.json", { rules: [] });
   const list = q("#rule-list");
-  renderRules(sortByUpdated(normalizeRuleIndex(local)), list);
-  bindPageCards(list);
+  if (!list) return;
+  const rules = normalizeRuleIndex(local);
+  const render = (order = "desc") => {
+    renderRules(sortByTime(rules, order), list);
+    bindPageCards(list);
+  };
+  mountTimeSortControls(list, render, "desc");
+  render("desc");
 }
 
 async function initErrataPage() {
   const errata = await getJson("data/errata.json", []);
   const list = q("#errata-list");
-  renderErrata(sortByUpdated(errata), list);
-  bindPageCards(list);
+  if (!list) return;
+  const render = (order = "desc") => {
+    renderErrata(sortByTime(errata, order), list);
+    bindPageCards(list);
+  };
+  mountTimeSortControls(list, render, "desc");
+  render("desc");
 }
 
 async function initErrataDetail() {
@@ -1290,6 +1352,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
