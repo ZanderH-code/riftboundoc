@@ -393,7 +393,7 @@ function renderCards(items, target) {
         .join(" | ");
 
       return `
-      <article class="item card-item">
+      <article class="item card-item" data-card-id="${escapeHtml(it.id || "")}" tabindex="0" role="button" aria-label="Open card details for ${title}">
         <div class="card-media">
           ${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : "<div class=\"card-media-empty\">No image</div>"}
         </div>
@@ -1181,67 +1181,280 @@ async function initCardsPage() {
   const pager = q("#cards-pager");
   const searchInput = q("#cards-search-input");
   const searchBtn = q("#cards-search-btn");
-  const setFilter = q("#cards-set-filter");
-  const typeFilter = q("#cards-type-filter");
-  if (!list || !meta || !pager || !searchInput || !searchBtn || !setFilter || !typeFilter) return;
+  const filterRoot = q("#cards-filters");
+  const filterToggle = q("#cards-filter-toggle");
+  const sortWrap = q("#cards-sort-options");
+  const setWrap = q("#cards-set-options");
+  const typeWrap = q("#cards-type-options");
+  const rarityWrap = q("#cards-rarity-options");
+  const modal = q("#cards-modal");
+  const modalClose = q("#cards-modal-close");
+  const modalImage = q("#cards-modal-image");
+  const modalTitle = q("#cards-modal-title");
+  const modalMeta = q("#cards-modal-meta");
+  const modalStats = q("#cards-modal-stats");
+  const modalTags = q("#cards-modal-tags");
+  const modalText = q("#cards-modal-text");
+  if (
+    !list ||
+    !meta ||
+    !pager ||
+    !searchInput ||
+    !searchBtn ||
+    !filterRoot ||
+    !filterToggle ||
+    !sortWrap ||
+    !setWrap ||
+    !typeWrap ||
+    !rarityWrap ||
+    !modal ||
+    !modalClose ||
+    !modalImage ||
+    !modalTitle ||
+    !modalMeta ||
+    !modalStats ||
+    !modalTags ||
+    !modalText
+  ) {
+    return;
+  }
 
-  const sets = Array.from(
-    new Set(cards.map((x) => String(x.set || "").trim()).filter(Boolean))
-  ).sort((a, b) => a.localeCompare(b));
+  const sets = Array.from(new Set(cards.map((x) => String(x.set || "").trim()).filter(Boolean))).sort((a, b) =>
+    a.localeCompare(b)
+  );
   const types = Array.from(
     new Set(cards.flatMap((x) => asItems(x.cardTypes)).map((x) => String(x || "").trim()).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
+  const rarities = Array.from(new Set(cards.map((x) => String(x.rarity || "").trim()).filter(Boolean))).sort((a, b) =>
+    a.localeCompare(b)
+  );
 
-  setFilter.innerHTML = '<option value="all">All Sets</option>' + sets.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
-  typeFilter.innerHTML = '<option value="all">All Types</option>' + types.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
+  const sortOptions = [
+    { id: "card_asc", label: "Card # Ascending" },
+    { id: "card_desc", label: "Card # Descending" },
+    { id: "rarity_asc", label: "Rarity Ascending" },
+    { id: "rarity_desc", label: "Rarity Descending" },
+    { id: "might_asc", label: "Might Ascending" },
+    { id: "might_desc", label: "Might Descending" },
+    { id: "name_asc", label: "Name (A-Z)" },
+    { id: "name_desc", label: "Name (Z-A)" },
+  ];
 
-  const pageSize = 24;
-  let currentPage = 1;
+  const state = {
+    query: "",
+    sort: "card_asc",
+    set: "all",
+    type: "all",
+    rarity: "all",
+    page: 1,
+  };
+
+  const rarityRank = {
+    common: 1,
+    uncommon: 2,
+    rare: 3,
+    epic: 4,
+    legendary: 5,
+    showcase: 6,
+  };
+
+  const renderButtons = (wrap, rows, selected, onPick) => {
+    wrap.innerHTML = rows
+      .map((row) => {
+        const value = row.value || row.id || row;
+        const label = row.label || row;
+        const active = String(selected) === String(value) ? " active" : "";
+        return `<button type="button" class="secondary cards-filter-option${active}" data-value="${escapeHtml(value)}">${escapeHtml(
+          label
+        )}</button>`;
+      })
+      .join("");
+    wrap.querySelectorAll("button[data-value]").forEach((btn) => {
+      btn.addEventListener("click", () => onPick(btn.getAttribute("data-value") || ""));
+    });
+  };
+
+  const toInt = (v) => {
+    const n = Number(v);
+    return Number.isFinite(n) ? n : 0;
+  };
+
+  const getSorted = (rows) => {
+    const listRows = [...rows];
+    listRows.sort((a, b) => {
+      const collectorCmp = toInt(a.collectorNumber) - toInt(b.collectorNumber);
+      const nameCmp = String(a.name || "").localeCompare(String(b.name || ""));
+      const rarityCmp =
+        (rarityRank[String(a.rarity || "").toLowerCase()] || 99) -
+        (rarityRank[String(b.rarity || "").toLowerCase()] || 99);
+      const mightCmp = toInt(a.might) - toInt(b.might);
+      switch (state.sort) {
+        case "card_desc":
+          return -collectorCmp || nameCmp;
+        case "rarity_asc":
+          return rarityCmp || nameCmp;
+        case "rarity_desc":
+          return -rarityCmp || nameCmp;
+        case "might_asc":
+          return mightCmp || nameCmp;
+        case "might_desc":
+          return -mightCmp || nameCmp;
+        case "name_asc":
+          return nameCmp;
+        case "name_desc":
+          return -nameCmp;
+        case "card_asc":
+        default:
+          return collectorCmp || nameCmp;
+      }
+    });
+    return listRows;
+  };
 
   const filtered = () => {
-    const term = markdownToPlain(searchInput.value).toLowerCase();
-    const setVal = String(setFilter.value || "all");
-    const typeVal = String(typeFilter.value || "all");
-    return cards.filter((c) => {
-      if (setVal !== "all" && String(c.set || "") !== setVal) return false;
-      if (typeVal !== "all" && !asItems(c.cardTypes).includes(typeVal)) return false;
-      if (!term) return true;
-      const hay = markdownToPlain(
-        [
-          c.name,
-          c.publicCode,
-          c.set,
-          c.rarity,
-          asItems(c.cardTypes).join(" "),
-          asItems(c.superTypes).join(" "),
-          asItems(c.domains).join(" "),
-          asItems(c.tags).join(" "),
-          c.abilityText,
-        ]
-          .filter(Boolean)
-          .join("\n")
-      ).toLowerCase();
-      return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
+    const term = markdownToPlain(state.query).toLowerCase();
+    return getSorted(
+      cards.filter((c) => {
+        if (state.set !== "all" && String(c.set || "") !== state.set) return false;
+        if (state.type !== "all" && !asItems(c.cardTypes).includes(state.type)) return false;
+        if (state.rarity !== "all" && String(c.rarity || "") !== state.rarity) return false;
+        if (!term) return true;
+        const hay = markdownToPlain(
+          [
+            c.name,
+            c.publicCode,
+            c.set,
+            c.rarity,
+            asItems(c.cardTypes).join(" "),
+            asItems(c.superTypes).join(" "),
+            asItems(c.domains).join(" "),
+            asItems(c.tags).join(" "),
+            c.abilityText,
+          ]
+            .filter(Boolean)
+            .join("\n")
+        ).toLowerCase();
+        return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
+      })
+    );
+  };
+
+  const pageSize = 24;
+
+  const openCardModal = (cardId) => {
+    const card = cards.find((c) => String(c.id) === String(cardId));
+    if (!card) return;
+    modalImage.src = card.imageUrl || "";
+    modalImage.alt = card.imageAlt || card.name || "Card image";
+    modalTitle.textContent = card.name || "Untitled card";
+    modalMeta.textContent = `${card.publicCode || "-"} | ${card.set || "-"} | ${card.rarity || "-"}`;
+    modalStats.textContent = `Type: ${asItems(card.cardTypes).join(", ") || "-"} | Domain: ${
+      asItems(card.domains).join(", ") || "-"
+    } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
+    modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
+    modalText.textContent = card.abilityText || "No ability text.";
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+  };
+
+  const closeCardModal = () => {
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  };
+
+  const bindCardClicks = () => {
+    list.querySelectorAll(".card-item[data-card-id]").forEach((cardEl) => {
+      const open = () => openCardModal(cardEl.getAttribute("data-card-id") || "");
+      cardEl.addEventListener("click", open);
+      cardEl.addEventListener("keydown", (ev) => {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          open();
+        }
+      });
     });
   };
 
   const render = (page = 1) => {
     const rows = filtered();
     const pageCount = Math.max(1, Math.ceil(rows.length / pageSize));
-    currentPage = Math.min(Math.max(1, page), pageCount);
-    const start = (currentPage - 1) * pageSize;
+    state.page = Math.min(Math.max(1, page), pageCount);
+    const start = (state.page - 1) * pageSize;
     const view = rows.slice(start, start + pageSize);
     renderCards(view, list);
-    meta.textContent = `${rows.length} card(s) | Page ${currentPage}/${pageCount} | Source: ${raw.source || "Riftbound Official"}`;
-    renderSearchPager(rows.length, currentPage, pageSize, pager, (p) => render(p));
+    bindCardClicks();
+    meta.textContent = `${rows.length} card(s) | Page ${state.page}/${pageCount} | Source: ${
+      raw.source || "Riftbound Official"
+    }`;
+    renderSearchPager(rows.length, state.page, pageSize, pager, (p) => render(p));
   };
 
-  searchBtn.addEventListener("click", () => render(1));
-  searchInput.addEventListener("keydown", (ev) => {
-    if (ev.key === "Enter") render(1);
+  const refreshFilterButtons = () => {
+    renderButtons(sortWrap, sortOptions, state.sort, (value) => {
+      state.sort = value || "card_asc";
+      refreshFilterButtons();
+      render(1);
+    });
+    renderButtons(
+      setWrap,
+      [{ value: "all", label: "All Sets" }, ...sets.map((s) => ({ value: s, label: s }))],
+      state.set,
+      (value) => {
+        state.set = value || "all";
+        refreshFilterButtons();
+        render(1);
+      }
+    );
+    renderButtons(
+      typeWrap,
+      [{ value: "all", label: "All Types" }, ...types.map((s) => ({ value: s, label: s }))],
+      state.type,
+      (value) => {
+        state.type = value || "all";
+        refreshFilterButtons();
+        render(1);
+      }
+    );
+    renderButtons(
+      rarityWrap,
+      [{ value: "all", label: "All Rarities" }, ...rarities.map((s) => ({ value: s, label: s }))],
+      state.rarity,
+      (value) => {
+        state.rarity = value || "all";
+        refreshFilterButtons();
+        render(1);
+      }
+    );
+  };
+
+  refreshFilterButtons();
+
+  filterToggle.addEventListener("click", () => {
+    filterRoot.classList.toggle("collapsed");
+    const isCollapsed = filterRoot.classList.contains("collapsed");
+    filterToggle.textContent = isCollapsed ? "Show Filters" : "Hide Filters";
   });
-  setFilter.addEventListener("change", () => render(1));
-  typeFilter.addEventListener("change", () => render(1));
+
+  searchBtn.addEventListener("click", () => {
+    state.query = searchInput.value || "";
+    render(1);
+  });
+  searchInput.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") {
+      state.query = searchInput.value || "";
+      render(1);
+    }
+  });
+
+  modalClose.addEventListener("click", closeCardModal);
+  modal.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if (t && t.closest && t.closest("[data-cards-close='1']")) closeCardModal();
+  });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && !modal.hidden) closeCardModal();
+  });
+
   render(1);
 }
 

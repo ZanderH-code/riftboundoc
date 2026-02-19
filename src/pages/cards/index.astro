@@ -5,27 +5,66 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   <main class="container">
     <h1>Card Gallery</h1>
     <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>
-    <section class="search-panel">
-      <div class="search-row">
-        <input id="cards-search-input" type="search" placeholder="Search by name, text, code, tag..." />
-        <button id="cards-search-btn" type="button">Search</button>
-      </div>
-      <div class="search-row">
-        <select id="cards-set-filter">
-          <option value="all">All Sets</option>
-        </select>
-        <select id="cards-type-filter">
-          <option value="all">All Types</option>
-        </select>
-      </div>
-      <p id="cards-meta" class="muted">Loading cards...</p>
-    </section>
-    <div id="cards-list" class="cards-list"></div>
-    <div id="cards-pager" class="search-pager"></div>
+
+    <div class="cards-layout">
+      <aside class="cards-filters card" id="cards-filters">
+        <button id="cards-filter-toggle" class="secondary cards-filter-toggle" type="button">Hide Filters</button>
+
+        <section class="cards-filter-block">
+          <h3>Sort By</h3>
+          <div id="cards-sort-options" class="cards-filter-options"></div>
+        </section>
+
+        <section class="cards-filter-block">
+          <h3>Set</h3>
+          <div id="cards-set-options" class="cards-filter-options"></div>
+        </section>
+
+        <section class="cards-filter-block">
+          <h3>Type</h3>
+          <div id="cards-type-options" class="cards-filter-options"></div>
+        </section>
+
+        <section class="cards-filter-block">
+          <h3>Rarity</h3>
+          <div id="cards-rarity-options" class="cards-filter-options"></div>
+        </section>
+      </aside>
+
+      <section class="cards-main">
+        <section class="search-panel">
+          <div class="search-row">
+            <input id="cards-search-input" type="search" placeholder="Search by name, text, code, tag..." />
+            <button id="cards-search-btn" type="button">Search</button>
+          </div>
+          <p id="cards-meta" class="muted">Loading cards...</p>
+        </section>
+        <div id="cards-list" class="cards-list"></div>
+        <div id="cards-pager" class="search-pager"></div>
+      </section>
+    </div>
+
+    <div id="cards-modal" class="cards-modal" hidden>
+      <div class="cards-modal-backdrop" data-cards-close="1"></div>
+      <article class="cards-modal-panel">
+        <button id="cards-modal-close" class="secondary cards-modal-close" type="button">Close</button>
+        <div class="cards-modal-grid">
+          <div class="cards-modal-media">
+            <img id="cards-modal-image" alt="" />
+          </div>
+          <div class="cards-modal-body">
+            <h2 id="cards-modal-title"></h2>
+            <p id="cards-modal-meta" class="muted"></p>
+            <p id="cards-modal-stats" class="muted"></p>
+            <p id="cards-modal-tags" class="muted"></p>
+            <div id="cards-modal-text" class="cards-modal-text"></div>
+          </div>
+        </div>
+      </article>
+    </div>
   </main>
   <script is:inline>
     window.site.navActive();
     window.site.initCardsPage();
   </script>
 </BaseLayout>
-
