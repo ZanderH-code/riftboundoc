@@ -1502,10 +1502,8 @@ async function initCardsPage() {
       const toSnippetFromParagraph = (paragraph, preferredNeedle = "") => {
         const lower = paragraph.toLowerCase();
         const hit = preferredNeedle || needles.find((n) => lower.includes(n)) || needles[0] || "";
-        const start = hit ? lower.indexOf(hit) : -1;
-        const clipped = paragraph.slice(start >= 0 ? start : 0).trim();
         return {
-          snippet: escapeHtml(clipped),
+          snippet: escapeHtml(paragraph.trim()),
           query: hit || needles[0] || "",
         };
       };
@@ -1541,11 +1539,21 @@ async function initCardsPage() {
 
       for (const section of sections) {
         const paragraphs = toParagraphs(section);
+        const matchedParagraphs = [];
+        let firstHit = "";
         for (const paragraph of paragraphs) {
           const lower = paragraph.toLowerCase();
           const hit = needles.find((n) => lower.includes(n));
           if (!hit) continue;
-          return toSnippetFromParagraph(paragraph, hit);
+          if (!firstHit) firstHit = hit;
+          matchedParagraphs.push(paragraph);
+          if (matchedParagraphs.length >= 2) break;
+        }
+        if (matchedParagraphs.length) {
+          return {
+            snippet: matchedParagraphs.map((p) => escapeHtml(String(p).trim())).join("<br /><br />"),
+            query: firstHit || needles[0] || "",
+          };
         }
       }
 
