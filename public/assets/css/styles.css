@@ -712,13 +712,28 @@ main > section h2 {
   background: #132031;
 }
 
-.cards-related-item h4 {
-  margin: 0 0 4px;
-  font-size: 0.98rem;
-}
-
 .cards-related-item p {
   margin: 0;
+}
+
+.cards-related-snippet {
+  line-height: 1.55;
+}
+
+.cards-related-foot {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cards-related-foot a {
+  font-size: 0.85rem;
+  color: #9ecfff;
+  text-decoration: none;
+  border: 1px solid #36516a;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: rgba(26, 54, 79, 0.5);
 }
 
 .search-result mark {

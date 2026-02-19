@@ -1513,9 +1513,13 @@ async function initCardsPage() {
         if (!hit) continue;
         const paragraphs = toParagraphs(section);
         if (paragraphs.length) {
-          const firstPara = String(paragraphs[0] || "").trim();
+          const bodyParts = paragraphs
+            .map((x) => String(x || "").trim())
+            .filter((x) => x && x.toLowerCase() !== headingLow)
+            .slice(0, 2);
+          const bodyText = bodyParts.join(" ");
           return {
-            snippet: `${escapeHtml(heading)}<br />${escapeHtml(firstPara)}`,
+            snippet: `${escapeHtml(heading)}${bodyText ? `<br />${escapeHtml(bodyText)}` : ""}`,
             query: hit,
           };
         }
@@ -1557,6 +1561,7 @@ async function initCardsPage() {
           title: doc.title || "Untitled",
           snippet: picked.snippet,
           query: picked.query,
+          sourceTitle: doc.title || "Source",
         };
       })
       .filter(Boolean)
@@ -1581,8 +1586,10 @@ async function initCardsPage() {
       .map(
         (x) => `
       <article class="cards-related-item">
-        <h4><a href="${toHref(x.id, x.query)}">${escapeHtml(x.title)}</a></h4>
-        <p class="muted">${x.snippet}</p>
+        <p class="muted cards-related-snippet">${x.snippet}</p>
+        <div class="cards-related-foot">
+          <a href="${toHref(x.id, x.query)}">${escapeHtml(x.sourceTitle || x.title)}</a>
+        </div>
       </article>
     `
       )
