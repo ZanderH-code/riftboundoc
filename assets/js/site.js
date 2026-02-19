@@ -1481,10 +1481,17 @@ async function initCardsPage() {
     return bag;
   };
 
+  const knownCardNames = new Set(
+    asItems(cards)
+      .map((c) => String(c?.name || "").trim().toLowerCase())
+      .filter(Boolean)
+  );
+
   const findRelatedDocs = (docs, cardName) => {
     const full = String(cardName || "").trim();
     if (!full) return [];
-    const needles = [full.toLowerCase()];
+    const fullLower = full.toLowerCase();
+    const needles = [fullLower];
     const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const matchNeedleIndex = (textLower, needleLower) => {
       if (!textLower || !needleLower) return -1;
@@ -1569,6 +1576,9 @@ async function initCardsPage() {
 
       for (const section of sections) {
         const paragraphs = toParagraphs(section);
+        const headingLow = String(section.heading || "").trim().toLowerCase();
+        const headingIsCard = knownCardNames.has(headingLow);
+        if (headingIsCard && headingLow !== fullLower) continue;
         const matchedParagraphs = [];
         let firstHit = "";
         for (const paragraph of paragraphs) {
@@ -1587,8 +1597,7 @@ async function initCardsPage() {
         }
       }
 
-      const fallback = markdownToPlain(markdown).slice(0, 200).trim();
-      return { snippet: escapeHtml(fallback) + (fallback.length >= 200 ? "..." : ""), query: needles[0] || "" };
+      return null;
     };
 
     return asItems(docs)
@@ -1598,6 +1607,7 @@ async function initCardsPage() {
         const matched = needles.some((n) => matchNeedleIndex(lower, n) >= 0);
         if (!matched) return null;
         const picked = pickMatchedSnippets(doc);
+        if (!picked) return null;
         return {
           id: doc.id || "",
           title: doc.title || "Untitled",
