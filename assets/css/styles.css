@@ -321,31 +321,69 @@ button.secondary {
 
 .reading-layout {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 18px;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
   align-items: start;
 }
 
 .side-panel {
   position: sticky;
-  top: 82px;
+  top: 88px;
 }
 
 .toc {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
-  padding: 12px;
+  border: 1px solid #314052;
+  border-radius: 14px;
+  background: linear-gradient(165deg, #161f2a, #131a24);
+  padding: 14px 12px;
   margin-top: 12px;
   max-height: 62vh;
   overflow: auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-.toc a {
+.toc strong {
+  display: block;
+  font-size: 0.96rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  color: #f1f6ff;
+}
+
+.toc a,
+.toc .toc-link {
   display: block;
   text-decoration: none;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-size: 0.92rem;
+  color: #b8cadf;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 7px 8px;
+  line-height: 1.3;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.toc a:hover,
+.toc .toc-link:hover {
+  color: #eaf6ff;
+  border-color: #3b556f;
+  background: rgba(74, 108, 138, 0.2);
+}
+
+.toc .toc-l2 {
+  padding-left: 8px;
+  font-weight: 600;
+}
+
+.toc .toc-l3 {
+  padding-left: 18px;
+}
+
+.toc .toc-l4 {
+  padding-left: 30px;
+  font-size: 0.88rem;
+  color: #9fb4cb;
 }
 
 .doc-shell {
@@ -358,7 +396,7 @@ button.secondary {
 
 .doc-meta {
   padding: 14px 18px;
-  background: #0f1721;
+  background: linear-gradient(180deg, #0f1721, #101925);
   border-bottom: 1px solid var(--line);
   font-size: 0.9rem;
 }
@@ -375,6 +413,30 @@ button.secondary {
   line-height: var(--reader-line-height);
   font-size: calc(1rem * var(--reader-font-scale));
   max-width: var(--reader-max-width);
+  padding-bottom: 12px;
+}
+
+#faq-content h2,
+#errata-content h2,
+#faq-content h3,
+#errata-content h3,
+#faq-content h4,
+#errata-content h4 {
+  margin-top: 1.05em;
+  margin-bottom: 0.45em;
+  font-family: "Literata", serif;
+  color: #eaf2ff;
+}
+
+#faq-content h2,
+#errata-content h2 {
+  border-bottom: 1px solid #304255;
+  padding-bottom: 4px;
+}
+
+#faq-content p,
+#errata-content p {
+  margin: 0.62em 0;
 }
 
 #page-content h1,

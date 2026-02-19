@@ -339,8 +339,8 @@ function buildTocFor(contentSelector, tocSelector) {
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
-    const margin = level === 2 ? 0 : level === 3 ? 14 : 28;
-    html += `<a href=\"#${el.id}\" style=\"margin-left:${margin}px\">${escapeHtml(el.textContent)}</a>`;
+    const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
+    html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
   toc.innerHTML = html;
 }
@@ -658,8 +658,8 @@ function buildPageToc() {
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
-    const margin = level === 2 ? 0 : level === 3 ? 14 : 28;
-    html += `<a href=\"#${el.id}\" style=\"margin-left:${margin}px\">${el.textContent}</a>`;
+    const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
+    html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
 
   ruleHeadings.forEach((row, idx) => {
@@ -668,12 +668,12 @@ function buildPageToc() {
     const label = `${idCell?.textContent || ""} ${textCell?.textContent || ""}`.trim();
     if (!label) return;
     if (!row.id) row.id = `rule-${slugify(label)}-${idx + 1}`;
-    const level = row.classList.contains("level-0")
-      ? 0
+    const cls = row.classList.contains("level-0")
+      ? "toc-l2"
       : row.classList.contains("level-1")
-      ? 14
-      : 28;
-    html += `<a href=\"#${row.id}\" style=\"margin-left:${level}px\">${label}</a>`;
+      ? "toc-l3"
+      : "toc-l4";
+    html += `<a href=\"#${row.id}\" class="toc-link ${cls}">${escapeHtml(label)}</a>`;
   });
   toc.innerHTML = html;
 }
