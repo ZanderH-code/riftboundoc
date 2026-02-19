@@ -33,10 +33,16 @@ Live site: https://zanderh-code.github.io/riftboundoc/
 
 Standard flow:
 
-1. Switch to `test` and make changes there.
+1. Make all feature/fix changes on `test` first.
 2. Run local checks (`npm run build`) and verify pages/features.
-3. Push `test` for review/testing.
-4. After validation, merge `test` into `main`.
+3. Push `test` and complete testing/acceptance.
+4. Only after approval, merge `test` into `main`.
 5. Push `main` to publish stable updates.
+
+Policy:
+
+- Default rule: no direct feature work on `main`.
+- `main` is reserved for stable, approved releases.
+- Direct `main` changes are allowed only for emergency hotfixes.
 
 Current stable baseline tag: `stable-2026-02-19`.
