@@ -439,6 +439,27 @@ function renderCoreRuleCard(pages, rules, target) {
   `;
 }
 
+function flashAnchorTarget(targetId) {
+  if (!targetId) return;
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  el.classList.remove("anchor-focus");
+  // Force reflow so repeated clicks retrigger animation.
+  void el.offsetWidth;
+  el.classList.add("anchor-focus");
+  window.setTimeout(() => el.classList.remove("anchor-focus"), 1600);
+}
+
+function bindTocHighlights(toc) {
+  if (!toc) return;
+  toc.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener("click", () => {
+      const id = String(a.getAttribute("href") || "").replace(/^#/, "");
+      window.setTimeout(() => flashAnchorTarget(id), 30);
+    });
+  });
+}
+
 function buildTocFor(contentSelector, tocSelector) {
   const content = q(contentSelector);
   const toc = q(tocSelector);
@@ -475,6 +496,7 @@ function buildTocFor(contentSelector, tocSelector) {
     });
   }
   toc.innerHTML = html;
+  bindTocHighlights(toc);
 }
 
 function highlightQueryIn(containerSelector) {
@@ -985,6 +1007,7 @@ function buildPageToc() {
     html += `<a href=\"#${row.id}\" class="toc-link ${cls}">${escapeHtml(label)}</a>`;
   });
   toc.innerHTML = html;
+  bindTocHighlights(toc);
 }
 
 async function initHome() {
