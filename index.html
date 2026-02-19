@@ -10,8 +10,13 @@
     <meta property="og:url" content="https://zanderh-code.github.io/riftboundoc/" />
     <link rel="alternate" type="application/rss+xml" title="Riftbound Hub Updates" href="rss.xml" />
     <title>Riftbound Hub</title>
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260219b" />
-    <script src="assets/js/site.js?v=20260219f"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260220a" />
+    <script src="assets/js/core.js?v=20260220a"></script>
+    <script src="assets/js/renderers.js?v=20260220a"></script>
+    <script src="assets/js/search.js?v=20260220a"></script>
+    <script src="assets/js/reading-drawer.js?v=20260220a"></script>
+    <script src="assets/js/home.js?v=20260220a"></script>
+    <script src="assets/js/site.js?v=20260220a"></script>
   </head>
   <body>
     <header class="topbar">
@@ -55,6 +60,18 @@
             <option value="docs">By Document</option>
           </select>
         </div>
+        <div class="search-row">
+          <select id="home-search-scope">
+            <option value="all">Title + Body</option>
+            <option value="title">Title Only</option>
+            <option value="body">Body Only</option>
+          </select>
+          <select id="home-search-context">
+            <option value="140">Compact Snippet</option>
+            <option value="220" selected>Balanced Snippet</option>
+            <option value="320">Extended Snippet</option>
+          </select>
+        </div>
         <p id="home-search-meta" class="muted">Index is loading...</p>
         <div id="home-search-results" class="list"></div>
         <div id="home-search-pager" class="search-pager"></div>
@@ -81,6 +98,8 @@
     </script>
   </body>
 </html>
+
+
 
 
 

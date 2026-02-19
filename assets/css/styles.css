@@ -234,6 +234,17 @@ main > section h2 {
   margin-top: 6px;
 }
 
+.search-result .result-meta {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+}
+
+.result-group {
+  margin: 10px 0 8px;
+  font-size: 0.95rem;
+  color: #d7e5f5;
+}
+
 .search-pager {
   margin-top: 10px;
   display: flex;

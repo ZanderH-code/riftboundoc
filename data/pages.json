@@ -1,5 +1,6 @@
 [
   {
+    "kind": "rule_page",
     "id": "welcome",
     "title": "Welcome to Riftbound Hub",
     "summary": "Find FAQs, rulebook PDFs, and community pages in one place.",
@@ -7,6 +8,7 @@
     "updatedAt": "2026-02-18"
   },
   {
+    "kind": "rule_page",
     "id": "riftbound-core-rules-v1-2",
     "title": "Riftbound Core Rules v1.2",
     "summary": "Text version converted from PDF for online reading.",

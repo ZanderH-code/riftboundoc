@@ -9,8 +9,9 @@ Static website for Riftbound players with:
 - Rules PDF index (`content/rules/index.json`)
 - Online PDF reader (`reader.html`)
 - Rules text pages in Markdown (`content/pages/*.md` + `data/pages.json`)
-- Home search across FAQ/Errata/Rules
+- Home search across FAQ/Errata/Rules (type/scope/snippet controls)
 - Updates timeline (`updates/`) and RSS feed (`rss.xml`)
+- Modular frontend scripts in `assets/js/` (`core`, `renderers`, `search`, `reading-drawer`, `home`, `site`)
 
 ## Deploy on GitHub Pages
 
@@ -33,6 +34,7 @@ Clean share URLs (no `.html`):
 - Add/update page records in `data/pages.json`
 - Add page Markdown files in `content/pages/`
 - Add/update rules in `content/rules/index.json`
+- `data/pages.json` is reserved for rules text pages (`kind: rule_page`)
 
 Rules index format:
 
@@ -113,10 +115,12 @@ Unified document fields for FAQ/Errata entries:
   `python tools/validate_content_schema.py`
 - Check internal links:
   `python tools/check_links.py`
+- Predeploy gate (schema + links + non-empty critical datasets + route presence):
+  `python tools/predeploy_check.py`
 - One-click sync + validate:
   `python tools/sync_all.py`
 
-CI (`.github/workflows/qa.yml`) runs schema and link checks on push/PR.
+CI (`.github/workflows/qa.yml`) runs predeploy checks on push/PR.
 
 ## i18n Reserve
 
