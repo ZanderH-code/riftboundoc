@@ -1519,10 +1519,11 @@ async function initCardsPage() {
           const bodyParts = paragraphs
             .map((x) => String(x || "").trim())
             .filter((x) => x && x.toLowerCase() !== headingLow)
-            .slice(0, 2);
-          const bodyText = bodyParts.join(" ");
+            .slice(0, 8);
+          const bodyText = bodyParts.map((x) => escapeHtml(x)).join("<br /><br />");
+          const hasMore = paragraphs.length > bodyParts.length;
           return {
-            snippet: `${escapeHtml(heading)}${bodyText ? `<br />${escapeHtml(bodyText)}` : ""}`,
+            snippet: `${escapeHtml(heading)}${bodyText ? `<br /><br />${bodyText}` : ""}${hasMore ? "<br /><br />..." : ""}`,
             query: hit,
           };
         }
