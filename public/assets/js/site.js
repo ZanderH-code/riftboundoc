@@ -1487,28 +1487,25 @@ async function initCardsPage() {
     if (!full) return [];
     const base = full.split(",")[0].trim();
     const needles = Array.from(new Set([full, base].filter(Boolean).map((x) => x.toLowerCase())));
-    const toHay = (doc) =>
-      markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
+    const toHay = (doc) => markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
 
-    const makeSnippet = (text) => {
-      const plain = String(text || "");
-      const lower = plain.toLowerCase();
-      let pos = -1;
-      let hit = "";
-      needles.some((n) => {
-        const i = lower.indexOf(n);
-        if (i >= 0) {
-          pos = i;
-          hit = n;
-          return true;
-        }
-        return false;
-      });
-      if (pos < 0) return plain.slice(0, 180).trim();
-      const start = Math.max(0, pos - 70);
-      const end = Math.min(plain.length, pos + hit.length + 110);
-      const snippet = plain.slice(start, end).trim();
-      return `${start > 0 ? "..." : ""}${escapeHtml(snippet)}${end < plain.length ? "..." : ""}`;
+    const pickMatchedSnippets = (doc) => {
+      const body = markdownToPlain(String(doc.content || doc.summary || ""));
+      const chunks = body
+        .split(/\n+|(?<=[.!?])\s+/)
+        .map((x) => x.trim())
+        .filter(Boolean);
+      const hits = [];
+      for (const chunk of chunks) {
+        const low = chunk.toLowerCase();
+        if (!needles.some((n) => low.includes(n))) continue;
+        const clipped = chunk.length > 180 ? `${chunk.slice(0, 180).trim()}...` : chunk;
+        hits.push(escapeHtml(clipped));
+        if (hits.length >= 2) break;
+      }
+      if (hits.length) return hits.join(" ... ");
+      const fallback = body.slice(0, 180).trim();
+      return escapeHtml(fallback) + (body.length > 180 ? "..." : "");
     };
 
     return asItems(docs)
@@ -1520,7 +1517,7 @@ async function initCardsPage() {
         return {
           id: doc.id || "",
           title: doc.title || "Untitled",
-          snippet: makeSnippet(hay),
+          snippet: pickMatchedSnippets(doc),
         };
       })
       .filter(Boolean)
