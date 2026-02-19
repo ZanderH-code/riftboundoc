@@ -1,9 +1,8 @@
 name: Deploy Test Preview
 
 on:
-  push:
-    branches: ["test"]
-  workflow_dispatch:
+  pull_request:
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -16,6 +15,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'pull_request' || github.head_ref == 'test'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,6 +47,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request' || github.head_ref == 'test'
     environment:
       name: github-pages-test
       url: ${{ steps.deployment.outputs.page_url }}
