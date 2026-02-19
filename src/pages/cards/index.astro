@@ -6,43 +6,88 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <h1>Card Gallery</h1>
     <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>
 
-    <div class="cards-layout">
-      <aside class="cards-filters card" id="cards-filters">
-        <button id="cards-filter-toggle" class="secondary cards-filter-toggle" type="button">Hide Filters</button>
-
-        <section class="cards-filter-block">
-          <h3>Sort By</h3>
-          <div id="cards-sort-options" class="cards-filter-options"></div>
-        </section>
-
-        <section class="cards-filter-block">
-          <h3>Set</h3>
-          <div id="cards-set-options" class="cards-filter-options"></div>
-        </section>
-
-        <section class="cards-filter-block">
-          <h3>Type</h3>
-          <div id="cards-type-options" class="cards-filter-options"></div>
-        </section>
-
-        <section class="cards-filter-block">
-          <h3>Rarity</h3>
-          <div id="cards-rarity-options" class="cards-filter-options"></div>
-        </section>
-      </aside>
-
-      <section class="cards-main">
-        <section class="search-panel">
-          <div class="search-row">
-            <input id="cards-search-input" type="search" placeholder="Search by name, text, code, tag..." />
-            <button id="cards-search-btn" type="button">Search</button>
+    <section class="cards-main">
+      <section class="cards-filter-shell card" id="cards-filters">
+        <div class="cards-filter-top">
+          <input id="cards-search-input" type="search" placeholder="Search cards... (type / for filters)" />
+          <div class="cards-top-actions">
+            <select id="cards-sort-key" aria-label="Sort key">
+              <option value="card">ID</option>
+              <option value="name">Name</option>
+              <option value="rarity">Rarity</option>
+              <option value="might">Might</option>
+            </select>
+            <button id="cards-sort-dir" class="secondary cards-icon-btn" type="button" aria-label="Toggle sort direction">Asc</button>
+            <button id="cards-filter-toggle" class="secondary cards-icon-btn" type="button" aria-label="Hide filters">Hide</button>
           </div>
-          <p id="cards-meta" class="muted">Loading cards...</p>
-        </section>
-        <div id="cards-list" class="cards-list"></div>
-        <div id="cards-pager" class="search-pager"></div>
+        </div>
+
+        <div class="cards-filter-body" id="cards-filter-body">
+          <div class="cards-filter-row">
+            <div id="cards-domain-icons" class="cards-domain-icons" aria-label="Filter by domain"></div>
+            <div class="cards-select-grid">
+              <label class="cards-select-field">
+                <span>Set</span>
+                <select id="cards-set-select"></select>
+              </label>
+              <label class="cards-select-field">
+                <span>Type</span>
+                <select id="cards-type-select"></select>
+              </label>
+              <label class="cards-select-field">
+                <span>Supertype</span>
+                <select id="cards-supertype-select"></select>
+              </label>
+              <label class="cards-select-field">
+                <span>Variant</span>
+                <select id="cards-variant-select"></select>
+              </label>
+              <label class="cards-select-field">
+                <span>Rarity</span>
+                <select id="cards-rarity-select"></select>
+              </label>
+            </div>
+          </div>
+
+          <div class="cards-slider-grid">
+            <div class="cards-slider" data-stat="energy">
+              <div class="cards-slider-head">
+                <strong>Energy</strong>
+                <span id="cards-energy-value" class="muted">Any</span>
+              </div>
+              <div class="cards-range-wrap">
+                <input id="cards-energy-min" type="range" />
+                <input id="cards-energy-max" type="range" />
+              </div>
+            </div>
+            <div class="cards-slider" data-stat="power">
+              <div class="cards-slider-head">
+                <strong>Power</strong>
+                <span id="cards-power-value" class="muted">Any</span>
+              </div>
+              <div class="cards-range-wrap">
+                <input id="cards-power-min" type="range" />
+                <input id="cards-power-max" type="range" />
+              </div>
+            </div>
+            <div class="cards-slider" data-stat="might">
+              <div class="cards-slider-head">
+                <strong>Might</strong>
+                <span id="cards-might-value" class="muted">Any</span>
+              </div>
+              <div class="cards-range-wrap">
+                <input id="cards-might-min" type="range" />
+                <input id="cards-might-max" type="range" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="cards-meta" class="muted">Loading cards...</p>
       </section>
-    </div>
+
+      <div id="cards-list" class="cards-list"></div>
+      <div id="cards-pager" class="search-pager"></div>
+    </section>
 
     <div id="cards-modal" class="cards-modal" hidden>
       <div class="cards-modal-backdrop" data-cards-close="1"></div>

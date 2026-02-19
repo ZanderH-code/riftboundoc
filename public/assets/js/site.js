@@ -71,6 +71,22 @@ function navActive() {
   });
   const ver = document.querySelector("#site-version");
   if (ver) ver.textContent = `v${SITE_VERSION}`;
+  updateAnchorOffsetVar();
+  window.addEventListener("resize", updateAnchorOffsetVar);
+}
+
+function getTopbarHeight() {
+  const bar = q(".topbar");
+  if (!bar) return 0;
+  return Math.max(0, Math.round(bar.getBoundingClientRect().height));
+}
+
+function updateAnchorOffsetVar() {
+  const topbar = getTopbarHeight();
+  const vh = window.innerHeight || 800;
+  const fallback = vh <= 800 ? 170 : 146;
+  const dynamic = Math.max(fallback, topbar + 24);
+  document.documentElement.style.setProperty("--anchor-offset", `${dynamic}px`);
 }
 
 function asItems(list) {
@@ -377,7 +393,7 @@ function renderCards(items, target) {
         .join(" | ");
 
       return `
-      <article class="item card-item">
+      <article class="item card-item" data-card-id="${escapeHtml(it.id || "")}" tabindex="0" role="button" aria-label="Open card details for ${title}">
         <div class="card-media">
           ${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : "<div class=\"card-media-empty\">No image</div>"}
         </div>
@@ -439,6 +455,47 @@ function renderCoreRuleCard(pages, rules, target) {
   `;
 }
 
+function flashAnchorTarget(targetId) {
+  if (!targetId) return;
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  el.classList.remove("anchor-focus");
+  // Force reflow so repeated clicks retrigger animation.
+  void el.offsetWidth;
+  el.classList.add("anchor-focus");
+  window.setTimeout(() => el.classList.remove("anchor-focus"), 1600);
+}
+
+function scrollToAnchorTarget(targetId) {
+  if (!targetId) return;
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  updateAnchorOffsetVar();
+  const topbar = getTopbarHeight();
+  const viewport = window.innerHeight || 0;
+  // Keep target in the upper-middle viewport area.
+  const preferredOffset = Math.max(topbar + 20, Math.round(viewport * 0.32));
+  const targetTop = Math.max(0, window.scrollY + el.getBoundingClientRect().top - preferredOffset);
+  window.scrollTo({ top: targetTop, behavior: "smooth" });
+}
+
+function bindTocHighlights(toc) {
+  if (!toc) return;
+  toc.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener("click", (ev) => {
+      const id = String(a.getAttribute("href") || "").replace(/^#/, "");
+      if (!id) return;
+      ev.preventDefault();
+      scrollToAnchorTarget(id);
+      try {
+        const base = window.location.pathname + window.location.search;
+        window.history.replaceState({}, "", `${base}#${id}`);
+      } catch {}
+      window.setTimeout(() => flashAnchorTarget(id), 120);
+    });
+  });
+}
+
 function buildTocFor(contentSelector, tocSelector) {
   const content = q(contentSelector);
   const toc = q(tocSelector);
@@ -475,6 +532,7 @@ function buildTocFor(contentSelector, tocSelector) {
     });
   }
   toc.innerHTML = html;
+  bindTocHighlights(toc);
 }
 
 function highlightQueryIn(containerSelector) {
@@ -985,6 +1043,7 @@ function buildPageToc() {
     html += `<a href=\"#${row.id}\" class="toc-link ${cls}">${escapeHtml(label)}</a>`;
   });
   toc.innerHTML = html;
+  bindTocHighlights(toc);
 }
 
 async function initHome() {
@@ -1121,68 +1180,398 @@ async function initCardsPage() {
   const meta = q("#cards-meta");
   const pager = q("#cards-pager");
   const searchInput = q("#cards-search-input");
-  const searchBtn = q("#cards-search-btn");
-  const setFilter = q("#cards-set-filter");
-  const typeFilter = q("#cards-type-filter");
-  if (!list || !meta || !pager || !searchInput || !searchBtn || !setFilter || !typeFilter) return;
+  const filterRoot = q("#cards-filters");
+  const filterToggle = q("#cards-filter-toggle");
+  const filterBody = q("#cards-filter-body");
+  const sortKeySelect = q("#cards-sort-key");
+  const sortDirBtn = q("#cards-sort-dir");
+  const domainWrap = q("#cards-domain-icons");
+  const setSelect = q("#cards-set-select");
+  const typeSelect = q("#cards-type-select");
+  const supertypeSelect = q("#cards-supertype-select");
+  const variantSelect = q("#cards-variant-select");
+  const raritySelect = q("#cards-rarity-select");
+  const energyMin = q("#cards-energy-min");
+  const energyMax = q("#cards-energy-max");
+  const powerMin = q("#cards-power-min");
+  const powerMax = q("#cards-power-max");
+  const mightMin = q("#cards-might-min");
+  const mightMax = q("#cards-might-max");
+  const energyValue = q("#cards-energy-value");
+  const powerValue = q("#cards-power-value");
+  const mightValue = q("#cards-might-value");
+  const modal = q("#cards-modal");
+  const modalClose = q("#cards-modal-close");
+  const modalImage = q("#cards-modal-image");
+  const modalTitle = q("#cards-modal-title");
+  const modalMeta = q("#cards-modal-meta");
+  const modalStats = q("#cards-modal-stats");
+  const modalTags = q("#cards-modal-tags");
+  const modalText = q("#cards-modal-text");
+  if (
+    !list ||
+    !meta ||
+    !pager ||
+    !searchInput ||
+    !filterRoot ||
+    !filterToggle ||
+    !filterBody ||
+    !sortKeySelect ||
+    !sortDirBtn ||
+    !domainWrap ||
+    !setSelect ||
+    !typeSelect ||
+    !supertypeSelect ||
+    !variantSelect ||
+    !raritySelect ||
+    !energyMin ||
+    !energyMax ||
+    !powerMin ||
+    !powerMax ||
+    !mightMin ||
+    !mightMax ||
+    !energyValue ||
+    !powerValue ||
+    !mightValue ||
+    !modal ||
+    !modalClose ||
+    !modalImage ||
+    !modalTitle ||
+    !modalMeta ||
+    !modalStats ||
+    !modalTags ||
+    !modalText
+  ) {
+    return;
+  }
 
-  const sets = Array.from(
-    new Set(cards.map((x) => String(x.set || "").trim()).filter(Boolean))
-  ).sort((a, b) => a.localeCompare(b));
+  const unique = (arr) =>
+    Array.from(new Set(arr.map((x) => String(x || "").trim()).filter(Boolean))).sort((a, b) =>
+      a.localeCompare(b)
+    );
+  const sets = unique(cards.map((x) => x.set));
   const types = Array.from(
     new Set(cards.flatMap((x) => asItems(x.cardTypes)).map((x) => String(x || "").trim()).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
+  const supertypes = Array.from(
+    new Set(cards.flatMap((x) => asItems(x.superTypes)).map((x) => String(x || "").trim()).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
+  const variants = unique(cards.map((x) => x.variant || x.variantName));
+  const rarities = unique(cards.map((x) => x.rarity));
+  const allDomains = unique(cards.flatMap((x) => asItems(x.domains)));
+  const domainOrder = ["Body", "Calm", "Mind", "Order", "Chaos", "Fury"];
 
-  setFilter.innerHTML = '<option value="all">All Sets</option>' + sets.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
-  typeFilter.innerHTML = '<option value="all">All Types</option>' + types.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join("");
+  const numberRange = (rows) => {
+    const nums = rows.map((x) => Number(x)).filter(Number.isFinite);
+    if (!nums.length) return { min: 0, max: 0 };
+    return { min: Math.min(...nums), max: Math.max(...nums) };
+  };
+  const limits = {
+    energy: numberRange(cards.map((c) => c.energy)),
+    power: numberRange(cards.map((c) => c.power)),
+    might: numberRange(cards.map((c) => c.might)),
+  };
 
-  const pageSize = 24;
-  let currentPage = 1;
+  const state = {
+    query: "",
+    sortKey: "card",
+    sortDir: "asc",
+    set: "all",
+    type: "all",
+    supertype: "all",
+    variant: "all",
+    rarity: "all",
+    domains: new Set(),
+    ranges: {
+      energy: { ...limits.energy },
+      power: { ...limits.power },
+      might: { ...limits.might },
+    },
+    page: 1,
+  };
+
+  const rarityRank = {
+    common: 1,
+    uncommon: 2,
+    rare: 3,
+    epic: 4,
+    legendary: 5,
+    showcase: 6,
+  };
+
+  const domainIcons = {
+    Body:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v7c0 4.3 3.4 7.9 8 9 4.6-1.1 8-4.7 8-9V6l-8-4Zm0 3.1 5 2.5V13c0 2.7-2.1 5.1-5 6-2.9-.9-5-3.3-5-6V7.6l5-2.5Z"/></svg>',
+    Calm:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8 8 0 0 0-8 8c0 5.5 4.6 9.2 8 10 3.4-.8 8-4.5 8-10a8 8 0 0 0-8-8Zm-1 4h2v4h4v2h-4v4h-2v-4H7v-2h4V7Z"/></svg>',
+    Mind:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.1 8.2.5 12c1.6 3.8 6 7 11.5 7s9.9-3.2 11.5-7C21.9 8.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6Z"/></svg>',
+    Order:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 10-8 10L4 12 12 2Zm0 4.1L8.7 12 12 17.9 15.3 12 12 6.1Z"/></svg>',
+    Chaos:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 2.3c-3.6 0-6.6 2.9-6.6 6.5 0 1 .2 1.9.6 2.7-2.3.7-4 2.8-4 5.3 0 3.1 2.5 5.6 5.6 5.6h4.8c3.4 0 6.1-2.8 6.1-6.2 0-2.8-1.8-5.1-4.4-5.9.2-.5.2-1.1.2-1.7 0-3.6-2.8-6.3-6.3-6.3Zm0 3c1.8 0 3.2 1.4 3.2 3.3s-1.4 3.3-3.2 3.3c-1.9 0-3.3-1.4-3.3-3.3s1.4-3.3 3.3-3.3Z"/></svg>',
+    Fury:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.1 2.2c1.2 2 1.5 3.9.7 5.7-.5 1.1-1.3 2-1.8 2.7-.9 1.1-.8 2.3-.2 3.2.8 1.2 2.7 1.7 4 1 1.8-1 2.5-3.4 1.6-5.8 2.9 1.7 4.5 4.3 4.5 7 0 4-3.4 7-8 7s-8-3-8-7c0-2.9 1.6-5.5 4.5-7.3.2 1.4.8 2.5 1.9 2.8-.1-2.7.9-5.2 3-7.3Z"/></svg>',
+  };
+  const fillSelect = (el, rows, allLabel) => {
+    el.innerHTML = [`<option value="all">${escapeHtml(allLabel)}</option>`]
+      .concat(rows.map((x) => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`))
+      .join("");
+  };
+  fillSelect(setSelect, sets, "All");
+  fillSelect(typeSelect, types, "All");
+  fillSelect(supertypeSelect, supertypes, "All");
+  fillSelect(variantSelect, variants, "All");
+  fillSelect(raritySelect, rarities, "All");
+
+  sortKeySelect.value = state.sortKey;
+  sortDirBtn.textContent = "Asc";
+
+  const buildDomainButtons = () => {
+    const ordered = domainOrder.filter((x) => allDomains.includes(x));
+    domainWrap.innerHTML = ordered
+      .map((domain) => {
+        const icon = domainIcons[domain] || "";
+        return `<button type="button" class="cards-domain-btn" data-domain="${escapeHtml(
+          domain
+        )}" title="${escapeHtml(domain)}" aria-label="Filter ${escapeHtml(domain)}">${icon}</button>`;
+      })
+      .join("");
+    domainWrap.querySelectorAll(".cards-domain-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const domain = btn.getAttribute("data-domain") || "";
+        if (!domain) return;
+        if (state.domains.has(domain)) state.domains.delete(domain);
+        else state.domains.add(domain);
+        paintDomainButtons();
+        render(1);
+      });
+    });
+  };
+  const paintDomainButtons = () => {
+    domainWrap.querySelectorAll(".cards-domain-btn").forEach((btn) => {
+      const domain = btn.getAttribute("data-domain") || "";
+      btn.classList.toggle("active", state.domains.has(domain));
+    });
+  };
+
+  const setupRange = (name, minInput, maxInput, valueEl, range) => {
+    minInput.min = String(range.min);
+    minInput.max = String(range.max);
+    minInput.value = String(range.min);
+    maxInput.min = String(range.min);
+    maxInput.max = String(range.max);
+    maxInput.value = String(range.max);
+    const sync = (from) => {
+      let minVal = Number(minInput.value);
+      let maxVal = Number(maxInput.value);
+      if (from === "min" && minVal > maxVal) {
+        maxVal = minVal;
+        maxInput.value = String(maxVal);
+      }
+      if (from === "max" && maxVal < minVal) {
+        minVal = maxVal;
+        minInput.value = String(minVal);
+      }
+      state.ranges[name] = { min: minVal, max: maxVal };
+      const isAny = minVal === range.min && maxVal === range.max;
+      valueEl.textContent = isAny ? "Any" : `${minVal}-${maxVal}`;
+      render(1);
+    };
+    minInput.addEventListener("input", () => sync("min"));
+    maxInput.addEventListener("input", () => sync("max"));
+    valueEl.textContent = "Any";
+  };
+  setupRange("energy", energyMin, energyMax, energyValue, limits.energy);
+  setupRange("power", powerMin, powerMax, powerValue, limits.power);
+  setupRange("might", mightMin, mightMax, mightValue, limits.might);
+  buildDomainButtons();
+  paintDomainButtons();
+
+  const toInt = (v) => {
+    const n = Number(v);
+    return Number.isFinite(n) ? n : Number.NaN;
+  };
+
+  const getSorted = (rows) => {
+    const listRows = [...rows];
+    const dir = state.sortDir === "desc" ? -1 : 1;
+    listRows.sort((a, b) => {
+      const collectorCmp = (toInt(a.collectorNumber) || 0) - (toInt(b.collectorNumber) || 0);
+      const nameCmp = String(a.name || "").localeCompare(String(b.name || ""));
+      const rarityCmp =
+        (rarityRank[String(a.rarity || "").toLowerCase()] || 99) -
+        (rarityRank[String(b.rarity || "").toLowerCase()] || 99);
+      const mightCmp = (toInt(a.might) || 0) - (toInt(b.might) || 0);
+      let cmp = collectorCmp || nameCmp;
+      if (state.sortKey === "rarity") cmp = rarityCmp || nameCmp;
+      else if (state.sortKey === "might") cmp = mightCmp || nameCmp;
+      else if (state.sortKey === "name") cmp = nameCmp;
+      return cmp * dir;
+    });
+    return listRows;
+  };
+
+  const inNumberRange = (value, range, limitsForValue) => {
+    const isAny = range.min === limitsForValue.min && range.max === limitsForValue.max;
+    const n = Number(value);
+    if (!Number.isFinite(n)) return isAny;
+    return n >= range.min && n <= range.max;
+  };
+
+  const matchesDomains = (cardDomains) => {
+    if (!state.domains.size) return true;
+    const row = new Set(asItems(cardDomains).map((x) => String(x)));
+    for (const x of state.domains) {
+      if (row.has(x)) return true;
+    }
+    return false;
+  };
 
   const filtered = () => {
-    const term = markdownToPlain(searchInput.value).toLowerCase();
-    const setVal = String(setFilter.value || "all");
-    const typeVal = String(typeFilter.value || "all");
-    return cards.filter((c) => {
-      if (setVal !== "all" && String(c.set || "") !== setVal) return false;
-      if (typeVal !== "all" && !asItems(c.cardTypes).includes(typeVal)) return false;
-      if (!term) return true;
-      const hay = markdownToPlain(
-        [
-          c.name,
-          c.publicCode,
-          c.set,
-          c.rarity,
-          asItems(c.cardTypes).join(" "),
-          asItems(c.superTypes).join(" "),
-          asItems(c.domains).join(" "),
-          asItems(c.tags).join(" "),
-          c.abilityText,
-        ]
-          .filter(Boolean)
-          .join("\n")
-      ).toLowerCase();
-      return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
+    const term = markdownToPlain(state.query).toLowerCase();
+    return getSorted(
+      cards.filter((c) => {
+        if (state.set !== "all" && String(c.set || "") !== state.set) return false;
+        if (state.type !== "all" && !asItems(c.cardTypes).includes(state.type)) return false;
+        if (state.supertype !== "all" && !asItems(c.superTypes).includes(state.supertype)) return false;
+        if (state.variant !== "all" && String(c.variant || c.variantName || "") !== state.variant) return false;
+        if (state.rarity !== "all" && String(c.rarity || "") !== state.rarity) return false;
+        if (!matchesDomains(c.domains)) return false;
+        if (!inNumberRange(c.energy, state.ranges.energy, limits.energy)) return false;
+        if (!inNumberRange(c.power, state.ranges.power, limits.power)) return false;
+        if (!inNumberRange(c.might, state.ranges.might, limits.might)) return false;
+        if (!term) return true;
+        const hay = markdownToPlain(
+          [
+            c.name,
+            c.publicCode,
+            c.set,
+            c.rarity,
+            asItems(c.cardTypes).join(" "),
+            asItems(c.superTypes).join(" "),
+            asItems(c.domains).join(" "),
+            asItems(c.tags).join(" "),
+            c.abilityText,
+          ]
+            .filter(Boolean)
+            .join("\n")
+        ).toLowerCase();
+        return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
+      })
+    );
+  };
+
+  const pageSize = 24;
+
+  const openCardModal = (cardId) => {
+    const card = cards.find((c) => String(c.id) === String(cardId));
+    if (!card) return;
+    modalImage.src = card.imageUrl || "";
+    modalImage.alt = card.imageAlt || card.name || "Card image";
+    modalTitle.textContent = card.name || "Untitled card";
+    modalMeta.textContent = `${card.publicCode || "-"} | ${card.set || "-"} | ${card.rarity || "-"}`;
+    modalStats.textContent = `Type: ${asItems(card.cardTypes).join(", ") || "-"} | Domain: ${
+      asItems(card.domains).join(", ") || "-"
+    } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
+    modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
+    modalText.textContent = card.abilityText || "No ability text.";
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+  };
+
+  const closeCardModal = () => {
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  };
+
+  const bindCardClicks = () => {
+    list.querySelectorAll(".card-item[data-card-id]").forEach((cardEl) => {
+      const open = () => openCardModal(cardEl.getAttribute("data-card-id") || "");
+      cardEl.addEventListener("click", open);
+      cardEl.addEventListener("keydown", (ev) => {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          open();
+        }
+      });
     });
   };
 
   const render = (page = 1) => {
     const rows = filtered();
     const pageCount = Math.max(1, Math.ceil(rows.length / pageSize));
-    currentPage = Math.min(Math.max(1, page), pageCount);
-    const start = (currentPage - 1) * pageSize;
+    state.page = Math.min(Math.max(1, page), pageCount);
+    const start = (state.page - 1) * pageSize;
     const view = rows.slice(start, start + pageSize);
     renderCards(view, list);
-    meta.textContent = `${rows.length} card(s) | Page ${currentPage}/${pageCount} | Source: ${raw.source || "Riftbound Official"}`;
-    renderSearchPager(rows.length, currentPage, pageSize, pager, (p) => render(p));
+    bindCardClicks();
+    meta.textContent = `${rows.length} card(s) | Page ${state.page}/${pageCount} | Source: ${
+      raw.source || "Riftbound Official"
+    }`;
+    renderSearchPager(rows.length, state.page, pageSize, pager, (p) => render(p));
   };
 
-  searchBtn.addEventListener("click", () => render(1));
-  searchInput.addEventListener("keydown", (ev) => {
-    if (ev.key === "Enter") render(1);
+  setSelect.addEventListener("change", () => {
+    state.set = setSelect.value || "all";
+    render(1);
   });
-  setFilter.addEventListener("change", () => render(1));
-  typeFilter.addEventListener("change", () => render(1));
+  typeSelect.addEventListener("change", () => {
+    state.type = typeSelect.value || "all";
+    render(1);
+  });
+  supertypeSelect.addEventListener("change", () => {
+    state.supertype = supertypeSelect.value || "all";
+    render(1);
+  });
+  variantSelect.addEventListener("change", () => {
+    state.variant = variantSelect.value || "all";
+    render(1);
+  });
+  raritySelect.addEventListener("change", () => {
+    state.rarity = raritySelect.value || "all";
+    render(1);
+  });
+  sortKeySelect.addEventListener("change", () => {
+    state.sortKey = sortKeySelect.value || "card";
+    render(1);
+  });
+  sortDirBtn.addEventListener("click", () => {
+    state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+    sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
+    render(1);
+  });
+
+  filterToggle.addEventListener("click", () => {
+    filterRoot.classList.toggle("collapsed");
+    filterBody.hidden = filterRoot.classList.contains("collapsed");
+    filterToggle.textContent = filterRoot.classList.contains("collapsed") ? "Show" : "Hide";
+  });
+
+  searchInput.addEventListener("input", () => {
+    state.query = searchInput.value || "";
+    render(1);
+  });
+  searchInput.addEventListener("keydown", (ev) => {
+    if (ev.key === "/") {
+      ev.preventDefault();
+      setSelect.focus();
+    }
+    if (ev.key === "Enter") {
+      state.query = searchInput.value || "";
+      render(1);
+    }
+  });
+
+  modalClose.addEventListener("click", closeCardModal);
+  modal.addEventListener("click", (ev) => {
+    const t = ev.target;
+    if (t && t.closest && t.closest("[data-cards-close='1']")) closeCardModal();
+  });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && !modal.hidden) closeCardModal();
+  });
+
   render(1);
 }
 
