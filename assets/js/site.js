@@ -1,6 +1,6 @@
-const q = (selector) => document.querySelector(selector);
+﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.5";
+const SITE_VERSION = "2026.02.20.6";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -125,6 +125,14 @@ function escapeHtml(text) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function isUsefulTocHeading(text) {
+  const t = String(text || "").trim();
+  if (!t) return false;
+  if (/^\[(new|old)\s+text\]$/i.test(t)) return false;
+  if (/^[鈻测柍鈻粹柕]+$/.test(t)) return false;
+  return true;
 }
 
 function renderFaq(items, target, options = {}) {
@@ -330,12 +338,14 @@ function buildTocFor(contentSelector, tocSelector) {
   const content = q(contentSelector);
   const toc = q(tocSelector);
   if (!content || !toc) return;
-  const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
+  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter((el) =>
+    isUsefulTocHeading(el.textContent)
+  );
   const questionRows =
     contentSelector === "#faq-content"
       ? Array.from(content.querySelectorAll("p, li")).filter((el) => {
           const txt = String(el.textContent || "").trim();
-          return /^Q:\s+/i.test(txt) || /^Q：\s+/.test(txt);
+          return /^Q:\s+/i.test(txt) || /^Q锛歕s+/.test(txt);
         })
       : [];
 
@@ -427,7 +437,7 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
       out.push(`## ${line}`);
       continue;
     }
-    if (/^Q:\s+/i.test(line) || /^Q：\s+/.test(line)) {
+    if (/^Q:\s+/i.test(line) || /^Q锛歕s+/.test(line)) {
       out.push(`### ${line}`);
       continue;
     }
@@ -813,7 +823,9 @@ function buildPageToc() {
   const content = q("#page-content");
   if (!toc || !content) return;
 
-  const headings = Array.from(content.querySelectorAll("h2, h3, h4"));
+  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter((el) =>
+    isUsefulTocHeading(el.textContent)
+  );
   const ruleHeadings = Array.from(
     content.querySelectorAll(".rule-row.rule-chapter, .rule-row.rule-heading")
   );
@@ -1271,6 +1283,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
