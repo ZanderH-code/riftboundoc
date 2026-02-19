@@ -1,6 +1,6 @@
 const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.19.4";
+const SITE_VERSION = "2026.02.20.1";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -956,6 +956,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
