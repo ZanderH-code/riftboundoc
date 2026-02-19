@@ -146,7 +146,7 @@ function renderErrata(items, target, options = {}) {
       if (compact) {
         return `
       <article class="item page-card" data-href="${href}" tabindex="0" role="link">
-        <h3>${it.title || "Untitled errata"}</h3>
+        <h3><a href="${href}">${it.title || "Untitled errata"}</a></h3>
         <p>${preview}</p>
         <p class="muted">Source: ${it.source || "Riftbound Official"} | Published: ${
           formatDate(it.publishedAt)
