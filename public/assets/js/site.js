@@ -629,6 +629,16 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
       out.push(`#### ${line}`);
       continue;
     }
+    if (
+      kind === "errata" &&
+      /^[A-Z][A-Za-z0-9'`",.!?&\- ]{2,70}$/.test(line) &&
+      !/^\[/.test(line) &&
+      !line.startsWith("#") &&
+      /^####\s+\[NEW TEXT\]/i.test(next)
+    ) {
+      out.push(`### ${line}`);
+      continue;
+    }
     if (/\(revised text\)$/i.test(line)) {
       out.push(`### ${line}`);
       continue;
