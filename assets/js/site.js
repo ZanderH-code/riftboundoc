@@ -1484,11 +1484,7 @@ async function initCardsPage() {
   const findRelatedDocs = (docs, cardName) => {
     const full = String(cardName || "").trim();
     if (!full) return [];
-    const base = full.split(",")[0].trim();
-    const useBaseNeedle = base.length >= 3;
-    const needles = Array.from(
-      new Set([full, useBaseNeedle ? base : ""].filter(Boolean).map((x) => x.toLowerCase()))
-    );
+    const needles = [full.toLowerCase()];
     const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const matchNeedleIndex = (textLower, needleLower) => {
       if (!textLower || !needleLower) return -1;
