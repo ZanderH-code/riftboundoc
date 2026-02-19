@@ -538,15 +538,7 @@ function buildTocFor(contentSelector, tocSelector) {
   const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter((el) =>
     isUsefulTocHeading(el.textContent)
   );
-  const questionRows =
-    contentSelector === "#faq-content"
-      ? Array.from(content.querySelectorAll("p, li")).filter((el) => {
-          const txt = String(el.textContent || "").trim();
-          return /^Q:\s+/i.test(txt) || /^Q：\s+/.test(txt);
-        })
-      : [];
-
-  if (!headings.length && !questionRows.length) {
+  if (!headings.length) {
     toc.innerHTML = '<div class="toc-title">Contents</div><p class="muted">No sections found.</p>';
     return;
   }
@@ -557,15 +549,6 @@ function buildTocFor(contentSelector, tocSelector) {
     const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
     html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
-
-  if (questionRows.length) {
-    html += '<div class="toc-title" style="margin-top:8px">Questions</div>';
-    questionRows.forEach((el, idx) => {
-      if (!el.id) el.id = `faq-q-${idx + 1}`;
-      const label = String(el.textContent || "").trim();
-      html += `<a href=\"#${el.id}\" class="toc-link toc-l3">${escapeHtml(label)}</a>`;
-    });
-  }
   toc.innerHTML = html;
   bindTocHighlights(toc);
 }
@@ -1511,18 +1494,50 @@ async function initCardsPage() {
           .map((x) => x.trim())
           .filter(Boolean);
 
+      const toSnippetFromParagraph = (paragraph, preferredNeedle = "") => {
+        const lower = paragraph.toLowerCase();
+        const hit = preferredNeedle || needles.find((n) => lower.includes(n)) || needles[0] || "";
+        const start = hit ? lower.indexOf(hit) : -1;
+        const clipped = paragraph.slice(start >= 0 ? start : 0).trim();
+        return {
+          snippet: escapeHtml(clipped),
+          query: hit || needles[0] || "",
+        };
+      };
+
+      // 1) Title-first strategy: section heading (TOC-like) first, then doc title.
+      for (const section of sections) {
+        const heading = String(section.heading || "").trim();
+        const headingLow = heading.toLowerCase();
+        const hit = needles.find((n) => headingLow.includes(n));
+        if (!hit) continue;
+        const paragraphs = toParagraphs(section);
+        if (paragraphs.length) {
+          const firstPara = String(paragraphs[0] || "").trim();
+          return {
+            snippet: `${escapeHtml(heading)}<br />${escapeHtml(firstPara)}`,
+            query: hit,
+          };
+        }
+        return { snippet: escapeHtml(heading), query: hit };
+      }
+
+      const docTitle = markdownToPlain(String(doc.title || ""));
+      const docTitleLow = docTitle.toLowerCase();
+      const docTitleHit = needles.find((n) => docTitleLow.includes(n));
+      if (docTitleHit) {
+        const bodyFirst = markdownToPlain(markdown).split(/\n\s*\n+/).map((x) => x.trim()).find(Boolean);
+        if (bodyFirst) return toSnippetFromParagraph(bodyFirst, docTitleHit);
+        return { snippet: escapeHtml(docTitle), query: docTitleHit };
+      }
+
       for (const section of sections) {
         const paragraphs = toParagraphs(section);
         for (const paragraph of paragraphs) {
           const lower = paragraph.toLowerCase();
           const hit = needles.find((n) => lower.includes(n));
           if (!hit) continue;
-          const start = lower.indexOf(hit);
-          const clipped = paragraph.slice(Math.max(0, start)).trim();
-          return {
-            snippet: escapeHtml(clipped),
-            query: hit || needles[0] || "",
-          };
+          return toSnippetFromParagraph(paragraph, hit);
         }
       }
 
