@@ -1311,6 +1311,19 @@ async function initCardsPage() {
   const rarities = unique(cards.map((x) => x.rarity));
   const allDomains = unique(cards.flatMap((x) => asItems(x.domains)));
   const domainOrder = ["Fury", "Calm", "Mind", "Body", "Chaos", "Order"];
+  const allCardNamesLower = unique(cards.map((x) => String(x.name || "").trim().toLowerCase()));
+  const longerNameByPrefix = new Map();
+  allCardNamesLower.forEach((name) => {
+    const first = name.split(",")[0].trim();
+    if (!first) return;
+    for (let i = 0; i < allCardNamesLower.length; i += 1) {
+      const other = allCardNamesLower[i];
+      if (!other || other === first) continue;
+      if (!other.startsWith(`${first} `)) continue;
+      if (!longerNameByPrefix.has(first)) longerNameByPrefix.set(first, []);
+      longerNameByPrefix.get(first).push(other);
+    }
+  });
 
   const numberRange = (rows) => {
     const nums = rows.map((x) => Number(x)).filter(Number.isFinite);
@@ -1473,6 +1486,20 @@ async function initCardsPage() {
     if (!full) return [];
     const base = full.split(",")[0].trim();
     const needles = Array.from(new Set([full, base].filter(Boolean).map((x) => x.toLowerCase())));
+    const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const matchNeedleIndex = (textLower, needleLower) => {
+      if (!textLower || !needleLower) return -1;
+      const re = new RegExp(`(^|[^a-z0-9])(${escapeRegExp(needleLower)})(?=$|[^a-z0-9])`, "gi");
+      let m;
+      while ((m = re.exec(textLower)) !== null) {
+        const idx = m.index + (m[1] ? m[1].length : 0);
+        const suffix = textLower.slice(idx);
+        const longer = longerNameByPrefix.get(needleLower) || [];
+        const shadowed = longer.some((name) => suffix.startsWith(name));
+        if (!shadowed) return idx;
+      }
+      return -1;
+    };
     const toHay = (doc) => markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
 
     const pickMatchedSnippets = (doc) => {
@@ -1501,7 +1528,11 @@ async function initCardsPage() {
 
       const toSnippetFromParagraph = (paragraph, preferredNeedle = "") => {
         const lower = paragraph.toLowerCase();
-        const hit = preferredNeedle || needles.find((n) => lower.includes(n)) || needles[0] || "";
+        const hit =
+          preferredNeedle ||
+          needles.find((n) => matchNeedleIndex(lower, n) >= 0) ||
+          needles[0] ||
+          "";
         return {
           snippet: escapeHtml(paragraph.trim()),
           query: hit || needles[0] || "",
@@ -1512,7 +1543,7 @@ async function initCardsPage() {
       for (const section of sections) {
         const heading = String(section.heading || "").trim();
         const headingLow = heading.toLowerCase();
-        const hit = needles.find((n) => headingLow.includes(n));
+        const hit = needles.find((n) => matchNeedleIndex(headingLow, n) >= 0);
         if (!hit) continue;
         const paragraphs = toParagraphs(section);
         if (paragraphs.length) {
@@ -1530,7 +1561,7 @@ async function initCardsPage() {
 
       const docTitle = markdownToPlain(String(doc.title || ""));
       const docTitleLow = docTitle.toLowerCase();
-      const docTitleHit = needles.find((n) => docTitleLow.includes(n));
+      const docTitleHit = needles.find((n) => matchNeedleIndex(docTitleLow, n) >= 0);
       if (docTitleHit) {
         const bodyFirst = markdownToPlain(markdown).split(/\n\s*\n+/).map((x) => x.trim()).find(Boolean);
         if (bodyFirst) return toSnippetFromParagraph(bodyFirst, docTitleHit);
@@ -1543,7 +1574,7 @@ async function initCardsPage() {
         let firstHit = "";
         for (const paragraph of paragraphs) {
           const lower = paragraph.toLowerCase();
-          const hit = needles.find((n) => lower.includes(n));
+          const hit = needles.find((n) => matchNeedleIndex(lower, n) >= 0);
           if (!hit) continue;
           if (!firstHit) firstHit = hit;
           matchedParagraphs.push(paragraph);
@@ -1565,7 +1596,7 @@ async function initCardsPage() {
       .map((doc) => {
         const hay = toHay(doc);
         const lower = hay.toLowerCase();
-        const matched = needles.some((n) => lower.includes(n));
+        const matched = needles.some((n) => matchNeedleIndex(lower, n) >= 0);
         if (!matched) return null;
         const picked = pickMatchedSnippets(doc);
         return {
