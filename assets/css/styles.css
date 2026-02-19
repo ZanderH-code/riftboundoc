@@ -514,18 +514,56 @@ button.secondary {
 @media (max-width: 980px) {
   .reading-layout {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .reading-layout > .doc-shell,
+  .reading-layout > article {
+    order: 1;
+  }
+
+  .reading-layout > .side-panel,
+  .reading-layout > aside {
+    order: 2;
   }
 
   .side-panel {
     position: static;
+    margin-top: 2px;
   }
 
   .toc {
-    max-height: none;
+    max-height: 34vh;
+    margin-top: 8px;
+  }
+
+  .toc .toc-link {
+    padding: 6px 8px;
+    font-size: 0.88rem;
+  }
+
+  .side-panel .card {
+    padding: 10px;
   }
 }
 
 @media (max-width: 800px) {
+  .topbar .container {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+  }
+
   .two-col {
     grid-template-columns: 1fr;
   }
