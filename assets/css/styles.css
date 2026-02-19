@@ -444,6 +444,8 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   max-height: 62vh;
   overflow: auto;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
 }
 
 .toc strong,
@@ -462,7 +464,9 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
 
 .toc a,
 .toc .toc-link {
-  display: block;
+  display: block !important;
+  width: 100%;
+  clear: both;
   text-decoration: none;
   margin-bottom: 6px;
   font-size: 0.92rem;

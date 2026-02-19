@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.6";
+const SITE_VERSION = "2026.02.20.7";
 const ROOT_RESERVED = new Set([
   "faq",
   "faq-detail",
@@ -131,7 +131,9 @@ function isUsefulTocHeading(text) {
   const t = String(text || "").trim();
   if (!t) return false;
   if (/^\[(new|old)\s+text\]$/i.test(t)) return false;
-  if (/^[鈻测柍鈻粹柕]+$/.test(t)) return false;
+  if (/^[\[【(（]?\s*(new|old)\s+text\s*[\]】)）]?$/i.test(t)) return false;
+  if (/^[▲△▴▵]+$/.test(t)) return false;
+  if (/^[^A-Za-z0-9]+$/.test(t)) return false;
   return true;
 }
 
@@ -1283,6 +1285,7 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
+
 
 
 
