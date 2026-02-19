@@ -755,10 +755,10 @@ async function initHome() {
 
   renderFaq(sortByUpdated(faqs).slice(0, 2), q("#home-faq"), { compact: true });
   renderErrata(sortByUpdated(errata).slice(0, 2), q("#home-errata"), { compact: true });
-  renderCoreRuleCard(pages, rules, q("#home-core-rule"));
+  renderRules(sortByUpdated(rules).slice(0, 3), q("#home-rules"));
   bindPageCards(q("#home-faq"));
   bindPageCards(q("#home-errata"));
-  bindPageCards(q("#home-core-rule"));
+  bindPageCards(q("#home-rules"));
   bindPageCards(q(".hero .grid"));
   initHomeSearch({ pages, faqs, errata, rules });
 }
