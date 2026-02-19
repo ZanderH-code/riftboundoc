@@ -94,6 +94,15 @@ function formatDate(value) {
   return d.toISOString().slice(0, 10);
 }
 
+function escapeHtml(text) {
+  return String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function renderFaq(items, target, options = {}) {
   const compact = Boolean(options.compact);
   if (!target) return;
@@ -293,6 +302,135 @@ function renderCoreRuleCard(pages, rules, target) {
   `;
 }
 
+async function buildSearchIndex(pages, faqs, errata, rules) {
+  const docs = [];
+
+  for (const page of asItems(pages)) {
+    let body = "";
+    if (page.file) {
+      try {
+        body = await fetch(route(page.file), { cache: "no-store" }).then((r) => r.text());
+      } catch {
+        body = "";
+      }
+    }
+    docs.push({
+      kind: "Page",
+      title: page.title || "Untitled page",
+      href: route(`pages/?id=${encodeURIComponent(page.id || "")}`),
+      text: markdownToPlain(`${page.title || ""}\n${page.summary || ""}\n${body}`),
+    });
+  }
+
+  for (const item of asItems(faqs)) {
+    docs.push({
+      kind: "FAQ",
+      title: item.title || "Untitled FAQ",
+      href: route(`faq-detail/?id=${encodeURIComponent(item.id || "")}`),
+      text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.content || ""}`),
+    });
+  }
+
+  for (const item of asItems(errata)) {
+    docs.push({
+      kind: "Errata",
+      title: item.title || "Untitled errata",
+      href: route(`errata-detail/?id=${encodeURIComponent(item.id || "")}`),
+      text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.content || ""}`),
+    });
+  }
+
+  for (const item of asItems(rules)) {
+    const link = resolveRuleLink(item);
+    docs.push({
+      kind: "Rule",
+      title: item.title || item.name || "Untitled rule",
+      href: link.href || "#",
+      text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.source || ""}`),
+    });
+  }
+
+  return docs;
+}
+
+function searchDocs(query, docs) {
+  const tokens = markdownToPlain(query)
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!tokens.length) return [];
+
+  const scored = [];
+  for (const doc of docs) {
+    const hay = String(doc.text || "").toLowerCase();
+    if (!tokens.every((t) => hay.includes(t))) continue;
+
+    let score = 0;
+    for (const token of tokens) {
+      let idx = hay.indexOf(token);
+      while (idx >= 0) {
+        score += 1;
+        idx = hay.indexOf(token, idx + token.length);
+      }
+    }
+    scored.push({ ...doc, score });
+  }
+  scored.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
+  return scored.slice(0, 30);
+}
+
+function renderSearchResults(results, target, meta, query) {
+  if (!target || !meta) return;
+  if (!query) {
+    meta.textContent = "Type keywords to search all indexed content.";
+    target.innerHTML = "";
+    return;
+  }
+  meta.textContent = `${results.length} result(s) for "${query}"`;
+  if (!results.length) {
+    target.innerHTML = '<article class="item"><p class="muted">No matching content.</p></article>';
+    return;
+  }
+  target.innerHTML = results
+    .map((r) => {
+      const snippet = escapeHtml(String(r.text || "").slice(0, 220));
+      return `
+      <article class="item search-result">
+        <div class="result-head">
+          <h3><a href="${r.href}">${escapeHtml(r.title)}</a></h3>
+          <span class="result-kind">${r.kind}</span>
+        </div>
+        <p class="result-snippet">${snippet}${String(r.text || "").length > 220 ? "..." : ""}</p>
+      </article>
+    `;
+    })
+    .join("");
+}
+
+async function initHomeSearch(data) {
+  const input = q("#home-search-input");
+  const button = q("#home-search-btn");
+  const meta = q("#home-search-meta");
+  const list = q("#home-search-results");
+  if (!input || !button || !meta || !list) return;
+
+  const docs = await buildSearchIndex(data.pages, data.faqs, data.errata, data.rules);
+  meta.textContent = `Index ready: ${docs.length} documents.`;
+
+  const run = () => {
+    const query = input.value.trim();
+    const results = searchDocs(query, docs);
+    renderSearchResults(results, list, meta, query);
+  };
+  button.addEventListener("click", run);
+  input.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") run();
+  });
+  input.addEventListener("input", () => {
+    if (!input.value.trim()) renderSearchResults([], list, meta, "");
+  });
+}
+
 function buildPageToc() {
   const toc = q("#page-toc");
   const content = q("#page-content");
@@ -360,6 +498,7 @@ async function initHome() {
   bindPageCards(q("#home-errata"));
   bindPageCards(q("#home-core-rule"));
   bindPageCards(q(".hero .grid"));
+  initHomeSearch({ pages, faqs, errata, rules });
 }
 
 async function initFaqPage() {

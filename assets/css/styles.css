@@ -197,6 +197,40 @@ main > section h2 {
   margin-bottom: 14px;
 }
 
+.search-panel {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(160deg, #141d29, #121922);
+  padding: 16px;
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.search-result .result-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.search-result .result-kind {
+  font-size: 0.82rem;
+  color: var(--subtle);
+  border: 1px solid #3a4b5e;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.search-result .result-snippet {
+  margin-top: 6px;
+}
+
 input,
 textarea,
 select,
@@ -364,6 +398,10 @@ button.secondary {
 
 @media (max-width: 800px) {
   .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .search-row {
     grid-template-columns: 1fr;
   }
 }
