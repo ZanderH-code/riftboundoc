@@ -1259,7 +1259,7 @@ async function initCardsPage() {
   const variants = unique(cards.map((x) => x.variant || x.variantName));
   const rarities = unique(cards.map((x) => x.rarity));
   const allDomains = unique(cards.flatMap((x) => asItems(x.domains)));
-  const domainOrder = ["Body", "Calm", "Mind", "Order", "Chaos", "Fury"];
+  const domainOrder = ["Fury", "Calm", "Mind", "Body", "Chaos", "Order"];
 
   const numberRange = (rows) => {
     const nums = rows.map((x) => Number(x)).filter(Number.isFinite);
@@ -1300,18 +1300,12 @@ async function initCardsPage() {
   };
 
   const domainIcons = {
-    Body:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v7c0 4.3 3.4 7.9 8 9 4.6-1.1 8-4.7 8-9V6l-8-4Zm0 3.1 5 2.5V13c0 2.7-2.1 5.1-5 6-2.9-.9-5-3.3-5-6V7.6l5-2.5Z"/></svg>',
-    Calm:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8 8 0 0 0-8 8c0 5.5 4.6 9.2 8 10 3.4-.8 8-4.5 8-10a8 8 0 0 0-8-8Zm-1 4h2v4h4v2h-4v4h-2v-4H7v-2h4V7Z"/></svg>',
-    Mind:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.1 8.2.5 12c1.6 3.8 6 7 11.5 7s9.9-3.2 11.5-7C21.9 8.2 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2.2a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6Z"/></svg>',
-    Order:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 10-8 10L4 12 12 2Zm0 4.1L8.7 12 12 17.9 15.3 12 12 6.1Z"/></svg>',
-    Chaos:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 2.3c-3.6 0-6.6 2.9-6.6 6.5 0 1 .2 1.9.6 2.7-2.3.7-4 2.8-4 5.3 0 3.1 2.5 5.6 5.6 5.6h4.8c3.4 0 6.1-2.8 6.1-6.2 0-2.8-1.8-5.1-4.4-5.9.2-.5.2-1.1.2-1.7 0-3.6-2.8-6.3-6.3-6.3Zm0 3c1.8 0 3.2 1.4 3.2 3.3s-1.4 3.3-3.2 3.3c-1.9 0-3.3-1.4-3.3-3.3s1.4-3.3 3.3-3.3Z"/></svg>',
-    Fury:
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.1 2.2c1.2 2 1.5 3.9.7 5.7-.5 1.1-1.3 2-1.8 2.7-.9 1.1-.8 2.3-.2 3.2.8 1.2 2.7 1.7 4 1 1.8-1 2.5-3.4 1.6-5.8 2.9 1.7 4.5 4.3 4.5 7 0 4-3.4 7-8 7s-8-3-8-7c0-2.9 1.6-5.5 4.5-7.3.2 1.4.8 2.5 1.9 2.8-.1-2.7.9-5.2 3-7.3Z"/></svg>',
+    Body: route("assets/img/domains/body.webp"),
+    Calm: route("assets/img/domains/calm.webp"),
+    Mind: route("assets/img/domains/mind.webp"),
+    Order: route("assets/img/domains/order.webp"),
+    Chaos: route("assets/img/domains/chaos.webp"),
+    Fury: route("assets/img/domains/fury.webp"),
   };
   const fillSelect = (el, rows, allLabel) => {
     el.innerHTML = [`<option value="all">${escapeHtml(allLabel)}</option>`]
@@ -1334,7 +1328,9 @@ async function initCardsPage() {
         const icon = domainIcons[domain] || "";
         return `<button type="button" class="cards-domain-btn" data-domain="${escapeHtml(
           domain
-        )}" title="${escapeHtml(domain)}" aria-label="Filter ${escapeHtml(domain)}">${icon}</button>`;
+        )}" title="${escapeHtml(domain)}" aria-label="Filter ${escapeHtml(domain)}"><img src="${escapeHtml(
+          icon
+        )}" alt="${escapeHtml(domain)} domain icon" loading="lazy" /></button>`;
       })
       .join("");
     domainWrap.querySelectorAll(".cards-domain-btn").forEach((btn) => {

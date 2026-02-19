@@ -335,36 +335,14 @@ main > section h2 {
   display: grid;
   place-items: center;
   padding: 0;
+  overflow: hidden;
 }
 
-.cards-domain-btn svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-
-.cards-domain-btn[data-domain="Body"] {
-  color: #d74848;
-}
-
-.cards-domain-btn[data-domain="Calm"] {
-  color: #32c179;
-}
-
-.cards-domain-btn[data-domain="Mind"] {
-  color: #4db8ff;
-}
-
-.cards-domain-btn[data-domain="Order"] {
-  color: #f08b23;
-}
-
-.cards-domain-btn[data-domain="Chaos"] {
-  color: #9d59ff;
-}
-
-.cards-domain-btn[data-domain="Fury"] {
-  color: #d9b436;
+.cards-domain-btn img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
 }
 
 .cards-domain-btn.active {
