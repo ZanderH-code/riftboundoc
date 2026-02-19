@@ -313,6 +313,16 @@ button.secondary {
   border-color: #3b4653;
 }
 
+a.secondary {
+  display: inline-block;
+  text-decoration: none;
+  background: #1a2330;
+  color: var(--ink);
+  border: 1px solid #3b4653;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -597,6 +607,20 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   min-height: 75vh;
   border: 1px solid var(--line);
   border-radius: 12px;
+  background: #0e141d;
+}
+
+body.reader-immersive .topbar,
+body.reader-immersive .footer {
+  display: none;
+}
+
+body.reader-immersive main {
+  padding-top: 10px;
+}
+
+body.reader-immersive .pdf-frame {
+  min-height: 92vh;
 }
 
 .footer {
