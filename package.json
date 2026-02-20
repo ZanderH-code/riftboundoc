@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "python tools/sync_public.py && astro build",
+    "content:check": "python tools/format_and_validate_content.py",
+    "build": "python tools/format_and_validate_content.py && python tools/sync_public.py && astro build",
     "preview": "astro preview",
     "sync:public": "python tools/sync_public.py"
   },
@@ -14,4 +15,3 @@
     "typescript": "^5.7.3"
   }
 }
-

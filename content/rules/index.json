@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-18",
+  "updatedAt": "2026-02-20",
   "rules": [
     {
       "id": "core-rules-v1-2-text",
@@ -9,6 +9,15 @@
       "summary": "Structured text version converted from the official PDF.",
       "source": "Converted from PDF",
       "updatedAt": "2026-02-18"
+    },
+    {
+      "id": "tournament-rules-january-update-text",
+      "title": "Tournament Rules, January Update (Text Version)",
+      "kind": "page",
+      "pageId": "tournament-rules-january-update",
+      "summary": "Official tournament rules update converted into web-readable text.",
+      "source": "Riftbound Official",
+      "updatedAt": "2026-01-30"
     }
   ]
 }

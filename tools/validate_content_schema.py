@@ -92,6 +92,14 @@ def main():
             target = ROOT / file_rel
             if not target.exists():
                 errors.append(f"pages[{idx}] file missing: {file_rel}")
+            elif target.suffix.lower() == ".md":
+                lines = target.read_text(encoding="utf-8").splitlines()
+                # Rule pages should only use one document-level h1.
+                for ln, line in enumerate(lines, start=1):
+                    if re.match(r"^#\s+\d{3}\.", str(line or "").strip()):
+                        errors.append(
+                            f"pages[{idx}] chapter heading should be h2 (##), not h1 (#): {file_rel}:{ln}"
+                        )
 
     for idx, row in enumerate(rules):
         validate_date(row.get("updatedAt"), f"rules[{idx}].updatedAt", errors, allow_iso=False)

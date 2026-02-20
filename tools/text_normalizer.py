@@ -17,9 +17,41 @@ COMMON_SECTION_HEADINGS = {
     "Spiritforged Cards",
 }
 
+CHAR_REPLACEMENTS = str.maketrans(
+    {
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2013": "-",
+        "\u2014": "-",
+        "\u2026": "...",
+        "\u02ee": '"',
+        "\u25cb": "",
+        "\u25b2": "",
+    }
+)
+
+MOJIBAKE_REPLACEMENTS = (
+    ("鈥檚", "'s"),
+    ("鈥檛", "'t"),
+    ("鈥檒", "'l"),
+    ("鈥檓", "'m"),
+    ("鈥檙", "'r"),
+    ("鈥檝", "'v"),
+    ("鈥檇", "'d"),
+)
+
+
+def normalize_inline_text(text: str) -> str:
+    out = str(text or "").translate(CHAR_REPLACEMENTS)
+    for src, dst in MOJIBAKE_REPLACEMENTS:
+        out = out.replace(src, dst)
+    return out
+
 
 def normalize_whitespace(text: str) -> str:
-    out = str(text or "")
+    out = normalize_inline_text(text)
     out = out.replace("\r\n", "\n").replace("\r", "\n")
     out = out.replace("\u00a0", " ")
     out = out.replace("\u200b", "")
@@ -75,6 +107,11 @@ def normalize_markdown_document(text: str, kind: str = "generic") -> str:
 
         if not line:
             normalized.append("")
+            continue
+
+        if kind == "page" and re.match(r"^#\s+\d{3}\.", line):
+            # Keep only document title as h1; chapter headers should be h2.
+            normalized.append(re.sub(r"^#\s+", "## ", raw, count=1))
             continue
 
         if line.startswith("#") or line.startswith("-") or line.startswith("*"):
