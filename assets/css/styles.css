@@ -1308,6 +1308,45 @@ body.reader-immersive .pdf-frame {
   border-top: 1px solid var(--line);
 }
 
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #34506c;
+  background: #142133;
+  color: #cfe3f8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus-visible {
+  border-color: #5a87b4;
+  background: #1b2e44;
+  color: #ffffff;
+}
+
+.footer-icon-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 @media (max-width: 980px) {
   .reading-layout {
     grid-template-columns: 1fr;
