@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.15";
+const SITE_VERSION = "2026.02.20.22";
 const ROOT_RESERVED = new Set([
   "cards",
   "faq",
@@ -540,59 +540,37 @@ function flashQueryTarget(el) {
   window.setTimeout(kick, 220);
 }
 
-function markQueryInTarget(target, queryText) {
-  if (!target) return false;
-  const raw = String(queryText || "").trim();
-  if (!raw) return false;
-  const words = markdownToPlain(raw)
-    .split(/\s+/)
-    .map((w) => w.trim())
-    .filter((w) => w.length >= 3)
-    .slice(0, 10);
-  if (!words.length) return false;
+function extractRuleId(text) {
+  const plain = markdownToPlain(String(text || ""));
+  const m = plain.match(/(^|\s)(\d+(?:\.[0-9a-z]+)*\.?)(?=\s|$)/i);
+  return m ? String(m[2] || "").trim() : "";
+}
 
-  const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
-  const nodes = [];
-  while (walker.nextNode()) nodes.push(walker.currentNode);
-  const normalizedTarget = normalizeSearchText(target.textContent || "");
+function normalizeRuleToken(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\.+$/, "")
+    .replace(/[^0-9a-z.]+/g, "");
+}
 
-  const phrase = words.join(" ");
-  const phraseOk = phrase.length >= 16 && normalizedTarget.includes(normalizeSearchText(phrase));
-  const tokenOk = words.filter((w) => normalizedTarget.includes(normalizeSearchText(w))).length >= 2;
-  if (!phraseOk && !tokenOk) return false;
+function ruleTokenToAnchorId(value) {
+  const token = normalizeRuleToken(value);
+  if (!token) return "";
+  return `rule-${token.replace(/\./g, "-")}`;
+}
 
-  const tryMarkWord = (word) => {
-    const esc = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const re = new RegExp(esc, "i");
-    for (const textNode of nodes) {
-      const txt = String(textNode.nodeValue || "");
-      const m = txt.match(re);
-      if (!m || m.index == null) continue;
-      const before = txt.slice(0, m.index);
-      const hit = txt.slice(m.index, m.index + m[0].length);
-      const after = txt.slice(m.index + m[0].length);
-      const frag = document.createDocumentFragment();
-      if (before) frag.appendChild(document.createTextNode(before));
-      const mark = document.createElement("mark");
-      mark.className = "query-mark";
-      mark.textContent = hit;
-      frag.appendChild(mark);
-      if (after) frag.appendChild(document.createTextNode(after));
-      textNode.parentNode.replaceChild(frag, textNode);
-      window.setTimeout(() => {
-        const parent = mark.parentNode;
-        if (!parent) return;
-        parent.replaceChild(document.createTextNode(hit), mark);
-      }, 9000);
-      return true;
-    }
-    return false;
-  };
-
-  for (const w of words) {
-    if (tryMarkWord(w)) return true;
+function tagRuleRowsForAnchors(containerSelector) {
+  const container = q(containerSelector);
+  if (!container) return;
+  const rows = Array.from(container.querySelectorAll(".rule-row"));
+  for (const row of rows) {
+    const idCell = row.querySelector(".rule-id");
+    const token = normalizeRuleToken(idCell ? idCell.textContent : "");
+    if (!token) continue;
+    row.setAttribute("data-rule-id", token);
+    if (!row.id) row.id = ruleTokenToAnchorId(token);
   }
-  return false;
 }
 
 function scrollToAnchorTarget(targetId) {
@@ -654,54 +632,112 @@ function highlightQueryIn(containerSelector) {
   const term = params.get("q");
   const relQuery = markdownToPlain(params.get("rq"));
   const relHeading = markdownToPlain(params.get("rh"));
+  const relRuleId = String(params.get("rr") || "").trim();
+  const derivedRuleId = extractRuleId(params.get("rq") || params.get("q") || "");
+  const effectiveRuleId = relRuleId || derivedRuleId;
   const relIndex = Math.max(1, Number.parseInt(params.get("ri") || "1", 10) || 1);
   const needle = markdownToPlain(term);
   const removeRevisedSuffix = (text) =>
     normalizeSearchText(text).replace(/\s*\(revised text\)\s*$/i, "").trim();
-  const toCore = (text) =>
-    normalizeSearchText(text)
-      .replace(/[^a-z0-9\s]/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
+  const toCore = (text) => normalizeSearchText(text).replace(/\s+/g, " ").trim();
   const getBlocks = () =>
     Array.from(container.querySelectorAll("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row"));
 
-  const scrollToPreciseRelated = () => {
+  const findHeadingSection = () => {
+    if (!relHeading) return null;
     const headingNorm = normalizeSearchText(relHeading);
+    const headings = Array.from(container.querySelectorAll("h1, h2, h3, h4"));
+    const found =
+      headings.find((h) => normalizeSearchText(h.textContent) === headingNorm) ||
+      headings.find((h) => removeRevisedSuffix(h.textContent) === removeRevisedSuffix(relHeading));
+    if (!found) return null;
+    const nodes = [];
+    let node = found.nextElementSibling;
+    while (node) {
+      if (/^H[1-4]$/.test(node.tagName || "")) break;
+      nodes.push(node);
+      node = node.nextElementSibling;
+    }
+    return { heading: found, nodes };
+  };
+
+  const scrollToPreciseRelated = () => {
+    if (effectiveRuleId) {
+      const wanted = normalizeRuleToken(effectiveRuleId);
+      const rows = Array.from(container.querySelectorAll(".rule-row"));
+      const exact = rows.filter((row) => {
+        const idCell = row.querySelector(".rule-id");
+        return normalizeRuleToken(idCell ? idCell.textContent : "") === wanted;
+      });
+      if (exact.length) {
+        const target = exact[Math.min(relIndex - 1, exact.length - 1)] || exact[0];
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        flashQueryTarget(target);
+        return true;
+      }
+    }
+
+    if (relQuery) {
+      const queryNorm = normalizeSearchText(relQuery);
+      const blocks = getBlocks();
+      const exactTextHits = blocks.filter(
+        (el) => normalizeSearchText(el.textContent || "") === queryNorm
+      );
+      if (exactTextHits.length) {
+        const target = exactTextHits[Math.min(relIndex - 1, exactTextHits.length - 1)] || exactTextHits[0];
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        flashQueryTarget(target);
+        return true;
+      }
+    }
+
+    const section = findHeadingSection();
     const queryNorm = normalizeSearchText(relQuery);
-    if (!headingNorm && !queryNorm) return false;
+    if (section && queryNorm) {
+      const pool = [];
+      const add = (el) => {
+        if (!el || pool.includes(el)) return;
+        pool.push(el);
+      };
+      for (const node of section.nodes) {
+        if (node.matches && node.matches("p, li, blockquote, pre, .rule-text, .rule-row")) add(node);
+        if (node.querySelectorAll) {
+          node.querySelectorAll("p, li, blockquote, pre, .rule-text, .rule-row").forEach(add);
+        }
+      }
+      const hits = pool.filter((el) => {
+        const txt = normalizeSearchText(el.textContent || "");
+        return txt && txt.includes(queryNorm);
+      });
+      if (hits.length) {
+        const target = hits[Math.min(relIndex - 1, hits.length - 1)] || hits[0];
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        flashQueryTarget(target);
+        return true;
+      }
+    }
+
+    if (!queryNorm && !section) return false;
 
     let scopedBlocks = getBlocks();
-    if (headingNorm) {
-      const headings = Array.from(container.querySelectorAll("h1, h2, h3, h4"));
-      const foundHeading =
-        headings.find((h) => normalizeSearchText(h.textContent) === headingNorm) ||
-        headings.find((h) => removeRevisedSuffix(h.textContent) === removeRevisedSuffix(relHeading));
-      if (foundHeading) {
-        const nodes = [foundHeading];
-        let node = foundHeading;
-        while (node) {
-          if (node !== foundHeading && /^H[1-4]$/.test(node.tagName || "")) break;
-          node = node.nextElementSibling;
-          if (node && !/^H[1-4]$/.test(node.tagName || "")) nodes.push(node);
+    if (section) {
+      const bucket = [];
+      const keep = (el) => {
+        if (!el || bucket.includes(el)) return;
+        bucket.push(el);
+      };
+      keep(section.heading);
+      for (const node of section.nodes) {
+        if (node.matches && node.matches("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")) {
+          keep(node);
         }
-        const bucket = [];
-        const keep = (el) => {
-          if (!el || bucket.includes(el)) return;
-          bucket.push(el);
-        };
-        for (const el of nodes) {
-          if (el.matches && el.matches("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")) {
-            keep(el);
-          }
-          if (el.querySelectorAll) {
-            el
-              .querySelectorAll("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")
-              .forEach(keep);
-          }
+        if (node.querySelectorAll) {
+          node
+            .querySelectorAll("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")
+            .forEach(keep);
         }
-        if (bucket.length) scopedBlocks = bucket;
       }
+      if (bucket.length) scopedBlocks = bucket;
     }
 
     const queryCore = toCore(relQuery);
@@ -728,7 +764,6 @@ function highlightQueryIn(containerSelector) {
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "center" });
         flashQueryTarget(target);
-        markQueryInTarget(target, relQuery || needle);
       }
       return Boolean(target);
     }
@@ -738,7 +773,6 @@ function highlightQueryIn(containerSelector) {
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "center" });
         flashQueryTarget(target);
-        markQueryInTarget(target, relQuery || needle);
       }
       return Boolean(target);
     }
@@ -758,21 +792,10 @@ function highlightQueryIn(containerSelector) {
       const target = candidates[Math.min(relIndex - 1, candidates.length - 1)] || candidates[0];
       target.scrollIntoView({ behavior: "smooth", block: "center" });
       flashQueryTarget(target);
-      markQueryInTarget(target, relQuery || needle || relHeading);
       return;
     }
   }
   if (!needle) return;
-
-  const safe = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const re = new RegExp(`(${safe})`, "ig");
-  container.innerHTML = container.innerHTML.replace(re, "<mark>$1</mark>");
-  const first = container.querySelector("mark");
-  if (first) {
-    first.scrollIntoView({ behavior: "smooth", block: "center" });
-    flashQueryTarget(first.closest("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row") || first);
-    return;
-  }
 
   const needleNorm = normalizeSearchText(needle);
   if (!needleNorm) return;
@@ -1880,7 +1903,7 @@ async function initCardsPage() {
         }
         return plain;
       };
-      const pushHit = (snippet, query, anchorText = "", anchorHeading = "") => {
+      const pushHit = (snippet, query, anchorText = "", anchorHeading = "", meta = null) => {
         const body = cleanSnippet(snippet);
         if (!body) return;
         const key = dedupKeyFor(body).slice(0, 420);
@@ -1896,6 +1919,7 @@ async function initCardsPage() {
           anchorText: String(anchorText || "").trim(),
           anchorHeading: String(anchorHeading || "").trim(),
           anchorIndex,
+          ruleId: meta && meta.ruleId ? String(meta.ruleId).trim() : "",
         });
       };
 
@@ -1932,7 +1956,13 @@ async function initCardsPage() {
           const parts = [];
           if (parent) parts.push(`${parent.id} ${parent.text}`.trim());
           parts.push(rowText);
-          pushHit(parts.map((p) => escapeHtml(p)).join("<br /><br />"), hit, rowText, parent ? parent.text : "");
+          pushHit(
+            parts.map((p) => escapeHtml(p)).join("<br /><br />"),
+            hit,
+            rowText,
+            parent ? parent.text : "",
+            { ruleId: row.id }
+          );
         }
       }
 
@@ -2001,6 +2031,61 @@ async function initCardsPage() {
           query: hit || needles[0] || "",
         };
       };
+
+      if (isFaqDoc) {
+        const splitFaqBlocks = (paragraphs) => {
+          const blocks = [];
+          let current = [];
+          for (const paragraph of paragraphs) {
+            const text = String(paragraph || "").trim();
+            if (!text) continue;
+            if (/^q[:：]/i.test(text) && current.length) {
+              blocks.push(current);
+              current = [];
+            }
+            current.push(text);
+          }
+          if (current.length) blocks.push(current);
+          return blocks.length ? blocks : [paragraphs.filter(Boolean)];
+        };
+
+        for (const section of sections) {
+          const heading = String(section.heading || "").trim();
+          const headingLow = normalizeForMatch(heading);
+          const headingHit = needles.find((n) => matchNeedleIndex(headingLow, n) >= 0) || "";
+          const paragraphs = toParagraphs(section);
+          if (!paragraphs.length) continue;
+          const blocks = splitFaqBlocks(paragraphs);
+          for (const block of blocks) {
+            const cleanBlock = [];
+            for (const row of block) {
+              const text = String(row || "").trim();
+              if (!text) continue;
+              const norm = normalizeForMatch(text);
+              if (norm === headingLow) continue;
+              if (isOtherCardTitleParagraph(text)) break;
+              cleanBlock.push(text);
+            }
+            if (!cleanBlock.length) continue;
+            const blockHit =
+              headingHit ||
+              cleanBlock
+                .map((row) => normalizeForMatch(row))
+                .map((row) => needles.find((n) => matchNeedleIndex(row, n) >= 0))
+                .find(Boolean) ||
+              "";
+            if (!blockHit) continue;
+            const bodyText = cleanBlock.map((x) => escapeHtml(x)).join("<br /><br />");
+            pushHit(
+              `${heading ? `${escapeHtml(heading)}<br /><br />` : ""}${bodyText}`,
+              blockHit,
+              cleanBlock[0] || heading,
+              heading
+            );
+          }
+        }
+        return hits.slice(0, 12);
+      }
 
       // 1) Title-first strategy: section heading (TOC-like) first, then doc title.
       for (const section of sections) {
@@ -2141,6 +2226,9 @@ async function initCardsPage() {
       const query = String(hitLike?.jumpQuery || hitLike?.query || "");
       const relQuery = String(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "");
       const relHeading = String(hitLike?.anchorHeading || "");
+      const relRuleId =
+        String(hitLike?.ruleId || "").trim() ||
+        extractRuleId(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "");
       const relIndex = Math.max(1, Number.parseInt(hitLike?.anchorIndex || "1", 10) || 1);
       let baseHref = route(`errata-detail/?id=${encodeURIComponent(id)}`);
       if (kind === "faq") {
@@ -2151,7 +2239,12 @@ async function initCardsPage() {
       let href = withQuery(baseHref, "q", query || "");
       href = withQuery(href, "rq", relQuery || "");
       href = withQuery(href, "rh", relHeading || "");
+      href = withQuery(href, "rr", relRuleId || "");
       href = withQuery(href, "ri", String(relIndex));
+      if (kind === "rule" && relRuleId) {
+        const anchorId = ruleTokenToAnchorId(relRuleId);
+        if (anchorId) href += `#${anchorId}`;
+      }
       return href;
     };
     listEl.innerHTML = rows
@@ -2835,6 +2928,7 @@ async function initPage() {
     showStatus(`Failed to load page content: ${one.file}`);
   }
 
+  tagRuleRowsForAnchors("#page-content");
   buildPageToc();
   initReaderPrefs();
   initMobileTocDrawer();

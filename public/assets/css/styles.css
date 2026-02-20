@@ -951,18 +951,6 @@ main > section h2 {
   border-radius: 3px;
 }
 
-#page-content mark.query-mark,
-#faq-content mark.query-mark,
-#errata-content mark.query-mark,
-.rule-sheet mark.query-mark {
-  background: rgba(255, 209, 102, 0.5);
-  color: #fff;
-  border: 1px solid rgba(255, 209, 102, 0.75);
-  border-radius: 5px;
-  padding: 0 3px;
-  box-shadow: 0 0 0 1px rgba(255, 209, 102, 0.2);
-}
-
 .status-banner {
   border: 1px solid #6c4040;
   border-radius: 10px;
