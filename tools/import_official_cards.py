@@ -11,6 +11,8 @@ import re
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from text_normalizer import normalize_inline_text
+
 NEXT_DATA_RE = re.compile(
     r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL | re.IGNORECASE
 )
@@ -34,6 +36,7 @@ def html_to_text(raw_html: str) -> str:
     out = re.sub(r"</p\s*>", "\n\n", out, flags=re.IGNORECASE)
     out = re.sub(r"<[^>]+>", "", out)
     out = html.unescape(out)
+    out = normalize_inline_text(out)
     out = re.sub(r"\n{3,}", "\n\n", out)
     return out.strip()
 
@@ -75,23 +78,23 @@ def normalize_card(row: dict) -> dict:
     merged_text = "\n\n".join(x for x in (ability_text, effect_text) if x).strip()
     return {
         "id": row.get("id", ""),
-        "name": row.get("name", ""),
+        "name": normalize_inline_text(row.get("name", "")),
         "publicCode": row.get("publicCode", ""),
         "collectorNumber": row.get("collectorNumber", 0),
-        "set": pick_values(row, ("set", "value", "label"), ""),
+        "set": normalize_inline_text(pick_values(row, ("set", "value", "label"), "")),
         "setId": pick_values(row, ("set", "value", "id"), ""),
-        "domains": domains,
-        "rarity": pick_values(row, ("rarity", "value", "label"), ""),
-        "cardTypes": card_types,
-        "superTypes": super_types,
+        "domains": [normalize_inline_text(x) for x in domains],
+        "rarity": normalize_inline_text(pick_values(row, ("rarity", "value", "label"), "")),
+        "cardTypes": [normalize_inline_text(x) for x in card_types],
+        "superTypes": [normalize_inline_text(x) for x in super_types],
         "energy": pick_values(row, ("energy", "value", "label"), ""),
         "might": pick_values(row, ("might", "value", "label"), ""),
         "power": pick_values(row, ("power", "value", "label"), ""),
-        "tags": tags,
-        "orientation": row.get("orientation", ""),
+        "tags": [normalize_inline_text(x) for x in tags],
+        "orientation": normalize_inline_text(row.get("orientation", "")),
         "imageUrl": pick_values(row, ("cardImage", "url"), ""),
-        "imageAlt": pick_values(row, ("cardImage", "accessibilityText"), ""),
-        "abilityText": merged_text,
+        "imageAlt": normalize_inline_text(pick_values(row, ("cardImage", "accessibilityText"), "")),
+        "abilityText": normalize_inline_text(merged_text),
     }
 
 
@@ -134,7 +137,7 @@ def main():
     cards = parse_cards(html_doc)
     now = dt.date.today().isoformat()
     output = {
-        "source": "Riftbound Official Card Gallery",
+        "source": normalize_inline_text("Riftbound Official Card Gallery"),
         "originUrl": args.url,
         "updatedAt": now,
         "count": len(cards),

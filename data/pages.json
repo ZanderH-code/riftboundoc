@@ -14,5 +14,13 @@
     "summary": "Text version converted from PDF for online reading.",
     "file": "content/pages/riftbound-core-rules-v1-2.md",
     "updatedAt": "2026-02-18"
+  },
+  {
+    "kind": "rule_page",
+    "id": "tournament-rules-january-update",
+    "title": "Tournament Rules, January Update",
+    "summary": "Official tournament rules update converted into web-readable text.",
+    "file": "content/pages/tournament-rules-january-update.md",
+    "updatedAt": "2026-01-30"
   }
 ]

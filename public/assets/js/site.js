@@ -1,6 +1,6 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.11";
+const SITE_VERSION = "2026.02.20.15";
 const ROOT_RESERVED = new Set([
   "cards",
   "faq",
@@ -33,6 +33,16 @@ function withQuery(href, key, value) {
   const url = new URL(href, window.location.href);
   if (value) url.searchParams.set(key, value);
   return url.pathname + (url.search || "");
+}
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .replace(/[’‘`´]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
 }
 
 function showStatus(message) {
@@ -517,6 +527,74 @@ function flashAnchorTarget(targetId) {
   window.setTimeout(() => el.classList.remove("anchor-focus"), 1600);
 }
 
+function flashQueryTarget(el) {
+  if (!el) return;
+  const kick = () => {
+    el.classList.remove("query-focus");
+    // Force reflow so repeated jumps retrigger animation.
+    void el.offsetWidth;
+    el.classList.add("query-focus");
+    window.setTimeout(() => el.classList.remove("query-focus"), 8000);
+  };
+  // Delay slightly so highlight starts when smooth scrolling is near target.
+  window.setTimeout(kick, 220);
+}
+
+function markQueryInTarget(target, queryText) {
+  if (!target) return false;
+  const raw = String(queryText || "").trim();
+  if (!raw) return false;
+  const words = markdownToPlain(raw)
+    .split(/\s+/)
+    .map((w) => w.trim())
+    .filter((w) => w.length >= 3)
+    .slice(0, 10);
+  if (!words.length) return false;
+
+  const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  const normalizedTarget = normalizeSearchText(target.textContent || "");
+
+  const phrase = words.join(" ");
+  const phraseOk = phrase.length >= 16 && normalizedTarget.includes(normalizeSearchText(phrase));
+  const tokenOk = words.filter((w) => normalizedTarget.includes(normalizeSearchText(w))).length >= 2;
+  if (!phraseOk && !tokenOk) return false;
+
+  const tryMarkWord = (word) => {
+    const esc = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(esc, "i");
+    for (const textNode of nodes) {
+      const txt = String(textNode.nodeValue || "");
+      const m = txt.match(re);
+      if (!m || m.index == null) continue;
+      const before = txt.slice(0, m.index);
+      const hit = txt.slice(m.index, m.index + m[0].length);
+      const after = txt.slice(m.index + m[0].length);
+      const frag = document.createDocumentFragment();
+      if (before) frag.appendChild(document.createTextNode(before));
+      const mark = document.createElement("mark");
+      mark.className = "query-mark";
+      mark.textContent = hit;
+      frag.appendChild(mark);
+      if (after) frag.appendChild(document.createTextNode(after));
+      textNode.parentNode.replaceChild(frag, textNode);
+      window.setTimeout(() => {
+        const parent = mark.parentNode;
+        if (!parent) return;
+        parent.replaceChild(document.createTextNode(hit), mark);
+      }, 9000);
+      return true;
+    }
+    return false;
+  };
+
+  for (const w of words) {
+    if (tryMarkWord(w)) return true;
+  }
+  return false;
+}
+
 function scrollToAnchorTarget(targetId) {
   if (!targetId) return;
   const el = document.getElementById(targetId);
@@ -551,7 +629,7 @@ function buildTocFor(contentSelector, tocSelector) {
   const content = q(contentSelector);
   const toc = q(tocSelector);
   if (!content || !toc) return;
-  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter((el) =>
+  const headings = Array.from(content.querySelectorAll("h1, h2, h3, h4")).filter((el) =>
     isUsefulTocHeading(el.textContent)
   );
   if (!headings.length) {
@@ -562,7 +640,7 @@ function buildTocFor(contentSelector, tocSelector) {
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
-    const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
+    const cls = level <= 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
     html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
   toc.innerHTML = html;
@@ -572,14 +650,155 @@ function buildTocFor(contentSelector, tocSelector) {
 function highlightQueryIn(containerSelector) {
   const container = q(containerSelector);
   if (!container) return;
-  const term = new URLSearchParams(window.location.search).get("q");
+  const params = new URLSearchParams(window.location.search);
+  const term = params.get("q");
+  const relQuery = markdownToPlain(params.get("rq"));
+  const relHeading = markdownToPlain(params.get("rh"));
+  const relIndex = Math.max(1, Number.parseInt(params.get("ri") || "1", 10) || 1);
   const needle = markdownToPlain(term);
+  const removeRevisedSuffix = (text) =>
+    normalizeSearchText(text).replace(/\s*\(revised text\)\s*$/i, "").trim();
+  const toCore = (text) =>
+    normalizeSearchText(text)
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  const getBlocks = () =>
+    Array.from(container.querySelectorAll("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row"));
+
+  const scrollToPreciseRelated = () => {
+    const headingNorm = normalizeSearchText(relHeading);
+    const queryNorm = normalizeSearchText(relQuery);
+    if (!headingNorm && !queryNorm) return false;
+
+    let scopedBlocks = getBlocks();
+    if (headingNorm) {
+      const headings = Array.from(container.querySelectorAll("h1, h2, h3, h4"));
+      const foundHeading =
+        headings.find((h) => normalizeSearchText(h.textContent) === headingNorm) ||
+        headings.find((h) => removeRevisedSuffix(h.textContent) === removeRevisedSuffix(relHeading));
+      if (foundHeading) {
+        const nodes = [foundHeading];
+        let node = foundHeading;
+        while (node) {
+          if (node !== foundHeading && /^H[1-4]$/.test(node.tagName || "")) break;
+          node = node.nextElementSibling;
+          if (node && !/^H[1-4]$/.test(node.tagName || "")) nodes.push(node);
+        }
+        const bucket = [];
+        const keep = (el) => {
+          if (!el || bucket.includes(el)) return;
+          bucket.push(el);
+        };
+        for (const el of nodes) {
+          if (el.matches && el.matches("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")) {
+            keep(el);
+          }
+          if (el.querySelectorAll) {
+            el
+              .querySelectorAll("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row")
+              .forEach(keep);
+          }
+        }
+        if (bucket.length) scopedBlocks = bucket;
+      }
+    }
+
+    const queryCore = toCore(relQuery);
+    const queryTokens = (queryCore || queryNorm).split(/\s+/).filter((t) => t.length >= 2).slice(0, 20);
+    const candidateScores = scopedBlocks.map((el) => {
+      if (!queryNorm) return { el, score: 1 };
+      const t = normalizeSearchText(el.textContent || "");
+      const tCore = toCore(el.textContent || "");
+      if (!t) return { el, score: 0 };
+      if (queryCore && queryCore.length >= 12 && tCore.includes(queryCore)) return { el, score: 2200 };
+      if (t.includes(queryNorm)) return { el, score: 1000 };
+      let score = 0;
+      for (const token of queryTokens) {
+        if (tCore.includes(token) || t.includes(token)) score += 1;
+      }
+      return { el, score };
+    });
+
+    const minScore = queryNorm ? Math.max(2, Math.min(6, Math.ceil(queryTokens.length * 0.45))) : 1;
+    const exactCandidates = candidateScores.filter((x) => x.score >= minScore).map((x) => x.el);
+
+    if (exactCandidates.length) {
+      const target = exactCandidates[Math.min(relIndex - 1, exactCandidates.length - 1)] || exactCandidates[0];
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        flashQueryTarget(target);
+        markQueryInTarget(target, relQuery || needle);
+      }
+      return Boolean(target);
+    }
+    const weakCandidates = candidateScores.filter((x) => x.score > 0).map((x) => x.el);
+    if (weakCandidates.length) {
+      const target = weakCandidates[Math.min(relIndex - 1, weakCandidates.length - 1)] || weakCandidates[0];
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        flashQueryTarget(target);
+        markQueryInTarget(target, relQuery || needle);
+      }
+      return Boolean(target);
+    }
+    return false;
+  };
+
+  if (scrollToPreciseRelated()) return;
+  if (relHeading) {
+    const headingNorm = normalizeSearchText(relHeading);
+    const headings = Array.from(container.querySelectorAll("h1, h2, h3, h4"));
+    const candidates = headings.filter(
+      (h) =>
+        normalizeSearchText(h.textContent) === headingNorm ||
+        removeRevisedSuffix(h.textContent) === removeRevisedSuffix(relHeading)
+    );
+    if (candidates.length) {
+      const target = candidates[Math.min(relIndex - 1, candidates.length - 1)] || candidates[0];
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
+      flashQueryTarget(target);
+      markQueryInTarget(target, relQuery || needle || relHeading);
+      return;
+    }
+  }
   if (!needle) return;
+
   const safe = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const re = new RegExp(`(${safe})`, "ig");
   container.innerHTML = container.innerHTML.replace(re, "<mark>$1</mark>");
   const first = container.querySelector("mark");
-  if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
+  if (first) {
+    first.scrollIntoView({ behavior: "smooth", block: "center" });
+    flashQueryTarget(first.closest("p, li, h1, h2, h3, h4, blockquote, pre, .rule-text, .rule-row") || first);
+    return;
+  }
+
+  const needleNorm = normalizeSearchText(needle);
+  if (!needleNorm) return;
+  const tokens = needleNorm.split(/\s+/).filter((t) => t.length >= 2).slice(0, 8);
+  if (!tokens.length) return;
+
+  const blocks = getBlocks();
+  let best = null;
+  let bestScore = -1;
+  for (const el of blocks) {
+    const txt = normalizeSearchText(el.textContent || "");
+    if (!txt) continue;
+    let score = 0;
+    if (txt.includes(needleNorm)) score += 1000;
+    for (const token of tokens) {
+      if (txt.includes(token)) score += 1;
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      best = el;
+    }
+  }
+  if (best && bestScore > 1) {
+    best.scrollIntoView({ behavior: "smooth", block: "center" });
+    flashQueryTarget(best);
+  }
 }
 
 function normalizeDocumentMarkdown(markdown, kind = "generic") {
@@ -621,9 +840,21 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
     const line = String(raw || "").trim();
     const prev = String(lines[i - 1] || "").trim();
     const next = String(lines[i + 1] || "").trim();
+    let nextNonEmpty = "";
+    for (let j = i + 1; j < lines.length; j += 1) {
+      const t = String(lines[j] || "").trim();
+      if (!t) continue;
+      nextNonEmpty = t;
+      break;
+    }
 
     if (!line) {
       out.push("");
+      continue;
+    }
+    if (kind === "page" && /^#\s+\d{3}\./.test(line)) {
+      // Keep one document title h1; chapter-like numeric headings are h2.
+      out.push(raw.replace(/^#\s+/, "## "));
       continue;
     }
     if (line.startsWith("#") || line.startsWith("- ") || line.startsWith("* ") || line.startsWith("<")) {
@@ -658,7 +889,7 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
     }
     if (
       !prev &&
-      next &&
+      nextNonEmpty &&
       line.length <= 72 &&
       /^[A-Z0-9].*/.test(line) &&
       !/[.!?:]$/.test(line) &&
@@ -673,7 +904,7 @@ function normalizeDocumentMarkdown(markdown, kind = "generic") {
       !/[.:?]$/.test(line) &&
       !/^\[/.test(line) &&
       !prev &&
-      next
+      nextNonEmpty
     ) {
       out.push(`#### ${line}`);
       continue;
@@ -1053,7 +1284,7 @@ function buildPageToc() {
   const content = q("#page-content");
   if (!toc || !content) return;
 
-  const headings = Array.from(content.querySelectorAll("h2, h3, h4")).filter((el) =>
+  const headings = Array.from(content.querySelectorAll("h1, h2, h3, h4")).filter((el) =>
     isUsefulTocHeading(el.textContent)
   );
   const ruleHeadings = Array.from(
@@ -1069,7 +1300,7 @@ function buildPageToc() {
   headings.forEach((el, idx) => {
     if (!el.id) el.id = `${slugify(el.textContent) || "section"}-${idx + 1}`;
     const level = Number(el.tagName.slice(1));
-    const cls = level === 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
+    const cls = level <= 2 ? "toc-l2" : level === 3 ? "toc-l3" : "toc-l4";
     html += `<a href=\"#${el.id}\" class="toc-link ${cls}">${escapeHtml(el.textContent)}</a>`;
   });
 
@@ -1326,26 +1557,27 @@ async function initCardsPage() {
     return;
   }
 
-  const coreRulePageId =
-    String(
-      asItems(rules).find((it) => String(it.pageId || it.id).includes("riftbound-core-rules-v1-2"))?.pageId || ""
-    ) || "riftbound-core-rules-v1-2";
-  const coreRulePage = asItems(pages).find((it) => String(it.id || "") === coreRulePageId);
-  let coreRuleDoc = null;
-  if (coreRulePage && coreRulePage.file) {
+  const rulePageIds = asItems(rules)
+    .filter((it) => String(it.kind || "").toLowerCase() === "page")
+    .map((it) => String(it.pageId || it.id || "").trim())
+    .filter(Boolean);
+  const relatedRuleDocs = [];
+  for (const pageId of rulePageIds) {
+    const page = asItems(pages).find((it) => String(it.id || "") === pageId);
+    if (!page || !page.file) continue;
     try {
-      const body = await fetch(route(coreRulePage.file), { cache: "no-store" }).then((r) => r.text());
-      coreRuleDoc = {
+      const body = await fetch(route(page.file), { cache: "no-store" }).then((r) => r.text());
+      relatedRuleDocs.push({
         kind: "rule",
-        id: coreRulePage.id || coreRulePageId,
-        title: coreRulePage.title || "Riftbound Core Rules",
-        summary: coreRulePage.summary || "",
+        id: page.id || pageId,
+        title: page.title || "Riftbound Rule",
+        summary: page.summary || "",
         content: body,
-        updatedAt: coreRulePage.updatedAt || "",
-        publishedAt: coreRulePage.publishedAt || "",
-      };
+        updatedAt: page.updatedAt || "",
+        publishedAt: page.publishedAt || "",
+      });
     } catch (error) {
-      console.warn("Failed to load core rules for card relation:", error);
+      console.warn(`Failed to load rule page for card relation: ${pageId}`, error);
     }
   }
 
@@ -1536,16 +1768,52 @@ async function initCardsPage() {
 
   const knownCardNames = new Set(
     asItems(cards)
-      .map((c) => String(c?.name || "").trim().toLowerCase())
+      .map((c) =>
+        String(c?.name || "")
+          .trim()
+          .normalize("NFKC")
+          .replace(/[’‘`´]/g, "'")
+          .replace(/[“”]/g, '"')
+          .toLowerCase()
+      )
       .filter(Boolean)
   );
 
-  const findRelatedDocs = (docs, cardName) => {
+  const findRelatedDocs = (docs, cardName, fallbackKind = "") => {
+    const normalizeForMatch = (value) =>
+      String(value || "")
+        .normalize("NFKC")
+        .replace(/[’‘`´]/g, "'")
+        .replace(/[“”]/g, '"')
+        // Common mojibake forms seen in imported content.
+        .replace(/鈥檚/g, "'s")
+        .replace(/鈥檛/g, "'t")
+        .replace(/鈥檒/g, "'l")
+        .replace(/鈥檓/g, "'m")
+        .replace(/鈥檙/g, "'r")
+        .replace(/鈥檝/g, "'v")
+        .replace(/鈥檇/g, "'d")
+        .toLowerCase();
     const full = String(cardName || "").trim();
     if (!full) return [];
-    const fullLower = full.toLowerCase();
+    const fullLower = normalizeForMatch(full);
     const needles = [fullLower];
     const escapeRegExp = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const docKindOf = (doc) =>
+      String(doc.kind || fallbackKind || "")
+        .trim()
+        .toLowerCase();
+    const docTitleOf = (doc) => String(doc.title || doc.question || "Untitled").trim();
+    const docBodyOf = (doc) => {
+      if (doc.content || doc.summary) {
+        return [doc.content, doc.summary].filter(Boolean).join("\n");
+      }
+      // Backward compatibility for legacy flat FAQ rows.
+      if (doc.question || doc.answer) {
+        return [doc.question, doc.answer].filter(Boolean).join("\n\n");
+      }
+      return "";
+    };
     const matchNeedleIndex = (textLower, needleLower) => {
       if (!textLower || !needleLower) return -1;
       const re = new RegExp(`(^|[^a-z0-9])(${escapeRegExp(needleLower)})(?=$|[^a-z0-9])`, "gi");
@@ -1559,17 +1827,115 @@ async function initCardsPage() {
       }
       return -1;
     };
-    const toHay = (doc) => markdownToPlain([doc.title, doc.summary, doc.content].filter(Boolean).join("\n"));
+    const toHay = (doc) =>
+      normalizeForMatch(markdownToPlain([docTitleOf(doc), doc.summary, docBodyOf(doc)].filter(Boolean).join("\n")));
 
     const pickMatchedSnippets = (doc) => {
-      const markdown = String(doc.content || doc.summary || "");
+      const markdown = String(docBodyOf(doc));
       const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
       const sections = [];
       let current = { heading: "", body: [] };
-      const isErrataDoc = String(doc.kind || "").toLowerCase() === "errata";
-      const isRuleDoc = String(doc.kind || "").toLowerCase() === "rule";
-      const isFaqDoc =
-        String(doc.kind || "").toLowerCase() === "faq" || /faq/i.test(String(doc.title || ""));
+      const docKind = docKindOf(doc);
+      const isErrataDoc = docKind === "errata";
+      const isRuleDoc = docKind === "rule";
+      const isFaqDoc = docKind === "faq" || /faq/i.test(docTitleOf(doc));
+      const hits = [];
+      const seen = new Set();
+      const anchorSeq = new Map();
+      const buildJumpQuery = (snippet) => {
+        const plain = markdownToPlain(String(snippet || "")).trim();
+        if (!plain) return "";
+        const parts = plain
+          .split(/\n+/)
+          .map((x) => x.trim())
+          .filter(Boolean);
+        let chosen = parts[0] || plain;
+        if (parts.length >= 2 && !/^q[:：]/i.test(parts[0] || "")) chosen = parts[1];
+        const words = chosen.split(/\s+/).filter(Boolean).slice(0, 18);
+        return words.join(" ").trim();
+      };
+      const cleanSnippet = (snippet) => {
+        const raw = String(snippet || "").trim();
+        if (!raw) return "";
+        const parts = raw
+          .split(/<br\s*\/?>\s*<br\s*\/?>/i)
+          .map((x) => String(x || "").trim())
+          .filter(Boolean);
+        const out = [];
+        const local = new Set();
+        for (const part of parts) {
+          const key = normalizeForMatch(markdownToPlain(part));
+          if (!key || local.has(key)) continue;
+          local.add(key);
+          out.push(part);
+        }
+        return out.join("<br /><br />").trim();
+      };
+      const dedupKeyFor = (snippet) => {
+        const plain = normalizeForMatch(markdownToPlain(snippet));
+        if (!plain) return "";
+        if (isFaqDoc) {
+          const qIdx = plain.indexOf("q:");
+          if (qIdx > 0) return plain.slice(qIdx).trim();
+        }
+        return plain;
+      };
+      const pushHit = (snippet, query, anchorText = "", anchorHeading = "") => {
+        const body = cleanSnippet(snippet);
+        if (!body) return;
+        const key = dedupKeyFor(body).slice(0, 420);
+        if (seen.has(key)) return;
+        seen.add(key);
+        const anchorKey = `${normalizeForMatch(anchorHeading)}|${normalizeForMatch(anchorText)}`;
+        const anchorIndex = (anchorSeq.get(anchorKey) || 0) + 1;
+        anchorSeq.set(anchorKey, anchorIndex);
+        hits.push({
+          snippet: body,
+          query: query || needles[0] || "",
+          jumpQuery: buildJumpQuery(body),
+          anchorText: String(anchorText || "").trim(),
+          anchorHeading: String(anchorHeading || "").trim(),
+          anchorIndex,
+        });
+      };
+
+      if (isRuleDoc) {
+        const toRuleRow = (line) => {
+          const raw = String(line || "");
+          const bullet = raw.match(/^(\s*)[-*]\s+(.*)$/);
+          if (!bullet) return null;
+          const indent = String(bullet[1] || "").length;
+          const body = String(bullet[2] || "").trim();
+          const m = body.match(/^([0-9]+(?:\.[0-9a-z]+)*\.?)\s*(.*)$/i);
+          if (!m) return null;
+          const id = String(m[1] || "").trim();
+          const text = markdownToPlain(String(m[2] || "").trim());
+          return { indent, id, text };
+        };
+
+        const ruleRows = lines.map((line) => toRuleRow(line)).filter(Boolean);
+        for (let i = 0; i < ruleRows.length; i += 1) {
+          const row = ruleRows[i];
+          const rowText = `${row.id} ${row.text}`.trim();
+          const rowLower = rowText.toLowerCase();
+          const hit = needles.find((n) => matchNeedleIndex(rowLower, n) >= 0);
+          if (!hit) continue;
+
+          let parent = null;
+          for (let j = i - 1; j >= 0; j -= 1) {
+            if (ruleRows[j].indent < row.indent) {
+              parent = ruleRows[j];
+              break;
+            }
+          }
+
+          const parts = [];
+          if (parent) parts.push(`${parent.id} ${parent.text}`.trim());
+          parts.push(rowText);
+          pushHit(parts.map((p) => escapeHtml(p)).join("<br /><br />"), hit, rowText, parent ? parent.text : "");
+        }
+      }
+
       for (let i = 0; i < lines.length; i += 1) {
         const line = String(lines[i] || "");
         const trimmed = line.trim();
@@ -1577,9 +1943,20 @@ async function initCardsPage() {
         // Base split by level-2 headings.
         if (/^##\s+/.test(line)) {
           heading = line.replace(/^##\s+/, "").trim();
-        } else if (isErrataDoc && /^###\s+/.test(line) && !/^###\s+q[:：]/i.test(line)) {
-          // Errata often uses level-3 card headings.
+        } else if (
+          (isErrataDoc || isFaqDoc) &&
+          /^###\s+/.test(line) &&
+          !/^###\s+q[:：]/i.test(line)
+        ) {
+          // Errata/FAQ may use level-3 card headings.
           heading = line.replace(/^###\s+/, "").trim();
+        } else if (isFaqDoc && /\(revised text\)\s*$/i.test(trimmed) && !trimmed.startsWith("#")) {
+          // FAQ may contain plain "Card Name (revised text)" headings.
+          let j = i + 1;
+          while (j < lines.length && !String(lines[j] || "").trim()) j += 1;
+          if (j < lines.length && !String(lines[j] || "").trim().startsWith("#")) {
+            heading = trimmed;
+          }
         } else if (isErrataDoc && trimmed && !trimmed.startsWith("#")) {
           // Spiritforged Errata has entries like "Falling Star" without markdown heading.
           let j = i + 1;
@@ -1604,8 +1981,16 @@ async function initCardsPage() {
           .map((x) => x.trim())
           .filter(Boolean);
 
+      const isOtherCardTitleParagraph = (text) => {
+        const raw = String(text || "").trim();
+        if (!raw) return false;
+        const norm = normalizeForMatch(raw).replace(/\s*\(revised text\)\s*$/i, "").trim();
+        if (!norm || norm === fullLower) return false;
+        return knownCardNames.has(norm);
+      };
+
       const toSnippetFromParagraph = (paragraph, preferredNeedle = "") => {
-        const lower = paragraph.toLowerCase();
+        const lower = normalizeForMatch(paragraph);
         const hit =
           preferredNeedle ||
           needles.find((n) => matchNeedleIndex(lower, n) >= 0) ||
@@ -1620,26 +2005,42 @@ async function initCardsPage() {
       // 1) Title-first strategy: section heading (TOC-like) first, then doc title.
       for (const section of sections) {
         const heading = String(section.heading || "").trim();
-        const headingLow = heading.toLowerCase();
+        const headingLow = normalizeForMatch(heading);
         const hit = needles.find((n) => matchNeedleIndex(headingLow, n) >= 0);
         if (!hit) continue;
         const paragraphs = toParagraphs(section);
         if (paragraphs.length) {
-          const bodyParts = paragraphs
-            .map((x) => String(x || "").trim())
-            .filter((x) => x && x.toLowerCase() !== headingLow)
-            .slice(0, isRuleDoc ? 2 : 99);
+          let bodyParts = [];
+          if (isFaqDoc) {
+            // Keep FAQ snippet scoped to this card entry only.
+            for (const row of paragraphs) {
+              const text = String(row || "").trim();
+              if (!text) continue;
+              const norm = normalizeForMatch(text);
+              if (norm === headingLow) continue;
+              if (isOtherCardTitleParagraph(text)) break;
+              bodyParts.push(text);
+            }
+          } else {
+            bodyParts = paragraphs
+              .map((x) => String(x || "").trim())
+              .filter((x) => x && normalizeForMatch(x) !== headingLow)
+              .slice(0, isRuleDoc ? 2 : 99);
+          }
           const bodyText = bodyParts.map((x) => escapeHtml(x)).join("<br /><br />");
-          return {
-            snippet: `${escapeHtml(heading)}${bodyText ? `<br /><br />${bodyText}` : ""}`,
-            query: hit,
-          };
+          pushHit(
+            `${escapeHtml(heading)}${bodyText ? `<br /><br />${bodyText}` : ""}`,
+            hit,
+            bodyParts[0] || heading,
+            heading
+          );
+          continue;
         }
-        return { snippet: escapeHtml(heading), query: hit };
+        pushHit(escapeHtml(heading), hit, heading, heading);
       }
 
-      const docTitle = markdownToPlain(String(doc.title || ""));
-      const docTitleLow = docTitle.toLowerCase();
+      const docTitle = markdownToPlain(docTitleOf(doc));
+      const docTitleLow = normalizeForMatch(docTitle);
       const docTitleHit = needles.find((n) => matchNeedleIndex(docTitleLow, n) >= 0);
       if (docTitleHit) {
         const bodyParagraphs = markdownToPlain(markdown)
@@ -1650,63 +2051,70 @@ async function initCardsPage() {
           const pieces = [bodyParagraphs[0]];
           const next = String(bodyParagraphs[1] || "").trim();
           if (next && !/^q[:：]/i.test(next)) pieces.push(next);
-          return {
-            snippet: pieces.map((p) => escapeHtml(p)).join("<br /><br />"),
-            query: docTitleHit,
-          };
+          pushHit(
+            pieces.map((p) => escapeHtml(p)).join("<br /><br />"),
+            docTitleHit,
+            pieces[0] || docTitle,
+            docTitle
+          );
+        } else {
+          const bodyFirst = bodyParagraphs.find(Boolean);
+          if (bodyFirst) {
+            const one = toSnippetFromParagraph(bodyFirst, docTitleHit);
+            pushHit(one.snippet, one.query, bodyFirst, docTitle);
+          } else {
+            pushHit(escapeHtml(docTitle), docTitleHit, docTitle, docTitle);
+          }
         }
-        const bodyFirst = bodyParagraphs.find(Boolean);
-        if (bodyFirst) return toSnippetFromParagraph(bodyFirst, docTitleHit);
-        return { snippet: escapeHtml(docTitle), query: docTitleHit };
       }
 
       for (const section of sections) {
         const paragraphs = toParagraphs(section);
-        const headingLow = String(section.heading || "").trim().toLowerCase();
+        const headingLow = normalizeForMatch(String(section.heading || "").trim());
         const headingIsCard = knownCardNames.has(headingLow);
         if (headingIsCard && headingLow !== fullLower) continue;
         const matchedParagraphs = [];
         let firstHit = "";
         for (let idx = 0; idx < paragraphs.length; idx += 1) {
           const paragraph = paragraphs[idx];
-          const lower = paragraph.toLowerCase();
+          const lower = normalizeForMatch(paragraph);
           const hit = needles.find((n) => matchNeedleIndex(lower, n) >= 0);
           if (!hit) continue;
           if (!firstHit) firstHit = hit;
           matchedParagraphs.push(paragraph);
           if (isFaqDoc) {
             const next = String(paragraphs[idx + 1] || "").trim();
-            if (next && !/^q[:：]/i.test(next)) matchedParagraphs.push(next);
+            if (next && !/^q[:：]/i.test(next) && !isOtherCardTitleParagraph(next)) matchedParagraphs.push(next);
           }
-          if (matchedParagraphs.length >= 2) break;
+          if (!isFaqDoc && matchedParagraphs.length >= 2) break;
         }
         if (matchedParagraphs.length) {
-          return {
-            snippet: matchedParagraphs.map((p) => escapeHtml(String(p).trim())).join("<br /><br />"),
-            query: firstHit || needles[0] || "",
-          };
+          const joined = matchedParagraphs.map((p) => escapeHtml(String(p).trim())).join("<br /><br />");
+          pushHit(joined, firstHit || needles[0] || "", matchedParagraphs[0] || "", section.heading || "");
         }
       }
 
-      return null;
+      return hits.slice(0, 12);
     };
 
     return asItems(docs)
       .map((doc) => {
         const hay = toHay(doc);
-        const lower = hay.toLowerCase();
+        const lower = normalizeForMatch(hay);
         const matched = needles.some((n) => matchNeedleIndex(lower, n) >= 0);
         if (!matched) return null;
         const picked = pickMatchedSnippets(doc);
-        if (!picked) return null;
+        if (!picked || !picked.length) return null;
+        const first = picked[0];
         return {
           id: doc.id || "",
-          title: doc.title || "Untitled",
+          title: docTitleOf(doc),
           publishedAt: doc.publishedAt || "",
           updatedAt: doc.updatedAt || "",
-          snippet: picked.snippet,
-          query: picked.query,
-          sourceTitle: doc.title || "Source",
+          snippet: first.snippet,
+          query: first.query,
+          matches: picked,
+          sourceTitle: docTitleOf(doc),
         };
       })
       .filter(Boolean)
@@ -1729,35 +2137,109 @@ async function initCardsPage() {
       return;
     }
     wrap.hidden = false;
-    const toHref = (id, query) => {
+    const toHref = (id, hitLike) => {
+      const query = String(hitLike?.jumpQuery || hitLike?.query || "");
+      const relQuery = String(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "");
+      const relHeading = String(hitLike?.anchorHeading || "");
+      const relIndex = Math.max(1, Number.parseInt(hitLike?.anchorIndex || "1", 10) || 1);
       let baseHref = route(`errata-detail/?id=${encodeURIComponent(id)}`);
       if (kind === "faq") {
         baseHref = route(`faq-detail/?id=${encodeURIComponent(id)}`);
       } else if (kind === "rule") {
         baseHref = route(`pages/?id=${encodeURIComponent(id)}`);
       }
-      return withQuery(baseHref, "q", query || "");
+      let href = withQuery(baseHref, "q", query || "");
+      href = withQuery(href, "rq", relQuery || "");
+      href = withQuery(href, "rh", relHeading || "");
+      href = withQuery(href, "ri", String(relIndex));
+      return href;
     };
     listEl.innerHTML = rows
-      .map(
-        (x) => `
-      <a class="cards-related-item cards-related-link" href="${toHref(x.id, x.query)}">
-        <p class="muted cards-related-snippet">${x.snippet}</p>
-        <div class="cards-related-foot">
-          <span>${escapeHtml(x.sourceTitle || x.title)}</span>
+      .map((x, i) => {
+        const itemId = `rel-${kind}-${String(x.id || i).replace(/[^a-z0-9_-]/gi, "-")}-${i}`;
+        const first = asItems(x.matches)[0] || x;
+        const total = Math.max(1, asItems(x.matches).length);
+        const initialHref = toHref(x.id, first);
+        return `
+      <div class="cards-related-item cards-related-card-link" data-related-id="${itemId}" data-rel-href="${initialHref}" tabindex="0" role="link">
+        <div class="cards-related-nav${total > 1 ? "" : " is-hidden"}">
+          <button type="button" class="cards-related-btn" data-rel-prev aria-label="Previous match">&#10094;</button>
+          <button type="button" class="cards-related-btn" data-rel-next aria-label="Next match">&#10095;</button>
         </div>
-      </a>
-    `
-      )
+        <p class="muted cards-related-snippet" data-rel-snippet>${first.snippet || ""}</p>
+        <div class="cards-related-foot">
+          <span class="cards-related-count${total > 1 ? "" : " is-hidden"}" data-rel-count>1/${total}</span>
+          <a class="cards-related-source" data-rel-link href="${initialHref}">${escapeHtml(
+          x.sourceTitle || x.title
+        )}</a>
+        </div>
+      </div>
+    `;
+      })
       .join("");
+
+    rows.forEach((row, i) => {
+      const itemId = `rel-${kind}-${String(row.id || i).replace(/[^a-z0-9_-]/gi, "-")}-${i}`;
+      const root = listEl.querySelector(`[data-related-id="${itemId}"]`);
+      if (!root) return;
+      const snippetEl = root.querySelector("[data-rel-snippet]");
+      const countEl = root.querySelector("[data-rel-count]");
+      const linkEl = root.querySelector("[data-rel-link]");
+      const prevBtn = root.querySelector("[data-rel-prev]");
+      const nextBtn = root.querySelector("[data-rel-next]");
+      const hits = asItems(row.matches).length ? asItems(row.matches) : [row];
+      let at = 0;
+      const currentHit = () => hits[at] || hits[0];
+      const currentHref = () => toHref(row.id, currentHit());
+      const paint = () => {
+        const h = currentHit();
+        if (!h) return;
+        const href = currentHref();
+        if (snippetEl) snippetEl.innerHTML = String(h.snippet || "");
+        if (countEl) countEl.textContent = `${at + 1}/${hits.length}`;
+        if (linkEl) linkEl.href = href;
+        root.setAttribute("data-rel-href", href);
+      };
+      if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+          at = (at - 1 + hits.length) % hits.length;
+          paint();
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          at = (at + 1) % hits.length;
+          paint();
+        });
+      }
+      root.addEventListener("click", (ev) => {
+        if (ev.target && ev.target.closest(".cards-related-btn, .cards-related-source")) return;
+        const href = currentHref();
+        if (href) window.location.href = href;
+      });
+      root.addEventListener("keydown", (ev) => {
+        if (ev.key !== "Enter" && ev.key !== " ") return;
+        ev.preventDefault();
+        const href = currentHref();
+        if (href) window.location.href = href;
+      });
+      if (linkEl) {
+        linkEl.addEventListener("click", (ev) => {
+          ev.preventDefault();
+          const href = currentHref();
+          if (href) window.location.href = href;
+        });
+      }
+      paint();
+    });
   };
 
   const ruleRelationCache = new Map();
   const findRelatedRules = (cardName) => {
     const key = String(cardName || "").trim().toLowerCase();
-    if (!key || !coreRuleDoc) return [];
+    if (!key || !relatedRuleDocs.length) return [];
     if (ruleRelationCache.has(key)) return ruleRelationCache.get(key);
-    const rows = findRelatedDocs([coreRuleDoc], cardName);
+    const rows = findRelatedDocs(relatedRuleDocs, cardName);
     ruleRelationCache.set(key, rows);
     return rows;
   };
@@ -1828,10 +2310,73 @@ async function initCardsPage() {
     return Number.isFinite(n) ? n : Number.NaN;
   };
 
-  const getSorted = (rows) => {
+  const getSorted = (rows, query = "") => {
     const listRows = [...rows];
     const dir = state.sortDir === "desc" ? -1 : 1;
+    const q = markdownToPlain(query).toLowerCase().trim();
+    const qTokens = q.split(/\s+/).filter(Boolean);
+    const escapeRe = (s) => String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const containsWord = (text, token) =>
+      new RegExp(`(^|[^a-z0-9])${escapeRe(token)}(?=$|[^a-z0-9])`, "i").test(String(text || ""));
+    const rankCache = new Map();
+    const getSearchRank = (card) => {
+      if (!qTokens.length) return null;
+      const key = `${card.id || ""}::${card.publicCode || ""}::${card.name || ""}`;
+      if (rankCache.has(key)) return rankCache.get(key);
+
+      const name = markdownToPlain(card.name || "").toLowerCase();
+      const hay = markdownToPlain(
+        [
+          card.name,
+          card.publicCode,
+          card.set,
+          card.rarity,
+          asItems(card.cardTypes).join(" "),
+          asItems(card.superTypes).join(" "),
+          asItems(card.domains).join(" "),
+          asItems(card.tags).join(" "),
+          card.abilityText,
+        ]
+          .filter(Boolean)
+          .join("\n")
+      ).toLowerCase();
+
+      const exactName = name === q;
+      const prefixName = !!q && name.startsWith(q);
+      const allInName = qTokens.every((t) => name.includes(t));
+      const allInNameAsWord = qTokens.every((t) => containsWord(name, t));
+      const allInHay = qTokens.every((t) => hay.includes(t));
+      const allInHayAsWord = qTokens.every((t) => containsWord(hay, t));
+
+      let bucket = 99;
+      if (exactName) bucket = 0;
+      else if (prefixName) bucket = 1;
+      else if (allInNameAsWord) bucket = 2;
+      else if (allInName) bucket = 3;
+      else if (allInHayAsWord) bucket = 4;
+      else if (allInHay) bucket = 5;
+
+      const rank = {
+        bucket,
+        namePos: name.indexOf(qTokens[0] || ""),
+        hayPos: hay.indexOf(qTokens[0] || ""),
+      };
+      rankCache.set(key, rank);
+      return rank;
+    };
+
     listRows.sort((a, b) => {
+      if (qTokens.length) {
+        const ar = getSearchRank(a);
+        const br = getSearchRank(b);
+        if (ar && br) {
+          let relCmp = ar.bucket - br.bucket;
+          if (relCmp === 0) relCmp = (ar.namePos < 0 ? 9999 : ar.namePos) - (br.namePos < 0 ? 9999 : br.namePos);
+          if (relCmp === 0) relCmp = (ar.hayPos < 0 ? 9999 : ar.hayPos) - (br.hayPos < 0 ? 9999 : br.hayPos);
+          if (relCmp !== 0) return relCmp;
+        }
+      }
+
       const collectorCmp = (toInt(a.collectorNumber) || 0) - (toInt(b.collectorNumber) || 0);
       const nameCmp = String(a.name || "").localeCompare(String(b.name || ""));
       const rarityCmp =
@@ -1902,7 +2447,8 @@ async function initCardsPage() {
             .join("\n")
         ).toLowerCase();
         return term.split(/\s+/).filter(Boolean).every((t) => hay.includes(t));
-      })
+      }),
+      state.query
     );
   };
 
@@ -1920,8 +2466,8 @@ async function initCardsPage() {
     } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
     modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
     modalText.innerHTML = renderCardAbilityText(card.abilityText);
-    const relatedFaq = findRelatedDocs(faqs, card.name);
-    const relatedErrata = findRelatedDocs(errata, card.name);
+    const relatedFaq = findRelatedDocs(faqs, card.name, "faq");
+    const relatedErrata = findRelatedDocs(errata, card.name, "errata");
     const relatedRules = findRelatedRules(card.name);
     renderRelatedDocs(relatedFaq, modalFaqWrap, modalFaqList, "faq");
     renderRelatedDocs(relatedErrata, modalErrataWrap, modalErrataList, "errata");

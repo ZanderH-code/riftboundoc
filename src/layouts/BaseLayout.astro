@@ -6,7 +6,7 @@ interface Props {
 
 const { title, description = "riftboundoc" } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const siteVersion = "2026.02.20.11";
+const siteVersion = "2026.02.20.15";
 ---
 <!doctype html>
 <html lang="en">
@@ -16,9 +16,9 @@ const siteVersion = "2026.02.20.11";
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/webp" href={`${base}assets/img/domains/order.webp`} />
-    <link rel="stylesheet" href={`${base}assets/css/styles.css?v=20260220d`} />
+    <link rel="stylesheet" href={`${base}assets/css/styles.css?v=20260220p`} />
     <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src={`${base}assets/js/site.js?v=20260220l`}></script>
+    <script src={`${base}assets/js/site.js?v=20260220p`}></script>
   </head>
   <body>
     <header class="topbar">

@@ -376,8 +376,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c7c260b77b4174a61aed6243ed90f76594102193-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Gear: Ancient Henge. [T]: [Reaction] — Pay any amount of Energy to [Add] that much [A]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — Pay any amount of Energy to [Add] that much :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Ancient Henge. [T]: [Reaction] - Pay any amount of Energy to [Add] that much [A]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - Pay any amount of Energy to [Add] that much :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-131-221",
@@ -544,8 +544,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/df9ccbba2501059e5781a44434745a1f0e33ecae-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
-      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
+      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
+      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
     },
     {
       "id": "sfd-224-star-221",
@@ -573,8 +573,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/58bb3f7a73a8aa38159cc63439e0483ca2574157-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
-      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
+      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
+      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
     },
     {
       "id": "sfd-224-221",
@@ -602,8 +602,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1da6ebc24ad6360186208ab70a0c43443c349bbe-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
-      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
+      "imageAlt": "Riftbound Unit: Aphelios, Exalted. When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
+      "abilityText": "When you attach an Equipment to me, choose one that hasn't been chosen this turn -\n\nReady 2 runes.\nChannel 1 rune exhausted.\nBuff a friendly unit."
     },
     {
       "id": "sfd-041-221",
@@ -836,8 +836,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/93e91aa99eb09baa68dd95b0013a89d9ffde5240-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Ava Achiever. When I attack, you may pay [C] to play a card with [Hidden] from your hand, ignoring its cost. If it’s a unit, play it here.",
-      "abilityText": "When I attack, you may pay :rb_rune_mind: to play a card with [Hidden] from your hand, ignoring its cost. If it’s a unit, play it here."
+      "imageAlt": "Riftbound Unit: Ava Achiever. When I attack, you may pay [C] to play a card with [Hidden] from your hand, ignoring its cost. If it's a unit, play it here.",
+      "abilityText": "When I attack, you may pay :rb_rune_mind: to play a card with [Hidden] from your hand, ignoring its cost. If it's a unit, play it here."
     },
     {
       "id": "sfd-050-221",
@@ -866,8 +866,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3c42c02f6ebd2e4d4a640c2c6ac081231439888e-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Azir, Ascendant. [C]: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
-      "abilityText": ":rb_rune_calm:: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn."
+      "imageAlt": "Riftbound Unit: Azir, Ascendant. [C]: [Action] - Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
+      "abilityText": ":rb_rune_calm:: [Action] - Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn."
     },
     {
       "id": "sfd-050a-221",
@@ -896,8 +896,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3a0859ca50e71c69b22e4dab93e840b6d30e3d50-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Azir, Ascendant. [C]: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
-      "abilityText": ":rb_rune_calm:: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn."
+      "imageAlt": "Riftbound Unit: Azir, Ascendant. [C]: [Action] - Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
+      "abilityText": ":rb_rune_calm:: [Action] - Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn."
     },
     {
       "id": "sfd-177-221",
@@ -1425,8 +1425,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/26ab126258a15afd380c313e973f7469808ce55f-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Gear: Blade of the Ruined King. [Equip] — [C], Kill a friendly unit (Pay the cost: Attach this to a unit you control.)",
-      "abilityText": "[Equip] — :rb_rune_order:, Kill a friendly unit (Pay the cost: Attach this to a unit you control.)"
+      "imageAlt": "Riftbound Gear: Blade of the Ruined King. [Equip] - [C], Kill a friendly unit (Pay the cost: Attach this to a unit you control.)",
+      "abilityText": "[Equip] - :rb_rune_order:, Kill a friendly unit (Pay the cost: Attach this to a unit you control.)"
     },
     {
       "id": "sfd-013-221",
@@ -3114,8 +3114,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3c02ea9e438d407c739276b788e015ac93843651-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Dangerous Duo. [Legion] — When you play me, give a unit +2 [S] this turn. (Get the effect if you've played another card this turn.)",
-      "abilityText": "[Legion] — When you play me, give a unit +2 :rb_might: this turn. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Unit: Dangerous Duo. [Legion] - When you play me, give a unit +2 [S] this turn. (Get the effect if you've played another card this turn.)",
+      "abilityText": "[Legion] - When you play me, give a unit +2 :rb_might: this turn. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "ogn-210-298",
@@ -3170,8 +3170,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7b71cf13a07074a6eccbe88ae6c74133d989cb68-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
-      "abilityText": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
+      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
+      "abilityText": "[Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
     },
     {
       "id": "ogn-243a-298",
@@ -3200,8 +3200,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/76a697f29d4fc3cd9a5e9a0ce79f229d26bc0c90-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
-      "abilityText": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
+      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
+      "abilityText": "[Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
     },
     {
       "id": "sfd-236-star-221",
@@ -3229,8 +3229,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/46fc840c17925406d22703b82ad02f5eb2ab62cf-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
-      "abilityText": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
+      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
+      "abilityText": "[Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
     },
     {
       "id": "sfd-236-221",
@@ -3258,8 +3258,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4f550f321dce06bb09bb47682d5bf2981280ea16-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
-      "abilityText": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
+      "imageAlt": "Riftbound Unit: Darius, Executioner. [Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 [S] here.",
+      "abilityText": "[Legion] - When you play me, ready me. (Get the effect if you've played another card this turn)\nOther friendly units have +1 :rb_might: here."
     },
     {
       "id": "ogn-027-298",
@@ -3374,8 +3374,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a576472c7bb00f475882ac814e1d8f9be233b402-744x1040.png?accountingTag=RB",
-      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] — [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] - [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-299-star-298",
@@ -3401,8 +3401,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ae8e68af43400f61f7391c0a6ee339fd718a7540-1488x2078.png?accountingTag=RB",
-      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] — [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] - [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-299-298",
@@ -3428,8 +3428,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/57e13462b8fea9a5cfa1b424d3ad3005f37b00ad-1488x2078.png?accountingTag=RB",
-      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] — [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Legend: Daughter of the Void. [T]: [Reaction] - [Add] [C]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-093-221",
@@ -4328,8 +4328,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/65da19325b6def53d33c07bc1aa8f91fd2f1e723-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Ekko, Recurrent. [Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\n[Deathknell] — Recycle me to ready your runes. (When I die, get the effect.)",
-      "abilityText": "[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)\n[Deathknell] — Recycle me to ready your runes. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Ekko, Recurrent. [Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\n[Deathknell] - Recycle me to ready your runes. (When I die, get the effect.)",
+      "abilityText": "[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)\n[Deathknell] - Recycle me to ready your runes. (When I die, get the effect.)"
     },
     {
       "id": "ogn-167-298",
@@ -4530,8 +4530,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f0e0a67e9e9b1d45d12d248df78b4e643b70bdc1-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Gear: Energy Conduit. [T]: [Reaction] — [Add] [1]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Energy Conduit. [T]: [Reaction] - [Add] [1]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-073-221",
@@ -4611,8 +4611,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3e040f7b7ca16009a2558674a911b8cc93122ba3-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Ezreal, Dashing. When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n[C]: [Action] — Move me to your base.",
-      "abilityText": "When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n:rb_rune_mind:: [Action] — Move me to your base."
+      "imageAlt": "Riftbound Unit: Ezreal, Dashing. When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n[C]: [Action] - Move me to your base.",
+      "abilityText": "When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n:rb_rune_mind:: [Action] - Move me to your base."
     },
     {
       "id": "sfd-082a-221",
@@ -4640,8 +4640,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/83da64e39d838d2fee68c319c03fbff0d4c7035f-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Ezreal, Dashing. When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n[C]: [Action] — Move me to your base.",
-      "abilityText": "When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n:rb_rune_mind:: [Action] — Move me to your base."
+      "imageAlt": "Riftbound Unit: Ezreal, Dashing. When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n[C]: [Action] - Move me to your base.",
+      "abilityText": "When I attack or defend, deal damage equal to my Might to an enemy unit here.\nI don't deal combat damage.\n:rb_rune_mind:: [Action] - Move me to your base."
     },
     {
       "id": "sfd-149-221",
@@ -4951,8 +4951,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b2873a352c0158a677255894cec458d1c17709f7-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Unit: Ferrous Forerunner. [Deathknell] — Play two 3 [S] Mech unit tokens to your base. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Play two 3 :rb_might: Mech unit tokens to your base. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Ferrous Forerunner. [Deathknell] - Play two 3 [S] Mech unit tokens to your base. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Play two 3 :rb_might: Mech unit tokens to your base. (When I die, get the effect.)"
     },
     {
       "id": "ogn-168-298",
@@ -5200,8 +5200,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ed58d654034d545e54c85d836f3a6552772dd75b-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Legend: Fire Below the Mountain. [T]: [Reaction] — [Add] [A]. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Legend: Fire Below the Mountain. [T]: [Reaction] - [Add] [A]. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-244-221",
@@ -5227,8 +5227,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/883dab66da8ed5ab39d968ed7fcaebd5ebaf3d43-744x1039.png?accountingTag=RB",
-      "imageAlt": "Riftbound Legend: Fire Below the Mountain. [T]: [Reaction] — [Add] [A]. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Legend: Fire Below the Mountain. [T]: [Reaction] - [Add] [A]. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. Use only to play gear or use gear abilities. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogs-002-024",
@@ -5905,8 +5905,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e7422fee71796aa61f8d9691d07654b901fc20f2-744x1039.png",
-      "imageAlt": "Riftbound Unit: Glasc Mixologist. [Deathknell] — You may play a unit with cost no more than [3] and no more than [A] from your trash, ignoring its cost. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — You may play a unit with cost no more than :rb_energy_3: and no more than :rb_rune_rainbow: from your trash, ignoring its cost. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Glasc Mixologist. [Deathknell] - You may play a unit with cost no more than [3] and no more than [A] from your trash, ignoring its cost. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - You may play a unit with cost no more than :rb_energy_3: and no more than :rb_rune_rainbow: from your trash, ignoring its cost. (When I die, get the effect.)"
     },
     {
       "id": "sfd-185-221",
@@ -5985,8 +5985,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e878c39b562a4e870e93b819c6d85cdf3fdc5238-744x1039.png",
-      "imageAlt": "Riftbound Gear: Gold. Kill this, [T]: [Reaction] — [Add] [A]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": "Kill this, :rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Gold. Kill this, [T]: [Reaction] - [Add] [A]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": "Kill this, :rb_exhaust:: [Reaction] - [Add] :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-205-221",
@@ -6346,8 +6346,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5b9a904048b7fb936377844ec2d31564b7fedf81-744x1039.png",
-      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] — [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
-      "abilityText": ":rb_exhaust:: [Reaction], [Legion] — [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
+      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] - [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "abilityText": ":rb_exhaust:: [Reaction], [Legion] - [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
     },
     {
       "id": "ogn-302-star-298",
@@ -6373,8 +6373,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/31f3c975c6f5693f6567b0ebdb66bd4dd92d730b-744x1039.png",
-      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] — [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
-      "abilityText": ":rb_exhaust:: [Reaction], [Legion] — [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
+      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] - [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "abilityText": ":rb_exhaust:: [Reaction], [Legion] - [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
     },
     {
       "id": "ogn-302-298",
@@ -6400,8 +6400,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/37d43efe09ccfe5d72ce37fdc27599bd5ef736af-1488x2078.png",
-      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] — [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
-      "abilityText": ":rb_exhaust:: [Reaction], [Legion] — [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
+      "imageAlt": "Riftbound Legend: Hand of Noxus. [T]: [Reaction], [Legion] - [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "abilityText": ":rb_exhaust:: [Reaction], [Legion] - [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)"
     },
     {
       "id": "sfd-136-221",
@@ -6713,8 +6713,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/32a46943778755e2b6210e5adb4507780f08e2c8-744x1039.png",
-      "imageAlt": "Riftbound Gear: Hextech Anomaly. [T]: [Reaction] — Pay any amount of [A] to [Add] that much Energy. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — Pay any amount of :rb_rune_rainbow: to [Add] that much Energy. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Hextech Anomaly. [T]: [Reaction] - Pay any amount of [A] to [Add] that much Energy. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - Pay any amount of :rb_rune_rainbow: to [Add] that much Energy. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-009-298",
@@ -6816,8 +6816,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b3cc9bb93888f6f276f674baa16a0e53c724ae99-744x1039.png",
-      "imageAlt": "Riftbound Unit: Honest Broker. [Deathknell] — Play a Gold gear token exhausted. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Play a Gold gear token exhausted. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Honest Broker. [Deathknell] - Play a Gold gear token exhausted. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Play a Gold gear token exhausted. (When I die, get the effect.)"
     },
     {
       "id": "sfd-202-221",
@@ -7930,8 +7930,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1ba2b780619714f2bf97597a180f3b118f4faf55-744x1039.png",
-      "imageAlt": "Riftbound Unit: Kog'Maw, Caustic. [Deathknell] — Deal 4 to all units at my battlefield. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Deal 4 to all units at my battlefield. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Kog'Maw, Caustic. [Deathknell] - Deal 4 to all units at my battlefield. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Deal 4 to all units at my battlefield. (When I die, get the effect.)"
     },
     {
       "id": "ogn-150-298",
@@ -8041,8 +8041,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6cfab85030bff454262794e4fa12f11b5dc45a74-744x1039.png",
-      "imageAlt": "Riftbound Gear: Last Rites. [Equip] — [C], Recycle 2 cards from your trash (Pay the cost: Attach this to a unit you control.)",
-      "abilityText": "[Equip] — :rb_rune_chaos:, Recycle 2 cards from your trash (Pay the cost: Attach this to a unit you control.)\n\nWhen I conquer or hold, you may play a unit from your trash. (You still pay its costs.)"
+      "imageAlt": "Riftbound Gear: Last Rites. [Equip] - [C], Recycle 2 cards from your trash (Pay the cost: Attach this to a unit you control.)",
+      "abilityText": "[Equip] - :rb_rune_chaos:, Recycle 2 cards from your trash (Pay the cost: Attach this to a unit you control.)\n\nWhen I conquer or hold, you may play a unit from your trash. (You still pay its costs.)"
     },
     {
       "id": "ogn-069-298",
@@ -8457,8 +8457,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f5ab933035b7a6d6bb1d35c10c13f58c7fbf3398-744x1039.png",
-      "imageAlt": "Riftbound Unit: Lonely Poro. [Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)",
-      "abilityText": "[Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)"
+      "imageAlt": "Riftbound Unit: Lonely Poro. [Deathknell] - If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)",
+      "abilityText": "[Deathknell] - If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)"
     },
     {
       "id": "sfd-022-221",
@@ -8740,8 +8740,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/17d0793ad495727e67bb1c94ae0e11cd4705870f-744x1039.png",
-      "imageAlt": "Riftbound Unit: Lux, Crownguard. [T]: [Reaction] — [Add] [2]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_energy_2:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Unit: Lux, Crownguard. [T]: [Reaction] - [Add] [2]. Use only to play spells. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_energy_2:. Use only to play spells. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogs-006-024",
@@ -8795,8 +8795,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ad15d4ff89548e83dcede9b209b12233652cf3a1-744x1039.png",
-      "imageAlt": "Riftbound Unit: Machine Evangel. [Deathknell] — Play three 1 [S] Recruit unit tokens into your base. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Play three 1 :rb_might: Recruit unit tokens into your base. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Machine Evangel. [Deathknell] - Play three 1 [S] Recruit unit tokens into your base. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Play three 1 :rb_might: Recruit unit tokens into your base. (When I die, get the effect.)"
     },
     {
       "id": "ogn-191-298",
@@ -8903,8 +8903,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ba1fa3a18b1c2ff132ad536577e53deb49bce1f9-744x1039.png",
-      "imageAlt": "Riftbound Unit: Malzahar, Fanatic. Kill a friendly unit or gear, [T]: [Action] — [Add] [A][A]. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)",
-      "abilityText": "Kill a friendly unit or gear, :rb_exhaust:: [Action] — [Add] :rb_rune_rainbow::rb_rune_rainbow:. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Unit: Malzahar, Fanatic. Kill a friendly unit or gear, [T]: [Action] - [Add] [A][A]. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)",
+      "abilityText": "Kill a friendly unit or gear, :rb_exhaust:: [Action] - [Add] :rb_rune_rainbow::rb_rune_rainbow:. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-211-221",
@@ -9847,8 +9847,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/57f646b0393b58b657cfabf66357d9fc4a34e046-744x1039.png",
-      "imageAlt": "Riftbound Spell: Noxian Guillotine. [Action] (Play on your turn or in showdowns.)\nChoose a unit. Kill it the next time it takes damage this turn.\n[Legion] — Kill it now instead. (Get the effect if you've played another card this turn.)",
-      "abilityText": "[Action] (Play on your turn or in showdowns.)\nChoose a unit. Kill it the next time it takes damage this turn.\n[Legion] — Kill it now instead. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Spell: Noxian Guillotine. [Action] (Play on your turn or in showdowns.)\nChoose a unit. Kill it the next time it takes damage this turn.\n[Legion] - Kill it now instead. (Get the effect if you've played another card this turn.)",
+      "abilityText": "[Action] (Play on your turn or in showdowns.)\nChoose a unit. Kill it the next time it takes damage this turn.\n[Legion] - Kill it now instead. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "ogn-012-298",
@@ -9874,8 +9874,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c3bb6f4cb58feeb50e396d12ec9865c5434025af-744x1039.png",
-      "imageAlt": "Riftbound Unit: Noxus Hopeful. [Legion] — I cost [2] less. (Get the effect if you've played another card this turn.)",
-      "abilityText": "[Legion] — I cost :rb_energy_2: less. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Unit: Noxus Hopeful. [Legion] - I cost [2] less. (Get the effect if you've played another card this turn.)",
+      "abilityText": "[Legion] - I cost :rb_energy_2: less. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "ogn-018-298",
@@ -10830,8 +10830,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d0e143d9edbc14971b2a7b463b3c25b2b6a0c098-744x1039.png",
-      "imageAlt": "Riftbound Legend: Prodigal Explorer. [T]: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
-      "abilityText": ":rb_exhaust:: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities."
+      "imageAlt": "Riftbound Legend: Prodigal Explorer. [T]: [Reaction] - Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
+      "abilityText": ":rb_exhaust:: [Reaction] - Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities."
     },
     {
       "id": "sfd-248-221",
@@ -10857,8 +10857,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3ba4f1d3d61d80e7becc9d046e1974f17bff4b10-744x1039.png",
-      "imageAlt": "Riftbound Legend: Prodigal Explorer. [T]: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
-      "abilityText": ":rb_exhaust:: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities."
+      "imageAlt": "Riftbound Legend: Prodigal Explorer. [T]: [Reaction] - Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
+      "abilityText": ":rb_exhaust:: [Reaction] - Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities."
     },
     {
       "id": "sfd-076-221",
@@ -12111,8 +12111,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0378f9adf9df08fed264fdd217ce0e94c3f611cb-744x1039.png",
-      "imageAlt": "Riftbound Spell: Rocket Barrage. [Repeat] [4][C] (You may pay the additional cost to repeat this spell's effect, and may make different choices.)\nChoose one —\n- Deal 4 to a unit in a base.\n- Kill a gear.",
-      "abilityText": "[Repeat] :rb_energy_4::rb_rune_mind: (You may pay the additional cost to repeat this spell's effect, and may make different choices.)\nChoose one —\n\nDeal 4 to a unit in a base.\nKill a gear."
+      "imageAlt": "Riftbound Spell: Rocket Barrage. [Repeat] [4][C] (You may pay the additional cost to repeat this spell's effect, and may make different choices.)\nChoose one -\n- Deal 4 to a unit in a base.\n- Kill a gear.",
+      "abilityText": "[Repeat] :rb_energy_4::rb_rune_mind: (You may pay the additional cost to repeat this spell's effect, and may make different choices.)\nChoose one -\n\nDeal 4 to a unit in a base.\nKill a gear."
     },
     {
       "id": "sfd-216-221",
@@ -12412,7 +12412,7 @@
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/af1069aef68d413127dfa84e4e96b8d66a8720ca-744x1039.png",
       "imageAlt": "Riftbound Gear: Sacred Shears. [Equip] [C] ([C]: Attach this to a unit you control.)",
-      "abilityText": "[Equip] :rb_rune_order: (:rb_rune_order:: Attach this to a unit you control.)\n\n[Deathknell] — Draw 1. (When I die, get the effect.)"
+      "abilityText": "[Equip] :rb_rune_order: (:rb_rune_order:: Attach this to a unit you control.)\n\n[Deathknell] - Draw 1. (When I die, get the effect.)"
     },
     {
       "id": "ogn-174-298",
@@ -12538,8 +12538,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/10f096d2b469fd73329386e5efe88c9bec667d7c-744x1039.png",
-      "imageAlt": "Riftbound Unit: Scrapyard Champion. [Legion] — When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)",
-      "abilityText": "[Legion] — When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Unit: Scrapyard Champion. [Legion] - When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)",
+      "abilityText": "[Legion] - When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "sfd-098-221",
@@ -12589,8 +12589,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/dd8433e77e46ca77aaf0be35d1774218d9a2f037-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Discord. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_chaos:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Discord. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_chaos:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-234-221",
@@ -12613,8 +12613,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9263b8f36725a4cec320c1049608824ae72f6237-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Discord. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_chaos:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Discord. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_chaos:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-081-298",
@@ -12637,8 +12637,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/288c300c4e4cb10ecfe6c3cbb543d0636b306852-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Focus. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_calm:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Focus. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_calm:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-226-221",
@@ -12661,8 +12661,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b6bb0da7d3b37dad51148b7914e7d2b840b6482-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Focus. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_calm:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Focus. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_calm:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-120-298",
@@ -12685,8 +12685,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9ee0dc0221f83d569e0f458374e40f7238f306c2-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Insight. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_mind:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Insight. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_mind:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-229-221",
@@ -12709,8 +12709,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/eb4559c507f09cabc3735973a1b20d83688d2f9d-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Insight. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_mind:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Insight. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_mind:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-040-298",
@@ -12733,8 +12733,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fbdd14adb40b0ca46b89f476a356fa21413d812e-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Rage. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_fury:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Rage. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_fury:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-222-221",
@@ -12757,8 +12757,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/669d4dd94cf2d88ad58333c13a98cca2014e71aa-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Rage. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_fury:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Rage. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_fury:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-163-298",
@@ -12781,8 +12781,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/415644b2798348e3d7198ec900cc40aaa4eb8bdf-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Strength. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_body:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Strength. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_body:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-231-221",
@@ -12805,8 +12805,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/dd5c24995d5c6d327b5101da3d6426f1a75a49ef-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Strength. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_body:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Strength. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_body:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "ogn-245-298",
@@ -12829,8 +12829,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e6fbd41d69bc0d235ea7993d2e9fa74e75e17dff-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Unity. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_order:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Unity. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_order:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-238-221",
@@ -12853,8 +12853,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/228dbde67ec37f9a0b28f81e40fce5a8fa7af56b-744x1039.png",
-      "imageAlt": "Riftbound Gear: Seal of Unity. [T]: [Reaction] — [Add] [C]. (Abilities that add resources can't be reacted to.)",
-      "abilityText": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_order:. (Abilities that add resources can't be reacted to.)"
+      "imageAlt": "Riftbound Gear: Seal of Unity. [T]: [Reaction] - [Add] [C]. (Abilities that add resources can't be reacted to.)",
+      "abilityText": ":rb_exhaust:: [Reaction] - [Add] :rb_rune_order:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "id": "sfd-217-221",
@@ -13289,8 +13289,8 @@
       "tags": [],
       "orientation": "landscape",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9b795e7a2af421aabc01dc6f35c0b5d547fe3c0e-1038x744.png",
-      "imageAlt": "Riftbound Battlefield: Sigil of the Storm. When you conquer here, you must recycle one of your runes. (This doesn’t choose anything.)",
-      "abilityText": "When you conquer here, you must recycle one of your runes. (This doesn’t choose anything.)"
+      "imageAlt": "Riftbound Battlefield: Sigil of the Storm. When you conquer here, you must recycle one of your runes. (This doesn't choose anything.)",
+      "abilityText": "When you conquer here, you must recycle one of your runes. (This doesn't choose anything.)"
     },
     {
       "id": "sfd-047-221",
@@ -13612,8 +13612,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/75b6ce420888035b566c3795cabe0999a9a918b0-744x1039.png",
-      "imageAlt": "Riftbound Unit: Soaring Scout. [Deathknell] — Channel 1 rune exhausted. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Channel 1 rune exhausted. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Soaring Scout. [Deathknell] - Channel 1 rune exhausted. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Channel 1 rune exhausted. (When I die, get the effect.)"
     },
     {
       "id": "ogn-225-298",
@@ -14365,8 +14365,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/146d7514f15e6674f471f3aa9c3fadf22c0b634b-744x1039.png",
-      "imageAlt": "Riftbound Gear: Sun Disc. [T]: [Legion] — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
-      "abilityText": ":rb_exhaust:: [Legion] — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Gear: Sun Disc. [T]: [Legion] - The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
+      "abilityText": ":rb_exhaust:: [Legion] - The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "sfd-218-221",
@@ -14679,8 +14679,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/65f69ca9a1087deb12e91fb6fdee7b6efd0c088f-744x1039.png",
-      "imageAlt": "Riftbound Unit: Tasty Faefolk. [Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\n[Deathknell] — Channel 2 runes exhausted and draw 1. (When I die, get the effect.)",
-      "abilityText": "[Accelerate] (You may pay :rb_energy_1::rb_rune_calm: as an additional cost to have me enter ready.)\n[Deathknell] — Channel 2 runes exhausted and draw 1. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Tasty Faefolk. [Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\n[Deathknell] - Channel 2 runes exhausted and draw 1. (When I die, get the effect.)",
+      "abilityText": "[Accelerate] (You may pay :rb_energy_1::rb_rune_calm: as an additional cost to have me enter ready.)\n[Deathknell] - Channel 2 runes exhausted and draw 1. (When I die, get the effect.)"
     },
     {
       "id": "ogn-197-298",
@@ -15181,7 +15181,7 @@
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/cc80cbfa1a64ad22dc5f7df870e9206f6938f7f5-744x1039.png",
       "imageAlt": "Riftbound Gear: The Zero Drive. [Equip] [1][C] ([1][C]: Attach this to a unit you control.)\n[3][C], Banish this: Play all units banished with this, ignoring their costs. (Use only if unattached.)",
-      "abilityText": "[Equip] :rb_energy_1::rb_rune_mind: (:rb_energy_1::rb_rune_mind:: Attach this to a unit you control.)\n:rb_energy_3::rb_rune_mind:, Banish this: Play all units banished with this, ignoring their costs. (Use only if unattached.)\n\n[Deathknell] — Banish me. (When I die, get the effect.)"
+      "abilityText": "[Equip] :rb_energy_1::rb_rune_mind: (:rb_energy_1::rb_rune_mind:: Attach this to a unit you control.)\n:rb_energy_3::rb_rune_mind:, Banish this: Play all units banished with this, ignoring their costs. (Use only if unattached.)\n\n[Deathknell] - Banish me. (When I die, get the effect.)"
     },
     {
       "id": "ogn-022-298",
@@ -15487,8 +15487,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/19ad6a0e743b56021b9651a2105034a488e172e8-744x1039.png",
-      "imageAlt": "Riftbound Unit: Trifarian Gloryseeker. [Legion] — When you play me, buff me. (If I don't have a buff, I get a +1 [S] buff. Get the effect if you've played another card this turn.)",
-      "abilityText": "[Legion] — When you play me, buff me. (If I don't have a buff, I get a +1 :rb_might: buff. Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Unit: Trifarian Gloryseeker. [Legion] - When you play me, buff me. (If I don't have a buff, I get a +1 [S] buff. Get the effect if you've played another card this turn.)",
+      "abilityText": "[Legion] - When you play me, buff me. (If I don't have a buff, I get a +1 :rb_might: buff. Get the effect if you've played another card this turn.)"
     },
     {
       "id": "ogn-294-298",
@@ -15649,8 +15649,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9eff1a038528c4d633196f13259670d84b74c2a8-744x1039.png",
-      "imageAlt": "Riftbound Unit: Twisted Fate, Gambler. When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain:\n* [R] — Deal 2 to an enemy unit here and 1 to all other enemy units here.\n* [B] — Draw 1.\n* [Y] — Stun an enemy unit.",
-      "abilityText": "When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain:\n\n:rb_rune_fury: — Deal 2 to an enemy unit here and 1 to all other enemy units here.\n:rb_rune_mind: — Draw 1.\n:rb_rune_order: — Stun an enemy unit."
+      "imageAlt": "Riftbound Unit: Twisted Fate, Gambler. When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain:\n* [R] - Deal 2 to an enemy unit here and 1 to all other enemy units here.\n* [B] - Draw 1.\n* [Y] - Stun an enemy unit.",
+      "abilityText": "When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain:\n\n:rb_rune_fury: - Deal 2 to an enemy unit here and 1 to all other enemy units here.\n:rb_rune_mind: - Draw 1.\n:rb_rune_order: - Stun an enemy unit."
     },
     {
       "id": "ogn-157-298",
@@ -15678,8 +15678,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2e461e5d05b5ee86e47a425c42c6f3b3c12bc4cf-744x1039.png",
-      "imageAlt": "Riftbound Unit: Udyr, Wildman. Spend my buff: Choose one you've not chosen this turn —\n* Deal 2 to a unit at a battlefield.\n* Stun a unit at a battlefield.\n* Ready me.\n* Give me [Ganking] this turn.",
-      "abilityText": "Spend my buff: Choose one you've not chosen this turn —\n\nDeal 2 to a unit at a battlefield.\nStun a unit at a battlefield.\nReady me.\nGive me [Ganking] this turn."
+      "imageAlt": "Riftbound Unit: Udyr, Wildman. Spend my buff: Choose one you've not chosen this turn -\n* Deal 2 to a unit at a battlefield.\n* Stun a unit at a battlefield.\n* Ready me.\n* Give me [Ganking] this turn.",
+      "abilityText": "Spend my buff: Choose one you've not chosen this turn -\n\nDeal 2 to a unit at a battlefield.\nStun a unit at a battlefield.\nReady me.\nGive me [Ganking] this turn."
     },
     {
       "id": "ogn-123-298",
@@ -15726,8 +15726,8 @@
       "tags": [],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3e4e318c0cc97b13646ee454da71046a09236e47-744x1039.png",
-      "imageAlt": "Riftbound Unit: Undercover Agent. [Deathknell] — Discard 2, then draw 2. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Discard 2, then draw 2. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Undercover Agent. [Deathknell] - Discard 2, then draw 2. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Discard 2, then draw 2. (When I die, get the effect.)"
     },
     {
       "id": "sfd-175-221",
@@ -15884,8 +15884,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2a227ef7494af6409000c13c4f3d1094cec3a3a8-744x1039.png",
-      "imageAlt": "Riftbound Unit: Unsung Hero. [Deathknell] — If I was [Mighty], draw 2. (When I die, get the effect. I'm Mighty while I have 5+ [S].)",
-      "abilityText": "[Deathknell] — If I was [Mighty], draw 2. (When I die, get the effect. I'm Mighty while I have 5+ :rb_might:.)"
+      "imageAlt": "Riftbound Unit: Unsung Hero. [Deathknell] - If I was [Mighty], draw 2. (When I die, get the effect. I'm Mighty while I have 5+ [S].)",
+      "abilityText": "[Deathknell] - If I was [Mighty], draw 2. (When I die, get the effect. I'm Mighty while I have 5+ :rb_might:.)"
     },
     {
       "id": "ogn-145-298",
@@ -15986,8 +15986,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f0c9ddb2af7a0d4991938cf1e3058eb0f5d2e357-744x1039.png",
-      "imageAlt": "Riftbound Unit: Vanguard Captain. [Legion] — When you play me, play two 1 [S] Recruit unit tokens here. (Get the effect if you've played another card this turn.)",
-      "abilityText": "[Legion] — When you play me, play two 1 :rb_might: Recruit unit tokens here. (Get the effect if you've played another card this turn.)"
+      "imageAlt": "Riftbound Unit: Vanguard Captain. [Legion] - When you play me, play two 1 [S] Recruit unit tokens here. (Get the effect if you've played another card this turn.)",
+      "abilityText": "[Legion] - When you play me, play two 1 :rb_might: Recruit unit tokens here. (Get the effect if you've played another card this turn.)"
     },
     {
       "id": "ogn-228-298",
@@ -16829,8 +16829,8 @@
       ],
       "orientation": "portrait",
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d84da2c62b1e218a0a74b227c49ce8a953918ebd-744x1039.png",
-      "imageAlt": "Riftbound Unit: Watchful Sentry. [Deathknell] — Draw 1. (When I die, get the effect.)",
-      "abilityText": "[Deathknell] — Draw 1. (When I die, get the effect.)"
+      "imageAlt": "Riftbound Unit: Watchful Sentry. [Deathknell] - Draw 1. (When I die, get the effect.)",
+      "abilityText": "[Deathknell] - Draw 1. (When I die, get the effect.)"
     },
     {
       "id": "ogn-187-298",

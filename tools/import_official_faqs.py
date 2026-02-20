@@ -134,6 +134,15 @@ def main():
     for row in rows:
         row["updatedAt"] = stamp
 
+    rows.sort(
+        key=lambda r: (
+            str(r.get("publishedAt", "")),
+            str(r.get("updatedAt", "")),
+            str(r.get("id", "")),
+        ),
+        reverse=True,
+    )
+
     output = Path(args.output_json)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
