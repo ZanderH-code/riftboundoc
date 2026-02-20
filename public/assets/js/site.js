@@ -165,7 +165,17 @@ function slugify(text) {
 }
 
 function markdownToPlain(text) {
-  return String(text || "")
+  const decodeEntities = (value) => {
+    const el = document.createElement("textarea");
+    el.innerHTML = String(value || "");
+    return el.value;
+  };
+
+  return decodeEntities(String(text || ""))
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|li|h\d|tr|section|article)>/gi, "\n")
+    .replace(/<li[^>]*>/gi, "- ")
+    .replace(/<[^>]+>/g, " ")
     .replace(/\[\[([^\]]+)\]\]\(([^)]+)\)/g, "$1")
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
     .replace(/^#+\s*/gm, "")
@@ -431,6 +441,9 @@ function renderCardAbilityText(text) {
   });
   html = html.replace(/:rb_might:/gi, () => {
     return "might";
+  });
+  html = html.replace(/:rb_exhaust:/gi, () => {
+    return '<span class="rb-token rb-exhaust" title="Exhaust" aria-label="Exhaust"></span>';
   });
   html = html.replace(/:rb_rune_([a-z]+):/gi, (_m, keyRaw) => {
     const key = String(keyRaw || "").toLowerCase();
@@ -1208,6 +1221,9 @@ async function initCardsPage() {
   const raw = await getJson("data/cards.json", { cards: [] });
   const faqs = await getJson("data/faqs.json", []);
   const errata = await getJson("data/errata.json", []);
+  const pages = await getJson("data/pages.json", []);
+  const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
+  const rules = normalizeRuleIndex(rulesIndex);
   const cards = normalizeCardsData(raw);
   const list = q("#cards-list");
   const meta = q("#cards-meta");
@@ -1255,6 +1271,8 @@ async function initCardsPage() {
   const modalFaqList = q("#cards-modal-faq-list");
   const modalErrataWrap = q("#cards-modal-errata-wrap");
   const modalErrataList = q("#cards-modal-errata-list");
+  const modalRulesWrap = q("#cards-modal-rules-wrap");
+  const modalRulesList = q("#cards-modal-rules-list");
   if (
     !list ||
     !meta ||
@@ -1301,9 +1319,34 @@ async function initCardsPage() {
     !modalFaqWrap ||
     !modalFaqList ||
     !modalErrataWrap ||
-    !modalErrataList
+    !modalErrataList ||
+    !modalRulesWrap ||
+    !modalRulesList
   ) {
     return;
+  }
+
+  const coreRulePageId =
+    String(
+      asItems(rules).find((it) => String(it.pageId || it.id).includes("riftbound-core-rules-v1-2"))?.pageId || ""
+    ) || "riftbound-core-rules-v1-2";
+  const coreRulePage = asItems(pages).find((it) => String(it.id || "") === coreRulePageId);
+  let coreRuleDoc = null;
+  if (coreRulePage && coreRulePage.file) {
+    try {
+      const body = await fetch(route(coreRulePage.file), { cache: "no-store" }).then((r) => r.text());
+      coreRuleDoc = {
+        kind: "rule",
+        id: coreRulePage.id || coreRulePageId,
+        title: coreRulePage.title || "Riftbound Core Rules",
+        summary: coreRulePage.summary || "",
+        content: body,
+        updatedAt: coreRulePage.updatedAt || "",
+        publishedAt: coreRulePage.publishedAt || "",
+      };
+    } catch (error) {
+      console.warn("Failed to load core rules for card relation:", error);
+    }
   }
 
   const unique = (arr) =>
@@ -1524,6 +1567,9 @@ async function initCardsPage() {
       const sections = [];
       let current = { heading: "", body: [] };
       const isErrataDoc = String(doc.kind || "").toLowerCase() === "errata";
+      const isRuleDoc = String(doc.kind || "").toLowerCase() === "rule";
+      const isFaqDoc =
+        String(doc.kind || "").toLowerCase() === "faq" || /faq/i.test(String(doc.title || ""));
       for (let i = 0; i < lines.length; i += 1) {
         const line = String(lines[i] || "");
         const trimmed = line.trim();
@@ -1581,7 +1627,8 @@ async function initCardsPage() {
         if (paragraphs.length) {
           const bodyParts = paragraphs
             .map((x) => String(x || "").trim())
-            .filter((x) => x && x.toLowerCase() !== headingLow);
+            .filter((x) => x && x.toLowerCase() !== headingLow)
+            .slice(0, isRuleDoc ? 2 : 99);
           const bodyText = bodyParts.map((x) => escapeHtml(x)).join("<br /><br />");
           return {
             snippet: `${escapeHtml(heading)}${bodyText ? `<br /><br />${bodyText}` : ""}`,
@@ -1595,7 +1642,20 @@ async function initCardsPage() {
       const docTitleLow = docTitle.toLowerCase();
       const docTitleHit = needles.find((n) => matchNeedleIndex(docTitleLow, n) >= 0);
       if (docTitleHit) {
-        const bodyFirst = markdownToPlain(markdown).split(/\n\s*\n+/).map((x) => x.trim()).find(Boolean);
+        const bodyParagraphs = markdownToPlain(markdown)
+          .split(/\n\s*\n+/)
+          .map((x) => x.trim())
+          .filter(Boolean);
+        if (isFaqDoc && bodyParagraphs.length) {
+          const pieces = [bodyParagraphs[0]];
+          const next = String(bodyParagraphs[1] || "").trim();
+          if (next && !/^q[:：]/i.test(next)) pieces.push(next);
+          return {
+            snippet: pieces.map((p) => escapeHtml(p)).join("<br /><br />"),
+            query: docTitleHit,
+          };
+        }
+        const bodyFirst = bodyParagraphs.find(Boolean);
         if (bodyFirst) return toSnippetFromParagraph(bodyFirst, docTitleHit);
         return { snippet: escapeHtml(docTitle), query: docTitleHit };
       }
@@ -1607,12 +1667,17 @@ async function initCardsPage() {
         if (headingIsCard && headingLow !== fullLower) continue;
         const matchedParagraphs = [];
         let firstHit = "";
-        for (const paragraph of paragraphs) {
+        for (let idx = 0; idx < paragraphs.length; idx += 1) {
+          const paragraph = paragraphs[idx];
           const lower = paragraph.toLowerCase();
           const hit = needles.find((n) => matchNeedleIndex(lower, n) >= 0);
           if (!hit) continue;
           if (!firstHit) firstHit = hit;
           matchedParagraphs.push(paragraph);
+          if (isFaqDoc) {
+            const next = String(paragraphs[idx + 1] || "").trim();
+            if (next && !/^q[:：]/i.test(next)) matchedParagraphs.push(next);
+          }
           if (matchedParagraphs.length >= 2) break;
         }
         if (matchedParagraphs.length) {
@@ -1665,33 +1730,71 @@ async function initCardsPage() {
     }
     wrap.hidden = false;
     const toHref = (id, query) => {
-      const baseHref =
-        kind === "faq"
-          ? route(`faq-detail/?id=${encodeURIComponent(id)}`)
-          : route(`errata-detail/?id=${encodeURIComponent(id)}`);
+      let baseHref = route(`errata-detail/?id=${encodeURIComponent(id)}`);
+      if (kind === "faq") {
+        baseHref = route(`faq-detail/?id=${encodeURIComponent(id)}`);
+      } else if (kind === "rule") {
+        baseHref = route(`pages/?id=${encodeURIComponent(id)}`);
+      }
       return withQuery(baseHref, "q", query || "");
     };
     listEl.innerHTML = rows
       .map(
         (x) => `
-      <article class="cards-related-item">
+      <a class="cards-related-item cards-related-link" href="${toHref(x.id, x.query)}">
         <p class="muted cards-related-snippet">${x.snippet}</p>
         <div class="cards-related-foot">
-          <a href="${toHref(x.id, x.query)}">${escapeHtml(x.sourceTitle || x.title)}</a>
+          <span>${escapeHtml(x.sourceTitle || x.title)}</span>
         </div>
-      </article>
+      </a>
     `
       )
       .join("");
   };
 
+  const ruleRelationCache = new Map();
+  const findRelatedRules = (cardName) => {
+    const key = String(cardName || "").trim().toLowerCase();
+    if (!key || !coreRuleDoc) return [];
+    if (ruleRelationCache.has(key)) return ruleRelationCache.get(key);
+    const rows = findRelatedDocs([coreRuleDoc], cardName);
+    ruleRelationCache.set(key, rows);
+    return rows;
+  };
+
   const setupRange = (name, minInput, maxInput, valueEl, range) => {
+    const wrap = minInput.parentElement;
+    if (wrap) {
+      minInput.classList.add("range-min");
+      maxInput.classList.add("range-max");
+    }
     minInput.min = String(range.min);
     minInput.max = String(range.max);
     minInput.value = String(range.min);
     maxInput.min = String(range.min);
     maxInput.max = String(range.max);
     maxInput.value = String(range.max);
+    const paint = (minVal, maxVal, from = "") => {
+      const total = Math.max(1, range.max - range.min);
+      const minPct = ((minVal - range.min) / total) * 100;
+      const maxPct = ((maxVal - range.min) / total) * 100;
+      if (wrap) {
+        wrap.style.setProperty("--min-pct", `${Math.max(0, Math.min(100, minPct))}%`);
+        wrap.style.setProperty("--max-pct", `${Math.max(0, Math.min(100, maxPct))}%`);
+      }
+      if (minVal === maxVal) {
+        if (from === "min") {
+          minInput.style.zIndex = "5";
+          maxInput.style.zIndex = "4";
+        } else {
+          minInput.style.zIndex = "4";
+          maxInput.style.zIndex = "5";
+        }
+      } else {
+        minInput.style.zIndex = "4";
+        maxInput.style.zIndex = "5";
+      }
+    };
     const sync = (from) => {
       let minVal = Number(minInput.value);
       let maxVal = Number(maxInput.value);
@@ -1704,12 +1807,14 @@ async function initCardsPage() {
         minInput.value = String(minVal);
       }
       state.ranges[name] = { min: minVal, max: maxVal };
+      paint(minVal, maxVal, from);
       const isAny = minVal === range.min && maxVal === range.max;
       valueEl.textContent = isAny ? "Any" : `${minVal}-${maxVal}`;
       render(1);
     };
     minInput.addEventListener("input", () => sync("min"));
     maxInput.addEventListener("input", () => sync("max"));
+    paint(range.min, range.max, "max");
     valueEl.textContent = "Any";
   };
   setupRange("energy", energyMin, energyMax, energyValue, limits.energy);
@@ -1817,8 +1922,10 @@ async function initCardsPage() {
     modalText.innerHTML = renderCardAbilityText(card.abilityText);
     const relatedFaq = findRelatedDocs(faqs, card.name);
     const relatedErrata = findRelatedDocs(errata, card.name);
+    const relatedRules = findRelatedRules(card.name);
     renderRelatedDocs(relatedFaq, modalFaqWrap, modalFaqList, "faq");
     renderRelatedDocs(relatedErrata, modalErrataWrap, modalErrataList, "errata");
+    renderRelatedDocs(relatedRules, modalRulesWrap, modalRulesList, "rule");
     modal.hidden = false;
     document.body.classList.add("modal-open");
   };
