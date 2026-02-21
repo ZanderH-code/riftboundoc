@@ -3516,29 +3516,7 @@
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">744.1.c.3.</div><div class="rule-text">Equip costs may include both resource costs and non-resource costs.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">744.1.c.4.</div><div class="rule-text">Equip abilities may also include text that alters the Equip cost. Such text is taken</div></div>
-
-<div class="rule-row rule-cont level-1"><div class="rule-id"></div><div class="rule-text">into</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">account</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">when</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">determining</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">a</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">card&#x27;s</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Equip</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">cost</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">for</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">any</div></div>
-
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">reason.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">744.1.c.4.</div><div class="rule-text">Equip abilities may also include text that alters the Equip cost. Such text is taken into account when determining a card&#x27;s Equip cost for any reason.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">744.1.c.5.</div><div class="rule-text">Equip abilities may include text that alters the timing or targeting of the Equip ability.</div></div>
 
