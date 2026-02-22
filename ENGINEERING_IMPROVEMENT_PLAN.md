@@ -251,3 +251,67 @@ Implement in this order:
 5. Extend tests around above changes
 
 This sequence gives strong user-visible improvement without destabilizing the project.
+
+---
+
+## 11) Post-Refactor Status Update (2026-02)
+
+### Completed since initial plan
+
+- Updates deduplication implemented.
+- Cards URL-state persistence implemented.
+- Cards related rules/doc loading moved to lazy and cached behavior.
+- `site.js` modularization substantially advanced (multiple page runtimes extracted).
+- Regression tests added for URL-state and updates dedup.
+- Data contracts and metadata policy docs added under `docs/contracts`.
+- CI gates are active and green on `test` and `main`.
+
+### Remaining high-value engineering work
+
+1. **Reduce startup JS payload via per-page script loading**
+   - Current layout still loads many runtime scripts globally.
+   - Move to route-aware script injection so each page loads only its runtime bundle.
+   - Expected impact: faster first load, lower parse/execute cost, cleaner dependency boundaries.
+
+2. **Finalize removal of broad `window.siteShared` compatibility surface**
+   - Dependency injection is now used, but compatibility globals still exist.
+   - Shrink to minimal, explicit contracts per module and remove legacy fallbacks in phases.
+   - Expected impact: fewer hidden couplings, safer refactors, clearer ownership.
+
+3. **Build-time derived indexes (performance + determinism)**
+   - Generate:
+     - `public/data/updates-index.json`
+     - `public/data/card-related-index.json`
+     - optional `public/data/search-index-lite.json`
+   - Use generated artifacts at runtime instead of repeated client-side heavy transforms.
+   - Expected impact: faster interactions and more predictable behavior.
+
+4. **Metadata policy enforcement at generation step (not only warnings)**
+   - Automatically populate `dataVersion/generatedAt/source` where shape supports it.
+   - Keep array-root datasets backward compatible; plan wrapper migration separately.
+   - Expected impact: auditable data provenance and easier incident/debug tracing.
+
+5. **Add Playwright smoke E2E in CI**
+   - Minimal critical paths:
+     - home render
+     - cards filters + modal
+     - faq/errata detail render
+     - updates type filter
+   - Expected impact: catches integration regressions not visible in unit tests.
+
+6. **Create a lightweight performance baseline report**
+   - Record and track baseline for Home / Cards / Detail pages:
+     - initial payload bytes
+     - TTI/LCP proxy metrics
+     - interaction latency for cards modal and filters
+   - Expected impact: objective before/after proof for optimization work.
+
+### Recommended next implementation order
+
+1. Per-page script loading
+2. Playwright smoke E2E
+3. Build-time derived indexes
+4. Metadata injection in generation flow
+5. Remove legacy `window.siteShared` fallbacks
+6. Performance baseline automation
+
