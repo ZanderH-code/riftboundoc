@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["errata-detail-page.js"];
 ---
-<BaseLayout title="Errata Detail - riftboundoc">
+<BaseLayout title="Errata Detail - riftboundoc" runtimeScripts={runtimeScripts} needsMarked={true}>
   <main class="container">
     <article class="reading-layout">
       <aside class="side-panel">

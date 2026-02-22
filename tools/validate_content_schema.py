@@ -70,6 +70,17 @@ def validate_recommended_metadata_object(payload, label, warnings):
     if not source:
         warnings.append(f"{label} missing recommended metadata: source")
 
+def validate_sidecar_metadata(path: Path, label: str, warnings: list[str]):
+    if not path.exists():
+        warnings.append(f"{label} metadata sidecar is missing: {path.name}")
+        return
+    try:
+        payload = read_json(path)
+    except Exception as error:
+        warnings.append(f"{label} metadata sidecar is invalid JSON: {error}")
+        return
+    validate_recommended_metadata_object(payload, label, warnings)
+
 
 def main():
     errors = []
@@ -80,16 +91,22 @@ def main():
     errata = read_json(ROOT / "data" / "errata.json")
     pages = read_json(ROOT / "data" / "pages.json")
     rules_index = read_json(ROOT / "content" / "rules" / "index.json")
+    updates_index = read_json(ROOT / "data" / "updates-index.json")
+    card_related_index = read_json(ROOT / "data" / "card-related-index.json")
+    search_index_lite = read_json(ROOT / "data" / "search-index-lite.json")
     rules = rules_index.get("rules", [])
 
     validate_recommended_metadata_object(cards, "cards", warnings)
     validate_recommended_metadata_object(rules_index, "rules_index", warnings)
+    validate_recommended_metadata_object(updates_index, "updates_index", warnings)
+    validate_recommended_metadata_object(card_related_index, "card_related_index", warnings)
+    validate_recommended_metadata_object(search_index_lite, "search_index_lite", warnings)
     if isinstance(faqs, list):
-        warnings.append("faqs is a top-level array and cannot carry recommended dataset metadata keys")
+        validate_sidecar_metadata(ROOT / "data" / "faqs.meta.json", "faqs_meta", warnings)
     if isinstance(errata, list):
-        warnings.append("errata is a top-level array and cannot carry recommended dataset metadata keys")
+        validate_sidecar_metadata(ROOT / "data" / "errata.meta.json", "errata_meta", warnings)
     if isinstance(pages, list):
-        warnings.append("pages is a top-level array and cannot carry recommended dataset metadata keys")
+        validate_sidecar_metadata(ROOT / "data" / "pages.meta.json", "pages_meta", warnings)
 
     doc_fields = ["kind", "id", "title", "summary", "content", "source", "publishedAt", "originUrl", "updatedAt"]
     errors.extend(require_fields(faqs, doc_fields, "faqs"))

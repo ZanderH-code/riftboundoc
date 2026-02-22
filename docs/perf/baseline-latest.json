@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-02-22T12:10:14.360Z",
+  "bundleTotals": {
+    "totalBytes": 215231,
+    "jsBytes": 176809,
+    "cssBytes": 38422
+  },
+  "topBundles": [
+    {
+      "file": "assets/js/cards-page.js",
+      "bytes": 67952
+    },
+    {
+      "file": "assets/js/site.js",
+      "bytes": 46289
+    },
+    {
+      "file": "assets/css/styles.css",
+      "bytes": 38422
+    },
+    {
+      "file": "assets/js/search.js",
+      "bytes": 11316
+    },
+    {
+      "file": "assets/js/reader-page.js",
+      "bytes": 10423
+    },
+    {
+      "file": "assets/js/renderers.js",
+      "bytes": 6348
+    },
+    {
+      "file": "assets/js/updates-page.js",
+      "bytes": 6145
+    },
+    {
+      "file": "assets/js/reading-drawer.js",
+      "bytes": 5504
+    },
+    {
+      "file": "assets/js/search-page.js",
+      "bytes": 4168
+    },
+    {
+      "file": "assets/js/core.js",
+      "bytes": 3880
+    },
+    {
+      "file": "assets/js/home-page.js",
+      "bytes": 3124
+    },
+    {
+      "file": "assets/js/page-detail-page.js",
+      "bytes": 2663
+    }
+  ],
+  "pageProbes": [
+    {
+      "path": "/",
+      "status": 200,
+      "elapsedMs": 3.05,
+      "htmlBytes": 4459,
+      "scriptCount": 4,
+      "cssCount": 1
+    },
+    {
+      "path": "/cards/",
+      "status": 200,
+      "elapsedMs": 2.37,
+      "htmlBytes": 7717,
+      "scriptCount": 3,
+      "cssCount": 1
+    },
+    {
+      "path": "/faq-detail/?id=riftbound-origins-faq",
+      "status": 200,
+      "elapsedMs": 1.96,
+      "htmlBytes": 3124,
+      "scriptCount": 4,
+      "cssCount": 1
+    },
+    {
+      "path": "/updates/",
+      "status": 200,
+      "elapsedMs": 1.95,
+      "htmlBytes": 3096,
+      "scriptCount": 3,
+      "cssCount": 1
+    }
+  ]
+}

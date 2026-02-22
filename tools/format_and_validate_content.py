@@ -19,6 +19,7 @@ def run_step(args: list[str]) -> int:
 def main() -> int:
     steps = [
         [sys.executable, "tools/normalize_content.py"],
+        [sys.executable, "tools/build_runtime_indexes.py"],
         [sys.executable, "tools/validate_content_schema.py"],
     ]
     for step in steps:
