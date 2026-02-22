@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = [];
 ---
-<BaseLayout title="FAQ - riftboundoc">
+<BaseLayout title="FAQ - riftboundoc" runtimeScripts={runtimeScripts}>
   <main class="container">
     <h1>FAQ Files</h1>
     <p class="muted">Browse official FAQ entries.</p>
@@ -12,4 +13,3 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     window.site.initFaqPage();
   </script>
 </BaseLayout>
-

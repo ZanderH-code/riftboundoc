@@ -214,19 +214,19 @@ This shifts expensive text matching from client runtime to tooling stage.
 ## 8) Suggested Task Backlog (Actionable)
 
 Priority P0:
-- [ ] Deduplicate updates output logic.
-- [ ] Add architecture + data contract docs folder.
-- [ ] Add perf baseline report template.
+- [x] Deduplicate updates output logic.
+- [x] Add architecture + data contract docs folder.
+- [x] Add perf baseline report template.
 
 Priority P1:
-- [ ] Split cards logic out of `site.js`.
-- [ ] Add build-generated `updates-index.json`.
-- [ ] Add URL state for cards filters.
+- [x] Split cards logic out of `site.js`.
+- [x] Add build-generated `updates-index.json`.
+- [x] Add URL state for cards filters.
 
 Priority P2:
-- [ ] Build-generated card related index.
+- [x] Build-generated card related index.
 - [ ] Reader TOC filter and detail prev/next.
-- [ ] E2E smoke workflow.
+- [x] E2E smoke workflow.
 
 ---
 
@@ -251,3 +251,47 @@ Implement in this order:
 5. Extend tests around above changes
 
 This sequence gives strong user-visible improvement without destabilizing the project.
+
+---
+
+## 11) Post-Refactor Status Update (2026-02)
+
+### Completed since initial plan
+
+- Updates deduplication implemented.
+- Cards URL-state persistence implemented.
+- Cards related rules/doc loading moved to lazy and cached behavior.
+- `site.js` modularization substantially advanced (multiple page runtimes extracted).
+- Regression tests added for URL-state and updates dedup.
+- Data contracts and metadata policy docs added under `docs/contracts`.
+- CI gates are active and green on `test` and `main`.
+- Per-page runtime script loading implemented in Astro layout/pages.
+- Legacy broad `window.siteShared` compatibility layer removed.
+- Build-time runtime indexes implemented and integrated:
+  - `data/updates-index.json`
+  - `data/card-related-index.json`
+  - `data/search-index-lite.json`
+- Metadata auto-injection integrated into content pipeline, with sidecars for array-root datasets.
+- Playwright smoke E2E added with CI workflow integration.
+- Automated performance baseline script/report added under `tools/perf_baseline.mjs` and `docs/performance-baseline.md`.
+
+### Remaining high-value engineering work
+
+1. **Improve cards related-match precision**
+   - Current generated related index uses robust string matching but can still miss edge aliases.
+   - Add optional alias dictionaries and snapshot tests for known problematic names.
+
+2. **Expand smoke E2E coverage for reader/page anchors**
+   - Add checks for `rq/rh/rr/ri` query-driven scroll/highlight behavior.
+   - Include one regression flow for rule-anchor deep-linking.
+
+3. **Add trend retention for performance baselines**
+   - Store timestamped snapshots and compare trend lines over recent runs.
+   - Promote thresholds into CI warnings for unexpected bundle/probe regressions.
+
+### Recommended next implementation order
+
+1. Harden generated related-index matching quality with contract fixtures.
+2. Add reader deep-link E2E regression cases.
+3. Promote perf baseline deltas to CI summary annotations.
+

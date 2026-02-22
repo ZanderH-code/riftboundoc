@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["reader-page.js"];
 ---
-<BaseLayout title="PDF Reader - riftboundoc">
+<BaseLayout title="PDF Reader - riftboundoc" runtimeScripts={runtimeScripts}>
   <main class="container">
     <section id="reader-wrap" class="two-col">
       <article>
@@ -40,4 +41,3 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     window.site.initReader();
   </script>
 </BaseLayout>
-

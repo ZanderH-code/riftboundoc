@@ -103,6 +103,13 @@ function asItems(list) {
   return Array.isArray(list) ? list : [];
 }
 
+function normalizeDatasetItems(payload, key = "items") {
+  if (Array.isArray(payload)) return payload;
+  if (!payload || typeof payload !== "object") return [];
+  if (Array.isArray(payload[key])) return payload[key];
+  return [];
+}
+
 function sortByUpdated(items) {
   return [...asItems(items)].sort((a, b) =>
     String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""))
@@ -912,49 +919,232 @@ function initMobileTocDrawer() {
   if (window.matchMedia("(min-width: 981px)").matches) openDrawer();
 }
 
-function initReaderPrefs() {
+function initReaderPrefs(options = {}) {
+  const { onSettle } = options;
   const keys = {
     scale: "rb_reader_scale",
     line: "rb_reader_line",
     width: "rb_reader_width",
   };
-  const root = document.documentElement;
-  const apply = () => {
-    root.style.setProperty("--reader-font-scale", localStorage.getItem(keys.scale) || "1");
-    root.style.setProperty("--reader-line-height", localStorage.getItem(keys.line) || "1.72");
-    root.style.setProperty("--reader-max-width", localStorage.getItem(keys.width) || "100%");
+  const defaults = {
+    scale: 1,
+    line: 1.72,
+    width: 100,
   };
-  apply();
+  const limits = {
+    scale: { min: 0.9, max: 1.3, step: 0.05 },
+    line: { min: 1.4, max: 2.0, step: 0.05 },
+    width: { min: 60, max: 100, step: 5 },
+  };
+  const root = document.documentElement;
+  const clampToStep = (value, min, max, step) => {
+    const num = Number.parseFloat(String(value));
+    if (!Number.isFinite(num)) return min;
+    const bounded = Math.max(min, Math.min(max, num));
+    const snapped = Math.round((bounded - min) / step) * step + min;
+    return Number(snapped.toFixed(4));
+  };
+  const parseStored = () => ({
+    scale: clampToStep(localStorage.getItem(keys.scale) ?? defaults.scale, limits.scale.min, limits.scale.max, limits.scale.step),
+    line: clampToStep(localStorage.getItem(keys.line) ?? defaults.line, limits.line.min, limits.line.max, limits.line.step),
+    width: clampToStep(
+      String(localStorage.getItem(keys.width) ?? `${defaults.width}%`).replace("%", ""),
+      limits.width.min,
+      limits.width.max,
+      limits.width.step
+    ),
+  });
+  const state = parseStored();
+  const presets = {
+    compact: { scale: 0.95, line: 1.62, width: 96 },
+    balanced: { scale: defaults.scale, line: defaults.line, width: defaults.width },
+    comfort: { scale: 1.1, line: 1.85, width: 88 },
+  };
+  let rafId = 0;
+  let nextPaint = null;
+  let persistTimer = 0;
+  const apply = (values) => {
+    root.style.setProperty("--reader-font-scale", String(values.scale));
+    root.style.setProperty("--reader-line-height", String(values.line));
+    root.style.setProperty("--reader-max-width", `${values.width}%`);
+  };
+  const queueApply = () => {
+    nextPaint = { ...state };
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(() => {
+      rafId = 0;
+      if (!nextPaint) return;
+      apply(nextPaint);
+      nextPaint = null;
+    });
+  };
+  const persist = () => {
+    localStorage.setItem(keys.scale, String(state.scale));
+    localStorage.setItem(keys.line, String(state.line));
+    localStorage.setItem(keys.width, `${state.width}%`);
+  };
+  const schedulePersist = () => {
+    if (persistTimer) window.clearTimeout(persistTimer);
+    persistTimer = window.setTimeout(() => {
+      persistTimer = 0;
+      persist();
+    }, 220);
+  };
+  const flushPersist = () => {
+    if (persistTimer) {
+      window.clearTimeout(persistTimer);
+      persistTimer = 0;
+    }
+    persist();
+  };
+  const notifySettled = () => {
+    document.dispatchEvent(new CustomEvent("readerprefschange", { detail: { ...state } }));
+    if (typeof onSettle === "function") onSettle({ ...state });
+  };
+  const settle = () => {
+    queueApply();
+    flushPersist();
+    notifySettled();
+  };
+  apply(state);
   const host = q("#reader-prefs");
   if (!host) return;
   host.innerHTML = `
-    <div class="reader-prefs">
-      <label>Font <input id="pref-scale" type="range" min="0.9" max="1.3" step="0.05" value="${localStorage.getItem(
-        keys.scale
-      ) || "1"}" /></label>
-      <label>Line <input id="pref-line" type="range" min="1.4" max="2.0" step="0.05" value="${localStorage.getItem(
-        keys.line
-      ) || "1.72"}" /></label>
-      <label>Width <input id="pref-width" type="range" min="60" max="100" step="5" value="${(
-        localStorage.getItem(keys.width) || "100%"
-      ).replace("%", "")}" /></label>
+    <div class="reader-prefs reader-prefs-modern">
+      <div class="reader-prefs-presets" role="group" aria-label="Reader presets">
+        <button type="button" class="reader-preset-btn" data-preset="compact">Compact</button>
+        <button type="button" class="reader-preset-btn" data-preset="balanced">Balanced</button>
+        <button type="button" class="reader-preset-btn" data-preset="comfort">Comfort</button>
+      </div>
+      <label class="reader-pref-control" for="pref-scale">
+        <span class="reader-pref-head"><span>Font size</span><strong id="pref-scale-value">100%</strong></span>
+        <input id="pref-scale" type="range" min="0.9" max="1.3" step="0.05" value="${state.scale}" />
+      </label>
+      <label class="reader-pref-control" for="pref-line">
+        <span class="reader-pref-head"><span>Line height</span><strong id="pref-line-value">1.72</strong></span>
+        <input id="pref-line" type="range" min="1.4" max="2.0" step="0.05" value="${state.line}" />
+      </label>
+      <label class="reader-pref-control" for="pref-width">
+        <span class="reader-pref-head"><span>Content width</span><strong id="pref-width-value">100%</strong></span>
+        <input id="pref-width" type="range" min="60" max="100" step="5" value="${state.width}" />
+      </label>
+      <button id="pref-reset" type="button" class="secondary reader-prefs-reset">Reset</button>
     </div>
   `;
-  q("#pref-scale")?.addEventListener("input", (e) => {
-    localStorage.setItem(keys.scale, e.target.value);
-    apply();
+  const scaleInput = q("#pref-scale");
+  const lineInput = q("#pref-line");
+  const widthInput = q("#pref-width");
+  const scaleValue = q("#pref-scale-value");
+  const lineValue = q("#pref-line-value");
+  const widthValue = q("#pref-width-value");
+  const resetBtn = q("#pref-reset");
+  const presetButtons = Array.from(host.querySelectorAll(".reader-preset-btn"));
+  if (!scaleInput || !lineInput || !widthInput || !scaleValue || !lineValue || !widthValue || !resetBtn) return;
+
+  const updateRangeFill = (input) => {
+    const min = Number.parseFloat(input.min) || 0;
+    const max = Number.parseFloat(input.max) || 100;
+    const value = Number.parseFloat(input.value) || min;
+    const pct = max <= min ? 0 : ((value - min) / (max - min)) * 100;
+    input.style.setProperty("--range-progress", `${Math.max(0, Math.min(100, pct))}%`);
+  };
+  const updateLabels = () => {
+    scaleValue.textContent = `${Math.round(state.scale * 100)}%`;
+    lineValue.textContent = state.line.toFixed(2);
+    widthValue.textContent = `${Math.round(state.width)}%`;
+  };
+  const matchesPreset = (name) => {
+    const preset = presets[name];
+    if (!preset) return false;
+    return (
+      Math.abs(preset.scale - state.scale) < 0.001 &&
+      Math.abs(preset.line - state.line) < 0.001 &&
+      Math.abs(preset.width - state.width) < 0.001
+    );
+  };
+  const updatePresetState = () => {
+    presetButtons.forEach((button) => {
+      const active = matchesPreset(button.dataset.preset);
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  };
+  const syncUiFromState = () => {
+    scaleInput.value = String(state.scale);
+    lineInput.value = String(state.line);
+    widthInput.value = String(state.width);
+    updateLabels();
+    updateRangeFill(scaleInput);
+    updateRangeFill(lineInput);
+    updateRangeFill(widthInput);
+    updatePresetState();
+  };
+  const readInputsIntoState = () => {
+    state.scale = clampToStep(scaleInput.value, limits.scale.min, limits.scale.max, limits.scale.step);
+    state.line = clampToStep(lineInput.value, limits.line.min, limits.line.max, limits.line.step);
+    state.width = clampToStep(widthInput.value, limits.width.min, limits.width.max, limits.width.step);
+  };
+  const onInput = () => {
+    readInputsIntoState();
+    updateLabels();
+    updateRangeFill(scaleInput);
+    updateRangeFill(lineInput);
+    updateRangeFill(widthInput);
+    updatePresetState();
+    queueApply();
+    schedulePersist();
+  };
+
+  scaleInput.addEventListener("input", onInput);
+  lineInput.addEventListener("input", onInput);
+  widthInput.addEventListener("input", onInput);
+  scaleInput.addEventListener("change", settle);
+  lineInput.addEventListener("change", settle);
+  widthInput.addEventListener("change", settle);
+
+  presetButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const preset = presets[button.dataset.preset];
+      if (!preset) return;
+      state.scale = preset.scale;
+      state.line = preset.line;
+      state.width = preset.width;
+      syncUiFromState();
+      settle();
+    });
   });
-  q("#pref-line")?.addEventListener("input", (e) => {
-    localStorage.setItem(keys.line, e.target.value);
-    apply();
+  resetBtn.addEventListener("click", () => {
+    state.scale = defaults.scale;
+    state.line = defaults.line;
+    state.width = defaults.width;
+    syncUiFromState();
+    settle();
   });
-  q("#pref-width")?.addEventListener("input", (e) => {
-    localStorage.setItem(keys.width, `${e.target.value}%`);
-    apply();
-  });
+  syncUiFromState();
+}
+
+let searchIndexLitePromise = null;
+
+async function getSearchIndexLite() {
+  if (searchIndexLitePromise) return searchIndexLitePromise;
+  searchIndexLitePromise = (async () => {
+    const payload = await getJson("data/search-index-lite.json", null);
+    if (!payload || typeof payload !== "object") return null;
+    const docs = normalizeDatasetItems(payload, "docs");
+    if (!docs.length) return null;
+    return docs.map((doc) => ({
+      kind: doc.kind || "Rule",
+      title: doc.title || "Untitled document",
+      href: doc.href ? route(String(doc.href).replace(/^\/+/, "")) : route(String(doc.hrefPath || "")),
+      text: String(doc.text || ""),
+    }));
+  })();
+  return searchIndexLitePromise;
 }
 
 async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
+  const prebuilt = await getSearchIndexLite();
+  if (prebuilt && prebuilt.length) return prebuilt;
   const docs = [];
 
   for (const page of asItems(pages)) {
@@ -1291,6 +1481,7 @@ async function initCardsPage() {
     return window.cardsPage.initCardsPage({
       q,
       route,
+      withQuery,
       getJson,
       asItems,
       normalizeRuleIndex,
@@ -1298,6 +1489,8 @@ async function initCardsPage() {
       escapeHtml,
       renderSearchPager,
       normalizeSearchText,
+      extractRuleId,
+      ruleTokenToAnchorId,
     });
   }
   console.warn("cards-page.js is not loaded; cards page initialization skipped.");
@@ -1368,43 +1561,6 @@ async function initUpdatesPage() {
   }
   console.warn("updates-page.js is not loaded; updates page initialization skipped.");
 }
-
-window.siteShared = {
-  ...(window.siteShared || {}),
-  q,
-  route,
-  withQuery,
-  showStatus,
-  getJson,
-  asItems,
-  sortByUpdated,
-  sortByPublishedThenUpdated,
-  sortByTime,
-  mountTimeSortControls,
-  today,
-  formatDate,
-  renderFaq,
-  renderErrata,
-  renderRules,
-  renderPages,
-  bindPageCards,
-  resolveRuleLink,
-  normalizeRuleIndex,
-  normalizeCardsData,
-  normalizeDocumentMarkdown,
-  tagRuleRowsForAnchors,
-  buildPageToc,
-  buildSearchIndex,
-  searchDocs,
-  buildTocFor,
-  highlightQueryIn,
-  initReaderPrefs,
-  initMobileTocDrawer,
-  markdownToPlain,
-  escapeHtml,
-  renderSearchPager,
-  normalizeSearchText,
-};
 
 window.site = {
   navActive,

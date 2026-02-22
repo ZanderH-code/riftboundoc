@@ -5,6 +5,11 @@
       const clean = String(path || "").replace(/^\/+/, "");
       return `/${clean}`;
     },
+    withQuery: (href, key, value) => {
+      const url = new URL(href, window.location.href);
+      if (value) url.searchParams.set(key, value);
+      return url.pathname + (url.search || "");
+    },
     getJson: (_path, fallback = null) => Promise.resolve(fallback),
     asItems: (list) => (Array.isArray(list) ? list : []),
     normalizeRuleIndex: (indexData) => (Array.isArray(indexData) ? indexData : []),
@@ -18,6 +23,24 @@
         .replace(/'/g, "&#39;"),
     renderSearchPager: () => {},
     normalizeSearchText: (value) => String(value || "").toLowerCase(),
+    extractRuleId: (value) => {
+      const m = String(value || "").match(/(^|\s)(\d+(?:\.[0-9a-z]+)*\.?)(?=\s|$)/i);
+      return m ? String(m[2] || "").trim() : "";
+    },
+    ruleTokenToAnchorId: (value) =>
+      String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\.+$/, "")
+        .replace(/[^0-9a-z.]+/g, "")
+        .replace(/\./g, "-")
+        ? `rule-${String(value || "")
+            .trim()
+            .toLowerCase()
+            .replace(/\.+$/, "")
+            .replace(/[^0-9a-z.]+/g, "")
+            .replace(/\./g, "-")}`
+        : "",
   };
 
   function resolveDeps(deps = {}) {
@@ -29,6 +52,7 @@
 
   let q = fallbackDeps.q;
   let route = fallbackDeps.route;
+  let withQuery = fallbackDeps.withQuery;
   let getJson = fallbackDeps.getJson;
   let asItems = fallbackDeps.asItems;
   let normalizeRuleIndex = fallbackDeps.normalizeRuleIndex;
@@ -36,6 +60,8 @@
   let escapeHtml = fallbackDeps.escapeHtml;
   let renderSearchPager = fallbackDeps.renderSearchPager;
   let normalizeSearchText = fallbackDeps.normalizeSearchText;
+  let extractRuleId = fallbackDeps.extractRuleId;
+  let ruleTokenToAnchorId = fallbackDeps.ruleTokenToAnchorId;
   const normalizeCardsData = (data) => {
     if (Array.isArray(data)) return data;
     if (data && typeof data === 'object' && Array.isArray(data.cards)) return data.cards;
@@ -87,8 +113,21 @@
     })
     .join("");
 }
+  function normalizeLegacyResourceTokens(text) {
+  const value = String(text || "");
+  return value.replace(/\[([^\]\s]+)\]?([.,;:!?])?/g, (match, tokenRaw, punctuation = "") => {
+    const token = String(tokenRaw || "").trim().toLowerCase();
+    if (/^\d+$/.test(token)) {
+      return `:rb_energy_${token}:${punctuation}`;
+    }
+    if (token === "a" || token === "🌈") {
+      return `:rb_rune_rainbow:${punctuation}`;
+    }
+    return match;
+  });
+}
   function renderCardAbilityText(text) {
-  const raw = String(text || "").replace(/\r\n?/g, "\n");
+  const raw = normalizeLegacyResourceTokens(String(text || "").replace(/\r\n?/g, "\n"));
   if (!raw.trim()) return "No ability text.";
 
   const runeIcon = {
@@ -126,13 +165,14 @@
   return html.replace(/\n/g, "<br />");
 }
   async function initCardsPage(deps = {}) {
-  ({ q, route, getJson, asItems, normalizeRuleIndex, markdownToPlain, escapeHtml, renderSearchPager, normalizeSearchText } = resolveDeps(deps));
+  ({ q, route, withQuery, getJson, asItems, normalizeRuleIndex, markdownToPlain, escapeHtml, renderSearchPager, normalizeSearchText, extractRuleId, ruleTokenToAnchorId } = resolveDeps(deps));
   const raw = await getJson("data/cards.json", { cards: [] });
   const faqs = await getJson("data/faqs.json", []);
   const errata = await getJson("data/errata.json", []);
   const pages = await getJson("data/pages.json", []);
   const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
   const rules = normalizeRuleIndex(rulesIndex);
+  const relatedIndexPayload = await getJson("data/card-related-index.json", null);
   const cards = normalizeCardsData(raw);
   const list = q("#cards-list");
   const meta = q("#cards-meta");
@@ -237,6 +277,61 @@
     !modalRulesList
   ) {
     return;
+  }
+
+  const normalizeForMatch = (value) =>
+    String(value || "")
+      .normalize("NFKC")
+      .replace(/[’‘`´]/g, "'")
+      .replace(/[“”]/g, '"')
+      .replace(/鈥檚/g, "'s")
+      .replace(/鈥檛/g, "'t")
+      .replace(/鈥檒/g, "'l")
+      .replace(/鈥檓/g, "'m")
+      .replace(/鈥檙/g, "'r")
+      .replace(/鈥檝/g, "'v")
+      .replace(/鈥檇/g, "'d")
+      .toLowerCase();
+
+  const buildIndexedRows = (rows) =>
+    asItems(rows)
+      .map((row) => ({
+        id: String(row.id || "").trim(),
+        title: row.title || row.sourceTitle || "Untitled",
+        sourceTitle: row.sourceTitle || row.title || "Untitled",
+        matches: asItems(row.matches)
+          .map((hit) => ({
+            snippet: String(hit.snippet || ""),
+            query: String(hit.query || ""),
+            jumpQuery: String(hit.jumpQuery || ""),
+            anchorText: String(hit.anchorText || ""),
+            anchorHeading: String(hit.anchorHeading || ""),
+            anchorIndex: Math.max(1, Number.parseInt(hit.anchorIndex || "1", 10) || 1),
+            ruleId: String(hit.ruleId || ""),
+          }))
+          .slice(0, 16),
+      }))
+      .filter((row) => row.id && row.matches.length);
+
+  const relatedByCardId = new Map();
+  const relatedByCardName = new Map();
+  if (relatedIndexPayload && typeof relatedIndexPayload === "object") {
+    const byCardId = relatedIndexPayload.byCardId || {};
+    for (const [cardId, group] of Object.entries(byCardId)) {
+      relatedByCardId.set(String(cardId).trim(), {
+        faq: buildIndexedRows(group?.faq),
+        errata: buildIndexedRows(group?.errata),
+        rule: buildIndexedRows(group?.rule),
+      });
+    }
+    const byCardName = relatedIndexPayload.byCardName || {};
+    for (const [nameKey, group] of Object.entries(byCardName)) {
+      relatedByCardName.set(normalizeForMatch(nameKey), {
+        faq: buildIndexedRows(group?.faq),
+        errata: buildIndexedRows(group?.errata),
+        rule: buildIndexedRows(group?.rule),
+      });
+    }
   }
 
   const rulePageIds = asItems(rules)
@@ -605,20 +700,6 @@
   );
 
   const findRelatedDocs = (docs, cardName, fallbackKind = "") => {
-    const normalizeForMatch = (value) =>
-      String(value || "")
-        .normalize("NFKC")
-        .replace(/[’‘`´]/g, "'")
-        .replace(/[“”]/g, '"')
-        // Common mojibake forms seen in imported content.
-        .replace(/鈥檚/g, "'s")
-        .replace(/鈥檛/g, "'t")
-        .replace(/鈥檒/g, "'l")
-        .replace(/鈥檓/g, "'m")
-        .replace(/鈥檙/g, "'r")
-        .replace(/鈥檝/g, "'v")
-        .replace(/鈥檇/g, "'d")
-        .toLowerCase();
     const full = String(cardName || "").trim();
     if (!full) return [];
     const fullLower = normalizeForMatch(full);
@@ -1130,6 +1211,16 @@
   };
 
   const ruleRelationCache = new Map();
+  const getIndexedRelations = (card) => {
+    const cardId = String(card?.id || "").trim();
+    const cardName = normalizeForMatch(card?.name || "");
+    const fromId = relatedByCardId.get(cardId);
+    if (fromId) return fromId;
+    const fromName = relatedByCardName.get(cardName);
+    if (fromName) return fromName;
+    return null;
+  };
+
   const findRelatedRules = async (cardName) => {
     const key = String(cardName || "").trim().toLowerCase();
     if (!key || !rulePageIds.length) return [];
@@ -1515,9 +1606,18 @@
     } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
     modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
     modalText.innerHTML = renderCardAbilityText(card.abilityText);
-    const relatedFaq = findRelatedDocs(faqs, card.name, "faq");
-    const relatedErrata = findRelatedDocs(errata, card.name, "errata");
-    const relatedRules = await findRelatedRules(card.name);
+    const indexedRelations = getIndexedRelations(card);
+    const relatedFaqLive = findRelatedDocs(faqs, card.name, "faq");
+    const relatedErrataLive = findRelatedDocs(errata, card.name, "errata");
+    const relatedRulesLive = await findRelatedRules(card.name);
+
+    const relatedFaq = relatedFaqLive.length ? relatedFaqLive : indexedRelations ? indexedRelations.faq : [];
+    const relatedErrata = relatedErrataLive.length
+      ? relatedErrataLive
+      : indexedRelations
+        ? indexedRelations.errata
+        : [];
+    const relatedRules = relatedRulesLive.length ? relatedRulesLive : indexedRelations ? indexedRelations.rule : [];
     renderRelatedDocs(relatedFaq, modalFaqWrap, modalFaqList, "faq");
     renderRelatedDocs(relatedErrata, modalErrataWrap, modalErrataList, "errata");
     renderRelatedDocs(relatedRules, modalRulesWrap, modalRulesList, "rule");

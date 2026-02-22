@@ -70,7 +70,12 @@
 
     tagRuleRowsForAnchors("#page-content");
     buildPageToc();
-    initReaderPrefs();
+    initReaderPrefs({
+      onSettle: () => {
+        buildPageToc();
+        highlightQueryIn("#page-content");
+      },
+    });
     initMobileTocDrawer();
     highlightQueryIn("#page-content");
   }

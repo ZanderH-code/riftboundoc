@@ -56,7 +56,12 @@
       q("#errata-content").innerHTML = `<pre>${body}</pre>`;
     }
 
-    initReaderPrefs();
+    initReaderPrefs({
+      onSettle: () => {
+        buildTocFor("#errata-content", "#errata-toc");
+        highlightQueryIn("#errata-content");
+      },
+    });
     buildTocFor("#errata-content", "#errata-toc");
     initMobileTocDrawer();
     highlightQueryIn("#errata-content");

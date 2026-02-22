@@ -56,7 +56,12 @@
       q("#faq-content").innerHTML = `<pre>${body}</pre>`;
     }
 
-    initReaderPrefs();
+    initReaderPrefs({
+      onSettle: () => {
+        buildTocFor("#faq-content", "#faq-toc");
+        highlightQueryIn("#faq-content");
+      },
+    });
     buildTocFor("#faq-content", "#faq-toc");
     initMobileTocDrawer();
     highlightQueryIn("#faq-content");

@@ -10,9 +10,13 @@
     "preview": "astro preview",
     "sync:public": "python tools/sync_public.py",
     "test": "vitest",
-    "test:ci": "vitest run"
+    "test:ci": "vitest run",
+    "test:e2e": "playwright test -c playwright.config.ts",
+    "test:e2e:ci": "npm run build && playwright test -c playwright.config.ts --reporter=line",
+    "perf:baseline": "npm run build && node tools/perf_baseline.mjs"
   },
   "devDependencies": {
+    "@playwright/test": "^1.52.0",
     "astro": "^5.2.0",
     "typescript": "^5.7.3",
     "vitest": "^2.1.8"

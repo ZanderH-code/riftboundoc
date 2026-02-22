@@ -17649,5 +17649,7 @@
       "imageAlt": "Riftbound Gear: Zhonya's Hourglass. [Hidden] (Hide now for [A] to react with later for [0].)\nIf a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)",
       "abilityText": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)\nIf a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)"
     }
-  ]
+  ],
+  "dataVersion": "1.0.0",
+  "generatedAt": "2026-02-22T13:01:49Z"
 }

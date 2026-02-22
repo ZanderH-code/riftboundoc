@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = [];
 ---
-<BaseLayout title="Errata - riftboundoc">
+<BaseLayout title="Errata - riftboundoc" runtimeScripts={runtimeScripts}>
   <main class="container">
     <h1>Errata Files</h1>
     <p class="muted">Browse official errata entries.</p>
@@ -12,4 +13,3 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     window.site.initErrataPage();
   </script>
 </BaseLayout>
-
