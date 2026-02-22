@@ -5,6 +5,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   <main class="container">
     <h1>Updates</h1>
     <p class="muted">Latest updates across FAQ, Errata, Rules, and pages.</p>
+    <div id="updates-type-filters" class="updates-type-filters" role="group" aria-label="Filter updates by type">
+      <button type="button" class="updates-type-btn active" data-kind="all">All</button>
+      <button type="button" class="updates-type-btn" data-kind="faq">FAQ</button>
+      <button type="button" class="updates-type-btn" data-kind="errata">Errata</button>
+      <button type="button" class="updates-type-btn" data-kind="rule">Rule</button>
+    </div>
     <div id="updates-list" class="list"></div>
   </main>
   <script is:inline>

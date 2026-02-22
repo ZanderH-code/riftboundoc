@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ISO_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T")
+SEMVER_RE = re.compile(r"^\d+\.\d+\.\d+$")
 
 
 def read_json(path: Path):
@@ -47,14 +48,48 @@ def validate_unique_ids(rows, label, errors):
         seen.add(rid)
 
 
+def validate_recommended_metadata_object(payload, label, warnings):
+    if not isinstance(payload, dict):
+        warnings.append(f"{label} has no top-level object metadata container")
+        return
+
+    data_version = str(payload.get("dataVersion", "")).strip()
+    generated_at = str(payload.get("generatedAt", "")).strip()
+    source = str(payload.get("source", "")).strip()
+
+    if not data_version:
+        warnings.append(f"{label} missing recommended metadata: dataVersion")
+    elif not SEMVER_RE.match(data_version):
+        warnings.append(f"{label}.dataVersion should use semver (example: 1.0.0), got: {data_version}")
+
+    if not generated_at:
+        warnings.append(f"{label} missing recommended metadata: generatedAt")
+    elif not ISO_RE.match(generated_at):
+        warnings.append(f"{label}.generatedAt should be ISO-8601 datetime, got: {generated_at}")
+
+    if not source:
+        warnings.append(f"{label} missing recommended metadata: source")
+
+
 def main():
     errors = []
+    warnings = []
 
+    cards = read_json(ROOT / "data" / "cards.json")
     faqs = read_json(ROOT / "data" / "faqs.json")
     errata = read_json(ROOT / "data" / "errata.json")
     pages = read_json(ROOT / "data" / "pages.json")
     rules_index = read_json(ROOT / "content" / "rules" / "index.json")
     rules = rules_index.get("rules", [])
+
+    validate_recommended_metadata_object(cards, "cards", warnings)
+    validate_recommended_metadata_object(rules_index, "rules_index", warnings)
+    if isinstance(faqs, list):
+        warnings.append("faqs is a top-level array and cannot carry recommended dataset metadata keys")
+    if isinstance(errata, list):
+        warnings.append("errata is a top-level array and cannot carry recommended dataset metadata keys")
+    if isinstance(pages, list):
+        warnings.append("pages is a top-level array and cannot carry recommended dataset metadata keys")
 
     doc_fields = ["kind", "id", "title", "summary", "content", "source", "publishedAt", "originUrl", "updatedAt"]
     errors.extend(require_fields(faqs, doc_fields, "faqs"))
@@ -123,6 +158,11 @@ def main():
         for err in errors:
             print(f"- {err}")
         sys.exit(1)
+
+    if warnings:
+        print("Schema metadata warnings:")
+        for warn in warnings:
+            print(f"- {warn}")
 
     print("Schema validation passed.")
 
