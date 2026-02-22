@@ -2,6 +2,7 @@ name: QA
 
 on:
   push:
+    branches: ["test", "main"]
   pull_request:
 
 jobs:
@@ -18,7 +19,9 @@ jobs:
           python-version: "3.11"
       - name: Install deps
         run: npm ci
+      - name: Content check
+        run: npm run content:check
+      - name: Tests (CI)
+        run: npm run test:ci
       - name: Build
         run: npm run build
-      - name: Run predeploy checks
-        run: python tools/predeploy_check.py
