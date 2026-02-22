@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["page-detail-page.js"];
 ---
-<BaseLayout title="Pages - riftboundoc">
+<BaseLayout title="Pages - riftboundoc" runtimeScripts={runtimeScripts} needsMarked={true}>
   <main class="container">
     <h1>Community Pages</h1>
     <p class="muted">Read structured rules and guides in web-native format.</p>

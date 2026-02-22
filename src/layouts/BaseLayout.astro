@@ -2,11 +2,19 @@
 interface Props {
   title: string;
   description?: string;
+  runtimeScripts?: string[];
+  needsMarked?: boolean;
 }
 
-const { title, description = "riftboundoc" } = Astro.props;
+const {
+  title,
+  description = "riftboundoc",
+  runtimeScripts = [],
+  needsMarked = false,
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
 const siteVersion = "2026.02.20.22";
+const scriptVersion = "20260220v";
 ---
 <!doctype html>
 <html lang="en">
@@ -16,19 +24,10 @@ const siteVersion = "2026.02.20.22";
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/webp" href={`${base}assets/img/domains/order.webp`} />
-    <link rel="stylesheet" href={`${base}assets/css/styles.css?v=20260220v`} />
-    <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src={`${base}assets/js/cards-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/updates-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/faq-detail-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/errata-detail-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/rules-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/reader-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/search-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/home-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/page-list-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/page-detail-page.js?v=20260220v`}></script>
-    <script src={`${base}assets/js/site.js?v=20260220v`}></script>
+    <link rel="stylesheet" href={`${base}assets/css/styles.css?v=${scriptVersion}`} />
+    {needsMarked && <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>}
+    <script src={`${base}assets/js/site.js?v=${scriptVersion}`}></script>
+    {runtimeScripts.map((file) => <script src={`${base}assets/js/${file}?v=${scriptVersion}`}></script>)}
   </head>
   <body>
     <header class="topbar">

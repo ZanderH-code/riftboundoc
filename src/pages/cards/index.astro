@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["cards-page.js"];
 ---
-<BaseLayout title="Cards - riftboundoc" description="Official Riftbound card gallery in riftboundoc.">
+<BaseLayout
+  title="Cards - riftboundoc"
+  description="Official Riftbound card gallery in riftboundoc."
+  runtimeScripts={runtimeScripts}
+>
   <main class="container">
     <h1>Card Gallery</h1>
     <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>

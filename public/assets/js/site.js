@@ -103,6 +103,13 @@ function asItems(list) {
   return Array.isArray(list) ? list : [];
 }
 
+function normalizeDatasetItems(payload, key = "items") {
+  if (Array.isArray(payload)) return payload;
+  if (!payload || typeof payload !== "object") return [];
+  if (Array.isArray(payload[key])) return payload[key];
+  return [];
+}
+
 function sortByUpdated(items) {
   return [...asItems(items)].sort((a, b) =>
     String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""))
@@ -954,7 +961,28 @@ function initReaderPrefs() {
   });
 }
 
+let searchIndexLitePromise = null;
+
+async function getSearchIndexLite() {
+  if (searchIndexLitePromise) return searchIndexLitePromise;
+  searchIndexLitePromise = (async () => {
+    const payload = await getJson("data/search-index-lite.json", null);
+    if (!payload || typeof payload !== "object") return null;
+    const docs = normalizeDatasetItems(payload, "docs");
+    if (!docs.length) return null;
+    return docs.map((doc) => ({
+      kind: doc.kind || "Rule",
+      title: doc.title || "Untitled document",
+      href: doc.href ? route(String(doc.href).replace(/^\/+/, "")) : route(String(doc.hrefPath || "")),
+      text: String(doc.text || ""),
+    }));
+  })();
+  return searchIndexLitePromise;
+}
+
 async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
+  const prebuilt = await getSearchIndexLite();
+  if (prebuilt && prebuilt.length) return prebuilt;
   const docs = [];
 
   for (const page of asItems(pages)) {
@@ -1291,6 +1319,7 @@ async function initCardsPage() {
     return window.cardsPage.initCardsPage({
       q,
       route,
+      withQuery,
       getJson,
       asItems,
       normalizeRuleIndex,
@@ -1298,6 +1327,8 @@ async function initCardsPage() {
       escapeHtml,
       renderSearchPager,
       normalizeSearchText,
+      extractRuleId,
+      ruleTokenToAnchorId,
     });
   }
   console.warn("cards-page.js is not loaded; cards page initialization skipped.");
@@ -1368,43 +1399,6 @@ async function initUpdatesPage() {
   }
   console.warn("updates-page.js is not loaded; updates page initialization skipped.");
 }
-
-window.siteShared = {
-  ...(window.siteShared || {}),
-  q,
-  route,
-  withQuery,
-  showStatus,
-  getJson,
-  asItems,
-  sortByUpdated,
-  sortByPublishedThenUpdated,
-  sortByTime,
-  mountTimeSortControls,
-  today,
-  formatDate,
-  renderFaq,
-  renderErrata,
-  renderRules,
-  renderPages,
-  bindPageCards,
-  resolveRuleLink,
-  normalizeRuleIndex,
-  normalizeCardsData,
-  normalizeDocumentMarkdown,
-  tagRuleRowsForAnchors,
-  buildPageToc,
-  buildSearchIndex,
-  searchDocs,
-  buildTocFor,
-  highlightQueryIn,
-  initReaderPrefs,
-  initMobileTocDrawer,
-  markdownToPlain,
-  escapeHtml,
-  renderSearchPager,
-  normalizeSearchText,
-};
 
 window.site = {
   navActive,

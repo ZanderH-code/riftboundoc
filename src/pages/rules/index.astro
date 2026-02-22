@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["rules-page.js"];
 ---
-<BaseLayout title="Rules - riftboundoc">
+<BaseLayout title="Rules - riftboundoc" runtimeScripts={runtimeScripts}>
   <main class="container">
     <h1>Rule Files</h1>
     <p class="muted">Browse rule resources.</p>
@@ -12,4 +13,3 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     window.site.initRulePage();
   </script>
 </BaseLayout>
-

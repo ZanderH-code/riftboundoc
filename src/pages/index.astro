@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const runtimeScripts = ["home-page.js", "search-page.js"];
 ---
-<BaseLayout title="riftboundoc" description="riftboundoc: searchable FAQ, errata, and rules.">
+<BaseLayout
+  title="riftboundoc"
+  description="riftboundoc: searchable FAQ, errata, and rules."
+  runtimeScripts={runtimeScripts}
+>
   <main class="container">
     <section class="hero">
       <h1>Riftbound FAQ and Rules Portal</h1>
@@ -55,4 +60,3 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     window.site.initHome();
   </script>
 </BaseLayout>
-

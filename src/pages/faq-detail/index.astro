@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["faq-detail-page.js"];
 ---
-<BaseLayout title="FAQ Detail - riftboundoc">
+<BaseLayout title="FAQ Detail - riftboundoc" runtimeScripts={runtimeScripts} needsMarked={true}>
   <main class="container">
     <article class="reading-layout">
       <aside class="side-panel">

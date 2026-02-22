@@ -78,40 +78,58 @@
     const filterRoot = q("#updates-type-filters");
     if (!wrap) return;
 
-    const pages = await getJson("data/pages.json", []);
-    const faqs = await getJson("data/faqs.json", []);
-    const errata = await getJson("data/errata.json", []);
-    const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
-    const rules = normalizeRuleIndex(rulesIndex);
+    const updatesIndex = await getJson("data/updates-index.json", null);
+    const indexItems =
+      updatesIndex && typeof updatesIndex === "object" && Array.isArray(updatesIndex.items)
+        ? updatesIndex.items
+        : null;
 
-    const items = deduplicateUpdateItems([
-      ...asItems(faqs).map((x) => ({
-        kind: "FAQ",
-        title: x.title || "Untitled FAQ",
-        updatedAt: x.updatedAt,
-        href: route(`faq-detail/?id=${encodeURIComponent(x.id || "")}`),
-      })),
-      ...asItems(errata).map((x) => ({
-        kind: "Errata",
-        title: x.title || "Untitled errata",
-        updatedAt: x.updatedAt,
-        href: route(`errata-detail/?id=${encodeURIComponent(x.id || "")}`),
-      })),
-      ...asItems(rules).map((x) => ({
-        kind: "Rule",
-        title: x.title || "Untitled rule",
-        updatedAt: x.updatedAt,
-        href: resolveRuleLink(x).href,
-      })),
-      ...asItems(pages)
-        .filter((x) => asItems(rules).some((r) => String(r.pageId || r.id) === String(x.id || "")))
-        .map((x) => ({
-          kind: "Rule",
-          title: x.title || "Untitled rule page",
-          updatedAt: x.updatedAt,
-          href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
-        })),
-    ]);
+    const items =
+      indexItems && indexItems.length
+        ? indexItems.map((row) => ({
+            kind: row.kind || "Rule",
+            title: row.title || "Untitled update",
+            updatedAt: row.updatedAt || "",
+            href:
+              /^https?:\/\//i.test(String(row.href || ""))
+                ? String(row.href)
+                : route(String(row.hrefPath || row.href || "").replace(/^\/+/, "")),
+          }))
+        : await (async () => {
+            const pages = await getJson("data/pages.json", []);
+            const faqs = await getJson("data/faqs.json", []);
+            const errata = await getJson("data/errata.json", []);
+            const rulesIndex = await getJson("content/rules/index.json", { rules: [] });
+            const rules = normalizeRuleIndex(rulesIndex);
+            return deduplicateUpdateItems([
+              ...asItems(faqs).map((x) => ({
+                kind: "FAQ",
+                title: x.title || "Untitled FAQ",
+                updatedAt: x.updatedAt,
+                href: route(`faq-detail/?id=${encodeURIComponent(x.id || "")}`),
+              })),
+              ...asItems(errata).map((x) => ({
+                kind: "Errata",
+                title: x.title || "Untitled errata",
+                updatedAt: x.updatedAt,
+                href: route(`errata-detail/?id=${encodeURIComponent(x.id || "")}`),
+              })),
+              ...asItems(rules).map((x) => ({
+                kind: "Rule",
+                title: x.title || "Untitled rule",
+                updatedAt: x.updatedAt,
+                href: resolveRuleLink(x).href,
+              })),
+              ...asItems(pages)
+                .filter((x) => asItems(rules).some((r) => String(r.pageId || r.id) === String(x.id || "")))
+                .map((x) => ({
+                  kind: "Rule",
+                  title: x.title || "Untitled rule page",
+                  updatedAt: x.updatedAt,
+                  href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
+                })),
+            ]);
+          })();
 
     const renderUpdates = (kind = "all") => {
       const normalized = String(kind || "all").toLowerCase();

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const runtimeScripts = ["updates-page.js"];
 ---
-<BaseLayout title="Updates - riftboundoc">
+<BaseLayout title="Updates - riftboundoc" runtimeScripts={runtimeScripts}>
   <main class="container">
     <h1>Updates</h1>
     <p class="muted">Latest updates across FAQ, Errata, Rules, and pages.</p>
