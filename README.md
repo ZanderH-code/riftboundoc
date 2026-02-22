@@ -26,3 +26,8 @@ Live site: https://zanderh-code.github.io/riftboundoc/
   - `npm run content:check`
   - `npm run test:ci`
   - `npm run build`
+  - `npm run test:e2e:ci`
+
+Additional quality scripts:
+- `npm run test:e2e`: run Playwright smoke tests locally.
+- `npm run perf:baseline`: build and emit lightweight performance baseline reports in `docs/perf/`.
