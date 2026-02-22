@@ -18,9 +18,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
               <option value="might">Might</option>
             </select>
             <button id="cards-sort-dir" class="secondary cards-icon-btn" type="button" aria-label="Toggle sort direction">Asc</button>
+            <button id="cards-filter-clear" class="secondary cards-icon-btn" type="button" aria-label="Clear all filters">Clear</button>
             <button id="cards-filter-toggle" class="secondary cards-icon-btn" type="button" aria-label="Hide filters">Hide</button>
           </div>
         </div>
+
+        <div id="cards-active-filters" class="cards-active-filters" hidden></div>
 
         <div class="cards-filter-body" id="cards-filter-body">
           <div class="cards-filter-row">
