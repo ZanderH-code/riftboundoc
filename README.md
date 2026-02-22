@@ -15,3 +15,14 @@ Live site: https://zanderh-code.github.io/riftboundoc/
 - Card detail related links (Related FAQ / Errata / Rules)
 - Cross-content search (FAQ, Errata, Rules, Cards)
 - Updates page for recent changes
+
+## Testing and CI
+
+- `npm run test`: run Vitest locally.
+- `npm run test:ci`: run Vitest once for CI.
+- `npm run content:check`: run content normalization and schema validation.
+- GitHub Actions `QA` runs on pull requests and pushes to `test` and `main`, and executes:
+  - `npm ci`
+  - `npm run content:check`
+  - `npm run test:ci`
+  - `npm run build`

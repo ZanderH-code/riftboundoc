@@ -8,10 +8,13 @@
     "content:check": "python tools/format_and_validate_content.py",
     "build": "python tools/format_and_validate_content.py && python tools/sync_public.py && astro build",
     "preview": "astro preview",
-    "sync:public": "python tools/sync_public.py"
+    "sync:public": "python tools/sync_public.py",
+    "test": "vitest",
+    "test:ci": "vitest run"
   },
   "devDependencies": {
     "astro": "^5.2.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
   }
 }
