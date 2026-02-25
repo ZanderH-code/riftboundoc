@@ -22,5 +22,13 @@
     "summary": "Official tournament rules update converted into web-readable text.",
     "file": "content/pages/tournament-rules-january-update.md",
     "updatedAt": "2026-01-30"
+  },
+  {
+    "kind": "rule_page",
+    "id": "rq-vegas-2026-rulings",
+    "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+    "summary": "Judge clarifications and tournament policy notes for the 2026 Vegas Regional Qualifier.",
+    "file": "content/pages/rq-vegas-2026-rulings.md",
+    "updatedAt": "2026-02-25"
   }
 ]
