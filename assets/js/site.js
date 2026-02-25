@@ -916,8 +916,7 @@ function initMobileTocDrawer() {
     if (ev.key === "Escape") closeDrawer();
   });
 
-  // Open by default on desktop; keep collapsed on mobile.
-  if (window.matchMedia("(min-width: 981px)").matches) openDrawer();
+  // Keep collapsed by default; open only on explicit user action.
 }
 
 function initReaderPrefs(options = {}) {
