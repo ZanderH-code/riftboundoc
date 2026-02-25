@@ -1,0 +1,85 @@
+---
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+type PageItem = {
+  id: string;
+  title?: string;
+  summary?: string;
+  updatedAt?: string;
+  file?: string;
+};
+
+function stripMarkdown(value: string): string {
+  return String(value || "")
+    .replace(/\[\[([^\]]+)\]\]\(([^)]+)\)/g, "$1")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/^#+\s*/gm, "")
+    .replace(/[*_`>-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function getStaticPaths() {
+  const pagesPath = resolve(process.cwd(), "data", "pages.json");
+  const allPages = JSON.parse(readFileSync(pagesPath, "utf8")) as PageItem[];
+  return allPages
+    .filter((item) => item && item.id)
+    .map((item) => ({ params: { id: item.id } }));
+}
+
+const id = Astro.params.id || "";
+const pagesPath = resolve(process.cwd(), "data", "pages.json");
+const pages = JSON.parse(readFileSync(pagesPath, "utf8")) as PageItem[];
+const current = pages.find((item) => item.id === id);
+
+if (!current) {
+  return Astro.redirect("/pages/");
+}
+
+const runtimeScripts = ["page-detail-page.js"];
+const pageTitle = `${current.title || "Page"} - riftboundoc`;
+const rawSummary = stripMarkdown(current.summary || "");
+const metaDescription = rawSummary || "Read rules and guides in web-native format.";
+const canonicalUrl = new URL(
+  `${import.meta.env.BASE_URL}pages/${encodeURIComponent(id)}/`,
+  Astro.site ?? Astro.url
+).toString();
+---
+<BaseLayout
+  title={pageTitle}
+  description={metaDescription}
+  canonicalUrl={canonicalUrl}
+  runtimeScripts={runtimeScripts}
+  needsMarked={true}
+>
+  <main class="container">
+    <h1>Community Pages</h1>
+    <p class="muted">Read structured rules and guides in web-native format.</p>
+    <div class="reading-layout">
+      <aside class="side-panel">
+        <section class="card">
+          <h2>Reader</h2>
+          <div id="reader-prefs"></div>
+        </section>
+        <nav class="toc" id="page-toc">
+          <strong>Contents</strong>
+          <p class="muted">Sections appear after loading.</p>
+        </nav>
+      </aside>
+      <article class="doc-shell">
+        <div class="doc-meta" id="doc-meta">Ready</div>
+        <div id="page-content-wrap">
+          <h2 id="page-title" style="padding: 16px 22px 0; margin: 0">Loading...</h2>
+          <p id="page-summary" class="muted" style="padding: 0 22px"></p>
+          <div id="page-content"></div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initPage();
+  </script>
+</BaseLayout>
