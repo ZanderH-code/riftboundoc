@@ -4,7 +4,7 @@
       "kind": "Rule",
       "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
       "updatedAt": "2026-02-25",
-      "hrefPath": "pages/?id=rq-vegas-2026-rulings",
+      "hrefPath": "pages/rq-vegas-2026-rulings/",
       "href": ""
     },
     {
@@ -35,19 +35,19 @@
       "kind": "Rule",
       "title": "Riftbound Core Rules v1.2 (Text Version)",
       "updatedAt": "2026-02-18",
-      "hrefPath": "pages/?id=riftbound-core-rules-v1-2",
+      "hrefPath": "pages/riftbound-core-rules-v1-2/",
       "href": ""
     },
     {
       "kind": "Rule",
       "title": "Tournament Rules, January Update (Text Version)",
       "updatedAt": "2026-01-30",
-      "hrefPath": "pages/?id=tournament-rules-january-update",
+      "hrefPath": "pages/tournament-rules-january-update/",
       "href": ""
     }
   ],
   "count": 7,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-02-25T17:33:14Z",
+  "generatedAt": "2026-02-25T17:57:49Z",
   "source": "riftboundoc derived updates index"
 }

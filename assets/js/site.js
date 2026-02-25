@@ -335,8 +335,9 @@ function renderRules(files, target) {
 function resolveRuleLink(item) {
   const kind = String(item.kind || item.type || "pdf").toLowerCase();
   if (kind === "page") {
+    const pageId = encodeURIComponent(item.pageId || item.id || "");
     return {
-      href: route(`pages/?id=${encodeURIComponent(item.pageId || item.id || "")}`),
+      href: route(`pages/${pageId}/`),
       target: "",
       rel: "",
     };
@@ -375,7 +376,7 @@ function renderPages(items, target) {
     .map(
       (it) => `
       <article class="item page-card" data-href="${route(
-        `pages/?id=${encodeURIComponent(it.id || "")}`
+        `pages/${encodeURIComponent(it.id || "")}/`
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled page"}</h3>
         <p>${it.summary || ""}</p>
@@ -422,7 +423,7 @@ function renderCoreRuleCard(pages, rules, target) {
     return;
   }
   const href = corePage
-    ? route(`pages/?id=${encodeURIComponent(corePage.id)}`)
+    ? route(`pages/${encodeURIComponent(corePage.id)}/`)
     : resolveRuleLink(coreRuleEntry).href;
   const title = corePage?.title || coreRuleEntry?.title || "Riftbound Core Rules";
   const summary =
@@ -915,8 +916,7 @@ function initMobileTocDrawer() {
     if (ev.key === "Escape") closeDrawer();
   });
 
-  // Open by default on desktop; keep collapsed on mobile.
-  if (window.matchMedia("(min-width: 981px)").matches) openDrawer();
+  // Keep collapsed by default; open only on explicit user action.
 }
 
 function initReaderPrefs(options = {}) {
@@ -1159,7 +1159,7 @@ async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
     docs.push({
       kind: "Rule",
       title: page.title || "Untitled page",
-      href: route(`pages/?id=${encodeURIComponent(page.id || "")}`),
+      href: route(`pages/${encodeURIComponent(page.id || "")}/`),
       text: markdownToPlain(`${page.title || ""}\n${page.summary || ""}\n${body}`),
     });
   }

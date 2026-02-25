@@ -106,7 +106,7 @@ def route_for_rule(rule: dict) -> str:
     kind = str(rule.get("kind") or rule.get("type") or "pdf").lower()
     if kind == "page":
         page_id = str(rule.get("pageId") or rule.get("id") or "")
-        return f"pages/?id={quote(page_id)}"
+        return f"pages/{quote(page_id)}/"
     if kind == "external":
         return str(rule.get("url") or "")
     src = str(rule.get("url") or "")
@@ -137,9 +137,9 @@ def deduplicate_updates(items: list[dict]) -> list[dict]:
         if next_updated > prev_updated:
             canonical[key] = item
             continue
-        if next_updated == prev_updated and "pages/?id=" in path:
+        if next_updated == prev_updated and "/pages/" in path:
             prev_path = str(prev.get("hrefPath") or prev.get("href") or "")
-            if "pages/?id=" not in prev_path:
+            if "/pages/" not in prev_path:
                 canonical[key] = item
 
     return sorted(canonical.values(), key=lambda row: str(row.get("updatedAt") or ""), reverse=True)
@@ -167,7 +167,7 @@ def collect_rules(rules_payload: dict, pages: list[dict]) -> list[dict]:
                     "summary": page.get("summary") if page else rule.get("summary"),
                     "content": body,
                     "updatedAt": page.get("updatedAt") if page else rule.get("updatedAt"),
-                    "hrefPath": f"pages/?id={quote(page_id)}",
+                    "hrefPath": f"pages/{quote(page_id)}/",
                 }
             )
         else:
@@ -335,7 +335,7 @@ def build_all() -> None:
                 "kind": "Rule",
                 "title": page.get("title") or "Untitled rule page",
                 "updatedAt": page.get("updatedAt") or "",
-                "hrefPath": f"pages/?id={quote(page_id)}",
+                "hrefPath": f"pages/{quote(page_id)}/",
             }
         )
 
@@ -413,7 +413,7 @@ def build_all() -> None:
             {
                 "kind": "Rule",
                 "title": page.get("title") or "Untitled page",
-                "hrefPath": f"pages/?id={quote(str(page.get('id') or ''))}",
+                "hrefPath": f"pages/{quote(str(page.get('id') or ''))}/",
                 "text": markdown_to_plain("\n".join([str(page.get("title") or ""), str(page.get("summary") or ""), body])),
             }
         )

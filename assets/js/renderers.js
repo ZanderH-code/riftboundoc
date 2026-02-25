@@ -9,8 +9,9 @@ const {
 function resolveRuleLink(item) {
   const kind = String(item.kind || item.type || "pdf").toLowerCase();
   if (kind === "page") {
+    const pageId = encodeURIComponent(item.pageId || item.id || "");
     return {
-      href: route(`pages/?id=${encodeURIComponent(item.pageId || item.id || "")}`),
+      href: route(`pages/${pageId}/`),
       target: "",
       rel: "",
     };
@@ -132,7 +133,7 @@ function renderPages(items, target) {
     .map(
       (it) => `
       <article class="item page-card" data-href="${route(
-        `pages/?id=${encodeURIComponent(it.id || "")}`
+        `pages/${encodeURIComponent(it.id || "")}/`
       )}" tabindex="0" role="link">
         <h3>${it.title || "Untitled page"}</h3>
         <p>${it.summary || ""}</p>
@@ -173,7 +174,7 @@ function renderCoreRuleCard(pages, rules, target) {
     return;
   }
   const href = corePage
-    ? route(`pages/?id=${encodeURIComponent(corePage.id)}`)
+    ? route(`pages/${encodeURIComponent(corePage.id)}/`)
     : resolveRuleLink(coreRuleEntry).href;
   const title = corePage?.title || coreRuleEntry?.title || "Riftbound Core Rules";
   const summary =

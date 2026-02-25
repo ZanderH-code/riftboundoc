@@ -42,7 +42,12 @@
       initMobileTocDrawer,
       highlightQueryIn,
     } = resolveDeps(deps);
-    const id = new URLSearchParams(window.location.search).get("id");
+    const queryId = new URLSearchParams(window.location.search).get("id");
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const pagesIndex = pathParts.findIndex((part) => part === "pages");
+    const pathId =
+      pagesIndex >= 0 && pathParts.length > pagesIndex + 1 ? decodeURIComponent(pathParts[pagesIndex + 1]) : "";
+    const id = pathId || queryId;
     const pages = await getJson("data/pages.json", []);
     const ordered = sortByUpdated(pages);
     const one = ordered.find((item) => item.id === id) || ordered[0];

@@ -1117,7 +1117,7 @@
       if (kind === "faq") {
         baseHref = route(`faq-detail/?id=${encodeURIComponent(id)}`);
       } else if (kind === "rule") {
-        baseHref = route(`pages/?id=${encodeURIComponent(id)}`);
+        baseHref = route(`pages/${encodeURIComponent(id)}/`);
       }
       let href = withQuery(baseHref, "q", query || "");
       href = withQuery(href, "rq", relQuery || "");

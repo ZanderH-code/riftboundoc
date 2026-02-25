@@ -32,8 +32,8 @@ export function deduplicateUpdateItems(items) {
     }
     if (
       nextUpdated === prevUpdated &&
-      href.includes("/pages/?id=") &&
-      !String(prev.href || "").includes("/pages/?id=")
+      href.includes("/pages/") &&
+      !String(prev.href || "").includes("/pages/")
     ) {
       canonical.set(key, item);
     }
