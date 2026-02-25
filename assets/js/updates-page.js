@@ -59,8 +59,8 @@
       }
       if (
         nextUpdated === prevUpdated &&
-        href.includes("/pages/?id=") &&
-        !String(prev.href || "").includes("/pages/?id=")
+        href.includes("/pages/") &&
+        !String(prev.href || "").includes("/pages/")
       ) {
         canonical.set(key, item);
       }
@@ -126,7 +126,7 @@
                   kind: "Rule",
                   title: x.title || "Untitled rule page",
                   updatedAt: x.updatedAt,
-                  href: route(`pages/?id=${encodeURIComponent(x.id || "")}`),
+                  href: route(`pages/${encodeURIComponent(x.id || "")}/`),
                 })),
             ]);
           })();

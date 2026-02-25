@@ -65,7 +65,7 @@ async function buildSearchIndex(data) {
     docs.push({
       kind: "Rule",
       title: page.title || "Untitled page",
-      href: route(`pages/?id=${encodeURIComponent(page.id || "")}`),
+      href: route(`pages/${encodeURIComponent(page.id || "")}/`),
       titleText: markdownToPlain(page.title || ""),
       bodyText: markdownToPlain(`${page.summary || ""}\n${body}`),
     });
