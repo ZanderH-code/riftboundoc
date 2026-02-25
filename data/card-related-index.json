@@ -872,7 +872,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
+              "query": "Charm",
+              "jumpQuery": "Charm",
+              "anchorText": "Charm",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "ogn-044-298": {
       "faq": [],
@@ -939,6 +956,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at Battlefield B, you wil...",
+              "query": "Stalwart Poro",
+              "jumpQuery": "Stalwart Poro",
+              "anchorText": "Stalwart Poro",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -2178,6 +2211,50 @@
       "errata": [],
       "rule": []
     },
+    "ogn-158-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "query": "Volibear, Imposing",
+              "jumpQuery": "Volibear, Imposing",
+              "anchorText": "Volibear, Imposing",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "ogn-158a-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "query": "Volibear, Imposing",
+              "jumpQuery": "Volibear, Imposing",
+              "anchorText": "Volibear, Imposing",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
     "ogn-160-298": {
       "faq": [
         {
@@ -2703,6 +2780,22 @@
       ],
       "rule": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
           "sourceTitle": "Riftbound Core Rules v1.2",
@@ -2984,7 +3077,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-214-298": {
       "faq": [],
@@ -4445,6 +4555,28 @@
       "errata": [],
       "rule": []
     },
+    "sfd-051-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...ly during conquer triggers once they have expired. Soraka + Guardian Angel and Death Replacement Soraka in base + unit in base: unit is saved Soraka on battlefield + unit on battlefield: unit is not saved Soraka on battlefield + unit in bas...",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
     "sfd-053-221": {
       "faq": [
         {
@@ -4855,6 +4987,28 @@
       ],
       "rule": []
     },
+    "sfd-129-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...at unit, the equipment will detach, then reattach. Repeated Temptation If two units exist at different locations, both may be targeted. If one target becomes illegal during resolution, only the remaining legal effects resolve. Tideturner Ta...",
+              "query": "Temptation",
+              "jumpQuery": "Temptation",
+              "anchorText": "Temptation",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
     "sfd-134-221": {
       "faq": [
         {
@@ -5220,6 +5374,28 @@
         }
       ],
       "rule": []
+    },
+    "sfd-193-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...nto a showdown at Battlefield B, you will draw 1 card. Jax, Grandmaster at Arms If you activate Jax's second ability targeting a unit and an Equipment already attached to that unit, the equipment will detach, then reattach. Repeated Temptat...",
+              "query": "Grandmaster at Arms",
+              "jumpQuery": "Grandmaster at Arms",
+              "anchorText": "Grandmaster at Arms",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "sfd-198-221": {
       "faq": [
@@ -5752,6 +5928,28 @@
         }
       ],
       "rule": []
+    },
+    "sfd-245-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...nto a showdown at Battlefield B, you will draw 1 card. Jax, Grandmaster at Arms If you activate Jax's second ability targeting a unit and an Equipment already attached to that unit, the equipment will detach, then reattach. Repeated Temptat...",
+              "query": "Grandmaster at Arms",
+              "jumpQuery": "Grandmaster at Arms",
+              "anchorText": "Grandmaster at Arms",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "sfd-t03": {
       "faq": [
@@ -6635,7 +6833,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
+              "query": "Charm",
+              "jumpQuery": "Charm",
+              "anchorText": "Charm",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "chem-baroness": {
       "faq": [],
@@ -7961,7 +8176,24 @@
     "grandmaster at arms": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...nto a showdown at Battlefield B, you will draw 1 card. Jax, Grandmaster at Arms If you activate Jax's second ability targeting a unit and an Equipment already attached to that unit, the equipment will detach, then reattach. Repeated Temptat...",
+              "query": "Grandmaster at Arms",
+              "jumpQuery": "Grandmaster at Arms",
+              "anchorText": "Grandmaster at Arms",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "grove of the god-willow": {
       "faq": [],
@@ -7971,7 +8203,24 @@
     "guardian angel": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...ly during conquer triggers once they have expired. Soraka + Guardian Angel and Death Replacement Soraka in base + unit in base: unit is saved Soraka on battlefield + unit on battlefield: unit is not saved Soraka on battlefield + unit in bas...",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "guardian of the passage": {
       "faq": [],
@@ -8100,7 +8349,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "highlander": {
       "faq": [
@@ -10555,6 +10821,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at Battlefield B, you wil...",
+              "query": "Stalwart Poro",
+              "jumpQuery": "Stalwart Poro",
+              "anchorText": "Stalwart Poro",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
           "sourceTitle": "Riftbound Core Rules v1.2",
@@ -10982,7 +11264,24 @@
     "temptation": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...at unit, the equipment will detach, then reattach. Repeated Temptation If two units exist at different locations, both may be targeted. If one target becomes illegal during resolution, only the remaining legal effects resolve. Tideturner Ta...",
+              "query": "Temptation",
+              "jumpQuery": "Temptation",
+              "anchorText": "Temptation",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "the arena's greatest": {
       "faq": [],
@@ -11262,6 +11561,22 @@
         }
       ],
       "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -11895,7 +12210,24 @@
     "volibear, imposing": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "query": "Volibear, Imposing",
+              "jumpQuery": "Volibear, Imposing",
+              "anchorText": "Volibear, Imposing",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "wages of pain": {
       "faq": [],
@@ -12196,6 +12528,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-02-22T13:01:49Z",
+  "generatedAt": "2026-02-25T17:33:14Z",
   "source": "riftboundoc derived card related index"
 }
