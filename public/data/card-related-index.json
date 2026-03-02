@@ -855,6 +855,22 @@
     "ogn-043-298": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
+              "query": "Charm",
+              "jumpQuery": "Charm",
+              "anchorText": "Charm",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -872,24 +888,7 @@
         }
       ],
       "errata": [],
-      "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
-              "query": "Charm",
-              "jumpQuery": "Charm",
-              "anchorText": "Charm",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": "1"
-            }
-          ]
-        }
-      ]
+      "rule": []
     },
     "ogn-044-298": {
       "faq": [],
@@ -953,9 +952,7 @@
       "rule": []
     },
     "ogn-052-298": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -968,10 +965,13 @@
               "anchorText": "Stalwart Poro",
               "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
               "anchorIndex": 1,
-              "ruleId": "1"
+              "ruleId": ""
             }
           ]
-        },
+        }
+      ],
+      "errata": [],
+      "rule": [
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -2212,9 +2212,7 @@
       "rule": []
     },
     "ogn-158-298": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -2231,12 +2229,12 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "ogn-158a-298": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -2253,7 +2251,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "ogn-160-298": {
       "faq": [
@@ -2744,6 +2744,22 @@
     "ogn-199-298": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -2779,22 +2795,6 @@
         }
       ],
       "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
-              "query": "Tideturner",
-              "jumpQuery": "Tideturner",
-              "anchorText": "Tideturner",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": ""
-            }
-          ]
-        },
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -3060,6 +3060,22 @@
     "ogn-213-298": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -3077,24 +3093,7 @@
         }
       ],
       "errata": [],
-      "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
-              "query": "Hidden Blade",
-              "jumpQuery": "Hidden Blade",
-              "anchorText": "Hidden Blade",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": ""
-            }
-          ]
-        }
-      ]
+      "rule": []
     },
     "ogn-214-298": {
       "faq": [],
@@ -4556,9 +4555,7 @@
       "rule": []
     },
     "sfd-051-221": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -4575,7 +4572,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "sfd-053-221": {
       "faq": [
@@ -4988,9 +4987,7 @@
       "rule": []
     },
     "sfd-129-221": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -5007,7 +5004,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "sfd-134-221": {
       "faq": [
@@ -5376,9 +5375,7 @@
       "rule": []
     },
     "sfd-193-221": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -5391,11 +5388,13 @@
               "anchorText": "Grandmaster at Arms",
               "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
               "anchorIndex": 1,
-              "ruleId": "1"
+              "ruleId": ""
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "sfd-198-221": {
       "faq": [
@@ -5930,9 +5929,7 @@
       "rule": []
     },
     "sfd-245-221": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -5945,11 +5942,13 @@
               "anchorText": "Grandmaster at Arms",
               "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
               "anchorIndex": 1,
-              "ruleId": "1"
+              "ruleId": ""
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "sfd-t03": {
       "faq": [
@@ -6816,6 +6815,22 @@
     "charm": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
+              "query": "Charm",
+              "jumpQuery": "Charm",
+              "anchorText": "Charm",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -6833,24 +6848,7 @@
         }
       ],
       "errata": [],
-      "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...battlefield.\" If you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at...",
-              "query": "Charm",
-              "jumpQuery": "Charm",
-              "anchorText": "Charm",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": "1"
-            }
-          ]
-        }
-      ]
+      "rule": []
     },
     "chem-baroness": {
       "faq": [],
@@ -8174,9 +8172,7 @@
       "rule": []
     },
     "grandmaster at arms": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -8189,11 +8185,13 @@
               "anchorText": "Grandmaster at Arms",
               "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
               "anchorIndex": 1,
-              "ruleId": "1"
+              "ruleId": ""
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "grove of the god-willow": {
       "faq": [],
@@ -8201,9 +8199,7 @@
       "rule": []
     },
     "guardian angel": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -8220,7 +8216,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "guardian of the passage": {
       "faq": [],
@@ -8332,6 +8330,22 @@
     "hidden blade": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -8349,24 +8363,7 @@
         }
       ],
       "errata": [],
-      "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...during execution. Only the first legal resolution applies. Hidden Blade (Repeated) If both instances of the repeated Hidden Blade are targeting the same unit, you draw two cards total. As the card resolves, the repeated effect does not hav...",
-              "query": "Hidden Blade",
-              "jumpQuery": "Hidden Blade",
-              "anchorText": "Hidden Blade",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": ""
-            }
-          ]
-        }
-      ]
+      "rule": []
     },
     "highlander": {
       "faq": [
@@ -10817,9 +10814,7 @@
       "rule": []
     },
     "stalwart poro": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -10832,10 +10827,13 @@
               "anchorText": "Stalwart Poro",
               "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
               "anchorIndex": 1,
-              "ruleId": "1"
+              "ruleId": ""
             }
           ]
-        },
+        }
+      ],
+      "errata": [],
+      "rule": [
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -11262,9 +11260,7 @@
       "rule": []
     },
     "temptation": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -11281,7 +11277,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "the arena's greatest": {
       "faq": [],
@@ -11526,6 +11524,22 @@
     "tideturner": {
       "faq": [
         {
+          "id": "rq-vegas-2026-rulings",
+          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+          "matches": [
+            {
+              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-origins-faq",
           "title": "Riftbound Origins FAQ",
           "sourceTitle": "Riftbound Origins FAQ",
@@ -11561,22 +11575,6 @@
         }
       ],
       "rule": [
-        {
-          "id": "rq-vegas-2026-rulings",
-          "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-          "matches": [
-            {
-              "snippet": "...uring resolution, only the remaining legal effects resolve. Tideturner Targeting Tideturner's trigger is optional. The controller of Tideturner may choose to trigger it when it is played and add it to the chain. It must have a legal target...",
-              "query": "Tideturner",
-              "jumpQuery": "Tideturner",
-              "anchorText": "Tideturner",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
-              "anchorIndex": 1,
-              "ruleId": ""
-            }
-          ]
-        },
         {
           "id": "riftbound-core-rules-v1-2",
           "title": "Riftbound Core Rules v1.2",
@@ -12208,9 +12206,7 @@
       ]
     },
     "volibear, imposing": {
-      "faq": [],
-      "errata": [],
-      "rule": [
+      "faq": [
         {
           "id": "rq-vegas-2026-rulings",
           "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
@@ -12227,7 +12223,9 @@
             }
           ]
         }
-      ]
+      ],
+      "errata": [],
+      "rule": []
     },
     "wages of pain": {
       "faq": [],
@@ -12528,6 +12526,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-02-25T17:57:49Z",
+  "generatedAt": "2026-03-02T16:27:09Z",
   "source": "riftboundoc derived card related index"
 }
