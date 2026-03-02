@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import cards from "../public/data/cards.json" assert { type: "json" };
-import faqs from "../public/data/faqs.json" assert { type: "json" };
-import errata from "../public/data/errata.json" assert { type: "json" };
+import cards from "../data/cards.json" assert { type: "json" };
+import faqs from "../data/faqs.json" assert { type: "json" };
+import errata from "../data/errata.json" assert { type: "json" };
 
 describe("content data shape", () => {
   it("has non-empty core datasets", () => {

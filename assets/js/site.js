@@ -1,6 +1,8 @@
 ﻿const q = (selector) => document.querySelector(selector);
 const today = () => new Date().toISOString().slice(0, 10);
-const SITE_VERSION = "2026.02.20.22";
+const RUNTIME_META = window.__RIFTBOUNDOC_META__ || {};
+const SITE_VERSION =
+  RUNTIME_META.siteVersion || document.documentElement?.dataset?.siteVersion || "dev";
 const ROOT_RESERVED = new Set([
   "cards",
   "faq",
@@ -38,7 +40,7 @@ function withQuery(href, key, value) {
 function normalizeSearchText(value) {
   return String(value || "")
     .normalize("NFKC")
-    .replace(/[’‘`´]/g, "'")
+    .replace(/[\u2019\u2018`´]/g, "'")
     .replace(/[“”]/g, '"')
     .replace(/\s+/g, " ")
     .trim()
@@ -232,7 +234,7 @@ function isUsefulTocHeading(text) {
   if (!t) return false;
   if (/^\[(new|old)\s+text\]$/i.test(t)) return false;
   if (/^[\[【(（]?\s*(new|old)\s+text\s*[\]】)）]?$/i.test(t)) return false;
-  if (/^[▲△▴▵]+$/.test(t)) return false;
+  if (/^(?:\u25b2|\u25b3|\u25b4|\u25b5)+$/.test(t)) return false;
   if (/^[^A-Za-z0-9]+$/.test(t)) return false;
   return true;
 }
@@ -1576,12 +1578,6 @@ window.site = {
   initPageList,
   initUpdatesPage,
 };
-
-
-
-
-
-
 
 
 

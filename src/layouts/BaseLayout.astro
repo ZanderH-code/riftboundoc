@@ -1,4 +1,6 @@
 ---
+import { SITE_META } from "../lib/site-meta";
+
 interface Props {
   title: string;
   description?: string;
@@ -18,11 +20,11 @@ const base = import.meta.env.BASE_URL;
 const resolvedCanonical =
   canonicalUrl ||
   new URL(Astro.url.pathname + Astro.url.search, Astro.site ?? Astro.url).toString();
-const siteVersion = "2026.02.25.02";
-const scriptVersion = "20260225v2";
+const siteVersion = SITE_META.siteVersion;
+const scriptVersion = SITE_META.assetVersion;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" data-site-version={siteVersion} data-asset-version={scriptVersion}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +40,12 @@ const scriptVersion = "20260225v2";
     <title>{title}</title>
     <link rel="icon" type="image/webp" href={`${base}assets/img/domains/order.webp`} />
     <link rel="stylesheet" href={`${base}assets/css/styles.css?v=${scriptVersion}`} />
+    <script is:inline define:vars={{ siteVersion, scriptVersion }}>
+      window.__RIFTBOUNDOC_META__ = {
+        siteVersion,
+        assetVersion: scriptVersion,
+      };
+    </script>
     {needsMarked && <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>}
     <script src={`${base}assets/js/site.js?v=${scriptVersion}`}></script>
     {runtimeScripts.map((file) => <script src={`${base}assets/js/${file}?v=${scriptVersion}`}></script>)}
