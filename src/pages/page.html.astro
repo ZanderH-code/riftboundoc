@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
-      const q = window.location.search || "";
-      window.location.replace(`pages/${q}`);
+      const params = new URLSearchParams(window.location.search || "");
+      const id = params.get("id");
+      if (id) {
+        params.delete("id");
+        const rest = params.toString();
+        const suffix = rest ? `?${rest}` : "";
+        window.location.replace(`pages/${encodeURIComponent(id)}/${suffix}`);
+      } else {
+        const q = window.location.search || "";
+        window.location.replace(`pages/${q}`);
+      }
     </script>
   </head>
   <body>
     <a href="pages/">Go to Pages</a>
   </body>
 </html>
-
