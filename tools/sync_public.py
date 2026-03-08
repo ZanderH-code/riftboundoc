@@ -14,6 +14,8 @@ FILES_TO_COPY = [
     "robots.txt",
     "sitemap.xml",
     "rss.xml",
+    "manifest.json",
+    "sw.js",
 ]
 
 

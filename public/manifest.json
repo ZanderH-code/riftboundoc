@@ -1,0 +1,24 @@
+{
+  "name": "riftboundoc",
+  "short_name": "riftboundoc",
+  "start_url": "/riftboundoc/",
+  "scope": "/riftboundoc/",
+  "display": "standalone",
+  "background_color": "#111318",
+  "theme_color": "#1a1a1a",
+  "description": "Offline-friendly Riftbound rules, FAQ, errata, and cards reference.",
+  "icons": [
+    {
+      "src": "/riftboundoc/assets/img/domains/order.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/riftboundoc/assets/img/domains/order.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -39,12 +39,22 @@ const scriptVersion = SITE_META.assetVersion;
     <link rel="canonical" href={resolvedCanonical} />
     <title>{title}</title>
     <link rel="icon" type="image/webp" href={`${base}assets/img/domains/order.webp`} />
+    <link rel="manifest" href={`${base}manifest.json`} />
+    <meta name="theme-color" content="#1a1a1a" />
     <link rel="stylesheet" href={`${base}assets/css/styles.css?v=${scriptVersion}`} />
-    <script is:inline define:vars={{ siteVersion, scriptVersion }}>
+    <script is:inline define:vars={{ siteVersion, scriptVersion, base }}>
       window.__RIFTBOUNDOC_META__ = {
         siteVersion,
         assetVersion: scriptVersion,
       };
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register(`${base}sw.js?v=${scriptVersion}`)
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW failed', err));
+        });
+      }
     </script>
     {needsMarked && <script is:inline src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>}
     <script src={`${base}assets/js/site.js?v=${scriptVersion}`}></script>
