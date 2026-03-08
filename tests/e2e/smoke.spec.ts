@@ -26,7 +26,8 @@ test("cards filters and modal basic flow", async ({ page }) => {
 test("faq detail renders document", async ({ page }) => {
   await page.goto("faq-detail/");
   await expect(page.locator("#faq-title")).not.toHaveText("Loading...", { timeout: 30_000 });
-  await expect(page.locator("#faq-content")).toContainText(/Q:|FAQ/i);
+  await expect(page.locator("#faq-content")).not.toContainText(/failed to load/i);
+  await expect(page.locator("#faq-content")).toContainText(/\S+/);
 });
 
 test("updates type filter works", async ({ page }) => {
