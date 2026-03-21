@@ -2,6 +2,12 @@
   "docs": [
     {
       "kind": "Card",
+      "title": "Abandon",
+      "hrefPath": "cards/",
+      "text": "Abandon UNL131/219 Unleashed Spell Chaos Uncommon [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Return it to its owner's hand instead of putting it in their trash. [Predict]. (Look at the top card of your Main Deck. You may recycle it.)"
+    },
+    {
+      "kind": "Card",
       "title": "Acceptable Losses",
       "hrefPath": "cards/",
       "text": "Acceptable Losses OGN179/298 Origins Spell Chaos Uncommon [Action] (Play on your turn or in showdowns.) Each player kills one of their gear."
@@ -68,6 +74,12 @@
     },
     {
       "kind": "Card",
+      "title": "Alpha Strike",
+      "hrefPath": "cards/",
+      "text": "Alpha Strike UNL192/219 Unleashed Spell Signature Calm Body Master Yi Epic [Action] (Play on your turn or in showdowns.) Choose a friendly unit. It deals damage equal to its Might split among enemy units at battlefields. Then for each unit this kills, do this: Gain 1 XP."
+    },
+    {
+      "kind": "Card",
       "title": "Altar of Memories",
       "hrefPath": "cards/",
       "text": "Altar of Memories SFD169/221 Spiritforged Gear Order Rare When a friendly unit dies, you may exhaust me to draw 1, then put a card from your hand on the top or bottom of your Main Deck."
@@ -118,19 +130,19 @@
       "kind": "Card",
       "title": "Aphelios, Exalted",
       "hrefPath": "cards/",
-      "text": "Aphelios, Exalted SFD049/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Rare When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes. Channel 1 rune exhausted. Buff a friendly unit."
+      "text": "Aphelios, Exalted SFD049/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Rare When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes.Channel 1 rune exhausted.Buff a friendly unit."
     },
     {
       "kind": "Card",
       "title": "Aphelios, Exalted",
       "hrefPath": "cards/",
-      "text": "Aphelios, Exalted SFD224/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Showcase When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes. Channel 1 rune exhausted. Buff a friendly unit."
+      "text": "Aphelios, Exalted SFD224/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Showcase When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes.Channel 1 rune exhausted.Buff a friendly unit."
     },
     {
       "kind": "Card",
       "title": "Aphelios, Exalted",
       "hrefPath": "cards/",
-      "text": "Aphelios, Exalted SFD224/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Showcase When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes. Channel 1 rune exhausted. Buff a friendly unit."
+      "text": "Aphelios, Exalted SFD224/221 Spiritforged Unit Champion Calm Aphelios Mount Targon Showcase When you attach an Equipment to me, choose one that hasn't been chosen this turn Ready 2 runes.Channel 1 rune exhausted.Buff a friendly unit."
     },
     {
       "kind": "Card",
@@ -164,6 +176,12 @@
     },
     {
       "kind": "Card",
+      "title": "Ashe, Focused",
+      "hrefPath": "cards/",
+      "text": "Ashe, Focused UNL169/219 Unleashed Unit Champion Order Freljord Ashe Rare When you play me, choose an opponent. They reveal their hand. Choose a card revealed this way and banish it. When they hold, return it to their hand (even if I'm no longer on the board)."
+    },
+    {
+      "kind": "Card",
       "title": "Aspirant's Climb",
       "hrefPath": "cards/",
       "text": "Aspirant's Climb OGN276/298 Origins Battlefield Colorless Uncommon Increase the points needed to win the game by 1."
@@ -179,6 +197,12 @@
       "title": "Assembly Rig",
       "hrefPath": "cards/",
       "text": "Assembly Rig SFD019/221 Spiritforged Gear Fury Rare :rbenergy1::rbrunefury:, Recycle a unit from your trash, :rbexhaust:: Play a 3 :rbmight: Mech unit token to your base."
+    },
+    {
+      "kind": "Card",
+      "title": "Atakhan",
+      "hrefPath": "cards/",
+      "text": "Atakhan UNL170/219 Unleashed Unit Order Noxus Demon Rare You may kill a friendly unit as an additional cost to play me. If you do, I cost :rbenergy1: less for each Energy it costs and :rbruneorder: less for each Power it costs. [Ganking] (I can move from battlefield to battlefield.) When I attack, the defender must kill one of their units here."
     },
     {
       "kind": "Card",
@@ -215,6 +239,12 @@
       "title": "B.F. Sword",
       "hrefPath": "cards/",
       "text": "B.F. Sword SFD161/221 Spiritforged Gear Order Equipment Uncommon [Equip] :rbruneorder: (:rbruneorder:: Attach this to a unit you control.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Back Off",
+      "hrefPath": "cards/",
+      "text": "Back Off UNL042/219 Unleashed Spell Calm Uncommon [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Action] (Play on your turn or in showdowns.) [Stun] a unit. (It doesn't deal combat damage this turn.) If you played this from your hand, draw 1."
     },
     {
       "kind": "Card",
@@ -260,6 +290,42 @@
     },
     {
       "kind": "Card",
+      "title": "Baron Nashor",
+      "hrefPath": "cards/",
+      "text": "Baron Nashor UNL147/219 Unleashed Unit Chaos The Void Epic As you play me, add the Baron Pit battlefield token to the board if it's not there already. If you do, I enter there. (It has \"Units can move here from anywhere.\") I can't be chosen by enemy spells and abilities. Other friendly units have +2 :rbmight:."
+    },
+    {
+      "kind": "Card",
+      "title": "Baron Nashor",
+      "hrefPath": "cards/",
+      "text": "Baron Nashor UNL147a/219 Unleashed Unit Chaos The Void Showcase As you play me, add the Baron Pit battlefield token to the board if it's not there already. If you do, I enter there. I can't be chosen by enemy spells and abilities. Other friendly units have +2 :rbmight:."
+    },
+    {
+      "kind": "Card",
+      "title": "Baron Pit",
+      "hrefPath": "cards/",
+      "text": "Baron Pit UNLT01 Unleashed Battlefield Token Colorless Common (You can't start the game with a token battlefield.) Units can move here from anywhere."
+    },
+    {
+      "kind": "Card",
+      "title": "Bashful Bloom",
+      "hrefPath": "cards/",
+      "text": "Bashful Bloom UNL189/219 Unleashed Legend Calm Mind Lillia Rare :rbenergy4:, :rbexhaust:: Play a ready 3 :rbmight: Sprite unit token with [Temporary]. This ability costs :rbenergy1: less for each friendly unit with [Temporary]."
+    },
+    {
+      "kind": "Card",
+      "title": "Bashful Bloom",
+      "hrefPath": "cards/",
+      "text": "Bashful Bloom UNL230/219 Unleashed Legend Calm Mind Lillia Showcase :rbenergy4:, :rbexhaust:: Play a ready 3 :rbmight: Sprite unit token with [Temporary]. This ability costs :rbenergy1: less for each friendly unit with [Temporary]."
+    },
+    {
+      "kind": "Card",
+      "title": "Bashful Bloom",
+      "hrefPath": "cards/",
+      "text": "Bashful Bloom UNL230/219 Unleashed Legend Calm Mind Lillia Showcase :rbenergy4:, :rbexhaust:: Play a ready 3 :rbmight: Sprite unit token with [Temporary]. This ability costs :rbenergy1: less for each friendly unit with [Temporary]."
+    },
+    {
+      "kind": "Card",
       "title": "Battering Ram",
       "hrefPath": "cards/",
       "text": "Battering Ram SFD012/221 Spiritforged Unit Fury Trifarian Noxus Uncommon I cost :rbenergy1: less for each card you've played this turn, to a minimum of :rbenergy1:."
@@ -293,6 +359,18 @@
       "title": "Bilgewater Bully",
       "hrefPath": "cards/",
       "text": "Bilgewater Bully OGN125/298 Origins Unit Body Bilgewater Common While I'm buffed, I have [Ganking]. (I can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Bird",
+      "hrefPath": "cards/",
+      "text": "Bird UNLT02 Unleashed Unit Token Colorless Bird Common [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Black Flame Altar",
+      "hrefPath": "cards/",
+      "text": "Black Flame Altar UNL208/219 Unleashed Battlefield Colorless Uncommon Units here with [Temporary] have [Shield]. (+1 :rbmight: while they're defenders.)"
     },
     {
       "kind": "Card",
@@ -344,6 +422,12 @@
     },
     {
       "kind": "Card",
+      "title": "Blighted Battleaxe",
+      "hrefPath": "cards/",
+      "text": "Blighted Battleaxe UNL019/219 Unleashed Gear Fury Equipment Rare [Equip] :rbenergy1::rbrunefury: (:rbenergy1::rbrunefury:: Attach this to a unit you control.) At the end of your turn, if I didn't conquer this turn, unattach this and deal 4 to me."
+    },
+    {
+      "kind": "Card",
       "title": "Blind Fury",
       "hrefPath": "cards/",
       "text": "Blind Fury OGN025/298 Origins Spell Fury Rare [Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest."
@@ -386,9 +470,33 @@
     },
     {
       "kind": "Card",
+      "title": "Blood Rose",
+      "hrefPath": "cards/",
+      "text": "Blood Rose UNL109/219 Unleashed Gear Body Rare When you play a unit, you may pay :rbenergy1: to gain 1 XP. Spend 3 XP, :rbexhaust:: Ready a unit."
+    },
+    {
+      "kind": "Card",
       "title": "Blood Rush",
       "hrefPath": "cards/",
       "text": "Blood Rush SFD003/221 Spiritforged Spell Fury Common [Action] (Play on your turn or in showdowns.) [Repeat] :rbenergy1: (You may pay the additional cost to repeat this spell's effect.) Give a unit [Assault 2] this turn. (+2 :rbmight: while it's an attacker.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Bloodharbor Ripper",
+      "hrefPath": "cards/",
+      "text": "Bloodharbor Ripper UNL185/219 Unleashed Legend Fury Chaos Pyke Rare :rbenergy1:, :rbexhaust:: Return a friendly unit at a battlefield to its owner's hand. Play a Gold gear token exhausted. (It has \"[Reaction][] Kill this, :rbexhaust:: [Add] :rbrunerainbow:.\")"
+    },
+    {
+      "kind": "Card",
+      "title": "Blue Sentinel",
+      "hrefPath": "cards/",
+      "text": "Blue Sentinel UNL087/219 Unleashed Unit Mind Mount Targon Epic [Shield 2] (+2 :rbmight: while I'm a defender.) Your hold effects for holding here trigger an additional time. When I hold, [Add] :rbrunerainbow: at the start of your next Main Phase. (Abilities that add resources can't be reacted to.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Blue Sentinel",
+      "hrefPath": "cards/",
+      "text": "Blue Sentinel UNL087a/219 Unleashed Unit Mind Showcase [Shield 2] Your hold effects for holding here trigger an additional time. When I hold, [Add] :rbrunerainbow: at the start of your next Main Phase."
     },
     {
       "kind": "Card",
@@ -452,6 +560,12 @@
     },
     {
       "kind": "Card",
+      "title": "Brush",
+      "hrefPath": "cards/",
+      "text": "Brush UNLT03 Unleashed Battlefield Token Colorless Common Bird, Cat, Dog, Poro, and Ivern units here have +1 :rbmight:. When you score here, you may replace this with the battlefield it replaced."
+    },
+    {
+      "kind": "Card",
       "title": "Brutalizer",
       "hrefPath": "cards/",
       "text": "Brutalizer SFD042/221 Spiritforged Gear Calm Equipment Uncommon [Equip] :rbrunecalm: (:rbrunecalm:: Attach this to a unit you control.) If this was attached to me this turn, I have an additional +2 :rbmight:."
@@ -491,6 +605,12 @@
       "title": "Caitlyn, Patrolling",
       "hrefPath": "cards/",
       "text": "Caitlyn, Patrolling OGN068/298 Origins Unit Champion Calm Caitlyn Piltover Rare I must be assigned combat damage last. :rbexhaust:: Deal damage equal to my Might to a unit at a battlefield. Use this ability only while I'm at a battlefield."
+    },
+    {
+      "kind": "Card",
+      "title": "Call to Battle",
+      "hrefPath": "cards/",
+      "text": "Call to Battle UNL101/219 Unleashed Spell Body Uncommon Move a unit you control to a battlefield you control. Then, choose an opponent. They move a unit they control to the same battlefield."
     },
     {
       "kind": "Card",
@@ -632,9 +752,21 @@
     },
     {
       "kind": "Card",
+      "title": "Combat Experience",
+      "hrefPath": "cards/",
+      "text": "Combat Experience UNL031/219 Unleashed Spell Calm Common [Reaction] (Play any time, even before spells and abilities resolve.) Give a unit +1 :rbmight: this turn. [Level 6][] Give it +3 :rbmight: this turn instead. (While you have 6+ XP, get the effect.)"
+    },
+    {
+      "kind": "Card",
       "title": "Commander Ledros",
       "hrefPath": "cards/",
       "text": "Commander Ledros OGN231/298 Origins Unit Order Spirit Shadow Isles Rare As you play me, you may kill any number of friendly units as an additional cost. Reduce my cost by :rbruneorder: for each killed this way. [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Concentrate",
+      "hrefPath": "cards/",
+      "text": "Concentrate UNL091/219 Unleashed Spell Body Common Draw 2. [Level 6][] This costs :rbenergy2: less. (While you have 6+ XP, get the effect.) [Level 11][] This costs :rbenergy4: less instead."
     },
     {
       "kind": "Card",
@@ -680,6 +812,30 @@
     },
     {
       "kind": "Card",
+      "title": "Crescent Guardian",
+      "hrefPath": "cards/",
+      "text": "Crescent Guardian UNL122/219 Unleashed Unit Chaos Mount Targon Common If you've played a spell this turn, you may pay :rbrunechaos: as an additional cost to play me. If you do, I enter ready."
+    },
+    {
+      "kind": "Card",
+      "title": "Crescent Strike",
+      "hrefPath": "cards/",
+      "text": "Crescent Strike UNL072/219 Unleashed Spell Mind Uncommon [Action] (Play on your turn or in showdowns.) Choose a battlefield and an enemy unit there. Deal 4 to that unit and 1 to each other enemy unit there."
+    },
+    {
+      "kind": "Card",
+      "title": "Crimson Pigeons",
+      "hrefPath": "cards/",
+      "text": "Crimson Pigeons UNL154/219 Unleashed Unit Order Bird Noxus Common I have +2 :rbmight: while I'm attacking with another unit."
+    },
+    {
+      "kind": "Card",
+      "title": "Crowd Favorite",
+      "hrefPath": "cards/",
+      "text": "Crowd Favorite UNL102/219 Unleashed Unit Body Noxus Uncommon [Hunt] (When I conquer or hold, gain 1 XP.) Spend 2 XP: [Buff] me. (Give me a +1 :rbmight: buff if I don't have one.)"
+    },
+    {
+      "kind": "Card",
       "title": "Cruel Patron",
       "hrefPath": "cards/",
       "text": "Cruel Patron OGN208/298 Origins Unit Order Noxus Common As an additional cost to play me, kill a friendly unit."
@@ -698,6 +854,24 @@
     },
     {
       "kind": "Card",
+      "title": "Cursed Sarcophagus",
+      "hrefPath": "cards/",
+      "text": "Cursed Sarcophagus UNL148/219 Unleashed Gear Chaos Epic When you play this, banish all units from your trash. :rbexhaust:: Play a unit banished with this. (You must pay its costs.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Curtain Call",
+      "hrefPath": "cards/",
+      "text": "Curtain Call UNL182/219 Unleashed Spell Signature Fury Mind Jhin Epic [Repeat] :rbenergy1: / :rbrunerainbow: / :rbenergy1::rbrunerainbow: (You may pay each additional cost to repeat this spell's effect.) Choose one you haven't already chosen Draw 1.Deal 2 to a unit at a battlefield.Deal 3 to a unit at a base.Give a unit at a battlefield 4 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Dancing Grenade",
+      "hrefPath": "cards/",
+      "text": "Dancing Grenade UNL020/219 Unleashed Spell Fury Rare Deal 2 to a unit. Its controller may play this spell again for :rbrunerainbow:. If they do, this deals 1 additional Bonus Damage for each time this spell has dealt damage this turn."
+    },
+    {
+      "kind": "Card",
       "title": "Danger Zone",
       "hrefPath": "cards/",
       "text": "Danger Zone SFD182/221 Spiritforged Spell Signature Fury Mind Rumble Epic [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rbenergy1::rbrunerainbow: (You may pay the additional cost to repeat this spell's effect.) Give your Mechs +1 :rbmight: this turn."
@@ -713,6 +887,12 @@
       "title": "Daring Poro",
       "hrefPath": "cards/",
       "text": "Daring Poro OGN210/298 Origins Unit Order Poro Common [Assault] (+1 :rbmight: while I'm an attacker.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Daring Poro",
+      "hrefPath": "cards/",
+      "text": "Daring Poro UNL225/219 Unleashed Unit Order Poro Showcase [Assault]"
     },
     {
       "kind": "Card",
@@ -794,9 +974,21 @@
     },
     {
       "kind": "Card",
+      "title": "Deadly Flourish",
+      "hrefPath": "cards/",
+      "text": "Deadly Flourish UNL073/219 Unleashed Spell Mind Uncommon Deal 3 to an enemy unit. When it dies this turn, play a Gold gear token exhausted. (It has \"[Reaction][] Kill this, :rbexhaust:: [Add] :rbrunerainbow:.\")"
+    },
+    {
+      "kind": "Card",
       "title": "Deathgrip",
       "hrefPath": "cards/",
       "text": "Deathgrip SFD163/221 Spiritforged Spell Order Uncommon [Reaction] (Play any time, even before spells and abilities resolve.) Kill a friendly unit. If you do, give +:rbmight: equal to its Might to another friendly unit this turn. Draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Deceiver",
+      "hrefPath": "cards/",
+      "text": "Deceiver UNL199/219 Unleashed Legend Mind Order LeBlanc Rare When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. It becomes a copy of another unit there. Give it [Temporary]."
     },
     {
       "kind": "Card",
@@ -818,6 +1010,12 @@
     },
     {
       "kind": "Card",
+      "title": "Demacian Diplomat",
+      "hrefPath": "cards/",
+      "text": "Demacian Diplomat UNL092/219 Unleashed Unit Body Demacia Common When you play me, gain 1 XP."
+    },
+    {
+      "kind": "Card",
       "title": "Desert's Call",
       "hrefPath": "cards/",
       "text": "Desert's Call SFD031/221 Spiritforged Spell Calm Common [Repeat] :rbenergy2: (You may pay the additional cost to repeat this spell's effect.) Play a 2 :rbmight: Sand Soldier unit token."
@@ -827,6 +1025,24 @@
       "title": "Detonate",
       "hrefPath": "cards/",
       "text": "Detonate SFD005/221 Spiritforged Spell Fury Common Kill a gear. Its controller draws 2."
+    },
+    {
+      "kind": "Card",
+      "title": "Diana, Lunari",
+      "hrefPath": "cards/",
+      "text": "Diana, Lunari UNL079/219 Unleashed Unit Champion Mind Diana Mount Targon Rare When a showdown begins here, you may pay :rbenergy1:. If you do, [Predict], then reveal the top card of your Main Deck. If it's a spell, draw it. (To Predict, look at the top card of your Main Deck. You may recycle it.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Diana, No Longer Human",
+      "hrefPath": "cards/",
+      "text": "Diana, No Longer Human UNL149/219 Unleashed Unit Champion Chaos Diana Mount Targon Epic [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When you play a spell, give me +2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Diana, No Longer Human",
+      "hrefPath": "cards/",
+      "text": "Diana, No Longer Human UNL149a/219 Unleashed Unit Champion Chaos Diana Mount Targon Showcase [Ambush] When you play a spell, give me +2 :rbmight: this turn."
     },
     {
       "kind": "Card",
@@ -875,6 +1091,12 @@
       "title": "Doran's Shield",
       "hrefPath": "cards/",
       "text": "Doran's Shield SFD033/221 Spiritforged Gear Calm Equipment Common [Equip] :rbrunecalm: (:rbrunecalm:: Attach this to a unit you control.) [Tank] (I must be assigned combat damage first.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Downstage Dramatics",
+      "hrefPath": "cards/",
+      "text": "Downstage Dramatics UNL061/219 Unleashed Spell Mind Common [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rbenergy2: (You may pay the additional cost to repeat this spell's effect.) Draw 1."
     },
     {
       "kind": "Card",
@@ -950,6 +1172,12 @@
     },
     {
       "kind": "Card",
+      "title": "Dusk Rose Lab",
+      "hrefPath": "cards/",
+      "text": "Dusk Rose Lab UNL209/219 Unleashed Battlefield Colorless Uncommon At the start of your Beginning Phase, you may kill a unit you control here to draw 1. (This happens before scoring.)"
+    },
+    {
+      "kind": "Card",
       "title": "Eager Apprentice",
       "hrefPath": "cards/",
       "text": "Eager Apprentice OGN084/298 Origins Unit Mind Piltover Common While I'm at a battlefield, the Energy costs for spells you play is reduced by :rbenergy1:, to a minimum of :rbenergy1:."
@@ -977,6 +1205,18 @@
       "title": "Ekko, Recurrent",
       "hrefPath": "cards/",
       "text": "Ekko, Recurrent OGN110/298 Origins Unit Champion Mind Ekko Zaun Rare [Accelerate] (You may pay :rbenergy1::rbrunemind: as an additional cost to have me enter ready.) [Deathknell] Recycle me to ready your runes. (When I die, get the effect.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Elder Dragon",
+      "hrefPath": "cards/",
+      "text": "Elder Dragon UNL118/219 Unleashed Unit Body Dragon Demacia Epic Any amount of your damage is enough to kill enemy units. When you play me, choose up to one enemy unit at each location. Deal 1 to them."
+    },
+    {
+      "kind": "Card",
+      "title": "Elder Dragon",
+      "hrefPath": "cards/",
+      "text": "Elder Dragon UNL118a/219 Unleashed Unit Body Dragon Showcase Any amount of your damage is enough to kill enemy units. When you play me, choose up to one enemy unit at each location. Deal 1 to them."
     },
     {
       "kind": "Card",
@@ -1025,6 +1265,18 @@
       "title": "Energy Conduit",
       "hrefPath": "cards/",
       "text": "Energy Conduit OGN098/298 Origins Gear Mind Uncommon :rbexhaust:: [Reaction] [Add] :rbenergy1:. (Abilities that add resources can't be reacted to.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Enthusiastic Promoter",
+      "hrefPath": "cards/",
+      "text": "Enthusiastic Promoter UNL043/219 Unleashed Unit Calm Yordle Bandle City Uncommon [Backline] (I must be assigned combat damage last.) When I hold, [Buff] all units here. (Give each a +1 :rbmight: buff if it doesn't have one.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Existential Dread",
+      "hrefPath": "cards/",
+      "text": "Existential Dread UNL134/219 Unleashed Spell Chaos Uncommon [Action] (Play on your turn or in showdowns.) [Repeat] :rbenergy2: (You may pay the additional cost to repeat this spell's effect.) [Stun] an attacking enemy unit. If it's already stunned, return it to its owner's hand instead. (A stunned unit doesn't deal combat damage this turn.)"
     },
     {
       "kind": "Card",
@@ -1220,6 +1472,12 @@
     },
     {
       "kind": "Card",
+      "title": "Forbidding Waste",
+      "hrefPath": "cards/",
+      "text": "Forbidding Waste UNL210/219 Unleashed Battlefield Colorless Uncommon While a unit here is defending alone, it has 2 :rbmight:. (It's alone if there are no other friendly units here.)"
+    },
+    {
+      "kind": "Card",
       "title": "Forecaster",
       "hrefPath": "cards/",
       "text": "Forecaster SFD065/221 Spiritforged Unit Mind Mech Yordle Bandle City Common Your Mechs have [Vision]. (When you play us, look at the top card of your Main Deck. You may recycle it.)"
@@ -1244,6 +1502,12 @@
     },
     {
       "kind": "Card",
+      "title": "Forgotten Library",
+      "hrefPath": "cards/",
+      "text": "Forgotten Library UNL211/219 Unleashed Battlefield Colorless Uncommon While you control this battlefield, when you play a spell, if you spent :rbenergy4: or more, [Predict]. (Look at the top card of your Main Deck. You may recycle it.)"
+    },
+    {
+      "kind": "Card",
       "title": "Forgotten Monument",
       "hrefPath": "cards/",
       "text": "Forgotten Monument SFD209/221 Spiritforged Battlefield Colorless Uncommon Players can't score here until their third turn."
@@ -1262,6 +1526,24 @@
     },
     {
       "kind": "Card",
+      "title": "Fresh Beans",
+      "hrefPath": "cards/",
+      "text": "Fresh Beans UNL011/219 Unleashed Gear Fury Uncommon When you play a unit during a showdown, you may exhaust this to draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Friendship",
+      "hrefPath": "cards/",
+      "text": "Friendship UNL046/219 Unleashed Spell Calm Uncommon [Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. Give it +1 :rbmight: this turn for each of the following tags among your units Bird, Cat, Dog, and Poro."
+    },
+    {
+      "kind": "Card",
+      "title": "Frigid Jewel",
+      "hrefPath": "cards/",
+      "text": "Frigid Jewel UNL074/219 Unleashed Gear Mind Uncommon When you draw your second card each turn, give a friendly unit +2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
       "title": "Frigid Touch",
       "hrefPath": "cards/",
       "text": "Frigid Touch SFD066/221 Spiritforged Spell Mind Common [Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] :rbenergy2: (You may pay the additional cost to repeat this spell's effect.) Give a unit 2 :rbmight: this turn."
@@ -1271,6 +1553,12 @@
       "title": "Frostcoat Cub",
       "hrefPath": "cards/",
       "text": "Frostcoat Cub SFD067/221 Spiritforged Unit Mind Dog Freljord Common You may pay :rbrunemind: as an additional cost to play me. When you play me, if you paid the additional cost, give a unit 2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Frozen Fortress",
+      "hrefPath": "cards/",
+      "text": "Frozen Fortress UNL212/219 Unleashed Battlefield Colorless Uncommon At the start of each player's Beginning Phase, deal 1 to each unit here. (This happens before scoring.)"
     },
     {
       "kind": "Card",
@@ -1286,9 +1574,21 @@
     },
     {
       "kind": "Card",
+      "title": "Galio, Indefatigable",
+      "hrefPath": "cards/",
+      "text": "Galio, Indefatigable UNL171/219 Unleashed Unit Champion Order Demacia Galio Rare [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) [Tank] (I must be assigned combat damage first.) I don't deal combat damage."
+    },
+    {
+      "kind": "Card",
       "title": "Garbage Grabber",
       "hrefPath": "cards/",
       "text": "Garbage Grabber OGN099/298 Origins Gear Mind Uncommon Recycle 3 from your trash, :rbenergy1:, :rbexhaust:: Draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Gardens of Becoming",
+      "hrefPath": "cards/",
+      "text": "Gardens of Becoming UNL213/219 Unleashed Battlefield Colorless Uncommon Units here have \":rbexhaust:: Gain 1 XP.\""
     },
     {
       "kind": "Card",
@@ -1322,6 +1622,12 @@
     },
     {
       "kind": "Card",
+      "title": "Gemhand Hunter",
+      "hrefPath": "cards/",
+      "text": "Gemhand Hunter UNL094/219 Unleashed Unit Body Yordle Mount Targon Common [Hunt] (When I conquer or hold, gain 1 XP.) [Level 6][] I have +1 :rbmight:. (While you have 6+ XP, get the effect.)"
+    },
+    {
+      "kind": "Card",
       "title": "Gentlemen's Duel",
       "hrefPath": "cards/",
       "text": "Gentlemen's Duel OGS008/024 Proving Grounds Spell Body Common [Action] (Play on your turn or in showdowns.) Give a friendly unit +3 :rbmight: this turn. Then choose an enemy unit. They deal damage equal to their Mights to each other."
@@ -1340,6 +1646,12 @@
     },
     {
       "kind": "Card",
+      "title": "Gloomist",
+      "hrefPath": "cards/",
+      "text": "Gloomist UNL193/219 Unleashed Legend Calm Chaos Vex Rare When you or an ally hold, you may exhaust me to draw 1."
+    },
+    {
+      "kind": "Card",
       "title": "Glorious Executioner",
       "hrefPath": "cards/",
       "text": "Glorious Executioner SFD185/221 Spiritforged Legend Fury Chaos Draven Rare When you win a combat, draw 1. (You win if only your units remain after combat.)"
@@ -1355,6 +1667,12 @@
       "title": "Gold",
       "hrefPath": "cards/",
       "text": "Gold SFDT03 Spiritforged Gear Token Colorless Common Kill this, :rbexhaust:: [Reaction] [Add] :rbrunerainbow:. (Abilities that add resources can't be reacted to.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Gold",
+      "hrefPath": "cards/",
+      "text": "Gold UNLT05 Unleashed Gear Token Colorless Common [Reaction][] Kill this, :rbexhaust:: [Add] :rbrunerainbow:. (Abilities that add resources can't be reacted to.)"
     },
     {
       "kind": "Card",
@@ -1385,6 +1703,24 @@
       "title": "Grandmaster at Arms",
       "hrefPath": "cards/",
       "text": "Grandmaster at Arms SFD245/221 Spiritforged Legend Calm Body Jax Showcase :rbenergy1:, :rbexhaust:: Attach a detached Equipment you control to a unit you control. :rbexhaust:: Attach an attached Equipment you control to a unit you control."
+    },
+    {
+      "kind": "Card",
+      "title": "Green Father",
+      "hrefPath": "cards/",
+      "text": "Green Father UNL195/219 Unleashed Legend Calm Order Ivern Rare When you conquer or hold, you may exhaust me to replace that battlefield with a Brush battlefield token. (Bird, Cat, Dog, Poro, and Ivern units have +1 :rbmight: in Brush. It can be swapped back when scored.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Green Father",
+      "hrefPath": "cards/",
+      "text": "Green Father UNL233/219 Unleashed Legend Calm Order Ivern Showcase When you conquer or hold, you may exhaust me to replace that battlefield with a Brush battlefield token."
+    },
+    {
+      "kind": "Card",
+      "title": "Green Father",
+      "hrefPath": "cards/",
+      "text": "Green Father UNL233/219 Unleashed Legend Calm Order Ivern Showcase When you conquer or hold, you may exhaust me to replace that battlefield with a Brush battlefield token."
     },
     {
       "kind": "Card",
@@ -1421,6 +1757,18 @@
       "title": "Gust",
       "hrefPath": "cards/",
       "text": "Gust OGN169/298 Origins Spell Chaos Common [Reaction] (Play any time, even before spells and abilities resolve.) Return a unit at a battlefield with 3 :rbmight: or less to its owner's hand."
+    },
+    {
+      "kind": "Card",
+      "title": "Gustwalker",
+      "hrefPath": "cards/",
+      "text": "Gustwalker UNL075/219 Unleashed Unit Mind Dog Ionia Uncommon [Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][] I have +1 :rbmight: and [Ganking]. (While you have 3+ XP, get the effect. A [Ganking] unit can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Gutter Palace",
+      "hrefPath": "cards/",
+      "text": "Gutter Palace UNL088/219 Unleashed Gear Mind Epic At the start of your Beginning Phase, if you have exactly 4 cards in hand and exactly 4 units at battlefields, you win the game. Discard 1, :rbexhaust:: Play a 1 :rbmight: Bird unit token with [Deflect]. (Opponents must pay :rbrunerainbow: to choose it with a spell or ability.)"
     },
     {
       "kind": "Card",
@@ -1478,6 +1826,12 @@
     },
     {
       "kind": "Card",
+      "title": "Heedless Resurrection",
+      "hrefPath": "cards/",
+      "text": "Heedless Resurrection UNL142/219 Unleashed Spell Chaos Rare [Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly unit. Play a unit from your trash that costs no more Energy and no more Power than the killed unit, ignoring its cost."
+    },
+    {
+      "kind": "Card",
       "title": "Heimerdinger, Inventor",
       "hrefPath": "cards/",
       "text": "Heimerdinger, Inventor OGN111/298 Origins Unit Champion Mind Yordle Heimerdinger Piltover Rare I have all :rbexhaust: abilities of all friendly legends, units, and gear."
@@ -1487,6 +1841,12 @@
       "title": "Herald of Scales",
       "hrefPath": "cards/",
       "text": "Herald of Scales OGN140/298 Origins Unit Body Mount Targon Uncommon Your Dragons' Energy costs are reduced by :rbenergy2:, to a minimum of :rbenergy1:."
+    },
+    {
+      "kind": "Card",
+      "title": "Herald of Spring",
+      "hrefPath": "cards/",
+      "text": "Herald of Spring UNL034/219 Unleashed Unit Calm Ionia Common [Hunt] (When I conquer or hold, gain 1 XP.) When you play me, gain 2 XP."
     },
     {
       "kind": "Card",
@@ -1526,6 +1886,12 @@
     },
     {
       "kind": "Card",
+      "title": "Hextech Gauntlets",
+      "hrefPath": "cards/",
+      "text": "Hextech Gauntlets UNL188/219 Unleashed Gear Signature Fury Order Vi Equipment Epic [Equip] :rbenergy3::rbrunerainbow:. This ability's Energy cost is reduced by the Might of the unit you choose. (Pay the cost: Attach this to a unit you control.) When I conquer, if you assigned 3 or more excess damage, draw 1."
+    },
+    {
+      "kind": "Card",
       "title": "Hextech Ray",
       "hrefPath": "cards/",
       "text": "Hextech Ray OGN009/298 Origins Spell Fury Common [Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield."
@@ -1556,9 +1922,33 @@
     },
     {
       "kind": "Card",
+      "title": "Hunter's Machete",
+      "hrefPath": "cards/",
+      "text": "Hunter's Machete UNL096/219 Unleashed Gear Body Equipment Common [Equip] :rbrunebody: (:rbrunebody:: Attach this to a unit you control.) [Hunt] (When I conquer or hold, gain 1 XP.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Hwei, Brooding Painter",
+      "hrefPath": "cards/",
+      "text": "Hwei, Brooding Painter UNL080/219 Unleashed Unit Champion Mind Ionia Hwei Rare When I move, draw 1, then discard 1. Then, do the following based on the discarded card's type: Spell Draw 1.Gear Ready up to 2 runes.Unit Give me +3 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Iascylla",
+      "hrefPath": "cards/",
+      "text": "Iascylla UNL050/219 Unleashed Unit Calm Bilgewater Rare When I hold, at the start of your next Main Phase, you may move an enemy unit to this battlefield."
+    },
+    {
+      "kind": "Card",
       "title": "Icathian Rain",
       "hrefPath": "cards/",
       "text": "Icathian Rain OGN248/298 Origins Spell Signature Fury Mind Kai'Sa Epic Deal 2 to a unit. Deal 2 to a unit. Deal 2 to a unit. Deal 2 to a unit. Deal 2 to a unit. Deal 2 to a unit."
+    },
+    {
+      "kind": "Card",
+      "title": "Icevale Archer",
+      "hrefPath": "cards/",
+      "text": "Icevale Archer UNL065/219 Unleashed Unit Mind Freljord Common When I attack, you may pay :rbenergy1: to give a unit here 1 :rbmight: this turn."
     },
     {
       "kind": "Card",
@@ -1580,9 +1970,27 @@
     },
     {
       "kind": "Card",
+      "title": "Inferna",
+      "hrefPath": "cards/",
+      "text": "Inferna UNL002/219 Unleashed Unit Fury Bilgewater Common [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) [Assault 2] (+2 :rbmight: while I'm an attacker.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Insightful Investigator",
+      "hrefPath": "cards/",
+      "text": "Insightful Investigator UNL135/219 Unleashed Unit Chaos Piltover Uncommon When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1."
+    },
+    {
+      "kind": "Card",
       "title": "Invert Timelines",
       "hrefPath": "cards/",
       "text": "Invert Timelines OGN201/298 Origins Spell Chaos Epic Each player discards their hand, then draws 4."
+    },
+    {
+      "kind": "Card",
+      "title": "Inviolus Vox",
+      "hrefPath": "cards/",
+      "text": "Inviolus Vox UNL027/219 Unleashed Unit Fury Dragon Mount Targon Epic When I conquer, give a friendly unit +8 :rbmight: this turn."
     },
     {
       "kind": "Card",
@@ -1625,6 +2033,30 @@
       "title": "Iron Ballista",
       "hrefPath": "cards/",
       "text": "Iron Ballista OGN017/298 Origins Gear Fury Uncommon This enters exhausted. :rbexhaust:: Deal 2 to a unit at a battlefield."
+    },
+    {
+      "kind": "Card",
+      "title": "Ivern, Friend to All",
+      "hrefPath": "cards/",
+      "text": "Ivern, Friend to All UNL177/219 Unleashed Unit Champion Order Ivern Ionia Epic As you play me, choose Bird, Cat, Dog, or Poro. I gain that tag. When I conquer or hold, score 1 point if your units have all of the following tags among them Bird, Cat, Dog, and Poro."
+    },
+    {
+      "kind": "Card",
+      "title": "Ivern, Friend to All",
+      "hrefPath": "cards/",
+      "text": "Ivern, Friend to All UNL177a/219 Unleashed Unit Champion Order Ivern Ionia Showcase As you play me, choose Bird, Cat, Dog, or Poro. I gain that tag. When I conquer or hold, score 1 point if your units have all of the following tags among them Bird, Cat, Dog, and Poro."
+    },
+    {
+      "kind": "Card",
+      "title": "Ivern, Nurturer",
+      "hrefPath": "cards/",
+      "text": "Ivern, Nurturer UNL051/219 Unleashed Unit Champion Calm Ivern Ionia Rare When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit. (Give it a +1 :rbmight: buff if it doesn't have one.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Ivern, Nurturer",
+      "hrefPath": "cards/",
+      "text": "Ivern, Nurturer UNL051a/219 Unleashed Unit Champion Calm Ivern Ionia Showcase When you play me or when I hold, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. Then if you revealed a Bird, Cat, Dog, or Poro, do this: [Buff] a friendly unit."
     },
     {
       "kind": "Card",
@@ -1679,6 +2111,30 @@
       "title": "Jeweled Colossus",
       "hrefPath": "cards/",
       "text": "Jeweled Colossus OGN086/298 Origins Unit Mind Mount Targon Common [Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.) [Shield] (+1 :rbmight: while I'm a defender.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Jhin, Meticulous Killer",
+      "hrefPath": "cards/",
+      "text": "Jhin, Meticulous Killer UNL089/219 Unleashed Unit Champion Mind Jhin Ionia Epic [Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.) If you've spent :rbenergy4: or more to play a spell this turn, you may play me for :rbrunemind:."
+    },
+    {
+      "kind": "Card",
+      "title": "Jhin, Meticulous Killer",
+      "hrefPath": "cards/",
+      "text": "Jhin, Meticulous Killer UNL089a/219 Unleashed Unit Champion Mind Jhin Ionia Showcase [Vision] If you've spent :rbenergy4: or more to play a spell this turn, you may play me for :rbrunemind:."
+    },
+    {
+      "kind": "Card",
+      "title": "Jhin, Murderous Artist",
+      "hrefPath": "cards/",
+      "text": "Jhin, Murderous Artist UNL022/219 Unleashed Unit Champion Fury Jhin Ionia Rare [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.) When I move, [Add] :rbenergy1::rbrunerainbow:. (Abilities that add resources can't be reacted to.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Jhin, Murderous Artist",
+      "hrefPath": "cards/",
+      "text": "Jhin, Murderous Artist UNL022a/219 Unleashed Unit Champion Fury Jhin Ionia Showcase [Deflect] [Ganking] When I move, [Add] :rbenergy1::rbrunerainbow:."
     },
     {
       "kind": "Card",
@@ -1772,6 +2228,54 @@
     },
     {
       "kind": "Card",
+      "title": "Keeper of the Hammer",
+      "hrefPath": "cards/",
+      "text": "Keeper of the Hammer UNL203/219 Unleashed Legend Body Order Poppy Rare When you hold, gain 1 XP. Spend 3 XP, :rbexhaust:: Draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Keeper of the Hammer",
+      "hrefPath": "cards/",
+      "text": "Keeper of the Hammer UNL237/219 Unleashed Legend Body Order Poppy Showcase When you hold, gain 1 XP. Spend 3 XP, :rbexhaust:: Draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Keeper of the Hammer",
+      "hrefPath": "cards/",
+      "text": "Keeper of the Hammer UNL237/219 Unleashed Legend Body Order Poppy Showcase When you hold, gain 1 XP. Spend 3 XP, :rbexhaust:: Draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Keeper's Verdict",
+      "hrefPath": "cards/",
+      "text": "Keeper's Verdict UNL204/219 Unleashed Spell Signature Body Order Poppy Epic [Action] (Play on your turn or in showdowns.) Choose an enemy unit at a battlefield. Its owner places it on the top or bottom of their Main Deck."
+    },
+    {
+      "kind": "Card",
+      "title": "Kha'Zix, Evolving Hunter",
+      "hrefPath": "cards/",
+      "text": "Kha'Zix, Evolving Hunter UNL119/219 Unleashed Unit Champion Body Kha'Zix The Void Epic [Hunt] (When I conquer or hold, gain 1 XP.) When I attack, you may spend 3 XP to deal damage equal to my Might to an enemy unit here."
+    },
+    {
+      "kind": "Card",
+      "title": "Kha'Zix, Evolving Hunter",
+      "hrefPath": "cards/",
+      "text": "Kha'Zix, Evolving Hunter UNL119a/219 Unleashed Unit Champion Body Kha'Zix The Void Showcase [Hunt] When I attack, you may spend 3 XP to deal damage equal to my Might to an enemy unit here."
+    },
+    {
+      "kind": "Card",
+      "title": "Kha'Zix, Mutating Horror",
+      "hrefPath": "cards/",
+      "text": "Kha'Zix, Mutating Horror UNL143/219 Unleashed Unit Champion Chaos Kha'Zix The Void Rare [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I attack or defend, if an enemy unit is alone here, give me +2 :rbmight: this turn and gain 2 XP."
+    },
+    {
+      "kind": "Card",
+      "title": "Kha'Zix, Mutating Horror",
+      "hrefPath": "cards/",
+      "text": "Kha'Zix, Mutating Horror UNL143a/219 Unleashed Unit Champion Chaos Kha'Zix The Void Showcase [Ambush] When I attack or defend, if an enemy unit is alone here, give me +2 :rbmight: this turn and gain 2 XP."
+    },
+    {
+      "kind": "Card",
       "title": "King's Edict",
       "hrefPath": "cards/",
       "text": "King's Edict OGN237/298 Origins Spell Order Rare Starting with the next player, each other player chooses a unit you don't control that hasn't been chosen for this spell. Kill those units."
@@ -1829,6 +2333,18 @@
       "title": "Laurent Duelist",
       "hrefPath": "cards/",
       "text": "Laurent Duelist SFD156/221 Spiritforged Unit Order Demacia Common [Assault 2] (+2 :rbmight: while I'm an attacker.)"
+    },
+    {
+      "kind": "Card",
+      "title": "LeBlanc, Everywhere at Once",
+      "hrefPath": "cards/",
+      "text": "LeBlanc, Everywhere at Once UNL090/219 Unleashed Unit Champion Mind Noxus LeBlanc Epic [Backline] (I must be assigned combat damage last.) Your [Temporary] effects at my battlefield don't trigger."
+    },
+    {
+      "kind": "Card",
+      "title": "LeBlanc, Everywhere at Once",
+      "hrefPath": "cards/",
+      "text": "LeBlanc, Everywhere at Once UNL090a/219 Unleashed Unit Champion Mind Noxus LeBlanc Showcase [Backline] Your [Temporary] effects at my battlefield don't trigger."
     },
     {
       "kind": "Card",
@@ -1898,9 +2414,33 @@
     },
     {
       "kind": "Card",
+      "title": "Lillia, Protector of Dreams",
+      "hrefPath": "cards/",
+      "text": "Lillia, Protector of Dreams UNL058/219 Unleashed Unit Champion Calm Fae Lillia Ionia Epic When you play a token unit, give me +1 :rbmight: this turn. Your token units have [Tank]. (They must be assigned combat damage first.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Lillia, Protector of Dreams",
+      "hrefPath": "cards/",
+      "text": "Lillia, Protector of Dreams UNL058a/219 Unleashed Unit Champion Calm Fae Lillia Ionia Showcase When you play a token unit, give me +1 :rbmight: this turn. Your token units have [Tank]."
+    },
+    {
+      "kind": "Card",
+      "title": "Lilting Lullaby",
+      "hrefPath": "cards/",
+      "text": "Lilting Lullaby UNL190/219 Unleashed Spell Signature Calm Mind Lillia Epic [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell. Its controller can't play spells this turn."
+    },
+    {
+      "kind": "Card",
       "title": "Lonely Poro",
       "hrefPath": "cards/",
       "text": "Lonely Poro SFD036/221 Spiritforged Unit Calm Poro Freljord Common [Deathknell] If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Lonely Poro",
+      "hrefPath": "cards/",
+      "text": "Lonely Poro UNL221/219 Unleashed Unit Calm Poro Freljord Showcase [Deathknell][] If I died alone, draw 1."
     },
     {
       "kind": "Card",
@@ -1925,6 +2465,12 @@
       "title": "Loose Cannon",
       "hrefPath": "cards/",
       "text": "Loose Cannon OGN301/298 Origins Legend Fury Chaos Jinx Showcase At start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand."
+    },
+    {
+      "kind": "Card",
+      "title": "Loyal Poro",
+      "hrefPath": "cards/",
+      "text": "Loyal Poro UNL156/219 Unleashed Unit Order Poro Freljord Common [Deathknell][] If I didn't die alone, draw 1. (When I die, get the effect. I wasn't alone if there were other friendly units here.)"
     },
     {
       "kind": "Card",
@@ -1982,6 +2528,12 @@
     },
     {
       "kind": "Card",
+      "title": "Mageseeker Investigator",
+      "hrefPath": "cards/",
+      "text": "Mageseeker Investigator UNL163/219 Unleashed Unit Order Demacia Uncommon Opponents must pay :rbrunerainbow: for each unit beyond the first to move multiple units to my battlefield at the same time."
+    },
+    {
+      "kind": "Card",
       "title": "Mageseeker Warden",
       "hrefPath": "cards/",
       "text": "Mageseeker Warden OGN070/298 Origins Unit Calm Demacia Rare While I'm at a battlefield, opponents can only play units to their base. While I'm at a battlefield, spells and abilities can't ready enemy units and gear."
@@ -2024,6 +2576,30 @@
     },
     {
       "kind": "Card",
+      "title": "Master Yi, Tempered",
+      "hrefPath": "cards/",
+      "text": "Master Yi, Tempered UNL113/219 Unleashed Unit Champion Body Master Yi Ionia Rare [Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 6][] I have [Deflect] and [Ganking]. (While you have 6+ XP, opponents must pay :rbrunerainbow: to choose me with a spell or ability and I can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Master Yi, Tempered",
+      "hrefPath": "cards/",
+      "text": "Master Yi, Tempered UNL113a/219 Unleashed Unit Champion Body Master Yi Ionia Showcase [Hunt 2] [Level 6][] I have [Deflect] and [Ganking]."
+    },
+    {
+      "kind": "Card",
+      "title": "Master Yi, Unstoppable",
+      "hrefPath": "cards/",
+      "text": "Master Yi, Unstoppable UNL059/219 Unleashed Unit Champion Calm Master Yi Ionia Epic [Level 3][] I cost :rbenergy2::rbrunecalm: less. (While you have 3+ XP, get the effect.) [Level 6][] I cost :rbenergy4::rbrunecalm::rbrunecalm: less instead. [Level 11][] I cost :rbenergy6::rbrunecalm::rbrunecalm::rbrunecalm: less instead. [Level 16][] I can't be chosen by enemy spells and abilities."
+    },
+    {
+      "kind": "Card",
+      "title": "Master Yi, Unstoppable",
+      "hrefPath": "cards/",
+      "text": "Master Yi, Unstoppable UNL059a/219 Unleashed Unit Champion Calm Master Yi Ionia Showcase [Level 3][] I cost :rbenergy2::rbrunecalm: less. [Level 6][] I cost :rbenergy4::rbrunecalm::rbrunecalm: less instead. [Level 11][] I cost :rbenergy6::rbrunecalm::rbrunecalm::rbrunecalm: less instead. [Level 16][] I can't be chosen by enemy spells and abilities."
+    },
+    {
+      "kind": "Card",
       "title": "Mechanized Menace",
       "hrefPath": "cards/",
       "text": "Mechanized Menace SFD181/221 Spiritforged Legend Fury Mind Rumble Rare Your Mechs have [Shield]. (+1 :rbmight: while they're defenders.)"
@@ -2045,6 +2621,12 @@
       "title": "Mega-Mech",
       "hrefPath": "cards/",
       "text": "MegaMech OGN088/298 Origins Unit Mind Mech Bandle City Common"
+    },
+    {
+      "kind": "Card",
+      "title": "Megatusk",
+      "hrefPath": "cards/",
+      "text": "Megatusk UNL126/219 Unleashed Unit Chaos Bilgewater Common Spend 3 XP: Give your units here [Ganking] this turn. (We can move from battlefield to battlefield.)"
     },
     {
       "kind": "Card",
@@ -2081,6 +2663,18 @@
       "title": "Minotaur Reckoner",
       "hrefPath": "cards/",
       "text": "Minotaur Reckoner SFD014/221 Spiritforged Unit Fury Noxus Uncommon Units can't move to base."
+    },
+    {
+      "kind": "Card",
+      "title": "Mirror Image",
+      "hrefPath": "cards/",
+      "text": "Mirror Image UNL200/219 Unleashed Spell Signature Mind Order LeBlanc Epic Choose a unit. Play a ready Reflection unit token to your base. It becomes a copy of that unit. Give it [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Mischievous Marai",
+      "hrefPath": "cards/",
+      "text": "Mischievous Marai UNL003/219 Unleashed Unit Fury Bilgewater Common [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) When you play me to a battlefield, deal 2 to an enemy unit here."
     },
     {
       "kind": "Card",
@@ -2126,9 +2720,21 @@
     },
     {
       "kind": "Card",
+      "title": "Moonfall",
+      "hrefPath": "cards/",
+      "text": "Moonfall UNL198/219 Unleashed Spell Signature Mind Chaos Diana Epic [Action] (Play on your turn or in showdowns.) Choose a battlefield where you have units. You may move up to one enemy unit to that battlefield. Then give enemy units there 2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
       "title": "Morbid Return",
       "hrefPath": "cards/",
       "text": "Morbid Return OGN170/298 Origins Spell Chaos Common [Action] (Play on your turn or in showdowns.) Return a unit from your trash to your hand."
+    },
+    {
+      "kind": "Card",
+      "title": "Mosstomper",
+      "hrefPath": "cards/",
+      "text": "Mosstomper UNL047/219 Unleashed Unit Calm Dog Ixtal Uncommon [Hunt 2] (When I conquer or hold, gain 2 XP.) [Level 3][] I have +1 :rbmight: and [Deflect]. (While you have 3+ XP, get the effect. Opponents must pay :rbrunerainbow: to choose a [Deflect] unit with a spell or ability.)"
     },
     {
       "kind": "Card",
@@ -2144,9 +2750,21 @@
     },
     {
       "kind": "Card",
+      "title": "Mutated Mouser",
+      "hrefPath": "cards/",
+      "text": "Mutated Mouser UNL036/219 Unleashed Unit Calm Cat Bilgewater Common [Shield 2] (+2 :rbmight: while I'm a defender.) [Tank] (I must be assigned combat damage first.)"
+    },
+    {
+      "kind": "Card",
       "title": "Mystic Poro",
       "hrefPath": "cards/",
       "text": "Mystic Poro OGN171/298 Origins Unit Chaos Poro Common [Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Mystic Poro",
+      "hrefPath": "cards/",
+      "text": "Mystic Poro UNL224/219 Unleashed Unit Chaos Poro Showcase [Vision]"
     },
     {
       "kind": "Card",
@@ -2171,6 +2789,18 @@
       "title": "Needlessly Large Yordle",
       "hrefPath": "cards/",
       "text": "Needlessly Large Yordle SFD055/221 Spiritforged Unit Calm Yordle Bandle City Rare [Shield 5] (+5 :rbmight: while I'm a defender.) [Tank] (I must be assigned combat damage first.) I cost :rbenergy2::rbrunecalm: less for each point you scored from holding this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Nidalee, Cat Form",
+      "hrefPath": "cards/",
+      "text": "Nidalee, Cat Form UNL114/219 Unleashed Unit Champion Body Cat Ixtal Nidalee Rare [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) When I win a combat, draw 1. (I win if I remain after combat.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Nilah, Joyful Ascetic",
+      "hrefPath": "cards/",
+      "text": "Nilah, Joyful Ascetic UNL115/219 Unleashed Unit Champion Body Nilah Kathkan Demon Rare [Accelerate] (You may pay :rbenergy1::rbrunebody: as an additional cost to have me enter ready.) [Ganking] (I can move from battlefield to battlefield.) When I move, gain 1 XP."
     },
     {
       "kind": "Card",
@@ -2354,6 +2984,12 @@
     },
     {
       "kind": "Card",
+      "title": "Piltover Enforcer",
+      "hrefPath": "cards/",
+      "text": "Piltover Enforcer UNL187/219 Unleashed Legend Fury Order Vi Rare When you conquer, if you assigned 3 or more excess damage, you may exhaust me to ready a unit."
+    },
+    {
+      "kind": "Card",
       "title": "Pirate's Haven",
       "hrefPath": "cards/",
       "text": "Pirate's Haven OGN143/298 Origins Gear Body Uncommon When you ready a friendly unit, give it +1 :rbmight: this turn."
@@ -2381,6 +3017,12 @@
       "title": "Plundering Poro",
       "hrefPath": "cards/",
       "text": "Plundering Poro SFD069/221 Spiritforged Unit Mind Poro Pirate Bilgewater Common When I conquer, play a Gold gear token exhausted."
+    },
+    {
+      "kind": "Card",
+      "title": "Plundering Poro",
+      "hrefPath": "cards/",
+      "text": "Plundering Poro UNL222/219 Unleashed Unit Mind Poro Pirate Bilgewater Showcase When I conquer, play a Gold gear token exhausted."
     },
     {
       "kind": "Card",
@@ -2414,6 +3056,12 @@
     },
     {
       "kind": "Card",
+      "title": "Pouty Poro",
+      "hrefPath": "cards/",
+      "text": "Pouty Poro UNL220/219 Unleashed Unit Fury Poro Showcase [Deflect]"
+    },
+    {
+      "kind": "Card",
       "title": "Power Nexus",
       "hrefPath": "cards/",
       "text": "Power Nexus SFD214/221 Spiritforged Battlefield Colorless Uncommon When you hold here, you may pay :rbrunerainbow::rbrunerainbow::rbrunerainbow::rbrunerainbow: to score 1 point."
@@ -2423,6 +3071,12 @@
       "title": "Premonition",
       "hrefPath": "cards/",
       "text": "Premonition SFD087/221 Spiritforged Spell Mind Epic [Reaction] (Play any time, even before spells and abilities resolve.) Draw 3."
+    },
+    {
+      "kind": "Card",
+      "title": "Pridestalker",
+      "hrefPath": "cards/",
+      "text": "Pridestalker UNL183/219 Unleashed Legend Fury Body Rengar Rare When you play a unit, give a unit +1 :rbmight: this turn."
     },
     {
       "kind": "Card",
@@ -2483,6 +3137,30 @@
       "title": "Purifier",
       "hrefPath": "cards/",
       "text": "Purifier SFD241/221 Spiritforged Legend Fury Body Lucian Showcase Your Equipment each give [Assault]. (+1 :rbmight: while equipped unit is an attacker.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Pyke, Dockside Butcher",
+      "hrefPath": "cards/",
+      "text": "Pyke, Dockside Butcher UNL028/219 Unleashed Unit Champion Fury Pyke Bilgewater Epic [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Ganking] (I can move from battlefield to battlefield.) You may pay :rbrunefury: as an additional cost to play me. When you play me, if you paid the additional cost, ready me and give me +2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Pyke, Dockside Butcher",
+      "hrefPath": "cards/",
+      "text": "Pyke, Dockside Butcher UNL028a/219 Unleashed Unit Champion Fury Pyke Bilgewater Showcase [Hidden] [Ganking] You may pay :rbrunefury: as an additional cost to play me. When you play me, if you paid the additional cost, ready me and give me +2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Pyke, Returned",
+      "hrefPath": "cards/",
+      "text": "Pyke, Returned UNL145/219 Unleashed Unit Champion Chaos Pyke Bilgewater Rare [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Backline] (I must be assigned combat damage last.) Once each turn, when an enemy unit dies while I'm at a battlefield, play a Gold gear token exhausted. (It has \"[Reaction][] Kill this, :rbexhaust:: [Add] :rbrunerainbow:.\")"
+    },
+    {
+      "kind": "Card",
+      "title": "Pyke, Returned",
+      "hrefPath": "cards/",
+      "text": "Pyke, Returned UNL145a/219 Unleashed Unit Champion Chaos Pyke Bilgewater Showcase [Hidden] [Backline] Once each turn, when an enemy unit dies while I'm at a battlefield, play a Gold gear token exhausted."
     },
     {
       "kind": "Card",
@@ -2600,6 +3278,12 @@
     },
     {
       "kind": "Card",
+      "title": "Reflection",
+      "hrefPath": "cards/",
+      "text": "Reflection UNLT06 Unleashed Unit Token Colorless Common (I become a copy of something when played. I don't get that card's play effects.)"
+    },
+    {
+      "kind": "Card",
       "title": "Reinforce",
       "hrefPath": "cards/",
       "text": "Reinforce OGN062/298 Origins Spell Calm Uncommon Look at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by :rbenergy5:. Recycle the remaining cards."
@@ -2690,6 +3374,30 @@
     },
     {
       "kind": "Card",
+      "title": "Rengar, Trophy Hunter",
+      "hrefPath": "cards/",
+      "text": "Rengar, Trophy Hunter UNL120/219 Unleashed Unit Champion Body Cat Rengar Ixtal Epic [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) I can be played to a battlefield where there are enemy units (even if you don't have units there)."
+    },
+    {
+      "kind": "Card",
+      "title": "Rengar, Trophy Hunter",
+      "hrefPath": "cards/",
+      "text": "Rengar, Trophy Hunter UNL120a/219 Unleashed Unit Champion Body Cat Rengar Ixtal Showcase [Ambush] I can be played to a battlefield where there are enemy units."
+    },
+    {
+      "kind": "Card",
+      "title": "Rengar, Unseen",
+      "hrefPath": "cards/",
+      "text": "Rengar, Unseen UNL024/219 Unleashed Unit Champion Fury Cat Rengar Ixtal Rare [Accelerate] (You may pay :rbenergy1::rbrunefury: as an additional cost to have me enter ready.) [Assault 2] (+2 :rbmight: while I'm an attacker.) [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Rengar, Unseen",
+      "hrefPath": "cards/",
+      "text": "Rengar, Unseen UNL024a/219 Unleashed Unit Champion Fury Cat Rengar Ixtal Showcase [Accelerate] [Assault 2] [Deflect] [Ganking]"
+    },
+    {
+      "kind": "Card",
       "title": "Retreat",
       "hrefPath": "cards/",
       "text": "Retreat OGN104/298 Origins Spell Mind Uncommon [Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit to its owner's hand. Its owner channels 1 rune exhausted."
@@ -2714,9 +3422,27 @@
     },
     {
       "kind": "Card",
+      "title": "Rift Herald",
+      "hrefPath": "cards/",
+      "text": "Rift Herald UNL179/219 Unleashed Unit Order The Void Epic When I move to a battlefield, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. [Deathknell][] Play a unit from your hand to your base, ignoring its Energy cost. (When I die, get the effect. You must still pay its Power cost.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Rift Herald",
+      "hrefPath": "cards/",
+      "text": "Rift Herald UNL179a/219 Unleashed Unit Order The Void Showcase When I move to a battlefield, look at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest. [Deathknell][] Play a unit from your hand to your base, ignoring its Energy cost."
+    },
+    {
+      "kind": "Card",
       "title": "Riposte",
       "hrefPath": "cards/",
       "text": "Riposte SFD206/221 Spiritforged Spell Signature Body Order Fiora Epic [Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit and a spell. Counter that spell and give that unit +:rbmight: equal to that spell's Energy cost this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Ripper's Bay",
+      "hrefPath": "cards/",
+      "text": "Ripper's Bay UNL214/219 Unleashed Battlefield Colorless Uncommon When a unit here is returned to a player's hand, that player may pay :rbenergy1: to channel 1 rune exhausted."
     },
     {
       "kind": "Card",
@@ -2728,7 +3454,7 @@
       "kind": "Card",
       "title": "Rocket Barrage",
       "hrefPath": "cards/",
-      "text": "Rocket Barrage SFD077/221 Spiritforged Spell Mind Uncommon [Repeat] :rbenergy4::rbrunemind: (You may pay the additional cost to repeat this spell's effect, and may make different choices.) Choose one Deal 4 to a unit in a base. Kill a gear."
+      "text": "Rocket Barrage SFD077/221 Spiritforged Spell Mind Uncommon [Repeat] :rbenergy4::rbrunemind: (You may pay the additional cost to repeat this spell's effect, and may make different choices.) Choose one Deal 4 to a unit in a base.Kill a gear."
     },
     {
       "kind": "Card",
@@ -2798,6 +3524,12 @@
     },
     {
       "kind": "Card",
+      "title": "Sacrifice",
+      "hrefPath": "cards/",
+      "text": "Sacrifice UNL173/219 Unleashed Spell Order Rare [Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, kill a friendly [Mighty] unit. (A unit is Mighty while it has 5+ :rbmight:.) Draw 2 and channel 1 rune exhausted."
+    },
+    {
+      "kind": "Card",
       "title": "Sai Scout",
       "hrefPath": "cards/",
       "text": "Sai Scout OGN174/298 Origins Unit Chaos Shurima Common [Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.) You may play me to an open battlefield."
@@ -2816,6 +3548,24 @@
     },
     {
       "kind": "Card",
+      "title": "Scorn of the Moon",
+      "hrefPath": "cards/",
+      "text": "Scorn of the Moon UNL197/219 Unleashed Legend Mind Chaos Diana Rare [Reaction][] :rbexhaust:: [Add] :rbenergy1:. Spend this Energy only during showdowns. (Abilities that add resources can't be reacted to.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Scorn of the Moon",
+      "hrefPath": "cards/",
+      "text": "Scorn of the Moon UNL234/219 Unleashed Legend Mind Chaos Diana Showcase [Reaction][] :rbexhaust:: [Add] :rbenergy1:. Spend this Energy only during showdowns."
+    },
+    {
+      "kind": "Card",
+      "title": "Scorn of the Moon",
+      "hrefPath": "cards/",
+      "text": "Scorn of the Moon UNL234/219 Unleashed Legend Mind Chaos Diana Showcase [Reaction][] :rbexhaust:: [Add] :rbenergy1:. Spend this Energy only during showdowns."
+    },
+    {
+      "kind": "Card",
       "title": "Scrapheap",
       "hrefPath": "cards/",
       "text": "Scrapheap OGN182/298 Origins Gear Chaos Uncommon When this is played, discarded, or killed, draw 1."
@@ -2825,6 +3575,12 @@
       "title": "Scrapyard Champion",
       "hrefPath": "cards/",
       "text": "Scrapyard Champion OGN020/298 Origins Unit Fury Mech Bandle City Uncommon [Legion] When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Scrutinizing Sergeant",
+      "hrefPath": "cards/",
+      "text": "Scrutinizing Sergeant UNL157/219 Unleashed Unit Order Elite Demacia Common When you play me, gain 1 XP for each friendly unit."
     },
     {
       "kind": "Card",
@@ -2960,9 +3716,27 @@
     },
     {
       "kind": "Card",
+      "title": "Shadow Watcher",
+      "hrefPath": "cards/",
+      "text": "Shadow Watcher UNL037/219 Unleashed Unit Calm Ionia Common If a friendly unit died during your Beginning Phase this turn, I enter ready."
+    },
+    {
+      "kind": "Card",
+      "title": "Shadow's Call",
+      "hrefPath": "cards/",
+      "text": "Shadow's Call UNL165/219 Unleashed Spell Order Uncommon Choose a friendly unit without [Temporary]. Give it [Temporary]. Draw 2. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+    },
+    {
+      "kind": "Card",
       "title": "Shakedown",
       "hrefPath": "cards/",
       "text": "Shakedown OGN033/298 Origins Spell Fury Rare [Reaction] (Play any time, even before spells and abilities resolve.) Choose an enemy unit. Deal 6 to it unless its controller has you draw 2."
+    },
+    {
+      "kind": "Card",
+      "title": "Sharkling",
+      "hrefPath": "cards/",
+      "text": "Sharkling UNL006/219 Unleashed Unit Fury Bilgewater Common [Accelerate] (You may pay :rbenergy1::rbrunefury: as an additional cost to have me enter ready.) [Assault 4] (+4 :rbmight: while I'm an attacker.)"
     },
     {
       "kind": "Card",
@@ -3014,6 +3788,12 @@
     },
     {
       "kind": "Card",
+      "title": "Sinister Poro",
+      "hrefPath": "cards/",
+      "text": "Sinister Poro UNL137/219 Unleashed Unit Chaos Poro Shadow Isles Uncommon When I attack, you may pay :rbenergy1: to move an enemy unit here to its base."
+    },
+    {
+      "kind": "Card",
       "title": "Siphon Power",
       "hrefPath": "cards/",
       "text": "Siphon Power OGN266/298 Origins Spell Signature Mind Order Viktor Epic [Reaction] (Play any time, even before spells and abilities resolve.) Choose a battlefield. Give friendly units there +1 :rbmight: this turn and enemy units there 1 :rbmight: this turn, to a minimum of 1 :rbmight:."
@@ -3053,6 +3833,12 @@
       "title": "Skyfall of Areion",
       "hrefPath": "cards/",
       "text": "Skyfall of Areion SFD030/221 Spiritforged Gear Fury Equipment Epic [Equip] :rbenergy1::rbrunefury: (:rbenergy1::rbrunefury:: Attach this to a unit you control.) My hold effects are also conquer effects, and vice versa."
+    },
+    {
+      "kind": "Card",
+      "title": "Smite",
+      "hrefPath": "cards/",
+      "text": "Smite UNL007/219 Unleashed Spell Fury Common [Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. If it would die this turn, banish it instead."
     },
     {
       "kind": "Card",
@@ -3116,6 +3902,18 @@
     },
     {
       "kind": "Card",
+      "title": "Soul Shepherd",
+      "hrefPath": "cards/",
+      "text": "Soul Shepherd UNL077/219 Unleashed Unit Mind Shadow Isles Uncommon Your token units have +1 :rbmight:."
+    },
+    {
+      "kind": "Card",
+      "title": "Soul Sword",
+      "hrefPath": "cards/",
+      "text": "Soul Sword UNL039/219 Unleashed Gear Calm Equipment Common [Equip] :rbrunecalm: (:rbrunecalm:: Attach this to a unit you control.) [Level 3][] I have an additional +1 :rbmight:. (While you have 3+ XP, get the effect.)"
+    },
+    {
+      "kind": "Card",
       "title": "Soulgorger",
       "hrefPath": "cards/",
       "text": "Soulgorger OGN196/298 Origins Unit Chaos Spirit Shadow Isles Rare When you play me, you may play a unit from your trash, ignoring its Energy cost. (You must still pay its Power cost.)"
@@ -3158,6 +3956,12 @@
     },
     {
       "kind": "Card",
+      "title": "Sprite",
+      "hrefPath": "cards/",
+      "text": "Sprite UNLT07 Unleashed Unit Token Colorless Fae Common [Temporary] (Kill me at the start of your Beginning Phase, before scoring.)"
+    },
+    {
+      "kind": "Card",
       "title": "Sprite Call",
       "hrefPath": "cards/",
       "text": "Sprite Call OGN094/298 Origins Spell Mind Common [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Action] (Play on your turn or in showdowns.) Play a ready 3 :rbmight: Sprite unit token with [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
@@ -3176,6 +3980,12 @@
     },
     {
       "kind": "Card",
+      "title": "Stalking Wolf",
+      "hrefPath": "cards/",
+      "text": "Stalking Wolf UNL166/219 Unleashed Unit Order Dog Freljord Uncommon [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) As an additional cost to play me, kill a Bird, Cat, Dog, or Poro you control. You may play me to its battlefield (even if you don't have other units there)."
+    },
+    {
+      "kind": "Card",
       "title": "Stalwart Poro",
       "hrefPath": "cards/",
       "text": "Stalwart Poro OGN052/298 Origins Unit Calm Poro Common [Shield] (+1 :rbmight: while I'm a defender.)"
@@ -3185,6 +3995,12 @@
       "title": "Stand United",
       "hrefPath": "cards/",
       "text": "Stand United OGN053/298 Origins Spell Calm Common [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Action] (Play on your turn or in showdowns.) Buff a friendly unit. Buffs give an additional +1 :rbmight: to friendly units this turn. (To buff a unit, give it a +1 :rbmight: buff if it doesn't already have one.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Star-Crossed",
+      "hrefPath": "cards/",
+      "text": "StarCrossed UNL128/219 Unleashed Spell Chaos Common [Reaction] (Play any time, even before spells and abilities resolve.) Return a friendly unit and an enemy unit to their owners' hands."
     },
     {
       "kind": "Card",
@@ -3368,6 +4184,12 @@
     },
     {
       "kind": "Card",
+      "title": "The Academy",
+      "hrefPath": "cards/",
+      "text": "The Academy UNL216/219 Unleashed Battlefield Colorless Uncommon When you hold here, give your next spell this turn [Repeat] equal to its base cost. (You may pay the additional cost to repeat the spell's effect.)"
+    },
+    {
+      "kind": "Card",
       "title": "The Arena's Greatest",
       "hrefPath": "cards/",
       "text": "The Arena's Greatest OGN290/298 Origins Battlefield Colorless Uncommon At the start of each player's first Beginning Phase, that player gains 1 point."
@@ -3416,9 +4238,21 @@
     },
     {
       "kind": "Card",
+      "title": "The List",
+      "hrefPath": "cards/",
+      "text": "The List UNL138/219 Unleashed Gear Chaos Uncommon As you play this, name a tag. (For example, Miss Fortune, Demacia, and Poro are tags.) :rbexhaust:: Give a unit with the named tag 2 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
       "title": "The Papertree",
       "hrefPath": "cards/",
       "text": "The Papertree SFD219/221 Spiritforged Battlefield Colorless Uncommon When you hold here, each player channels 1 rune exhausted."
+    },
+    {
+      "kind": "Card",
+      "title": "The Ruination",
+      "hrefPath": "cards/",
+      "text": "The Ruination UNL180/219 Unleashed Spell Order Epic Kill all units."
     },
     {
       "kind": "Card",
@@ -3443,6 +4277,12 @@
       "title": "Thousand-Tailed Watcher",
       "hrefPath": "cards/",
       "text": "ThousandTailed Watcher OGN116/298 Origins Unit Mind Ionia Rare [Accelerate] (You may pay :rbenergy1::rbrunemind: as an additional cost to have me enter ready.) When you play me, give enemy units 3 :rbmight: this turn, to a minimum of 1 :rbmight:."
+    },
+    {
+      "kind": "Card",
+      "title": "Thrill of the Hunt",
+      "hrefPath": "cards/",
+      "text": "Thrill of the Hunt UNL184/219 Unleashed Spell Signature Fury Body Rengar Epic [Reaction] (Play any time, even before spells and abilities resolve.) Banish a friendly unit, then its owner plays it to any battlefield, ignoring its cost."
     },
     {
       "kind": "Card",
@@ -3473,6 +4313,18 @@
       "title": "Time Warp",
       "hrefPath": "cards/",
       "text": "Time Warp OGN122/298 Origins Spell Mind Epic Take a turn after this one. Banish this."
+    },
+    {
+      "kind": "Card",
+      "title": "Towering Pairofant",
+      "hrefPath": "cards/",
+      "text": "Towering Pairofant UNL008/219 Unleashed Unit Fury Shurima Common [Assault] (+1 :rbmight: while I'm an attacker.) If a unit died this turn, I enter ready."
+    },
+    {
+      "kind": "Card",
+      "title": "Trapping Grounds",
+      "hrefPath": "cards/",
+      "text": "Trapping Grounds UNL217/219 Unleashed Battlefield Colorless Uncommon When you conquer here, if you assigned 3 or more excess damage, play a 1 :rbmight: Bird unit token with [Deflect]."
     },
     {
       "kind": "Card",
@@ -3536,15 +4388,27 @@
     },
     {
       "kind": "Card",
+      "title": "Turn to Dust",
+      "hrefPath": "cards/",
+      "text": "Turn to Dust UNL070/219 Unleashed Spell Mind Common Give a gear [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+    },
+    {
+      "kind": "Card",
       "title": "Twisted Fate, Gambler",
       "hrefPath": "cards/",
-      "text": "Twisted Fate, Gambler OGN200/298 Origins Unit Champion Chaos Twisted Fate Bilgewater Rare When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain: :rbrunefury: Deal 2 to an enemy unit here and 1 to all other enemy units here. :rbrunemind: Draw 1. :rbruneorder: Stun an enemy unit."
+      "text": "Twisted Fate, Gambler OGN200/298 Origins Unit Champion Chaos Twisted Fate Bilgewater Rare When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain: :rbrunefury: Deal 2 to an enemy unit here and 1 to all other enemy units here.:rbrunemind: Draw 1.:rbruneorder: Stun an enemy unit."
     },
     {
       "kind": "Card",
       "title": "Udyr, Wildman",
       "hrefPath": "cards/",
-      "text": "Udyr, Wildman OGN157/298 Origins Unit Champion Body Udyr Freljord Rare Spend my buff: Choose one you've not chosen this turn Deal 2 to a unit at a battlefield. Stun a unit at a battlefield. Ready me. Give me [Ganking] this turn."
+      "text": "Udyr, Wildman OGN157/298 Origins Unit Champion Body Udyr Freljord Rare Spend my buff: Choose one you've not chosen this turn Deal 2 to a unit at a battlefield.Stun a unit at a battlefield.Ready me.Give me [Ganking] this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Ultrasoft Poro",
+      "hrefPath": "cards/",
+      "text": "Ultrasoft Poro UNL160/219 Unleashed Unit Order Poro Freljord Common :rbexhaust:: Play two :rbenergy1: :rbmight: Bird unit tokens with [Deflect]. Use this ability only while I'm at a battlefield. (Opponents must pay :rbrunerainbow: to choose a [Deflect] unit with a spell or ability.)"
     },
     {
       "kind": "Card",
@@ -3563,6 +4427,12 @@
       "title": "Undertitan",
       "hrefPath": "cards/",
       "text": "Undertitan SFD175/221 Spiritforged Unit Order The Void Rare When you play me, give your other units +2 :rbmight: this turn. As I'm revealed from your deck, [Add] :rbenergy2:."
+    },
+    {
+      "kind": "Card",
+      "title": "Undying Loyalty",
+      "hrefPath": "cards/",
+      "text": "Undying Loyalty UNL168/219 Unleashed Spell Order Uncommon This costs :rbenergy2: less if you choose a Bird, Cat, Dog, or Poro. Play a unit with cost no more than :rbenergy2: and no more than :rbrunerainbow: from your trash, ignoring its cost."
     },
     {
       "kind": "Card",
@@ -3602,6 +4472,12 @@
     },
     {
       "kind": "Card",
+      "title": "Upstage Comedy",
+      "hrefPath": "cards/",
+      "text": "Upstage Comedy UNL009/219 Unleashed Spell Fury Common [Repeat] :rbenergy2: (You may pay the additional cost to repeat this spell's effect.) Ready a unit."
+    },
+    {
+      "kind": "Card",
       "title": "Vanguard Armory",
       "hrefPath": "cards/",
       "text": "Vanguard Armory SFD168/221 Spiritforged Gear Order Uncommon :rbexhaust:: Play three 1 :rbmight: Recruit unit tokens. (You may play them to different locations.)"
@@ -3629,6 +4505,12 @@
       "title": "Vanguard Sergeant",
       "hrefPath": "cards/",
       "text": "Vanguard Sergeant OGN219/298 Origins Unit Order Elite Demacia Common"
+    },
+    {
+      "kind": "Card",
+      "title": "Vaults of Helia",
+      "hrefPath": "cards/",
+      "text": "Vaults of Helia UNL219/219 Unleashed Battlefield Colorless Uncommon When you hold here, your nontoken units cost :rbenergy1: more to play this turn."
     },
     {
       "kind": "Card",
@@ -3668,6 +4550,12 @@
     },
     {
       "kind": "Card",
+      "title": "Veteran Poro",
+      "hrefPath": "cards/",
+      "text": "Veteran Poro UNL223/219 Unleashed Unit Body Poro Freljord Showcase [Weaponmaster]"
+    },
+    {
+      "kind": "Card",
       "title": "Vex, Cheerless",
       "hrefPath": "cards/",
       "text": "Vex, Cheerless SFD146/221 Spiritforged Unit Champion Chaos Yordle Vex Shadow Isles Rare While I'm in combat, friendly spells cost :rbenergy1::rbrunerainbow: less to a minimum of :rbenergy1:, and enemy spells cost :rbenergy1::rbrunerainbow: more."
@@ -3677,6 +4565,18 @@
       "title": "Vi, Destructive",
       "hrefPath": "cards/",
       "text": "Vi, Destructive OGN036/298 Origins Unit Champion Fury Vi Piltover Rare [Ganking] (I can move from battlefield to battlefield.) Recycle 1 from your trash: Give me +1 :rbmight: this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Vi, Hotheaded",
+      "hrefPath": "cards/",
+      "text": "Vi, Hotheaded UNL030/219 Unleashed Unit Champion Fury Vi Zaun Epic [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) :rbenergy2::rbrunefury:: Double my Might this turn."
+    },
+    {
+      "kind": "Card",
+      "title": "Vi, Hotheaded",
+      "hrefPath": "cards/",
+      "text": "Vi, Hotheaded UNL030a/219 Unleashed Unit Champion Fury Vi Zaun Showcase [Deflect] :rbenergy2::rbrunefury:: Double my Might this turn."
     },
     {
       "kind": "Card",
@@ -3704,9 +4604,27 @@
     },
     {
       "kind": "Card",
+      "title": "Vilemaw",
+      "hrefPath": "cards/",
+      "text": "Vilemaw UNL060/219 Unleashed Unit Calm Shadow Isles Spider Epic [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) Enemy units here with less Might than me don't deal combat damage. When I hold, draw 1."
+    },
+    {
+      "kind": "Card",
+      "title": "Vilemaw",
+      "hrefPath": "cards/",
+      "text": "Vilemaw UNL060a/219 Unleashed Unit Calm Shadow Isles Spider Showcase [Ambush] Enemy units here with less Might than me don't deal combat damage. When I hold, draw 1."
+    },
+    {
+      "kind": "Card",
       "title": "Vilemaw's Lair",
       "hrefPath": "cards/",
       "text": "Vilemaw's Lair OGN295/298 Origins Battlefield Colorless Uncommon Units can't move from here to base."
+    },
+    {
+      "kind": "Card",
+      "title": "Virtuoso",
+      "hrefPath": "cards/",
+      "text": "Virtuoso UNL181/219 Unleashed Legend Fury Mind Jhin Rare When you play a spell, if you spent :rbenergy4: or more, you may banish it. Then, if there are four spells banished with me, put each in its trash, channel 4 runes, and draw 1."
     },
     {
       "kind": "Card",
@@ -3752,6 +4670,24 @@
     },
     {
       "kind": "Card",
+      "title": "Voidreaver",
+      "hrefPath": "cards/",
+      "text": "Voidreaver UNL201/219 Unleashed Legend Body Chaos Kha'Zix Rare When you win a combat, gain 1 XP. Spend 1 XP, :rbexhaust:: [Buff] a unit. Spend 2 XP, :rbexhaust:: Move an exhausted friendly unit from a battlefield to its base."
+    },
+    {
+      "kind": "Card",
+      "title": "Voidreaver",
+      "hrefPath": "cards/",
+      "text": "Voidreaver UNL236/219 Unleashed Legend Body Chaos Kha'Zix Showcase When you win a combat, gain 1 XP. Spend 1 XP, :rbexhaust:: [Buff] a unit. Spend 2 XP, :rbexhaust:: Move an exhausted friendly unit from a battlefield to its base."
+    },
+    {
+      "kind": "Card",
+      "title": "Voidreaver",
+      "hrefPath": "cards/",
+      "text": "Voidreaver UNL236/219 Unleashed Legend Body Chaos Kha'Zix Showcase When you win a combat, gain 1 XP. Spend 1 XP, :rbexhaust:: [Buff] a unit. Spend 2 XP, :rbexhaust:: Move an exhausted friendly unit from a battlefield to its base."
+    },
+    {
+      "kind": "Card",
       "title": "Volibear, Furious",
       "hrefPath": "cards/",
       "text": "Volibear, Furious OGN041/298 Origins Unit Champion Fury Volibear Freljord Epic [Deflect 2] (Opponents must pay :rbrunerainbow::rbrunerainbow: to choose me with a spell or ability.) When I attack, deal 5 damage split among any number of enemy units here."
@@ -3779,6 +4715,12 @@
       "title": "Wages of Pain",
       "hrefPath": "cards/",
       "text": "Wages of Pain SFD070/221 Spiritforged Spell Mind Common [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) [Action] (Play on your turn or in showdowns.) Deal 3 to a unit at a battlefield. Play a Gold gear token exhausted."
+    },
+    {
+      "kind": "Card",
+      "title": "Walking Roost",
+      "hrefPath": "cards/",
+      "text": "Walking Roost UNL130/219 Unleashed Unit Chaos Shadow Isles Common [Deflect] (Opponents must pay :rbrunerainbow: to choose me with a spell or ability.) When you play me, choose an opponent. They play a 1 :rbmight: Bird unit token with [Deflect]."
     },
     {
       "kind": "Card",
@@ -3830,6 +4772,12 @@
     },
     {
       "kind": "Card",
+      "title": "Wily Newtfish",
+      "hrefPath": "cards/",
+      "text": "Wily Newtfish UNL108/219 Unleashed Unit Body Bilgewater Uncommon If you've gained XP this turn, I have +1 :rbmight: and [Ganking]. (I can move from battlefield to battlefield.)"
+    },
+    {
+      "kind": "Card",
       "title": "Wind Wall",
       "hrefPath": "cards/",
       "text": "Wind Wall OGN064/298 Origins Spell Calm Uncommon [Reaction] (Play any time, even before spells and abilities resolve.) Counter a spell."
@@ -3869,6 +4817,12 @@
       "title": "Wuju Bladesman - Starter",
       "hrefPath": "cards/",
       "text": "Wuju Bladesman Starter OGS019/024 Proving Grounds Legend Champion Calm Body Master Yi Rare While a friendly unit defends alone, it gets +2 :rbmight:."
+    },
+    {
+      "kind": "Card",
+      "title": "Wuju Master",
+      "hrefPath": "cards/",
+      "text": "Wuju Master UNL191/219 Unleashed Legend Calm Body Master Yi Rare [Level 6][] Your units have +1 :rbmight:. (While you have 6+ XP, get the effect.) [Level 11][] Your units enter ready."
     },
     {
       "kind": "Card",
@@ -3950,6 +4904,12 @@
     },
     {
       "kind": "Card",
+      "title": "Yuumi, Magical Cat",
+      "hrefPath": "cards/",
+      "text": "Yuumi, Magical Cat UNL056/219 Unleashed Unit Champion Calm Fae Cat Bandle City Yuumi Rare When I attack or defend, give one of your other units here +3 :rbmight: and [Tank] this turn. (It must be assigned combat damage first.)"
+    },
+    {
+      "kind": "Card",
       "title": "Zaun Punk",
       "hrefPath": "cards/",
       "text": "Zaun Punk SFD160/221 Spiritforged Unit Order Zaun Common You may kill a friendly gear as an additional cost to play me. When you play me, if you paid the additional cost, kill a gear."
@@ -3983,6 +4943,12 @@
       "title": "Zhonya's Hourglass",
       "hrefPath": "cards/",
       "text": "Zhonya's Hourglass OGN077/298 Origins Gear Calm Rare [Hidden] (Hide now for :rbrunerainbow: to react with later for :rbenergy0:.) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)"
+    },
+    {
+      "kind": "Card",
+      "title": "Zilean, Time Mage",
+      "hrefPath": "cards/",
+      "text": "Zilean, Time Mage UNL086/219 Unleashed Unit Champion Mind Icathia Zilean Rare Once each turn, if you would play a token unit while I'm at a battlefield, you may play that token and an additional copy of it instead."
     },
     {
       "kind": "Errata",
@@ -4053,8 +5019,8 @@
       "text": "Welcome to Riftbound Hub Find FAQs, rulebook PDFs, and community pages in one place. Riftbound Hub This is a communitymaintained portal for Riftbound resources: FAQ summary Rulebook PDF online reading Custom pages (strategy guides, glossary, events) Use direct Markdown/JSON edits to maintain content."
     }
   ],
-  "count": 675,
+  "count": 836,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-02T16:27:09Z",
+  "generatedAt": "2026-03-21T22:46:24Z",
   "source": "riftboundoc derived search index"
 }

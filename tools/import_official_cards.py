@@ -103,19 +103,64 @@ def parse_cards(page_html: str) -> list[dict]:
     if not m:
         raise RuntimeError("Unable to locate __NEXT_DATA__ on gallery page.")
     payload = json.loads(m.group(1))
-    blades = (
-        payload.get("props", {})
-        .get("pageProps", {})
-        .get("page", {})
-        .get("blades", [])
-    )
+
+    props = payload.get("props")
+    if not isinstance(props, dict):
+        raise RuntimeError("Unexpected gallery payload: missing props object.")
+
+    page_props = props.get("pageProps")
+    if not isinstance(page_props, dict):
+        raise RuntimeError("Unexpected gallery payload: missing pageProps object.")
+
+    page = page_props.get("page")
+    if not isinstance(page, dict):
+        raise RuntimeError("Unexpected gallery payload: missing page object.")
+
+    blades = page.get("blades")
+    if not isinstance(blades, list):
+        raise RuntimeError("Unexpected gallery payload: missing blades list.")
+
     for blade in blades:
-        cards = blade.get("cards", {}).get("items")
+        cards = blade.get("cards", {}).get("items") if isinstance(blade, dict) else None
         if isinstance(cards, list) and cards:
             out = [normalize_card(row) for row in cards if isinstance(row, dict)]
-            out.sort(key=lambda x: (x.get("name", ""), x.get("publicCode", "")))
+            out.sort(
+                key=lambda x: (
+                    x.get("set", ""),
+                    int(x.get("collectorNumber") or 0),
+                    x.get("publicCode", ""),
+                    x.get("id", ""),
+                )
+            )
             return out
     raise RuntimeError("Card list was not found in expected blades payload.")
+
+
+def validate_cards(cards: list[dict], source_url: str) -> None:
+    if not cards:
+        raise RuntimeError(f"No cards parsed from source: {source_url}")
+
+    missing_image = [c.get("name", "<unknown>") for c in cards if not c.get("imageUrl")]
+    if missing_image:
+        sample = ", ".join(missing_image[:5])
+        raise RuntimeError(
+            f"Parsed {len(cards)} cards but {len(missing_image)} are missing imageUrl (examples: {sample})."
+        )
+
+    duplicate_keys: list[str] = []
+    seen = set()
+    for c in cards:
+        key = str(c.get("id") or c.get("publicCode") or "").strip().lower()
+        if not key:
+            key = f"{c.get('set','')}::{c.get('collectorNumber',0)}::{c.get('name','')}".strip().lower()
+        if key in seen:
+            duplicate_keys.append(key)
+        seen.add(key)
+    if duplicate_keys:
+        sample = ", ".join(duplicate_keys[:5])
+        raise RuntimeError(
+            f"Duplicate cards detected ({len(duplicate_keys)} duplicates). Example keys: {sample}"
+        )
 
 
 def main():
@@ -126,15 +171,27 @@ def main():
         default="data/cards.json",
         help="Output JSON path (default: data/cards.json)",
     )
+    official_url = "https://riftbound.leagueoflegends.com/en-us/card-gallery/"
     ap.add_argument(
         "--url",
-        default="https://riftbound.leagueoflegends.com/en-us/card-gallery/",
+        default=official_url,
         help="Official gallery URL",
+    )
+    ap.add_argument(
+        "--allow-non-official-url",
+        action="store_true",
+        help="Allow overriding --url away from the official gallery endpoint",
     )
     args = ap.parse_args()
 
+    if not args.allow_non_official_url and args.url.rstrip("/") != official_url.rstrip("/"):
+        raise RuntimeError(
+            "Refusing non-official URL. Use --allow-non-official-url only for debugging/import experiments."
+        )
+
     html_doc = fetch(args.url)
     cards = parse_cards(html_doc)
+    validate_cards(cards, args.url)
     now = dt.date.today().isoformat()
     output = {
         "source": normalize_inline_text("Riftbound Official Card Gallery"),

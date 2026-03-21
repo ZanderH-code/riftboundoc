@@ -5971,9 +5971,80 @@
       ],
       "errata": [],
       "rule": []
+    },
+    "unl-220-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "tournament-rules-january-update",
+          "title": "Tournament Rules, January Update",
+          "sourceTitle": "Tournament Rules, January Update",
+          "matches": [
+            {
+              "snippet": "...nature cards do not apply. For example, a player may use 10 Pouty Poro in their Main Deck if they received them in the provided card pool. 602.4.a.6.a. The \"Unique\" keyword does not apply in sealed. 602.4.a.7. A sealed deck's sideboard is e...",
+              "query": "Pouty Poro",
+              "jumpQuery": "Pouty Poro",
+              "anchorText": "Pouty Poro",
+              "anchorHeading": "Tournament Rules, January Update",
+              "anchorIndex": 1,
+              "ruleId": "10"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-t05": {
+      "faq": [
+        {
+          "id": "riftbound-spiritforged-faq",
+          "title": "Riftbound Spiritforged FAQ",
+          "sourceTitle": "Riftbound Spiritforged FAQ",
+          "matches": [
+            {
+              "snippet": "...a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
+              "query": "Gold",
+              "jumpQuery": "Gold",
+              "anchorText": "Gold",
+              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "errata": [],
+      "rule": []
+    },
+    "unl-t07": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-2",
+          "title": "Riftbound Core Rules v1.2",
+          "sourceTitle": "Riftbound Core Rules v1.2",
+          "matches": [
+            {
+              "snippet": "...unit token with 1 Might and the Recruit tag. 181.2. A 3[M] Sprite token with Temporary is a domainless unit token with 3 Might, the Fae tag, and the Temporary keyword. See rule 742. Temporary for more information. 182. Control 183. Control...",
+              "query": "Sprite",
+              "jumpQuery": "Sprite",
+              "anchorText": "Sprite",
+              "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     }
   },
   "byCardName": {
+    "abandon": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "acceptable losses": {
       "faq": [],
       "errata": [],
@@ -6022,6 +6093,11 @@
       "rule": []
     },
     "albus ferros": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "alpha strike": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6164,6 +6240,11 @@
       "errata": [],
       "rule": []
     },
+    "ashe, focused": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "aspirant's climb": {
       "faq": [],
       "errata": [],
@@ -6175,6 +6256,11 @@
       "rule": []
     },
     "assembly rig": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "atakhan": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6229,6 +6315,11 @@
       "rule": []
     },
     "b.f. sword": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "back off": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6326,6 +6417,21 @@
       "errata": [],
       "rule": []
     },
+    "baron nashor": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "baron pit": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "bashful bloom": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "battering ram": {
       "faq": [],
       "errata": [],
@@ -6347,6 +6453,16 @@
       "rule": []
     },
     "bilgewater bully": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "bird": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "black flame altar": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6416,6 +6532,11 @@
       ]
     },
     "blazing scorcher": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "blighted battleaxe": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6512,6 +6633,11 @@
       "errata": [],
       "rule": []
     },
+    "blood rose": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "blood rush": {
       "faq": [
         {
@@ -6549,6 +6675,16 @@
           ]
         }
       ],
+      "rule": []
+    },
+    "bloodharbor ripper": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "blue sentinel": {
+      "faq": [],
+      "errata": [],
       "rule": []
     },
     "body rune": {
@@ -6599,6 +6735,11 @@
       "rule": []
     },
     "breakneck mech": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "brush": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -6654,6 +6795,11 @@
           ]
         }
       ]
+    },
+    "call to battle": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     },
     "call to glory": {
       "faq": [],
@@ -6975,7 +7121,17 @@
       "errata": [],
       "rule": []
     },
+    "combat experience": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "commander ledros": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "concentrate": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -7065,6 +7221,26 @@
       "errata": [],
       "rule": []
     },
+    "crescent guardian": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "crescent strike": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "crimson pigeons": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "crowd favorite": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "cruel patron": {
       "faq": [
         {
@@ -7145,6 +7321,21 @@
           ]
         }
       ],
+      "errata": [],
+      "rule": []
+    },
+    "cursed sarcophagus": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "curtain call": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "dancing grenade": {
+      "faq": [],
       "errata": [],
       "rule": []
     },
@@ -7266,6 +7457,11 @@
       "errata": [],
       "rule": []
     },
+    "deadly flourish": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "deathgrip": {
       "faq": [
         {
@@ -7305,6 +7501,11 @@
       ],
       "rule": []
     },
+    "deceiver": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "decisive strike": {
       "faq": [],
       "errata": [],
@@ -7320,12 +7521,27 @@
       "errata": [],
       "rule": []
     },
+    "demacian diplomat": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "desert's call": {
       "faq": [],
       "errata": [],
       "rule": []
     },
     "detonate": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "diana, lunari": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "diana, no longer human": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -7400,6 +7616,11 @@
       "rule": []
     },
     "doran's shield": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "downstage dramatics": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -7556,6 +7777,11 @@
       "errata": [],
       "rule": []
     },
+    "dusk rose lab": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "eager apprentice": {
       "faq": [],
       "errata": [],
@@ -7649,6 +7875,11 @@
       "errata": [],
       "rule": []
     },
+    "elder dragon": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "ember monk": {
       "faq": [
         {
@@ -7697,6 +7928,16 @@
       "rule": []
     },
     "energy conduit": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "enthusiastic promoter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "existential dread": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -7954,6 +8195,11 @@
       "errata": [],
       "rule": []
     },
+    "forbidding waste": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "forecaster": {
       "faq": [],
       "errata": [],
@@ -7970,6 +8216,11 @@
       "rule": []
     },
     "forgefire cape": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "forgotten library": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8006,6 +8257,21 @@
       "errata": [],
       "rule": []
     },
+    "fresh beans": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "friendship": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "frigid jewel": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "frigid touch": {
       "faq": [
         {
@@ -8033,6 +8299,11 @@
       "errata": [],
       "rule": []
     },
+    "frozen fortress": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "fury rune": {
       "faq": [],
       "errata": [],
@@ -8055,6 +8326,11 @@
         }
       ]
     },
+    "galio, indefatigable": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "garbage grabber": {
       "faq": [],
       "errata": [],
@@ -8076,6 +8352,11 @@
           ]
         }
       ]
+    },
+    "gardens of becoming": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     },
     "garen, commander": {
       "faq": [
@@ -8119,6 +8400,11 @@
       "errata": [],
       "rule": []
     },
+    "gemhand hunter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "gentlemen's duel": {
       "faq": [],
       "errata": [],
@@ -8130,6 +8416,11 @@
       "rule": []
     },
     "glasc mixologist": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "gloomist": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8193,6 +8484,11 @@
       "errata": [],
       "rule": []
     },
+    "green father": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "grove of the god-willow": {
       "faq": [],
       "errata": [],
@@ -8236,6 +8532,16 @@
       "rule": []
     },
     "gust": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "gustwalker": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "gutter palace": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8292,12 +8598,22 @@
       "errata": [],
       "rule": []
     },
+    "heedless resurrection": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "heimerdinger, inventor": {
       "faq": [],
       "errata": [],
       "rule": []
     },
     "herald of scales": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "herald of spring": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8318,6 +8634,11 @@
       "rule": []
     },
     "hextech anomaly": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "hextech gauntlets": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8431,6 +8752,21 @@
       "errata": [],
       "rule": []
     },
+    "hunter's machete": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "hwei, brooding painter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "iascylla": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "icathian rain": {
       "faq": [
         {
@@ -8486,6 +8822,11 @@
       ],
       "rule": []
     },
+    "icevale archer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "immortal phoenix": {
       "faq": [
         {
@@ -8535,7 +8876,22 @@
       "errata": [],
       "rule": []
     },
+    "inferna": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "insightful investigator": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "invert timelines": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "inviolus vox": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8571,6 +8927,16 @@
           ]
         }
       ]
+    },
+    "ivern, friend to all": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "ivern, nurturer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     },
     "jae medarda": {
       "faq": [],
@@ -8671,6 +9037,16 @@
       "rule": []
     },
     "jeweled colossus": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "jhin, meticulous killer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "jhin, murderous artist": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -8873,6 +9249,26 @@
         }
       ]
     },
+    "keeper of the hammer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "keeper's verdict": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "kha'zix, evolving hunter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "kha'zix, mutating horror": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "king's edict": {
       "faq": [],
       "errata": [],
@@ -9008,6 +9404,11 @@
       "errata": [],
       "rule": []
     },
+    "leblanc, everywhere at once": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "lecturing yordle": {
       "faq": [],
       "errata": [],
@@ -9077,6 +9478,16 @@
       "errata": [],
       "rule": []
     },
+    "lillia, protector of dreams": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "lilting lullaby": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "lonely poro": {
       "faq": [],
       "errata": [],
@@ -9108,6 +9519,11 @@
           ]
         }
       ]
+    },
+    "loyal poro": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     },
     "loyal pup": {
       "faq": [],
@@ -9161,6 +9577,11 @@
       "errata": [],
       "rule": []
     },
+    "mageseeker investigator": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "mageseeker warden": {
       "faq": [],
       "errata": [],
@@ -9196,6 +9617,16 @@
       "errata": [],
       "rule": []
     },
+    "master yi, tempered": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "master yi, unstoppable": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "mechanized menace": {
       "faq": [],
       "errata": [],
@@ -9207,6 +9638,11 @@
       "rule": []
     },
     "mega-mech": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "megatusk": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -9253,6 +9689,16 @@
       "errata": [],
       "rule": []
     },
+    "mirror image": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "mischievous marai": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "miss fortune, buccaneer": {
       "faq": [],
       "errata": [],
@@ -9295,7 +9741,17 @@
       "errata": [],
       "rule": []
     },
+    "moonfall": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "morbid return": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "mosstomper": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -9306,6 +9762,11 @@
       "rule": []
     },
     "mushroom pouch": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "mutated mouser": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -9331,6 +9792,16 @@
       "rule": []
     },
     "needlessly large yordle": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "nidalee, cat form": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "nilah, joyful ascetic": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -9630,6 +10101,11 @@
       "errata": [],
       "rule": []
     },
+    "piltover enforcer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "pirate's haven": {
       "faq": [],
       "errata": [],
@@ -9775,6 +10251,11 @@
       "errata": [],
       "rule": []
     },
+    "pridestalker": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "primal strength": {
       "faq": [],
       "errata": [],
@@ -9861,6 +10342,16 @@
       "rule": []
     },
     "purifier": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "pyke, dockside butcher": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "pyke, returned": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10031,6 +10522,11 @@
       "rule": []
     },
     "recurve bow": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "reflection": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10216,6 +10712,16 @@
       "errata": [],
       "rule": []
     },
+    "rengar, trophy hunter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "rengar, unseen": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "retreat": {
       "faq": [],
       "errata": [],
@@ -10253,7 +10759,17 @@
       "errata": [],
       "rule": []
     },
+    "rift herald": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "riposte": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "ripper's bay": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10364,6 +10880,11 @@
       "errata": [],
       "rule": []
     },
+    "sacrifice": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "sai scout": {
       "faq": [],
       "errata": [],
@@ -10396,12 +10917,22 @@
       "errata": [],
       "rule": []
     },
+    "scorn of the moon": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "scrapheap": {
       "faq": [],
       "errata": [],
       "rule": []
     },
     "scrapyard champion": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "scrutinizing sergeant": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10483,7 +11014,22 @@
       "errata": [],
       "rule": []
     },
+    "shadow watcher": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "shadow's call": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "shakedown": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "sharkling": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10596,6 +11142,11 @@
         }
       ]
     },
+    "sinister poro": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "siphon power": {
       "faq": [],
       "errata": [],
@@ -10634,6 +11185,11 @@
       ]
     },
     "skyfall of areion": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "smite": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10708,6 +11264,16 @@
       "rule": []
     },
     "soraka, wanderer": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "soul shepherd": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "soul sword": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -10813,6 +11379,11 @@
       "errata": [],
       "rule": []
     },
+    "stalking wolf": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "stalwart poro": {
       "faq": [
         {
@@ -10890,6 +11461,11 @@
           ]
         }
       ]
+    },
+    "star-crossed": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     },
     "startipped peak": {
       "faq": [],
@@ -11281,6 +11857,11 @@
       "errata": [],
       "rule": []
     },
+    "the academy": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "the arena's greatest": {
       "faq": [],
       "errata": [],
@@ -11396,7 +11977,17 @@
       "errata": [],
       "rule": []
     },
+    "the list": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "the papertree": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "the ruination": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -11451,6 +12042,11 @@
       "rule": []
     },
     "thousand-tailed watcher": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "thrill of the hunt": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -11598,6 +12194,16 @@
       "errata": [],
       "rule": []
     },
+    "towering pairofant": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "trapping grounds": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "traveling merchant": {
       "faq": [],
       "errata": [],
@@ -11732,12 +12338,22 @@
       "errata": [],
       "rule": []
     },
+    "turn to dust": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "twisted fate, gambler": {
       "faq": [],
       "errata": [],
       "rule": []
     },
     "udyr, wildman": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "ultrasoft poro": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -11804,6 +12420,11 @@
       ]
     },
     "undertitan": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "undying loyalty": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -11913,6 +12534,11 @@
       "errata": [],
       "rule": []
     },
+    "upstage comedy": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "vanguard armory": {
       "faq": [],
       "errata": [],
@@ -11934,6 +12560,11 @@
       "rule": []
     },
     "vanguard sergeant": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "vaults of helia": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -11985,6 +12616,11 @@
         }
       ]
     },
+    "vi, hotheaded": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "viktor, innovator": {
       "faq": [],
       "errata": [],
@@ -12012,7 +12648,17 @@
         }
       ]
     },
+    "vilemaw": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "vilemaw's lair": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "virtuoso": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -12183,6 +12829,11 @@
         }
       ]
     },
+    "voidreaver": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "volibear, furious": {
       "faq": [],
       "errata": [],
@@ -12232,6 +12883,11 @@
       "errata": [],
       "rule": []
     },
+    "walking roost": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "wallop": {
       "faq": [],
       "errata": [],
@@ -12268,6 +12924,11 @@
       "rule": []
     },
     "wildclaw shaman": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "wily newtfish": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -12337,6 +12998,11 @@
       ]
     },
     "wuju bladesman - starter": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
+    "wuju master": {
       "faq": [],
       "errata": [],
       "rule": []
@@ -12444,6 +13110,11 @@
       "errata": [],
       "rule": []
     },
+    "yuumi, magical cat": {
+      "faq": [],
+      "errata": [],
+      "rule": []
+    },
     "zaun punk": {
       "faq": [],
       "errata": [],
@@ -12523,9 +13194,14 @@
         }
       ],
       "rule": []
+    },
+    "zilean, time mage": {
+      "faq": [],
+      "errata": [],
+      "rule": []
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-02T16:27:09Z",
+  "generatedAt": "2026-03-21T22:46:24Z",
   "source": "riftboundoc derived card related index"
 }
