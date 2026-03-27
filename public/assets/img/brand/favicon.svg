@@ -1,21 +1,26 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2A4A6A"/>
-      <stop offset="0.58" stop-color="#1E3550"/>
-      <stop offset="1" stop-color="#162739"/>
+    <linearGradient id="bg" x1="6" y1="5" x2="58" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C4F73"/>
+      <stop offset="0.58" stop-color="#1F3855"/>
+      <stop offset="1" stop-color="#16293D"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 18) rotate(36) scale(35)">
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21 17) rotate(37) scale(36)">
       <stop stop-color="#72EFDD" stop-opacity="0.5"/>
       <stop offset="1" stop-color="#72EFDD" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="rune" x1="22" y1="16" x2="43" y2="47" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F2FBFF"/>
-      <stop offset="1" stop-color="#A6DDFF"/>
+    <linearGradient id="ink" x1="16" y1="14" x2="48" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FCFF"/>
+      <stop offset="1" stop-color="#AEDFFF"/>
     </linearGradient>
   </defs>
-  <rect x="3.5" y="3.5" width="57" height="57" rx="16" fill="url(#bg)" stroke="#6788AD"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="16" fill="url(#bg)" stroke="#6B8DB3"/>
   <rect x="8" y="8" width="48" height="48" rx="13" fill="url(#glow)"/>
-  <path d="M20 18.5C20 17.6716 20.6716 17 21.5 17H31C39.3368 17 43.5 21.2878 43.5 27.5C43.5 32.1943 40.8575 35.4971 35.9199 36.9402L43.5 47H36.5L29.6667 37.72H26.5V47H20V18.5ZM26.5 22.8V33H31.2781C36.2045 33 37 30.5238 37 27.8C37 24.8952 35.3747 22.8 30.99 22.8H26.5Z" fill="url(#rune)"/>
-  <path d="M40 15L41.6 18.4L45 20L41.6 21.6L40 25L38.4 21.6L35 20L38.4 18.4L40 15Z" fill="#96EDFF"/>
+
+  <path d="M31 13.5L27.8 24L33 33L29.3 50" stroke="#90EEFF" stroke-opacity="0.75" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M13.5 17.5C13.5 16.1193 14.6193 15 16 15H22.4C29.1132 15 32.5 18.0481 32.5 23.375C32.5 27.3102 30.4363 30.0163 26.5592 31.2278L32.5 41H27.2679L22.0241 32.28H18.75V41H13.5V17.5ZM18.75 19.5V27.75H22.7804C26.4258 27.75 27.9375 25.9694 27.9375 23.4815C27.9375 20.8828 26.2207 19.5 22.6113 19.5H18.75Z" fill="url(#ink)"/>
+  <path d="M33.5 19C33.5 17.8954 34.3954 17 35.5 17H42.5L46 20.5V39.5C46 40.6046 45.1046 41.5 44 41.5H35.5C34.3954 41.5 33.5 40.6046 33.5 39.5V19Z" fill="#1A2E45" stroke="#8CB0D2" stroke-width="1.2"/>
+  <path d="M42.5 17V20.5H46" stroke="#A2CEEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36.8 22.2V35.6" stroke="url(#ink)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36.8 22.2H40.5C42.8369 22.2 44 23.6391 44 25.95C44 28.2609 42.8369 29.7 40.5 29.7H36.8" stroke="url(#ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
