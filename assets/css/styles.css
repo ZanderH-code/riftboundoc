@@ -175,7 +175,6 @@ main > section h2 {
 
 .page-shell > .page-hero,
 .page-shell > .content-section,
-.page-shell > .reading-layout,
 .site-home > .search-panel {
   animation: page-rise 280ms ease-out both;
 }
@@ -2180,7 +2179,6 @@ body.reader-immersive .pdf-frame {
 @media (prefers-reduced-motion: reduce) {
   .page-shell > .page-hero,
   .page-shell > .content-section,
-  .page-shell > .reading-layout,
   .site-home > .search-panel,
   .cards-page .cards-filter-shell,
   .cards-page .cards-list .card-item {
