@@ -1575,14 +1575,41 @@
   const openCardModal = async (cardId) => {
     const card = cards.find((c) => String(c.id) === String(cardId));
     if (!card) return;
+    const publicCode = escapeHtml(card.publicCode || "-");
+    const setName = escapeHtml(card.set || "-");
+    const rarity = escapeHtml(card.rarity || "-");
+    const cardTypes = asItems(card.cardTypes).join(", ") || "-";
+    const domains = asItems(card.domains).join(", ") || "-";
+    const energy = escapeHtml(card.energy || "-");
+    const might = escapeHtml(card.might || "-");
+    const power = escapeHtml(card.power || "-");
+    const tags = asItems(card.tags).filter(Boolean);
+
     modalImage.src = card.imageUrl || "";
     modalImage.alt = card.imageAlt || card.name || "Card image";
     modalTitle.textContent = card.name || "Untitled card";
-    modalMeta.textContent = `${card.publicCode || "-"} | ${card.set || "-"} | ${card.rarity || "-"}`;
-    modalStats.textContent = `Type: ${asItems(card.cardTypes).join(", ") || "-"} | Domain: ${
-      asItems(card.domains).join(", ") || "-"
-    } | Energy: ${card.energy || "-"} | Might: ${card.might || "-"} | Power: ${card.power || "-"}`;
-    modalTags.textContent = asItems(card.tags).length ? `Tags: ${asItems(card.tags).join(", ")}` : "";
+    modalMeta.textContent = `${card.publicCode || "-"} · ${card.set || "-"} · ${card.rarity || "-"}`;
+    modalStats.innerHTML = [
+      ["Type", cardTypes],
+      ["Domain", domains],
+      ["Energy", energy],
+      ["Might", might],
+      ["Power", power],
+    ]
+      .map(
+        ([label, value]) =>
+          `<div class="cards-modal-stat"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`
+      )
+      .join("");
+    if (tags.length) {
+      modalTags.hidden = false;
+      modalTags.innerHTML = tags
+        .map((tag) => `<span class="cards-modal-tag">${escapeHtml(tag)}</span>`)
+        .join("");
+    } else {
+      modalTags.hidden = true;
+      modalTags.innerHTML = "";
+    }
     modalText.innerHTML = renderCardAbilityText(card.abilityText);
     const indexedRelations = getIndexedRelations(card);
     const relatedFaqLive = findRelatedDocs(faqs, card.name, "faq");

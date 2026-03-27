@@ -137,10 +137,13 @@ const runtimeScripts = ["cards-page.js"];
           </div>
           <div class="cards-modal-body">
             <h2 id="cards-modal-title"></h2>
-            <p id="cards-modal-meta" class="muted"></p>
-            <p id="cards-modal-stats" class="muted"></p>
-            <p id="cards-modal-tags" class="muted"></p>
-            <div id="cards-modal-text" class="cards-modal-text"></div>
+            <p id="cards-modal-meta" class="cards-modal-meta"></p>
+            <div id="cards-modal-tags" class="cards-modal-tags" hidden></div>
+            <dl id="cards-modal-stats" class="cards-modal-stats"></dl>
+            <section class="cards-modal-ability">
+              <h3>Ability</h3>
+              <div id="cards-modal-text" class="cards-modal-text"></div>
+            </section>
             <section id="cards-modal-errata-wrap" class="cards-modal-related" hidden>
               <h3>Related Errata</h3>
               <div id="cards-modal-errata-list" class="cards-related-list"></div>

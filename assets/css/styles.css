@@ -1173,14 +1173,95 @@ main > section h2 {
 
 .cards-modal-body h2 {
   margin: 0 0 8px;
+  font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.cards-modal-body {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.cards-modal-meta {
+  margin: 0;
+  color: #bbd0e8;
+  font-size: 1.04rem;
+  line-height: 1.4;
+}
+
+.cards-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cards-modal-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid #3b5975;
+  background: rgba(40, 61, 88, 0.55);
+  color: #d2e8ff;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.cards-modal-stats {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.cards-modal-stat {
+  border: 1px solid #334d66;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: linear-gradient(180deg, rgba(28, 41, 58, 0.76), rgba(20, 30, 44, 0.78));
+}
+
+.cards-modal-stat dt {
+  margin: 0;
+  color: #9cb4cc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cards-modal-stat dd {
+  margin: 6px 0 0;
+  color: #f2f8ff;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.cards-modal-ability {
+  border-top: 1px solid #314052;
+  margin-top: 4px;
+  padding-top: 10px;
+}
+
+.cards-modal-ability h3 {
+  margin: 0 0 8px;
+  color: #b8d8f8;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .cards-modal-text {
-  border-top: 1px solid #314052;
-  margin-top: 10px;
-  padding-top: 10px;
+  color: #edf5ff;
+  font-size: 1.18rem;
+  font-weight: 560;
   line-height: 1.65;
   white-space: pre-wrap;
+  max-width: 68ch;
 }
 
 .cards-modal-text .rb-token {
@@ -2173,6 +2254,10 @@ body.reader-immersive .pdf-frame {
   .cards-modal-grid {
     grid-template-columns: 1fr;
   }
+
+  .cards-modal-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
@@ -2274,6 +2359,10 @@ body.reader-immersive .pdf-frame {
 
   .cards-modal-grid {
     gap: 10px;
+  }
+
+  .cards-modal-stats {
+    grid-template-columns: 1fr;
   }
 
   .cards-modal-media {
