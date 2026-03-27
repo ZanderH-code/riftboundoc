@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A4A6A"/>
+      <stop offset="0.58" stop-color="#1E3550"/>
+      <stop offset="1" stop-color="#162739"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 18) rotate(36) scale(35)">
+      <stop stop-color="#72EFDD" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#72EFDD" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rune" x1="22" y1="16" x2="43" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FBFF"/>
+      <stop offset="1" stop-color="#A6DDFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="16" fill="url(#bg)" stroke="#6788AD"/>
+  <rect x="8" y="8" width="48" height="48" rx="13" fill="url(#glow)"/>
+  <path d="M20 18.5C20 17.6716 20.6716 17 21.5 17H31C39.3368 17 43.5 21.2878 43.5 27.5C43.5 32.1943 40.8575 35.4971 35.9199 36.9402L43.5 47H36.5L29.6667 37.72H26.5V47H20V18.5ZM26.5 22.8V33H31.2781C36.2045 33 37 30.5238 37 27.8C37 24.8952 35.3747 22.8 30.99 22.8H26.5Z" fill="url(#rune)"/>
+  <path d="M40 15L41.6 18.4L45 20L41.6 21.6L40 25L38.4 21.6L35 20L38.4 18.4L40 15Z" fill="#96EDFF"/>
+</svg>

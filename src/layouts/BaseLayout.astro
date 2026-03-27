@@ -38,7 +38,7 @@ const scriptVersion = SITE_META.assetVersion;
     <meta name="twitter:description" content={description} />
     <link rel="canonical" href={resolvedCanonical} />
     <title>{title}</title>
-    <link rel="icon" type="image/webp" href={`${base}assets/img/domains/order.webp`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}assets/img/brand/favicon.svg?v=${scriptVersion}`} />
     <link rel="manifest" href={`${base}manifest.json`} />
     <meta name="theme-color" content="#1a1a1a" />
     <link rel="stylesheet" href={`${base}assets/css/styles.css?v=${scriptVersion}`} />
@@ -65,7 +65,7 @@ const scriptVersion = SITE_META.assetVersion;
       <div class="container">
         <a class="brand" href={base} aria-label="riftboundoc home">
           <span class="brand-mark" aria-hidden="true">
-            <span class="brand-glyph">R</span>
+            <img src={`${base}assets/img/brand/brand-mark.svg?v=${scriptVersion}`} alt="" />
           </span>
           <span class="brand-text">riftboundoc</span>
         </a>
