@@ -1313,6 +1313,7 @@ function renderSearchPager(total, page, pageSize, target, onPage) {
   target.innerHTML = "";
   const pageCount = Math.max(1, Math.ceil(total / pageSize));
   if (pageCount <= 1) return;
+  const chunkSize = 5;
 
   const mk = (label, to, active = false, disabled = false) => {
     const btn = document.createElement("button");
@@ -1324,30 +1325,14 @@ function renderSearchPager(total, page, pageSize, target, onPage) {
     return btn;
   };
 
-  target.appendChild(mk("Prev", page - 1, false, page <= 1));
-  const pagesToRender = new Set([1, pageCount]);
-  const siblingCount = 1;
-  const start = Math.max(2, page - siblingCount);
-  const end = Math.min(pageCount - 1, page + siblingCount);
+  const chunkStart = Math.floor((Math.max(1, page) - 1) / chunkSize) * chunkSize + 1;
+  const chunkEnd = Math.min(pageCount, chunkStart + chunkSize - 1);
 
-  for (let p = start; p <= end; p += 1) pagesToRender.add(p);
-
-  const ordered = Array.from(pagesToRender)
-    .filter((p) => p >= 1 && p <= pageCount)
-    .sort((a, b) => a - b);
-
-  let prevPage = 0;
-  for (const p of ordered) {
-    if (prevPage && p - prevPage > 1) {
-      const gap = document.createElement("span");
-      gap.className = "pager-ellipsis";
-      gap.textContent = "…";
-      target.appendChild(gap);
-    }
+  target.appendChild(mk("Prev", Math.max(1, chunkStart - chunkSize), false, chunkStart <= 1));
+  for (let p = chunkStart; p <= chunkEnd; p += 1) {
     target.appendChild(mk(String(p), p, p === page));
-    prevPage = p;
   }
-  target.appendChild(mk("Next", page + 1, false, page >= pageCount));
+  target.appendChild(mk("Next", Math.min(pageCount, chunkEnd + 1), false, chunkEnd >= pageCount));
 }
 
 function buildPageToc() {
