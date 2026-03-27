@@ -35,17 +35,22 @@ a {
 }
 
 .container {
-  width: min(1160px, 92%);
+  width: min(1240px, 92%);
   margin: 0 auto;
+}
+
+.container-wide {
+  width: min(1600px, 96vw);
 }
 
 .topbar {
   border-bottom: 1px solid var(--line);
-  background: rgba(9, 12, 18, 0.86);
+  background: rgba(10, 15, 23, 0.86);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
   z-index: 20;
+  box-shadow: 0 14px 34px rgba(4, 8, 14, 0.35);
 }
 
 .topbar .container {
@@ -72,14 +77,17 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 7px 11px;
-  border-radius: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: border-color 0.16s ease, background-color 0.16s ease, color 0.16s ease;
 }
 
 nav a.active,
 nav a:hover {
-  background: var(--brand);
-  color: #fff;
+  background: rgba(76, 201, 240, 0.2);
+  border-color: rgba(76, 201, 240, 0.55);
+  color: #eff9ff;
 }
 
 main {
@@ -317,20 +325,48 @@ main > section h2 {
 
 .cards-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
 }
 
 .cards-main {
   min-width: 0;
 }
 
+.cards-page .cards-filter-shell {
+  animation: cards-fade-in 320ms ease-out both;
+}
+
+.cards-page .cards-list .card-item {
+  animation: cards-fade-in 360ms ease-out both;
+}
+
+.cards-page .cards-list .card-item:nth-child(2n) {
+  animation-delay: 40ms;
+}
+
+.cards-page .cards-list .card-item:nth-child(3n) {
+  animation-delay: 80ms;
+}
+
+@keyframes cards-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .cards-filter-shell {
   border-radius: 14px;
+  border-color: #35465c;
   background:
-    radial-gradient(circle at 0% 0%, rgba(252, 208, 111, 0.08), transparent 36%),
-    radial-gradient(circle at 100% 0%, rgba(76, 201, 240, 0.08), transparent 30%),
-    linear-gradient(180deg, #151a22, #131923);
+    radial-gradient(circle at 0% 0%, rgba(252, 208, 111, 0.12), transparent 34%),
+    radial-gradient(circle at 100% 0%, rgba(76, 201, 240, 0.12), transparent 30%),
+    linear-gradient(180deg, #182130, #141c28);
 }
 
 .cards-filter-top {
@@ -342,8 +378,8 @@ main > section h2 {
 
 .cards-filter-top input[type="search"] {
   width: 100%;
-  background: rgba(15, 21, 30, 0.84);
-  border-color: #334659;
+  background: rgba(12, 19, 29, 0.9);
+  border-color: #3c536c;
 }
 
 .cards-top-actions {
@@ -354,6 +390,13 @@ main > section h2 {
 
 .cards-icon-btn {
   min-width: 60px;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.cards-icon-btn:hover {
+  transform: translateY(-1px);
+  border-color: #6b88a8;
+  box-shadow: 0 10px 18px rgba(5, 12, 20, 0.32);
 }
 
 .cards-active-filters {
@@ -1243,6 +1286,16 @@ button {
   border: 1px solid #3b4653;
   background: #0f141c;
   color: var(--ink);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: none;
+  border-color: #77d8ff;
+  box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
 }
 
 textarea {
@@ -1258,9 +1311,14 @@ button {
 }
 
 button.secondary {
-  background: #1a2330;
+  background: linear-gradient(180deg, #202b3b, #182230);
   color: var(--ink);
-  border-color: #3b4653;
+  border-color: #45566c;
+}
+
+button.secondary:hover {
+  border-color: #66809f;
+  background: linear-gradient(180deg, #253245, #1c2838);
 }
 
 a.secondary {
@@ -1787,7 +1845,7 @@ body.reader-immersive .pdf-frame {
   }
 
   .cards-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .card-item {
@@ -1802,6 +1860,10 @@ body.reader-immersive .pdf-frame {
 
 @media (max-width: 680px) {
   .container {
+    width: min(96%, 100%);
+  }
+
+  .container-wide {
     width: min(96%, 100%);
   }
 
@@ -1932,6 +1994,13 @@ body.reader-immersive .pdf-frame {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards-page .cards-filter-shell,
+  .cards-page .cards-list .card-item {
+    animation: none;
   }
 }
 
