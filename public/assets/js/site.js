@@ -1325,8 +1325,27 @@ function renderSearchPager(total, page, pageSize, target, onPage) {
   };
 
   target.appendChild(mk("Prev", page - 1, false, page <= 1));
-  for (let p = 1; p <= pageCount; p += 1) {
+  const pagesToRender = new Set([1, pageCount]);
+  const siblingCount = 1;
+  const start = Math.max(2, page - siblingCount);
+  const end = Math.min(pageCount - 1, page + siblingCount);
+
+  for (let p = start; p <= end; p += 1) pagesToRender.add(p);
+
+  const ordered = Array.from(pagesToRender)
+    .filter((p) => p >= 1 && p <= pageCount)
+    .sort((a, b) => a - b);
+
+  let prevPage = 0;
+  for (const p of ordered) {
+    if (prevPage && p - prevPage > 1) {
+      const gap = document.createElement("span");
+      gap.className = "pager-ellipsis";
+      gap.textContent = "…";
+      target.appendChild(gap);
+    }
     target.appendChild(mk(String(p), p, p === page));
+    prevPage = p;
   }
   target.appendChild(mk("Next", page + 1, false, page >= pageCount));
 }

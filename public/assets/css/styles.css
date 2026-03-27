@@ -509,6 +509,16 @@ main > section h2 {
   box-shadow: none;
 }
 
+.search-pager .pager-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  color: #89a8c7;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 .cards-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
