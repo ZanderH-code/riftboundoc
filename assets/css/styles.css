@@ -1183,7 +1183,7 @@ main > section h2 {
 
 .cards-modal-panel.is-landscape .cards-modal-media img {
   aspect-ratio: 1039 / 744;
-  transform: rotate(180deg);
+  transform: none;
 }
 
 .cards-modal-body h2 {
