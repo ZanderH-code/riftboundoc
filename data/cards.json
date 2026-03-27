@@ -2,7 +2,7 @@
   "source": "Riftbound Official Card Gallery",
   "originUrl": "https://riftbound.leagueoflegends.com/en-us/card-gallery/",
   "updatedAt": "2026-03-27",
-  "count": 922,
+  "count": 950,
   "cards": [
     {
       "id": "ogn-001-298",
@@ -128,7 +128,7 @@
       "power": "",
       "tags": [],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a27374ac3a81f3dfefb43c3c3237c23b4883cb5a-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a27374ac3a81f3dfefb43c3c3237c23b4883cb5a-744x1039.png",
       "imageAlt": "Riftbound Spell: Disintegrate. [Action] (Play on your turn or in showdowns.)\nDeal 3 to a unit at a battlefield. If this kills it, do this: draw 1.",
       "abilityText": "[Action] (Play on your turn or in showdowns.)\nDeal 3 to a unit at a battlefield. If this kills it, do this: draw 1."
     },
@@ -1667,7 +1667,7 @@
       "power": "",
       "tags": [],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b9613970b505e3ad6abe2d51d091778314a7d48-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8b9613970b505e3ad6abe2d51d091778314a7d48-744x1039.png",
       "imageAlt": "Riftbound Spell: Discipline. [Reaction] (Play any time, even before spells and abilities resolve.)\nGive a unit +2 [S] this turn. Draw 1.",
       "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nGive a unit +2 :rb_might: this turn. Draw 1."
     },
@@ -7163,7 +7163,7 @@
       "power": "2",
       "tags": [],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/995778eea2e24fdc62ade38c2baa25b9f1e6ab79-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/995778eea2e24fdc62ade38c2baa25b9f1e6ab79-744x1039.png",
       "imageAlt": "Riftbound Spell: Divine Judgment. Each player chooses 2 units, 2 gear, 2 runes, and 2 cards in their hands. Recycle the rest.",
       "abilityText": "Each player chooses 2 units, 2 gear, 2 runes, and 2 cards in their hands. Recycle the rest."
     },
@@ -10906,7 +10906,7 @@
         "Demacia"
       ],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/523732db17d8cf3c7c55f57c5dfb397b73e2b116-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/523732db17d8cf3c7c55f57c5dfb397b73e2b116-744x1039.png",
       "imageAlt": "Riftbound Unit: Disarming Rake. When you play me, you may kill a gear.",
       "abilityText": "When you play me, you may kill a gear."
     },
@@ -12779,7 +12779,7 @@
         "Demacia"
       ],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/52edf5b0f045d7c65360a8eb3c21f0954750cd1a-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/52edf5b0f045d7c65360a8eb3c21f0954750cd1a-744x1039.png",
       "imageAlt": "Riftbound Unit: Direwing. I enter ready if you control another Dragon.",
       "abilityText": "I enter ready if you control another Dragon."
     },
@@ -18214,6 +18214,30 @@
       "abilityText": "[Hunt 2] (When I conquer or hold, gain 2 XP.)\n[Level 3][>] I have +1 :rb_might: and enter ready. (While you have 3+ XP, get the effect.)"
     },
     {
+      "id": "unl-017-219",
+      "name": "Square Up",
+      "publicCode": "UNL-017/219",
+      "collectorNumber": 17,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Fury"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "4",
+      "might": "",
+      "power": "",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5e14c09db2f064e5f6986f500a04335d73d459dd-744x1039.png",
+      "imageAlt": "Riftbound Spell: Square Up. [Repeat] - Discard 1 (You may pay the additional cost to repeat this spell's effect.)\nGive a unit [Assault 4] this turn. (+4 [S] while it's an attacker.)",
+      "abilityText": "[Repeat] - Discard 1 (You may pay the additional cost to repeat this spell's effect.)\nGive a unit [Assault 4] this turn. (+4 :rb_might: while it's an attacker.)"
+    },
+    {
       "id": "unl-018-219",
       "name": "Yeti Brawler",
       "publicCode": "UNL-018/219",
@@ -18290,6 +18314,32 @@
       "abilityText": "Deal 2 to a unit. Its controller may play this spell again for :rb_rune_rainbow:. If they do, this deals 1 additional Bonus Damage for each time this spell has dealt damage this turn."
     },
     {
+      "id": "unl-021-219",
+      "name": "Grim Apothecary",
+      "publicCode": "UNL-021/219",
+      "collectorNumber": 21,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Fury"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "3",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Noxus"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/af548bbfc856e306c5feefb34eb6bd9a4e442904-744x1039.png",
+      "imageAlt": "Riftbound Unit: Grim Apothecary. [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play me, you may return a friendly unit at a battlefield to its owner's hand.",
+      "abilityText": "[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play me, you may return a friendly unit at a battlefield to its owner's hand."
+    },
+    {
       "id": "unl-022-219",
       "name": "Jhin, Murderous Artist",
       "publicCode": "UNL-022/219",
@@ -18346,6 +18396,35 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0e67164270e12b8d91905e977a314c7248a343e9-744x1039.png",
       "imageAlt": "Riftbound Unit: Jhin, Murderous Artist. [Deflect]\n[Ganking]\nWhen I move, [Add] [1][A].",
       "abilityText": "[Deflect]\n[Ganking]\nWhen I move, [Add] :rb_energy_1::rb_rune_rainbow:."
+    },
+    {
+      "id": "unl-023-219",
+      "name": "Katarina, Reckless",
+      "publicCode": "UNL-023/219",
+      "collectorNumber": 23,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Fury"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "5",
+      "might": "5",
+      "power": "1",
+      "tags": [
+        "Katarina",
+        "Noxus"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/12da73cb78a9cfa052749f317ed56a27106908c6-744x1039.png",
+      "imageAlt": "Riftbound Unit: Katarina, Reckless. When you hide a card, ready me.\nWhen you play a card from face down, deal 2 to an enemy unit.",
+      "abilityText": "When you hide a card, ready me.\nWhen you play a card from face down, deal 2 to an enemy unit."
     },
     {
       "id": "unl-024-219",
@@ -18681,6 +18760,30 @@
       "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nGive a unit +1 :rb_might: this turn.\n[Level 6][>] Give it +3 :rb_might: this turn instead. (While you have 6+ XP, get the effect.)"
     },
     {
+      "id": "unl-032-219",
+      "name": "Double Trouble",
+      "publicCode": "UNL-032/219",
+      "collectorNumber": 32,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "",
+      "power": "",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/64e977213f50471ad7b6e8664488fb9017693f71-744x1039.png",
+      "imageAlt": "Riftbound Spell: Double Trouble. [Repeat] [2] (You may pay the additional cost to repeat this spell's effect.)\nLook at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest.",
+      "abilityText": "[Repeat] :rb_energy_2: (You may pay the additional cost to repeat this spell's effect.)\nLook at the top 3 cards of your Main Deck. You may reveal a unit from among them and draw it. Recycle the rest."
+    },
+    {
       "id": "unl-033-219",
       "name": "Frisky Hunter",
       "publicCode": "UNL-033/219",
@@ -18863,6 +18966,59 @@
       "abilityText": "[Equip] :rb_rune_calm: (:rb_rune_calm:: Attach this to a unit you control.)\n\n[Level 3][>] I have an additional +1 :rb_might:. (While you have 3+ XP, get the effect.)"
     },
     {
+      "id": "unl-040-219",
+      "name": "Wuju Apprentice",
+      "publicCode": "UNL-040/219",
+      "collectorNumber": 40,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "2",
+      "power": "",
+      "tags": [
+        "Ionia"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/543789dd1b4b2654392a151d4bb1b0c6263c47dc-744x1039.png",
+      "imageAlt": "Riftbound Unit: Wuju Apprentice. [Hunt] (When I conquer or hold, gain 1 XP.)\n[Level 6][>] When you play me, draw 1. (While you have 6+ XP, get the effect.)",
+      "abilityText": "[Hunt] (When I conquer or hold, gain 1 XP.)\n[Level 6][>] When you play me, draw 1. (While you have 6+ XP, get the effect.)"
+    },
+    {
+      "id": "unl-041-219",
+      "name": "Allay, Eager Admirer",
+      "publicCode": "UNL-041/219",
+      "collectorNumber": 41,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "3",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Yordle",
+        "Bandle City"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bf1045b559b20d3e86383a07de54cd1893e5a94b-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Unit: Allay, Eager Admirer. [Deflect] (Opponents must pay [A] to choose me with a spell or ability.)\nWhile I'm at a battlefield, your other units here have [Deflect].",
+      "abilityText": "[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)\nWhile I'm at a battlefield, your other units here have [Deflect]."
+    },
+    {
       "id": "unl-042-219",
       "name": "Back Off",
       "publicCode": "UNL-042/219",
@@ -18912,6 +19068,30 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c03bdc371440cbf6de773b0b39010808bfdecea1-744x1039.png",
       "imageAlt": "Riftbound Unit: Enthusiastic Promoter. [Backline] (I must be assigned combat damage last.)\nWhen I hold, [Buff] all units here. (Give each a +1 [S] buff if it doesn't have one.)",
       "abilityText": "[Backline] (I must be assigned combat damage last.)\nWhen I hold, [Buff] all units here. (Give each a +1 :rb_might: buff if it doesn't have one.)"
+    },
+    {
+      "id": "unl-044-219",
+      "name": "Flurry of Feathers",
+      "publicCode": "UNL-044/219",
+      "collectorNumber": 44,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "4",
+      "might": "",
+      "power": "2",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/77bd864b29f4975868e557e31a39b94d06a4ecb2-744x1039.png",
+      "imageAlt": "Riftbound Spell: Flurry of Feathers. [Reaction]\nChoose one -\n- Counter a spell.\n- Play four 1 [S] Bird unit tokens with [Deflect]. (Opponents must pay [A] to choose them with a spell or ability.)",
+      "abilityText": "[Reaction]\nChoose one -\n\nCounter a spell.Play four 1 :rb_might: Bird unit tokens with [Deflect]. (Opponents must pay :rb_rune_rainbow: to choose them with a spell or ability.)"
     },
     {
       "id": "unl-045-219",
@@ -19201,6 +19381,66 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7e1e77df44c076599fa780f7fd01a4550f67af45-744x1039.png",
       "imageAlt": "Riftbound Spell: Tricksy Tentacles. Move any number of enemy units with the same controller and a total Might of 8 or less to a single location.",
       "abilityText": "Move any number of enemy units with the same controller and a total Might of 8 or less to a single location."
+    },
+    {
+      "id": "unl-055-219",
+      "name": "Vex, Mocking",
+      "publicCode": "UNL-055/219",
+      "collectorNumber": 55,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "5",
+      "might": "5",
+      "power": "1",
+      "tags": [
+        "Yordle",
+        "Vex",
+        "Shadow Isles"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ed2c20de6ceb7ff23f62ccb28a49fd305c5b15b7-744x1039.png",
+      "imageAlt": "Riftbound Unit: Vex, Mocking. [Shield] (+1 [S] while I'm a defender.)\n[Tank] (I must be assigned combat damage first.)\nWhen you [Stun] an enemy unit at a battlefield, you may move me to that battlefield.",
+      "abilityText": "[Shield] (+1 :rb_might: while I'm a defender.)\n[Tank] (I must be assigned combat damage first.)\nWhen you [Stun] an enemy unit at a battlefield, you may move me to that battlefield."
+    },
+    {
+      "id": "unl-055a-219",
+      "name": "Vex, Mocking",
+      "publicCode": "UNL-055a/219",
+      "collectorNumber": 55,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Calm"
+      ],
+      "rarity": "Showcase",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "5",
+      "might": "5",
+      "power": "1",
+      "tags": [
+        "Yordle",
+        "Vex",
+        "Shadow Isles"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9594ce4be31689c364a43954a541c4391fe0d4f3-744x1039.png",
+      "imageAlt": "Riftbound Unit: Vex, Mocking. [Shield]\n[Tank]\nWhen you [Stun] an enemy unit at a battlefield, you may move me to that battlefield.",
+      "abilityText": "[Shield]\n[Tank]\nWhen you [Stun] an enemy unit at a battlefield, you may move me to that battlefield."
     },
     {
       "id": "unl-056-219",
@@ -19559,6 +19799,30 @@
       "abilityText": "When I attack, you may pay :rb_energy_1: to give a unit here -1 :rb_might: this turn."
     },
     {
+      "id": "unl-066-219",
+      "name": "Moonlight Affliction",
+      "publicCode": "UNL-066/219",
+      "collectorNumber": 66,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "7",
+      "might": "",
+      "power": "",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8f75280599fdb4d3b6191cf8e8443aadf33ad11e-744x1039.png",
+      "imageAlt": "Riftbound Spell: Moonlight Affliction. [Reaction] (Play any time, even before spells and abilities resolve.)\nGive a unit -10 [S] this turn.",
+      "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nGive a unit -10 :rb_might: this turn."
+    },
+    {
       "id": "unl-067-219",
       "name": "Ruined Rex",
       "publicCode": "UNL-067/219",
@@ -19583,6 +19847,33 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/05fc9613bd3a3c3c5002ff1d7d665b37fd18dcb7-744x1039.png",
       "imageAlt": "Riftbound Unit: Ruined Rex. [Deathknell][>] Deal 4 to an enemy unit. (When I die, get the effect.)",
       "abilityText": "[Deathknell][>] Deal 4 to an enemy unit. (When I die, get the effect.)"
+    },
+    {
+      "id": "unl-068-219",
+      "name": "Spectral Centaur",
+      "publicCode": "UNL-068/219",
+      "collectorNumber": 68,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "6",
+      "might": "5",
+      "power": "",
+      "tags": [
+        "Spirit",
+        "Shadow Isles"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/60fb267f2d0cd16714d35a0eefd0d5864304102b-744x1039.png",
+      "imageAlt": "Riftbound Unit: Spectral Centaur. When another friendly unit dies, give me +2 [S] this turn.",
+      "abilityText": "When another friendly unit dies, give me +2 :rb_might: this turn."
     },
     {
       "id": "unl-069-219",
@@ -19631,6 +19922,32 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4986c0c2fea96d9a88d736789d604374a64d03fb-744x1039.png",
       "imageAlt": "Riftbound Spell: Turn to Dust. Give a gear [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
       "abilityText": "Give a gear [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+    },
+    {
+      "id": "unl-071-219",
+      "name": "Chakram Dancer",
+      "publicCode": "UNL-071/219",
+      "collectorNumber": 71,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "3",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Bilgewater"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/29abe06f1c16a9eed622a5060330116268b73b8c-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Unit: Chakram Dancer. [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play me, give your other units here [Shield] this turn. (+1 [S] while they're defenders.)",
+      "abilityText": "[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play me, give your other units here [Shield] this turn. (+1 :rb_might: while they're defenders.)"
     },
     {
       "id": "unl-072-219",
@@ -19894,6 +20211,92 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ddbb13ba5617cc443b9a3a51485b1697da570121-744x1039.png",
       "imageAlt": "Riftbound Unit: Hwei, Brooding Painter. When I move, draw 1, then discard 1. Then, do the following based on the discarded card's type:\n* Spell - Draw 1.\n* Gear - Ready up to 2 runes.\n* Unit - Give me +3 [S] this turn.",
       "abilityText": "When I move, draw 1, then discard 1. Then, do the following based on the discarded card's type:\n\nSpell - Draw 1.Gear - Ready up to 2 runes.Unit - Give me +3 :rb_might: this turn."
+    },
+    {
+      "id": "unl-081-219",
+      "name": "Keeper of Masks",
+      "publicCode": "UNL-081/219",
+      "collectorNumber": 81,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "1",
+      "power": "",
+      "tags": [
+        "Ionia"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/67606d98bd3d8816e686dacacb91a56627d4b5f5-744x1039.png",
+      "imageAlt": "Riftbound Unit: Keeper of Masks. [Hidden] (Hide now for [A] to react with later for [0].)\n[Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.)\nWhen you play me, play two Reflection unit tokens here. They become copies of me.",
+      "abilityText": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)\n[Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.)\nWhen you play me, play two Reflection unit tokens here. They become copies of me."
+    },
+    {
+      "id": "unl-082-219",
+      "name": "Lillia, Fae Fawn",
+      "publicCode": "UNL-082/219",
+      "collectorNumber": 82,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "3",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Fae",
+        "Lillia",
+        "Ionia"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/65d0af5361b335a7e65c7aa03a099fc0de3431e6-744x1039.png",
+      "imageAlt": "Riftbound Unit: Lillia, Fae Fawn. [Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\nWhen I move from a location, play a 3 [S] Sprite unit token with [Temporary] there. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "abilityText": "[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)\nWhen I move from a location, play a 3 :rb_might: Sprite unit token with [Temporary] there. (Kill it at the start of its controller's Beginning Phase, before scoring.)"
+    },
+    {
+      "id": "unl-082a-219",
+      "name": "Lillia, Fae Fawn",
+      "publicCode": "UNL-082a/219",
+      "collectorNumber": 82,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Mind"
+      ],
+      "rarity": "Showcase",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "3",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Fae",
+        "Lillia",
+        "Ionia"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b06072002316a5b86f11750bbe21e9dfb94be08d-744x1039.png",
+      "imageAlt": "Riftbound Unit: Lillia, Fae Fawn. [Accelerate]\nWhen I move from a location, play a 3 [S] Sprite unit token with [Temporary] there.",
+      "abilityText": "[Accelerate]\nWhen I move from a location, play a 3 :rb_might: Sprite unit token with [Temporary] there."
     },
     {
       "id": "unl-083-219",
@@ -20395,6 +20798,32 @@
       "abilityText": "[Level 11][>] I have +4 :rb_might:. (While you have 11+ XP, get the effect.)"
     },
     {
+      "id": "unl-099-219",
+      "name": "Towering Combatant",
+      "publicCode": "UNL-099/219",
+      "collectorNumber": 99,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Body"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "4",
+      "might": "3",
+      "power": "",
+      "tags": [
+        "Shurima"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2a2eefa9b85684489e97870145eb2f94b20b60ed-744x1039.png",
+      "imageAlt": "Riftbound Unit: Towering Combatant. [Shield 2] (+2 [S] while I'm a defender.)\n[Tank] (I must be assigned combat damage first.)",
+      "abilityText": "[Shield 2] (+2 :rb_might: while I'm a defender.)\n[Tank] (I must be assigned combat damage first.)"
+    },
+    {
       "id": "unl-100-219",
       "name": "Voracious Gromp",
       "publicCode": "UNL-100/219",
@@ -20490,7 +20919,7 @@
       "power": "",
       "tags": [],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/de7b7c683f16a297418bc9a326178c520f17ef2b-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/de7b7c683f16a297418bc9a326178c520f17ef2b-744x1039.png",
       "imageAlt": "Riftbound Spell: Disposal Order. [Reaction] (Play any time, even before spells and abilities resolve.)\nChoose one -\n- Choose up to 3 cards from opponents' trashes. Their owners recycle them.\n- Draw 1.",
       "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nChoose one -\n\nChoose up to 3 cards from opponents' trashes. Their owners recycle them.Draw 1."
     },
@@ -20546,6 +20975,30 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/01596f6039ef5618fae686e1c7df291e1c570fc3-744x1039.png",
       "imageAlt": "Riftbound Unit: Imposing Challenger. When I move, you may move an enemy unit here with less Might than me to a different battlefield.",
       "abilityText": "When I move, you may move an enemy unit here with less Might than me to a different battlefield."
+    },
+    {
+      "id": "unl-106-219",
+      "name": "Repulse",
+      "publicCode": "UNL-106/219",
+      "collectorNumber": 106,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Body"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "1",
+      "might": "",
+      "power": "1",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ca56ad44ec24db67e10a4ee18f5c7f3756c83d94-744x1039.png",
+      "imageAlt": "Riftbound Spell: Repulse. [Reaction] (Play any time, even before spells and abilities resolve.)\nChoose a friendly unit at a battlefield. Counter an enemy spell or ability that chooses it and no other friendly unit.",
+      "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nChoose a friendly unit at a battlefield. Counter an enemy spell or ability that chooses it and no other friendly unit."
     },
     {
       "id": "unl-107-219",
@@ -20622,6 +21075,30 @@
       "abilityText": "When you play a unit, you may pay :rb_energy_1: to gain 1 XP.\nSpend 3 XP, :rb_exhaust:: Ready a unit."
     },
     {
+      "id": "unl-110-219",
+      "name": "Clash of Giants",
+      "publicCode": "UNL-110/219",
+      "collectorNumber": 110,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Body"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "6",
+      "might": "",
+      "power": "2",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/afe7cbde874003db673925275a13614d5f35266b-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Spell: Clash of Giants. Choose two units. They deal damage equal to their Mights to each other.",
+      "abilityText": "Choose two units. They deal damage equal to their Mights to each other."
+    },
+    {
       "id": "unl-111-219",
       "name": "Determined Sentry",
       "publicCode": "UNL-111/219",
@@ -20647,6 +21124,33 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b491c050b8505c52000c5ad7bb5a0b7855fa4ad1-744x1039.png?accountingTag=RB",
       "imageAlt": "Riftbound Unit: Determined Sentry. I can't move to base.",
       "abilityText": "I can't move to base."
+    },
+    {
+      "id": "unl-112-219",
+      "name": "Irresistible Faefolk",
+      "publicCode": "UNL-112/219",
+      "collectorNumber": 112,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Body"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "1",
+      "power": "",
+      "tags": [
+        "Fae",
+        "Ionia"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6834e4b00a22dd6d7476d36884b43cf59b60c611-744x1039.png",
+      "imageAlt": "Riftbound Unit: Irresistible Faefolk. When I move to a battlefield, you may move an enemy unit to that battlefield.",
+      "abilityText": "When I move to a battlefield, you may move an enemy unit to that battlefield."
     },
     {
       "id": "unl-113-219",
@@ -21128,6 +21632,30 @@
       "abilityText": "Move an enemy unit from a battlefield to its base. Then, if there's an enemy unit alone at that battlefield, draw 1."
     },
     {
+      "id": "unl-125-219",
+      "name": "Lunar Boon",
+      "publicCode": "UNL-125/219",
+      "collectorNumber": 125,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Chaos"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "3",
+      "might": "",
+      "power": "",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7dc31cec93a355ba52b8cf2ca0b232a0edd57586-744x1039.png",
+      "imageAlt": "Riftbound Spell: Lunar Boon. [Reaction] (Play any time, even before spells and abilities resolve.)\nDiscard 1, then draw 2.",
+      "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nDiscard 1, then draw 2."
+    },
+    {
       "id": "unl-126-219",
       "name": "Megatusk",
       "publicCode": "UNL-126/219",
@@ -21281,6 +21809,32 @@
       "abilityText": "[Reaction] (Play any time, even before spells and abilities resolve.)\nCounter a spell. Return it to its owner's hand instead of putting it in their trash.\n[Predict]. (Look at the top card of your Main Deck. You may recycle it.)"
     },
     {
+      "id": "unl-132-219",
+      "name": "Angler Beast",
+      "publicCode": "UNL-132/219",
+      "collectorNumber": 132,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Chaos"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "5",
+      "might": "5",
+      "power": "1",
+      "tags": [
+        "Bilgewater"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/68872e2119146768f8fa113376876fa64699297d-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Unit: Angler Beast. When you play me, return all units with 2 [S] or less to their owners' hands.",
+      "abilityText": "When you play me, return all units with 2 :rb_might: or less to their owners' hands."
+    },
+    {
       "id": "unl-133-219",
       "name": "Blast Cone",
       "publicCode": "UNL-133/219",
@@ -21353,6 +21907,30 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3540a748211afd35b9ef4873dae0850c238fa964-744x1039.png",
       "imageAlt": "Riftbound Unit: Insightful Investigator. When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1.",
       "abilityText": "When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card and draw 1."
+    },
+    {
+      "id": "unl-136-219",
+      "name": "Scryer's Bloom",
+      "publicCode": "UNL-136/219",
+      "collectorNumber": 136,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Chaos"
+      ],
+      "rarity": "Uncommon",
+      "cardTypes": [
+        "Gear"
+      ],
+      "superTypes": [],
+      "energy": "1",
+      "might": "",
+      "power": "",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b10a544d24d3ae3e177d4791743bb2cfb742abcc-744x1039.png",
+      "imageAlt": "Riftbound Gear: Scryer's Bloom. This enters exhausted.\nKill this, [1], [T]: [Predict 2], then draw 1. Gain 1 XP.  (To Predict 2, look at the top two cards of your Main Deck. Recycle any of them and put the rest back in any order.)",
+      "abilityText": "This enters exhausted.\nKill this, :rb_energy_1:, :rb_exhaust:: [Predict 2], then draw 1. Gain 1 XP.  (To Predict 2, look at the top two cards of your Main Deck. Recycle any of them and put the rest back in any order.)"
     },
     {
       "id": "unl-137-219",
@@ -21428,6 +22006,30 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e06e3e3033640bc8a5bc98acd4e3a0925c6e2c9a-744x1039.png?accountingTag=RB",
       "imageAlt": "Riftbound Spell: Bone Skewer. [Hidden] (Hide now for [A] to react with later for [0].)\nChoose a battlefield. An opponent reveals their hand. You may choose a unit from it. They play that unit to that battlefield, ignoring any and all costs. When they do, [Stun] it. (It doesn't deal combat damage this turn.)",
       "abilityText": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)\nChoose a battlefield. An opponent reveals their hand. You may choose a unit from it. They play that unit to that battlefield, ignoring any and all costs. When they do, [Stun] it. (It doesn't deal combat damage this turn.)"
+    },
+    {
+      "id": "unl-140-219",
+      "name": "Conscription",
+      "publicCode": "UNL-140/219",
+      "collectorNumber": 140,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Chaos"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "5",
+      "might": "",
+      "power": "2",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1c05bff48666586a2b3552b5638deaf20d9006f7-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Spell: Conscription. You may spend 5 XP as an additional cost to play this.\nChoose an enemy unit at a battlefield with 3 [S] or less. If you paid the additional cost, choose any enemy unit at a battlefield instead. Take control of it, exhaust it, and recall it.",
+      "abilityText": "You may spend 5 XP as an additional cost to play this.\nChoose an enemy unit at a battlefield with 3 :rb_might: or less. If you paid the additional cost, choose any enemy unit at a battlefield instead. Take control of it, exhaust it, and recall it."
     },
     {
       "id": "unl-141-219",
@@ -21625,6 +22227,35 @@
       "abilityText": "[Hidden]\n[Backline]\nOnce each turn, when an enemy unit dies while I'm at a battlefield, play a Gold gear token exhausted."
     },
     {
+      "id": "unl-146-219",
+      "name": "Syndra, Transcendent",
+      "publicCode": "UNL-146/219",
+      "collectorNumber": 146,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Chaos"
+      ],
+      "rarity": "Rare",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [
+        "Champion"
+      ],
+      "energy": "6",
+      "might": "6",
+      "power": "1",
+      "tags": [
+        "Ionia",
+        "Syndra"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a3695d011175801aaf6ec5a6557b65b8d6341e81-744x1039.png",
+      "imageAlt": "Riftbound Unit: Syndra, Transcendent. While I'm in a showdown, your spells have [Repeat] [2][C]. (You may pay the additional cost to repeat the spell's effect.)",
+      "abilityText": "While I'm in a showdown, your spells have [Repeat] :rb_energy_2::rb_rune_chaos:. (You may pay the additional cost to repeat the spell's effect.)"
+    },
+    {
       "id": "unl-147-219",
       "name": "Baron Nashor",
       "publicCode": "UNL-147/219",
@@ -21725,7 +22356,7 @@
         "Mount Targon"
       ],
       "orientation": "portrait",
-      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/37b015a64b6bc15e856c2d78e275b10e64db1de4-744x1039.png?accountingTag=RB",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/37b015a64b6bc15e856c2d78e275b10e64db1de4-744x1039.png",
       "imageAlt": "Riftbound Unit: Diana, No Longer Human. [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play a spell, give me +2 [S] this turn.",
       "abilityText": "[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)\nWhen you play a spell, give me +2 :rb_might: this turn."
     },
@@ -21819,6 +22450,33 @@
       "abilityText": "[Deflect]\nWhen an opponent plays a unit while I'm at a battlefield, [Stun] it. They can't move it this turn."
     },
     {
+      "id": "unl-151-219",
+      "name": "Bandle Soldier",
+      "publicCode": "UNL-151/219",
+      "collectorNumber": 151,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Order"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "4",
+      "might": "5",
+      "power": "1",
+      "tags": [
+        "Yordle",
+        "Bandle City"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e43b54f22e0a038ee1f94ba2e99f80dd89999d8e-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Unit: Bandle Soldier. [Level 3][>] I enter ready. (While you have 3+ XP, get the effect.)",
+      "abilityText": "[Level 3][>] I enter ready. (While you have 3+ XP, get the effect.)"
+    },
+    {
       "id": "unl-152-219",
       "name": "Black Rose Dignitary",
       "publicCode": "UNL-152/219",
@@ -21843,6 +22501,33 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b63912e07914c3ef7e2bcdb95d5521fc26c880f2-744x1039.png?accountingTag=RB",
       "imageAlt": "Riftbound Unit: Black Rose Dignitary. [Assault] (+1 [S] while I'm an attacker.)\n[Deathknell][>] Channel 1 rune exhausted. (When I die, get the effect.)",
       "abilityText": "[Assault] (+1 :rb_might: while I'm an attacker.)\n[Deathknell][>] Channel 1 rune exhausted. (When I die, get the effect.)"
+    },
+    {
+      "id": "unl-153-219",
+      "name": "Carrion Dredger",
+      "publicCode": "UNL-153/219",
+      "collectorNumber": 153,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Order"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Unit"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "1",
+      "power": "",
+      "tags": [
+        "Mech",
+        "Zaun"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/84d8b6d7a9cab2b78a465a8e0caf597f3ef5a175-744x1039.png?accountingTag=RB",
+      "imageAlt": "Riftbound Unit: Carrion Dredger. [Deathknell][>] Play a 1 [S] Bird unit token with [Deflect] to your base. (When I die, get the effect. Opponents must pay [A] to choose a [Deflect] unit with a spell or ability.)",
+      "abilityText": "[Deathknell][>] Play a 1 :rb_might: Bird unit token with [Deflect] to your base. (When I die, get the effect. Opponents must pay :rb_rune_rainbow: to choose a [Deflect] unit with a spell or ability.)"
     },
     {
       "id": "unl-154-219",
@@ -21948,6 +22633,56 @@
       "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/18a034ba1f4eaf7204312ca68ffb413012f6cf6b-744x1039.png",
       "imageAlt": "Riftbound Unit: Scrutinizing Sergeant . When you play me, gain 1 XP for each friendly unit.",
       "abilityText": "When you play me, gain 1 XP for each friendly unit."
+    },
+    {
+      "id": "unl-158-219",
+      "name": "Shepherd's Heirloom",
+      "publicCode": "UNL-158/219",
+      "collectorNumber": 158,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Order"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Gear"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "",
+      "power": "",
+      "tags": [
+        "Equipment"
+      ],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fadd95487f164f60c9ad08a457f11170c6afa420-744x1039.png",
+      "imageAlt": "Riftbound Gear: Shepherd's Heirloom. When you play this, gain 1 XP.\n[Equip] - Spend 1 XP (Pay the cost: Attach this to a unit you control.)",
+      "abilityText": "When you play this, gain 1 XP.\n[Equip] - Spend 1 XP (Pay the cost: Attach this to a unit you control.)"
+    },
+    {
+      "id": "unl-159-219",
+      "name": "Soul Harvest",
+      "publicCode": "UNL-159/219",
+      "collectorNumber": 159,
+      "set": "Unleashed",
+      "setId": "UNL",
+      "domains": [
+        "Order"
+      ],
+      "rarity": "Common",
+      "cardTypes": [
+        "Spell"
+      ],
+      "superTypes": [],
+      "energy": "2",
+      "might": "",
+      "power": "1",
+      "tags": [],
+      "orientation": "portrait",
+      "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/baee7644d00219dfa4160d59e6f6e78e55f5e619-744x1039.png",
+      "imageAlt": "Riftbound Spell: Soul Harvest. Kill a unit at a battlefield with 3 [S] or less.",
+      "abilityText": "Kill a unit at a battlefield with 3 :rb_might: or less."
     },
     {
       "id": "unl-160-219",
