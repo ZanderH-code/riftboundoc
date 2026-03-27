@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "version:bump": "node tools/bump_version.mjs",
+    "prebuild": "npm run version:bump",
     "dev": "astro dev",
     "content:check": "python tools/format_and_validate_content.py",
     "import:cards": "python tools/import_official_cards.py data/cards.json",
