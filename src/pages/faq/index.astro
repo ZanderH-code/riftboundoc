@@ -3,10 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = [];
 ---
 <BaseLayout title="FAQ - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
-    <h1>FAQ Files</h1>
-    <p class="muted">Browse official FAQ entries.</p>
-    <div id="faq-list" class="list"></div>
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Reference</p>
+      <h1>FAQ Files</h1>
+      <p class="muted">Browse official FAQ entries.</p>
+    </section>
+    <section class="content-section">
+      <div id="faq-list" class="list list-rich"></div>
+    </section>
   </main>
   <script is:inline>
     window.site.navActive();

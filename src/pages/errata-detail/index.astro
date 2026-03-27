@@ -3,10 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["errata-detail-page.js"];
 ---
 <BaseLayout title="Errata Detail - riftboundoc" runtimeScripts={runtimeScripts} needsMarked={true}>
-  <main class="container">
-    <article class="reading-layout">
+  <main class="container container-content page-shell">
+    <article class="reading-layout reading-layout-enhanced">
       <aside class="side-panel">
-        <section class="card">
+        <section class="card elevated-panel">
           <h2>Reader</h2>
           <div id="reader-prefs"></div>
         </section>
@@ -17,11 +17,11 @@ const runtimeScripts = ["errata-detail-page.js"];
       </aside>
       <article class="doc-shell">
         <div class="doc-meta">
-          <h1 id="errata-title" style="margin: 0 0 8px">Loading...</h1>
+          <h1 id="errata-title" class="doc-title">Loading...</h1>
           <p class="muted" id="errata-meta">-</p>
           <p id="errata-source"></p>
         </div>
-        <div id="errata-content" style="padding: 18px 22px"></div>
+        <div id="errata-content" class="doc-content"></div>
       </article>
     </article>
   </main>

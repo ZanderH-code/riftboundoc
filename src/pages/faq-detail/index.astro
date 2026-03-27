@@ -3,10 +3,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["faq-detail-page.js"];
 ---
 <BaseLayout title="FAQ Detail - riftboundoc" runtimeScripts={runtimeScripts} needsMarked={true}>
-  <main class="container">
-    <article class="reading-layout">
+  <main class="container container-content page-shell">
+    <article class="reading-layout reading-layout-enhanced">
       <aside class="side-panel">
-        <section class="card">
+        <section class="card elevated-panel">
           <h2>Reader</h2>
           <div id="reader-prefs"></div>
         </section>
@@ -17,11 +17,11 @@ const runtimeScripts = ["faq-detail-page.js"];
       </aside>
       <article class="doc-shell">
         <div class="doc-meta">
-          <h1 id="faq-title" style="margin: 0 0 8px">Loading...</h1>
+          <h1 id="faq-title" class="doc-title">Loading...</h1>
           <p class="muted" id="faq-meta">-</p>
           <p id="faq-source"></p>
         </div>
-        <div id="faq-content" style="padding: 18px 22px"></div>
+        <div id="faq-content" class="doc-content"></div>
       </article>
     </article>
   </main>

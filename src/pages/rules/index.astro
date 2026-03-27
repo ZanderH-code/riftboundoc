@@ -3,10 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["rules-page.js"];
 ---
 <BaseLayout title="Rules - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
-    <h1>Rule Files</h1>
-    <p class="muted">Browse rule resources.</p>
-    <div id="rule-list" class="list"></div>
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Reference</p>
+      <h1>Rule Files</h1>
+      <p class="muted">Browse rule resources.</p>
+    </section>
+    <section class="content-section">
+      <div id="rule-list" class="list list-rich"></div>
+    </section>
   </main>
   <script is:inline>
     window.site.navActive();

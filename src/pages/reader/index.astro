@@ -3,12 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["reader-page.js"];
 ---
 <BaseLayout title="PDF Reader - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Document Reader</p>
+      <h1>PDF Reader</h1>
+      <p class="muted">Read official PDF resources with bookmarks, sharing, and full-text search.</p>
+    </section>
     <section id="reader-wrap" class="two-col">
       <article>
         <h1 id="reader-title">Loading...</h1>
         <p class="muted" id="reader-meta">Reader ready.</p>
-        <div class="toolbar">
+        <div class="toolbar reader-toolbar elevated-panel">
           <input id="reader-page" type="number" min="1" value="1" style="width: 110px" />
           <button id="reader-go" type="button">Go</button>
           <button id="reader-retry" type="button" class="secondary">Retry</button>
@@ -20,11 +25,11 @@ const runtimeScripts = ["reader-page.js"];
         <iframe id="pdf-view" class="pdf-frame" title="PDF Reader"></iframe>
       </article>
       <aside class="side-panel">
-        <section class="card">
+        <section class="card elevated-panel">
           <h2>Bookmarks</h2>
           <div id="reader-bookmarks" class="list"></div>
         </section>
-        <section class="card">
+        <section class="card elevated-panel">
           <h2>Search Rules</h2>
           <div class="search-row">
             <input id="reader-search-input" type="search" placeholder="Search rules..." />

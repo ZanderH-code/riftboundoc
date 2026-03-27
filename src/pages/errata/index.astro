@@ -3,10 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = [];
 ---
 <BaseLayout title="Errata - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
-    <h1>Errata Files</h1>
-    <p class="muted">Browse official errata entries.</p>
-    <div id="errata-list" class="list"></div>
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Reference</p>
+      <h1>Errata Files</h1>
+      <p class="muted">Browse official errata entries.</p>
+    </section>
+    <section class="content-section">
+      <div id="errata-list" class="list list-rich"></div>
+    </section>
   </main>
   <script is:inline>
     window.site.navActive();

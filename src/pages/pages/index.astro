@@ -3,10 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["page-list-page.js"];
 ---
 <BaseLayout title="Pages - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
-    <h1>Community Pages</h1>
-    <p class="muted">Browse structured rules and guides in web-native format.</p>
-    <div id="page-list" class="list"></div>
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Community</p>
+      <h1>Community Pages</h1>
+      <p class="muted">Browse structured rules and guides in web-native format.</p>
+    </section>
+    <section class="content-section">
+      <div id="page-list" class="list list-rich"></div>
+    </section>
   </main>
   <script is:inline>
     window.site.navActive();

@@ -7,8 +7,9 @@ const runtimeScripts = ["home-page.js", "search-page.js"];
   description="riftboundoc: searchable FAQ, errata, and rules."
   runtimeScripts={runtimeScripts}
 >
-  <main class="container">
-    <section class="hero">
+  <main class="container container-content page-shell site-home">
+    <section class="hero hero-home">
+      <p class="eyebrow">Riftbound Knowledge Hub</p>
       <h1>Riftbound FAQ and Rules Portal</h1>
       <p class="muted">Read official FAQs, errata, and searchable rules in one consistent hub.</p>
       <div class="grid home-stats-grid">
@@ -19,7 +20,7 @@ const runtimeScripts = ["home-page.js", "search-page.js"];
         <article class="card"><h2>Updated</h2><p id="stats-update">-</p></article>
       </div>
     </section>
-    <section class="search-panel">
+    <section class="search-panel elevated-panel">
       <h2>Search</h2>
       <div class="search-row">
         <input id="home-search-input" type="search" placeholder="Search rules, FAQ, errata..." />
@@ -42,15 +43,15 @@ const runtimeScripts = ["home-page.js", "search-page.js"];
       <div id="home-search-results" class="list"></div>
       <div id="home-search-pager" class="search-pager"></div>
     </section>
-    <section>
+    <section class="content-section">
       <h2>Latest Rules</h2>
       <div id="home-rules" class="list"></div>
     </section>
-    <section>
+    <section class="content-section">
       <h2>Latest FAQ</h2>
       <div id="home-faq" class="list"></div>
     </section>
-    <section>
+    <section class="content-section">
       <h2>Latest Errata</h2>
       <div id="home-errata" class="list"></div>
     </section>

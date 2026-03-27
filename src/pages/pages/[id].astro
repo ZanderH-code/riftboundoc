@@ -54,12 +54,15 @@ const canonicalUrl = new URL(
   runtimeScripts={runtimeScripts}
   needsMarked={true}
 >
-  <main class="container">
-    <h1>Community Pages</h1>
-    <p class="muted">Read structured rules and guides in web-native format.</p>
-    <div class="reading-layout">
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Community</p>
+      <h1>Community Pages</h1>
+      <p class="muted">Read structured rules and guides in web-native format.</p>
+    </section>
+    <div class="reading-layout reading-layout-enhanced">
       <aside class="side-panel">
-        <section class="card">
+        <section class="card elevated-panel">
           <h2>Reader</h2>
           <div id="reader-prefs"></div>
         </section>
@@ -71,8 +74,8 @@ const canonicalUrl = new URL(
       <article class="doc-shell">
         <div class="doc-meta" id="doc-meta">Ready</div>
         <div id="page-content-wrap">
-          <h2 id="page-title" style="padding: 16px 22px 0; margin: 0">Loading...</h2>
-          <p id="page-summary" class="muted" style="padding: 0 22px"></p>
+          <h2 id="page-title" class="page-doc-title">Loading...</h2>
+          <p id="page-summary" class="muted page-doc-summary"></p>
           <div id="page-content"></div>
         </div>
       </article>

@@ -3,16 +3,21 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const runtimeScripts = ["updates-page.js"];
 ---
 <BaseLayout title="Updates - riftboundoc" runtimeScripts={runtimeScripts}>
-  <main class="container">
-    <h1>Updates</h1>
-    <p class="muted">Latest updates across FAQ, Errata, Rules, and pages.</p>
-    <div id="updates-type-filters" class="updates-type-filters" role="group" aria-label="Filter updates by type">
-      <button type="button" class="updates-type-btn active" data-kind="all">All</button>
-      <button type="button" class="updates-type-btn" data-kind="faq">FAQ</button>
-      <button type="button" class="updates-type-btn" data-kind="errata">Errata</button>
-      <button type="button" class="updates-type-btn" data-kind="rule">Rule</button>
-    </div>
-    <div id="updates-list" class="list"></div>
+  <main class="container container-content page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Timeline</p>
+      <h1>Updates</h1>
+      <p class="muted">Latest updates across FAQ, Errata, Rules, and pages.</p>
+    </section>
+    <section class="content-section elevated-panel">
+      <div id="updates-type-filters" class="updates-type-filters" role="group" aria-label="Filter updates by type">
+        <button type="button" class="updates-type-btn active" data-kind="all">All</button>
+        <button type="button" class="updates-type-btn" data-kind="faq">FAQ</button>
+        <button type="button" class="updates-type-btn" data-kind="errata">Errata</button>
+        <button type="button" class="updates-type-btn" data-kind="rule">Rule</button>
+      </div>
+      <div id="updates-list" class="list list-rich"></div>
+    </section>
   </main>
   <script is:inline>
     window.site.navActive();
