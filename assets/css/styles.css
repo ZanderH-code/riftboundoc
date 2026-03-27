@@ -1157,6 +1157,7 @@ main > section h2 {
   grid-template-columns: minmax(260px, 340px) 1fr;
   gap: 16px;
   clear: both;
+  align-items: start;
 }
 
 .cards-modal-media {
@@ -1164,10 +1165,15 @@ main > section h2 {
   border-radius: 12px;
   overflow: hidden;
   background: #0f1620;
+  align-self: start;
+  height: max-content;
 }
 
 .cards-modal-media img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 744 / 1039;
+  object-fit: contain;
   display: block;
 }
 
