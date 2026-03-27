@@ -189,6 +189,7 @@
   const powerValue = q("#cards-power-value");
   const mightValue = q("#cards-might-value");
   const modal = q("#cards-modal");
+  const modalPanel = q(".cards-modal-panel");
   const modalClose = q("#cards-modal-close");
   const modalImage = q("#cards-modal-image");
   const modalTitle = q("#cards-modal-title");
@@ -240,6 +241,7 @@
     !powerValue ||
     !mightValue ||
     !modal ||
+    !modalPanel ||
     !modalClose ||
     !modalImage ||
     !modalTitle ||
@@ -1575,6 +1577,7 @@
   const openCardModal = async (cardId) => {
     const card = cards.find((c) => String(c.id) === String(cardId));
     if (!card) return;
+    const isLandscape = String(card.orientation || "").trim().toLowerCase() === "landscape";
     const publicCode = escapeHtml(card.publicCode || "-");
     const setName = escapeHtml(card.set || "-");
     const rarity = escapeHtml(card.rarity || "-");
@@ -1587,6 +1590,7 @@
 
     modalImage.src = card.imageUrl || "";
     modalImage.alt = card.imageAlt || card.name || "Card image";
+    modalPanel.classList.toggle("is-landscape", isLandscape);
     modalTitle.textContent = card.name || "Untitled card";
     modalMeta.textContent = `${card.publicCode || "-"} · ${card.set || "-"} · ${card.rarity || "-"}`;
     modalStats.innerHTML = [

@@ -1177,6 +1177,15 @@ main > section h2 {
   display: block;
 }
 
+.cards-modal-panel.is-landscape .cards-modal-grid {
+  grid-template-columns: minmax(420px, 560px) minmax(0, 1fr);
+}
+
+.cards-modal-panel.is-landscape .cards-modal-media img {
+  aspect-ratio: 1039 / 744;
+  transform: rotate(180deg);
+}
+
 .cards-modal-body h2 {
   margin: 0 0 8px;
   font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem);
@@ -2263,6 +2272,10 @@ body.reader-immersive .pdf-frame {
 
   .cards-modal-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cards-modal-panel.is-landscape .cards-modal-grid {
+    grid-template-columns: 1fr;
   }
 }
 
