@@ -25253,5 +25253,7 @@
       "imageAlt": "Riftbound Unit: Baron Nashor. As you play me, add the Baron Pit battlefield token to the board if it's not there already. If you do, I enter there.\nI can't be chosen by enemy spells and abilities.\nOther friendly units have +2 [S].",
       "abilityText": "As you play me, add the Baron Pit battlefield token to the board if it's not there already. If you do, I enter there.\nI can't be chosen by enemy spells and abilities.\nOther friendly units have +2 :rb_might:."
     }
-  ]
+  ],
+  "dataVersion": "1.0.0",
+  "generatedAt": "2026-03-27T19:19:23Z"
 }

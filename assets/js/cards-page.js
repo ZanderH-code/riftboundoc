@@ -78,35 +78,13 @@
   target.innerHTML = rows
     .map((it) => {
       const title = escapeHtml(it.name || "Untitled card");
-      const setName = escapeHtml(it.set || "-");
-      const code = escapeHtml(it.publicCode || "-");
-      const rarity = escapeHtml(it.rarity || "-");
-      const type = escapeHtml(asItems(it.cardTypes).join(", ") || "-");
-      const domains = escapeHtml(asItems(it.domains).join(", ") || "-");
-      const abilityRaw = String(it.abilityText || "");
-      const abilityCut = abilityRaw.slice(0, 260);
-      const ability = renderCardAbilityText(abilityCut);
       const img = escapeHtml(it.imageUrl || "");
       const alt = escapeHtml(it.imageAlt || it.name || "Card image");
-      const stats = [
-        it.energy ? `Energy ${escapeHtml(it.energy)}` : "",
-        it.might ? `Might ${escapeHtml(it.might)}` : "",
-        it.power ? `Power ${escapeHtml(it.power)}` : "",
-      ]
-        .filter(Boolean)
-        .join(" | ");
 
       return `
       <article class="item card-item" data-card-id="${escapeHtml(it.id || "")}" tabindex="0" role="button" aria-label="Open card details for ${title}">
         <div class="card-media">
           ${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : "<div class=\"card-media-empty\">No image</div>"}
-        </div>
-        <div class="card-body">
-          <h3>${title}</h3>
-          <p class="muted">Code: ${code} | Set: ${setName}</p>
-          <p class="muted">Type: ${type} | Domain: ${domains} | Rarity: ${rarity}</p>
-          ${stats ? `<p class="muted">${stats}</p>` : ""}
-          ${ability ? `<p class="card-ability-preview">${ability}${abilityRaw.length > 260 ? "..." : ""}</p>` : ""}
         </div>
       </article>
     `;
