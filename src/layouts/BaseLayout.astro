@@ -63,7 +63,12 @@ const scriptVersion = SITE_META.assetVersion;
   <body>
     <header class="topbar">
       <div class="container">
-        <a class="brand" href={base}>riftboundoc</a>
+        <a class="brand" href={base} aria-label="riftboundoc home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-glyph">R</span>
+          </span>
+          <span class="brand-text">riftboundoc</span>
+        </a>
         <nav>
           <a href={base}>Home</a>
           <a href={`${base}cards/`}>Cards</a>
