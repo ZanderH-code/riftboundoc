@@ -1570,7 +1570,7 @@
     paintDomainButtons();
   };
 
-  const pageSize = 24;
+  const pageSize = 25;
 
   const openCardModal = async (cardId) => {
     const card = cards.find((c) => String(c.id) === String(cardId));
