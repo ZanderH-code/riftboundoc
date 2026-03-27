@@ -7,12 +7,15 @@ const runtimeScripts = ["cards-page.js"];
   description="Official Riftbound card gallery in riftboundoc."
   runtimeScripts={runtimeScripts}
 >
-  <main class="container container-wide cards-page">
-    <h1>Card Gallery</h1>
-    <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>
+  <main class="container container-wide cards-page page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Card Database</p>
+      <h1>Card Gallery</h1>
+      <p class="muted">Official card images and key info synced from Riftbound card gallery.</p>
+    </section>
 
-    <section class="cards-main">
-      <section class="cards-filter-shell card" id="cards-filters">
+    <section class="cards-main content-section">
+      <section class="cards-filter-shell card elevated-panel" id="cards-filters">
         <div class="cards-filter-top">
           <input id="cards-search-input" type="search" placeholder="Search cards... (type / for filters)" />
           <div class="cards-top-actions">
@@ -118,8 +121,10 @@ const runtimeScripts = ["cards-page.js"];
         <p id="cards-meta" class="muted">Loading cards...</p>
       </section>
 
-      <div id="cards-list" class="cards-list"></div>
-      <div id="cards-pager" class="search-pager"></div>
+      <section class="cards-results-shell">
+        <div id="cards-list" class="cards-list list-rich"></div>
+        <div id="cards-pager" class="search-pager"></div>
+      </section>
     </section>
 
     <div id="cards-modal" class="cards-modal" hidden>
