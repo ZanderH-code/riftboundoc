@@ -147,6 +147,8 @@ def validate_cards(cards: list[dict], source_url: str) -> None:
             f"Parsed {len(cards)} cards but {len(missing_image)} are missing imageUrl (examples: {sample})."
         )
 
+def dedupe_cards(cards: list[dict]) -> tuple[list[dict], list[str]]:
+    deduped: list[dict] = []
     duplicate_keys: list[str] = []
     seen = set()
     for c in cards:
@@ -155,12 +157,10 @@ def validate_cards(cards: list[dict], source_url: str) -> None:
             key = f"{c.get('set','')}::{c.get('collectorNumber',0)}::{c.get('name','')}".strip().lower()
         if key in seen:
             duplicate_keys.append(key)
+            continue
         seen.add(key)
-    if duplicate_keys:
-        sample = ", ".join(duplicate_keys[:5])
-        raise RuntimeError(
-            f"Duplicate cards detected ({len(duplicate_keys)} duplicates). Example keys: {sample}"
-        )
+        deduped.append(c)
+    return deduped, duplicate_keys
 
 
 def main():
@@ -191,6 +191,12 @@ def main():
 
     html_doc = fetch(args.url)
     cards = parse_cards(html_doc)
+    cards, duplicate_keys = dedupe_cards(cards)
+    if duplicate_keys:
+        sample = ", ".join(duplicate_keys[:5])
+        print(
+            f"Warning: deduped {len(duplicate_keys)} duplicate cards from source (examples: {sample})."
+        )
     validate_cards(cards, args.url)
     now = dt.date.today().isoformat()
     output = {
