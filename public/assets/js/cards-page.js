@@ -905,6 +905,16 @@
         }
       }
 
+      const normalizeCardTitleKey = (text) =>
+        normalizeForMatch(String(text || ""))
+          .replace(/\s*\(revised text\)\s*$/i, "")
+          .trim();
+      const isCardTitleParagraph = (text) => {
+        const norm = normalizeCardTitleKey(text);
+        if (!norm) return false;
+        return knownCardNames.has(norm);
+      };
+
       for (let i = 0; i < lines.length; i += 1) {
         const line = String(lines[i] || "");
         const trimmed = line.trim();
@@ -919,11 +929,12 @@
         ) {
           // Errata/FAQ may use level-3 card headings.
           heading = line.replace(/^###\s+/, "").trim();
-        } else if (isFaqDoc && /\(revised text\)\s*$/i.test(trimmed) && !trimmed.startsWith("#")) {
-          // FAQ may contain plain "Card Name (revised text)" headings.
+        } else if (isFaqDoc && !trimmed.startsWith("#") && isCardTitleParagraph(trimmed)) {
+          // FAQ may contain plain card-title headings (with or without "(revised text)").
           let j = i + 1;
           while (j < lines.length && !String(lines[j] || "").trim()) j += 1;
-          if (j < lines.length && !String(lines[j] || "").trim().startsWith("#")) {
+          const nextLine = String(lines[j] || "").trim();
+          if (!nextLine || /^#{1,4}\s+q[:：]/i.test(nextLine) || !nextLine.startsWith("#")) {
             heading = trimmed;
           }
         } else if (isErrataDoc && trimmed && !trimmed.startsWith("#")) {
@@ -953,7 +964,7 @@
       const isOtherCardTitleParagraph = (text) => {
         const raw = String(text || "").trim();
         if (!raw) return false;
-        const norm = normalizeForMatch(raw).replace(/\s*\(revised text\)\s*$/i, "").trim();
+        const norm = normalizeCardTitleKey(raw);
         if (!norm || norm === fullLower) return false;
         return knownCardNames.has(norm);
       };
@@ -978,7 +989,12 @@
           for (const paragraph of paragraphs) {
             const text = String(paragraph || "").trim();
             if (!text) continue;
-            if (/^q[:：]/i.test(text) && current.length) {
+            if (isCardTitleParagraph(text)) {
+              if (current.length) blocks.push(current);
+              current = [text];
+              continue;
+            }
+            if (/^q[:：]/i.test(text) && current.length && !(current.length === 1 && isCardTitleParagraph(current[0]))) {
               blocks.push(current);
               current = [];
             }

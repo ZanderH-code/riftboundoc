@@ -69,7 +69,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...r interaction and decision at points that feel appropriate. Disintegrate Q: How does Disintegrate work? Doesn't the damage kill the unit after the spell has resolved? Disintegrate is a funny oneit looks like it works, but the more you under...",
+              "snippet": "Disintegrate\n\nQ: How does Disintegrate work? Doesn't the damage kill the unit after the spell has resolved?\n\nDisintegrate is a funny oneit looks like it works, but the more you understand the rules, the more it looks like it might not work after all. Units dealt lethal damage by a spell aren't killed immediately, they're killed right after that spell resolves. To solve this little rules conundrum, we're using the new reflexive trigger wording here as well.",
               "query": "Disintegrate",
               "jumpQuery": "Disintegrate",
               "anchorText": "Disintegrate",
@@ -328,7 +328,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...y unit. (If it doesn't have a buff, it gets a +1 [M] buff.) Sun Disc Q: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability? Yes. Although Legion normally requires \"another\" card for spells and play effec...",
+              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\nYes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
@@ -350,7 +350,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...going. Baited Hook Q: What happens if I use an effect like Unlicensed Armory to prevent the death of the friendly unit I chose to kill with Baited Hook? Baited Hook kills a unit, then uses information about \"the killed unit.\" If you preven...",
+              "snippet": "Unlicensed Armory\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
@@ -428,7 +428,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...y failsafe to handle corner cases. Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It s...",
+              "snippet": "Blind Fury\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
@@ -483,7 +483,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...f damage the spell deals to a unit here is increased by 1.) Darius, Trifarian Q: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might? Yes, this works. Triggers like this are evaluated immediately after th...",
+              "snippet": "Darius, Trifarian\n\nQ: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might?\n\nYes, this works. Triggers like this are evaluated immediately after the event that takes place, at which point Darius is on the board.",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -505,7 +505,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...f damage the spell deals to a unit here is increased by 1.) Darius, Trifarian Q: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might? Yes, this works. Triggers like this are evaluated immediately after th...",
+              "snippet": "Darius, Trifarian\n\nQ: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might?\n\nYes, this works. Triggers like this are evaluated immediately after the event that takes place, at which point Darius is on the board.",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -543,7 +543,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ions. We've also got a few loose ends in Origins to tie up. Falling Star, Icathian Rain, and Deflect The Origins FAQ impacted these two Origins cards in ways that ultimately went beyond our original intentions for them, and we haven't been...",
+              "snippet": "Falling Star\n\nDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -660,7 +660,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ve me +2 [M] this turn if there is a ready enemy unit here. Ravenborn Tome Q: Is Ravenborn Tome supposed to be able to grant bonus damage to spells I play on later turns? No. This is another card that's missing \"this turn.\" Ravenborn Tome [...",
+              "snippet": "Ravenborn Tome\n\nQ: Is Ravenborn Tome supposed to be able to grant bonus damage to spells I play on later turns?\n\nNo. This is another card that's missing \"this turn.\"",
               "query": "Ravenborn Tome",
               "jumpQuery": "Ravenborn Tome",
               "anchorText": "Ravenborn Tome",
@@ -793,7 +793,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...amage from Challenge, Last Breath, or Carnivorous Snapvine. Immortal Phoenix Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal...",
+              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.\n\nA spell instructs you to deal damage to a unit during its resolution, and that unit is put into the trash during the cleanup immediately following that spell's resolution.",
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
@@ -952,7 +952,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...re units, whether or not it mentions a destination by name. Charm Q: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to? Yes. This is a change from prior rulings. This means that move effects that...",
+              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\nYes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
@@ -1179,7 +1179,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...y it, reducing its cost by [2]. Draw any you didn't banish. Reinforce (revised text) Look at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards. Refl...",
+              "snippet": "Reinforce\n\nLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
@@ -1322,7 +1322,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...What about triggered abilities with multiple targets, like Sona, Harmonious? The same is true of triggered abilities with multiple targets. For triggered abilities, however, this causes some cardsSona in particularto work in unintended way...",
+              "snippet": "Sona, Harmonious\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -1444,7 +1444,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...on. Move me to its location and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they wer...",
+              "snippet": "Zhonya's Hourglass\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -1681,7 +1681,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...orgiven [2], [E]: Move a friendly unit to or from its base. Portal Rescue Banish a friendly unit, then its owner plays it to their base, ignoring its cost. For The Syren and Unforgiven, this is not functional errata, just a clarification. F...",
+              "snippet": "Portal Rescue\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
@@ -1786,7 +1786,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...n't play it. The Harrowing would put it back in your trash, Ava Achiever would put it back in your hand, and so on. But when the card came out of a deck, which is both secret and randomized, it's not so simple. To provide a clear and easy a...",
+              "snippet": "Ava Achiever\n\nQ: Does Ava's ability let me hide cards?\n\nNo, it lets you play cards with Hidden from your hand.",
               "query": "Ava Achiever",
               "jumpQuery": "Ava Achiever",
               "anchorText": "Ava Achiever",
@@ -1825,7 +1825,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...e ability of Baited Hook resolves, the outcome is the same. Convergent Mutation Q: The English version of this card is missing \"this turn,\" but the Chinese version includes it. Which is correct? The English version is a printing error. Conv...",
+              "snippet": "Convergent Mutation\n\nQ: The English version of this card is missing \"this turn,\" but the Chinese version includes it. Which is correct?\n\nThe English version is a printing error. Convergent Mutation will receive errata to correct this oversight. Meanwhile, the Chinese version uses \"becomes\" language where the English version uses \"increase.\" We have opted to keep the \"increase\" wording from English, as these wordings work slightly differently",
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
@@ -1902,7 +1902,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...andle corner cases. Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It sounds like it's...",
+              "snippet": "Promising Future\n\nQ: So what exactly happens when someone plays Promising Future?\n\nStart with the player whose turn it isprobably Promising Future's controller. That player looks at their top 5 cards, banishes one of them, and recycles the other 4. Then each other player in turn order repeats this process. Each player can see which cards the players before them have chosen. Then, starting with the next player in turn order this time, those players put the cards they chose onto the chain as pending items, with the player whose turn it is putting their item on the chain last.\n\nThen Promising Future finishes resolving, and the players finish adding their pending items to the chain in the same order they were put there, ignoring Energy costs but still paying Power costs. They must pay mandatory additional costs (like the cost of Cruel Patron), and may choose to pay optional additional costs (like Accelerate).\n\nEach card that's a unit or gear resolves immediately, which may cause other things (such as play effects) to be added to the top of the chain as pending items. Any cards that can't be played for any reason remain banished.",
               "query": "Promising Future",
               "jumpQuery": "Promising Future",
               "anchorText": "Promising Future",
@@ -1974,7 +1974,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ber Monk and Noxus Saboteur do not have the Hidden keyword. Wraith of Echoes Q: Does Wraith of Echoes trigger on its own death? No. Units don't \"see\" themselves die unless they have an ability such as Deathknell that explicitly allows them...",
+              "snippet": "Wraith of Echoes\n\nQ: Does Wraith of Echoes trigger on its own death?\n\nNo. Units don't \"see\" themselves die unless they have an ability such as Deathknell that explicitly allows them to. For clarity, we are issuing an errata that adds the word \"another\" to Wraith of Echoes.",
               "query": "Wraith of Echoes",
               "jumpQuery": "Wraith of Echoes",
               "anchorText": "Wraith of Echoes",
@@ -2013,7 +2013,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...be recalled, leaving the battlefield open and uncontested. Teemo, Strategist Q: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice? We're issuing a rules update that chang...",
+              "snippet": "Teemo, Strategist\n\nQ: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice?\n\nWe're issuing a rules update that changes how Teemo and other defend and attack triggers work, and we're issuing a minor errata for Teemo in accordance with it. We're also clarifying what his ability does and how many targets it has. This contradicts some previous guidance we've given on this card, as we've examined what it says, what it's intended to do, and what our rules can support.\n\nTeemo has a \"when I defend\" trigger. Under previous rules, attack and defend triggers happened only at the beginning of combat. Teemo's dual trigger condition was meant to cover thishe either triggered at the beginning of combat, or he triggered when you played him into combat.",
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
@@ -2052,7 +2052,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...be recalled, leaving the battlefield open and uncontested. Teemo, Strategist Q: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice? We're issuing a rules update that chang...",
+              "snippet": "Teemo, Strategist\n\nQ: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice?\n\nWe're issuing a rules update that changes how Teemo and other defend and attack triggers work, and we're issuing a minor errata for Teemo in accordance with it. We're also clarifying what his ability does and how many targets it has. This contradicts some previous guidance we've given on this card, as we've examined what it says, what it's intended to do, and what our rules can support.\n\nTeemo has a \"when I defend\" trigger. Under previous rules, attack and defend triggers happened only at the beginning of combat. Teemo's dual trigger condition was meant to cover thishe either triggered at the beginning of combat, or he triggered when you played him into combat.",
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
@@ -2251,7 +2251,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "..., increase its Might to the Might of another friendly unit. Dune Drake Q: What about Dune Drake? It's missing \"this turn\" in both English and Chinese. This is also a printing error, one that wasn't caught in time to fix the Chinese version....",
+              "snippet": "Dune Drake\n\nQ: What about Dune Drake? It's missing \"this turn\" in both English and Chinese.\n\nThis is also a printing error, one that wasn't caught in time to fix the Chinese version. It will also receive errata.",
               "query": "Dune Drake",
               "jumpQuery": "Dune Drake",
               "anchorText": "Dune Drake",
@@ -2290,7 +2290,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...Child Starter At the end of your turn, ready up to 2 runes. Kinkou Monk When you play me, buff up to two other friendly units. (Each one that doesn't have a buff gets a +1 [M] buff.) Sigil of the Storm Q: Does Sigil of the Storm target? If...",
+              "snippet": "Kinkou Monk\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
@@ -2329,7 +2329,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...o finish them off. This is a change from previous rulings.. Unyielding Spirit Q: What counts as \"spell and ability damage?\" What does this card do? \"Spell and ability damage\" on Unyielding Spirit is meant to encompass damage dealt by spells...",
+              "snippet": "Unyielding Spirit\n\nQ: What counts as \"spell and ability damage?\" What does this card do?\n\n\"Spell and ability damage\" on Unyielding Spirit is meant to encompass damage dealt by spells and abilities, but not damage dealt by other things as a result of spells or abilities. It will receive errata to clarify this.",
               "query": "Unyielding Spirit",
               "jumpQuery": "Unyielding Spirit",
               "anchorText": "Unyielding Spirit",
@@ -2439,7 +2439,7 @@
           "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
           "matches": [
             {
-              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "snippet": "Volibear, Imposing\n\n\"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\"\n\nIf you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at Battlefield B, you will draw 1 card.",
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
@@ -2461,7 +2461,7 @@
           "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
           "matches": [
             {
-              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "snippet": "Volibear, Imposing\n\n\"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\"\n\nIf you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at Battlefield B, you will draw 1 card.",
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
@@ -2483,7 +2483,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...it, then play it, ignoring its cost. Then recycle the rest. Dazzling Aurora At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest. Promis...",
+              "snippet": "Dazzling Aurora\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
@@ -2764,7 +2764,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...your hand, ignoring its cost. If it's a unit, play it here. Pack of Wonders Q: What can Pack of Wonders return to my hand? Pack of Wonders can choose a friendly gear, a friendly unit, or a friendly facedown card hidden at a battlefield. It...",
+              "snippet": "Pack of Wonders\n\nQ: What can Pack of Wonders return to my hand?\n\nPack of Wonders can choose a friendly gear, a friendly unit, or a friendly facedown card hidden at a battlefield. It cannot return a card with the [Hidden] keyword from anywhere else, such as a player's trash. To make that clearer, it's receiving minor errata to say \"facedown card\" rather than \"[Hidden] card.\"",
               "query": "Pack of Wonders",
               "jumpQuery": "Pack of Wonders",
               "anchorText": "Pack of Wonders",
@@ -2825,7 +2825,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...are receiving errata to clarify what they can and can't do. The Syren [1], [E]: Move a friendly unit at a battlefield to its base. Unforgiven [2], [E]: Move a friendly unit to or from its base. Portal Rescue Banish a friendly unit, then its...",
+              "snippet": "The Syren\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
@@ -2930,7 +2930,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...t question! Nocturne is his own thing. Speaking of which... Nocturne, Horrifying Q: OK, so what about Nocturne? How does his ability work? Is it a triggered ability? Can I use it if I \"reveal\" him, or only if I \"look at\" him? Nocturne has a...",
+              "snippet": "Nocturne, Horrifying\n\nQ: OK, so what about Nocturne? How does his ability work? Is it a triggered ability? Can I use it if I \"reveal\" him, or only if I \"look at\" him?\n\nNocturne has a few problems we'd like to address.\n\nHis ability is worded like a triggered ability (\"when\"), but it can't really work like one. By the time a triggered ability could go on the chain, be reacted to, and resolve, you wouldn't be looking at Nocturne anymore.\n\nHe has the same problem that the above cards do: you're trying to play a card from a deck (in this case, Nocturne himself), and it's hard to put him back there if you try to play him but can't for some reason.",
               "query": "Nocturne, Horrifying",
               "jumpQuery": "Nocturne, Horrifying",
               "anchorText": "Nocturne, Horrifying",
@@ -3007,7 +3007,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...wording this would give it back to its owner. Another card, Tideturner, is receiving similar errata and another clarification (see below). Cards with Hidden Q: When you play a card from hidden, it gains several additional restrictions. The...",
+              "snippet": "Tideturner\n\nQ: What do the Hidden changes mean for Tideturner? It seems like I'm supposed to be able to choose a unit at another location.\n\nTideturner is receiving minor errata, both to restrict its targeting to a unit you control and to make sure that it can target a unit at another location under these rules.",
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
@@ -3450,7 +3450,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...turns, you'll need to play another card to turn on Legion. Symbol of the Solari Q: What does it mean for combat to be a \"tie?\" The updated rules will more clearly define what it means to win, lose, or tie a combat. A player wins a combat i...",
+              "snippet": "Symbol of the Solari\n\nQ: What does it mean for combat to be a \"tie?\"\n\nThe updated rules will more clearly define what it means to win, lose, or tie a combat.\n\nA player wins a combat if only their units are present after combat damage has been dealt.\n\nA player loses a combat if the other player in combat still has units present and they do not (ie, if the other player wins).",
               "query": "Symbol of the Solari",
               "jumpQuery": "Symbol of the Solari",
               "anchorText": "Symbol of the Solari",
@@ -3494,7 +3494,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll card name of the one you chose at the start of the game. Karma, Channeler Q: Does Karma trigger off of recycling runes? No. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects...",
+              "snippet": "Karma, Channeler\n\nQ: Does Karma trigger off of recycling runes?\n\nNo. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects this.",
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
@@ -3533,7 +3533,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...d the fuss of getting these cards back into a deck somehow. Baited Hook [1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and...",
+              "snippet": "Baited Hook\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -3693,7 +3693,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...so got a few loose ends in Origins to tie up. Falling Star, Icathian Rain, and Deflect The Origins FAQ impacted these two Origins cards in ways that ultimately went beyond our original intentions for them, and we haven't been happy with the...",
+              "snippet": "Icathian Rain\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -3853,7 +3853,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...an only kill units from among the ones you initially chose. Dragon's Rage Q: Dragon's Rage also seems a little confusing under these targeting rules. What do I have to choose as I play it? Dragon's Rage works a little better now that move d...",
+              "snippet": "Dragon's Rage\n\nQ: Dragon's Rage also seems a little confusing under these targeting rules. What do I have to choose as I play it?\n\nDragon's Rage works a little better now that move destinations are chosen at the same time as targets, but it's still kind of strange. Accordingly, it will receive errata with a new template for \"reflexive triggers\"triggered abilities within another spell or ability that create a new ability that goes on the chain separately from the original spell or ability. To show you what that looks like, here's the updated text:",
               "query": "Dragon's Rage",
               "jumpQuery": "Dragon's Rage",
               "anchorText": "Dragon's Rage",
@@ -3892,7 +3892,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll result. Q: Can I move my ally's unit to my own base with Unforgiven, the Yasuo legend? Does that mean it's mine now? No, you can't do this. Any time you try to move something you don't control into your base, it moves to its controller's...",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -3953,7 +3953,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...st it, and recall it. (Send it to base. This isn't a move.) The Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect. The Boss (revised text) If a buff...",
+              "snippet": "The Boss\n\nQ: Can I use these cards to save a unit that's already in its base? What about one that's already exhausted? If I can't recall it, do I still exhaust it?\n\nYes. You can save any unit that meets the description in the replacement ability's condition. For Highlander and Unlicensed Armory, that's any friendly unit. The actions you perform on that unit as a replacement are like the effects of a spell or ability; you'll do as much as you can: heal the unit (if it's damaged), exhaust it (if it's ready), and recall it (if it's somewhere other than its base). And yes, you exhaust the unit even if you don't recall it; as per the above wordings, we've changed the \"recall it exhausted\" language to make that clearer.",
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
@@ -4036,7 +4036,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...fter you play your second card, he won't trigger that turn. Hallowed Tomb Q: Can this card only return the specific card I picked as my Chosen Champion? What about another copy of the same card? You can return another copy of the same card....",
+              "snippet": "Hallowed Tomb\n\nQ: Can this card only return the specific card I picked as my Chosen Champion? What about another copy of the same card?\n\nYou can return another copy of the same card. Hallowed Tomb refers to \"your Chosen Champion,\" but it's quite possible that you won't be able to verify whether a card in your trash is the specific card you chose. For example, your Chosen Champion might have been played, returned to your hand, and then discarded; you wouldn't be able to prove to your opponent that it wasn't another copy of the same card. Because of this, the updated rules treat all copies of the card you designated as your Chosen Champion as interchangeable.",
               "query": "Hallowed Tomb",
               "jumpQuery": "Hallowed Tomb",
               "anchorText": "Hallowed Tomb",
@@ -4080,7 +4080,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ts. (Each one that doesn't have a buff gets a +1 [M] buff.) Sigil of the Storm Q: Does Sigil of the Storm target? If it does, can I react to the trigger by recycling the chosen rune for Power? That seems weird. Sigil of the Storm is receivi...",
+              "snippet": "Sigil of the Storm\n\nQ: Does Sigil of the Storm target? If it does, can I react to the trigger by recycling the chosen rune for Power? That seems weird.\n\nSigil of the Storm is receiving errata using a new wording to make sure that it doesn't target. This uses a new wording, \"must,\" that indicates an action that must be taken. None of the choices made for such an ability are targets, and they are chosen as the ability resolves.",
               "query": "Sigil of the Storm",
               "jumpQuery": "Sigil of the Storm",
               "anchorText": "Sigil of the Storm",
@@ -4141,7 +4141,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...urn, if I'm at a battlefield, ready up to 4 friendly runes. Targon's Peak When you conquer here, ready up to 2 runes at the end of this turn. Dark Child Starter At the end of your turn, ready up to 2 runes. Kinkou Monk When you play me, buf...",
+              "snippet": "Targon's Peak\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
@@ -4240,7 +4240,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...t that takes place, at which point Phoenix is in the trash. Void Gate Q: If a spell deals damage to one or more units at Void Gate and one or more units somewhere else, which parts of that deal Bonus Damage? The Bonus Damage from Void Gate...",
+              "snippet": "Void Gate\n\nQ: If a spell deals damage to one or more units at Void Gate and one or more units somewhere else, which parts of that deal Bonus Damage?\n\nThe Bonus Damage from Void Gate is only for damage being dealt to units at Void Gate. It will receive errata to clarify this. (As a bonus, Bonus Damage will now be fully defined in the rules.)",
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
@@ -4400,7 +4400,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll result. Q: Can I move my ally's unit to my own base with Unforgiven, the Yasuo legend? Does that mean it's mine now? No, you can't do this. Any time you try to move something you don't control into your base, it moves to its controller's...",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -4439,7 +4439,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll result. Q: Can I move my ally's unit to my own base with Unforgiven, the Yasuo legend? Does that mean it's mine now? No, you can't do this. Any time you try to move something you don't control into your base, it moves to its controller's...",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -4478,7 +4478,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...st it, and recall it. (Send it to base. This isn't a move.) The Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect. The Boss (revised text) If a buff...",
+              "snippet": "The Boss\n\nQ: Can I use these cards to save a unit that's already in its base? What about one that's already exhausted? If I can't recall it, do I still exhaust it?\n\nYes. You can save any unit that meets the description in the replacement ability's condition. For Highlander and Unlicensed Armory, that's any friendly unit. The actions you perform on that unit as a replacement are like the effects of a spell or ability; you'll do as much as you can: heal the unit (if it's damaged), exhaust it (if it's ready), and recall it (if it's somewhere other than its base). And yes, you exhaust the unit even if you don't recall it; as per the above wordings, we've changed the \"recall it exhausted\" language to make that clearer.",
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
@@ -4517,7 +4517,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...st it, and recall it. (Send it to base. This isn't a move.) The Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect. The Boss (revised text) If a buff...",
+              "snippet": "The Boss\n\nQ: Can I use these cards to save a unit that's already in its base? What about one that's already exhausted? If I can't recall it, do I still exhaust it?\n\nYes. You can save any unit that meets the description in the replacement ability's condition. For Highlander and Unlicensed Armory, that's any friendly unit. The actions you perform on that unit as a replacement are like the effects of a spell or ability; you'll do as much as you can: heal the unit (if it's damaged), exhaust it (if it's ready), and recall it (if it's somewhere other than its base). And yes, you exhaust the unit even if you don't recall it; as per the above wordings, we've changed the \"recall it exhausted\" language to make that clearer.",
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
@@ -4644,7 +4644,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...is, these cards will receive updated wordings. Two of them, Highlander (from the Proving Grounds boxed set) and Unlicensed Armory, have straightforward fixes, adding \"heal\" and listing \"exhaust\" and \"recall\" as separate actions. Highlander...",
+              "snippet": "Highlander\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
@@ -4683,7 +4683,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...issuing errata to maintain these cards' intended function. Blood Rush Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) [A...",
+              "snippet": "Blood Rush\n\nQ: Should Blood Rush say \"this turn\" on it?\n\nIt should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted.",
               "query": "Blood Rush",
               "jumpQuery": "Blood Rush",
               "anchorText": "Blood Rush",
@@ -4744,7 +4744,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...uipment you control. Then do this: Ready up to two of them. Rell, Magnetic (revised text) Tank (I must be assigned combat damage first.) When I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you d...",
+              "snippet": "Rell, Magnetic\n\nTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
@@ -4783,7 +4783,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t the cost of a token can be treated as 0 for all purposes. Rumble, Hotheaded Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go? Yes, he can. This is a minor gap in the rules. Main Deck cards are recycled...",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -4805,7 +4805,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t the cost of a token can be treated as 0 for all purposes. Rumble, Hotheaded Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go? Yes, he can. This is a minor gap in the rules. Main Deck cards are recycled...",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -4904,7 +4904,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ere). [Equip] [C] ([C]: Attach this to a unit you control.) Janna, Savior Q: Can Janna's play effect be used to heal my units without an enemy unit present? Triggered abilities in Riftbound can't be placed on the chain unless all required t...",
+              "snippet": "Janna, Savior\n\nQ: Can Janna's play effect be used to heal my units without an enemy unit present?\n\nTriggered abilities in Riftbound can't be placed on the chain unless all required targets can be chosen. They can resolve and perform part of their text without all targets still being available, but all targets must be available to put them on the chain to begin with. This is weird, and we generally try not to force players to know it. We think 99% of players probably expect that Janna can heal their units without enemies present, so we're meeting that expectation with a simple \"up to,\" similar to some \"up to\" errata for triggered abilities in Origins.",
               "query": "Janna, Savior",
               "jumpQuery": "Janna, Savior",
               "anchorText": "Janna, Savior",
@@ -4943,7 +4943,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...here, then move up to one enemy unit from here to its base. Jax, Unmatched Q: How does Jax, Unmatched work? Jax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't w...",
+              "snippet": "Jax, Unmatched\n\nQ: How does Jax, Unmatched work?\n\nJax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't work so well when the Equipment hits the board and the other part of QuickDraw tries to take effect. We're fixing that.",
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
@@ -4982,7 +4982,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...here, then move up to one enemy unit from here to its base. Jax, Unmatched Q: How does Jax, Unmatched work? Jax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't w...",
+              "snippet": "Jax, Unmatched\n\nQ: How does Jax, Unmatched work?\n\nJax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't work so well when the Equipment hits the board and the other part of QuickDraw tries to take effect. We're fixing that.",
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
@@ -5021,7 +5021,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...as \"the unit you recycled\" and Rumble can check its Might. Svellsongur Q: Does Svellsongur copy text that the unit has gained from other sources, such as the Assault granted by Cleave? What about text it's gained from other Equipment? No,...",
+              "snippet": "Svellsongur\n\nQ: Does Svellsongur copy text that the unit has gained from other sources, such as the Assault granted by Cleave? What about text it's gained from other Equipment?\n\nNo, Svellsongur only copies the text that's actually printed on the unit. This is an ambiguity in the current rules, which refer to \"appending\" and \"removing\" rules text without reference to whether that text is original to the unit or not.\n\nThe key word here is actually copy, a system that will be fleshed out in a future rules update. For now, we'll just tell you that copies of objects or text take on their original traits, without regard to any subsequent alterations.\n\nSvellsongur doesn't grant the unit additional \"copies\" of the abilities of other Equipment. So putting 3 Svellsongur on the same unit will give that unit four total instances of its abilities, not eight. (Four should be plenty.)",
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
@@ -5060,7 +5060,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...r; what the unit gets is locked in as the ability resolves. Tianna Crownguard Q: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8t...",
+              "snippet": "Tianna Crownguard\n\nQ: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8th point from conquering?\n\nRiftbound rules and card text use the word \"score\" in a couple different ways. You can score battlefields; you can also score points, as on cards like Tryndamere, Barbarian. The difference between these two is usually clear... but Tianna muddles them more than we anticipated. Tianna is solely concerned with points and doesn't interfere with the process of conquering or holding battlefields. You can still conquer and hold battlefields and get your conquer and hold triggers. You can even draw a card if you conquer a battlefield and can't score because it's the final point and you haven't scored every battlefield yet. It's not until you reach for your scorepad, app, or tracking die that Tianna says \"No.\"\n\nThe \"gain points\" meaning of score is underdeveloped in the current rules, so in the future we are likely to revisit the rules and/or card wordings for scoring points without scoring battlefields. For now, we're issuing errata to make Tianna's function clearer and leaving the rest unchanged.",
               "query": "Tianna Crownguard",
               "jumpQuery": "Tianna Crownguard",
               "anchorText": "Tianna Crownguard",
@@ -5138,7 +5138,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...and give you a card draw instead of a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's be...",
+              "snippet": "Pickpocket\n\nQ: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
@@ -5182,7 +5182,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...control is \"frozen\" once the battlefield becomes contested. Temporal Portal Q: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the...",
+              "snippet": "Temporal Portal\n\nQ: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the cost while its cost reduction applies, does the cost reduction happen once or twice, and does the final spell cost 2 or 4?\n\nRepeat causes you to repeat execution of a spell's \"instructions,\" which are the things the spell tells you to do as it resolves. (We'll give a better definition of \"instructions\" and how to define them in an upcoming rules update.) And the Repeat cost of Find Your Center isn't reduced, even when its base cost is, because anything that asks for a card's cost finds its printed cost as the answer.\n\nThis means that Find Your Center's cost reduction applies only once and the final spell costs 4its base cost of 3, plus its Repeat cost of 3, minus its cost reduction of 2.\n\nCards with Weaponmaster",
               "query": "Temporal Portal",
               "jumpQuery": "Temporal Portal",
               "anchorText": "Temporal Portal",
@@ -5248,7 +5248,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ction]. When you play it, attach it to a unit you control.) Kato the Arm Q: Can Kato the Arm give himself his own Might and keywords? \"Friendly unit\" does properly include Kato himself, but that wasn't the intent behind this cardKato can't...",
+              "snippet": "Kato the Arm\n\nQ: Can Kato the Arm give himself his own Might and keywords?\n\n\"Friendly unit\" does properly include Kato himself, but that wasn't the intent behind this cardKato can't throw himself, after all. It was a simple goof that Kato made it out the door without the word \"another,\" and the gameplay is so divergent from the design intent that we're changing it to fix this error.",
               "query": "Kato the Arm",
               "jumpQuery": "Kato the Arm",
               "anchorText": "Kato the Arm",
@@ -5309,7 +5309,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...battlefield following a showdownyou just can't conquer it. Yone, Blademaster Q: When and how does Yone trigger? If you conquer a battlefield, is it still open? Yone's current text is a little, well, open to interpretation. A strict reading...",
+              "snippet": "Yone, Blademaster\n\nQ: When and how does Yone trigger? If you conquer a battlefield, is it still open?\n\nYone's current text is a little, well, open to interpretation. A strict reading suggests that he can never trigger at allonce you've conquered a battlefield, it's no longer openbut obviously that's not the intent. We're tweaking his text to cue off the control status of the battlefield immediately before conquering it. This means that he works as intended, triggering at the end of a noncombat showdown in which he conquers. It also means that he now triggers in \"surprise defense\" scenarios, caused when units move around during showdowns and you wind up defending a battlefield you don't control.",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -5436,7 +5436,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...al to its Might to another friendly unit this turn. Draw 1. Edge of Night Q: Does Edge of Night's autoattach ability work? Because unattended gear at battlefields are recalled, Edge of Night does a strange little dance on its way to becomin...",
+              "snippet": "Edge of Night\n\nQ: Does Edge of Night's autoattach ability work?\n\nBecause unattended gear at battlefields are recalled, Edge of Night does a strange little dance on its way to becoming attached, returning to your base while its ability is on the chain. And because of that dance, it's no longer \"here\" when the attachment is supposed to happen. We need to change its wording so it can still find the unit you chose.\n\nBut we don't want any confusion herethe card works exactly the same as it did before. The Hidden rules still require that you choose a unit at the battlefield where you played it from face down. For that reason, we've included reminder text in the errata.",
               "query": "Edge of Night",
               "jumpQuery": "Edge of Night",
               "anchorText": "Edge of Night",
@@ -5475,7 +5475,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...like to offer guidance on how these cards should be played. Draven, Audacious Q: What does it mean to win or lose a combat? Winning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the...",
+              "snippet": "Draven, Audacious\n\nQ: What does it mean to win or lose a combat?\n\nWinning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the conditions under which you win, lose, or tie a combat.\n\nAfter combat damage has been dealt:\n\nIf neither player has units remaining at the battlefield or both players have units remaining, combat is a tie. If both players do, attackers are recalled.",
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
@@ -5497,7 +5497,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...like to offer guidance on how these cards should be played. Draven, Audacious Q: What does it mean to win or lose a combat? Winning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the...",
+              "snippet": "Draven, Audacious\n\nQ: What does it mean to win or lose a combat?\n\nWinning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the conditions under which you win, lose, or tie a combat.\n\nAfter combat damage has been dealt:\n\nIf neither player has units remaining at the battlefield or both players have units remaining, combat is a tie. If both players do, attackers are recalled.",
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
@@ -5519,7 +5519,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...e, and would require +4 Might to get it back up to 1 Might. Ezreal, Prodigy Q: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs? Ezreal, Prodigy reduces additional costs that are optional to...",
+              "snippet": "Ezreal, Prodigy\n\nQ: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs?\n\nEzreal, Prodigy reduces additional costs that are optional to pay. These will generally use both the words \"additional cost\" and the word \"may.\" Repeat and Accelerate are the two main sources of optional additional costs, but Ezreal can also offer a discount for oneoff oddballs like Blast Corps Cadet.\n\nEzreal can't reduce Equip costs. That's an activation cost for an ability, so it's neither optional nor additional. There aren't currently any optional additional costs that apply to activating abilities.",
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
@@ -5558,7 +5558,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...e, and would require +4 Might to get it back up to 1 Might. Ezreal, Prodigy Q: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs? Ezreal, Prodigy reduces additional costs that are optional to...",
+              "snippet": "Ezreal, Prodigy\n\nQ: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs?\n\nEzreal, Prodigy reduces additional costs that are optional to pay. These will generally use both the words \"additional cost\" and the word \"may.\" Repeat and Accelerate are the two main sources of optional additional costs, but Ezreal can also offer a discount for oneoff oddballs like Blast Corps Cadet.\n\nEzreal can't reduce Equip costs. That's an activation cost for an ability, so it's neither optional nor additional. There aren't currently any optional additional costs that apply to activating abilities.",
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
@@ -5619,7 +5619,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...nit [Assault 2] this turn. (+2 [M] while it's an attacker.) Deathgrip Q: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't? Deathgrip uses a nonstandard wording that we normally avoid...",
+              "snippet": "Deathgrip\n\nQ: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't?\n\nDeathgrip uses a nonstandard wording that we normally avoid, precisely because of these ambiguities. We're issuing errata to bring it more in line with how other cards and abilities work. This errata establishes that 1) the friendly unit is a target, not a cost; 2) it is chosen along with the other friendly unit and killed as the spell resolves; 3) if you don't actually kill it for any reason, either because it's no longer a legal target or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.)",
               "query": "Deathgrip",
               "jumpQuery": "Deathgrip",
               "anchorText": "Deathgrip",
@@ -5658,7 +5658,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...rged cards, plus 1 Origins card that got past us last time. Rek'Sai, Swarm Queen (revised text) When I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycl...",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -5697,7 +5697,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...rged cards, plus 1 Origins card that got past us last time. Rek'Sai, Swarm Queen (revised text) When I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycl...",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -5796,7 +5796,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t. If it is a unit, you may play it here. Recycle the rest. Void Burrower (revised text) When you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest. Void Rush (revise...",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -5835,7 +5835,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...n Deck. You may banish one, then play it. Recycle the rest. Void Rush (revised text) Reveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish. Reinforce (revised text)...",
+              "snippet": "Void Rush\n\nReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
@@ -5896,7 +5896,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...play something and then try to do something to that thing. Arise! (revised text) Play a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them. Rell, Magnetic (revised text) Tank (I must be assi...",
+              "snippet": "Arise!\n\nPlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
@@ -5935,7 +5935,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...o finalize them, but that doesn't make it an optional cost. Hostile Takeover Q: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat? You'll start a noncombat s...",
+              "snippet": "Hostile Takeover\n\nQ: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat?\n\nYou'll start a noncombat showdown. (Hostile Takeover's reminder text is a little misleading in this regardyou have to have some kind of showdown before you can conquer.) This ruling applies any time you have a unit at a battlefield when your opponent still controls that battlefield, but doesn't have any units there. (Yes, that can happen. Hostile Takeover and Stormbringer are the easiest ways to do it.)\n\nThere's a gap in the current rules that leaves this situation without an obvious outcome. We plan to address that gap in the next regular rules update. The issue is surprisingly complex, and we're not 100% sure what the answer will be when we're done.\n\nIn the meantime, though, we believe starting a noncombat showdown is the least disruptive way to handle this scenario. If you need really precise timing: assume that your opponent loses control of the battlefield in the same cleanup that begins the showdown, even though ordinarily control is \"frozen\" once the battlefield becomes contested.",
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
@@ -6056,7 +6056,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...be recalled, leaving the battlefield open and uncontested. Teemo, Strategist Q: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice? We're issuing a rules update that chang...",
+              "snippet": "Teemo, Strategist\n\nQ: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice?\n\nWe're issuing a rules update that changes how Teemo and other defend and attack triggers work, and we're issuing a minor errata for Teemo in accordance with it. We're also clarifying what his ability does and how many targets it has. This contradicts some previous guidance we've given on this card, as we've examined what it says, what it's intended to do, and what our rules can support.\n\nTeemo has a \"when I defend\" trigger. Under previous rules, attack and defend triggers happened only at the beginning of combat. Teemo's dual trigger condition was meant to cover thishe either triggered at the beginning of combat, or he triggered when you played him into combat.",
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
@@ -6095,7 +6095,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...be recalled, leaving the battlefield open and uncontested. Teemo, Strategist Q: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice? We're issuing a rules update that chang...",
+              "snippet": "Teemo, Strategist\n\nQ: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice?\n\nWe're issuing a rules update that changes how Teemo and other defend and attack triggers work, and we're issuing a minor errata for Teemo in accordance with it. We're also clarifying what his ability does and how many targets it has. This contradicts some previous guidance we've given on this card, as we've examined what it says, what it's intended to do, and what our rules can support.\n\nTeemo has a \"when I defend\" trigger. Under previous rules, attack and defend triggers happened only at the beginning of combat. Teemo's dual trigger condition was meant to cover thishe either triggered at the beginning of combat, or he triggered when you played him into combat.",
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
@@ -6178,7 +6178,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...battlefield following a showdownyou just can't conquer it. Yone, Blademaster Q: When and how does Yone trigger? If you conquer a battlefield, is it still open? Yone's current text is a little, well, open to interpretation. A strict reading...",
+              "snippet": "Yone, Blademaster\n\nQ: When and how does Yone trigger? If you conquer a battlefield, is it still open?\n\nYone's current text is a little, well, open to interpretation. A strict reading suggests that he can never trigger at allonce you've conquered a battlefield, it's no longer openbut obviously that's not the intent. We're tweaking his text to cue off the control status of the battlefield immediately before conquering it. This means that he works as intended, triggering at the end of a noncombat showdown in which he conquers. It also means that he now triggers in \"surprise defense\" scenarios, caused when units move around during showdowns and you wind up defending a battlefield you don't control.",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -6217,7 +6217,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...battlefield following a showdownyou just can't conquer it. Yone, Blademaster Q: When and how does Yone trigger? If you conquer a battlefield, is it still open? Yone's current text is a little, well, open to interpretation. A strict reading...",
+              "snippet": "Yone, Blademaster\n\nQ: When and how does Yone trigger? If you conquer a battlefield, is it still open?\n\nYone's current text is a little, well, open to interpretation. A strict reading suggests that he can never trigger at allonce you've conquered a battlefield, it's no longer openbut obviously that's not the intent. We're tweaking his text to cue off the control status of the battlefield immediately before conquering it. This means that he works as intended, triggering at the end of a noncombat showdown in which he conquers. It also means that he now triggers in \"surprise defense\" scenarios, caused when units move around during showdowns and you wind up defending a battlefield you don't control.",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -6344,7 +6344,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll card name of the one you chose at the start of the game. Karma, Channeler Q: Does Karma trigger off of recycling runes? No. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects...",
+              "snippet": "Karma, Channeler\n\nQ: Does Karma trigger off of recycling runes?\n\nNo. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects this.",
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
@@ -6383,7 +6383,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll card name of the one you chose at the start of the game. Karma, Channeler Q: Does Karma trigger off of recycling runes? No. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects...",
+              "snippet": "Karma, Channeler\n\nQ: Does Karma trigger off of recycling runes?\n\nNo. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects this.",
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
@@ -6498,7 +6498,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t. If it is a unit, you may play it here. Recycle the rest. Void Burrower (revised text) When you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest. Void Rush (revise...",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -7165,7 +7165,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...play something and then try to do something to that thing. Arise! (revised text) Play a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them. Rell, Magnetic (revised text) Tank (I must be assi...",
+              "snippet": "Arise!\n\nPlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
@@ -7234,7 +7234,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...n't play it. The Harrowing would put it back in your trash, Ava Achiever would put it back in your hand, and so on. But when the card came out of a deck, which is both secret and randomized, it's not so simple. To provide a clear and easy a...",
+              "snippet": "Ava Achiever\n\nQ: Does Ava's ability let me hide cards?\n\nNo, it lets you play cards with Hidden from your hand.",
               "query": "Ava Achiever",
               "jumpQuery": "Ava Achiever",
               "anchorText": "Ava Achiever",
@@ -7320,7 +7320,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...d the fuss of getting these cards back into a deck somehow. Baited Hook [1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and...",
+              "snippet": "Baited Hook\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -7564,7 +7564,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...y failsafe to handle corner cases. Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It s...",
+              "snippet": "Blind Fury\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
@@ -7661,7 +7661,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...issuing errata to maintain these cards' intended function. Blood Rush Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) [A...",
+              "snippet": "Blood Rush\n\nQ: Should Blood Rush say \"this turn\" on it?\n\nIt should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted.",
               "query": "Blood Rush",
               "jumpQuery": "Blood Rush",
               "anchorText": "Blood Rush",
@@ -8045,7 +8045,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...re units, whether or not it mentions a destination by name. Charm Q: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to? Yes. This is a change from prior rulings. This means that move effects that...",
+              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\nYes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
@@ -8227,7 +8227,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...e ability of Baited Hook resolves, the outcome is the same. Convergent Mutation Q: The English version of this card is missing \"this turn,\" but the Chinese version includes it. Which is correct? The English version is a printing error. Conv...",
+              "snippet": "Convergent Mutation\n\nQ: The English version of this card is missing \"this turn,\" but the Chinese version includes it. Which is correct?\n\nThe English version is a printing error. Convergent Mutation will receive errata to correct this oversight. Meanwhile, the Chinese version uses \"becomes\" language where the English version uses \"increase.\" We have opted to keep the \"increase\" wording from English, as these wordings work slightly differently",
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
@@ -8462,7 +8462,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...f damage the spell deals to a unit here is increased by 1.) Darius, Trifarian Q: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might? Yes, this works. Triggers like this are evaluated immediately after th...",
+              "snippet": "Darius, Trifarian\n\nQ: If I play Darius, Trifarian as my second card in a turn, does he ready and gain 2 Might?\n\nYes, this works. Triggers like this are evaluated immediately after the event that takes place, at which point Darius is on the board.",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -8499,7 +8499,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...it, then play it, ignoring its cost. Then recycle the rest. Dazzling Aurora At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest. Promis...",
+              "snippet": "Dazzling Aurora\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
@@ -8553,7 +8553,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...nit [Assault 2] this turn. (+2 [M] while it's an attacker.) Deathgrip Q: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't? Deathgrip uses a nonstandard wording that we normally avoid...",
+              "snippet": "Deathgrip\n\nQ: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't?\n\nDeathgrip uses a nonstandard wording that we normally avoid, precisely because of these ambiguities. We're issuing errata to bring it more in line with how other cards and abilities work. This errata establishes that 1) the friendly unit is a target, not a cost; 2) it is chosen along with the other friendly unit and killed as the spell resolves; 3) if you don't actually kill it for any reason, either because it's no longer a legal target or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.)",
               "query": "Deathgrip",
               "jumpQuery": "Deathgrip",
               "anchorText": "Deathgrip",
@@ -8691,7 +8691,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...r interaction and decision at points that feel appropriate. Disintegrate Q: How does Disintegrate work? Doesn't the damage kill the unit after the spell has resolved? Disintegrate is a funny oneit looks like it works, but the more you under...",
+              "snippet": "Disintegrate\n\nQ: How does Disintegrate work? Doesn't the damage kill the unit after the spell has resolved?\n\nDisintegrate is a funny oneit looks like it works, but the more you understand the rules, the more it looks like it might not work after all. Units dealt lethal damage by a spell aren't killed immediately, they're killed right after that spell resolves. To solve this little rules conundrum, we're using the new reflexive trigger wording here as well.",
               "query": "Disintegrate",
               "jumpQuery": "Disintegrate",
               "anchorText": "Disintegrate",
@@ -8802,7 +8802,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...an only kill units from among the ones you initially chose. Dragon's Rage Q: Dragon's Rage also seems a little confusing under these targeting rules. What do I have to choose as I play it? Dragon's Rage works a little better now that move d...",
+              "snippet": "Dragon's Rage\n\nQ: Dragon's Rage also seems a little confusing under these targeting rules. What do I have to choose as I play it?\n\nDragon's Rage works a little better now that move destinations are chosen at the same time as targets, but it's still kind of strange. Accordingly, it will receive errata with a new template for \"reflexive triggers\"triggered abilities within another spell or ability that create a new ability that goes on the chain separately from the original spell or ability. To show you what that looks like, here's the updated text:",
               "query": "Dragon's Rage",
               "jumpQuery": "Dragon's Rage",
               "anchorText": "Dragon's Rage",
@@ -8851,7 +8851,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...like to offer guidance on how these cards should be played. Draven, Audacious Q: What does it mean to win or lose a combat? Winning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the...",
+              "snippet": "Draven, Audacious\n\nQ: What does it mean to win or lose a combat?\n\nWinning and losing combats is a system that was inadvertently left out of the most recent rules update. Here are the conditions under which you win, lose, or tie a combat.\n\nAfter combat damage has been dealt:\n\nIf neither player has units remaining at the battlefield or both players have units remaining, combat is a tie. If both players do, attackers are recalled.",
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
@@ -8888,7 +8888,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "..., increase its Might to the Might of another friendly unit. Dune Drake Q: What about Dune Drake? It's missing \"this turn\" in both English and Chinese. This is also a printing error, one that wasn't caught in time to fix the Chinese version....",
+              "snippet": "Dune Drake\n\nQ: What about Dune Drake? It's missing \"this turn\" in both English and Chinese.\n\nThis is also a printing error, one that wasn't caught in time to fix the Chinese version. It will also receive errata.",
               "query": "Dune Drake",
               "jumpQuery": "Dune Drake",
               "anchorText": "Dune Drake",
@@ -9008,7 +9008,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...al to its Might to another friendly unit this turn. Draw 1. Edge of Night Q: Does Edge of Night's autoattach ability work? Because unattended gear at battlefields are recalled, Edge of Night does a strange little dance on its way to becomin...",
+              "snippet": "Edge of Night\n\nQ: Does Edge of Night's autoattach ability work?\n\nBecause unattended gear at battlefields are recalled, Edge of Night does a strange little dance on its way to becoming attached, returning to your base while its ability is on the chain. And because of that dance, it's no longer \"here\" when the attachment is supposed to happen. We need to change its wording so it can still find the unit you chose.\n\nBut we don't want any confusion herethe card works exactly the same as it did before. The Hidden rules still require that you choose a unit at the battlefield where you played it from face down. For that reason, we've included reminder text in the errata.",
               "query": "Edge of Night",
               "jumpQuery": "Edge of Night",
               "anchorText": "Edge of Night",
@@ -9149,7 +9149,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...e, and would require +4 Might to get it back up to 1 Might. Ezreal, Prodigy Q: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs? Ezreal, Prodigy reduces additional costs that are optional to...",
+              "snippet": "Ezreal, Prodigy\n\nQ: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs?\n\nEzreal, Prodigy reduces additional costs that are optional to pay. These will generally use both the words \"additional cost\" and the word \"may.\" Repeat and Accelerate are the two main sources of optional additional costs, but Ezreal can also offer a discount for oneoff oddballs like Blast Corps Cadet.\n\nEzreal can't reduce Equip costs. That's an activation cost for an ability, so it's neither optional nor additional. There aren't currently any optional additional costs that apply to activating abilities.",
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
@@ -9239,7 +9239,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ions. We've also got a few loose ends in Origins to tie up. Falling Star, Icathian Rain, and Deflect The Origins FAQ impacted these two Origins cards in ways that ultimately went beyond our original intentions for them, and we haven't been...",
+              "snippet": "Falling Star\n\nDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -9879,7 +9879,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...fter you play your second card, he won't trigger that turn. Hallowed Tomb Q: Can this card only return the specific card I picked as my Chosen Champion? What about another copy of the same card? You can return another copy of the same card....",
+              "snippet": "Hallowed Tomb\n\nQ: Can this card only return the specific card I picked as my Chosen Champion? What about another copy of the same card?\n\nYou can return another copy of the same card. Hallowed Tomb refers to \"your Chosen Champion,\" but it's quite possible that you won't be able to verify whether a card in your trash is the specific card you chose. For example, your Chosen Champion might have been played, returned to your hand, and then discarded; you wouldn't be able to prove to your opponent that it wasn't another copy of the same card. Because of this, the updated rules treat all copies of the card you designated as your Chosen Champion as interchangeable.",
               "query": "Hallowed Tomb",
               "jumpQuery": "Hallowed Tomb",
               "anchorText": "Hallowed Tomb",
@@ -10053,7 +10053,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...is, these cards will receive updated wordings. Two of them, Highlander (from the Proving Grounds boxed set) and Unlicensed Armory, have straightforward fixes, adding \"heal\" and listing \"exhaust\" and \"recall\" as separate actions. Highlander...",
+              "snippet": "Highlander\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
@@ -10119,7 +10119,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...o finalize them, but that doesn't make it an optional cost. Hostile Takeover Q: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat? You'll start a noncombat s...",
+              "snippet": "Hostile Takeover\n\nQ: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat?\n\nYou'll start a noncombat showdown. (Hostile Takeover's reminder text is a little misleading in this regardyou have to have some kind of showdown before you can conquer.) This ruling applies any time you have a unit at a battlefield when your opponent still controls that battlefield, but doesn't have any units there. (Yes, that can happen. Hostile Takeover and Stormbringer are the easiest ways to do it.)\n\nThere's a gap in the current rules that leaves this situation without an obvious outcome. We plan to address that gap in the next regular rules update. The issue is surprisingly complex, and we're not 100% sure what the answer will be when we're done.\n\nIn the meantime, though, we believe starting a noncombat showdown is the least disruptive way to handle this scenario. If you need really precise timing: assume that your opponent loses control of the battlefield in the same cleanup that begins the showdown, even though ordinarily control is \"frozen\" once the battlefield becomes contested.",
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
@@ -10205,7 +10205,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...so got a few loose ends in Origins to tie up. Falling Star, Icathian Rain, and Deflect The Origins FAQ impacted these two Origins cards in ways that ultimately went beyond our original intentions for them, and we haven't been happy with the...",
+              "snippet": "Icathian Rain\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -10249,7 +10249,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...amage from Challenge, Last Breath, or Carnivorous Snapvine. Immortal Phoenix Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal...",
+              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.\n\nA spell instructs you to deal damage to a unit during its resolution, and that unit is put into the trash during the cleanup immediately following that spell's resolution.",
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
@@ -10396,7 +10396,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ere). [Equip] [C] ([C]: Attach this to a unit you control.) Janna, Savior Q: Can Janna's play effect be used to heal my units without an enemy unit present? Triggered abilities in Riftbound can't be placed on the chain unless all required t...",
+              "snippet": "Janna, Savior\n\nQ: Can Janna's play effect be used to heal my units without an enemy unit present?\n\nTriggered abilities in Riftbound can't be placed on the chain unless all required targets can be chosen. They can resolve and perform part of their text without all targets still being available, but all targets must be available to put them on the chain to begin with. This is weird, and we generally try not to force players to know it. We think 99% of players probably expect that Janna can heal their units without enemies present, so we're meeting that expectation with a simple \"up to,\" similar to some \"up to\" errata for triggered abilities in Origins.",
               "query": "Janna, Savior",
               "jumpQuery": "Janna, Savior",
               "anchorText": "Janna, Savior",
@@ -10440,7 +10440,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...here, then move up to one enemy unit from here to its base. Jax, Unmatched Q: How does Jax, Unmatched work? Jax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't w...",
+              "snippet": "Jax, Unmatched\n\nQ: How does Jax, Unmatched work?\n\nJax, Unmatched grants QuickDraw to Equipment in your hand, which works as far as letting you play them as Reactions... but doesn't work so well when the Equipment hits the board and the other part of QuickDraw tries to take effect. We're fixing that.",
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
@@ -10597,7 +10597,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll card name of the one you chose at the start of the game. Karma, Channeler Q: Does Karma trigger off of recycling runes? No. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects...",
+              "snippet": "Karma, Channeler\n\nQ: Does Karma trigger off of recycling runes?\n\nNo. When the text of Riftbound cards refers to \"cards,\" it means Main Deck cards only. Karma's reminder text reflects this.",
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
@@ -10646,7 +10646,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...ction]. When you play it, attach it to a unit you control.) Kato the Arm Q: Can Kato the Arm give himself his own Might and keywords? \"Friendly unit\" does properly include Kato himself, but that wasn't the intent behind this cardKato can't...",
+              "snippet": "Kato the Arm\n\nQ: Can Kato the Arm give himself his own Might and keywords?\n\n\"Friendly unit\" does properly include Kato himself, but that wasn't the intent behind this cardKato can't throw himself, after all. It was a simple goof that Kato made it out the door without the word \"another,\" and the gameplay is so divergent from the design intent that we're changing it to fix this error.",
               "query": "Kato the Arm",
               "jumpQuery": "Kato the Arm",
               "anchorText": "Kato the Arm",
@@ -10742,7 +10742,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...Child Starter At the end of your turn, ready up to 2 runes. Kinkou Monk When you play me, buff up to two other friendly units. (Each one that doesn't have a buff gets a +1 [M] buff.) Sigil of the Storm Q: Does Sigil of the Storm target? If...",
+              "snippet": "Kinkou Monk\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
@@ -11368,7 +11368,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...t question! Nocturne is his own thing. Speaking of which... Nocturne, Horrifying Q: OK, so what about Nocturne? How does his ability work? Is it a triggered ability? Can I use it if I \"reveal\" him, or only if I \"look at\" him? Nocturne has a...",
+              "snippet": "Nocturne, Horrifying\n\nQ: OK, so what about Nocturne? How does his ability work? Is it a triggered ability? Can I use it if I \"reveal\" him, or only if I \"look at\" him?\n\nNocturne has a few problems we'd like to address.\n\nHis ability is worded like a triggered ability (\"when\"), but it can't really work like one. By the time a triggered ability could go on the chain, be reacted to, and resolve, you wouldn't be looking at Nocturne anymore.\n\nHe has the same problem that the above cards do: you're trying to play a card from a deck (in this case, Nocturne himself), and it's hard to put him back there if you try to play him but can't for some reason.",
               "query": "Nocturne, Horrifying",
               "jumpQuery": "Nocturne, Horrifying",
               "anchorText": "Nocturne, Horrifying",
@@ -11579,7 +11579,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...your hand, ignoring its cost. If it's a unit, play it here. Pack of Wonders Q: What can Pack of Wonders return to my hand? Pack of Wonders can choose a friendly gear, a friendly unit, or a friendly facedown card hidden at a battlefield. It...",
+              "snippet": "Pack of Wonders\n\nQ: What can Pack of Wonders return to my hand?\n\nPack of Wonders can choose a friendly gear, a friendly unit, or a friendly facedown card hidden at a battlefield. It cannot return a card with the [Hidden] keyword from anywhere else, such as a player's trash. To make that clearer, it's receiving minor errata to say \"facedown card\" rather than \"[Hidden] card.\"",
               "query": "Pack of Wonders",
               "jumpQuery": "Pack of Wonders",
               "anchorText": "Pack of Wonders",
@@ -11670,7 +11670,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...and give you a card draw instead of a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's be...",
+              "snippet": "Pickpocket\n\nQ: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
@@ -11747,7 +11747,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...orgiven [2], [E]: Move a friendly unit to or from its base. Portal Rescue Banish a friendly unit, then its owner plays it to their base, ignoring its cost. For The Syren and Unforgiven, this is not functional errata, just a clarification. F...",
+              "snippet": "Portal Rescue\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
@@ -11892,7 +11892,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...andle corner cases. Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It sounds like it's...",
+              "snippet": "Promising Future\n\nQ: So what exactly happens when someone plays Promising Future?\n\nStart with the player whose turn it isprobably Promising Future's controller. That player looks at their top 5 cards, banishes one of them, and recycles the other 4. Then each other player in turn order repeats this process. Each player can see which cards the players before them have chosen. Then, starting with the next player in turn order this time, those players put the cards they chose onto the chain as pending items, with the player whose turn it is putting their item on the chain last.\n\nThen Promising Future finishes resolving, and the players finish adding their pending items to the chain in the same order they were put there, ignoring Energy costs but still paying Power costs. They must pay mandatory additional costs (like the cost of Cruel Patron), and may choose to pay optional additional costs (like Accelerate).\n\nEach card that's a unit or gear resolves immediately, which may cause other things (such as play effects) to be added to the top of the chain as pending items. Any cards that can't be played for any reason remain banished.",
               "query": "Promising Future",
               "jumpQuery": "Promising Future",
               "anchorText": "Promising Future",
@@ -12041,7 +12041,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ve me +2 [M] this turn if there is a ready enemy unit here. Ravenborn Tome Q: Is Ravenborn Tome supposed to be able to grant bonus damage to spells I play on later turns? No. This is another card that's missing \"this turn.\" Ravenborn Tome [...",
+              "snippet": "Ravenborn Tome\n\nQ: Is Ravenborn Tome supposed to be able to grant bonus damage to spells I play on later turns?\n\nNo. This is another card that's missing \"this turn.\"",
               "query": "Ravenborn Tome",
               "jumpQuery": "Ravenborn Tome",
               "anchorText": "Ravenborn Tome",
@@ -12181,7 +12181,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...y it, reducing its cost by [2]. Draw any you didn't banish. Reinforce (revised text) Look at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards. Refl...",
+              "snippet": "Reinforce\n\nLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
@@ -12225,7 +12225,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...rged cards, plus 1 Origins card that got past us last time. Rek'Sai, Swarm Queen (revised text) When I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycl...",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -12291,7 +12291,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...uipment you control. Then do this: Ready up to two of them. Rell, Magnetic (revised text) Tank (I must be assigned combat damage first.) When I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you d...",
+              "snippet": "Rell, Magnetic\n\nTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
@@ -12491,7 +12491,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t the cost of a token can be treated as 0 for all purposes. Rumble, Hotheaded Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go? Yes, he can. This is a minor gap in the rules. Main Deck cards are recycled...",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -12781,7 +12781,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ts. (Each one that doesn't have a buff gets a +1 [M] buff.) Sigil of the Storm Q: Does Sigil of the Storm target? If it does, can I react to the trigger by recycling the chosen rune for Power? That seems weird. Sigil of the Storm is receivi...",
+              "snippet": "Sigil of the Storm\n\nQ: Does Sigil of the Storm target? If it does, can I react to the trigger by recycling the chosen rune for Power? That seems weird.\n\nSigil of the Storm is receiving errata using a new wording to make sure that it doesn't target. This uses a new wording, \"must,\" that indicates an action that must be taken. None of the choices made for such an ability are targets, and they are chosen as the ability resolves.",
               "query": "Sigil of the Storm",
               "jumpQuery": "Sigil of the Storm",
               "anchorText": "Sigil of the Storm",
@@ -12939,7 +12939,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...What about triggered abilities with multiple targets, like Sona, Harmonious? The same is true of triggered abilities with multiple targets. For triggered abilities, however, this causes some cardsSona in particularto work in unintended way...",
+              "snippet": "Sona, Harmonious\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -13461,7 +13461,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...y unit. (If it doesn't have a buff, it gets a +1 [M] buff.) Sun Disc Q: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability? Yes. Although Legion normally requires \"another\" card for spells and play effec...",
+              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\nYes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
@@ -13498,7 +13498,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...as \"the unit you recycled\" and Rumble can check its Might. Svellsongur Q: Does Svellsongur copy text that the unit has gained from other sources, such as the Assault granted by Cleave? What about text it's gained from other Equipment? No,...",
+              "snippet": "Svellsongur\n\nQ: Does Svellsongur copy text that the unit has gained from other sources, such as the Assault granted by Cleave? What about text it's gained from other Equipment?\n\nNo, Svellsongur only copies the text that's actually printed on the unit. This is an ambiguity in the current rules, which refer to \"appending\" and \"removing\" rules text without reference to whether that text is original to the unit or not.\n\nThe key word here is actually copy, a system that will be fleshed out in a future rules update. For now, we'll just tell you that copies of objects or text take on their original traits, without regard to any subsequent alterations.\n\nSvellsongur doesn't grant the unit additional \"copies\" of the abilities of other Equipment. So putting 3 Svellsongur on the same unit will give that unit four total instances of its abilities, not eight. (Four should be plenty.)",
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
@@ -13547,7 +13547,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...turns, you'll need to play another card to turn on Legion. Symbol of the Solari Q: What does it mean for combat to be a \"tie?\" The updated rules will more clearly define what it means to win, lose, or tie a combat. A player wins a combat i...",
+              "snippet": "Symbol of the Solari\n\nQ: What does it mean for combat to be a \"tie?\"\n\nThe updated rules will more clearly define what it means to win, lose, or tie a combat.\n\nA player wins a combat if only their units are present after combat damage has been dealt.\n\nA player loses a combat if the other player in combat still has units present and they do not (ie, if the other player wins).",
               "query": "Symbol of the Solari",
               "jumpQuery": "Symbol of the Solari",
               "anchorText": "Symbol of the Solari",
@@ -13579,7 +13579,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...urn, if I'm at a battlefield, ready up to 4 friendly runes. Targon's Peak When you conquer here, ready up to 2 runes at the end of this turn. Dark Child Starter At the end of your turn, ready up to 2 runes. Kinkou Monk When you play me, buf...",
+              "snippet": "Targon's Peak\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
@@ -13655,7 +13655,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...be recalled, leaving the battlefield open and uncontested. Teemo, Strategist Q: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice? We're issuing a rules update that chang...",
+              "snippet": "Teemo, Strategist\n\nQ: What does this card do, and when can it do it? If I play him from Hidden during combat, does his ability trigger twice?\n\nWe're issuing a rules update that changes how Teemo and other defend and attack triggers work, and we're issuing a minor errata for Teemo in accordance with it. We're also clarifying what his ability does and how many targets it has. This contradicts some previous guidance we've given on this card, as we've examined what it says, what it's intended to do, and what our rules can support.\n\nTeemo has a \"when I defend\" trigger. Under previous rules, attack and defend triggers happened only at the beginning of combat. Teemo's dual trigger condition was meant to cover thishe either triggered at the beginning of combat, or he triggered when you played him into combat.",
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
@@ -13694,7 +13694,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...control is \"frozen\" once the battlefield becomes contested. Temporal Portal Q: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the...",
+              "snippet": "Temporal Portal\n\nQ: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the cost while its cost reduction applies, does the cost reduction happen once or twice, and does the final spell cost 2 or 4?\n\nRepeat causes you to repeat execution of a spell's \"instructions,\" which are the things the spell tells you to do as it resolves. (We'll give a better definition of \"instructions\" and how to define them in an upcoming rules update.) And the Repeat cost of Find Your Center isn't reduced, even when its base cost is, because anything that asks for a card's cost finds its printed cost as the answer.\n\nThis means that Find Your Center's cost reduction applies only once and the final spell costs 4its base cost of 3, plus its Repeat cost of 3, minus its cost reduction of 2.\n\nCards with Weaponmaster",
               "query": "Temporal Portal",
               "jumpQuery": "Temporal Portal",
               "anchorText": "Temporal Portal",
@@ -13748,7 +13748,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...st it, and recall it. (Send it to base. This isn't a move.) The Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect. The Boss (revised text) If a buff...",
+              "snippet": "The Boss\n\nQ: Can I use these cards to save a unit that's already in its base? What about one that's already exhausted? If I can't recall it, do I still exhaust it?\n\nYes. You can save any unit that meets the description in the replacement ability's condition. For Highlander and Unlicensed Armory, that's any friendly unit. The actions you perform on that unit as a replacement are like the effects of a spell or ability; you'll do as much as you can: heal the unit (if it's damaged), exhaust it (if it's ready), and recall it (if it's somewhere other than its base). And yes, you exhaust the unit even if you don't recall it; as per the above wordings, we've changed the \"recall it exhausted\" language to make that clearer.",
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
@@ -13856,7 +13856,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...are receiving errata to clarify what they can and can't do. The Syren [1], [E]: Move a friendly unit at a battlefield to its base. Unforgiven [2], [E]: Move a friendly unit to or from its base. Portal Rescue Banish a friendly unit, then its...",
+              "snippet": "The Syren\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
@@ -13920,7 +13920,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...r; what the unit gets is locked in as the ability resolves. Tianna Crownguard Q: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8t...",
+              "snippet": "Tianna Crownguard\n\nQ: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8th point from conquering?\n\nRiftbound rules and card text use the word \"score\" in a couple different ways. You can score battlefields; you can also score points, as on cards like Tryndamere, Barbarian. The difference between these two is usually clear... but Tianna muddles them more than we anticipated. Tianna is solely concerned with points and doesn't interfere with the process of conquering or holding battlefields. You can still conquer and hold battlefields and get your conquer and hold triggers. You can even draw a card if you conquer a battlefield and can't score because it's the final point and you haven't scored every battlefield yet. It's not until you reach for your scorepad, app, or tracking die that Tianna says \"No.\"\n\nThe \"gain points\" meaning of score is underdeveloped in the current rules, so in the future we are likely to revisit the rules and/or card wordings for scoring points without scoring battlefields. For now, we're issuing errata to make Tianna's function clearer and leaving the rest unchanged.",
               "query": "Tianna Crownguard",
               "jumpQuery": "Tianna Crownguard",
               "anchorText": "Tianna Crownguard",
@@ -13997,7 +13997,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...wording this would give it back to its owner. Another card, Tideturner, is receiving similar errata and another clarification (see below). Cards with Hidden Q: When you play a card from hidden, it gains several additional restrictions. The...",
+              "snippet": "Tideturner\n\nQ: What do the Hidden changes mean for Tideturner? It seems like I'm supposed to be able to choose a unit at another location.\n\nTideturner is receiving minor errata, both to restrict its targeting to a unit you control and to make sure that it can target a unit at another location under these rules.",
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
@@ -14413,7 +14413,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ll result. Q: Can I move my ally's unit to my own base with Unforgiven, the Yasuo legend? Does that mean it's mine now? No, you can't do this. Any time you try to move something you don't control into your base, it moves to its controller's...",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -14452,7 +14452,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...going. Baited Hook Q: What happens if I use an effect like Unlicensed Armory to prevent the death of the friendly unit I chose to kill with Baited Hook? Baited Hook kills a unit, then uses information about \"the killed unit.\" If you preven...",
+              "snippet": "Unlicensed Armory\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
@@ -14496,7 +14496,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...o finish them off. This is a change from previous rulings.. Unyielding Spirit Q: What counts as \"spell and ability damage?\" What does this card do? \"Spell and ability damage\" on Unyielding Spirit is meant to encompass damage dealt by spells...",
+              "snippet": "Unyielding Spirit\n\nQ: What counts as \"spell and ability damage?\" What does this card do?\n\n\"Spell and ability damage\" on Unyielding Spirit is meant to encompass damage dealt by spells and abilities, but not damage dealt by other things as a result of spells or abilities. It will receive errata to clarify this.",
               "query": "Unyielding Spirit",
               "jumpQuery": "Unyielding Spirit",
               "anchorText": "Unyielding Spirit",
@@ -14682,7 +14682,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...t. If it is a unit, you may play it here. Recycle the rest. Void Burrower (revised text) When you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest. Void Rush (revise...",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -14726,7 +14726,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...t that takes place, at which point Phoenix is in the trash. Void Gate Q: If a spell deals damage to one or more units at Void Gate and one or more units somewhere else, which parts of that deal Bonus Damage? The Bonus Damage from Void Gate...",
+              "snippet": "Void Gate\n\nQ: If a spell deals damage to one or more units at Void Gate and one or more units somewhere else, which parts of that deal Bonus Damage?\n\nThe Bonus Damage from Void Gate is only for damage being dealt to units at Void Gate. It will receive errata to clarify this. (As a bonus, Bonus Damage will now be fully defined in the rules.)",
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
@@ -14803,7 +14803,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...n Deck. You may banish one, then play it. Recycle the rest. Void Rush (revised text) Reveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish. Reinforce (revised text)...",
+              "snippet": "Void Rush\n\nReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
@@ -14908,7 +14908,7 @@
           "sourceTitle": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
           "matches": [
             {
-              "snippet": "...ved Soraka on battlefield + unit in base: unit may be saved Volibear, Imposing \"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\" If you control Volibear at...",
+              "snippet": "Volibear, Imposing\n\n\"When an opponent moves to a battlefield\" is currently treated as if it were \"whenever one or more enemy units move to a battlefield.\"\n\nIf you control Volibear at Battlefield A and Charm your opponent's Stalwart Poro onto Battlefield B, you will draw 1 card. If you control Volibear at Battlefield A, and an opponent moves two Stalwart Poros into a showdown at Battlefield B, you will draw 1 card.",
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
@@ -15015,7 +15015,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ber Monk and Noxus Saboteur do not have the Hidden keyword. Wraith of Echoes Q: Does Wraith of Echoes trigger on its own death? No. Units don't \"see\" themselves die unless they have an ability such as Deathknell that explicitly allows them...",
+              "snippet": "Wraith of Echoes\n\nQ: Does Wraith of Echoes trigger on its own death?\n\nNo. Units don't \"see\" themselves die unless they have an ability such as Deathknell that explicitly allows them to. For clarity, we are issuing an errata that adds the word \"another\" to Wraith of Echoes.",
               "query": "Wraith of Echoes",
               "jumpQuery": "Wraith of Echoes",
               "anchorText": "Wraith of Echoes",
@@ -15138,7 +15138,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...battlefield following a showdownyou just can't conquer it. Yone, Blademaster Q: When and how does Yone trigger? If you conquer a battlefield, is it still open? Yone's current text is a little, well, open to interpretation. A strict reading...",
+              "snippet": "Yone, Blademaster\n\nQ: When and how does Yone trigger? If you conquer a battlefield, is it still open?\n\nYone's current text is a little, well, open to interpretation. A strict reading suggests that he can never trigger at allonce you've conquered a battlefield, it's no longer openbut obviously that's not the intent. We're tweaking his text to cue off the control status of the battlefield immediately before conquering it. This means that he works as intended, triggering at the end of a noncombat showdown in which he conquers. It also means that he now triggers in \"surprise defense\" scenarios, caused when units move around during showdowns and you wind up defending a battlefield you don't control.",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -15212,7 +15212,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...on. Move me to its location and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they wer...",
+              "snippet": "Zhonya's Hourglass\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -15283,6 +15283,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T22:41:48Z",
+  "generatedAt": "2026-03-30T23:01:25Z",
   "source": "riftboundoc derived card related index"
 }

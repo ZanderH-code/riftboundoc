@@ -101,6 +101,100 @@ def snippet_from_match(plain: str, needle: str, ctx: int = 180) -> str:
     suffix = "..." if end < len(plain) else ""
     return f"{prefix}{plain[start:end].strip()}{suffix}"
 
+def normalize_card_title_key(value: str) -> str:
+    plain = markdown_to_plain(value)
+    return re.sub(r"\s*\(revised text\)\s*$", "", normalize_for_match(plain), flags=re.I).strip()
+
+
+def faq_snippet_for_card(content: str, card_name: str, known_card_needles: set[str]) -> str:
+    lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    sections: list[dict] = []
+    current = {"heading": "", "body": []}
+
+    def maybe_push_current():
+        if current["heading"] or current["body"]:
+            sections.append({"heading": current["heading"], "body": list(current["body"])})
+
+    for i, raw_line in enumerate(lines):
+        line = str(raw_line or "")
+        trimmed = line.strip()
+        heading = ""
+
+        if re.match(r"^##\s+", line):
+            heading = re.sub(r"^##\s+", "", line).strip()
+        elif re.match(r"^###\s+", line) and not re.match(r"^###\s+q[:：]", line, flags=re.I):
+            heading = re.sub(r"^###\s+", "", line).strip()
+        elif trimmed and not trimmed.startswith("#"):
+            norm = normalize_card_title_key(trimmed)
+            if norm and norm in known_card_needles:
+                j = i + 1
+                while j < len(lines) and not str(lines[j] or "").strip():
+                    j += 1
+                next_line = str(lines[j] or "").strip() if j < len(lines) else ""
+                if not next_line or re.match(r"^#{1,4}\s+q[:：]", next_line, flags=re.I) or not next_line.startswith("#"):
+                    heading = trimmed
+
+        if heading:
+            maybe_push_current()
+            current = {"heading": heading, "body": []}
+            continue
+        current["body"].append(line)
+
+    maybe_push_current()
+    if not sections:
+        return ""
+
+    target = normalize_card_title_key(card_name)
+    section = next((x for x in sections if normalize_card_title_key(x.get("heading") or "") == target), None)
+    if not section:
+        return ""
+
+    body_text = "\n".join(section.get("body") or [])
+    paragraphs = [markdown_to_plain(x).strip() for x in re.split(r"\n\s*\n+", body_text) if markdown_to_plain(x).strip()]
+
+    def is_card_title_paragraph(text: str) -> bool:
+        norm = normalize_card_title_key(text)
+        return bool(norm and norm in known_card_needles)
+
+    clean: list[str] = []
+    for paragraph in paragraphs:
+        norm = normalize_card_title_key(paragraph)
+        if norm == target:
+            continue
+        if is_card_title_paragraph(paragraph) and norm != target:
+            break
+        clean.append(paragraph)
+    if not clean:
+        return ""
+
+    blocks: list[list[str]] = []
+    current_block: list[str] = []
+    for paragraph in clean:
+        text = str(paragraph or "").strip()
+        if not text:
+            continue
+        if is_card_title_paragraph(text):
+            if current_block:
+                blocks.append(list(current_block))
+            current_block = [text]
+            continue
+        if re.match(r"^q[:：]", text, flags=re.I) and current_block and not (
+            len(current_block) == 1 and is_card_title_paragraph(current_block[0])
+        ):
+            blocks.append(list(current_block))
+            current_block = []
+        current_block.append(text)
+    if current_block:
+        blocks.append(list(current_block))
+
+    preferred = next((b for b in blocks if any(re.match(r"^q[:：]", str(x or "").strip(), flags=re.I) for x in b)), None)
+    chosen = preferred or (blocks[0] if blocks else clean)
+    chosen_clean = [x for x in chosen if x and normalize_card_title_key(x) != target]
+    if not chosen_clean:
+        return ""
+
+    return "\n\n".join([str(card_name or "").strip(), *chosen_clean[:4]]).strip()
+
 
 def route_for_rule(rule: dict) -> str:
     kind = str(rule.get("kind") or rule.get("type") or "pdf").lower()
@@ -200,6 +294,7 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
         for card in cards
         if str(card.get("id") or "").strip() and str(card.get("name") or "").strip()
     ]
+    known_card_needles = {entry["needle"] for entry in names if entry["needle"]}
 
     for doc in docs:
         doc_id = str(doc.get("id") or "").strip()
@@ -216,7 +311,13 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
             if re.search(rf"(^|[^a-z0-9]){re.escape(needle)}(?=$|[^a-z0-9])", low) is None:
                 continue
 
-            snippet = snippet_from_match(plain, needle)
+            snippet = (
+                faq_snippet_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
+                if kind == "faq"
+                else ""
+            )
+            if not snippet:
+                snippet = snippet_from_match(plain, needle)
             hit = {
                 "snippet": snippet,
                 "query": card["name"],
