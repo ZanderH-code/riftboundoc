@@ -749,21 +749,6 @@ main > section h2 {
   box-shadow: 0 0 0 2px rgba(109, 184, 223, 0.18), 0 10px 28px rgba(8, 14, 22, 0.55);
 }
 
-.cards-legality-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-right: 34px;
-  background-image:
-    linear-gradient(45deg, transparent 50%, #bfd1e4 50%),
-    linear-gradient(135deg, #bfd1e4 50%, transparent 50%);
-  background-position:
-    calc(100% - 17px) calc(50% + 1px),
-    calc(100% - 12px) calc(50% + 1px);
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-}
-
 .cards-multi-menu {
   position: absolute;
   left: 0;
@@ -798,6 +783,11 @@ main > section h2 {
 }
 
 .cards-multi-item:has(input:checked) {
+  background: rgba(76, 201, 240, 0.14);
+  border-color: rgba(114, 239, 221, 0.42);
+}
+
+.cards-multi-item.is-selected {
   background: rgba(76, 201, 240, 0.14);
   border-color: rgba(114, 239, 221, 0.42);
 }

@@ -85,11 +85,10 @@ const runtimeScripts = ["cards-page.js"];
               <label class="cards-select-field">
                 <span>Legality</span>
                 <div class="cards-multi">
-                  <select id="cards-legality" class="cards-multi-toggle cards-legality-select" aria-label="Filter by legality">
-                    <option value="all">All</option>
-                    <option value="legal">Legal</option>
-                    <option value="banned">Banned</option>
-                  </select>
+                  <button id="cards-legality-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span id="cards-legality-label">All</span>
+                  </button>
+                  <div id="cards-legality-menu" class="cards-multi-menu" hidden></div>
                 </div>
               </label>
             </div>

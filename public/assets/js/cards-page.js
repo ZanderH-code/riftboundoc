@@ -183,7 +183,9 @@
   const rarityToggle = q("#cards-rarity-toggle");
   const rarityLabel = q("#cards-rarity-label");
   const rarityMenu = q("#cards-rarity-menu");
-  const legalitySelect = q("#cards-legality");
+  const legalityToggle = q("#cards-legality-toggle");
+  const legalityLabel = q("#cards-legality-label");
+  const legalityMenu = q("#cards-legality-menu");
   const energyMin = q("#cards-energy-min");
   const energyMax = q("#cards-energy-max");
   const powerMin = q("#cards-power-min");
@@ -236,7 +238,9 @@
     !rarityToggle ||
     !rarityLabel ||
     !rarityMenu ||
-    !legalitySelect ||
+    !legalityToggle ||
+    !legalityLabel ||
+    !legalityMenu ||
     !energyMin ||
     !energyMax ||
     !powerMin ||
@@ -588,7 +592,7 @@
   };
   searchInput.value = state.query;
   sortKeySelect.value = state.sortKey;
-  legalitySelect.value = state.legality;
+  legalityLabel.textContent = state.legality === "legal" ? "Legal" : state.legality === "banned" ? "Banned" : "All";
   sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
 
   const buildDomainButtons = () => {
@@ -633,6 +637,7 @@
       supertypeToggle,
       variantToggle,
       rarityToggle,
+      legalityToggle,
     ].forEach((btn) => {
       if (btn) btn.setAttribute("aria-expanded", "false");
     });
@@ -677,6 +682,45 @@
       closeMultiMenus(menu);
       menu.hidden = !willOpen;
       toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
+    updateLabel();
+    renderMenu();
+  };
+  const bindLegalityFilter = ({ toggle, label, menu }) => {
+    multiMenus.push(menu);
+    const options = [
+      { value: "all", text: "All" },
+      { value: "legal", text: "Legal" },
+      { value: "banned", text: "Banned" },
+    ];
+    const updateLabel = () => {
+      label.textContent = options.find((x) => x.value === state.legality)?.text || "All";
+    };
+    const renderMenu = () => {
+      menu.innerHTML = options
+        .map((it) => {
+          const checked = state.legality === it.value;
+          return `<button type="button" class="cards-multi-item${checked ? " is-selected" : ""}" data-legality-value="${escapeHtml(
+            it.value
+          )}" aria-pressed="${checked ? "true" : "false"}">${escapeHtml(it.text)}</button>`;
+        })
+        .join("");
+    };
+    toggle.addEventListener("click", () => {
+      const willOpen = menu.hidden;
+      closeMultiMenus(menu);
+      menu.hidden = !willOpen;
+      toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    });
+    menu.addEventListener("click", (ev) => {
+      const btn = ev.target && ev.target.closest ? ev.target.closest("[data-legality-value]") : null;
+      if (!btn) return;
+      const value = String(btn.getAttribute("data-legality-value") || "all").toLowerCase();
+      state.legality = ["all", "legal", "banned"].includes(value) ? value : "all";
+      updateLabel();
+      renderMenu();
+      closeMultiMenus();
+      render(1);
     });
     updateLabel();
     renderMenu();
@@ -1482,7 +1526,7 @@
 
     searchInput.value = "";
     sortKeySelect.value = "card";
-    legalitySelect.value = "all";
+    legalityLabel.textContent = "All";
     sortDirBtn.textContent = "Asc";
     paintDomainButtons();
 
@@ -1573,7 +1617,7 @@
 
     searchInput.value = state.query;
     sortKeySelect.value = state.sortKey;
-    legalitySelect.value = state.legality;
+    legalityLabel.textContent = state.legality === "legal" ? "Legal" : state.legality === "banned" ? "Banned" : "All";
     sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
 
     setLabel.textContent = state.sets.size === 1 ? Array.from(state.sets)[0] : state.sets.size ? `${state.sets.size} selected` : "All";
@@ -1742,6 +1786,11 @@
     options: rarities,
     selected: state.rarities,
   });
+  bindLegalityFilter({
+    toggle: legalityToggle,
+    label: legalityLabel,
+    menu: legalityMenu,
+  });
   sortKeySelect.addEventListener("change", () => {
     state.sortKey = sortKeySelect.value || "card";
     render(1);
@@ -1749,11 +1798,6 @@
   sortDirBtn.addEventListener("click", () => {
     state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
     sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
-    render(1);
-  });
-  legalitySelect.addEventListener("change", () => {
-    const nextLegality = String(legalitySelect.value || "all").toLowerCase();
-    state.legality = ["all", "legal", "banned"].includes(nextLegality) ? nextLegality : "all";
     render(1);
   });
 
