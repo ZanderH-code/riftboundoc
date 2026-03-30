@@ -19,6 +19,22 @@
               "ruleId": "131."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ame for the purposes of deckbuilding and gameplay. Example: Chemtech Enforcer in English and its counterpart in Chinese are considered the same card, despite the Name element on the card reading differently. 132.4. Some cards have both a sh...",
+              "query": "Chemtech Enforcer",
+              "jumpQuery": "Chemtech Enforcer",
+              "anchorText": "Chemtech Enforcer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "132.4."
+            }
+          ]
         }
       ]
     },
@@ -54,6 +70,22 @@
               "jumpQuery": "Cleave",
               "anchorText": "Cleave",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...e: Petty Officer has Assault. It is chosen as the target of Cleave, which says &quot;Give a unit [Assault 3] this turn.&quot; After Cleave resolves, Petty Officer has Assault 4 this turn. 807.3. Assault, and whether or not a unit has Assaul...",
+              "query": "Cleave",
+              "jumpQuery": "Cleave",
+              "anchorText": "Cleave",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -119,6 +151,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Basic Runes , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this:...",
+              "query": "Fury Rune",
+              "jumpQuery": "Fury Rune",
+              "anchorText": "Fury Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -141,6 +189,44 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Basic Runes , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this:...",
+              "query": "Fury Rune",
+              "jumpQuery": "Fury Rune",
+              "anchorText": "Fury Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
+        }
+      ]
+    },
+    "ogn-009-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ts the next 3 damage the unit would take. If a player plays Hextech Ray targeting the unit, it will take no damage and its triggered ability will not trigger. If that player had played Void Seeker instead, it would be Dealt 1 and trigger it...",
+              "query": "Hextech Ray",
+              "jumpQuery": "Hextech Ray",
+              "anchorText": "Hextech Ray",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -161,6 +247,44 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s may raise the card&#x27;s Total Cost above zero. Example: Legion Rearguard is a Fury unit that costs 2 Energy and 0 Power and has Accelerate. A player plays Legion Rearguard and is instructed to ignore its costs, but chooses to pay the Ac...",
+              "query": "Legion Rearguard",
+              "jumpQuery": "Legion Rearguard",
+              "anchorText": "Legion Rearguard",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        }
+      ]
+    },
+    "ogn-012-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...some format immediately after the Keyword itself. EXAMPLE: Noxus Hopeful has &quot;[Legion][&gt;] I cost [2] less.&quot; [Legion] is short for the condition &quot;if you have played another card this turn, this card gains [Text],&quot; whi...",
+              "query": "Noxus Hopeful",
+              "jumpQuery": "Noxus Hopeful",
+              "anchorText": "Noxus Hopeful",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
             }
           ]
         }
@@ -207,6 +331,22 @@
               "ruleId": "8"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost is altered or ignored as the card is played. Example: Sky Splitter is a spell that costs 8 Energy and says in part &quot;This spell&#x27;s Energy cost is reduced by the highest Might among units you control.&quot; Lux, Illuminated is...",
+              "query": "Sky Splitter",
+              "jumpQuery": "Sky Splitter",
+              "anchorText": "Sky Splitter",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "8"
+            }
+          ]
         }
       ]
     },
@@ -247,6 +387,22 @@
               "jumpQuery": "Iron Ballista",
               "anchorText": "Iron Ballista",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...on to the Spell or Unit that created that Ability. Example: Iron Ballista is a gear that says &quot;[E]: Deal 2 to a unit at a battlefield.&quot; This damage is dealt both by a gear and by an ability. 417.6.b.3. When a spell or ability spec...",
+              "query": "Iron Ballista",
+              "jumpQuery": "Iron Ballista",
+              "anchorText": "Iron Ballista",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -371,6 +527,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "137.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ment. It conveys no gameplay information. Example: The card Void Seeker features a quote from the character Kai&#x27;Sa. It does not have the Kai&#x27;Sa tag and has no gameplay connection to the Champion unit Kai&#x27;Sa. 138.2. Flavor tex...",
+              "query": "Void Seeker",
+              "jumpQuery": "Void Seeker",
+              "anchorText": "Void Seeker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "138.2."
             }
           ]
         }
@@ -583,6 +755,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion unit. It cannot...",
+              "query": "Jinx, Demolitionist",
+              "jumpQuery": "Jinx, Demolitionist",
+              "anchorText": "Jinx, Demolitionist",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -618,6 +806,22 @@
               "jumpQuery": "Jinx, Demolitionist",
               "anchorText": "Jinx, Demolitionist",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion unit. It cannot...",
+              "query": "Jinx, Demolitionist",
+              "jumpQuery": "Jinx, Demolitionist",
+              "anchorText": "Jinx, Demolitionist",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -674,6 +878,22 @@
               "jumpQuery": "Ravenborn Tome",
               "anchorText": "Ravenborn Tome",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...me in the effect that created the Delayed Ability. Example: Ravenborn Tome reads &quot;The next spell you play this turn deals 1 Bonus Damage&quot; is a Delayed Passive Ability that passively adds 1 damage to just the next spell played. The...",
+              "query": "Ravenborn Tome",
+              "jumpQuery": "Ravenborn Tome",
+              "anchorText": "Ravenborn Tome",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -739,6 +959,22 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t be able to be completed for the cost to be paid. Example: Vi, Destructive has the ability &quot;Recycle 1 from your trash: Give me +1 [M] this turn.&quot; Each time a player activates the ability, they must recycle 1 card from their trash...",
+              "query": "Vi, Destructive",
+              "jumpQuery": "Vi, Destructive",
+              "anchorText": "Vi, Destructive",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
@@ -774,6 +1010,22 @@
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...me time that its Trigger &#x27;s condition is met. Example: Immortal Phoenix says &quot;When you kill a unit with a spell, you may pay [1][C] to play me from your trash.&quot; This ability triggers if Immortal Phoenix is in your trash immed...",
+              "query": "Immortal Phoenix",
+              "jumpQuery": "Immortal Phoenix",
+              "anchorText": "Immortal Phoenix",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -816,6 +1068,22 @@
               "ruleId": "2"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ncludes your Chosen Champion. Example: A deck could include Volibear, Furious as its Chosen Champion and still include 2 more copies of Volibear, Furious. 103.2.b.2. Cards have different names even if they represent the same character. Exam...",
+              "query": "Volibear, Furious",
+              "jumpQuery": "Volibear, Furious",
+              "anchorText": "Volibear, Furious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
         }
       ]
     },
@@ -834,6 +1102,22 @@
               "jumpQuery": "Volibear, Furious",
               "anchorText": "Volibear, Furious",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ncludes your Chosen Champion. Example: A deck could include Volibear, Furious as its Chosen Champion and still include 2 more copies of Volibear, Furious. 103.2.b.2. Cards have different names even if they represent the same character. Exam...",
+              "query": "Volibear, Furious",
+              "jumpQuery": "Volibear, Furious",
+              "anchorText": "Volibear, Furious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -860,6 +1144,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction]...",
+              "query": "Calm Rune",
+              "jumpQuery": "Calm Rune",
+              "anchorText": "Calm Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -880,6 +1180,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction]...",
+              "query": "Calm Rune",
+              "jumpQuery": "Calm Rune",
+              "anchorText": "Calm Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -959,6 +1275,22 @@
               "ruleId": "2"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n&#x27;t matter how much the player actually paid. Example: Clockwork Keeper is a unit that costs 2 Energy and 0 Power and says &quot;As you play me, you may pay [C] as an additional cost. If you do, draw 1.&quot; A player controls a card t...",
+              "query": "Clockwork Keeper",
+              "jumpQuery": "Clockwork Keeper",
+              "anchorText": "Clockwork Keeper",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
         }
       ]
     },
@@ -1020,6 +1352,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ld Value of all granted Shield keywords is summed. Example: Stalwart Poro has Shield. It is chosen as the target of Block, which says &quot;Give a unit [Shield 3] and [Tank] this turn.&quot; After Block resolves, Stalwart Poro has Shield 4...",
+              "query": "Stalwart Poro",
+              "jumpQuery": "Stalwart Poro",
+              "anchorText": "Stalwart Poro",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -1059,6 +1407,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...than the choices listed above function as normal. Example: Stand United is a spell that has Hidden and says &quot;Buff a friendly unit. Buffs give an additional +1 might to friendly units this turn.&quot; If it&#x27;s played from Hidden, t...",
+              "query": "Stand United",
+              "jumpQuery": "Stand United",
+              "anchorText": "Stand United",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -1081,6 +1445,22 @@
               "ruleId": "133.2.e."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...dy is associated with the color orange and represented by a blocky diamondshaped symbol. Its shorthand is [O]. 134.2.e. Chaos is associated with the color purple and represented by a hexagonal symbol with swirls emanating from its center. I...",
+              "query": "Block",
+              "jumpQuery": "Block",
+              "anchorText": "Block",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "134.2.e."
+            }
+          ]
         }
       ]
     },
@@ -1099,6 +1479,22 @@
               "jumpQuery": "Eclipse Herald",
               "anchorText": "Eclipse Herald",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...23.1.a.1. A Stunned Unit can not be Stunned again. Example: Eclipse Herald has the ability &quot;When you stun an enemy unit, ready me and give me +1 [M] this turn.&quot; Its controller plays a spell that reads &quot;Stun a unit.&quot; They...",
+              "query": "Eclipse Herald",
+              "jumpQuery": "Eclipse Herald",
+              "anchorText": "Eclipse Herald",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1210,6 +1606,22 @@
           ]
         },
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Tank (&quot;I must be assigned combat damage first.&quot;); Caitlyn, Patrolling (&quot;I must be assigned combat damage last.&quot;); and another unit without any abilities. That player must assign combat damage first to the unit with Tank,...",
+              "query": "Caitlyn, Patrolling",
+              "jumpQuery": "Caitlyn, Patrolling",
+              "anchorText": "Caitlyn, Patrolling",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -1242,6 +1654,22 @@
               "jumpQuery": "Last Stand",
               "anchorText": "Last Stand",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "5."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s current Might is 5. A player chooses it as the target for Last Stand, a spell that reads in part &quot;Double a friendly unit&#x27;s Might this turn.&quot; Its current Might is 5, so it gets +5 Might this turn, for a current Might of 10....",
+              "query": "Last Stand",
+              "jumpQuery": "Last Stand",
+              "anchorText": "Last Stand",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "5."
             }
@@ -1286,7 +1714,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n order for the trigger to be placed on the Chain. Example: Sona, Harmonious reads &quot;At the end of your turn, if I&#x27;m at a battlefield, ready up to 4 friendly runes.&quot; Her Trigger Ability&#x27;s Condition will be fulfilled in th...",
+              "query": "Sona, Harmonious",
+              "jumpQuery": "Sona, Harmonious",
+              "anchorText": "Sona, Harmonious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        }
+      ]
     },
     "ogn-074-298": {
       "faq": [
@@ -1329,6 +1774,22 @@
               "ruleId": "3"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...e same character. Example: A deck could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature ca...",
+              "query": "Yasuo, Remorseful",
+              "jumpQuery": "Yasuo, Remorseful",
+              "anchorText": "Yasuo, Remorseful",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -1347,6 +1808,22 @@
               "jumpQuery": "Yasuo, Remorseful",
               "anchorText": "Yasuo, Remorseful",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...e same character. Example: A deck could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature ca...",
+              "query": "Yasuo, Remorseful",
+              "jumpQuery": "Yasuo, Remorseful",
+              "anchorText": "Yasuo, Remorseful",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -1445,6 +1922,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost, that minimum applies only to that discount. Example: Eager Apprentice says &quot;While I&#x27;m at a battlefield, the Energy costs for spells you play is reduced by [1], to a minimum of [1].&quot; A player who controls Eager Apprenti...",
+              "query": "Eager Apprentice",
+              "jumpQuery": "Eager Apprentice",
+              "anchorText": "Eager Apprentice",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -1467,6 +1960,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ith a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]....",
+              "query": "Mind Rune",
+              "jumpQuery": "Mind Rune",
+              "anchorText": "Mind Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -1487,6 +1996,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ith a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]....",
+              "query": "Mind Rune",
+              "jumpQuery": "Mind Rune",
+              "anchorText": "Mind Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -1528,7 +2053,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...on to a Yasuo, Remorseful attack trigger, an opponent plays Stupefy targeting Yasuo. When Yasuo&#x27;s attack trigger resolves, it will deal damage equal to his current Might of 5. 359.3.f.3. Some information used by triggered abilities is...",
+              "query": "Stupefy",
+              "jumpQuery": "Stupefy",
+              "anchorText": "Stupefy",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "5."
+            }
+          ]
+        }
+      ]
     },
     "ogn-097-298": {
       "faq": [],
@@ -1545,6 +2087,22 @@
               "jumpQuery": "Blastcone Fae",
               "anchorText": "Blastcone Fae",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cts targeting in a way that makes this impossible. Example: Blastcone Fae is a unit with Hidden and &quot;When you play me, give a unit 2 [M] this turn, to a minimum of 1 [M].&quot; Because this is a play effect, its target must be chosen f...",
+              "query": "Blastcone Fae",
+              "jumpQuery": "Blastcone Fae",
+              "anchorText": "Blastcone Fae",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -1567,6 +2125,22 @@
               "jumpQuery": "Garbage Grabber",
               "anchorText": "Garbage Grabber",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...aced on the bottom of that deck in a random order. Example: Garbage Grabber has the ability &quot;Recycle 3 from your trash, [1], [E]: Draw &quot; To pay the cost of activating this ability, its controller chooses 3 cards from their trash a...",
+              "query": "Garbage Grabber",
+              "jumpQuery": "Garbage Grabber",
+              "anchorText": "Garbage Grabber",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -1654,6 +2228,22 @@
               "ruleId": "466.8.c."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...hat turn. Example: A player may not induce their partner to retreat, and then conquer a Battlefield their teammate was controlling. 484.8.c. Control is not shared. 484.8.c.1. Players may not Hide cards at Battlefields controlled by their Te...",
+              "query": "Retreat",
+              "jumpQuery": "Retreat",
+              "anchorText": "Retreat",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "484.8.c."
+            }
+          ]
         }
       ]
     },
@@ -1672,6 +2262,22 @@
               "jumpQuery": "Singularity",
               "anchorText": "Singularity",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "6"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...eased by Bonus Damage individually and separately. Example: Singularity is a spell that says &quot;Deal 6 to each of up to two units.&quot; A player plays Singularity while they also control Annie, Fiery, a unit that says &quot;Your spells...",
+              "query": "Singularity",
+              "jumpQuery": "Singularity",
+              "anchorText": "Singularity",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "6"
             }
@@ -1792,6 +2398,22 @@
               "ruleId": "3"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...;s choice from the relevant zone and recycle them. Example: Dr. Mundo, Expert has the ability &quot;At the start of your Beginning Phase, recycle 3 from your trash.&quot; As that ability resolves, its controller recycles 3 cards from their...",
+              "query": "Dr. Mundo, Expert",
+              "jumpQuery": "Dr. Mundo, Expert",
+              "anchorText": "Dr. Mundo, Expert",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -1848,7 +2470,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...turn is an Additional Turn. Example: The First Player plays Promising Future during their turn, during the resolution of which the Second and Fourth Player choose, banish, and play one Time Warp each. The Fourth Player&#x27;s Time Warp reso...",
+              "query": "Promising Future",
+              "jumpQuery": "Promising Future",
+              "anchorText": "Promising Future",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-118-298": {
       "faq": [
@@ -1882,6 +2521,22 @@
               "jumpQuery": "Wraith of Echoes",
               "anchorText": "Wraith of Echoes",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...y triggers only once, due to the chosen condition. Example: Wraith of Echoes reads &quot;The first time another friendly unit dies each turn, draw 1.&quot; That ability hasn&#x27;t triggered yet this turn. Two other friendly units die simul...",
+              "query": "Wraith of Echoes",
+              "jumpQuery": "Wraith of Echoes",
+              "anchorText": "Wraith of Echoes",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1972,6 +2627,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...d. Example: The First Player plays, through some means, two Time Warps during their turn. The Time Warps create two Additional Turns for their controller and insert them into the turn queue after the current turn. If the turn queue is repre...",
+              "query": "Time Warp",
+              "jumpQuery": "Time Warp",
+              "anchorText": "Time Warp",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -2025,6 +2696,22 @@
               "ruleId": "376.3."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...both killed in the same Cleanup due to the damage dealt by Unchecked Power). 383.3. When a Condition is met, a Triggered Ability behaves like an Activated Ability and is placed on the Chain. 383.3.a. If a Triggered Ability says &quot;you m...",
+              "query": "Unchecked Power",
+              "jumpQuery": "Unchecked Power",
+              "anchorText": "Unchecked Power",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "383.3."
+            }
+          ]
         }
       ]
     },
@@ -2047,6 +2734,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...in corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1....",
+              "query": "Body Rune",
+              "jumpQuery": "Body Rune",
+              "anchorText": "Body Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -2067,6 +2770,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...in corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1....",
+              "query": "Body Rune",
+              "jumpQuery": "Body Rune",
+              "anchorText": "Body Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -2104,6 +2823,22 @@
               "jumpQuery": "Challenge",
               "anchorText": "Challenge",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ddition to the spell or ability that specified it. Example: Challenge is a spell that reads &quot;Choose a friendly unit and an enemy unit. They deal damage equal to their Mights to each other.&quot; The damage that Challenge causes to be d...",
+              "query": "Challenge",
+              "jumpQuery": "Challenge",
+              "anchorText": "Challenge",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2489,6 +3224,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...onding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power...",
+              "query": "Chaos Rune",
+              "jumpQuery": "Chaos Rune",
+              "anchorText": "Chaos Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -2509,6 +3260,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...onding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power...",
+              "query": "Chaos Rune",
+              "jumpQuery": "Chaos Rune",
+              "anchorText": "Chaos Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -2535,6 +3302,28 @@
       ],
       "errata": [],
       "rule": []
+    },
+    "ogn-168-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...the Yasuo, Remorseful attack trigger, their opponent plays Fight or Flight from hidden targeting Yasuo, moving him back to base. When the attack trigger resolves, &quot;here&quot; is no longer the battlefield where combat is ongoing and th...",
+              "query": "Fight or Flight",
+              "jumpQuery": "Fight or Flight",
+              "anchorText": "Fight or Flight",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-172-298": {
       "faq": [
@@ -2595,6 +3384,22 @@
               "jumpQuery": "Undercover Agent",
               "anchorText": "Undercover Agent",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ir hand, further discard instructions are ignored. Example: Undercover Agent has the ability &quot;[Deathknell][&gt;] Discard 2, then draw 2. (When I die, get the effect.)&quot; If Undercover Agent&#x27;s controller has 2 or more cards in h...",
+              "query": "Undercover Agent",
+              "jumpQuery": "Undercover Agent",
+              "anchorText": "Undercover Agent",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2."
             }
@@ -2739,6 +3544,22 @@
               "jumpQuery": "Kayn, Unleashed",
               "anchorText": "Kayn, Unleashed",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t from any considerations of mandatory assignment. Example: Kayn, Unleashed says &quot;If I have moved twice this turn, I don&#x27;t take damage.&quot; While Kayn can&#x27;t take damage, it is ignored for the purposes of assigning lethal da...",
+              "query": "Kayn, Unleashed",
+              "jumpQuery": "Kayn, Unleashed",
+              "anchorText": "Kayn, Unleashed",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2898,6 +3719,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ttlefield if Blastcone Fae was played from Hidden. Example: Tideturner is a unit with Hidden and &quot;When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location.&quot; Be...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -2937,6 +3774,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion...",
+              "query": "Jinx, Rebel",
+              "jumpQuery": "Jinx, Rebel",
+              "anchorText": "Jinx, Rebel",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -2972,6 +3825,22 @@
               "jumpQuery": "Jinx, Rebel",
               "anchorText": "Jinx, Rebel",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion...",
+              "query": "Jinx, Rebel",
+              "jumpQuery": "Jinx, Rebel",
+              "anchorText": "Jinx, Rebel",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3037,6 +3906,22 @@
               "ruleId": "3"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature cards that have the same Champion ta...",
+              "query": "Yasuo, Windrider",
+              "jumpQuery": "Yasuo, Windrider",
+              "anchorText": "Yasuo, Windrider",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -3055,6 +3940,22 @@
               "jumpQuery": "Yasuo, Windrider",
               "anchorText": "Yasuo, Windrider",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature cards that have the same Champion ta...",
+              "query": "Yasuo, Windrider",
+              "jumpQuery": "Yasuo, Windrider",
+              "anchorText": "Yasuo, Windrider",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -3116,6 +4017,22 @@
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...effects are still considered paid. Example: A player plays Cruel Patron, which says &quot;As an additional cost to play me, kill a friendly unit.&quot; They also control Zhonya&#x27;s Hourglass, which says &quot;If a friendly unit would di...",
+              "query": "Cruel Patron",
+              "jumpQuery": "Cruel Patron",
+              "anchorText": "Cruel Patron",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3219,6 +4136,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ts name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power added this...",
+              "query": "Order Rune",
+              "jumpQuery": "Order Rune",
+              "anchorText": "Order Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -3241,6 +4174,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ts name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power added this...",
+              "query": "Order Rune",
+              "jumpQuery": "Order Rune",
+              "anchorText": "Order Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -3259,6 +4208,22 @@
               "jumpQuery": "Petty Officer",
               "anchorText": "Petty Officer",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t Value of all granted Assault keywords is summed. Example: Petty Officer has Assault. It is chosen as the target of Cleave, which says &quot;Give a unit [Assault 3] this turn.&quot; After Cleave resolves, Petty Officer has Assault 4 this t...",
+              "query": "Petty Officer",
+              "jumpQuery": "Petty Officer",
+              "anchorText": "Petty Officer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -3325,6 +4290,22 @@
               "jumpQuery": "Fiora, Victorious",
               "anchorText": "Fiora, Victorious",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...of the effect, but still can only be applied once. Example: Fiora, Victorious has printed Might 4 and says &quot;While I&#x27;m Mighty, I have Deflect, Ganking, and Shield.&quot; If a player places a buff on Fiora, her Might is increased in...",
+              "query": "Fiora, Victorious",
+              "jumpQuery": "Fiora, Victorious",
+              "anchorText": "Fiora, Victorious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -3424,6 +4405,22 @@
               "ruleId": "5"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ard has no location, is neither exhausted nor readied, etc. Baited Hook says &quot;[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the kill...",
+              "query": "Baited Hook",
+              "jumpQuery": "Baited Hook",
+              "anchorText": "Baited Hook",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "5"
+            }
+          ]
         }
       ]
     },
@@ -3490,6 +4487,22 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...om at the same time that its Trigger is satisfied. Example: Viktor, Leader says &quot;When another nonRecruit unit you control dies, play a 1 [M] Recruit unit token into your base.&quot; This ability triggers if Viktor is on the board immed...",
+              "query": "Viktor, Leader",
+              "jumpQuery": "Viktor, Leader",
+              "anchorText": "Viktor, Leader",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
@@ -3508,6 +4521,22 @@
               "jumpQuery": "Viktor, Leader",
               "anchorText": "Viktor, Leader",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...om at the same time that its Trigger is satisfied. Example: Viktor, Leader says &quot;When another nonRecruit unit you control dies, play a 1 [M] Recruit unit token into your base.&quot; This ability triggers if Viktor is on the board immed...",
+              "query": "Viktor, Leader",
+              "jumpQuery": "Viktor, Leader",
+              "anchorText": "Viktor, Leader",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -3666,6 +4695,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag that matches the tag on your Champion Legend. Example: Loose Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibber...",
+              "query": "Loose Cannon",
+              "jumpQuery": "Loose Cannon",
+              "anchorText": "Loose Cannon",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -3684,6 +4729,22 @@
               "jumpQuery": "Noxian Guillotine",
               "anchorText": "Noxian Guillotine",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...time, and the 1 Bonus Damage is a passive ability. Example: Noxian Guillotine reads &quot;Choose a unit. Kill it the next time it takes damage this turn.&quot; When the chosen unit takes damage is the specified time, and killing it is the c...",
+              "query": "Noxian Guillotine",
+              "jumpQuery": "Noxian Guillotine",
+              "anchorText": "Noxian Guillotine",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -3867,6 +4928,22 @@
               "jumpQuery": "Sprite",
               "anchorText": "Sprite",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...unit token with 1 Might and the Recruit tag. 184.2. A 3 [M] Sprite token with Temporary is a domainless unit token with 3 Might, the Fae tag, and the Temporary keyword. See rule 816. Temporary for more information. 184.3. A 2 [M] Sand Soldi...",
+              "query": "Sprite",
+              "jumpQuery": "Sprite",
+              "anchorText": "Sprite",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -4137,7 +5214,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...lt 1 and trigger its ability. Example: A unit is present at Void Gate. A spell is played that Prevents the next 3 damage the unit would take. If a player plays Hextech Ray targeting the unit, it will take no damage in order to apply the Bon...",
+              "query": "Void Gate",
+              "jumpQuery": "Void Gate",
+              "anchorText": "Void Gate",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "ogn-300-298": {
       "faq": [
@@ -4202,6 +5296,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag that matches the tag on your Champion Legend. Example: Loose Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibber...",
+              "query": "Loose Cannon",
+              "jumpQuery": "Loose Cannon",
+              "anchorText": "Loose Cannon",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -4220,6 +5330,22 @@
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag that matches the tag on your Champion Legend. Example: Loose Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibber...",
+              "query": "Loose Cannon",
+              "jumpQuery": "Loose Cannon",
+              "anchorText": "Loose Cannon",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4402,6 +5528,22 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s.&quot; A player plays Singularity while they also control Annie, Fiery, a unit that says &quot;Your spells and abilities deal 1 Bonus Damage.&quot; Singularity deals 1 Bonus Damage to both of its targets, dealing 7 to each. 715.3. If the...",
+              "query": "Annie, Fiery",
+              "jumpQuery": "Annie, Fiery",
+              "anchorText": "Annie, Fiery",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
@@ -4420,6 +5562,22 @@
               "jumpQuery": "Lux, Illuminated",
               "anchorText": "Lux, Illuminated",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "5"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...reduced by the highest Might among units you control.&quot; Lux, Illuminated is a unit that says &quot;When you play a spell that costs 5 or more, give me +3 [M] this turn.&quot; If a player who controls Lux plays Sky Splitter, Lux&#x27;s a...",
+              "query": "Lux, Illuminated",
+              "jumpQuery": "Lux, Illuminated",
+              "anchorText": "Lux, Illuminated",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "5"
             }
@@ -4464,6 +5622,22 @@
               "jumpQuery": "Tibbers",
               "anchorText": "Tibbers",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "103.2.a.3."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion unit. It cannot be your Chosen Champion , even if your Champion Legend has the tag Annie . 103.2.a.3. A playe...",
+              "query": "Tibbers",
+              "jumpQuery": "Tibbers",
+              "anchorText": "Tibbers",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "103.2.a.3."
             }
@@ -4698,6 +5872,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tlefield and two 1 [M] Recruit tokens in base. Soraka has a Guardian Angel attached to her when she dies, which appends &quot;If I would die, kill Guardian Angel instead. Heal me, exhaust me, and recall me&quot; to Soraka&#x27;s rules text....",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -4930,7 +6120,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...al costs you pay cost [1] or [A] less.&quot; When playing a Frigid Touch and choosing to pay the additional cost in step 2, as soon as the additional cost is added to the cost of the spell, Ezreal, Prodigy&#x27;s discount is applied to it....",
+              "query": "Frigid Touch",
+              "jumpQuery": "Frigid Touch",
+              "anchorText": "Frigid Touch",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-074-221": {
       "faq": [
@@ -4969,6 +6176,22 @@
               "jumpQuery": "Rocket Barrage",
               "anchorText": "Rocket Barrage",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ame as the choices made for the initial execution. Example: Rocket Barrage is a spell with [Repeat] [4][C] and &quot;Choose one Deal 4 to a unit in a base. [or] Kill a gear.&quot; If Rocket Barrage&#x27;s controller pays its Repeat cost as...",
+              "query": "Rocket Barrage",
+              "jumpQuery": "Rocket Barrage",
+              "anchorText": "Rocket Barrage",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -5164,6 +6387,28 @@
       "errata": [],
       "rule": []
     },
+    "sfd-130-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...placement Effect will inherit those modifications. Example: Treasure Hunter reads &quot;When I move, play a Gold gear token exhausted.&quot; A Replacement Effect that says &quot;if you would play a token gear, play that token and an additio...",
+              "query": "Treasure Hunter",
+              "jumpQuery": "Treasure Hunter",
+              "anchorText": "Treasure Hunter",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
     "sfd-134-221": {
       "faq": [
         {
@@ -5289,7 +6534,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost of the spell and before any other discounts. Example: Ezreal, Prodigy reads &quot;optional additional costs you pay cost [1] or [A] less.&quot; When playing a Frigid Touch and choosing to pay the additional cost in step 2, as soon as...",
+              "query": "Ezreal, Prodigy",
+              "jumpQuery": "Ezreal, Prodigy",
+              "anchorText": "Ezreal, Prodigy",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-149a-221": {
       "faq": [
@@ -5311,7 +6573,46 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost of the spell and before any other discounts. Example: Ezreal, Prodigy reads &quot;optional additional costs you pay cost [1] or [A] less.&quot; When playing a Frigid Touch and choosing to pay the additional cost in step 2, as soon as...",
+              "query": "Ezreal, Prodigy",
+              "jumpQuery": "Ezreal, Prodigy",
+              "anchorText": "Ezreal, Prodigy",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "sfd-155-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ld effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Image Reflection token is played, it copies all of the copyable traits of the or...",
+              "query": "Honest Broker",
+              "jumpQuery": "Honest Broker",
+              "anchorText": "Honest Broker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-163-221": {
       "faq": [
@@ -5435,6 +6736,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...umber of events that are qualified to be replaced. Example: Soraka, Wanderer reads &quot;If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it.&quot; Soraka dies simultaneously...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -5467,6 +6784,22 @@
               "jumpQuery": "Spinning Axe",
               "anchorText": "Spinning Axe",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...l parse Inactive text for the sake of eligibility. Example: Spinning Axe is a gear with [Temporary]. While it&#x27;s attached and its rules text is inactive, its [Temporary] ability doesn&#x27;t trigger. However, a spell that reads &quot;De...",
+              "query": "Spinning Axe",
+              "jumpQuery": "Spinning Axe",
+              "anchorText": "Spinning Axe",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5634,6 +6967,22 @@
       ],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...to the attack trigger, the defending player plays a hidden Hostile Takeover and gains control of Yasuo. The triggered ability is unaffected by Yasuo changing controllers, and &quot;enemy&quot; is in reference to the triggered ability itsel...",
+              "query": "Hostile Takeover",
+              "jumpQuery": "Hostile Takeover",
+              "anchorText": "Hostile Takeover",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -5937,6 +7286,22 @@
               "ruleId": "3"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature cards that have the same Champion ta...",
+              "query": "Yasuo, Windrider",
+              "jumpQuery": "Yasuo, Windrider",
+              "anchorText": "Yasuo, Windrider",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -5955,6 +7320,22 @@
               "jumpQuery": "Yasuo, Windrider",
               "anchorText": "Yasuo, Windrider",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature cards that have the same Champion ta...",
+              "query": "Yasuo, Windrider",
+              "jumpQuery": "Yasuo, Windrider",
+              "anchorText": "Yasuo, Windrider",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -6089,6 +7470,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...umber of events that are qualified to be replaced. Example: Soraka, Wanderer reads &quot;If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it.&quot; Soraka dies simultaneously...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -6110,6 +7507,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...umber of events that are qualified to be replaced. Example: Soraka, Wanderer reads &quot;If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it.&quot; Soraka dies simultaneously...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -6209,7 +7622,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...le layout. Riftbound Core Rules Last Updated: 20260330 000. Golden and Silver Rules 001. Golden Rule 002. Card text supersedes rules text. Whenever a card fundamentally contradicts the rules, the card&#x27;s indication is what is true. 050....",
+              "query": "Gold",
+              "jumpQuery": "Gold",
+              "anchorText": "Gold",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "20260330"
+            }
+          ]
+        }
+      ]
     },
     "unl-063-219": {
       "faq": [],
@@ -6226,6 +7656,154 @@
               "jumpQuery": "Eclipse",
               "anchorText": "Eclipse",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...23.1.a.1. A Stunned Unit can not be Stunned again. Example: Eclipse Herald has the ability &quot;When you stun an enemy unit, ready me and give me +1 [M] this turn.&quot; Its controller plays a spell that reads &quot;Stun a unit.&quot; They...",
+              "query": "Eclipse",
+              "jumpQuery": "Eclipse",
+              "anchorText": "Eclipse",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "unl-075-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ive exactly as written while the Condition is true Example: Gustwalker has &quot;[Level3][&gt;] I have +1 [M] and Ganking.&quot; As long as its controller has 3 XP, Gustwalker&#x27;s Ganking is active. 727.1.c. The Dependent Abilities of De...",
+              "query": "Gustwalker",
+              "jumpQuery": "Gustwalker",
+              "anchorText": "Gustwalker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-082-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s checked when the trigger condition is fulfilled. Example: Lillia, Fae Fawn reads &quot;when I move from a location, play a 3 [M] Sprite token with Temporary there.&quot; If Lillia moves to a battlefield, her triggered ability will be plac...",
+              "query": "Lillia, Fae Fawn",
+              "jumpQuery": "Lillia, Fae Fawn",
+              "anchorText": "Lillia, Fae Fawn",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-082a-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s checked when the trigger condition is fulfilled. Example: Lillia, Fae Fawn reads &quot;when I move from a location, play a 3 [M] Sprite token with Temporary there.&quot; If Lillia moves to a battlefield, her triggered ability will be plac...",
+              "query": "Lillia, Fae Fawn",
+              "jumpQuery": "Lillia, Fae Fawn",
+              "anchorText": "Lillia, Fae Fawn",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-160-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...true in order to activate the ability in question. Example: Ultrasoft Poro reads &quot;[E]: Play two 1 [M] Bird unit tokens with [Deflect]. Use this ability only while I&#x27;m at a battlefield.&quot; In order to activate the ability, Ultra...",
+              "query": "Ultrasoft Poro",
+              "jumpQuery": "Ultrasoft Poro",
+              "anchorText": "Ultrasoft Poro",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-199-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...traits it has received. Example: A player triggers Leblanc, Deceiver&#x27;s hold effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Im...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "unl-200-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "..., making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Image Reflection token is played, it copies all of the copyable traits of the original Reflection token which are curr...",
+              "query": "Mirror Image",
+              "jumpQuery": "Mirror Image",
+              "anchorText": "Mirror Image",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6255,6 +7833,116 @@
         }
       ]
     },
+    "unl-235-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...traits it has received. Example: A player triggers Leblanc, Deceiver&#x27;s hold effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Im...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "unl-235-star-219": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...traits it has received. Example: A player triggers Leblanc, Deceiver&#x27;s hold effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Im...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "unl-t01": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ace this with the battlefield it replaced.&quot; 184.9. The Baron Pit battlefield token is a domainless battlefield token with &quot;Units can move here from anywhere.&quot; 185. Control 186. Control is the concept of a player having influe...",
+              "query": "Baron Pit",
+              "jumpQuery": "Baron Pit",
+              "anchorText": "Baron Pit",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "184.9."
+            }
+          ]
+        }
+      ]
+    },
+    "unl-t02": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ken is a domainless unit token with 0 Might. 184.7. A 1 [M] Bird token is a domainless unit token with 1 Might, the Bird tag, and the Deflect keyword. See rule 809. Deflect for more information. 184.8. A Brush battlefield token is a domainl...",
+              "query": "Bird",
+              "jumpQuery": "Bird",
+              "anchorText": "Bird",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "0"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-t03": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...yword. See rule 809. Deflect for more information. 184.8. A Brush battlefield token is a domainless battlefield token with &quot;Bird, Cat, Dog, Poro, and Ivern units here have +1 [M]&quot; and &quot;When you score here, you may replace thi...",
+              "query": "Brush",
+              "jumpQuery": "Brush",
+              "anchorText": "Brush",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "809."
+            }
+          ]
+        }
+      ]
+    },
     "unl-t05": {
       "faq": [
         {
@@ -6275,7 +7963,46 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...le layout. Riftbound Core Rules Last Updated: 20260330 000. Golden and Silver Rules 001. Golden Rule 002. Card text supersedes rules text. Whenever a card fundamentally contradicts the rules, the card&#x27;s indication is what is true. 050....",
+              "query": "Gold",
+              "jumpQuery": "Gold",
+              "anchorText": "Gold",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "20260330"
+            }
+          ]
+        }
+      ]
+    },
+    "unl-t06": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tion][&gt;] Kill this, [E]: [Add] [A].&quot; 184.6. A 0 [M] Reflection token is a domainless unit token with 0 Might. 184.7. A 1 [M] Bird token is a domainless unit token with 1 Might, the Bird tag, and the Deflect keyword. See rule 809. De...",
+              "query": "Reflection",
+              "jumpQuery": "Reflection",
+              "anchorText": "Reflection",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "184.6."
+            }
+          ]
+        }
+      ]
     },
     "unl-t07": {
       "faq": [],
@@ -6292,6 +8019,22 @@
               "jumpQuery": "Sprite",
               "anchorText": "Sprite",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...unit token with 1 Might and the Recruit tag. 184.2. A 3 [M] Sprite token with Temporary is a domainless unit token with 3 Might, the Fae tag, and the Temporary keyword. See rule 816. Temporary for more information. 184.3. A 2 [M] Sand Soldi...",
+              "query": "Sprite",
+              "jumpQuery": "Sprite",
+              "anchorText": "Sprite",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -6438,6 +8181,22 @@
               "jumpQuery": "Annie, Fiery",
               "anchorText": "Annie, Fiery",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s.&quot; A player plays Singularity while they also control Annie, Fiery, a unit that says &quot;Your spells and abilities deal 1 Bonus Damage.&quot; Singularity deals 1 Bonus Damage to both of its targets, dealing 7 to each. 715.3. If the...",
+              "query": "Annie, Fiery",
+              "jumpQuery": "Annie, Fiery",
+              "anchorText": "Annie, Fiery",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -6705,6 +8464,22 @@
               "ruleId": "5"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ard has no location, is neither exhausted nor readied, etc. Baited Hook says &quot;[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the kill...",
+              "query": "Baited Hook",
+              "jumpQuery": "Baited Hook",
+              "anchorText": "Baited Hook",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "5"
+            }
+          ]
         }
       ]
     },
@@ -6731,7 +8506,24 @@
     "baron pit": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ace this with the battlefield it replaced.&quot; 184.9. The Baron Pit battlefield token is a domainless battlefield token with &quot;Units can move here from anywhere.&quot; 185. Control 186. Control is the concept of a player having influe...",
+              "query": "Baron Pit",
+              "jumpQuery": "Baron Pit",
+              "anchorText": "Baron Pit",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "184.9."
+            }
+          ]
+        }
+      ]
     },
     "bashful bloom": {
       "faq": [],
@@ -6771,7 +8563,24 @@
     "bird": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ken is a domainless unit token with 0 Might. 184.7. A 1 [M] Bird token is a domainless unit token with 1 Might, the Bird tag, and the Deflect keyword. See rule 809. Deflect for more information. 184.8. A Brush battlefield token is a domainl...",
+              "query": "Bird",
+              "jumpQuery": "Bird",
+              "anchorText": "Bird",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "0"
+            }
+          ]
+        }
+      ]
     },
     "black flame altar": {
       "faq": [],
@@ -6845,6 +8654,22 @@
               "jumpQuery": "Blastcone Fae",
               "anchorText": "Blastcone Fae",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cts targeting in a way that makes this impossible. Example: Blastcone Fae is a unit with Hidden and &quot;When you play me, give a unit 2 [M] this turn, to a minimum of 1 [M].&quot; Because this is a play effect, its target must be chosen f...",
+              "query": "Blastcone Fae",
+              "jumpQuery": "Blastcone Fae",
+              "anchorText": "Blastcone Fae",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -6946,6 +8771,22 @@
               "ruleId": "133.2.e."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...dy is associated with the color orange and represented by a blocky diamondshaped symbol. Its shorthand is [O]. 134.2.e. Chaos is associated with the color purple and represented by a hexagonal symbol with swirls emanating from its center. I...",
+              "query": "Block",
+              "jumpQuery": "Block",
+              "anchorText": "Block",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "134.2.e."
+            }
+          ]
         }
       ]
     },
@@ -7027,6 +8868,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...in corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1....",
+              "query": "Body Rune",
+              "jumpQuery": "Body Rune",
+              "anchorText": "Body Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -7068,7 +8925,24 @@
     "brush": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...yword. See rule 809. Deflect for more information. 184.8. A Brush battlefield token is a domainless battlefield token with &quot;Bird, Cat, Dog, Poro, and Ivern units here have +1 [M]&quot; and &quot;When you score here, you may replace thi...",
+              "query": "Brush",
+              "jumpQuery": "Brush",
+              "anchorText": "Brush",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "809."
+            }
+          ]
+        }
+      ]
     },
     "brutalizer": {
       "faq": [],
@@ -7115,6 +8989,22 @@
               "jumpQuery": "Caitlyn, Patrolling",
               "anchorText": "Caitlyn, Patrolling",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Tank (&quot;I must be assigned combat damage first.&quot;); Caitlyn, Patrolling (&quot;I must be assigned combat damage last.&quot;); and another unit without any abilities. That player must assign combat damage first to the unit with Tank,...",
+              "query": "Caitlyn, Patrolling",
+              "jumpQuery": "Caitlyn, Patrolling",
+              "anchorText": "Caitlyn, Patrolling",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7170,6 +9060,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction]...",
+              "query": "Calm Rune",
+              "jumpQuery": "Calm Rune",
+              "anchorText": "Calm Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -7285,6 +9191,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ddition to the spell or ability that specified it. Example: Challenge is a spell that reads &quot;Choose a friendly unit and an enemy unit. They deal damage equal to their Mights to each other.&quot; The damage that Challenge causes to be d...",
+              "query": "Challenge",
+              "jumpQuery": "Challenge",
+              "anchorText": "Challenge",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -7305,6 +9227,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...onding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power...",
+              "query": "Chaos Rune",
+              "jumpQuery": "Chaos Rune",
+              "anchorText": "Chaos Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -7377,6 +9315,22 @@
               "ruleId": "131."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ame for the purposes of deckbuilding and gameplay. Example: Chemtech Enforcer in English and its counterpart in Chinese are considered the same card, despite the Name element on the card reading differently. 132.4. Some cards have both a sh...",
+              "query": "Chemtech Enforcer",
+              "jumpQuery": "Chemtech Enforcer",
+              "anchorText": "Chemtech Enforcer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "132.4."
+            }
+          ]
         }
       ]
     },
@@ -7426,6 +9380,22 @@
               "ruleId": "4"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...e: Petty Officer has Assault. It is chosen as the target of Cleave, which says &quot;Give a unit [Assault 3] this turn.&quot; After Cleave resolves, Petty Officer has Assault 4 this turn. 807.3. Assault, and whether or not a unit has Assaul...",
+              "query": "Cleave",
+              "jumpQuery": "Cleave",
+              "anchorText": "Cleave",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
         }
       ]
     },
@@ -7461,6 +9431,22 @@
               "jumpQuery": "Clockwork Keeper",
               "anchorText": "Clockwork Keeper",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n&#x27;t matter how much the player actually paid. Example: Clockwork Keeper is a unit that costs 2 Energy and 0 Power and says &quot;As you play me, you may pay [C] as an additional cost. If you do, draw 1.&quot; A player controls a card t...",
+              "query": "Clockwork Keeper",
+              "jumpQuery": "Clockwork Keeper",
+              "anchorText": "Clockwork Keeper",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -7635,6 +9621,22 @@
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...effects are still considered paid. Example: A player plays Cruel Patron, which says &quot;As an additional cost to play me, kill a friendly unit.&quot; They also control Zhonya&#x27;s Hourglass, which says &quot;If a friendly unit would di...",
+              "query": "Cruel Patron",
+              "jumpQuery": "Cruel Patron",
+              "anchorText": "Cruel Patron",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7876,7 +9878,24 @@
     "deceiver": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...traits it has received. Example: A player triggers Leblanc, Deceiver&#x27;s hold effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Im...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "decisive strike": {
       "faq": [],
@@ -8037,6 +10056,22 @@
               "jumpQuery": "Dr. Mundo, Expert",
               "anchorText": "Dr. Mundo, Expert",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...;s choice from the relevant zone and recycle them. Example: Dr. Mundo, Expert has the ability &quot;At the start of your Beginning Phase, recycle 3 from your trash.&quot; As that ability resolves, its controller recycles 3 cards from their...",
+              "query": "Dr. Mundo, Expert",
+              "jumpQuery": "Dr. Mundo, Expert",
+              "anchorText": "Dr. Mundo, Expert",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -8203,6 +10238,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost, that minimum applies only to that discount. Example: Eager Apprentice says &quot;While I&#x27;m at a battlefield, the Energy costs for spells you play is reduced by [1], to a minimum of [1].&quot; A player who controls Eager Apprenti...",
+              "query": "Eager Apprentice",
+              "jumpQuery": "Eager Apprentice",
+              "anchorText": "Eager Apprentice",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -8230,6 +10281,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...23.1.a.1. A Stunned Unit can not be Stunned again. Example: Eclipse Herald has the ability &quot;When you stun an enemy unit, ready me and give me +1 [M] this turn.&quot; Its controller plays a spell that reads &quot;Stun a unit.&quot; They...",
+              "query": "Eclipse",
+              "jumpQuery": "Eclipse",
+              "anchorText": "Eclipse",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -8248,6 +10315,22 @@
               "jumpQuery": "Eclipse Herald",
               "anchorText": "Eclipse Herald",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...23.1.a.1. A Stunned Unit can not be Stunned again. Example: Eclipse Herald has the ability &quot;When you stun an enemy unit, ready me and give me +1 [M] this turn.&quot; Its controller plays a spell that reads &quot;Stun a unit.&quot; They...",
+              "query": "Eclipse Herald",
+              "jumpQuery": "Eclipse Herald",
+              "anchorText": "Eclipse Herald",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8416,7 +10499,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost of the spell and before any other discounts. Example: Ezreal, Prodigy reads &quot;optional additional costs you pay cost [1] or [A] less.&quot; When playing a Frigid Touch and choosing to pay the additional cost in step 2, as soon as...",
+              "query": "Ezreal, Prodigy",
+              "jumpQuery": "Ezreal, Prodigy",
+              "anchorText": "Ezreal, Prodigy",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "facebreaker": {
       "faq": [],
@@ -8543,7 +10643,24 @@
     "fight or flight": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...the Yasuo, Remorseful attack trigger, their opponent plays Fight or Flight from hidden targeting Yasuo, moving him back to base. When the attack trigger resolves, &quot;here&quot; is no longer the battlefield where combat is ongoing and th...",
+              "query": "Fight or Flight",
+              "jumpQuery": "Fight or Flight",
+              "anchorText": "Fight or Flight",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "final spark": {
       "faq": [],
@@ -8592,6 +10709,22 @@
               "jumpQuery": "Fiora, Victorious",
               "anchorText": "Fiora, Victorious",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...of the effect, but still can only be applied once. Example: Fiora, Victorious has printed Might 4 and says &quot;While I&#x27;m Mighty, I have Deflect, Ganking, and Shield.&quot; If a player places a buff on Fiora, her Might is increased in...",
+              "query": "Fiora, Victorious",
+              "jumpQuery": "Fiora, Victorious",
+              "anchorText": "Fiora, Victorious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -8746,7 +10879,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...al costs you pay cost [1] or [A] less.&quot; When playing a Frigid Touch and choosing to pay the additional cost in step 2, as soon as the additional cost is added to the cost of the spell, Ezreal, Prodigy&#x27;s discount is applied to it....",
+              "query": "Frigid Touch",
+              "jumpQuery": "Frigid Touch",
+              "anchorText": "Frigid Touch",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "frisky hunter": {
       "faq": [],
@@ -8782,6 +10932,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Basic Runes , each with a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this:...",
+              "query": "Fury Rune",
+              "jumpQuery": "Fury Rune",
+              "anchorText": "Fury Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -8805,6 +10971,22 @@
               "jumpQuery": "Garbage Grabber",
               "anchorText": "Garbage Grabber",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...aced on the bottom of that deck in a random order. Example: Garbage Grabber has the ability &quot;Recycle 3 from your trash, [1], [E]: Draw &quot; To pay the cost of activating this ability, its controller chooses 3 cards from their trash a...",
+              "query": "Garbage Grabber",
+              "jumpQuery": "Garbage Grabber",
+              "anchorText": "Garbage Grabber",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -8914,7 +11096,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...le layout. Riftbound Core Rules Last Updated: 20260330 000. Golden and Silver Rules 001. Golden Rule 002. Card text supersedes rules text. Whenever a card fundamentally contradicts the rules, the card&#x27;s indication is what is true. 050....",
+              "query": "Gold",
+              "jumpQuery": "Gold",
+              "anchorText": "Gold",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "20260330"
+            }
+          ]
+        }
+      ]
     },
     "grand duelist": {
       "faq": [],
@@ -8990,6 +11189,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tlefield and two 1 [M] Recruit tokens in base. Soraka has a Guardian Angel attached to her when she dies, which appends &quot;If I would die, kill Guardian Angel instead. Heal me, exhaust me, and recall me&quot; to Soraka&#x27;s rules text....",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -9030,7 +11245,24 @@
     "gustwalker": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ive exactly as written while the Condition is true Example: Gustwalker has &quot;[Level3][&gt;] I have +1 [M] and Ganking.&quot; As long as its controller has 3 XP, Gustwalker&#x27;s Ganking is active. 727.1.c. The Dependent Abilities of De...",
+              "query": "Gustwalker",
+              "jumpQuery": "Gustwalker",
+              "anchorText": "Gustwalker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
     },
     "gutter palace": {
       "faq": [],
@@ -9142,7 +11374,24 @@
     "hextech ray": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ts the next 3 damage the unit would take. If a player plays Hextech Ray targeting the unit, it will take no damage and its triggered ability will not trigger. If that player had played Void Seeker instead, it would be Dealt 1 and trigger it...",
+              "query": "Hextech Ray",
+              "jumpQuery": "Hextech Ray",
+              "anchorText": "Hextech Ray",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
     },
     "hidden blade": {
       "faq": [
@@ -9241,7 +11490,24 @@
     "honest broker": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ld effect and plays a Reflection token, making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Image Reflection token is played, it copies all of the copyable traits of the or...",
+              "query": "Honest Broker",
+              "jumpQuery": "Honest Broker",
+              "anchorText": "Honest Broker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "honeyfruit": {
       "faq": [],
@@ -9269,6 +11535,22 @@
       ],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...to the attack trigger, the defending player plays a hidden Hostile Takeover and gains control of Yasuo. The triggered ability is unaffected by Yasuo changing controllers, and &quot;enemy&quot; is in reference to the triggered ability itsel...",
+              "query": "Hostile Takeover",
+              "jumpQuery": "Hostile Takeover",
+              "anchorText": "Hostile Takeover",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -9400,6 +11682,22 @@
           ]
         },
         {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...me time that its Trigger &#x27;s condition is met. Example: Immortal Phoenix says &quot;When you kill a unit with a spell, you may pay [1][C] to play me from your trash.&quot; This ability triggers if Immortal Phoenix is in your trash immed...",
+              "query": "Immortal Phoenix",
+              "jumpQuery": "Immortal Phoenix",
+              "anchorText": "Immortal Phoenix",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
           "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -9477,6 +11775,22 @@
               "jumpQuery": "Iron Ballista",
               "anchorText": "Iron Ballista",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...on to the Spell or Unit that created that Ability. Example: Iron Ballista is a gear that says &quot;[E]: Deal 2 to a unit at a battlefield.&quot; This damage is dealt both by a gear and by an ability. 417.6.b.3. When a spell or ability spec...",
+              "query": "Iron Ballista",
+              "jumpQuery": "Iron Ballista",
+              "anchorText": "Iron Ballista",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -9653,6 +11967,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion unit. It cannot...",
+              "query": "Jinx, Demolitionist",
+              "jumpQuery": "Jinx, Demolitionist",
+              "anchorText": "Jinx, Demolitionist",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -9688,6 +12018,22 @@
               "jumpQuery": "Jinx, Rebel",
               "anchorText": "Jinx, Rebel",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion...",
+              "query": "Jinx, Rebel",
+              "jumpQuery": "Jinx, Rebel",
+              "anchorText": "Jinx, Rebel",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9813,6 +12159,22 @@
               "jumpQuery": "Kayn, Unleashed",
               "anchorText": "Kayn, Unleashed",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t from any considerations of mandatory assignment. Example: Kayn, Unleashed says &quot;If I have moved twice this turn, I don&#x27;t take damage.&quot; While Kayn can&#x27;t take damage, it is ignored for the purposes of assigning lethal da...",
+              "query": "Kayn, Unleashed",
+              "jumpQuery": "Kayn, Unleashed",
+              "anchorText": "Kayn, Unleashed",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9972,6 +12334,22 @@
               "ruleId": "5."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s current Might is 5. A player chooses it as the target for Last Stand, a spell that reads in part &quot;Double a friendly unit&#x27;s Might this turn.&quot; Its current Might is 5, so it gets +5 Might this turn, for a current Might of 10....",
+              "query": "Last Stand",
+              "jumpQuery": "Last Stand",
+              "anchorText": "Last Stand",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "5."
+            }
+          ]
         }
       ]
     },
@@ -10051,6 +12429,22 @@
               "ruleId": "2"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s may raise the card&#x27;s Total Cost above zero. Example: Legion Rearguard is a Fury unit that costs 2 Energy and 0 Power and has Accelerate. A player plays Legion Rearguard and is instructed to ignore its costs, but chooses to pay the Ac...",
+              "query": "Legion Rearguard",
+              "jumpQuery": "Legion Rearguard",
+              "anchorText": "Legion Rearguard",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
         }
       ]
     },
@@ -10067,7 +12461,24 @@
     "lillia, fae fawn": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...s checked when the trigger condition is fulfilled. Example: Lillia, Fae Fawn reads &quot;when I move from a location, play a 3 [M] Sprite token with Temporary there.&quot; If Lillia moves to a battlefield, her triggered ability will be plac...",
+              "query": "Lillia, Fae Fawn",
+              "jumpQuery": "Lillia, Fae Fawn",
+              "anchorText": "Lillia, Fae Fawn",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        }
+      ]
     },
     "lillia, protector of dreams": {
       "faq": [],
@@ -10104,6 +12515,22 @@
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tag that matches the tag on your Champion Legend. Example: Loose Cannon has the tag Jinx . Therefore, a player could choose Jinx, Rebel or Jinx, Demolitionist as their Chosen Champion , because they also have the tag Jinx . Example: Tibber...",
+              "query": "Loose Cannon",
+              "jumpQuery": "Loose Cannon",
+              "anchorText": "Loose Cannon",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10166,6 +12593,22 @@
               "jumpQuery": "Lux, Illuminated",
               "anchorText": "Lux, Illuminated",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "5"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...reduced by the highest Might among units you control.&quot; Lux, Illuminated is a unit that says &quot;When you play a spell that costs 5 or more, give me +3 [M] this turn.&quot; If a player who controls Lux plays Sky Splitter, Lux&#x27;s a...",
+              "query": "Lux, Illuminated",
+              "jumpQuery": "Lux, Illuminated",
+              "anchorText": "Lux, Illuminated",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "5"
             }
@@ -10282,6 +12725,22 @@
               "ruleId": "160.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ith a Domain corresponding to its name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]....",
+              "query": "Mind Rune",
+              "jumpQuery": "Mind Rune",
+              "anchorText": "Mind Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
+            }
+          ]
         }
       ]
     },
@@ -10303,7 +12762,24 @@
     "mirror image": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "..., making it a copy of Honest Broker. That player then plays Mirror Image, targeting the Reflection token. When the Mirror Image Reflection token is played, it copies all of the copyable traits of the original Reflection token which are curr...",
+              "query": "Mirror Image",
+              "jumpQuery": "Mirror Image",
+              "anchorText": "Mirror Image",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "mischievous marai": {
       "faq": [],
@@ -10515,13 +12991,46 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...time, and the 1 Bonus Damage is a passive ability. Example: Noxian Guillotine reads &quot;Choose a unit. Kill it the next time it takes damage this turn.&quot; When the chosen unit takes damage is the specified time, and killing it is the c...",
+              "query": "Noxian Guillotine",
+              "jumpQuery": "Noxian Guillotine",
+              "anchorText": "Noxian Guillotine",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
     "noxus hopeful": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...some format immediately after the Keyword itself. EXAMPLE: Noxus Hopeful has &quot;[Legion][&gt;] I cost [2] less.&quot; [Legion] is short for the condition &quot;if you have played another card this turn, this card gains [Text],&quot; whi...",
+              "query": "Noxus Hopeful",
+              "jumpQuery": "Noxus Hopeful",
+              "anchorText": "Noxus Hopeful",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "noxus saboteur": {
       "faq": [
@@ -10594,6 +13103,22 @@
               "anchorHeading": "Riftbound Core Rules v1.2",
               "anchorIndex": 1,
               "ruleId": "160.2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ts name: Fury Rune Calm Rune Mind Rune Body Rune Chaos Rune Order Rune 163.2. A Basic Rune always has the following two Abilities : 163.2.a. [E]: [Reaction] Add [1]. 163.2.b. Recycle this: [Reaction] Add [C]. 163.2.b.1. The Power added this...",
+              "query": "Order Rune",
+              "jumpQuery": "Order Rune",
+              "anchorText": "Order Rune",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "163.2."
             }
           ]
         }
@@ -10708,6 +13233,22 @@
               "jumpQuery": "Petty Officer",
               "anchorText": "Petty Officer",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t Value of all granted Assault keywords is summed. Example: Petty Officer has Assault. It is chosen as the target of Cleave, which says &quot;Give a unit [Assault 3] this turn.&quot; After Cleave resolves, Petty Officer has Assault 4 this t...",
+              "query": "Petty Officer",
+              "jumpQuery": "Petty Officer",
+              "anchorText": "Petty Officer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -10990,7 +13531,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...turn is an Additional Turn. Example: The First Player plays Promising Future during their turn, during the resolution of which the Second and Fourth Player choose, banish, and play one Time Warp each. The Fourth Player&#x27;s Time Warp reso...",
+              "query": "Promising Future",
+              "jumpQuery": "Promising Future",
+              "anchorText": "Promising Future",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "punch first": {
       "faq": [],
@@ -11122,6 +13680,22 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...me in the effect that created the Delayed Ability. Example: Ravenborn Tome reads &quot;The next spell you play this turn deals 1 Bonus Damage&quot; is a Delayed Passive Ability that passively adds 1 damage to just the next spell played. The...",
+              "query": "Ravenborn Tome",
+              "jumpQuery": "Ravenborn Tome",
+              "anchorText": "Ravenborn Tome",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
@@ -11190,7 +13764,24 @@
     "reflection": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...tion][&gt;] Kill this, [E]: [Add] [A].&quot; 184.6. A 0 [M] Reflection token is a domainless unit token with 0 Might. 184.7. A 1 [M] Bird token is a domainless unit token with 1 Might, the Bird tag, and the Deflect keyword. See rule 809. De...",
+              "query": "Reflection",
+              "jumpQuery": "Reflection",
+              "anchorText": "Reflection",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "184.6."
+            }
+          ]
+        }
+      ]
     },
     "reinforce": {
       "faq": [
@@ -11407,6 +13998,22 @@
               "ruleId": "466.8.c."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...hat turn. Example: A player may not induce their partner to retreat, and then conquer a Battlefield their teammate was controlling. 484.8.c. Control is not shared. 484.8.c.1. Players may not Hide cards at Battlefields controlled by their Te...",
+              "query": "Retreat",
+              "jumpQuery": "Retreat",
+              "anchorText": "Retreat",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "484.8.c."
+            }
+          ]
         }
       ]
     },
@@ -11470,6 +14077,22 @@
               "jumpQuery": "Rocket Barrage",
               "anchorText": "Rocket Barrage",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ame as the choices made for the initial execution. Example: Rocket Barrage is a spell with [Repeat] [4][C] and &quot;Choose one Deal 4 to a unit in a base. [or] Kill a gear.&quot; If Rocket Barrage&#x27;s controller pays its Repeat cost as...",
+              "query": "Rocket Barrage",
+              "jumpQuery": "Rocket Barrage",
+              "anchorText": "Rocket Barrage",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "4"
             }
@@ -11855,6 +14478,22 @@
               "ruleId": "6"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...eased by Bonus Damage individually and separately. Example: Singularity is a spell that says &quot;Deal 6 to each of up to two units.&quot; A player plays Singularity while they also control Annie, Fiery, a unit that says &quot;Your spells...",
+              "query": "Singularity",
+              "jumpQuery": "Singularity",
+              "anchorText": "Singularity",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "6"
+            }
+          ]
         }
       ]
     },
@@ -11893,6 +14532,22 @@
               "jumpQuery": "Sky Splitter",
               "anchorText": "Sky Splitter",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "8"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...cost is altered or ignored as the card is played. Example: Sky Splitter is a spell that costs 8 Energy and says in part &quot;This spell&#x27;s Energy cost is reduced by the highest Might among units you control.&quot; Lux, Illuminated is...",
+              "query": "Sky Splitter",
+              "jumpQuery": "Sky Splitter",
+              "anchorText": "Sky Splitter",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "8"
             }
@@ -11987,12 +14642,45 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n order for the trigger to be placed on the Chain. Example: Sona, Harmonious reads &quot;At the end of your turn, if I&#x27;m at a battlefield, ready up to 4 friendly runes.&quot; Her Trigger Ability&#x27;s Condition will be fulfilled in th...",
+              "query": "Sona, Harmonious",
+              "jumpQuery": "Sona, Harmonious",
+              "anchorText": "Sona, Harmonious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "4"
+            }
+          ]
+        }
+      ]
     },
     "soraka, wanderer": {
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...umber of events that are qualified to be replaced. Example: Soraka, Wanderer reads &quot;If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it.&quot; Soraka dies simultaneously...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -12060,6 +14748,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...l parse Inactive text for the sake of eligibility. Example: Spinning Axe is a gear with [Temporary]. While it&#x27;s attached and its rules text is inactive, its [Temporary] ability doesn&#x27;t trigger. However, a spell that reads &quot;De...",
+              "query": "Spinning Axe",
+              "jumpQuery": "Spinning Axe",
+              "anchorText": "Spinning Axe",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -12093,6 +14797,22 @@
               "jumpQuery": "Sprite",
               "anchorText": "Sprite",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...unit token with 1 Might and the Recruit tag. 184.2. A 3 [M] Sprite token with Temporary is a domainless unit token with 3 Might, the Fae tag, and the Temporary keyword. See rule 816. Temporary for more information. 184.3. A 2 [M] Sand Soldi...",
+              "query": "Sprite",
+              "jumpQuery": "Sprite",
+              "anchorText": "Sprite",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -12193,6 +14913,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ld Value of all granted Shield keywords is summed. Example: Stalwart Poro has Shield. It is chosen as the target of Block, which says &quot;Give a unit [Shield 3] and [Tank] this turn.&quot; After Block resolves, Stalwart Poro has Shield 4...",
+              "query": "Stalwart Poro",
+              "jumpQuery": "Stalwart Poro",
+              "anchorText": "Stalwart Poro",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -12228,6 +14964,22 @@
               "jumpQuery": "Stand United",
               "anchorText": "Stand United",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...than the choices listed above function as normal. Example: Stand United is a spell that has Hidden and says &quot;Buff a friendly unit. Buffs give an additional +1 might to friendly units this turn.&quot; If it&#x27;s played from Hidden, t...",
+              "query": "Stand United",
+              "jumpQuery": "Stand United",
+              "anchorText": "Stand United",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12410,7 +15162,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...on to a Yasuo, Remorseful attack trigger, an opponent plays Stupefy targeting Yasuo. When Yasuo&#x27;s attack trigger resolves, it will deal damage equal to his current Might of 5. 359.3.f.3. Some information used by triggered abilities is...",
+              "query": "Stupefy",
+              "jumpQuery": "Stupefy",
+              "anchorText": "Stupefy",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "5."
+            }
+          ]
+        }
+      ]
     },
     "sudden storm": {
       "faq": [],
@@ -12956,6 +15725,22 @@
               "ruleId": "103.2.a.3."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...n Champion , because they also have the tag Jinx . Example: Tibbers has the tag Annie , but it is a signature unit, not a champion unit. It cannot be your Chosen Champion , even if your Champion Legend has the tag Annie . 103.2.a.3. A playe...",
+              "query": "Tibbers",
+              "jumpQuery": "Tibbers",
+              "anchorText": "Tibbers",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "103.2.a.3."
+            }
+          ]
         }
       ]
     },
@@ -13028,6 +15813,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ttlefield if Blastcone Fae was played from Hidden. Example: Tideturner is a unit with Hidden and &quot;When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location.&quot; Be...",
+              "query": "Tideturner",
+              "jumpQuery": "Tideturner",
+              "anchorText": "Tideturner",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -13035,6 +15836,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...d. Example: The First Player plays, through some means, two Time Warps during their turn. The Time Warps create two Additional Turns for their controller and insert them into the turn queue after the current turn. If the turn queue is repre...",
+              "query": "Time Warp",
+              "jumpQuery": "Time Warp",
+              "anchorText": "Time Warp",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
         {
           "id": "riftbound-core-rules-unleashed-patch-notes",
           "title": "Riftbound Core Rules: Unleashed Patch Notes",
@@ -13098,7 +15915,24 @@
     "treasure hunter": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...placement Effect will inherit those modifications. Example: Treasure Hunter reads &quot;When I move, play a Gold gear token exhausted.&quot; A Replacement Effect that says &quot;if you would play a token gear, play that token and an additio...",
+              "query": "Treasure Hunter",
+              "jumpQuery": "Treasure Hunter",
+              "anchorText": "Treasure Hunter",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "treasure trove": {
       "faq": [],
@@ -13247,7 +16081,24 @@
     "ultrasoft poro": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...true in order to activate the ability in question. Example: Ultrasoft Poro reads &quot;[E]: Play two 1 [M] Bird unit tokens with [Deflect]. Use this ability only while I&#x27;m at a battlefield.&quot; In order to activate the ability, Ultra...",
+              "query": "Ultrasoft Poro",
+              "jumpQuery": "Ultrasoft Poro",
+              "anchorText": "Ultrasoft Poro",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "unchecked power": {
       "faq": [
@@ -13285,6 +16136,22 @@
               "ruleId": "376.3."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...both killed in the same Cleanup due to the damage dealt by Unchecked Power). 383.3. When a Condition is met, a Triggered Ability behaves like an Activated Ability and is placed on the Chain. 383.3.a. If a Triggered Ability says &quot;you m...",
+              "query": "Unchecked Power",
+              "jumpQuery": "Unchecked Power",
+              "anchorText": "Unchecked Power",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "383.3."
+            }
+          ]
         }
       ]
     },
@@ -13303,6 +16170,22 @@
               "jumpQuery": "Undercover Agent",
               "anchorText": "Undercover Agent",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ir hand, further discard instructions are ignored. Example: Undercover Agent has the ability &quot;[Deathknell][&gt;] Discard 2, then draw 2. (When I die, get the effect.)&quot; If Undercover Agent&#x27;s controller has 2 or more cards in h...",
+              "query": "Undercover Agent",
+              "jumpQuery": "Undercover Agent",
+              "anchorText": "Undercover Agent",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2."
             }
@@ -13529,6 +16412,22 @@
               "ruleId": "1"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...t be able to be completed for the cost to be paid. Example: Vi, Destructive has the ability &quot;Recycle 1 from your trash: Give me +1 [M] this turn.&quot; Each time a player activates the ability, they must recycle 1 card from their trash...",
+              "query": "Vi, Destructive",
+              "jumpQuery": "Vi, Destructive",
+              "anchorText": "Vi, Destructive",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
         }
       ]
     },
@@ -13567,6 +16466,22 @@
               "jumpQuery": "Viktor, Leader",
               "anchorText": "Viktor, Leader",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...om at the same time that its Trigger is satisfied. Example: Viktor, Leader says &quot;When another nonRecruit unit you control dies, play a 1 [M] Recruit unit token into your base.&quot; This ability triggers if Viktor is on the board immed...",
+              "query": "Viktor, Leader",
+              "jumpQuery": "Viktor, Leader",
+              "anchorText": "Viktor, Leader",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
             }
@@ -13675,7 +16590,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...lt 1 and trigger its ability. Example: A unit is present at Void Gate. A spell is played that Prevents the next 3 damage the unit would take. If a player plays Hextech Ray targeting the unit, it will take no damage in order to apply the Bon...",
+              "query": "Void Gate",
+              "jumpQuery": "Void Gate",
+              "anchorText": "Void Gate",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "1"
+            }
+          ]
+        }
+      ]
     },
     "void hatchling": {
       "faq": [],
@@ -13757,6 +16689,22 @@
               "ruleId": "137.2."
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ment. It conveys no gameplay information. Example: The card Void Seeker features a quote from the character Kai&#x27;Sa. It does not have the Kai&#x27;Sa tag and has no gameplay connection to the Champion unit Kai&#x27;Sa. 138.2. Flavor tex...",
+              "query": "Void Seeker",
+              "jumpQuery": "Void Seeker",
+              "anchorText": "Void Seeker",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "138.2."
+            }
+          ]
         }
       ]
     },
@@ -13780,6 +16728,22 @@
               "jumpQuery": "Volibear, Furious",
               "anchorText": "Volibear, Furious",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "2"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...ncludes your Chosen Champion. Example: A deck could include Volibear, Furious as its Chosen Champion and still include 2 more copies of Volibear, Furious. 103.2.b.2. Cards have different names even if they represent the same character. Exam...",
+              "query": "Volibear, Furious",
+              "jumpQuery": "Volibear, Furious",
+              "anchorText": "Volibear, Furious",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "2"
             }
@@ -13930,6 +16894,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...y triggers only once, due to the chosen condition. Example: Wraith of Echoes reads &quot;The first time another friendly unit dies each turn, draw 1.&quot; That ability hasn&#x27;t triggered yet this turn. Two other friendly units die simul...",
+              "query": "Wraith of Echoes",
+              "jumpQuery": "Wraith of Echoes",
+              "anchorText": "Wraith of Echoes",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -13977,6 +16957,22 @@
               "ruleId": "3"
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...e same character. Example: A deck could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature ca...",
+              "query": "Yasuo, Remorseful",
+              "jumpQuery": "Yasuo, Remorseful",
+              "anchorText": "Yasuo, Remorseful",
+              "anchorHeading": "Riftbound Core Rules v1.3",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
         }
       ]
     },
@@ -13995,6 +16991,22 @@
               "jumpQuery": "Yasuo, Windrider",
               "anchorText": "Yasuo, Windrider",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": "3"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-v1-3",
+          "title": "Riftbound Core Rules v1.3",
+          "sourceTitle": "Riftbound Core Rules v1.3",
+          "matches": [
+            {
+              "snippet": "...could include 3 copies of Yasuo, Remorseful and 3 copies of Yasuo, Windrider, because they have different names. 103.2.c. Subject to Domain Identity. 103.2.d. Your deck may only contain 3 total Signature cards that have the same Champion ta...",
+              "query": "Yasuo, Windrider",
+              "jumpQuery": "Yasuo, Windrider",
+              "anchorText": "Yasuo, Windrider",
+              "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "3"
             }
@@ -14170,6 +17182,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T17:11:16Z",
+  "generatedAt": "2026-03-30T17:58:52Z",
   "source": "riftboundoc derived card related index"
 }
