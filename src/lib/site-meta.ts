@@ -1,4 +1,4 @@
 export const SITE_META = {
-  siteVersion: "2026.03.27.20",
-  assetVersion: "20260327v20",
+  siteVersion: "2026.03.30.01",
+  assetVersion: "20260330v1",
 } as const;

@@ -30,5 +30,21 @@
     "summary": "Judge clarifications and tournament policy notes for the 2026 Vegas Regional Qualifier.",
     "file": "content/pages/rq-vegas-2026-rulings.md",
     "updatedAt": "2026-02-25"
+  },
+  {
+    "kind": "rule_page",
+    "id": "riftbound-core-rules-unleashed-patch-notes",
+    "title": "Riftbound Core Rules: Unleashed Patch Notes",
+    "summary": "Welcome to the Patch Notes for Riftbound, Unleashed edition. Included in today's update are system clarifications and expansions, fixes to many logical or procedural errors, and th",
+    "file": "content/pages/riftbound-core-rules-unleashed-patch-notes.md",
+    "updatedAt": "2026-03-30"
+  },
+  {
+    "kind": "rule_page",
+    "id": "march-2026-tournament-rules-update--changelog",
+    "title": "March 2026 Tournament Rules Update & Changelog",
+    "summary": "Hey Riftbounders, Vriss here with a new Tournament Rules Update. Since our last update, even more players and judges have had the chance to dive into Riftbound. We've been keeping ",
+    "file": "content/pages/march-2026-tournament-rules-update--changelog.md",
+    "updatedAt": "2026-03-30"
   }
 ]
