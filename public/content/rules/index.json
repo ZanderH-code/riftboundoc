@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-20",
+  "updatedAt": "2026-03-30",
   "rules": [
     {
       "id": "core-rules-v1-2-text",
@@ -18,9 +18,27 @@
       "summary": "Official tournament rules update converted into web-readable text.",
       "source": "Riftbound Official",
       "updatedAt": "2026-01-30"
+    },
+    {
+      "id": "riftbound-core-rules-unleashed-patch-notes",
+      "title": "Riftbound Core Rules: Unleashed Patch Notes",
+      "kind": "page",
+      "pageId": "riftbound-core-rules-unleashed-patch-notes",
+      "summary": "Patch notes for Unleashed core rules, including clarifications and procedural fixes.",
+      "source": "Riftbound Official",
+      "updatedAt": "2026-03-30"
+    },
+    {
+      "id": "march-2026-tournament-rules-update--changelog",
+      "title": "March 2026 Tournament Rules Update & Changelog",
+      "kind": "page",
+      "pageId": "march-2026-tournament-rules-update--changelog",
+      "summary": "March 2026 tournament policy update and changelog from official announcements.",
+      "source": "Riftbound Official",
+      "updatedAt": "2026-03-30"
     }
   ],
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T16:55:17Z",
+  "generatedAt": "2026-03-30T17:02:00Z",
   "source": "Riftbound Official"
 }

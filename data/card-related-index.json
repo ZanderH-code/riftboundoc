@@ -701,7 +701,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "march-2026-tournament-rules-update--changelog",
+          "title": "March 2026 Tournament Rules Update & Changelog",
+          "sourceTitle": "March 2026 Tournament Rules Update & Changelog",
+          "matches": [
+            {
+              "snippet": "...int home: \"If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?\" Because it is worded as a specific scenario relating to the game being played, a judge answering that question is seen as pr...",
+              "query": "Tryndamere, Barbarian",
+              "jumpQuery": "Tryndamere, Barbarian",
+              "anchorText": "Tryndamere, Barbarian",
+              "anchorHeading": "March 2026 Tournament Rules Update & Changelog",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-036-298": {
       "faq": [],
@@ -757,6 +774,22 @@
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...printed in Unleashed, and also for shoring up the rules for Immortal Phoenix. In order to fulfill a condition that reads \"when you kill a unit with a spell\", a player must be responsible for the kill action, control the spell that instructe...",
+              "query": "Immortal Phoenix",
+              "jumpQuery": "Immortal Phoenix",
+              "anchorText": "Immortal Phoenix",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1175,6 +1208,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...ne Backline is the keyword version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially...",
+              "query": "Caitlyn, Patrolling",
+              "jumpQuery": "Caitlyn, Patrolling",
+              "anchorText": "Caitlyn, Patrolling",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
         }
       ]
     },
@@ -1358,7 +1407,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...tiple units die simultaneously while their controller has a Zhonya's Hourglass in play, players are already choosing the order they apply their replacement effects when they pick one of those units to save. We wanted to make the rules more...",
+              "query": "Zhonya's Hourglass",
+              "jumpQuery": "Zhonya's Hourglass",
+              "anchorText": "Zhonya's Hourglass",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-084-298": {
       "faq": [],
@@ -1900,6 +1966,28 @@
         }
       ],
       "rule": []
+    },
+    "ogn-122-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...on resolution. NEW RULE: Referents Additional Turn Effects Time Warp has been the subject of debate since it was printed in Origins. We're here to settle the matter and clarify how exactly additional turns work. NEW SYSTEM: Additional Turn...",
+              "query": "Time Warp",
+              "jumpQuery": "Time Warp",
+              "anchorText": "Time Warp",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-123-298": {
       "faq": [
@@ -3093,7 +3181,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...been granted the repeat keyword, as in the case of repeated Hidden Blade. Linked abilities, on a similar note, are useful for clarifying how abilities function when they reference other abilities, and what game objects they are allowed to a...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-214-298": {
       "faq": [],
@@ -3523,7 +3628,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...d with contested status and cards like Hostile Takeover and Stormbringer causing the game to reach an ambiguous state. In order to fix those bugs, the solution that made the most sense was to have control locked by the presence of a combat...",
+              "query": "Stormbringer",
+              "jumpQuery": "Stormbringer",
+              "anchorText": "Stormbringer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "ogn-251-298": {
       "faq": [],
@@ -4574,7 +4696,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...replacement effect? How the heck do Soraka and an equipped Guardian Angel work? In order to answer these questions and more, the replacement effects section has been beefed up with additional rules and examples. Primarily, we're aligning t...",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-053-221": {
       "faq": [
@@ -4713,7 +4852,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...et to see our first true copy effect, though the spectre of Svellsongur has long been hanging over Spiritforged. In order to support these copy effects, rules have been implemented clarifying what traits a copy effect is allowed to copy and...",
+              "query": "Svellsongur",
+              "jumpQuery": "Svellsongur",
+              "anchorText": "Svellsongur",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-060-221": {
       "faq": [
@@ -5274,6 +5430,28 @@
       ],
       "rule": []
     },
+    "sfd-173-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...rd version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now t...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
     "sfd-186-221": {
       "faq": [],
       "errata": [],
@@ -5455,7 +5633,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...n control being locked with contested status and cards like Hostile Takeover and Stormbringer causing the game to reach an ambiguous state. In order to fix those bugs, the solution that made the most sense was to have control locked by the...",
+              "query": "Hostile Takeover",
+              "jumpQuery": "Hostile Takeover",
+              "anchorText": "Hostile Takeover",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-209-221": {
       "faq": [
@@ -5888,6 +6083,50 @@
         }
       ],
       "rule": []
+    },
+    "sfd-239-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...rd version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now t...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
+    },
+    "sfd-239-star-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...rd version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now t...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "sfd-243-221": {
       "faq": [
@@ -6876,6 +7115,22 @@
               "jumpQuery": "Caitlyn, Patrolling",
               "anchorText": "Caitlyn, Patrolling",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...ne Backline is the keyword version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially...",
+              "query": "Caitlyn, Patrolling",
+              "jumpQuery": "Caitlyn, Patrolling",
+              "anchorText": "Caitlyn, Patrolling",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8733,7 +8988,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...replacement effect? How the heck do Soraka and an equipped Guardian Angel work? In order to answer these questions and more, the replacement effects section has been beefed up with additional rules and examples. Primarily, we're aligning t...",
+              "query": "Guardian Angel",
+              "jumpQuery": "Guardian Angel",
+              "anchorText": "Guardian Angel",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "guardian of the passage": {
       "faq": [],
@@ -8908,7 +9180,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...been granted the repeat keyword, as in the case of repeated Hidden Blade. Linked abilities, on a similar note, are useful for clarifying how abilities function when they reference other abilities, and what game objects they are allowed to a...",
+              "query": "Hidden Blade",
+              "jumpQuery": "Hidden Blade",
+              "anchorText": "Hidden Blade",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "highlander": {
       "faq": [
@@ -8979,7 +9268,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...n control being locked with contested status and cards like Hostile Takeover and Stormbringer causing the game to reach an ambiguous state. In order to fix those bugs, the solution that made the most sense was to have control locked by the...",
+              "query": "Hostile Takeover",
+              "jumpQuery": "Hostile Takeover",
+              "anchorText": "Hostile Takeover",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "hunter's machete": {
       "faq": [],
@@ -9088,6 +9394,22 @@
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
               "anchorHeading": "Riftbound Core Rules v1.2",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...printed in Unleashed, and also for shoring up the rules for Immortal Phoenix. In order to fulfill a condition that reads \"when you kill a unit with a spell\", a player must be responsible for the kill action, control the spell that instructe...",
+              "query": "Immortal Phoenix",
+              "jumpQuery": "Immortal Phoenix",
+              "anchorText": "Immortal Phoenix",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11670,7 +11992,24 @@
     "soraka, wanderer": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...rd version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now t...",
+              "query": "Soraka, Wanderer",
+              "jumpQuery": "Soraka, Wanderer",
+              "anchorText": "Soraka, Wanderer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "soul harvest": {
       "faq": [],
@@ -12006,7 +12345,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...d with contested status and cards like Hostile Takeover and Stormbringer causing the game to reach an ambiguous state. In order to fix those bugs, the solution that made the most sense was to have control locked by the presence of a combat...",
+              "query": "Stormbringer",
+              "jumpQuery": "Stormbringer",
+              "anchorText": "Stormbringer",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "stormclaw ursine": {
       "faq": [],
@@ -12123,7 +12479,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...et to see our first true copy effect, though the spectre of Svellsongur has long been hanging over Spiritforged. In order to support these copy effects, rules have been implemented clarifying what traits a copy effect is allowed to copy and...",
+              "query": "Svellsongur",
+              "jumpQuery": "Svellsongur",
+              "anchorText": "Svellsongur",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "swift scout": {
       "faq": [],
@@ -12661,7 +13034,24 @@
     "time warp": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...on resolution. NEW RULE: Referents Additional Turn Effects Time Warp has been the subject of debate since it was printed in Origins. We're here to settle the matter and clarify how exactly additional turns work. NEW SYSTEM: Additional Turn...",
+              "query": "Time Warp",
+              "jumpQuery": "Time Warp",
+              "anchorText": "Time Warp",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "towering combatant": {
       "faq": [],
@@ -12820,7 +13210,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "march-2026-tournament-rules-update--changelog",
+          "title": "March 2026 Tournament Rules Update & Changelog",
+          "sourceTitle": "March 2026 Tournament Rules Update & Changelog",
+          "matches": [
+            {
+              "snippet": "...int home: \"If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?\" Because it is worded as a specific scenario relating to the game being played, a judge answering that question is seen as pr...",
+              "query": "Tryndamere, Barbarian",
+              "jumpQuery": "Tryndamere, Barbarian",
+              "anchorText": "Tryndamere, Barbarian",
+              "anchorHeading": "March 2026 Tournament Rules Update & Changelog",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "turn to dust": {
       "faq": [],
@@ -13737,7 +14144,24 @@
           ]
         }
       ],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-core-rules-unleashed-patch-notes",
+          "title": "Riftbound Core Rules: Unleashed Patch Notes",
+          "sourceTitle": "Riftbound Core Rules: Unleashed Patch Notes",
+          "matches": [
+            {
+              "snippet": "...tiple units die simultaneously while their controller has a Zhonya's Hourglass in play, players are already choosing the order they apply their replacement effects when they pick one of those units to save. We wanted to make the rules more...",
+              "query": "Zhonya's Hourglass",
+              "jumpQuery": "Zhonya's Hourglass",
+              "anchorText": "Zhonya's Hourglass",
+              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ]
     },
     "zilean, time mage": {
       "faq": [],
@@ -13746,6 +14170,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T16:55:17Z",
+  "generatedAt": "2026-03-30T17:02:00Z",
   "source": "riftboundoc derived card related index"
 }
