@@ -57,24 +57,10 @@
       "title": "Riftbound Spiritforged Errata",
       "updatedAt": "2026-02-18",
       "hrefPath": "errata-detail/?id=riftbound-spiritforged-errata"
-    },
-    {
-      "kind": "Rule",
-      "title": "Riftbound Core Rules v1.2 (Text Version)",
-      "updatedAt": "2026-02-18",
-      "hrefPath": "pages/riftbound-core-rules-v1-2/",
-      "href": ""
-    },
-    {
-      "kind": "Rule",
-      "title": "Tournament Rules, January Update (Text Version)",
-      "updatedAt": "2026-01-30",
-      "hrefPath": "pages/tournament-rules-january-update/",
-      "href": ""
     }
   ],
-  "count": 11,
+  "count": 9,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T18:05:09Z",
+  "generatedAt": "2026-03-30T18:18:27Z",
   "source": "riftboundoc derived updates index"
 }
