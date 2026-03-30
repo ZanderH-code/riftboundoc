@@ -45,7 +45,16 @@ function toStateRange(limit, minRaw, maxRaw) {
 
 export function parseCardsStateFromSearch(
   search,
-  { allDomains = [], sets = [], types = [], supertypes = [], variantOptions = [], rarities = [], limits = {} } = {}
+  {
+    allDomains = [],
+    sets = [],
+    types = [],
+    supertypes = [],
+    variantOptions = [],
+    rarities = [],
+    legalities = ["all", "legal", "banned"],
+    limits = {},
+  } = {}
 ) {
   const params = new URLSearchParams(normalizeSearch(search));
   const fallbackLimits = {
@@ -63,6 +72,7 @@ export function parseCardsStateFromSearch(
     supertypes: new Set(),
     variants: new Set(),
     rarities: new Set(),
+    legality: "all",
     domains: new Set(),
     ranges: {
       energy: { ...fallbackLimits.energy },
@@ -88,6 +98,8 @@ export function parseCardsStateFromSearch(
   state.supertypes = pickAllowedSet(params, ["supertype", "supertypes"], supertypes);
   state.variants = pickAllowedSet(params, ["variant", "variants"], variantOptions);
   state.rarities = pickAllowedSet(params, ["rarity", "rarities"], rarities);
+  const legality = String(params.get("legality") || params.get("legal") || "").trim().toLowerCase();
+  if (legalities.includes(legality)) state.legality = legality;
 
   for (const stat of ["energy", "power", "might"]) {
     const limit = fallbackLimits[stat];
@@ -131,6 +143,7 @@ export function serializeCardsStateToSearch(initialSearch, state, limits = {}) {
   setCsvParam("supertypes", state.supertypes);
   setCsvParam("variants", state.variants);
   setCsvParam("rarities", state.rarities);
+  setParam("legality", state.legality, "all");
 
   for (const stat of ["energy", "power", "might"]) {
     const limit = fallbackLimits[stat];
@@ -156,6 +169,7 @@ export function serializeCardsStateToSearch(initialSearch, state, limits = {}) {
     "supertype",
     "variant",
     "rarity",
+    "legal",
     "energy_min",
     "energy_max",
     "power_min",

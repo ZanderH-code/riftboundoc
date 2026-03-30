@@ -978,6 +978,7 @@ main > section h2 {
 }
 
 .card-media {
+  position: relative;
   border: 1px solid #36465a;
   border-radius: 14px;
   overflow: hidden;
@@ -997,6 +998,32 @@ main > section h2 {
 
 .card-item:hover .card-media img {
   transform: scale(1.03);
+}
+
+.card-item.banned .card-media img {
+  filter: grayscale(1) saturate(0.3) contrast(1.06);
+}
+
+.card-banned-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  padding: 7px 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: linear-gradient(180deg, #ff3d3d, #d51616);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 22px rgba(165, 14, 14, 0.46);
 }
 
 .card-media-empty {

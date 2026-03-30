@@ -18,7 +18,7 @@ const allowed = {
 describe("cards URL state parse and serialize", () => {
   it("parses canonical and legacy params with clamping and filtering", () => {
     const state = parseCardsStateFromSearch(
-      "?query=legacy%20query&sortKey=rarity&sortDir=DESC&page=0&domain=Mind,Unknown&sets=Beta,Unknown&type=Spell&supertype=Spirit&variant=Foil,Unknown&rarities=Rare,Unknown&energy_min=-1&energy_max=99&powerFrom=7&powerTo=2&mightMin=not-a-number",
+      "?query=legacy%20query&sortKey=rarity&sortDir=DESC&page=0&domain=Mind,Unknown&sets=Beta,Unknown&type=Spell&supertype=Spirit&variant=Foil,Unknown&rarities=Rare,Unknown&legality=banned&energy_min=-1&energy_max=99&powerFrom=7&powerTo=2&mightMin=not-a-number",
       allowed
     );
 
@@ -32,6 +32,7 @@ describe("cards URL state parse and serialize", () => {
     expect(Array.from(state.supertypes)).toEqual(["Spirit"]);
     expect(Array.from(state.variants)).toEqual(["Foil"]);
     expect(Array.from(state.rarities)).toEqual(["Rare"]);
+    expect(state.legality).toBe("banned");
     expect(state.ranges.energy).toEqual({ min: 0, max: 10 });
     expect(state.ranges.power).toEqual({ min: 2, max: 7 });
     expect(state.ranges.might).toEqual({ min: 0, max: 6 });
@@ -51,6 +52,7 @@ describe("cards URL state parse and serialize", () => {
         supertypes: new Set(["Human"]),
         variants: new Set(["Foil"]),
         rarities: new Set(["Rare"]),
+        legality: "legal",
         ranges: {
           energy: { min: 1, max: 9 },
           power: { min: 0, max: 8 },
@@ -72,6 +74,7 @@ describe("cards URL state parse and serialize", () => {
     expect(params.get("supertypes")).toBe("Human");
     expect(params.get("variants")).toBe("Foil");
     expect(params.get("rarities")).toBe("Rare");
+    expect(params.get("legality")).toBe("legal");
     expect(params.get("energyMin")).toBe("1");
     expect(params.get("energyMax")).toBe("9");
     expect(params.get("powerMin")).toBeNull();
@@ -82,8 +85,25 @@ describe("cards URL state parse and serialize", () => {
     expect(params.get("query")).toBeNull();
     expect(params.get("sortKey")).toBeNull();
     expect(params.get("domain")).toBeNull();
+    expect(params.get("legal")).toBeNull();
     expect(params.get("energy_min")).toBeNull();
     expect(params.get("powerFrom")).toBeNull();
+  });
+
+  it("defaults legality to all and omits it in canonical query", () => {
+    const parsed = parseCardsStateFromSearch("?q=abc", allowed);
+    expect(parsed.legality).toBe("all");
+
+    const serialized = serializeCardsStateToSearch(
+      "",
+      {
+        ...parsed,
+        legality: "all",
+      },
+      allowed.limits
+    );
+    const params = new URLSearchParams(serialized);
+    expect(params.get("legality")).toBeNull();
   });
 });
 

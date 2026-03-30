@@ -80,10 +80,13 @@
       const title = escapeHtml(it.name || "Untitled card");
       const img = escapeHtml(it.imageUrl || "");
       const alt = escapeHtml(it.imageAlt || it.name || "Card image");
+      const bannedClass = it.isBanned ? " banned" : "";
+      const bannedBadge = it.isBanned ? '<span class="card-banned-badge" aria-label="Banned card">BANNED</span>' : "";
 
       return `
-      <article class="item card-item" data-card-id="${escapeHtml(it.id || "")}" tabindex="0" role="button" aria-label="Open card details for ${title}">
+      <article class="item card-item${bannedClass}" data-card-id="${escapeHtml(it.id || "")}" tabindex="0" role="button" aria-label="Open card details for ${title}">
         <div class="card-media">
+          ${bannedBadge}
           ${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : "<div class=\"card-media-empty\">No image</div>"}
         </div>
       </article>
@@ -145,6 +148,7 @@
   async function initCardsPage(deps = {}) {
   ({ q, route, withQuery, getJson, asItems, normalizeRuleIndex, markdownToPlain, escapeHtml, renderSearchPager, normalizeSearchText, extractRuleId, ruleTokenToAnchorId } = resolveDeps(deps));
   const raw = await getJson("data/cards.json", { cards: [] });
+  const bannedCardsConfig = await getJson("data/banned-cards.json", { names: [] });
   const faqs = await getJson("data/faqs.json", []);
   const errata = await getJson("data/errata.json", []);
   const pages = await getJson("data/pages.json", []);
@@ -179,6 +183,7 @@
   const rarityToggle = q("#cards-rarity-toggle");
   const rarityLabel = q("#cards-rarity-label");
   const rarityMenu = q("#cards-rarity-menu");
+  const legalitySelect = q("#cards-legality");
   const energyMin = q("#cards-energy-min");
   const energyMax = q("#cards-energy-max");
   const powerMin = q("#cards-power-min");
@@ -231,6 +236,7 @@
     !rarityToggle ||
     !rarityLabel ||
     !rarityMenu ||
+    !legalitySelect ||
     !energyMin ||
     !energyMax ||
     !powerMin ||
@@ -272,6 +278,27 @@
       .replace(/鈥檝/g, "'v")
       .replace(/鈥檇/g, "'d")
       .toLowerCase();
+
+  const bannedNames = new Set(
+    asItems(bannedCardsConfig?.names)
+      .map((name) => normalizeForMatch(name))
+      .filter(Boolean)
+  );
+  const cardsWithLegality = cards.map((card) => {
+    const cardNameKey = normalizeForMatch(card.name || "");
+    return {
+      ...card,
+      isBanned: bannedNames.has(cardNameKey),
+    };
+  });
+  const knownCardNameKeys = new Set(cardsWithLegality.map((card) => normalizeForMatch(card.name || "")).filter(Boolean));
+  const unmatchedBannedNames = asItems(bannedCardsConfig?.names).filter(
+    (name) => !knownCardNameKeys.has(normalizeForMatch(name))
+  );
+  if (unmatchedBannedNames.length) {
+    console.warn(`Unmatched banned card names (${unmatchedBannedNames.length}): ${unmatchedBannedNames.join(", ")}`);
+  }
+  const cardRows = cardsWithLegality;
 
   const buildIndexedRows = (rows) =>
     asItems(rows)
@@ -355,12 +382,12 @@
     Array.from(new Set(arr.map((x) => String(x || "").trim()).filter(Boolean))).sort((a, b) =>
       a.localeCompare(b)
     );
-  const sets = unique(cards.map((x) => x.set));
+  const sets = unique(cardRows.map((x) => x.set));
   const types = Array.from(
-    new Set(cards.flatMap((x) => asItems(x.cardTypes)).map((x) => String(x || "").trim()).filter(Boolean))
+    new Set(cardRows.flatMap((x) => asItems(x.cardTypes)).map((x) => String(x || "").trim()).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
   const supertypes = Array.from(
-    new Set(cards.flatMap((x) => asItems(x.superTypes)).map((x) => String(x || "").trim()).filter(Boolean))
+    new Set(cardRows.flatMap((x) => asItems(x.superTypes)).map((x) => String(x || "").trim()).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
   const inferCardVariantSet = (card) => {
     const bag = new Set();
@@ -379,16 +406,16 @@
   };
   const variantDisplayOrder = ["Standard", "Foil", "Alt Art", "Overnumber", "Signed", "Promo"];
   const variantCounts = new Map();
-  cards.forEach((card) => {
+  cardRows.forEach((card) => {
     inferCardVariantSet(card).forEach((v) => {
       variantCounts.set(v, (variantCounts.get(v) || 0) + 1);
     });
   });
   const variantOptions = variantDisplayOrder.filter((v) => (variantCounts.get(v) || 0) > 0);
-  const rarities = unique(cards.map((x) => x.rarity));
-  const allDomains = unique(cards.flatMap((x) => asItems(x.domains)));
+  const rarities = unique(cardRows.map((x) => x.rarity));
+  const allDomains = unique(cardRows.flatMap((x) => asItems(x.domains)));
   const domainOrder = ["Fury", "Calm", "Mind", "Body", "Chaos", "Order"];
-  const allCardNamesLower = unique(cards.map((x) => String(x.name || "").trim().toLowerCase()));
+  const allCardNamesLower = unique(cardRows.map((x) => String(x.name || "").trim().toLowerCase()));
   const longerNameByPrefix = new Map();
   allCardNamesLower.forEach((name) => {
     const first = name.split(",")[0].trim();
@@ -408,15 +435,16 @@
     return { min: Math.min(...nums), max: Math.max(...nums) };
   };
   const limits = {
-    energy: numberRange(cards.map((c) => c.energy)),
-    power: numberRange(cards.map((c) => c.power)),
-    might: numberRange(cards.map((c) => c.might)),
+    energy: numberRange(cardRows.map((c) => c.energy)),
+    power: numberRange(cardRows.map((c) => c.power)),
+    might: numberRange(cardRows.map((c) => c.might)),
   };
 
   const state = {
     query: "",
     sortKey: "card",
     sortDir: "asc",
+    legality: "all",
     sets: new Set(),
     types: new Set(),
     supertypes: new Set(),
@@ -477,6 +505,8 @@
     state.supertypes = pickAllowedSet(params, ["supertype", "supertypes"], supertypes);
     state.variants = pickAllowedSet(params, ["variant", "variants"], variantOptions);
     state.rarities = pickAllowedSet(params, ["rarity", "rarities"], rarities);
+    const legality = String(params.get("legality") || params.get("legal") || "").trim().toLowerCase();
+    if (["all", "legal", "banned"].includes(legality)) state.legality = legality;
 
     for (const stat of ["energy", "power", "might"]) {
       const limit = limits[stat];
@@ -514,6 +544,7 @@
     setCsvParam("supertypes", state.supertypes);
     setCsvParam("variants", state.variants);
     setCsvParam("rarities", state.rarities);
+    setParam("legality", state.legality, "all");
 
     for (const stat of ["energy", "power", "might"]) {
       const limit = limits[stat];
@@ -529,7 +560,7 @@
       }
     }
 
-    ["query", "sortKey", "sortDir", "domain", "set", "type", "supertype", "variant", "rarity", "energy_min", "energy_max", "power_min", "power_max", "might_min", "might_max", "energyFrom", "energyTo", "powerFrom", "powerTo", "mightFrom", "mightTo"].forEach((k) => params.delete(k));
+    ["query", "sortKey", "sortDir", "domain", "set", "type", "supertype", "variant", "rarity", "legal", "energy_min", "energy_max", "power_min", "power_max", "might_min", "might_max", "energyFrom", "energyTo", "powerFrom", "powerTo", "mightFrom", "mightTo"].forEach((k) => params.delete(k));
 
     const next = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ""}${window.location.hash || ""}`;
     const current = `${window.location.pathname}${window.location.search}${window.location.hash || ""}`;
@@ -557,6 +588,7 @@
   };
   searchInput.value = state.query;
   sortKeySelect.value = state.sortKey;
+  legalitySelect.value = state.legality;
   sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
 
   const buildDomainButtons = () => {
@@ -1396,7 +1428,9 @@
   const filtered = () => {
     const term = markdownToPlain(state.query).toLowerCase();
     return getSorted(
-      cards.filter((c) => {
+      cardRows.filter((c) => {
+        if (state.legality === "legal" && c.isBanned) return false;
+        if (state.legality === "banned" && !c.isBanned) return false;
         if (!matchesAnySelected([String(c.set || "")], state.sets)) return false;
         if (!matchesAnySelected(asItems(c.cardTypes), state.types)) return false;
         if (!matchesAnySelected(asItems(c.superTypes), state.supertypes)) return false;
@@ -1432,6 +1466,7 @@
     state.query = "";
     state.sortKey = "card";
     state.sortDir = "asc";
+    state.legality = "all";
     state.sets.clear();
     state.types.clear();
     state.supertypes.clear();
@@ -1447,6 +1482,7 @@
 
     searchInput.value = "";
     sortKeySelect.value = "card";
+    legalitySelect.value = "all";
     sortDirBtn.textContent = "Asc";
     paintDomainButtons();
 
@@ -1483,6 +1519,7 @@
     if (state.query.trim()) chips.push({ key: "query", value: "1", label: `Search: ${state.query.trim()}` });
     if (state.sortKey !== "card") chips.push({ key: "sortKey", value: state.sortKey, label: `Sort: ${state.sortKey}` });
     if (state.sortDir !== "asc") chips.push({ key: "sortDir", value: state.sortDir, label: `Dir: ${state.sortDir}` });
+    if (state.legality !== "all") chips.push({ key: "legality", value: state.legality, label: `Legality: ${state.legality}` });
 
     const pushSet = (key, values, prefix) => {
       Array.from(values || []).sort().forEach((v) => chips.push({ key, value: v, label: `${prefix}: ${v}` }));
@@ -1522,6 +1559,7 @@
     if (key === "query") state.query = "";
     else if (key === "sortKey") state.sortKey = "card";
     else if (key === "sortDir") state.sortDir = "asc";
+    else if (key === "legality") state.legality = "all";
     else if (key === "domains") state.domains.delete(value);
     else if (key === "sets") state.sets.delete(value);
     else if (key === "types") state.types.delete(value);
@@ -1535,6 +1573,7 @@
 
     searchInput.value = state.query;
     sortKeySelect.value = state.sortKey;
+    legalitySelect.value = state.legality;
     sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
 
     setLabel.textContent = state.sets.size === 1 ? Array.from(state.sets)[0] : state.sets.size ? `${state.sets.size} selected` : "All";
@@ -1575,7 +1614,7 @@
   const pageSize = 25;
 
   const openCardModal = async (cardId) => {
-    const card = cards.find((c) => String(c.id) === String(cardId));
+    const card = cardRows.find((c) => String(c.id) === String(cardId));
     if (!card) return;
     const isLandscape = String(card.orientation || "").trim().toLowerCase() === "landscape";
     const publicCode = escapeHtml(card.publicCode || "-");
@@ -1662,7 +1701,7 @@
     bindCardClicks();
     meta.textContent = `${rows.length} card(s) | Page ${state.page}/${pageCount} | Source: ${
       raw.source || "Riftbound Official"
-    }`;
+    }${unmatchedBannedNames.length ? ` | Unmatched banned names: ${unmatchedBannedNames.length}` : ""}`;
     renderSearchPager(rows.length, state.page, pageSize, pager, (p) => render(p));
     renderActiveFilterChips();
     syncCardsUrlState();
@@ -1710,6 +1749,11 @@
   sortDirBtn.addEventListener("click", () => {
     state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
     sortDirBtn.textContent = state.sortDir === "asc" ? "Asc" : "Desc";
+    render(1);
+  });
+  legalitySelect.addEventListener("change", () => {
+    const nextLegality = String(legalitySelect.value || "all").toLowerCase();
+    state.legality = ["all", "legal", "banned"].includes(nextLegality) ? nextLegality : "all";
     render(1);
   });
 
