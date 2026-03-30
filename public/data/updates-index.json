@@ -9,6 +9,13 @@
     },
     {
       "kind": "Rule",
+      "title": "Riftbound Tournament Rules (2026-03-30) (Text Version)",
+      "updatedAt": "2026-03-30",
+      "hrefPath": "pages/riftbound-tournament-rules-2026-03-30/",
+      "href": ""
+    },
+    {
+      "kind": "Rule",
       "title": "Riftbound Core Rules: Unleashed Patch Notes",
       "updatedAt": "2026-03-30",
       "hrefPath": "pages/riftbound-core-rules-unleashed-patch-notes/",
@@ -66,8 +73,8 @@
       "href": ""
     }
   ],
-  "count": 10,
+  "count": 11,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T17:58:52Z",
+  "generatedAt": "2026-03-30T18:05:09Z",
   "source": "riftboundoc derived updates index"
 }

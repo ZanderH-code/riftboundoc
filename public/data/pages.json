@@ -17,6 +17,14 @@
   },
   {
     "kind": "rule_page",
+    "id": "riftbound-tournament-rules-2026-03-30",
+    "title": "Riftbound Tournament Rules (2026-03-30)",
+    "summary": "Text version converted from PDF for online reading.",
+    "file": "content/pages/riftbound-tournament-rules-2026-03-30.md",
+    "updatedAt": "2026-03-30"
+  },
+  {
+    "kind": "rule_page",
     "id": "riftbound-core-rules-v1-2",
     "title": "Riftbound Core Rules v1.2",
     "summary": "Text version converted from PDF for online reading.",

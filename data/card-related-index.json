@@ -295,6 +295,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...or discarding a card. Example: 509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all. 509.4.d. The player wants to und...",
+              "query": "Pouty Poro",
+              "jumpQuery": "Pouty Poro",
+              "anchorText": "Pouty Poro",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.c.1."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -937,6 +953,22 @@
               "ruleId": ""
             }
           ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...ion: &quot;If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?&quot; 204.5.a.1.b. Appropriate question: &quot;Can point scoring abilities like Tryndamere&#x27;s score you the winning point...",
+              "query": "Tryndamere, Barbarian",
+              "jumpQuery": "Tryndamere, Barbarian",
+              "anchorText": "Tryndamere, Barbarian",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "204.5.a.1.b."
+            }
+          ]
         }
       ]
     },
@@ -1464,6 +1496,28 @@
         }
       ]
     },
+    "ogn-058-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...tting it onto the chain. Example: 509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all. 509.4.b. The player wants to make a diffe...",
+              "query": "Discipline",
+              "jumpQuery": "Discipline",
+              "anchorText": "Discipline",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.a.1."
+            }
+          ]
+        }
+      ]
+    },
     "ogn-059-298": {
       "faq": [],
       "errata": [],
@@ -1546,6 +1600,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...d.1. The trigger would change a point total. (Example card: Ahri, Alluring) 506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak) 506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Braw...",
+              "query": "Ahri, Alluring",
+              "jumpQuery": "Ahri, Alluring",
+              "anchorText": "Ahri, Alluring",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.2."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -1567,6 +1637,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...d.1. The trigger would change a point total. (Example card: Ahri, Alluring) 506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak) 506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Braw...",
+              "query": "Ahri, Alluring",
+              "jumpQuery": "Ahri, Alluring",
+              "anchorText": "Ahri, Alluring",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.2."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -2191,6 +2277,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...pact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student) 506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant) 506.3.d.6. A trigger would cause a game object to be exhausted...",
+              "query": "Ravenbloom Student",
+              "jumpQuery": "Ravenbloom Student",
+              "anchorText": "Ravenbloom Student",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.5."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -3122,6 +3224,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...se a game object to be exhausted or readied. (Example card: Miss Fortune, Captain) 506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer) 506.3.d.8. A player asks for public information that would be impacted by a...",
+              "query": "Miss Fortune, Captain",
+              "jumpQuery": "Miss Fortune, Captain",
+              "anchorText": "Miss Fortune, Captain",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.7."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -3143,6 +3261,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...se a game object to be exhausted or readied. (Example card: Miss Fortune, Captain) 506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer) 506.3.d.8. A player asks for public information that would be impacted by a...",
+              "query": "Miss Fortune, Captain",
+              "jumpQuery": "Miss Fortune, Captain",
+              "anchorText": "Miss Fortune, Captain",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.7."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -3166,6 +3300,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...he trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have a...",
+              "query": "Sett, Brawler",
+              "jumpQuery": "Sett, Brawler",
+              "anchorText": "Sett, Brawler",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.4."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -3187,6 +3337,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...he trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have a...",
+              "query": "Sett, Brawler",
+              "jumpQuery": "Sett, Brawler",
+              "anchorText": "Sett, Brawler",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.4."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -3352,6 +3518,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer) 506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information. 506.3.d.9. A player would...",
+              "query": "Stealthy Pursuer",
+              "jumpQuery": "Stealthy Pursuer",
+              "anchorText": "Stealthy Pursuer",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.8."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -3511,6 +3693,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...ger would cause a player to draw or discard. (Example card: Traveling Merchant) 506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain) 506.3.d.7. A trigger would cause a unit to move...",
+              "query": "Traveling Merchant",
+              "jumpQuery": "Traveling Merchant",
+              "anchorText": "Traveling Merchant",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.6."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -3869,6 +4067,22 @@
       ],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...tournaments own the cards that they correctly have in their possession at the time of dropping, including unopened packs. 414.6. If a player drops from a competition after a top placement cut has been made, no player is advanced in replacem...",
+              "query": "Possession",
+              "jumpQuery": "Possession",
+              "anchorText": "Possession",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "414.6."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -4978,6 +5192,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...otten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.) 506.3.d. Examples of observable impact: 506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring) 506.3.d.2...",
+              "query": "Obelisk of Power",
+              "jumpQuery": "Obelisk of Power",
+              "anchorText": "Obelisk of Power",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -5038,6 +5268,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "....d.2. The trigger would change a rune total. (Example card: Startipped Peak) 506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card...",
+              "query": "Startipped Peak",
+              "jumpQuery": "Startipped Peak",
+              "anchorText": "Startipped Peak",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.3."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -5228,6 +5474,22 @@
               "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...a card. Example: 509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all. 509.4.d. The player wants to undo a decision t...",
+              "query": "Void Gate",
+              "jumpQuery": "Void Gate",
+              "anchorText": "Void Gate",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.c.1."
             }
           ]
         }
@@ -6365,6 +6627,28 @@
       ],
       "rule": []
     },
+    "sfd-128-221": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...or not to place an optional trigger on the chain. (Example: Overzealous Fan) 506.4. A triggered ability that was forgotten never goes on the chain. 506.5. A triggered ability that was forgotten is still considered to have triggered for the...",
+              "query": "Overzealous Fan",
+              "jumpQuery": "Overzealous Fan",
+              "anchorText": "Overzealous Fan",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.4."
+            }
+          ]
+        }
+      ]
+    },
     "sfd-129-221": {
       "faq": [
         {
@@ -7150,6 +7434,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...he trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have a...",
+              "query": "Sett, Brawler",
+              "jumpQuery": "Sett, Brawler",
+              "anchorText": "Sett, Brawler",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.4."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -7171,6 +7471,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...he trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have a...",
+              "query": "Sett, Brawler",
+              "jumpQuery": "Sett, Brawler",
+              "anchorText": "Sett, Brawler",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.4."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -7816,6 +8132,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...or discarding a card. Example: 509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all. 509.4.d. The player wants to und...",
+              "query": "Pouty Poro",
+              "jumpQuery": "Pouty Poro",
+              "anchorText": "Pouty Poro",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.c.1."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -8073,6 +8405,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...d.1. The trigger would change a point total. (Example card: Ahri, Alluring) 506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak) 506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Braw...",
+              "query": "Ahri, Alluring",
+              "jumpQuery": "Ahri, Alluring",
+              "anchorText": "Ahri, Alluring",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.2."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -9955,7 +10303,24 @@
     "discipline": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...tting it onto the chain. Example: 509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all. 509.4.b. The player wants to make a diffe...",
+              "query": "Discipline",
+              "jumpQuery": "Discipline",
+              "anchorText": "Discipline",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.a.1."
+            }
+          ]
+        }
+      ]
     },
     "disintegrate": {
       "faq": [
@@ -12796,6 +13161,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...se a game object to be exhausted or readied. (Example card: Miss Fortune, Captain) 506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer) 506.3.d.8. A player asks for public information that would be impacted by a...",
+              "query": "Miss Fortune, Captain",
+              "jumpQuery": "Miss Fortune, Captain",
+              "anchorText": "Miss Fortune, Captain",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.7."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -13059,6 +13440,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...otten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.) 506.3.d. Examples of observable impact: 506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring) 506.3.d.2...",
+              "query": "Obelisk of Power",
+              "jumpQuery": "Obelisk of Power",
+              "anchorText": "Obelisk of Power",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -13147,7 +13544,24 @@
     "overzealous fan": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...or not to place an optional trigger on the chain. (Example: Overzealous Fan) 506.4. A triggered ability that was forgotten never goes on the chain. 506.5. A triggered ability that was forgotten is still considered to have triggered for the...",
+              "query": "Overzealous Fan",
+              "jumpQuery": "Overzealous Fan",
+              "anchorText": "Overzealous Fan",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.4."
+            }
+          ]
+        }
+      ]
     },
     "pack of wonders": {
       "faq": [
@@ -13394,6 +13808,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...tournaments own the cards that they correctly have in their possession at the time of dropping, including unopened packs. 414.6. If a player drops from a competition after a top placement cut has been made, no player is advanced in replacem...",
+              "query": "Possession",
+              "jumpQuery": "Possession",
+              "anchorText": "Possession",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "414.6."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -13415,6 +13845,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...or discarding a card. Example: 509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all. 509.4.d. The player wants to und...",
+              "query": "Pouty Poro",
+              "jumpQuery": "Pouty Poro",
+              "anchorText": "Pouty Poro",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.c.1."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -13609,6 +14055,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...pact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student) 506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant) 506.3.d.6. A trigger would cause a game object to be exhausted...",
+              "query": "Ravenbloom Student",
+              "jumpQuery": "Ravenbloom Student",
+              "anchorText": "Ravenbloom Student",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.5."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -14316,6 +14778,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...he trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have a...",
+              "query": "Sett, Brawler",
+              "jumpQuery": "Sett, Brawler",
+              "anchorText": "Sett, Brawler",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.4."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -15012,6 +15490,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "....d.2. The trigger would change a rune total. (Example card: Startipped Peak) 506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler) 506.3.d.4. The trigger would impact combat or other game procedures. A card...",
+              "query": "Startipped Peak",
+              "jumpQuery": "Startipped Peak",
+              "anchorText": "Startipped Peak",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.3."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -15033,6 +15527,22 @@
       "faq": [],
       "errata": [],
       "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer) 506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information. 506.3.d.9. A player would...",
+              "query": "Stealthy Pursuer",
+              "jumpQuery": "Stealthy Pursuer",
+              "anchorText": "Stealthy Pursuer",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.8."
+            }
+          ]
+        },
         {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
@@ -15890,6 +16400,22 @@
       "errata": [],
       "rule": [
         {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...ger would cause a player to draw or discard. (Example card: Traveling Merchant) 506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain) 506.3.d.7. A trigger would cause a unit to move...",
+              "query": "Traveling Merchant",
+              "jumpQuery": "Traveling Merchant",
+              "anchorText": "Traveling Merchant",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "506.3.d.6."
+            }
+          ]
+        },
+        {
           "id": "tournament-rules-january-update",
           "title": "Tournament Rules, January Update",
           "sourceTitle": "Tournament Rules, January Update",
@@ -16058,6 +16584,22 @@
               "anchorHeading": "March 2026 Tournament Rules Update & Changelog",
               "anchorIndex": 1,
               "ruleId": ""
+            }
+          ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...ion: &quot;If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?&quot; 204.5.a.1.b. Appropriate question: &quot;Can point scoring abilities like Tryndamere&#x27;s score you the winning point...",
+              "query": "Tryndamere, Barbarian",
+              "jumpQuery": "Tryndamere, Barbarian",
+              "anchorText": "Tryndamere, Barbarian",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "204.5.a.1.b."
             }
           ]
         }
@@ -16604,6 +17146,22 @@
               "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "1"
+            }
+          ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-03-30",
+          "title": "Riftbound Tournament Rules (2026-03-30)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "matches": [
+            {
+              "snippet": "...a card. Example: 509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all. 509.4.d. The player wants to undo a decision t...",
+              "query": "Void Gate",
+              "jumpQuery": "Void Gate",
+              "anchorText": "Void Gate",
+              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorIndex": 1,
+              "ruleId": "509.4.c.1."
             }
           ]
         }
@@ -17182,6 +17740,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-03-30T17:58:52Z",
+  "generatedAt": "2026-03-30T18:05:09Z",
   "source": "riftboundoc derived card related index"
 }
