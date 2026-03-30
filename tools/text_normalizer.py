@@ -96,6 +96,22 @@ def _split_known_joined_headers(text: str) -> str:
 def normalize_markdown_document(text: str, kind: str = "generic") -> str:
     out = normalize_whitespace(text)
     out = _split_known_joined_headers(out)
+    if kind == "page":
+        # Normalize common list-wrapper artifacts from official article HTML conversion.
+        def promote_list_label(match: re.Match) -> str:
+            label = str(match.group(1) or "").strip()
+            if (
+                label
+                and len(label) <= 80
+                and len(label.split()) <= 10
+                and not re.search(r"[.!?:]$", label)
+            ):
+                return f"\n\n## {label}"
+            return f"\n- {label}"
+
+        out = re.sub(r"\n-\s*\n[ \t]+([^\n]+)", promote_list_label, out)
+        out = re.sub(r"(?m)^\-\s*$", "", out)
+        out = re.sub(r"\n{3,}", "\n\n", out)
 
     lines = out.split("\n")
     normalized = []

@@ -1,15 +1,18 @@
+# Riftbound Core Rules: Unleashed Patch Notes
+
+Source: https://riftbound.leagueoflegends.com/en-us/news/rules-and-releases/riftbound-core-rules-unleashed-patch-notes/
+
+Published: 2026-03-30
+
 Welcome to the Patch Notes for Riftbound, Unleashed edition. Included in today's update are system clarifications and expansions, fixes to many logical or procedural errors, and the new rules required to play with the mechanics included in the Unleashed expansion.
 
 This rules update has three key goals:
 
--
-		To support the new expansion's cards and mechanics with rules that will explain how they function.
+- To support the new expansion's cards and mechanics with rules that will explain how they function.
 
--
-		To provide some clarity on rules changes and why we make them.
+- To provide some clarity on rules changes and why we make them.
 
--
-		To shore up some of our rules foundations that were unclear or in need of updating.
+- To shore up some of our rules foundations that were unclear or in need of updating.
 
 Our first goal for this update is to ensure that all the new cards in Unleashed work when they're released in China on April 8th. That has involved adding new rules systems, new keywords and individual rules, as well as modifying some extant rules to support new cards and systems introduced in Unleashed. Thankfully the work done in the Spiritforged rules update allowed us to streamline some of these rules by reusing the systems introduced then.
 
@@ -21,8 +24,7 @@ And although the changes you'll see might seem big at first, the goals when the 
 
 Now, let's take a look at the changes in this update:
 
--
-		Unleashed Addition: XP, Hunt, Level
+## Unleashed Addition: XP, Hunt, Level
 
 - XP is the marquee mechanic for Unleashed-players can now gain XP and unit abilities can reference that XP.
 
@@ -42,8 +44,7 @@ Now, let's take a look at the changes in this update:
 
 - NEW RULE: Level as a keyword was added
 
--
-		Unleashed Addition: [>] Symbols
+## Unleashed Addition: [>] Symbols
 
 - Since the Legion keyword was introduced in Origins, activated abilities with Legion have been a point of confusion. Does the Legion text only include the parts after the keyword appears? Can you activate the ability if you haven't played a card this turn? Honestly, this has been a bit of a templating nightmare.
 
@@ -51,8 +52,7 @@ Now, let's take a look at the changes in this update:
 
 - NEW SYSTEM: [>] Symbol added.
 
--
-		Unleashed Addition: Dependent Keywords, Updated Legion
+## Unleashed Addition: Dependent Keywords, Updated Legion
 
 - As mentioned above, dependent keywords are being clarified and supported in this update. We already had one dependent keyword that was printed on cards in Origins (the aforementioned Legion) and with the addition of Level it only made sense to give those keywords a bit more structure in our rules. Additionally, the Spiritforged Rules Update gave us the machinery needed to make these abilities significantly easier to understand with the concept of inactive text.
 
@@ -64,8 +64,7 @@ Now, let's take a look at the changes in this update:
 
 - CLARIFIED: Legion is a dependent keyword.
 
--
-		Unleashed Addition: Ambush, Conditional Action and Reaction
+## Unleashed Addition: Ambush, Conditional Action and Reaction
 
 - The bot gank lives on in the Ambush keyword appearing on some units in Unleashed. Units with Ambush have two passive abilities: the first reads "I may be played to a battlefield where you control Units" while the second reads "I have [Reaction] as long as I'm being played to a battlefield where you control Units." Fortunately, in Riftbound, you have the ability to control when your jungle shows up to a team fight.
 
@@ -77,8 +76,7 @@ Now, let's take a look at the changes in this update:
 
 - NEW RULE: If the chain item does not fulfill the conditions by the time "step 5: check legality" has been reached, the actions taken while playing or activating the chain item are undone and it is returned to the zone it was played from if it is a card.
 
--
-		Rules Update: Winning the Game
+## Rules Update: Winning the Game
 
 - Previously, there were two conflicting rules for winning the game: a player would win if they had points equal to the Victory Score in a cleanup, or they would win immediately if they accrued points equal to the Victory Score without needing to wait for a cleanup. We went back and forth on how to fix this, and ended up on the changes below. This should relegate unintentionally drawn games to a marginal occurrence and make it clear precisely when players win.
 
@@ -86,8 +84,7 @@ Now, let's take a look at the changes in this update:
 
 - NEW RULE:  If a player gains two or more points as result of burn outs processed in sequence and fulfills the above conditions, they win the game immediately without needing to wait for a cleanup.
 
--
-		Rules Update: Combats and Showdowns
+## Rules Update: Combats and Showdowns
 
 - The vast majority of players intuit that a showdown should be able to transition to a combat when units controlled by different players become present there, but the rules procedurally required the current showdown to end before a combat could begin. Although there were positives to that structure, it ultimately led to problems in card design long term.
 
@@ -101,15 +98,13 @@ Now, let's take a look at the changes in this update:
 
 - NEW RULE: If the turn is in a showdown open state and combat is staged at a battlefield with an ongoing showdown, a cleanup will cause the showdown to become a combat showdown.
 
--
-		Rules Update: The Resolution Step of Combat
+## Rules Update: The Resolution Step of Combat
 
 - To support the "winning combat" rules introduced in Spiritforged, we've updated the Resolution Step procedures for combat using the new HOT FEPR system (more on that below). The first thing you'll notice has changed is the Combat Cleanup: units are healed and attacking units are recalled. After the Combat Cleanup, we'll determine the winner and loser of the combat. If units were recalled in the Combat Cleanup, if there are still units remaining controlled by different players, or if there are no units at the battlefield, then the combat will have "no result". Otherwise, the player who has units remaining at the battlefield wins. Then, if applicable, a player will conquer the battlefield. Finally players and units lose the attacker or defender designation and any "this combat" effects expire.
 
 - CLARIFIED: The Resolution Step has been reorganized.
 
--
-		Rules Update: "May" Triggered Abilities and Extra Conditions
+## Rules Update: "May" Triggered Abilities and Extra Conditions
 
 - Triggered abilities that say "may" are now optional to place on the chain, and triggered abilities that say "[do X] to [do Y]" (costs within instructions) will have the cost ("[do X]") be incurred when placing the triggered ability on the chain.
 
@@ -121,8 +116,7 @@ Now, let's take a look at the changes in this update:
 
 - Replace
 
--
-				Replace is a game action that already has appeared once in the Core Rules Document sans rules for how it works (try to find it if you can!). Cards printed in Unleashed gave us the opportunity to give rules to how objects are replaced and where the replaced objects go. In short, they go to the same zone that banished cards go. Whatever token replaces that object will inherit all effects and statuses that that object had. Some effects may allow the replaced object to be swapped back, so don't worry about it being lost forever.
+- Replace is a game action that already has appeared once in the Core Rules Document sans rules for how it works (try to find it if you can!). Cards printed in Unleashed gave us the opportunity to give rules to how objects are replaced and where the replaced objects go. In short, they go to the same zone that banished cards go. Whatever token replaces that object will inherit all effects and statuses that that object had. Some effects may allow the replaced object to be swapped back, so don't worry about it being lost forever.
 
 - NEW RULE: Replace action added
 
@@ -150,8 +144,7 @@ Now, let's take a look at the changes in this update:
 
 - CLARIFIED: Copy effects that copy only a specific set of traits from a game object will specify those traits, and only the specified traits will be copied.
 
--
-						NEW RULE: When a game object or some of its traits become a copy of another game object, all of the copied traits become the game object's new copyable traits.
+- NEW RULE: When a game object or some of its traits become a copy of another game object, all of the copied traits become the game object's new copyable traits.
 
 - If you copy a copy, the new copy becomes a copy of the originally copied object. Copy copy copy.
 
@@ -261,14 +254,12 @@ Now, let's take a look at the changes in this update:
 
 - Unique
 
--
-				Unique already existed on three cards in Spiritforged, but never received a corresponding part of the keywords section of the Core Rules Document. That is no longer an issue.
+- Unique already existed on three cards in Spiritforged, but never received a corresponding part of the keywords section of the Core Rules Document. That is no longer an issue.
 
 - NEW RULE: Unique as a keyword was added
 
 - Backline
 
--
-				Backline is the keyword version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now that cards in Unleashed are being printed with the same ability we took the opportunity to give them a bit of love in the rules. Units with Backline must be assigned damage during the Combat Damage Step after any other unit with the same controller that doesn't have Backline.
+- Backline is the keyword version of the ability that both Caitlyn, Patrolling and Soraka, Wanderer feature that requires them to be assigned combat damage last. There were some points of confusion with how this ability worked (especially in multiples), and now that cards in Unleashed are being printed with the same ability we took the opportunity to give them a bit of love in the rules. Units with Backline must be assigned damage during the Combat Damage Step after any other unit with the same controller that doesn't have Backline.
 
 - NEW RULE: Backline as a keyword was added

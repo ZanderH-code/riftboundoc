@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
-from text_normalizer import markdown_to_plain, normalize_markdown_document
+from text_normalizer import markdown_to_plain, normalize_inline_text, normalize_markdown_document
 
 NEXT_DATA_RE = re.compile(
     r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL | re.IGNORECASE
@@ -53,6 +53,16 @@ def html_to_markdown(raw_html: str) -> str:
     return text.strip()
 
 
+def iso_to_date(value: str) -> str:
+    raw = str(value or "").strip()
+    if not raw:
+        return dt.date.today().isoformat()
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})", raw)
+    if m:
+        return m.group(1)
+    return dt.date.today().isoformat()
+
+
 def parse_page(page_html: str, url: str) -> dict:
     m = NEXT_DATA_RE.search(page_html)
     if not m:
@@ -70,21 +80,25 @@ def parse_page(page_html: str, url: str) -> dict:
         if md:
             blocks.append(md)
 
-    content = normalize_markdown_document("\n\n".join(blocks).strip(), kind="page")
-    if not content:
+    body_md = normalize_markdown_document("\n\n".join(blocks).strip(), kind="page")
+    if not body_md:
         raise RuntimeError(f"No articleRichText content parsed from page: {url}")
 
     path = urlparse(url).path.rstrip("/")
     slug = path.split("/")[-1] if path else "official-page"
-    title = str(page.get("title") or slug.replace("-", " ").title()).strip()
-    summary = markdown_to_plain(content)[:180]
-    today = dt.date.today().isoformat()
+    title = normalize_inline_text(str(page.get("title") or slug.replace("-", " ").title()).strip())
+    published_at = iso_to_date(page.get("displayedPublishDate"))
+    content = normalize_markdown_document(
+        f"# {title}\n\nSource: {url}\n\nPublished: {published_at}\n\n{body_md}",
+        kind="page",
+    )
+    summary = normalize_inline_text(str(page.get("description") or "").strip()) or markdown_to_plain(content)[:180]
     return {
         "id": slug,
         "title": title,
         "summary": summary,
         "content": content,
-        "updatedAt": today,
+        "updatedAt": published_at,
         "file": f"content/pages/{slug}.md",
     }
 

@@ -1,3 +1,9 @@
+# March 2026 Tournament Rules Update & Changelog
+
+Source: https://riftbound.leagueoflegends.com/en-us/news/announcements/march-2026-tournament-rules-update--changelog/
+
+Published: 2026-03-30
+
 Hey Riftbounders,
 
 Vriss here with a new Tournament Rules Update. Since our last update, even more players and judges have had the chance to dive into Riftbound. We've been keeping a close eye on events at all organized play levels and gathering feedback from players and judges alike. Our north star is to ensure all Riftbound events have clear expectations and that they feel consistent and fair, from Nexus Nights at your LGS all the way to Worlds. With this goal in mind, here's a look at the major updates and why we're making them.
@@ -54,8 +60,6 @@ We've noticed players have been leaving their recycled runes face-down on the bo
 - Runes being recycled in the incorrect orderMoving forward, when a card is recycled, it must immediately be put on the bottom of the appropriate deck.
 
 That covers the major highlights! For more detailed information and these changes and everything included in this update, check out the Tournament Rules document and full list of changes. Until next time, may your conquers be many and holds never break!
-
--
 
 ### Changelog For The March 2026 Tournament Rules Update
 - Clarifying player rewinds and judge rewinds, removing additional information as a framework.
