@@ -412,6 +412,7 @@ main > section h2 {
   border: 1px solid #34475c;
   border-radius: 999px;
   padding: 6px 12px;
+  min-height: 36px;
   background: #141c28;
   color: #d3deea;
   cursor: pointer;
@@ -2149,8 +2150,8 @@ body.reader-immersive .pdf-frame {
 }
 
 .footer-icon-link {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
   border: 1px solid #34506c;
   background: #142133;
@@ -2169,8 +2170,8 @@ body.reader-immersive .pdf-frame {
 }
 
 .footer-icon-link svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
@@ -2250,19 +2251,41 @@ body.reader-immersive .pdf-frame {
 
 @media (max-width: 800px) {
   .topbar .container {
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 8px;
   }
 
-  nav {
+  .topbar nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 2px 1px 4px;
+    gap: 8px;
   }
 
-  nav a {
+  .topbar nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar nav a {
     flex: 0 0 auto;
+    min-height: 38px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .topbar .brand {
+    align-self: flex-start;
   }
 
   .brand {
@@ -2302,6 +2325,7 @@ body.reader-immersive .pdf-frame {
 
   .search-pager button {
     flex: 0 0 auto;
+    min-height: 38px;
   }
 
   .cards-filter-top {
@@ -2334,6 +2358,20 @@ body.reader-immersive .pdf-frame {
 
   .cards-slider-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cards-range-wrap {
+    height: 32px;
+  }
+
+  .cards-range-wrap input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cards-range-wrap input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
   }
 
   :root {
@@ -2422,6 +2460,11 @@ body.reader-immersive .pdf-frame {
 
   .cards-multi-item {
     padding: 11px 10px;
+  }
+
+  .updates-type-btn {
+    min-height: 38px;
+    padding: 8px 12px;
   }
 
   .card-item {
