@@ -42,3 +42,26 @@ test("updates type filter works", async ({ page }) => {
     await expect(rows.nth(i)).toContainText("Type: FAQ");
   }
 });
+
+test("mobile key shells stay within viewport width", async ({ page }) => {
+  await page.setViewportSize({ width: 393, height: 851 });
+
+  const checks = [
+    { path: "", selectors: ["main", ".hero-home", ".search-panel"] },
+    { path: "cards/", selectors: ["main", "#cards-filters", ".cards-results-shell"] },
+    { path: "faq/", selectors: ["main", ".page-hero", ".content-section"] },
+  ];
+
+  for (const check of checks) {
+    await page.goto(check.path);
+    for (const selector of check.selectors) {
+      const loc = page.locator(selector).first();
+      await expect(loc).toBeVisible();
+      const box = await loc.boundingBox();
+      expect(box).toBeTruthy();
+      if (!box) continue;
+      expect(box.x).toBeGreaterThanOrEqual(-1);
+      expect(box.x + box.width).toBeLessThanOrEqual(394);
+    }
+  }
+});

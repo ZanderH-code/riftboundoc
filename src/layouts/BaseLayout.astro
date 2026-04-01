@@ -27,7 +27,10 @@ const scriptVersion = SITE_META.assetVersion;
 <html lang="en" data-site-version={siteVersion} data-asset-version={scriptVersion}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"
+    />
     <meta name="description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -47,6 +50,19 @@ const scriptVersion = SITE_META.assetVersion;
         siteVersion,
         assetVersion: scriptVersion,
       };
+
+      const applyAppViewportWidth = () => {
+        const vv = window.visualViewport;
+        const width = vv && Number.isFinite(vv.width) ? vv.width : window.innerWidth;
+        if (Number.isFinite(width) && width > 0) {
+          document.documentElement.style.setProperty('--app-vw', `${Math.round(width)}px`);
+        }
+      };
+      applyAppViewportWidth();
+      window.addEventListener('resize', applyAppViewportWidth, { passive: true });
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', applyAppViewportWidth, { passive: true });
+      }
 
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

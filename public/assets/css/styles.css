@@ -17,6 +17,7 @@
   --reader-line-height: 1.72;
   --reader-max-width: 100%;
   --anchor-offset: 146px;
+  --app-vw: 100vw;
 }
 
 * {
@@ -40,16 +41,16 @@ a {
 }
 
 .container {
-  width: min(1240px, 92%);
+  width: min(1240px, calc(var(--app-vw) * 0.92));
   margin: 0 auto;
 }
 
 .container-wide {
-  width: min(1600px, 96vw);
+  width: min(1600px, calc(var(--app-vw) * 0.96));
 }
 
 .container-content {
-  width: min(1360px, 94vw);
+  width: min(1360px, calc(var(--app-vw) * 0.94));
 }
 
 .topbar {
@@ -67,7 +68,10 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding: 14px 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 14px clamp(10px, 2.8vw, 18px);
 }
 
 .brand {
@@ -150,7 +154,12 @@ main > section h2 {
 
 .page-shell {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 22px;
+}
+
+.page-shell > * {
+  min-width: 0;
 }
 
 .page-hero {
@@ -261,7 +270,12 @@ main > section h2 {
 
 .list {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
+}
+
+.list > * {
+  min-width: 0;
 }
 
 .list-rich {
@@ -534,7 +548,12 @@ main > section h2 {
 
 .cards-main {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
+  min-width: 0;
+}
+
+.cards-main > * {
   min-width: 0;
 }
 
@@ -613,6 +632,10 @@ main > section h2 {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+.cards-top-actions > * {
+  min-width: 0;
 }
 
 .cards-page .cards-filter-shell :is(
@@ -2250,38 +2273,40 @@ body.reader-immersive .pdf-frame {
 }
 
 @media (max-width: 800px) {
+  .topbar {
+    overflow-x: clip;
+  }
+
   .topbar .container {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     gap: 8px;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .topbar nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
     align-items: center;
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow: visible;
+    white-space: normal;
     padding: 2px 1px 4px;
     gap: 8px;
-  }
-
-  .topbar nav::-webkit-scrollbar {
-    display: none;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .topbar nav a {
-    flex: 0 0 auto;
     min-height: 38px;
     padding: 8px 12px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .topbar .brand {
@@ -2335,7 +2360,16 @@ body.reader-immersive .pdf-frame {
   .cards-top-actions {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 74px 74px 74px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #cards-sort-key {
+    min-width: 0;
+  }
+
+  .cards-icon-btn {
+    width: 100%;
+    min-width: 0;
   }
 
   .cards-filter-row {
@@ -2403,11 +2437,15 @@ body.reader-immersive .pdf-frame {
 
 @media (max-width: 680px) {
   .container {
-    width: min(96%, 100%);
+    width: min(1240px, calc(var(--app-vw) * 0.96));
   }
 
   .container-wide {
-    width: min(96%, 100%);
+    width: min(1600px, calc(var(--app-vw) * 0.96));
+  }
+
+  .container-content {
+    width: min(1360px, calc(var(--app-vw) * 0.96));
   }
 
   main {
@@ -2438,7 +2476,11 @@ body.reader-immersive .pdf-frame {
   }
 
   .cards-top-actions {
-    grid-template-columns: 1fr 62px 62px 62px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #cards-sort-key {
+    grid-column: 1 / -1;
   }
 
   .cards-select-grid {
