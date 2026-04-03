@@ -1178,8 +1178,13 @@
     }
     wrap.hidden = false;
     const toHref = (id, hitLike) => {
-      const query = String(hitLike?.jumpQuery || hitLike?.query || "");
-      const relQuery = String(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "");
+      const query = String(hitLike?.query || hitLike?.jumpQuery || "");
+      // For FAQ/Errata, always prefer the card-name query term for stable in-document jump.
+      // anchorText may be a long snippet paragraph and can degrade matching precision.
+      const relQuery =
+        kind === "rule"
+          ? String(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "")
+          : String(hitLike?.query || hitLike?.anchorText || hitLike?.jumpQuery || "");
       const relHeading = String(hitLike?.anchorHeading || "");
       const relRuleId =
         String(hitLike?.ruleId || "").trim() ||

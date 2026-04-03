@@ -1,4 +1,4 @@
-const CACHE_VERSION = "20260402v1";
+const CACHE_VERSION = "20260402v2";
 const APP_SHELL_CACHE = `rb-shell-${CACHE_VERSION}`;
 const RULES_CACHE = `rb-rules-${CACHE_VERSION}`;
 const CARD_IMG_CACHE = `rb-card-img-${CACHE_VERSION}`;
