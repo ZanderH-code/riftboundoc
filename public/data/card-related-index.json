@@ -5589,6 +5589,28 @@
         }
       ]
     },
+    "sfd-154-221": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...in the above PDF, or in the text below. Spiritforged Cards Guards! [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) Play a 2 [M] Sand Soldier unit token. Then do this: You may pay [C] to ready it. [OLD TEXT] [Hidden] (Hi...",
+              "query": "Guards!",
+              "jumpQuery": "Guards!",
+              "anchorText": "Guards!",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
     "sfd-155-221": {
       "faq": [],
       "errata": [],
@@ -5765,6 +5787,28 @@
           ]
         }
       ]
+    },
+    "sfd-184-221": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...2 [M] Sand Soldier unit token. You may pay [C] to ready it. Relentless Pursuit [NEW TEXT] [Action] (Play on your turn or in showdowns.) Move a friendly unit. You may attach up to one Equipment with the same controller to it. This turn, that...",
+              "query": "Relentless Pursuit",
+              "jumpQuery": "Relentless Pursuit",
+              "anchorText": "Relentless Pursuit",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
     },
     "sfd-186-221": {
       "faq": [],
@@ -6634,6 +6678,28 @@
         }
       ]
     },
+    "unl-081-219": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...start of its controller's Beginning Phase, before scoring.) Keeper of Masks [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) [Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.) When you...",
+              "query": "Keeper of Masks",
+              "jumpQuery": "Keeper of Masks",
+              "anchorText": "Keeper of Masks",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
     "unl-082-219": {
       "faq": [],
       "errata": [],
@@ -6678,6 +6744,72 @@
         }
       ]
     },
+    "unl-120-219": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...two Reflection unit tokens here. They become copies of me. Rengar, Trophy Hunter [NEW TEXT] [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) I can [Ambush] to a battlefield where there are enemy units, even...",
+              "query": "Rengar, Trophy Hunter",
+              "jumpQuery": "Rengar, Trophy Hunter",
+              "anchorText": "Rengar, Trophy Hunter",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
+    "unl-120a-219": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...two Reflection unit tokens here. They become copies of me. Rengar, Trophy Hunter [NEW TEXT] [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) I can [Ambush] to a battlefield where there are enemy units, even...",
+              "query": "Rengar, Trophy Hunter",
+              "jumpQuery": "Rengar, Trophy Hunter",
+              "anchorText": "Rengar, Trophy Hunter",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
+    "unl-139-219": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...d 3 [M] or less, you may play this from your trash for [A]. Bone Skewer [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) Choose a battlefield. An opponent reveals their hand. You may choose a unit from it. They play that...",
+              "query": "Bone Skewer",
+              "jumpQuery": "Bone Skewer",
+              "anchorText": "Bone Skewer",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
     "unl-160-219": {
       "faq": [],
       "errata": [],
@@ -6700,9 +6832,48 @@
         }
       ]
     },
+    "unl-186-219": {
+      "faq": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...hen I conquer, you may move me to my base.\" Unleashed Cards Death from Below [NEW TEXT] Kill a unit at a battlefield. Then, if it had 3 [M] or less, do this: You may play this from your trash for [A]. [OLD TEXT] Kill a unit at a battlefield...",
+              "query": "Death from Below",
+              "jumpQuery": "Death from Below",
+              "anchorText": "Death from Below",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
+      "rule": []
+    },
     "unl-199-219": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...un] it. (It doesn't deal combat damage this turn.) Leblanc, Deceiver [NEW TEXT] When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. G...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -6724,7 +6895,24 @@
     },
     "unl-200-219": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...becomes a copy of another unit there. Give it [Temporary]. Mirror Image [NEW TEXT] Choose a unit. Play a ready Reflection unit token to your base. Then do this: It becomes a copy of that unit. Give it [Temporary]. (Kill it at the start of...",
+              "query": "Mirror Image",
+              "jumpQuery": "Mirror Image",
+              "anchorText": "Mirror Image",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -6768,7 +6956,24 @@
     },
     "unl-235-219": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...un] it. (It doesn't deal combat damage this turn.) Leblanc, Deceiver [NEW TEXT] When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. G...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -6790,7 +6995,24 @@
     },
     "unl-235-star-219": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...un] it. (It doesn't deal combat damage this turn.) Leblanc, Deceiver [NEW TEXT] When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. G...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -6917,7 +7139,24 @@
     },
     "unl-t06": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...r or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. Give it [Temporary]. [OLD TEXT] When you conquer or hold, you may discard 1 and exhaust me to pl...",
+              "query": "Reflection",
+              "jumpQuery": "Reflection",
+              "anchorText": "Reflection",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -7731,7 +7970,24 @@
     },
     "bone skewer": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...d 3 [M] or less, you may play this from your trash for [A]. Bone Skewer [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) Choose a battlefield. An opponent reveals their hand. You may choose a unit from it. They play that...",
+              "query": "Bone Skewer",
+              "jumpQuery": "Bone Skewer",
+              "anchorText": "Bone Skewer",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "boneshiver": {
@@ -8542,7 +8798,24 @@
     },
     "death from below": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...hen I conquer, you may move me to my base.\" Unleashed Cards Death from Below [NEW TEXT] Kill a unit at a battlefield. Then, if it had 3 [M] or less, do this: You may play this from your trash for [A]. [OLD TEXT] Kill a unit at a battlefield...",
+              "query": "Death from Below",
+              "jumpQuery": "Death from Below",
+              "anchorText": "Death from Below",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "deathgrip": {
@@ -8586,7 +8859,24 @@
     },
     "deceiver": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...un] it. (It doesn't deal combat damage this turn.) Leblanc, Deceiver [NEW TEXT] When you conquer or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. G...",
+              "query": "Deceiver",
+              "jumpQuery": "Deceiver",
+              "anchorText": "Deceiver",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -9826,7 +10116,24 @@
     },
     "guards!": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...in the above PDF, or in the text below. Spiritforged Cards Guards! [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) Play a 2 [M] Sand Soldier unit token. Then do this: You may pay [C] to ready it. [OLD TEXT] [Hidden] (Hi...",
+              "query": "Guards!",
+              "jumpQuery": "Guards!",
+              "anchorText": "Guards!",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "guerilla warfare": {
@@ -10701,7 +11008,24 @@
     },
     "keeper of masks": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...start of its controller's Beginning Phase, before scoring.) Keeper of Masks [NEW TEXT] [Hidden] (Hide now for [A] to react with later for [0].) [Temporary] (Kill me at the start of my controller's Beginning Phase, before scoring.) When you...",
+              "query": "Keeper of Masks",
+              "jumpQuery": "Keeper of Masks",
+              "anchorText": "Keeper of Masks",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "keeper of the hammer": {
@@ -11198,7 +11522,24 @@
     },
     "mirror image": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...becomes a copy of another unit there. Give it [Temporary]. Mirror Image [NEW TEXT] Choose a unit. Play a ready Reflection unit token to your base. Then do this: It becomes a copy of that unit. Give it [Temporary]. (Kill it at the start of...",
+              "query": "Mirror Image",
+              "jumpQuery": "Mirror Image",
+              "anchorText": "Mirror Image",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -12153,7 +12494,24 @@
     },
     "reflection": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...r or hold, you may discard 1 and exhaust me to play a ready Reflection unit token there. Then do this: It becomes a copy of another unit there. Give it [Temporary]. [OLD TEXT] When you conquer or hold, you may discard 1 and exhaust me to pl...",
+              "query": "Reflection",
+              "jumpQuery": "Reflection",
+              "anchorText": "Reflection",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": [
         {
           "id": "riftbound-core-rules-v1-3",
@@ -12258,7 +12616,24 @@
     },
     "relentless pursuit": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...2 [M] Sand Soldier unit token. You may pay [C] to ready it. Relentless Pursuit [NEW TEXT] [Action] (Play on your turn or in showdowns.) Move a friendly unit. You may attach up to one Equipment with the same controller to it. This turn, that...",
+              "query": "Relentless Pursuit",
+              "jumpQuery": "Relentless Pursuit",
+              "anchorText": "Relentless Pursuit",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "relentless storm": {
@@ -12356,7 +12731,24 @@
     },
     "rengar, trophy hunter": {
       "faq": [],
-      "errata": [],
+      "errata": [
+        {
+          "id": "unleashed-errata-updates",
+          "title": "Unleashed Errata Updates",
+          "sourceTitle": "Unleashed Errata Updates",
+          "matches": [
+            {
+              "snippet": "...two Reflection unit tokens here. They become copies of me. Rengar, Trophy Hunter [NEW TEXT] [Ambush] (You may play me as a [Reaction] to a battlefield where you have units.) I can [Ambush] to a battlefield where there are enemy units, even...",
+              "query": "Rengar, Trophy Hunter",
+              "jumpQuery": "Rengar, Trophy Hunter",
+              "anchorText": "Rengar, Trophy Hunter",
+              "anchorHeading": "Unleashed Errata Updates",
+              "anchorIndex": 1,
+              "ruleId": ""
+            }
+          ]
+        }
+      ],
       "rule": []
     },
     "rengar, unseen": {
@@ -15283,6 +15675,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-01T01:53:22Z",
+  "generatedAt": "2026-04-03T01:15:17Z",
   "source": "riftboundoc derived card related index"
 }
