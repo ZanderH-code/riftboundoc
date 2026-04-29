@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "kind": "FAQ",
+      "title": "Unleashed Rules FAQ and Clarifications",
+      "updatedAt": "2026-04-29",
+      "hrefPath": "faq-detail/?id=unleashed-rules-faq-and-clarifications"
+    },
+    {
+      "kind": "FAQ",
+      "title": "Riftbound Spiritforged FAQ",
+      "updatedAt": "2026-04-29",
+      "hrefPath": "faq-detail/?id=riftbound-spiritforged-faq"
+    },
+    {
+      "kind": "FAQ",
+      "title": "Riftbound Origins FAQ",
+      "updatedAt": "2026-04-29",
+      "hrefPath": "faq-detail/?id=riftbound-origins-faq"
+    },
+    {
       "kind": "Errata",
       "title": "Unleashed Errata Updates",
       "updatedAt": "2026-04-03",
@@ -51,22 +69,10 @@
       "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
       "updatedAt": "2026-02-25",
       "hrefPath": "faq-detail/?id=rq-vegas-2026-rulings"
-    },
-    {
-      "kind": "FAQ",
-      "title": "Riftbound Origins FAQ",
-      "updatedAt": "2026-02-18",
-      "hrefPath": "faq-detail/?id=riftbound-origins-faq"
-    },
-    {
-      "kind": "FAQ",
-      "title": "Riftbound Spiritforged FAQ",
-      "updatedAt": "2026-02-18",
-      "hrefPath": "faq-detail/?id=riftbound-spiritforged-faq"
     }
   ],
-  "count": 10,
+  "count": 11,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-03T03:11:05Z",
+  "generatedAt": "2026-04-29T19:59:32Z",
   "source": "riftboundoc derived updates index"
 }

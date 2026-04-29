@@ -5,7 +5,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from urllib.request import urlopen
 
 from text_normalizer import markdown_to_plain, normalize_markdown_document
@@ -22,8 +22,28 @@ def fetch_text(url: str) -> str:
     return raw.decode("utf-8", errors="replace")
 
 
-def html_to_markdown(raw_html: str) -> str:
+def html_to_markdown(raw_html: str, page_url: str = "") -> str:
     text = raw_html
+    text = re.sub(
+        r'<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>',
+        lambda m: f"![{strip_tags(m.group(2)).strip() or 'FAQ image'}]({urljoin(page_url, m.group(1))})",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    text = re.sub(
+        r'<img[^>]*alt="([^"]*)"[^>]*src="([^"]+)"[^>]*>',
+        lambda m: f"![{strip_tags(m.group(1)).strip() or 'FAQ image'}]({urljoin(page_url, m.group(2))})",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    text = re.sub(
+        r'<img[^>]*src="([^"]+)"[^>]*>',
+        lambda m: f"![FAQ image]({urljoin(page_url, m.group(1))})",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    text = re.sub(r"</figure>", "\n\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<figure[^>]*>", "", text, flags=re.IGNORECASE)
     text = re.sub(
         r'<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
         lambda m: f"[{strip_tags(m.group(2)).strip()}]({m.group(1)})",
@@ -49,7 +69,7 @@ def strip_tags(raw_html: str) -> str:
     out = re.sub(r"<[^>]+>", "", raw_html)
     return html.unescape(out)
 
-def build_from_accordion(blades):
+def build_from_accordion(blades, page_url: str):
     blocks = []
     for blade in blades:
         if blade.get("type") != "articleRichTextAccordion":
@@ -62,7 +82,7 @@ def build_from_accordion(blades):
         for group in blade.get("groups") or []:
             question = str(group.get("label") or "").strip()
             body = (group.get("content") or {}).get("body", "")
-            answer = html_to_markdown(body)
+            answer = html_to_markdown(body, page_url=page_url)
             if not question and not answer:
                 continue
             if question:
@@ -74,13 +94,13 @@ def build_from_accordion(blades):
     return "\n\n".join(blocks).strip()
 
 
-def build_from_rich_text(blades):
+def build_from_rich_text(blades, page_url: str):
     chunks = []
     for blade in blades:
         if blade.get("type") != "articleRichText":
             continue
         body = (blade.get("richText") or {}).get("body", "")
-        md = html_to_markdown(body)
+        md = html_to_markdown(body, page_url=page_url)
         if md:
             chunks.append(md)
     return "\n\n".join(chunks).strip()
@@ -94,8 +114,8 @@ def parse_faq_document(page_html: str, url: str):
     page = root.get("props", {}).get("pageProps", {}).get("page", {})
     blades = page.get("blades", [])
 
-    accordion_md = build_from_accordion(blades)
-    rich_md = build_from_rich_text(blades)
+    accordion_md = build_from_accordion(blades, page_url=url)
+    rich_md = build_from_rich_text(blades, page_url=url)
     content = accordion_md if accordion_md else rich_md
     if not content:
         return None
