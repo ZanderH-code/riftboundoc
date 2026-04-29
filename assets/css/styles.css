@@ -2042,6 +2042,52 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   margin: 0.62em 0;
 }
 
+.faq-card-embed {
+  margin: 1rem auto 1.25rem;
+  max-width: 340px;
+}
+
+.faq-card-embed-link {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #33506a;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #18273a, #101c2a);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.faq-card-embed-link:hover {
+  transform: translateY(-2px);
+  border-color: #5cc6f5;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(92, 198, 245, 0.35);
+}
+
+.faq-card-embed-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 744 / 1039;
+  object-fit: cover;
+}
+
+.faq-card-embed-meta {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px 12px;
+}
+
+.faq-card-embed-meta strong {
+  color: #eaf3ff;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.faq-card-embed-meta span {
+  color: #9fb8cf;
+  font-size: 0.86rem;
+}
+
 #page-content h1,
 #page-content h2,
 #page-content h3,

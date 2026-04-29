@@ -262,7 +262,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...a change from previous rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !F...",
+              "snippet": "...a change from previous rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? Af...",
               "query": "Captain Farron",
               "jumpQuery": "Captain Farron",
               "anchorText": "Captain Farron",
@@ -328,7 +328,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\n!FAQ image Yes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
+              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\nYes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
@@ -350,7 +350,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unlicensed Armory\n\n!FAQ image\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
+              "snippet": "Unlicensed Armory\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
@@ -428,7 +428,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Blind Fury\n\n!FAQ image\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
+              "snippet": "Blind Fury\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
@@ -521,7 +521,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. !FAQ image The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effec...",
+              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that che...",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -559,7 +559,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. !FAQ image The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effec...",
+              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that che...",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -581,7 +581,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...a unit at a battlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? !FAQ image Yes! This means that th...",
+              "snippet": "...a unit at a battlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? Yes! This means that these two spe...",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -597,7 +597,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Falling Star\n\n!FAQ imageDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
+              "snippet": "Falling Star\n\nDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -636,7 +636,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Ka...",
+              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Karma, Channe...",
               "query": "Jinx, Demolitionist",
               "jumpQuery": "Jinx, Demolitionist",
               "anchorText": "Jinx, Demolitionist",
@@ -675,7 +675,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Ka...",
+              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Karma, Channe...",
               "query": "Jinx, Demolitionist",
               "jumpQuery": "Jinx, Demolitionist",
               "anchorText": "Jinx, Demolitionist",
@@ -869,7 +869,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\n!FAQ image\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.",
+              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.\n\nA spell instructs you to deal damage to a unit during its resolution, and that unit is put into the trash during the cleanup immediately following that spell's resolution.",
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
@@ -1028,7 +1028,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\n!FAQ image Yes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
+              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\nYes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
@@ -1150,7 +1150,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...cation and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played? !FAQ image...",
+              "snippet": "...cation and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played? Only effect...",
               "query": "Stand United",
               "jumpQuery": "Stand United",
               "anchorText": "Stand United",
@@ -1255,7 +1255,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Reinforce\n\n!FAQ imageLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
+              "snippet": "Reinforce\n\nLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
@@ -1398,7 +1398,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Sona, Harmonious\n\n!FAQ image\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
+              "snippet": "Sona, Harmonious\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -1414,7 +1414,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...he above sequence. Let's look at a few examples: !FAQ image Sona, Harmonious reads \"At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.\" \"If I'm at a battlefield,\" appears where we would expect it to based on the...",
+              "snippet": "...anding of the above sequence. Let's look at a few examples: Sona, Harmonious reads \"At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.\" \"If I'm at a battlefield,\" appears where we would expect it to based on the...",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -1470,7 +1470,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...evious rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After....",
+              "snippet": "...evious rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Ca...",
               "query": "Taric, Protector",
               "jumpQuery": "Taric, Protector",
               "anchorText": "Taric, Protector",
@@ -1536,7 +1536,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Zhonya's Hourglass\n\n!FAQ image\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
+              "snippet": "Zhonya's Hourglass\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -1552,7 +1552,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...arget or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.) Deathgrip (revised text) !FAQ...",
+              "snippet": "...arget or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.) Deathgrip (revised text) [Reac...",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -1773,7 +1773,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Portal Rescue\n\n!FAQ image\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
+              "snippet": "Portal Rescue\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
@@ -1812,7 +1812,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. !FAQ image The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that check if cards...",
+              "snippet": "...in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that check if cards have been...",
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
@@ -1873,7 +1873,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ffected by the ability as it resolves. !FAQ image If I play Singularity and my opponent counters it, can I still play Jhin, Meticulous Killer for [C] this turn? You can. Jhin checks the energy spent to play a spell, not whether that spell r...",
+              "snippet": "...will be unaffected by the ability as it resolves. If I play Singularity and my opponent counters it, can I still play Jhin, Meticulous Killer for [C] this turn? You can. Jhin checks the energy spent to play a spell, not whether that spell r...",
               "query": "Singularity",
               "jumpQuery": "Singularity",
               "anchorText": "Singularity",
@@ -1967,7 +1967,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) !FAQ image[Action] (Play on your turn or in showdowns.) [Repeat][1] (You...",
+              "snippet": "...Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) [Action] (Play on your turn or in showdowns.) [Repeat][1] (You may pay th...",
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
@@ -2028,7 +2028,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...o \"When you play me, you may\" and \"kill a gear.\" !FAQ image Ekko, Recurrent reads, \"[Deathknell][] Recycle me to ready your runes.\" Deathknell is functionally short for \"When I die, ...\" We can translate this to our sequence as \"When I die,...",
+              "snippet": "...e split into \"When you play me, you may\" and \"kill a gear.\" Ekko, Recurrent reads, \"[Deathknell][] Recycle me to ready your runes.\" Deathknell is functionally short for \"When I die, ...\" We can translate this to our sequence as \"When I die,...",
               "query": "Ekko, Recurrent",
               "jumpQuery": "Ekko, Recurrent",
               "anchorText": "Ekko, Recurrent",
@@ -2438,7 +2438,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Kinkou Monk\n\n!FAQ image\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
+              "snippet": "Kinkou Monk\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
@@ -2631,7 +2631,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Dazzling Aurora\n\n!FAQ image\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
+              "snippet": "Dazzling Aurora\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
@@ -2973,7 +2973,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "The Syren\n\n!FAQ image\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
+              "snippet": "The Syren\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
@@ -3056,7 +3056,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell ability that says \"Deal 4 to all units at my battlefield.\" Under the revised rules, all damage currently on units will be healed before Kog'Maw's...",
+              "snippet": "...lity happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says \"Deal 4 to all units at my battlefield.\" Under the revised rules, all damage currently on units will be healed before Kog'Maw's...",
               "query": "Kog'Maw, Caustic",
               "jumpQuery": "Kog'Maw, Caustic",
               "anchorText": "Kog'Maw, Caustic",
@@ -3117,7 +3117,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...Tell You Play Other Cards Q: What happens when a card like The Harrowing instructs me to play another card during its resolution? Do I play it while the other spell or ability is still resolving? What if I can't play it? !FAQ image To clar...",
+              "snippet": "...Tell You Play Other Cards Q: What happens when a card like The Harrowing instructs me to play another card during its resolution? Do I play it while the other spell or ability is still resolving? What if I can't play it? To clarify the tim...",
               "query": "The Harrowing",
               "jumpQuery": "The Harrowing",
               "anchorText": "The Harrowing",
@@ -3211,7 +3211,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card na...",
+              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the o...",
               "query": "Jinx, Rebel",
               "jumpQuery": "Jinx, Rebel",
               "anchorText": "Jinx, Rebel",
@@ -3250,7 +3250,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card na...",
+              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the o...",
               "query": "Jinx, Rebel",
               "jumpQuery": "Jinx, Rebel",
               "anchorText": "Jinx, Rebel",
@@ -3372,7 +3372,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...h Multiple Targets Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain? !FAQ image Yes. You must choose two different friendly units to play Back to Back, although...",
+              "snippet": "...h Multiple Targets Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain? Yes. You must choose two different friendly units to play Back to Back, although it still r...",
               "query": "Back to Back",
               "jumpQuery": "Back to Back",
               "anchorText": "Back to Back",
@@ -3410,7 +3410,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...going there. Let's look at some examples: !FAQ image I play Cruel Patron, and I have a 1 [M] Recruit alone at a battlefield I control. I choose to kill my Recruit to pay the additional cost of Cruel Patron. Although this causes a cleanup, b...",
+              "snippet": "...Showdown ongoing there. Let's look at some examples: I play Cruel Patron, and I have a 1 [M] Recruit alone at a battlefield I control. I choose to kill my Recruit to pay the additional cost of Cruel Patron. Although this causes a cleanup, b...",
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
@@ -3697,7 +3697,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Baited Hook\n\n!FAQ image\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
+              "snippet": "Baited Hook\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -3713,7 +3713,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...that same battlefield with no issue. !FAQ image I activate Baited Hook targeting a 4 [M] unit that is alone at a battlefield I control. When Baited Hook resolves, I kill that unit and look at the top 5 cards of my Main Deck. I choose to pl...",
+              "snippet": "...l Patron to that same battlefield with no issue. I activate Baited Hook targeting a 4 [M] unit that is alone at a battlefield I control. When Baited Hook resolves, I kill that unit and look at the top 5 cards of my Main Deck. I choose to pl...",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -3769,7 +3769,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell abilit...",
+              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says...",
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
@@ -3791,7 +3791,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell abilit...",
+              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says...",
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
@@ -3857,7 +3857,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...tlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? !FAQ image Yes! This means that these two spells...",
+              "snippet": "...tlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? Yes! This means that these two spells no longer a...",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -3873,7 +3873,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Icathian Rain\n\n!FAQ imageDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
+              "snippet": "Icathian Rain\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -3989,7 +3989,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...sed on the sequence do not function in this way. !FAQ image Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
+              "snippet": "...d expect based on the sequence do not function in this way. Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
@@ -4089,7 +4089,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unforgiven\n\n!FAQ image\n\n[2], [E]: Move a friendly unit to or from its base.",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -4233,7 +4233,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...tly Asked Questions!FAQ image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game...",
+              "snippet": "...k. Frequently Asked Questions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game...",
               "query": "Aspirant's Climb",
               "jumpQuery": "Aspirant's Climb",
               "anchorText": "Aspirant's Climb",
@@ -4299,7 +4299,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ly units, not the color of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you nee...",
+              "snippet": "...t to friendly units, not the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you nee...",
               "query": "Reckoner's Arena",
               "jumpQuery": "Reckoner's Arena",
               "anchorText": "Reckoner's Arena",
@@ -4382,7 +4382,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Targon's Peak\n\n!FAQ image\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
+              "snippet": "Targon's Peak\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
@@ -4597,7 +4597,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...sed on the sequence do not function in this way. !FAQ image Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
+              "snippet": "...d expect based on the sequence do not function in this way. Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
@@ -4636,7 +4636,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...sed on the sequence do not function in this way. !FAQ image Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
+              "snippet": "...d expect based on the sequence do not function in this way. Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
@@ -4675,7 +4675,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unforgiven\n\n!FAQ image\n\n[2], [E]: Move a friendly unit to or from its base.",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -4714,7 +4714,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unforgiven\n\n!FAQ image\n\n[2], [E]: Move a friendly unit to or from its base.",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -4941,7 +4941,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Highlander\n\n!FAQ image\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
+              "snippet": "Highlander\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
@@ -5041,7 +5041,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...effects that check if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. !FAQ image The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the...",
+              "snippet": "...effects that check if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of...",
               "query": "Battering Ram",
               "jumpQuery": "Battering Ram",
               "anchorText": "Battering Ram",
@@ -5129,7 +5129,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rell, Magnetic\n\n!FAQ imageTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
+              "snippet": "Rell, Magnetic\n\nTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
@@ -5168,7 +5168,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rumble, Hotheaded\n\n!FAQ image Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -5190,7 +5190,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rumble, Hotheaded\n\n!FAQ image Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -5212,7 +5212,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...!FAQ image What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
+              "snippet": "...s update.) What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
@@ -5234,7 +5234,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...!FAQ image What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
+              "snippet": "...s update.) What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
@@ -5256,7 +5256,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...'m at a battlefield,\" and \"ready up to 4 runes.\" !FAQ image Disarming Rake reads \"When you play me, you may kill a gear.\" The \"you may\" appears here where we would expect it to based on the sequence above, so it is the choice of whether or...",
+              "snippet": "...turn, if I'm at a battlefield,\" and \"ready up to 4 runes.\" Disarming Rake reads \"When you play me, you may kill a gear.\" The \"you may\" appears here where we would expect it to based on the sequence above, so it is the choice of whether or...",
               "query": "Disarming Rake",
               "jumpQuery": "Disarming Rake",
               "anchorText": "Disarming Rake",
@@ -5278,7 +5278,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...bilities, not eight. (Four should be plenty.) !FAQ image Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
+              "snippet": "...es of its abilities, not eight. (Four should be plenty.) Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
               "query": "Aphelios, Exalted",
               "jumpQuery": "Aphelios, Exalted",
               "anchorText": "Aphelios, Exalted",
@@ -5472,7 +5472,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...1 if you have one of fewer cards in your hand.\" !FAQ image Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
+              "snippet": "...\" and \"draw 1 if you have one of fewer cards in your hand.\" Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
@@ -5494,7 +5494,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...1 if you have one of fewer cards in your hand.\" !FAQ image Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
+              "snippet": "...\" and \"draw 1 if you have one of fewer cards in your hand.\" Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
@@ -5633,7 +5633,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Pickpocket\n\n!FAQ image Q: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
+              "snippet": "Pickpocket\n\nQ: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
@@ -5864,7 +5864,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...r of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
+              "snippet": "...ot the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -6257,7 +6257,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rek'Sai, Swarm Queen\n\n!FAQ imageWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -6296,7 +6296,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rek'Sai, Swarm Queen\n\n!FAQ imageWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -6395,7 +6395,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Inactive. !FAQ image If Temporary is granted to an attached Spinning Axe, will it die at the start of my Beginning Phase? Yes. The Spinning Axe will have two instances of the Temporary keyword one that is active and one that is inactive. Th...",
+              "snippet": "...es Text is Inactive. If Temporary is granted to an attached Spinning Axe, will it die at the start of my Beginning Phase? Yes. The Spinning Axe will have two instances of the Temporary keyword one that is active and one that is inactive. Th...",
               "query": "Spinning Axe",
               "jumpQuery": "Spinning Axe",
               "anchorText": "Spinning Axe",
@@ -6434,7 +6434,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Void Burrower\n\n!FAQ imageWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -6473,7 +6473,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Void Rush\n\n!FAQ imageReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
+              "snippet": "Void Rush\n\nReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
@@ -6534,7 +6534,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...fect will inherit those modifications. !FAQ image If I play Counter Strike in response to my opponent's Elder Dragon's play effect, will the chosen unit still die? No, the unit protected by Counter Strike will not die. Elder Dragon's passiv...",
+              "snippet": "...lacement Effect will inherit those modifications. If I play Counter Strike in response to my opponent's Elder Dragon's play effect, will the chosen unit still die? No, the unit protected by Counter Strike will not die. Elder Dragon's passiv...",
               "query": "Counter Strike",
               "jumpQuery": "Counter Strike",
               "anchorText": "Counter Strike",
@@ -6556,7 +6556,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Arise!\n\n!FAQ imagePlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
+              "snippet": "Arise!\n\nPlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
@@ -6595,7 +6595,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ere I killed my 4 [M] unit to play it to. !FAQ image I play Arcane Shift targeting my ThousandTailed Watcher who is alone at a battlefield I control. As it resolves, Watcher is banished and played to the chain. When Arcane Shift has finishe...",
+              "snippet": "...tlefield where I killed my 4 [M] unit to play it to. I play Arcane Shift targeting my ThousandTailed Watcher who is alone at a battlefield I control. As it resolves, Watcher is banished and played to the chain. When Arcane Shift has finishe...",
               "query": "Arcane Shift",
               "jumpQuery": "Arcane Shift",
               "anchorText": "Arcane Shift",
@@ -6672,7 +6672,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...I'm at a battlefield, opponents can't gain points. Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata? !FAQ imageForgotten Monument works differently from Tianna, and we agree that's confusing. That's part o...",
+              "snippet": "...I'm at a battlefield, opponents can't gain points. Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata? Forgotten Monument works differently from Tianna, and we agree that's confusing. That's part of why we d...",
               "query": "Forgotten Monument",
               "jumpQuery": "Forgotten Monument",
               "anchorText": "Forgotten Monument",
@@ -6694,7 +6694,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...bilities, not eight. (Four should be plenty.) !FAQ image Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
+              "snippet": "...es of its abilities, not eight. (Four should be plenty.) Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
               "query": "Aphelios, Exalted",
               "jumpQuery": "Aphelios, Exalted",
               "anchorText": "Aphelios, Exalted",
@@ -6716,7 +6716,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...bilities, not eight. (Four should be plenty.) !FAQ image Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
+              "snippet": "...es of its abilities, not eight. (Four should be plenty.) Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
               "query": "Aphelios, Exalted",
               "jumpQuery": "Aphelios, Exalted",
               "anchorText": "Aphelios, Exalted",
@@ -6876,7 +6876,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...r of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
+              "snippet": "...ot the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -6931,7 +6931,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...r of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
+              "snippet": "...ot the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -7014,7 +7014,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell abilit...",
+              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says...",
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
@@ -7036,7 +7036,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell abilit...",
+              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says...",
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
@@ -7212,7 +7212,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Void Burrower\n\n!FAQ imageWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -7273,7 +7273,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...conquering. Pickpocket !FAQ image Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
+              "snippet": "...a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
@@ -7334,7 +7334,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...was countered. !FAQ image I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
+              "snippet": "...f the spell was countered. I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
@@ -7356,7 +7356,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...was countered. !FAQ image I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
+              "snippet": "...f the spell was countered. I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
@@ -7400,7 +7400,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ting all current effects and statuses. !FAQ image If I play Turn to Dust on an attached Equipment, will the Equipment die in the Beginning Phase? Yes. The granted Temporary keyword will be active. It will trigger and kill the equipment in i...",
+              "snippet": "...ied, inheriting all current effects and statuses. If I play Turn to Dust on an attached Equipment, will the Equipment die in the Beginning Phase? Yes. The granted Temporary keyword will be active. It will trigger and kill the equipment in i...",
               "query": "Turn to Dust",
               "jumpQuery": "Turn to Dust",
               "anchorText": "Turn to Dust",
@@ -7510,7 +7510,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...g a step itself. !FAQ image If I conquer a battlefield with Zilean, Time Mage, can I copy him with my Deceiver legend? Will I make infinite Zileans? Yes, you can copy Zilean, but you will not make an infinite number. The Deceiver reflexive...",
+              "snippet": "...never during a step itself. If I conquer a battlefield with Zilean, Time Mage, can I copy him with my Deceiver legend? Will I make infinite Zileans? Yes, you can copy Zilean, but you will not make an infinite number. The Deceiver reflexive...",
               "query": "Zilean, Time Mage",
               "jumpQuery": "Zilean, Time Mage",
               "anchorText": "Zilean, Time Mage",
@@ -7686,7 +7686,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...eck if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. !FAQ image The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of pla...",
+              "snippet": "...eck if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of play that we s...",
               "query": "Crescent Guardian",
               "jumpQuery": "Crescent Guardian",
               "anchorText": "Crescent Guardian",
@@ -7708,7 +7708,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...among them and draw it. Then recycle the rest.\" !FAQ image Insightful Investigator reads \"When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card an...",
+              "snippet": "...a gear from among them and draw it. Then recycle the rest.\" Insightful Investigator reads \"When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card an...",
               "query": "Insightful Investigator",
               "jumpQuery": "Insightful Investigator",
               "anchorText": "Insightful Investigator",
@@ -7796,7 +7796,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...n the next rules update.) !FAQ image What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you p...",
+              "snippet": "...revisions in the next rules update.) What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you p...",
               "query": "Atakhan",
               "jumpQuery": "Atakhan",
               "anchorText": "Atakhan",
@@ -7906,7 +7906,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...\"you may\"!FAQ image We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
+              "snippet": "...ext to the \"you may\" We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
@@ -7928,7 +7928,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...unspent, even if the spell was countered. !FAQ image I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Str...",
+              "snippet": "...rgy wasn't unspent, even if the spell was countered. I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Str...",
               "query": "Alpha Strike",
               "jumpQuery": "Alpha Strike",
               "anchorText": "Alpha Strike",
@@ -7950,7 +7950,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Q image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
+              "snippet": "...estions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
@@ -8067,7 +8067,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...eness in the battlefield control rules. That battlefield is Abandoned Hall. !FAQ image Normally, control of a battlefield ability is awarded to the battlefield's controller, or the turn player if it is uncontrolled, but there are cases wher...",
+              "snippet": "...eness in the battlefield control rules. That battlefield is Abandoned Hall. Normally, control of a battlefield ability is awarded to the battlefield's controller, or the turn player if it is uncontrolled, but there are cases where that migh...",
               "query": "Abandoned Hall",
               "jumpQuery": "Abandoned Hall",
               "anchorText": "Abandoned Hall",
@@ -8111,7 +8111,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...\"you may\"!FAQ image We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
+              "snippet": "...ext to the \"you may\" We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
@@ -8133,7 +8133,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...\"you may\"!FAQ image We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
+              "snippet": "...ext to the \"you may\" We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
@@ -8155,7 +8155,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Q image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
+              "snippet": "...estions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
@@ -8177,7 +8177,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Q image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
+              "snippet": "...estions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
@@ -8394,7 +8394,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...conquering. Pickpocket !FAQ image Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
+              "snippet": "...a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
@@ -8518,7 +8518,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...eness in the battlefield control rules. That battlefield is Abandoned Hall. !FAQ image Normally, control of a battlefield ability is awarded to the battlefield's controller, or the turn player if it is uncontrolled, but there are cases wher...",
+              "snippet": "...eness in the battlefield control rules. That battlefield is Abandoned Hall. Normally, control of a battlefield ability is awarded to the battlefield's controller, or the turn player if it is uncontrolled, but there are cases where that migh...",
               "query": "Abandoned Hall",
               "jumpQuery": "Abandoned Hall",
               "anchorText": "Abandoned Hall",
@@ -8597,7 +8597,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...unspent, even if the spell was countered. !FAQ image I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Str...",
+              "snippet": "...rgy wasn't unspent, even if the spell was countered. I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Str...",
               "query": "Alpha Strike",
               "jumpQuery": "Alpha Strike",
               "anchorText": "Alpha Strike",
@@ -8696,7 +8696,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...bilities, not eight. (Four should be plenty.) !FAQ image Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
+              "snippet": "...es of its abilities, not eight. (Four should be plenty.) Q: Aphelios, Exalted has an ability that triggers when I attach an Equipment to him and tells me to \"choose one that hasn't been chosen this turn.\" If I attach Svellsongur to him, doe...",
               "query": "Aphelios, Exalted",
               "jumpQuery": "Aphelios, Exalted",
               "anchorText": "Aphelios, Exalted",
@@ -8728,7 +8728,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ere I killed my 4 [M] unit to play it to. !FAQ image I play Arcane Shift targeting my ThousandTailed Watcher who is alone at a battlefield I control. As it resolves, Watcher is banished and played to the chain. When Arcane Shift has finishe...",
+              "snippet": "...tlefield where I killed my 4 [M] unit to play it to. I play Arcane Shift targeting my ThousandTailed Watcher who is alone at a battlefield I control. As it resolves, Watcher is banished and played to the chain. When Arcane Shift has finishe...",
               "query": "Arcane Shift",
               "jumpQuery": "Arcane Shift",
               "anchorText": "Arcane Shift",
@@ -8760,7 +8760,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Arise!\n\n!FAQ imagePlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
+              "snippet": "Arise!\n\nPlay a 2 [M] Sand Soldier unit token for each Equipment you control. Then do this: Ready up to two of them.",
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
@@ -8809,7 +8809,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...tly Asked Questions!FAQ image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game...",
+              "snippet": "...k. Frequently Asked Questions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game...",
               "query": "Aspirant's Climb",
               "jumpQuery": "Aspirant's Climb",
               "anchorText": "Aspirant's Climb",
@@ -8841,7 +8841,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...n the next rules update.) !FAQ image What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you p...",
+              "snippet": "...revisions in the next rules update.) What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you p...",
               "query": "Atakhan",
               "jumpQuery": "Atakhan",
               "anchorText": "Atakhan",
@@ -8922,7 +8922,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...h Multiple Targets Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain? !FAQ image Yes. You must choose two different friendly units to play Back to Back, although...",
+              "snippet": "...h Multiple Targets Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain? Yes. You must choose two different friendly units to play Back to Back, although it still r...",
               "query": "Back to Back",
               "jumpQuery": "Back to Back",
               "anchorText": "Back to Back",
@@ -8949,7 +8949,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Baited Hook\n\n!FAQ image\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
+              "snippet": "Baited Hook\n\n[1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it, ignoring its cost. Then recycle the rest.",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -8965,7 +8965,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...that same battlefield with no issue. !FAQ image I activate Baited Hook targeting a 4 [M] unit that is alone at a battlefield I control. When Baited Hook resolves, I kill that unit and look at the top 5 cards of my Main Deck. I choose to pl...",
+              "snippet": "...l Patron to that same battlefield with no issue. I activate Baited Hook targeting a 4 [M] unit that is alone at a battlefield I control. When Baited Hook resolves, I kill that unit and look at the top 5 cards of my Main Deck. I choose to pl...",
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
@@ -9068,7 +9068,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...effects that check if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. !FAQ image The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the...",
+              "snippet": "...effects that check if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of...",
               "query": "Battering Ram",
               "jumpQuery": "Battering Ram",
               "anchorText": "Battering Ram",
@@ -9226,7 +9226,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Blind Fury\n\n!FAQ image\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
+              "snippet": "Blind Fury\n\n[Action] (Play on your turn or in showdowns.) Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
@@ -9612,7 +9612,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...a change from previous rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !F...",
+              "snippet": "...a change from previous rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? Af...",
               "query": "Captain Farron",
               "jumpQuery": "Captain Farron",
               "anchorText": "Captain Farron",
@@ -9758,7 +9758,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\n!FAQ image Yes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
+              "snippet": "Charm\n\nQ: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?\n\nYes. This is a change from prior rulings. This means that move effects that don't mention a destination (like Charm) work the same way as those that do (like Showstopper).",
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
@@ -9956,7 +9956,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) !FAQ image[Action] (Play on your turn or in showdowns.) [Repeat][1] (You...",
+              "snippet": "...Q: Should Blood Rush say \"this turn\" on it? It should! Like Convergent Mutation in Origins, the phrase \"this turn\" was accidentally omitted. Blood Rush (revised text) [Action] (Play on your turn or in showdowns.) [Repeat][1] (You may pay th...",
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
@@ -10005,7 +10005,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...fect will inherit those modifications. !FAQ image If I play Counter Strike in response to my opponent's Elder Dragon's play effect, will the chosen unit still die? No, the unit protected by Counter Strike will not die. Elder Dragon's passiv...",
+              "snippet": "...lacement Effect will inherit those modifications. If I play Counter Strike in response to my opponent's Elder Dragon's play effect, will the chosen unit still die? No, the unit protected by Counter Strike will not die. Elder Dragon's passiv...",
               "query": "Counter Strike",
               "jumpQuery": "Counter Strike",
               "anchorText": "Counter Strike",
@@ -10032,7 +10032,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...eck if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. !FAQ image The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of pla...",
+              "snippet": "...eck if cards have been played, in cards like Battering Ram, Crescent Guardian, and the Legion dependent keyword. The final meaning of play is, \"place an item on the chain and queue it for finalization.\" This is the version of play that we s...",
               "query": "Crescent Guardian",
               "jumpQuery": "Crescent Guardian",
               "anchorText": "Crescent Guardian",
@@ -10085,7 +10085,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...going there. Let's look at some examples: !FAQ image I play Cruel Patron, and I have a 1 [M] Recruit alone at a battlefield I control. I choose to kill my Recruit to pay the additional cost of Cruel Patron. Although this causes a cleanup, b...",
+              "snippet": "...Showdown ongoing there. Let's look at some examples: I play Cruel Patron, and I have a 1 [M] Recruit alone at a battlefield I control. I choose to kill my Recruit to pay the additional cost of Cruel Patron. Although this causes a cleanup, b...",
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
@@ -10203,7 +10203,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell abilit...",
+              "snippet": "...ing Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says...",
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
@@ -10241,7 +10241,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. !FAQ image The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effec...",
+              "snippet": "...the play that appears in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that che...",
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
@@ -10278,7 +10278,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Dazzling Aurora\n\n!FAQ image\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
+              "snippet": "Dazzling Aurora\n\nAt the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest.",
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
@@ -10494,7 +10494,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...'m at a battlefield,\" and \"ready up to 4 runes.\" !FAQ image Disarming Rake reads \"When you play me, you may kill a gear.\" The \"you may\" appears here where we would expect it to based on the sequence above, so it is the choice of whether or...",
+              "snippet": "...turn, if I'm at a battlefield,\" and \"ready up to 4 runes.\" Disarming Rake reads \"When you play me, you may kill a gear.\" The \"you may\" appears here where we would expect it to based on the sequence above, so it is the choice of whether or...",
               "query": "Disarming Rake",
               "jumpQuery": "Disarming Rake",
               "anchorText": "Disarming Rake",
@@ -10911,7 +10911,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...o \"When you play me, you may\" and \"kill a gear.\" !FAQ image Ekko, Recurrent reads, \"[Deathknell][] Recycle me to ready your runes.\" Deathknell is functionally short for \"When I die, ...\" We can translate this to our sequence as \"When I die,...",
+              "snippet": "...e split into \"When you play me, you may\" and \"kill a gear.\" Ekko, Recurrent reads, \"[Deathknell][] Recycle me to ready your runes.\" Deathknell is functionally short for \"When I die, ...\" We can translate this to our sequence as \"When I die,...",
               "query": "Ekko, Recurrent",
               "jumpQuery": "Ekko, Recurrent",
               "anchorText": "Ekko, Recurrent",
@@ -11121,7 +11121,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...a unit at a battlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? !FAQ image Yes! This means that th...",
+              "snippet": "...a unit at a battlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? Yes! This means that these two spe...",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -11137,7 +11137,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Falling Star\n\n!FAQ imageDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
+              "snippet": "Falling Star\n\nDeal 3 to a unit.\n\nDeal 3 to a unit.\n\n(You can choose different units.)",
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
@@ -11359,7 +11359,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...I'm at a battlefield, opponents can't gain points. Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata? !FAQ imageForgotten Monument works differently from Tianna, and we agree that's confusing. That's part o...",
+              "snippet": "...I'm at a battlefield, opponents can't gain points. Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata? Forgotten Monument works differently from Tianna, and we agree that's confusing. That's part of why we d...",
               "query": "Forgotten Monument",
               "jumpQuery": "Forgotten Monument",
               "anchorText": "Forgotten Monument",
@@ -11613,7 +11613,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...conquering. Pickpocket !FAQ image Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
+              "snippet": "...a point for conquering. Pickpocket Q: Can Pickpocket kill a Gold token? Yes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit...",
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
@@ -11684,7 +11684,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Q image What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
+              "snippet": "...estions What happens when you conquer Aspirant's Climb with Green Father and Brush the battlefield when both players are at 8 points? If this is the first battlefield that player has scored, they'll draw 1 and the game will continue with bo...",
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
@@ -12070,7 +12070,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Highlander\n\n!FAQ image\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
+              "snippet": "Highlander\n\n[Reaction] (Play any time, even before spells and abilities resolve.)\n\nChoose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)",
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
@@ -12206,7 +12206,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...tlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? !FAQ image Yes! This means that these two spells...",
+              "snippet": "...tlefield. If this kills it, do this: draw 1. Falling Star & Icathian Rain Q: That \"do this\" wording is a lot like the one on Falling Star and Icathian Rain. Are those reflexive triggers too? Yes! This means that these two spells no longer a...",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -12222,7 +12222,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Icathian Rain\n\n!FAQ imageDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
+              "snippet": "Icathian Rain\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.\n\nDeal 2 to a unit.",
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
@@ -12266,7 +12266,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\n!FAQ image\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.",
+              "snippet": "Immortal Phoenix\n\nQ: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?\n\nThis is unclear under existing rules, so the updated rules will clarify. \"When you kill a unit with a spell\" triggers immediately after a spell you control resolves if either of the following is true:\n\nThat spell instructs you to kill a unit during its resolution, and that unit is put into the trash this way.\n\nA spell instructs you to deal damage to a unit during its resolution, and that unit is put into the trash during the cleanup immediately following that spell's resolution.",
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
@@ -12341,7 +12341,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...among them and draw it. Then recycle the rest.\" !FAQ image Insightful Investigator reads \"When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card an...",
+              "snippet": "...a gear from among them and draw it. Then recycle the rest.\" Insightful Investigator reads \"When you play me, choose an opponent. They reveal their hand. You may pay 2 XP to choose a card from their hand. If you do, they discard that card an...",
               "query": "Insightful Investigator",
               "jumpQuery": "Insightful Investigator",
               "anchorText": "Insightful Investigator",
@@ -12572,7 +12572,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Ka...",
+              "snippet": "...tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the one you chose at the start of the game. Karma, Channe...",
               "query": "Jinx, Demolitionist",
               "jumpQuery": "Jinx, Demolitionist",
               "anchorText": "Jinx, Demolitionist",
@@ -12611,7 +12611,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? !FAQ image No. You can only get back a card with the exact full card na...",
+              "snippet": "...What about a different card with the same Champion tag? If Jinx, Rebel is my Chosen Champion, can I get back a Jinx, Demolitionist, because Jinx is my Chosen Champion? No. You can only get back a card with the exact full card name of the o...",
               "query": "Jinx, Rebel",
               "jumpQuery": "Jinx, Rebel",
               "anchorText": "Jinx, Rebel",
@@ -12827,7 +12827,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Kinkou Monk\n\n!FAQ image\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
+              "snippet": "Kinkou Monk\n\nWhen you play me, buff up to two other friendly units.\n\n(Each one that doesn't have a buff gets a +1 [M] buff.)",
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
@@ -12866,7 +12866,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...before or after combat damage is healed? !FAQ image After. Kog'Maw, Caustic has a Deathknell ability that says \"Deal 4 to all units at my battlefield.\" Under the revised rules, all damage currently on units will be healed before Kog'Maw's...",
+              "snippet": "...lity happen before or after combat damage is healed? After. Kog'Maw, Caustic has a Deathknell ability that says \"Deal 4 to all units at my battlefield.\" Under the revised rules, all damage currently on units will be healed before Kog'Maw's...",
               "query": "Kog'Maw, Caustic",
               "jumpQuery": "Kog'Maw, Caustic",
               "anchorText": "Kog'Maw, Caustic",
@@ -13078,7 +13078,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...sed on the sequence do not function in this way. !FAQ image Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
+              "snippet": "...d expect based on the sequence do not function in this way. Loose Cannon, the Jinx Legend, reads \"At the start of your Beginning Phase, draw 1 if you have one or fewer cards in your hand.\" The conditional statement \"if you have one or fewer...",
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
@@ -13239,7 +13239,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...was countered. !FAQ image I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
+              "snippet": "...f the spell was countered. I play Alpha Strike targeting my Master Yi, Unstoppable and splitting 12 damage among three of the four enemy units at battlefields. If my opponent plays Flash in reaction to my Alpha Strike, moving two of the tar...",
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
@@ -13678,7 +13678,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...1 if you have one of fewer cards in your hand.\" !FAQ image Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
+              "snippet": "...\" and \"draw 1 if you have one of fewer cards in your hand.\" Ornn, Blacksmith reads \"When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.\" The \"...",
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
@@ -13823,7 +13823,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Pickpocket\n\n!FAQ image Q: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
+              "snippet": "Pickpocket\n\nQ: Can Pickpocket kill a Gold token?\n\nYes, but we see why you'd ask. The rules use a \"NULL\" system for values that aren't available, such as the Might of a unit that's been removed from the board. The unit is gone and the information is missing, so you can't do any calculations or comparisons with it (not even \"is it no more than 1?\").\n\nThat system could reasonably be applied to the costs of tokens, but we feel that results in unintuitive situations, like not being able to kill a Gold token with Pickpocket. After all, the token's not missing; it just doesn't have a cost because it doesn't need one. We'll be updating the rules to clarify that the cost of a token can be treated as 0 for all purposes.",
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
@@ -13850,7 +13850,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...\"you may\"!FAQ image We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
+              "snippet": "...ext to the \"you may\" We can best see this in the example of Piltover Enforcer, the Vi Legend from Unleashed: \"[When you conquer], [if you assigned 3 or more excess damage], [you may] [exhaust me to] ready a unit.\" This ability contains all...",
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
@@ -13917,7 +13917,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Portal Rescue\n\n!FAQ image\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
+              "snippet": "Portal Rescue\n\nBanish a friendly unit, then its owner plays it to their base, ignoring its cost.\n\nFor The Syren and Unforgiven, this is not functional errata, just a clarification. For Portal Rescue, this is a slight functional change to its interaction with cards like Possession. Previously, you could use Portal Rescue to replay a card you took with Possession and retain control of it, but under the new wording this would give it back to its owner.\n\nAnother card, Tideturner, is receiving similar errata and another clarification (see below).",
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
@@ -14206,7 +14206,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. !FAQ image The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that check if cards...",
+              "snippet": "...in trigger conditions, in cards like Darius, Trifarian and Ravenbloom Student. The second meaning is, \"finalize an item on the chain.\" This is the play that appears in other conditional statements and effects that check if cards have been...",
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
@@ -14328,7 +14328,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ly units, not the color of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you nee...",
+              "snippet": "...t to friendly units, not the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you nee...",
               "query": "Reckoner's Arena",
               "jumpQuery": "Reckoner's Arena",
               "anchorText": "Reckoner's Arena",
@@ -14436,7 +14436,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Reinforce\n\n!FAQ imageLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
+              "snippet": "Reinforce\n\nLook at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by [5]. Recycle the remaining cards.",
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
@@ -14475,7 +14475,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...!FAQ image What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
+              "snippet": "...s update.) What happens if I play Atakhan from my deck with Rek'Sai, Breacher on the board? Can I pay the Accelerate cost and kill Rek'Sai for the Atakhan additional cost? Will it enter ready? Yes, as long as you pay the Accelerate cost, At...",
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
@@ -14497,7 +14497,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rek'Sai, Swarm Queen\n\n!FAQ imageWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
+              "snippet": "Rek'Sai, Swarm Queen\n\nWhen I attack, you may reveal the top 2 cards of your Main Deck. You may banish one, then play it. If it is a unit, you may play it here. Recycle the rest.",
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
@@ -14580,7 +14580,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rell, Magnetic\n\n!FAQ imageTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
+              "snippet": "Rell, Magnetic\n\nTank (I must be assigned combat damage first.)\n\nWhen I attack, you may play an Equipment with Energy cost no more than [2], ignoring its cost. If you do, then do this: Attach it to me.",
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
@@ -14831,7 +14831,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Rumble, Hotheaded\n\n!FAQ image Q: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
+              "snippet": "Rumble, Hotheaded\n\nQ: Can Rumble, Hotheaded choose a Mech token to recycle? If he does, where does it go?\n\nYes, he can. This is a minor gap in the rules. Main Deck cards are recycled to the Main Deck and runes are recycled to the Rune deck, but tokens aren't actually either of those things. We'll be clarifying in a future rules updates that tokens \"inherit\" the recycle destination of their type(s), so a token that's a unit or gear is recycled to your Main Deck just like any other gear. It then vanishes, as tokens do any time they leave the board, but it still counts as \"the unit you recycled\" and Rumble can check its Might.",
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
@@ -15165,7 +15165,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ffected by the ability as it resolves. !FAQ image If I play Singularity and my opponent counters it, can I still play Jhin, Meticulous Killer for [C] this turn? You can. Jhin checks the energy spent to play a spell, not whether that spell r...",
+              "snippet": "...will be unaffected by the ability as it resolves. If I play Singularity and my opponent counters it, can I still play Jhin, Meticulous Killer for [C] this turn? You can. Jhin checks the energy spent to play a spell, not whether that spell r...",
               "query": "Singularity",
               "jumpQuery": "Singularity",
               "anchorText": "Singularity",
@@ -15296,7 +15296,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Sona, Harmonious\n\n!FAQ image\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
+              "snippet": "Sona, Harmonious\n\nAt the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -15312,7 +15312,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...he above sequence. Let's look at a few examples: !FAQ image Sona, Harmonious reads \"At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.\" \"If I'm at a battlefield,\" appears where we would expect it to based on the...",
+              "snippet": "...anding of the above sequence. Let's look at a few examples: Sona, Harmonious reads \"At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.\" \"If I'm at a battlefield,\" appears where we would expect it to based on the...",
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
@@ -15436,7 +15436,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...Inactive. !FAQ image If Temporary is granted to an attached Spinning Axe, will it die at the start of my Beginning Phase? Yes. The Spinning Axe will have two instances of the Temporary keyword one that is active and one that is inactive. Th...",
+              "snippet": "...es Text is Inactive. If Temporary is granted to an attached Spinning Axe, will it die at the start of my Beginning Phase? Yes. The Spinning Axe will have two instances of the Temporary keyword one that is active and one that is inactive. Th...",
               "query": "Spinning Axe",
               "jumpQuery": "Spinning Axe",
               "anchorText": "Spinning Axe",
@@ -15608,7 +15608,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...cation and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played? !FAQ image...",
+              "snippet": "...cation and it to my original location. Zhonya's Hourglass & Stand United Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played? Only effect...",
               "query": "Stand United",
               "jumpQuery": "Stand United",
               "anchorText": "Stand United",
@@ -15851,7 +15851,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\n!FAQ image Yes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
+              "snippet": "Sun Disc\n\nQ: Can I use Sun Disc's ability the turn I play it, counting itself for its Legion ability?\n\nYes. Although Legion normally requires \"another\" card for spells and play effects, Sun Disc's activated ability is not Sun Disc. On subsequent turns, you'll need to play another card to turn on Legion.",
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
@@ -15969,7 +15969,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Targon's Peak\n\n!FAQ image\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
+              "snippet": "Targon's Peak\n\nWhen you conquer here, ready up to 2 runes at the end of this turn.",
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
@@ -16013,7 +16013,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...evious rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? !FAQ image After....",
+              "snippet": "...evious rulings that impacts cards including Captain Farron; Taric, Protector; Garen, Commander; and Darius, Executioner. Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed? After. Kog'Maw, Ca...",
               "query": "Taric, Protector",
               "jumpQuery": "Taric, Protector",
               "anchorText": "Taric, Protector",
@@ -16209,7 +16209,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "...Tell You Play Other Cards Q: What happens when a card like The Harrowing instructs me to play another card during its resolution? Do I play it while the other spell or ability is still resolving? What if I can't play it? !FAQ image To clar...",
+              "snippet": "...Tell You Play Other Cards Q: What happens when a card like The Harrowing instructs me to play another card during its resolution? Do I play it while the other spell or ability is still resolving? What if I can't play it? To clarify the tim...",
               "query": "The Harrowing",
               "jumpQuery": "The Harrowing",
               "anchorText": "The Harrowing",
@@ -16246,7 +16246,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "The Syren\n\n!FAQ image\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
+              "snippet": "The Syren\n\n[1], [E]: Move a friendly unit at a battlefield to its base.",
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
@@ -16707,7 +16707,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...ting all current effects and statuses. !FAQ image If I play Turn to Dust on an attached Equipment, will the Equipment die in the Beginning Phase? Yes. The granted Temporary keyword will be active. It will trigger and kill the equipment in i...",
+              "snippet": "...ied, inheriting all current effects and statuses. If I play Turn to Dust on an attached Equipment, will the Equipment die in the Beginning Phase? Yes. The granted Temporary keyword will be active. It will trigger and kill the equipment in i...",
               "query": "Turn to Dust",
               "jumpQuery": "Turn to Dust",
               "anchorText": "Turn to Dust",
@@ -16837,7 +16837,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unforgiven\n\n!FAQ image\n\n[2], [E]: Move a friendly unit to or from its base.",
+              "snippet": "Unforgiven\n\n[2], [E]: Move a friendly unit to or from its base.",
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
@@ -16876,7 +16876,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Unlicensed Armory\n\n!FAQ image\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
+              "snippet": "Unlicensed Armory\n\nDiscard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead. (Send it to base. This isn't a move.)\n\nZhonya's Hourglass also has a slightly updated wording making it clearer that its ability applies any time a friendly unit dies, not just on the turn you play it.",
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
@@ -17106,7 +17106,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Void Burrower\n\n!FAQ imageWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
+              "snippet": "Void Burrower\n\nWhen you conquer, you may exhaust me to reveal the top 2 cards of your Main Deck. You may banish one, then play it. Recycle the rest.",
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
@@ -17244,7 +17244,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "Void Rush\n\n!FAQ imageReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
+              "snippet": "Void Rush\n\nReveal the top 2 cards of your Main Deck. You may banish one, then play it, reducing its cost by [2]. Draw any you didn't banish.",
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
@@ -17595,7 +17595,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...r of the arrows. !FAQ image If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
+              "snippet": "...ot the color of the arrows. If I hold Reckoner's Arena with Yone, Blademaster, will I place his triggered ability on the chain when the hold effect of Reckoner's Arena resolves? No, you will not. The main thing you need to know is that acti...",
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
@@ -17669,7 +17669,7 @@
           "sourceTitle": "Riftbound Origins FAQ",
           "matches": [
             {
-              "snippet": "Zhonya's Hourglass\n\n!FAQ image\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
+              "snippet": "Zhonya's Hourglass\n\n[Hidden] (Hide now for [A] to react with later for [0].) If a friendly unit would die, kill this instead. Heal that unit, exhaust it, and recall it. (Send it to base. This isn't a move.)\n\nThe Boss was mistakenly worded like a triggered ability. It's receiving updated wording to make it clear that its ability is a replacement effect.",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -17685,7 +17685,7 @@
           "sourceTitle": "Riftbound Spiritforged FAQ",
           "matches": [
             {
-              "snippet": "...arget or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.) Deathgrip (revised text) !FAQ...",
+              "snippet": "...arget or because you replaced its death with an effect like Zhonya's Hourglass, you do not give the second friendly unit any Might. (You do still draw 1; we've introduced a paragraph break to make that clear.) Deathgrip (revised text) [Reac...",
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
@@ -17741,7 +17741,7 @@
           "sourceTitle": "Unleashed Rules FAQ and Clarifications",
           "matches": [
             {
-              "snippet": "...g a step itself. !FAQ image If I conquer a battlefield with Zilean, Time Mage, can I copy him with my Deceiver legend? Will I make infinite Zileans? Yes, you can copy Zilean, but you will not make an infinite number. The Deceiver reflexive...",
+              "snippet": "...never during a step itself. If I conquer a battlefield with Zilean, Time Mage, can I copy him with my Deceiver legend? Will I make infinite Zileans? Yes, you can copy Zilean, but you will not make an infinite number. The Deceiver reflexive...",
               "query": "Zilean, Time Mage",
               "jumpQuery": "Zilean, Time Mage",
               "anchorText": "Zilean, Time Mage",
@@ -17757,6 +17757,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-29T19:59:32Z",
+  "generatedAt": "2026-04-29T20:17:18Z",
   "source": "riftboundoc derived card related index"
 }

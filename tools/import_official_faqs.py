@@ -24,21 +24,26 @@ def fetch_text(url: str) -> str:
 
 def html_to_markdown(raw_html: str, page_url: str = "") -> str:
     text = raw_html
+    def faq_img_html(alt_raw: str, src_raw: str) -> str:
+        alt = strip_tags(alt_raw).strip() or "FAQ image"
+        src = urljoin(page_url, src_raw)
+        return f'\n\n<img class="faq-inline-image" src="{src}" alt="{alt}" loading="lazy" />\n\n'
+
     text = re.sub(
         r'<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>',
-        lambda m: f"![{strip_tags(m.group(2)).strip() or 'FAQ image'}]({urljoin(page_url, m.group(1))})",
+        lambda m: faq_img_html(m.group(2), m.group(1)),
         text,
         flags=re.IGNORECASE | re.DOTALL,
     )
     text = re.sub(
         r'<img[^>]*alt="([^"]*)"[^>]*src="([^"]+)"[^>]*>',
-        lambda m: f"![{strip_tags(m.group(1)).strip() or 'FAQ image'}]({urljoin(page_url, m.group(2))})",
+        lambda m: faq_img_html(m.group(1), m.group(2)),
         text,
         flags=re.IGNORECASE | re.DOTALL,
     )
     text = re.sub(
         r'<img[^>]*src="([^"]+)"[^>]*>',
-        lambda m: f"![FAQ image]({urljoin(page_url, m.group(1))})",
+        lambda m: faq_img_html("FAQ image", m.group(1)),
         text,
         flags=re.IGNORECASE | re.DOTALL,
     )
