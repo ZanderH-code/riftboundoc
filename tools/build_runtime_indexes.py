@@ -284,6 +284,35 @@ def section_heading_for_needle(content: str, needle: str, fallback: str) -> str:
     return heading
 
 
+def contextual_match_for_needle(content: str, needle: str, fallback_heading: str) -> dict:
+    lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    current_heading = str(fallback_heading or "").strip()
+    target = normalize_for_match(needle)
+
+    def to_text(block: list[str]) -> str:
+        parts = [markdown_to_plain(x).strip() for x in block if markdown_to_plain(x).strip()]
+        return "\n\n".join(parts).strip()
+
+    for i, raw in enumerate(lines):
+        line = str(raw or "")
+        if re.match(r"^##\s+", line):
+            current_heading = re.sub(r"^##\s+", "", line).strip() or current_heading
+            continue
+        if re.match(r"^###\s+", line):
+            current_heading = re.sub(r"^###\s+", "", line).strip() or current_heading
+            continue
+        plain = normalize_for_match(markdown_to_plain(line))
+        if not plain:
+            continue
+        if re.search(rf"(^|[^a-z0-9]){re.escape(target)}(?=$|[^a-z0-9])", plain):
+            start = max(0, i - 6)
+            end = min(len(lines), i + 8)
+            snippet = to_text(lines[start:end])
+            if snippet:
+                return {"snippet": snippet, "heading": current_heading}
+    return {"snippet": "", "heading": str(fallback_heading or "").strip()}
+
+
 def route_for_rule(rule: dict) -> str:
     kind = str(rule.get("kind") or rule.get("type") or "pdf").lower()
     if kind == "page":
@@ -409,6 +438,10 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
                 errata_match = errata_match_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
                 snippet = str(errata_match.get("snippet") or "")
                 anchor_heading = str(errata_match.get("heading") or "") or title
+            if not snippet:
+                local_match = contextual_match_for_needle(str(doc.get("content") or ""), card["name"], title)
+                snippet = str(local_match.get("snippet") or "")
+                anchor_heading = str(local_match.get("heading") or "") or title
             if not snippet:
                 snippet = snippet_from_match(plain, needle)
                 anchor_heading = section_heading_for_needle(str(doc.get("content") or ""), card["name"], title)
