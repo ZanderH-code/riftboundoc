@@ -34,6 +34,24 @@
     return best ? best.card : null;
   }
 
+  function findExplicitCardFromText(contextText, cards) {
+    const text = String(contextText || "");
+    if (!text) return null;
+    const patterns = [
+      /([A-Z][A-Za-z' -]{2,})\s+reads\b/,
+      /example of\s+([A-Z][A-Za-z' -]{2,})[,:]/i,
+    ];
+    for (const re of patterns) {
+      const m = text.match(re);
+      if (!m || !m[1]) continue;
+      const candidate = m[1].trim();
+      // explicit prose mention should require strong name match
+      const picked = bestCardByName(candidate, cards, 0.9);
+      if (picked) return picked;
+    }
+    return null;
+  }
+
   function normalizeName(value) {
     return String(value || "")
       .toLowerCase()
@@ -192,15 +210,23 @@
         }
       } catch (_e) {}
       if (!card) {
-        const context = [
+        const prevText = [
           img.closest("p")?.textContent || "",
           img.closest("li")?.textContent || "",
           img.previousElementSibling?.textContent || "",
+          img.parentElement?.previousElementSibling?.textContent || "",
+        ].join(" ");
+        const nextText = [
           img.nextElementSibling?.textContent || "",
           img.parentElement?.previousElementSibling?.textContent || "",
           img.parentElement?.nextElementSibling?.textContent || "",
         ].join(" ");
-        card = findBestCardMatch(context, cards);
+        // Prefer explicit "X reads ..." mention, especially in the paragraph right after image.
+        card =
+          findExplicitCardFromText(nextText, cards) ||
+          findExplicitCardFromText(prevText, cards) ||
+          findBestCardMatch(nextText, cards) ||
+          findBestCardMatch(prevText, cards);
       }
       if (!card || !card.imageUrl) continue;
       const wrapper = document.createElement("div");
