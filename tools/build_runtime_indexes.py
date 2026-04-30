@@ -197,6 +197,72 @@ def faq_match_for_card(content: str, card_name: str, known_card_needles: set[str
     return {"snippet": snippet, "heading": str(section.get("heading") or "").strip()}
 
 
+def errata_match_for_card(content: str, card_name: str, known_card_needles: set[str]) -> dict:
+    lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    sections: list[dict] = []
+    current = {"heading": "", "body": []}
+
+    def maybe_push_current():
+        if current["heading"] or current["body"]:
+            sections.append({"heading": current["heading"], "body": list(current["body"])})
+
+    for i, raw_line in enumerate(lines):
+        line = str(raw_line or "")
+        trimmed = line.strip()
+        heading = ""
+
+        if re.match(r"^##\s+", line):
+            heading = re.sub(r"^##\s+", "", line).strip()
+        elif trimmed and not trimmed.startswith("#"):
+            norm = normalize_card_title_key(trimmed)
+            if norm and norm in known_card_needles:
+                heading = trimmed
+            elif trimmed.lower().endswith("(revised text)"):
+                heading = trimmed
+
+        if heading:
+            maybe_push_current()
+            current = {"heading": heading, "body": []}
+            continue
+        current["body"].append(line)
+
+    maybe_push_current()
+    if not sections:
+        return {"snippet": "", "heading": ""}
+
+    target = normalize_card_title_key(card_name)
+    section = next((x for x in sections if normalize_card_title_key(x.get("heading") or "") == target), None)
+    if not section:
+        return {"snippet": "", "heading": ""}
+
+    body_text = "\n".join(section.get("body") or [])
+    paragraphs = [markdown_to_plain(x).strip() for x in re.split(r"\n\s*\n+", body_text) if markdown_to_plain(x).strip()]
+
+    clean: list[str] = []
+    for paragraph in paragraphs:
+        norm = normalize_card_title_key(paragraph)
+        if norm == target:
+            continue
+        if norm and norm in known_card_needles and norm != target:
+            break
+        clean.append(paragraph)
+
+    if not clean:
+        return {"snippet": "", "heading": str(section.get("heading") or "").strip()}
+
+    # Keep concise and avoid accidentally pulling document-level prose.
+    keep = []
+    for p in clean:
+        keep.append(p)
+        if re.match(r"^\[old text\]$", p, flags=re.I):
+            continue
+        if len(keep) >= 6:
+            break
+
+    snippet = "\n\n".join([str(card_name or "").strip(), *keep]).strip()
+    return {"snippet": snippet, "heading": str(section.get("heading") or "").strip()}
+
+
 def section_heading_for_needle(content: str, needle: str, fallback: str) -> str:
     lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
     heading = str(fallback or "").strip()
@@ -339,6 +405,10 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
                 faq_match = faq_match_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
                 snippet = str(faq_match.get("snippet") or "")
                 anchor_heading = str(faq_match.get("heading") or "") or title
+            elif kind == "errata":
+                errata_match = errata_match_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
+                snippet = str(errata_match.get("snippet") or "")
+                anchor_heading = str(errata_match.get("heading") or "") or title
             if not snippet:
                 snippet = snippet_from_match(plain, needle)
                 anchor_heading = section_heading_for_needle(str(doc.get("content") or ""), card["name"], title)
