@@ -175,9 +175,11 @@
     const image = String(card.imageUrl || "");
     const code = String(card.publicCode || card.id || "").trim();
     const setName = String(card.set || "").trim();
+    const orientation = String(card.orientation || "").trim().toLowerCase();
+    const isLandscape = orientation === "landscape";
     const href = `../cards/?q=${encodeURIComponent(card.name || "")}`;
     return `
-      <figure class="faq-card-embed">
+      <figure class="faq-card-embed${isLandscape ? " is-landscape" : ""}">
         <a class="faq-card-embed-link" href="${href}">
           <img class="faq-card-embed-image" src="${image}" alt="${String(card.name || "Card")}" loading="lazy" />
           <figcaption class="faq-card-embed-meta">

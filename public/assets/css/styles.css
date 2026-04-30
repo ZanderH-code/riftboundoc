@@ -2047,6 +2047,10 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   max-width: 340px;
 }
 
+.faq-card-embed.is-landscape {
+  max-width: 560px;
+}
+
 .faq-card-embed-link {
   display: block;
   text-decoration: none;
@@ -2069,6 +2073,13 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
   width: 100%;
   aspect-ratio: 744 / 1039;
   object-fit: cover;
+}
+
+.faq-card-embed.is-landscape .faq-card-embed-image {
+  aspect-ratio: 1039 / 744;
+  object-fit: contain;
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 .faq-card-embed-meta {
