@@ -2078,8 +2078,6 @@ body.has-toc-drawer.toc-drawer-open .side-panel.toc-drawer {
 .faq-card-embed.is-landscape .faq-card-embed-image {
   aspect-ratio: 1039 / 744;
   object-fit: contain;
-  transform: rotate(180deg);
-  transform-origin: center;
 }
 
 .faq-card-embed-meta {
