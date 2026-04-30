@@ -55,7 +55,7 @@
     return (2 * inter) / (xs.size + ys.size);
   }
 
-  function bestCardByName(candidate, cards) {
+  function bestCardByName(candidate, cards, minScore = 0.8) {
     let best = null;
     let bestScore = 0;
     for (const card of cards) {
@@ -65,7 +65,7 @@
         best = card;
       }
     }
-    return bestScore >= 0.62 ? best : null;
+    return bestScore >= minScore ? best : null;
   }
 
   async function ensureTesseract() {
@@ -147,7 +147,10 @@
     const { data } = await Tesseract.recognize(n, "eng", {
       tessedit_char_whitelist: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' -",
     });
-    return String(data?.text || "").replace(/\s+/g, " ").trim();
+    return {
+      text: String(data?.text || "").replace(/\s+/g, " ").trim(),
+      confidence: Number(data?.confidence || 0),
+    };
   }
 
   function buildCardEmbed(card) {
@@ -180,19 +183,24 @@
     for (const img of images) {
       let card = null;
       try {
-        const ocrName = await extractCardNameFromImage(img.src);
-        card = bestCardByName(ocrName, cards);
+        const ocr = await extractCardNameFromImage(img.src);
+        const ocrText = String(ocr?.text || "");
+        const ocrConfidence = Number(ocr?.confidence || 0);
+        // Only trust OCR when confidence is decent and name match is strong.
+        if (ocrConfidence >= 55 && ocrText.split(" ").filter(Boolean).length >= 2) {
+          card = bestCardByName(ocrText, cards, 0.82);
+        }
       } catch (_e) {}
       if (!card) {
-      const context = [
-        img.closest("p")?.textContent || "",
-        img.closest("li")?.textContent || "",
-        img.previousElementSibling?.textContent || "",
-        img.nextElementSibling?.textContent || "",
-        img.parentElement?.previousElementSibling?.textContent || "",
-        img.parentElement?.nextElementSibling?.textContent || "",
-      ].join(" ");
-      card = findBestCardMatch(context, cards);
+        const context = [
+          img.closest("p")?.textContent || "",
+          img.closest("li")?.textContent || "",
+          img.previousElementSibling?.textContent || "",
+          img.nextElementSibling?.textContent || "",
+          img.parentElement?.previousElementSibling?.textContent || "",
+          img.parentElement?.nextElementSibling?.textContent || "",
+        ].join(" ");
+        card = findBestCardMatch(context, cards);
       }
       if (!card || !card.imageUrl) continue;
       const wrapper = document.createElement("div");
