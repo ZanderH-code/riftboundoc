@@ -106,7 +106,7 @@ def normalize_card_title_key(value: str) -> str:
     return re.sub(r"\s*\(revised text\)\s*$", "", normalize_for_match(plain), flags=re.I).strip()
 
 
-def faq_snippet_for_card(content: str, card_name: str, known_card_needles: set[str]) -> str:
+def faq_match_for_card(content: str, card_name: str, known_card_needles: set[str]) -> dict:
     lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
     sections: list[dict] = []
     current = {"heading": "", "body": []}
@@ -142,12 +142,12 @@ def faq_snippet_for_card(content: str, card_name: str, known_card_needles: set[s
 
     maybe_push_current()
     if not sections:
-        return ""
+        return {"snippet": "", "heading": ""}
 
     target = normalize_card_title_key(card_name)
     section = next((x for x in sections if normalize_card_title_key(x.get("heading") or "") == target), None)
     if not section:
-        return ""
+        return {"snippet": "", "heading": ""}
 
     body_text = "\n".join(section.get("body") or [])
     paragraphs = [markdown_to_plain(x).strip() for x in re.split(r"\n\s*\n+", body_text) if markdown_to_plain(x).strip()]
@@ -165,7 +165,7 @@ def faq_snippet_for_card(content: str, card_name: str, known_card_needles: set[s
             break
         clean.append(paragraph)
     if not clean:
-        return ""
+        return {"snippet": "", "heading": ""}
 
     blocks: list[list[str]] = []
     current_block: list[str] = []
@@ -191,9 +191,31 @@ def faq_snippet_for_card(content: str, card_name: str, known_card_needles: set[s
     chosen = preferred or (blocks[0] if blocks else clean)
     chosen_clean = [x for x in chosen if x and normalize_card_title_key(x) != target]
     if not chosen_clean:
-        return ""
+        return {"snippet": "", "heading": ""}
 
-    return "\n\n".join([str(card_name or "").strip(), *chosen_clean[:4]]).strip()
+    snippet = "\n\n".join([str(card_name or "").strip(), *chosen_clean[:4]]).strip()
+    return {"snippet": snippet, "heading": str(section.get("heading") or "").strip()}
+
+
+def section_heading_for_needle(content: str, needle: str, fallback: str) -> str:
+    lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    heading = str(fallback or "").strip()
+    current_heading = heading
+    target = normalize_for_match(needle)
+    for raw in lines:
+        line = str(raw or "")
+        if re.match(r"^##\s+", line):
+            current_heading = re.sub(r"^##\s+", "", line).strip() or heading
+            continue
+        if re.match(r"^###\s+", line):
+            current_heading = re.sub(r"^###\s+", "", line).strip() or current_heading
+            continue
+        plain = normalize_for_match(markdown_to_plain(line))
+        if not plain:
+            continue
+        if re.search(rf"(^|[^a-z0-9]){re.escape(target)}(?=$|[^a-z0-9])", plain):
+            return current_heading or heading
+    return heading
 
 
 def route_for_rule(rule: dict) -> str:
@@ -311,19 +333,21 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
             if re.search(rf"(^|[^a-z0-9]){re.escape(needle)}(?=$|[^a-z0-9])", low) is None:
                 continue
 
-            snippet = (
-                faq_snippet_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
-                if kind == "faq"
-                else ""
-            )
+            anchor_heading = title
+            snippet = ""
+            if kind == "faq":
+                faq_match = faq_match_for_card(str(doc.get("content") or ""), card["name"], known_card_needles)
+                snippet = str(faq_match.get("snippet") or "")
+                anchor_heading = str(faq_match.get("heading") or "") or title
             if not snippet:
                 snippet = snippet_from_match(plain, needle)
+                anchor_heading = section_heading_for_needle(str(doc.get("content") or ""), card["name"], title)
             hit = {
                 "snippet": snippet,
                 "query": card["name"],
                 "jumpQuery": card["name"],
                 "anchorText": card["name"],
-                "anchorHeading": title,
+                "anchorHeading": anchor_heading,
                 "anchorIndex": 1,
                 "ruleId": extract_rule_token(snippet) if kind == "rule" else "",
             }

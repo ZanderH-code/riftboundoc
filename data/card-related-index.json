@@ -73,7 +73,7 @@
               "query": "Disintegrate",
               "jumpQuery": "Disintegrate",
               "anchorText": "Disintegrate",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Disintegrate",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -266,7 +266,7 @@
               "query": "Captain Farron",
               "jumpQuery": "Captain Farron",
               "anchorText": "Captain Farron",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -310,7 +310,7 @@
               "query": "Noxus Saboteur",
               "jumpQuery": "Noxus Saboteur",
               "anchorText": "Noxus Saboteur",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Which cards count for Teemo? Does Ember Monk count? What about Noxus Saboteur?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -332,7 +332,7 @@
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sun Disc",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -354,7 +354,7 @@
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unlicensed Armory",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -393,7 +393,7 @@
               "query": "Void Seeker",
               "jumpQuery": "Void Seeker",
               "anchorText": "Void Seeker",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -432,7 +432,7 @@
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Blind Fury",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -487,7 +487,7 @@
               "query": "Brynhir Thundersong",
               "jumpQuery": "Brynhir Thundersong",
               "anchorText": "Brynhir Thundersong",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -509,7 +509,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Darius, Trifarian",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -525,7 +525,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -547,7 +547,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Darius, Trifarian",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -563,7 +563,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -601,7 +601,7 @@
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Falling Star (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -619,7 +619,7 @@
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
-              "anchorHeading": "Riftbound Spiritforged Errata",
+              "anchorHeading": "Origins Cards",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -718,7 +718,7 @@
               "query": "Raging Firebrand",
               "jumpQuery": "Raging Firebrand",
               "anchorText": "Raging Firebrand",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -740,7 +740,7 @@
               "query": "Ravenborn Tome",
               "jumpQuery": "Ravenborn Tome",
               "anchorText": "Ravenborn Tome",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Ravenborn Tome",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -796,7 +796,7 @@
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8th point from conquering?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -815,7 +815,7 @@
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "March 2026 Tournament Rules Update & Changelog",
+              "anchorHeading": "Asking Judges Rules Questions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -873,7 +873,7 @@
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Immortal Phoenix",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -908,7 +908,7 @@
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1016,7 +1016,7 @@
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1032,7 +1032,7 @@
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Charm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1093,7 +1093,7 @@
               "query": "Find Your Center",
               "jumpQuery": "Find Your Center",
               "anchorText": "Find Your Center",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the cost while its cost reduction applies, does the cost reduction happen once or twice, and does the final spell cost 2 or 4?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1115,7 +1115,7 @@
               "query": "Stalwart Poro",
               "jumpQuery": "Stalwart Poro",
               "anchorText": "Stalwart Poro",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1154,7 +1154,7 @@
               "query": "Stand United",
               "jumpQuery": "Stand United",
               "anchorText": "Stand United",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1259,7 +1259,7 @@
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Reinforce (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1360,7 +1360,7 @@
               "query": "Caitlyn, Patrolling",
               "jumpQuery": "Caitlyn, Patrolling",
               "anchorText": "Caitlyn, Patrolling",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1402,7 +1402,7 @@
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sona, Harmonious",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1418,7 +1418,7 @@
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1474,7 +1474,7 @@
               "query": "Taric, Protector",
               "jumpQuery": "Taric, Protector",
               "anchorText": "Taric, Protector",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1540,7 +1540,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Zhonya's Hourglass",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1556,7 +1556,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1592,7 +1592,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1678,7 +1678,7 @@
               "query": "Stupefy",
               "jumpQuery": "Stupefy",
               "anchorText": "Stupefy",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1694,7 +1694,7 @@
               "query": "Stupefy",
               "jumpQuery": "Stupefy",
               "anchorText": "Stupefy",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does this mean that units' Might can go to 0 or below now?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1777,7 +1777,7 @@
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Portal Rescue",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1816,7 +1816,7 @@
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1877,7 +1877,7 @@
               "query": "Singularity",
               "jumpQuery": "Singularity",
               "anchorText": "Singularity",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1916,7 +1916,7 @@
               "query": "Ava Achiever",
               "jumpQuery": "Ava Achiever",
               "anchorText": "Ava Achiever",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Ava Achiever",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1955,7 +1955,7 @@
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Convergent Mutation",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -1971,7 +1971,7 @@
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Should Blood Rush say \"this turn\" on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2032,7 +2032,7 @@
               "query": "Ekko, Recurrent",
               "jumpQuery": "Ekko, Recurrent",
               "anchorText": "Ekko, Recurrent",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2054,7 +2054,7 @@
               "query": "Promising Future",
               "jumpQuery": "Promising Future",
               "anchorText": "Promising Future",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Promising Future",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2126,7 +2126,7 @@
               "query": "Wraith of Echoes",
               "jumpQuery": "Wraith of Echoes",
               "anchorText": "Wraith of Echoes",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Wraith of Echoes",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2165,7 +2165,7 @@
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Teemo, Strategist",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2204,7 +2204,7 @@
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Teemo, Strategist",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2261,7 +2261,7 @@
               "query": "Time Warp",
               "jumpQuery": "Time Warp",
               "anchorText": "Time Warp",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2364,7 +2364,7 @@
               "query": "Challenge",
               "jumpQuery": "Challenge",
               "anchorText": "Challenge",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2403,7 +2403,7 @@
               "query": "Dune Drake",
               "jumpQuery": "Dune Drake",
               "anchorText": "Dune Drake",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dune Drake",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2442,7 +2442,7 @@
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Kinkou Monk",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2481,7 +2481,7 @@
               "query": "Unyielding Spirit",
               "jumpQuery": "Unyielding Spirit",
               "anchorText": "Unyielding Spirit",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unyielding Spirit",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2503,7 +2503,7 @@
               "query": "Carnivorous Snapvine",
               "jumpQuery": "Carnivorous Snapvine",
               "anchorText": "Carnivorous Snapvine",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2525,7 +2525,7 @@
               "query": "Lee Sin, Centered",
               "jumpQuery": "Lee Sin, Centered",
               "anchorText": "Lee Sin, Centered",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2547,7 +2547,7 @@
               "query": "Lee Sin, Centered",
               "jumpQuery": "Lee Sin, Centered",
               "anchorText": "Lee Sin, Centered",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2591,7 +2591,7 @@
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2613,7 +2613,7 @@
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2635,7 +2635,7 @@
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dazzling Aurora",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2806,7 +2806,7 @@
               "query": "Ember Monk",
               "jumpQuery": "Ember Monk",
               "anchorText": "Ember Monk",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Which cards count for Teemo? Does Ember Monk count? What about Noxus Saboteur?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2850,7 +2850,7 @@
               "query": "Rebuke",
               "jumpQuery": "Rebuke",
               "anchorText": "Rebuke",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2916,7 +2916,7 @@
               "query": "Pack of Wonders",
               "jumpQuery": "Pack of Wonders",
               "anchorText": "Pack of Wonders",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Pack of Wonders",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2955,7 +2955,7 @@
               "query": "Stacked Deck",
               "jumpQuery": "Stacked Deck",
               "anchorText": "Stacked Deck",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So how exactly does this ability work?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -2977,7 +2977,7 @@
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Syren",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3060,7 +3060,7 @@
               "query": "Kog'Maw, Caustic",
               "jumpQuery": "Kog'Maw, Caustic",
               "anchorText": "Kog'Maw, Caustic",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3082,7 +3082,7 @@
               "query": "Nocturne, Horrifying",
               "jumpQuery": "Nocturne, Horrifying",
               "anchorText": "Nocturne, Horrifying",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Nocturne, Horrifying",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3121,7 +3121,7 @@
               "query": "The Harrowing",
               "jumpQuery": "The Harrowing",
               "anchorText": "The Harrowing",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It sounds like it's too late for it to be recycled as part of \"the rest.\"",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3143,7 +3143,7 @@
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Tideturner Targeting",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3159,7 +3159,7 @@
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Tideturner",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3293,7 +3293,7 @@
               "query": "Possession",
               "jumpQuery": "Possession",
               "anchorText": "Possession",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Portal Rescue",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3376,7 +3376,7 @@
               "query": "Back to Back",
               "jumpQuery": "Back to Back",
               "anchorText": "Back to Back",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3398,7 +3398,7 @@
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So what exactly happens when someone plays Promising Future?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3414,7 +3414,7 @@
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3453,7 +3453,7 @@
               "query": "Cull the Weak",
               "jumpQuery": "Cull the Weak",
               "anchorText": "Cull the Weak",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3475,7 +3475,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Hidden Blade (Repeated)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3491,7 +3491,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: When I replace a unit's death with a card like Unlicensed Armory, does damage on the unit stay? If the unit died to lethal damage, doesn't it just die again?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3510,7 +3510,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3618,7 +3618,7 @@
               "query": "Symbol of the Solari",
               "jumpQuery": "Symbol of the Solari",
               "anchorText": "Symbol of the Solari",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Symbol of the Solari",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3662,7 +3662,7 @@
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Karma, Channeler",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3701,7 +3701,7 @@
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Baited Hook",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3717,7 +3717,7 @@
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3773,7 +3773,7 @@
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3795,7 +3795,7 @@
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3877,7 +3877,7 @@
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Icathian Rain (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3916,7 +3916,7 @@
               "query": "Relentless Storm",
               "jumpQuery": "Relentless Storm",
               "anchorText": "Relentless Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does Mighty mean?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3938,7 +3938,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3954,7 +3954,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3973,7 +3973,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -3993,7 +3993,7 @@
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4054,7 +4054,7 @@
               "query": "Dragon's Rage",
               "jumpQuery": "Dragon's Rage",
               "anchorText": "Dragon's Rage",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dragon's Rage",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4093,7 +4093,7 @@
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unforgiven",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4132,7 +4132,7 @@
               "query": "Last Breath",
               "jumpQuery": "Last Breath",
               "anchorText": "Last Breath",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4154,7 +4154,7 @@
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Boss (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4193,7 +4193,7 @@
               "query": "Showstopper",
               "jumpQuery": "Showstopper",
               "anchorText": "Showstopper",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4237,7 +4237,7 @@
               "query": "Aspirant's Climb",
               "jumpQuery": "Aspirant's Climb",
               "anchorText": "Aspirant's Climb",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4259,7 +4259,7 @@
               "query": "Hallowed Tomb",
               "jumpQuery": "Hallowed Tomb",
               "anchorText": "Hallowed Tomb",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Hallowed Tomb",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4303,7 +4303,7 @@
               "query": "Reckoner's Arena",
               "jumpQuery": "Reckoner's Arena",
               "anchorText": "Reckoner's Arena",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4325,7 +4325,7 @@
               "query": "Sigil of the Storm",
               "jumpQuery": "Sigil of the Storm",
               "anchorText": "Sigil of the Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sigil of the Storm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4386,7 +4386,7 @@
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Targon's Peak",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4447,7 +4447,7 @@
               "query": "Trifarian War Camp",
               "jumpQuery": "Trifarian War Camp",
               "anchorText": "Trifarian War Camp",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4463,7 +4463,7 @@
               "query": "Trifarian War Camp",
               "jumpQuery": "Trifarian War Camp",
               "anchorText": "Trifarian War Camp",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does this mean that units' Might can go to 0 or below now?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4485,7 +4485,7 @@
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Void Gate",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4557,7 +4557,7 @@
               "query": "Relentless Storm",
               "jumpQuery": "Relentless Storm",
               "anchorText": "Relentless Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does Mighty mean?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4579,7 +4579,7 @@
               "query": "Relentless Storm",
               "jumpQuery": "Relentless Storm",
               "anchorText": "Relentless Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does Mighty mean?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4601,7 +4601,7 @@
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4640,7 +4640,7 @@
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4679,7 +4679,7 @@
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unforgiven",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4718,7 +4718,7 @@
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unforgiven",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4757,7 +4757,7 @@
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Boss (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4796,7 +4796,7 @@
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Boss (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4879,7 +4879,7 @@
               "query": "Flash",
               "jumpQuery": "Flash",
               "anchorText": "Flash",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4901,7 +4901,7 @@
               "query": "Garen, Commander",
               "jumpQuery": "Garen, Commander",
               "anchorText": "Garen, Commander",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4945,7 +4945,7 @@
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Highlander",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -4984,7 +4984,7 @@
               "query": "Blood Rush",
               "jumpQuery": "Blood Rush",
               "anchorText": "Blood Rush",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Blood Rush",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5023,7 +5023,7 @@
               "query": "Void Drone",
               "jumpQuery": "Void Drone",
               "anchorText": "Void Drone",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5045,7 +5045,7 @@
               "query": "Battering Ram",
               "jumpQuery": "Battering Ram",
               "anchorText": "Battering Ram",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5067,7 +5067,7 @@
               "query": "Blast Corps Cadet",
               "jumpQuery": "Blast Corps Cadet",
               "anchorText": "Blast Corps Cadet",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5089,7 +5089,7 @@
               "query": "Draven, Vanquisher",
               "jumpQuery": "Draven, Vanquisher",
               "anchorText": "Draven, Vanquisher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5111,7 +5111,7 @@
               "query": "Draven, Vanquisher",
               "jumpQuery": "Draven, Vanquisher",
               "anchorText": "Draven, Vanquisher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5133,7 +5133,7 @@
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rell, Magnetic (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5172,7 +5172,7 @@
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rumble, Hotheaded",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5194,7 +5194,7 @@
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rumble, Hotheaded",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5216,7 +5216,7 @@
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5238,7 +5238,7 @@
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5260,7 +5260,7 @@
               "query": "Disarming Rake",
               "jumpQuery": "Disarming Rake",
               "anchorText": "Disarming Rake",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5339,7 +5339,7 @@
               "query": "Guardian Angel",
               "jumpQuery": "Guardian Angel",
               "anchorText": "Guardian Angel",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5359,7 +5359,7 @@
               "query": "Janna, Savior",
               "jumpQuery": "Janna, Savior",
               "anchorText": "Janna, Savior",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Janna, Savior",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5398,7 +5398,7 @@
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Jax, Unmatched",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5437,7 +5437,7 @@
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Jax, Unmatched",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5476,7 +5476,7 @@
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5498,7 +5498,7 @@
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5520,7 +5520,7 @@
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Svellsongur",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5539,7 +5539,7 @@
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5559,7 +5559,7 @@
               "query": "Tianna Crownguard",
               "jumpQuery": "Tianna Crownguard",
               "anchorText": "Tianna Crownguard",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Tianna Crownguard",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5598,7 +5598,7 @@
               "query": "Frigid Touch",
               "jumpQuery": "Frigid Touch",
               "anchorText": "Frigid Touch",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does a unit with 0 or less Might automatically die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5637,7 +5637,7 @@
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Pickpocket",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5681,7 +5681,7 @@
               "query": "Temporal Portal",
               "jumpQuery": "Temporal Portal",
               "anchorText": "Temporal Portal",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Temporal Portal",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5703,7 +5703,7 @@
               "query": "Jayce, Man of Progress",
               "jumpQuery": "Jayce, Man of Progress",
               "anchorText": "Jayce, Man of Progress",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5725,7 +5725,7 @@
               "query": "Renata Glasc, Mastermind",
               "jumpQuery": "Renata Glasc, Mastermind",
               "anchorText": "Renata Glasc, Mastermind",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5747,7 +5747,7 @@
               "query": "Renata Glasc, Mastermind",
               "jumpQuery": "Renata Glasc, Mastermind",
               "anchorText": "Renata Glasc, Mastermind",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5769,7 +5769,7 @@
               "query": "Here to Help",
               "jumpQuery": "Here to Help",
               "anchorText": "Here to Help",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5791,7 +5791,7 @@
               "query": "Kato the Arm",
               "jumpQuery": "Kato the Arm",
               "anchorText": "Kato the Arm",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Kato the Arm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5852,7 +5852,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Yone, Blademaster",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5868,7 +5868,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5973,7 +5973,7 @@
               "query": "Cull",
               "jumpQuery": "Cull",
               "anchorText": "Cull",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -5995,7 +5995,7 @@
               "query": "Edge of Night",
               "jumpQuery": "Edge of Night",
               "anchorText": "Edge of Night",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Edge of Night",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6034,7 +6034,7 @@
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Draven, Audacious",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6056,7 +6056,7 @@
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Draven, Audacious",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6078,7 +6078,7 @@
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Ezreal, Prodigy",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6117,7 +6117,7 @@
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Ezreal, Prodigy",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6200,7 +6200,7 @@
               "query": "Deathgrip",
               "jumpQuery": "Deathgrip",
               "anchorText": "Deathgrip",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Deathgrip",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6239,7 +6239,7 @@
               "query": "Glasc Mixologist",
               "jumpQuery": "Glasc Mixologist",
               "anchorText": "Glasc Mixologist",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6261,7 +6261,7 @@
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rek'Sai, Swarm Queen (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6300,7 +6300,7 @@
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rek'Sai, Swarm Queen (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6357,7 +6357,7 @@
               "query": "Soraka, Wanderer",
               "jumpQuery": "Soraka, Wanderer",
               "anchorText": "Soraka, Wanderer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6399,7 +6399,7 @@
               "query": "Spinning Axe",
               "jumpQuery": "Spinning Axe",
               "anchorText": "Spinning Axe",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6438,7 +6438,7 @@
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Void Burrower (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6477,7 +6477,7 @@
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Void Rush (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6538,7 +6538,7 @@
               "query": "Counter Strike",
               "jumpQuery": "Counter Strike",
               "anchorText": "Counter Strike",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6560,7 +6560,7 @@
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Arise! (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6578,7 +6578,7 @@
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
-              "anchorHeading": "Riftbound Spiritforged Errata",
+              "anchorHeading": "Spiritforged Cards",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6599,7 +6599,7 @@
               "query": "Arcane Shift",
               "jumpQuery": "Arcane Shift",
               "anchorText": "Arcane Shift",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6621,7 +6621,7 @@
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Hostile Takeover",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6656,7 +6656,7 @@
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6676,7 +6676,7 @@
               "query": "Forgotten Monument",
               "jumpQuery": "Forgotten Monument",
               "anchorText": "Forgotten Monument",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6742,7 +6742,7 @@
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Teemo, Strategist",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6781,7 +6781,7 @@
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Teemo, Strategist",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6864,7 +6864,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Yone, Blademaster",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6880,7 +6880,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6919,7 +6919,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Yone, Blademaster",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -6935,7 +6935,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7018,7 +7018,7 @@
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7040,7 +7040,7 @@
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7062,7 +7062,7 @@
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Karma, Channeler",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7101,7 +7101,7 @@
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Karma, Channeler",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7158,7 +7158,7 @@
               "query": "Soraka, Wanderer",
               "jumpQuery": "Soraka, Wanderer",
               "anchorText": "Soraka, Wanderer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7196,7 +7196,7 @@
               "query": "Soraka, Wanderer",
               "jumpQuery": "Soraka, Wanderer",
               "anchorText": "Soraka, Wanderer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7216,7 +7216,7 @@
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Void Burrower (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7277,7 +7277,7 @@
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Can Pickpocket kill a Gold token?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7316,7 +7316,7 @@
               "query": "Grim Apothecary",
               "jumpQuery": "Grim Apothecary",
               "anchorText": "Grim Apothecary",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7338,7 +7338,7 @@
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7360,7 +7360,7 @@
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7404,7 +7404,7 @@
               "query": "Turn to Dust",
               "jumpQuery": "Turn to Dust",
               "anchorText": "Turn to Dust",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7514,7 +7514,7 @@
               "query": "Zilean, Time Mage",
               "jumpQuery": "Zilean, Time Mage",
               "anchorText": "Zilean, Time Mage",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7536,7 +7536,7 @@
               "query": "Jhin, Meticulous Killer",
               "jumpQuery": "Jhin, Meticulous Killer",
               "anchorText": "Jhin, Meticulous Killer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7558,7 +7558,7 @@
               "query": "Jhin, Meticulous Killer",
               "jumpQuery": "Jhin, Meticulous Killer",
               "anchorText": "Jhin, Meticulous Killer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7580,7 +7580,7 @@
               "query": "Repulse",
               "jumpQuery": "Repulse",
               "anchorText": "Repulse",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7602,7 +7602,7 @@
               "query": "Elder Dragon",
               "jumpQuery": "Elder Dragon",
               "anchorText": "Elder Dragon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Lethal Damage Modification",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7624,7 +7624,7 @@
               "query": "Elder Dragon",
               "jumpQuery": "Elder Dragon",
               "anchorText": "Elder Dragon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Lethal Damage Modification",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7690,7 +7690,7 @@
               "query": "Crescent Guardian",
               "jumpQuery": "Crescent Guardian",
               "anchorText": "Crescent Guardian",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7712,7 +7712,7 @@
               "query": "Insightful Investigator",
               "jumpQuery": "Insightful Investigator",
               "anchorText": "Insightful Investigator",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7756,7 +7756,7 @@
               "query": "Heedless Resurrection",
               "jumpQuery": "Heedless Resurrection",
               "anchorText": "Heedless Resurrection",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7800,7 +7800,7 @@
               "query": "Atakhan",
               "jumpQuery": "Atakhan",
               "anchorText": "Atakhan",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7822,7 +7822,7 @@
               "query": "Rift Herald",
               "jumpQuery": "Rift Herald",
               "anchorText": "Rift Herald",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Mandatory Actions and Private Information",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7844,7 +7844,7 @@
               "query": "Rift Herald",
               "jumpQuery": "Rift Herald",
               "anchorText": "Rift Herald",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Mandatory Actions and Private Information",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7866,7 +7866,7 @@
               "query": "Thrill of the Hunt",
               "jumpQuery": "Thrill of the Hunt",
               "anchorText": "Thrill of the Hunt",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7910,7 +7910,7 @@
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7932,7 +7932,7 @@
               "query": "Alpha Strike",
               "jumpQuery": "Alpha Strike",
               "anchorText": "Alpha Strike",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7954,7 +7954,7 @@
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -7976,7 +7976,7 @@
               "query": "Deceiver",
               "jumpQuery": "Deceiver",
               "anchorText": "Deceiver",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8071,7 +8071,7 @@
               "query": "Abandoned Hall",
               "jumpQuery": "Abandoned Hall",
               "anchorText": "Abandoned Hall",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Control of Battlefield Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8115,7 +8115,7 @@
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8137,7 +8137,7 @@
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8159,7 +8159,7 @@
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8181,7 +8181,7 @@
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8203,7 +8203,7 @@
               "query": "Deceiver",
               "jumpQuery": "Deceiver",
               "anchorText": "Deceiver",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8259,7 +8259,7 @@
               "query": "Deceiver",
               "jumpQuery": "Deceiver",
               "anchorText": "Deceiver",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8359,7 +8359,7 @@
               "query": "Brush",
               "jumpQuery": "Brush",
               "anchorText": "Brush",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8398,7 +8398,7 @@
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Can Pickpocket kill a Gold token?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8437,7 +8437,7 @@
               "query": "Reflection",
               "jumpQuery": "Reflection",
               "anchorText": "Reflection",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8455,7 +8455,7 @@
               "query": "Reflection",
               "jumpQuery": "Reflection",
               "anchorText": "Reflection",
-              "anchorHeading": "Unleashed Errata Updates",
+              "anchorHeading": "Leblanc, Deceiver",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8522,7 +8522,7 @@
               "query": "Abandoned Hall",
               "jumpQuery": "Abandoned Hall",
               "anchorText": "Abandoned Hall",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Control of Battlefield Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8601,7 +8601,7 @@
               "query": "Alpha Strike",
               "jumpQuery": "Alpha Strike",
               "anchorText": "Alpha Strike",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8732,7 +8732,7 @@
               "query": "Arcane Shift",
               "jumpQuery": "Arcane Shift",
               "anchorText": "Arcane Shift",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8764,7 +8764,7 @@
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Arise! (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8782,7 +8782,7 @@
               "query": "Arise!",
               "jumpQuery": "Arise!",
               "anchorText": "Arise!",
-              "anchorHeading": "Riftbound Spiritforged Errata",
+              "anchorHeading": "Spiritforged Cards",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8813,7 +8813,7 @@
               "query": "Aspirant's Climb",
               "jumpQuery": "Aspirant's Climb",
               "anchorText": "Aspirant's Climb",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8845,7 +8845,7 @@
               "query": "Atakhan",
               "jumpQuery": "Atakhan",
               "anchorText": "Atakhan",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8867,7 +8867,7 @@
               "query": "Ava Achiever",
               "jumpQuery": "Ava Achiever",
               "anchorText": "Ava Achiever",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Ava Achiever",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8926,7 +8926,7 @@
               "query": "Back to Back",
               "jumpQuery": "Back to Back",
               "anchorText": "Back to Back",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: If a spell has multiple targets, like Back to Back, do I need to choose targets for all of them to put the spell on the chain?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8953,7 +8953,7 @@
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Baited Hook",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -8969,7 +8969,7 @@
               "query": "Baited Hook",
               "jumpQuery": "Baited Hook",
               "anchorText": "Baited Hook",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9072,7 +9072,7 @@
               "query": "Battering Ram",
               "jumpQuery": "Battering Ram",
               "anchorText": "Battering Ram",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9171,7 +9171,7 @@
               "query": "Blast Corps Cadet",
               "jumpQuery": "Blast Corps Cadet",
               "anchorText": "Blast Corps Cadet",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: What costs does Ezreal, Prodigy reduce? Does he reduce Repeat costs? Accelerate costs? Equip costs?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9230,7 +9230,7 @@
               "query": "Blind Fury",
               "jumpQuery": "Blind Fury",
               "anchorText": "Blind Fury",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Blind Fury",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9327,7 +9327,7 @@
               "query": "Blood Rush",
               "jumpQuery": "Blood Rush",
               "anchorText": "Blood Rush",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Blood Rush",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9450,7 +9450,7 @@
               "query": "Brush",
               "jumpQuery": "Brush",
               "anchorText": "Brush",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9494,7 +9494,7 @@
               "query": "Brynhir Thundersong",
               "jumpQuery": "Brynhir Thundersong",
               "anchorText": "Brynhir Thundersong",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9554,7 +9554,7 @@
               "query": "Caitlyn, Patrolling",
               "jumpQuery": "Caitlyn, Patrolling",
               "anchorText": "Caitlyn, Patrolling",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9616,7 +9616,7 @@
               "query": "Captain Farron",
               "jumpQuery": "Captain Farron",
               "anchorText": "Captain Farron",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9643,7 +9643,7 @@
               "query": "Carnivorous Snapvine",
               "jumpQuery": "Carnivorous Snapvine",
               "anchorText": "Carnivorous Snapvine",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9685,7 +9685,7 @@
               "query": "Challenge",
               "jumpQuery": "Challenge",
               "anchorText": "Challenge",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9746,7 +9746,7 @@
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9762,7 +9762,7 @@
               "query": "Charm",
               "jumpQuery": "Charm",
               "anchorText": "Charm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Charm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9944,7 +9944,7 @@
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Convergent Mutation",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -9960,7 +9960,7 @@
               "query": "Convergent Mutation",
               "jumpQuery": "Convergent Mutation",
               "anchorText": "Convergent Mutation",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Should Blood Rush say \"this turn\" on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10009,7 +10009,7 @@
               "query": "Counter Strike",
               "jumpQuery": "Counter Strike",
               "anchorText": "Counter Strike",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10036,7 +10036,7 @@
               "query": "Crescent Guardian",
               "jumpQuery": "Crescent Guardian",
               "anchorText": "Crescent Guardian",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10073,7 +10073,7 @@
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So what exactly happens when someone plays Promising Future?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10089,7 +10089,7 @@
               "query": "Cruel Patron",
               "jumpQuery": "Cruel Patron",
               "anchorText": "Cruel Patron",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10128,7 +10128,7 @@
               "query": "Cull",
               "jumpQuery": "Cull",
               "anchorText": "Cull",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10150,7 +10150,7 @@
               "query": "Cull the Weak",
               "jumpQuery": "Cull the Weak",
               "anchorText": "Cull the Weak",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10207,7 +10207,7 @@
               "query": "Darius, Executioner",
               "jumpQuery": "Darius, Executioner",
               "anchorText": "Darius, Executioner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10229,7 +10229,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Darius, Trifarian",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10245,7 +10245,7 @@
               "query": "Darius, Trifarian",
               "jumpQuery": "Darius, Trifarian",
               "anchorText": "Darius, Trifarian",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10282,7 +10282,7 @@
               "query": "Dazzling Aurora",
               "jumpQuery": "Dazzling Aurora",
               "anchorText": "Dazzling Aurora",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dazzling Aurora",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10353,7 +10353,7 @@
               "query": "Deathgrip",
               "jumpQuery": "Deathgrip",
               "anchorText": "Deathgrip",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Deathgrip",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10392,7 +10392,7 @@
               "query": "Deceiver",
               "jumpQuery": "Deceiver",
               "anchorText": "Deceiver",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10498,7 +10498,7 @@
               "query": "Disarming Rake",
               "jumpQuery": "Disarming Rake",
               "anchorText": "Disarming Rake",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10542,7 +10542,7 @@
               "query": "Disintegrate",
               "jumpQuery": "Disintegrate",
               "anchorText": "Disintegrate",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Disintegrate",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10653,7 +10653,7 @@
               "query": "Dragon's Rage",
               "jumpQuery": "Dragon's Rage",
               "anchorText": "Dragon's Rage",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dragon's Rage",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10702,7 +10702,7 @@
               "query": "Draven, Audacious",
               "jumpQuery": "Draven, Audacious",
               "anchorText": "Draven, Audacious",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Draven, Audacious",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10729,7 +10729,7 @@
               "query": "Draven, Vanquisher",
               "jumpQuery": "Draven, Vanquisher",
               "anchorText": "Draven, Vanquisher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10756,7 +10756,7 @@
               "query": "Dune Drake",
               "jumpQuery": "Dune Drake",
               "anchorText": "Dune Drake",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Dune Drake",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10876,7 +10876,7 @@
               "query": "Edge of Night",
               "jumpQuery": "Edge of Night",
               "anchorText": "Edge of Night",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Edge of Night",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10915,7 +10915,7 @@
               "query": "Ekko, Recurrent",
               "jumpQuery": "Ekko, Recurrent",
               "anchorText": "Ekko, Recurrent",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10937,7 +10937,7 @@
               "query": "Elder Dragon",
               "jumpQuery": "Elder Dragon",
               "anchorText": "Elder Dragon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Lethal Damage Modification",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -10959,7 +10959,7 @@
               "query": "Ember Monk",
               "jumpQuery": "Ember Monk",
               "anchorText": "Ember Monk",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Which cards count for Teemo? Does Ember Monk count? What about Noxus Saboteur?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11051,7 +11051,7 @@
               "query": "Ezreal, Prodigy",
               "jumpQuery": "Ezreal, Prodigy",
               "anchorText": "Ezreal, Prodigy",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Ezreal, Prodigy",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11141,7 +11141,7 @@
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Falling Star (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11159,7 +11159,7 @@
               "query": "Falling Star",
               "jumpQuery": "Falling Star",
               "anchorText": "Falling Star",
-              "anchorHeading": "Riftbound Spiritforged Errata",
+              "anchorHeading": "Origins Cards",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11222,7 +11222,7 @@
               "query": "Find Your Center",
               "jumpQuery": "Find Your Center",
               "anchorText": "Find Your Center",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: What parts of a spell does the Repeat ability cause to be repeated? Is it the entire effect? If I use Temporal Portal to give Find Your Center Repeat and pay the cost while its cost reduction applies, does the cost reduction happen once or twice, and does the final spell cost 2 or 4?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11301,7 +11301,7 @@
               "query": "Flash",
               "jumpQuery": "Flash",
               "anchorText": "Flash",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11363,7 +11363,7 @@
               "query": "Forgotten Monument",
               "jumpQuery": "Forgotten Monument",
               "anchorText": "Forgotten Monument",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11415,7 +11415,7 @@
               "query": "Frigid Touch",
               "jumpQuery": "Frigid Touch",
               "anchorText": "Frigid Touch",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does a unit with 0 or less Might automatically die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11523,7 +11523,7 @@
               "query": "Garen, Commander",
               "jumpQuery": "Garen, Commander",
               "anchorText": "Garen, Commander",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11585,7 +11585,7 @@
               "query": "Glasc Mixologist",
               "jumpQuery": "Glasc Mixologist",
               "anchorText": "Glasc Mixologist",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11617,7 +11617,7 @@
               "query": "Gold",
               "jumpQuery": "Gold",
               "anchorText": "Gold",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Can Pickpocket kill a Gold token?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11688,7 +11688,7 @@
               "query": "Green Father",
               "jumpQuery": "Green Father",
               "anchorText": "Green Father",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11710,7 +11710,7 @@
               "query": "Grim Apothecary",
               "jumpQuery": "Grim Apothecary",
               "anchorText": "Grim Apothecary",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11777,7 +11777,7 @@
               "query": "Guardian Angel",
               "jumpQuery": "Guardian Angel",
               "anchorText": "Guardian Angel",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11866,7 +11866,7 @@
               "query": "Hallowed Tomb",
               "jumpQuery": "Hallowed Tomb",
               "anchorText": "Hallowed Tomb",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Hallowed Tomb",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11913,7 +11913,7 @@
               "query": "Heedless Resurrection",
               "jumpQuery": "Heedless Resurrection",
               "anchorText": "Heedless Resurrection",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -11955,7 +11955,7 @@
               "query": "Here to Help",
               "jumpQuery": "Here to Help",
               "anchorText": "Here to Help",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12019,7 +12019,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Hidden Blade (Repeated)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12035,7 +12035,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: When I replace a unit's death with a card like Unlicensed Armory, does damage on the unit stay? If the unit died to lethal damage, doesn't it just die again?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12054,7 +12054,7 @@
               "query": "Hidden Blade",
               "jumpQuery": "Hidden Blade",
               "anchorText": "Hidden Blade",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12074,7 +12074,7 @@
               "query": "Highlander",
               "jumpQuery": "Highlander",
               "anchorText": "Highlander",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Highlander",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12140,7 +12140,7 @@
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Hostile Takeover",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12175,7 +12175,7 @@
               "query": "Hostile Takeover",
               "jumpQuery": "Hostile Takeover",
               "anchorText": "Hostile Takeover",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12226,7 +12226,7 @@
               "query": "Icathian Rain",
               "jumpQuery": "Icathian Rain",
               "anchorText": "Icathian Rain",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Icathian Rain (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12270,7 +12270,7 @@
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Immortal Phoenix",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12305,7 +12305,7 @@
               "query": "Immortal Phoenix",
               "jumpQuery": "Immortal Phoenix",
               "anchorText": "Immortal Phoenix",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12345,7 +12345,7 @@
               "query": "Insightful Investigator",
               "jumpQuery": "Insightful Investigator",
               "anchorText": "Insightful Investigator",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12434,7 +12434,7 @@
               "query": "Janna, Savior",
               "jumpQuery": "Janna, Savior",
               "anchorText": "Janna, Savior",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Janna, Savior",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12478,7 +12478,7 @@
               "query": "Jax, Unmatched",
               "jumpQuery": "Jax, Unmatched",
               "anchorText": "Jax, Unmatched",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Jax, Unmatched",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12522,7 +12522,7 @@
               "query": "Jayce, Man of Progress",
               "jumpQuery": "Jayce, Man of Progress",
               "anchorText": "Jayce, Man of Progress",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12549,7 +12549,7 @@
               "query": "Jhin, Meticulous Killer",
               "jumpQuery": "Jhin, Meticulous Killer",
               "anchorText": "Jhin, Meticulous Killer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12669,7 +12669,7 @@
               "query": "Karma, Channeler",
               "jumpQuery": "Karma, Channeler",
               "anchorText": "Karma, Channeler",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Karma, Channeler",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12718,7 +12718,7 @@
               "query": "Kato the Arm",
               "jumpQuery": "Kato the Arm",
               "anchorText": "Kato the Arm",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Kato the Arm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12831,7 +12831,7 @@
               "query": "Kinkou Monk",
               "jumpQuery": "Kinkou Monk",
               "anchorText": "Kinkou Monk",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Kinkou Monk",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12870,7 +12870,7 @@
               "query": "Kog'Maw, Caustic",
               "jumpQuery": "Kog'Maw, Caustic",
               "anchorText": "Kog'Maw, Caustic",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Does the damage from Kog'Maw's Deathknell ability happen before or after combat damage is healed?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12902,7 +12902,7 @@
               "query": "Last Breath",
               "jumpQuery": "Last Breath",
               "anchorText": "Last Breath",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -12981,7 +12981,7 @@
               "query": "Lee Sin, Centered",
               "jumpQuery": "Lee Sin, Centered",
               "anchorText": "Lee Sin, Centered",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13082,7 +13082,7 @@
               "query": "Loose Cannon",
               "jumpQuery": "Loose Cannon",
               "anchorText": "Loose Cannon",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13243,7 +13243,7 @@
               "query": "Master Yi, Unstoppable",
               "jumpQuery": "Master Yi, Unstoppable",
               "anchorText": "Master Yi, Unstoppable",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13508,7 +13508,7 @@
               "query": "Nocturne, Horrifying",
               "jumpQuery": "Nocturne, Horrifying",
               "anchorText": "Nocturne, Horrifying",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Nocturne, Horrifying",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13601,7 +13601,7 @@
               "query": "Noxus Saboteur",
               "jumpQuery": "Noxus Saboteur",
               "anchorText": "Noxus Saboteur",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: Which cards count for Teemo? Does Ember Monk count? What about Noxus Saboteur?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13682,7 +13682,7 @@
               "query": "Ornn, Blacksmith",
               "jumpQuery": "Ornn, Blacksmith",
               "anchorText": "Ornn, Blacksmith",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13736,7 +13736,7 @@
               "query": "Pack of Wonders",
               "jumpQuery": "Pack of Wonders",
               "anchorText": "Pack of Wonders",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Pack of Wonders",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13827,7 +13827,7 @@
               "query": "Pickpocket",
               "jumpQuery": "Pickpocket",
               "anchorText": "Pickpocket",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Pickpocket",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13854,7 +13854,7 @@
               "query": "Piltover Enforcer",
               "jumpQuery": "Piltover Enforcer",
               "anchorText": "Piltover Enforcer",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13921,7 +13921,7 @@
               "query": "Portal Rescue",
               "jumpQuery": "Portal Rescue",
               "anchorText": "Portal Rescue",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Portal Rescue",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -13960,7 +13960,7 @@
               "query": "Possession",
               "jumpQuery": "Possession",
               "anchorText": "Possession",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Portal Rescue",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14066,7 +14066,7 @@
               "query": "Promising Future",
               "jumpQuery": "Promising Future",
               "anchorText": "Promising Future",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Promising Future",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14173,7 +14173,7 @@
               "query": "Raging Firebrand",
               "jumpQuery": "Raging Firebrand",
               "anchorText": "Raging Firebrand",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14210,7 +14210,7 @@
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14249,7 +14249,7 @@
               "query": "Ravenborn Tome",
               "jumpQuery": "Ravenborn Tome",
               "anchorText": "Ravenborn Tome",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Ravenborn Tome",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14310,7 +14310,7 @@
               "query": "Rebuke",
               "jumpQuery": "Rebuke",
               "anchorText": "Rebuke",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14332,7 +14332,7 @@
               "query": "Reckoner's Arena",
               "jumpQuery": "Reckoner's Arena",
               "anchorText": "Reckoner's Arena",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14384,7 +14384,7 @@
               "query": "Reflection",
               "jumpQuery": "Reflection",
               "anchorText": "Reflection",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14402,7 +14402,7 @@
               "query": "Reflection",
               "jumpQuery": "Reflection",
               "anchorText": "Reflection",
-              "anchorHeading": "Unleashed Errata Updates",
+              "anchorHeading": "Leblanc, Deceiver",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14440,7 +14440,7 @@
               "query": "Reinforce",
               "jumpQuery": "Reinforce",
               "anchorText": "Reinforce",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Reinforce (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14479,7 +14479,7 @@
               "query": "Rek'Sai, Breacher",
               "jumpQuery": "Rek'Sai, Breacher",
               "anchorText": "Rek'Sai, Breacher",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14501,7 +14501,7 @@
               "query": "Rek'Sai, Swarm Queen",
               "jumpQuery": "Rek'Sai, Swarm Queen",
               "anchorText": "Rek'Sai, Swarm Queen",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rek'Sai, Swarm Queen (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14562,7 +14562,7 @@
               "query": "Relentless Storm",
               "jumpQuery": "Relentless Storm",
               "anchorText": "Relentless Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does Mighty mean?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14584,7 +14584,7 @@
               "query": "Rell, Magnetic",
               "jumpQuery": "Rell, Magnetic",
               "anchorText": "Rell, Magnetic",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rell, Magnetic (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14628,7 +14628,7 @@
               "query": "Renata Glasc, Mastermind",
               "jumpQuery": "Renata Glasc, Mastermind",
               "anchorText": "Renata Glasc, Mastermind",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does Forgotten Monument work the same as Tianna? Will it receive similar errata?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14682,7 +14682,7 @@
               "query": "Repulse",
               "jumpQuery": "Repulse",
               "anchorText": "Repulse",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14746,7 +14746,7 @@
               "query": "Rift Herald",
               "jumpQuery": "Rift Herald",
               "anchorText": "Rift Herald",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Mandatory Actions and Private Information",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -14835,7 +14835,7 @@
               "query": "Rumble, Hotheaded",
               "jumpQuery": "Rumble, Hotheaded",
               "anchorText": "Rumble, Hotheaded",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Rumble, Hotheaded",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15098,7 +15098,7 @@
               "query": "Showstopper",
               "jumpQuery": "Showstopper",
               "anchorText": "Showstopper",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So as I play Charm, I have to say not only what unit I'm moving it, but where I'm moving it to?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15125,7 +15125,7 @@
               "query": "Sigil of the Storm",
               "jumpQuery": "Sigil of the Storm",
               "anchorText": "Sigil of the Storm",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sigil of the Storm",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15169,7 +15169,7 @@
               "query": "Singularity",
               "jumpQuery": "Singularity",
               "anchorText": "Singularity",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15300,7 +15300,7 @@
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sona, Harmonious",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15316,7 +15316,7 @@
               "query": "Sona, Harmonious",
               "jumpQuery": "Sona, Harmonious",
               "anchorText": "Sona, Harmonious",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Triggered Abilities",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15390,7 +15390,7 @@
               "query": "Soraka, Wanderer",
               "jumpQuery": "Soraka, Wanderer",
               "anchorText": "Soraka, Wanderer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15440,7 +15440,7 @@
               "query": "Spinning Axe",
               "jumpQuery": "Spinning Axe",
               "anchorText": "Spinning Axe",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15546,7 +15546,7 @@
               "query": "Stacked Deck",
               "jumpQuery": "Stacked Deck",
               "anchorText": "Stacked Deck",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So how exactly does this ability work?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15573,7 +15573,7 @@
               "query": "Stalwart Poro",
               "jumpQuery": "Stalwart Poro",
               "anchorText": "Stalwart Poro",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15612,7 +15612,7 @@
               "query": "Stand United",
               "jumpQuery": "Stand United",
               "anchorText": "Stand United",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What about Zhonya's Hourglass and Stand United? When they're played from hidden, are their effects restricted to the battlefield where they were played?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15725,7 +15725,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15741,7 +15741,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: If I use Hostile Takeover to take control of my opponent's only unit at a battlefield, will there be a showdown? Will it be a combat?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15760,7 +15760,7 @@
               "query": "Stormbringer",
               "jumpQuery": "Stormbringer",
               "anchorText": "Stormbringer",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15790,7 +15790,7 @@
               "query": "Stupefy",
               "jumpQuery": "Stupefy",
               "anchorText": "Stupefy",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15806,7 +15806,7 @@
               "query": "Stupefy",
               "jumpQuery": "Stupefy",
               "anchorText": "Stupefy",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does this mean that units' Might can go to 0 or below now?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15855,7 +15855,7 @@
               "query": "Sun Disc",
               "jumpQuery": "Sun Disc",
               "anchorText": "Sun Disc",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Sun Disc",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15892,7 +15892,7 @@
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Svellsongur",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15911,7 +15911,7 @@
               "query": "Svellsongur",
               "jumpQuery": "Svellsongur",
               "anchorText": "Svellsongur",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15941,7 +15941,7 @@
               "query": "Symbol of the Solari",
               "jumpQuery": "Symbol of the Solari",
               "anchorText": "Symbol of the Solari",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Symbol of the Solari",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -15973,7 +15973,7 @@
               "query": "Targon's Peak",
               "jumpQuery": "Targon's Peak",
               "anchorText": "Targon's Peak",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Targon's Peak",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16017,7 +16017,7 @@
               "query": "Taric, Protector",
               "jumpQuery": "Taric, Protector",
               "anchorText": "Taric, Protector",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: I have Garen, Commander at a battlefield along with a Recruit token. Thanks to Garen, the Recruit has 2 Might. My opponent's total Might during the combat damage step is 6, so they deal 5 damage to Garen and 1 to the Recruit. Does the Recruit die?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16049,7 +16049,7 @@
               "query": "Teemo, Strategist",
               "jumpQuery": "Teemo, Strategist",
               "anchorText": "Teemo, Strategist",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Teemo, Strategist",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16088,7 +16088,7 @@
               "query": "Temporal Portal",
               "jumpQuery": "Temporal Portal",
               "anchorText": "Temporal Portal",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Temporal Portal",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16142,7 +16142,7 @@
               "query": "The Boss",
               "jumpQuery": "The Boss",
               "anchorText": "The Boss",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Boss (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16213,7 +16213,7 @@
               "query": "The Harrowing",
               "jumpQuery": "The Harrowing",
               "anchorText": "The Harrowing",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What about cards like Blind Fury and Promising Future, which let players look at or reveal cards from the top of a deck, play one, and recycle the rest? If I can't play that card, where does it go? It sounds like it's too late for it to be recycled as part of \"the rest.\"",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16250,7 +16250,7 @@
               "query": "The Syren",
               "jumpQuery": "The Syren",
               "anchorText": "The Syren",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "The Syren",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16304,7 +16304,7 @@
               "query": "Thrill of the Hunt",
               "jumpQuery": "Thrill of the Hunt",
               "anchorText": "Thrill of the Hunt",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16331,7 +16331,7 @@
               "query": "Tianna Crownguard",
               "jumpQuery": "Tianna Crownguard",
               "anchorText": "Tianna Crownguard",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Tianna Crownguard",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16392,7 +16392,7 @@
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Tideturner Targeting",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16408,7 +16408,7 @@
               "query": "Tideturner",
               "jumpQuery": "Tideturner",
               "anchorText": "Tideturner",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Tideturner",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16482,7 +16482,7 @@
               "query": "Time Warp",
               "jumpQuery": "Time Warp",
               "anchorText": "Time Warp",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16586,7 +16586,7 @@
               "query": "Trifarian War Camp",
               "jumpQuery": "Trifarian War Camp",
               "anchorText": "Trifarian War Camp",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: What does it mean to \"kill a unit with a spell?\" It seems like Hidden Blade counts, but what about a spell that deals damage? A spell that causes a unit to deal damage? A spell that causes a unit to die in some other way, like Stupefy on a unit that has 1 more Might than it has damage currently marked on it?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16602,7 +16602,7 @@
               "query": "Trifarian War Camp",
               "jumpQuery": "Trifarian War Camp",
               "anchorText": "Trifarian War Camp",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Does this mean that units' Might can go to 0 or below now?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16656,7 +16656,7 @@
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Can I still conquer and hold battlefields while my opponent has Tianna? Do I get conquer and hold triggers? What about drawing a card instead of getting the 8th point from conquering?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16675,7 +16675,7 @@
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "March 2026 Tournament Rules Update & Changelog",
+              "anchorHeading": "Asking Judges Rules Questions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16711,7 +16711,7 @@
               "query": "Turn to Dust",
               "jumpQuery": "Turn to Dust",
               "anchorText": "Turn to Dust",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16841,7 +16841,7 @@
               "query": "Unforgiven",
               "jumpQuery": "Unforgiven",
               "anchorText": "Unforgiven",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unforgiven",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16880,7 +16880,7 @@
               "query": "Unlicensed Armory",
               "jumpQuery": "Unlicensed Armory",
               "anchorText": "Unlicensed Armory",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unlicensed Armory",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -16924,7 +16924,7 @@
               "query": "Unyielding Spirit",
               "jumpQuery": "Unyielding Spirit",
               "anchorText": "Unyielding Spirit",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Unyielding Spirit",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17110,7 +17110,7 @@
               "query": "Void Burrower",
               "jumpQuery": "Void Burrower",
               "anchorText": "Void Burrower",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Void Burrower (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17149,7 +17149,7 @@
               "query": "Void Drone",
               "jumpQuery": "Void Drone",
               "anchorText": "Void Drone",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Legion",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17171,7 +17171,7 @@
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Void Gate",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17248,7 +17248,7 @@
               "query": "Void Rush",
               "jumpQuery": "Void Rush",
               "anchorText": "Void Rush",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Void Rush (revised text)",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17287,7 +17287,7 @@
               "query": "Void Seeker",
               "jumpQuery": "Void Seeker",
               "anchorText": "Void Seeker",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Q: So... What does this card do?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17353,7 +17353,7 @@
               "query": "Volibear, Imposing",
               "jumpQuery": "Volibear, Imposing",
               "anchorText": "Volibear, Imposing",
-              "anchorHeading": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
+              "anchorHeading": "Volibear, Imposing",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17460,7 +17460,7 @@
               "query": "Wraith of Echoes",
               "jumpQuery": "Wraith of Echoes",
               "anchorText": "Wraith of Echoes",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Wraith of Echoes",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17583,7 +17583,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Yone, Blademaster",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17599,7 +17599,7 @@
               "query": "Yone, Blademaster",
               "jumpQuery": "Yone, Blademaster",
               "anchorText": "Yone, Blademaster",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17673,7 +17673,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Origins FAQ",
+              "anchorHeading": "Zhonya's Hourglass",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17689,7 +17689,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Spiritforged FAQ",
+              "anchorHeading": "Q: Is the first friendly unit on Deathgrip a cost or a target? When do I kill it, and what happens if I don't?",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17725,7 +17725,7 @@
               "query": "Zhonya's Hourglass",
               "jumpQuery": "Zhonya's Hourglass",
               "anchorText": "Zhonya's Hourglass",
-              "anchorHeading": "Riftbound Core Rules: Unleashed Patch Notes",
+              "anchorHeading": "Rules Update: \"May\" Triggered Abilities and Extra Conditions",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17745,7 +17745,7 @@
               "query": "Zilean, Time Mage",
               "jumpQuery": "Zilean, Time Mage",
               "anchorText": "Zilean, Time Mage",
-              "anchorHeading": "Unleashed Rules FAQ and Clarifications",
+              "anchorHeading": "Results of Combat",
               "anchorIndex": 1,
               "ruleId": ""
             }
@@ -17757,6 +17757,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-30T01:48:29Z",
+  "generatedAt": "2026-04-30T01:56:02Z",
   "source": "riftboundoc derived card related index"
 }
