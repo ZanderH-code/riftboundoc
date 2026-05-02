@@ -1,20 +1,11 @@
 {
-  "updatedAt": "2026-03-30",
+  "updatedAt": "2026-05-02",
   "rules": [
     {
       "id": "core-rules-v1-3-text",
       "title": "Riftbound Core Rules v1.3 (Text Version)",
       "kind": "page",
       "pageId": "riftbound-core-rules-v1-3",
-      "summary": "Structured text version converted from the official PDF.",
-      "source": "Converted from PDF",
-      "updatedAt": "2026-03-30"
-    },
-    {
-      "id": "tournament-rules-2026-03-30-text",
-      "title": "Riftbound Tournament Rules (2026-03-30) (Text Version)",
-      "kind": "page",
-      "pageId": "riftbound-tournament-rules-2026-03-30",
       "summary": "Structured text version converted from the official PDF.",
       "source": "Converted from PDF",
       "updatedAt": "2026-03-30"
@@ -36,9 +27,18 @@
       "summary": "March 2026 tournament policy update and changelog from official announcements.",
       "source": "Riftbound Official",
       "updatedAt": "2026-03-30"
+    },
+    {
+      "id": "tournament-rules-2026-05-02-text",
+      "title": "Riftbound Tournament Rules (2026-05-02) (Text Version)",
+      "kind": "page",
+      "pageId": "riftbound-tournament-rules-2026-05-02",
+      "summary": "Structured text version converted from the official PDF.",
+      "source": "Converted from PDF",
+      "updatedAt": "2026-05-02"
     }
   ],
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-30T18:38:41Z",
+  "generatedAt": "2026-05-02T13:36:17Z",
   "source": "Riftbound Official"
 }

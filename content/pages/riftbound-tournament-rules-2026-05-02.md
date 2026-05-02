@@ -1,4 +1,4 @@
-# Riftbound Tournament Rules (2026-03-30)
+# Riftbound Tournament Rules (2026-05-02)
 
 > Converted from official PDF with structured rule layout.
 
@@ -6,7 +6,7 @@
 
 <div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Riftbound Tournament Rules</div></div>
 
-<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Last Updated: 2026-03-30</div></div>
+<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Last Updated 4/29/2026</div></div>
 
 <div class="rule-row rule-chapter level-0"><div class="rule-id">000.</div><div class="rule-text">Golden Rule</div></div>
 
@@ -328,9 +328,11 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">403.8.</div><div class="rule-text">A player&#x27;s deck and sideboard must be returned to their registered states before the first game of the next match.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">403.9.</div><div class="rule-text">If a match skips the first game due to a penalty or an intentional draw, neither player qualifies for 403.5.</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">403.9.</div><div class="rule-text">If a match completely skips the first game due to a penalty, neither player may sideboard for the following game.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">403.10.</div><div class="rule-text">If a game restarts due to an in-game effect or due to corrective action by judges, the state of each player&#x27;s deck and sideboard must remain the same in the restarted game.</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">403.10.</div><div class="rule-text">If a game ends in a draw, neither player may sideboard for the following game.</div></div>
+
+<div class="rule-row rule-plain level-1"><div class="rule-id">403.11.</div><div class="rule-text">If a game restarts due to an in-game effect or due to corrective action by judges, the state of each player&#x27;s deck and sideboard must remain the same in the restarted game.</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">404.</div><div class="rule-text">Match</div></div>
 
@@ -354,37 +356,39 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">406.1.</div><div class="rule-text">The setup process for a game of Riftbound is defined in the Core Rules. See CR 110. Setup Process . Additionally:</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.a.</div><div class="rule-text">In competitions where sideboards are allowed, players may exchange cards from their main deck and their sideboard after each game of a match.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.a.</div><div class="rule-text">In competitions where sideboards are allowed, players may exchange cards from their main deck and their sideboard after each game of a match. See 403 for more information on sideboards.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.b.</div><div class="rule-text">Each player must shuffle their Main Deck and their Rune Deck. See 420 for more information on shuffling.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.b.</div><div class="rule-text">If a game ends in a draw, players must use the same battlefields for the following game.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.c.</div><div class="rule-text">Each player must present their Main Deck, Rune Deck, and sideboard (if applicable to the format) to their opponents.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.c.</div><div class="rule-text">Each player must shuffle their Main Deck and their Rune Deck. See 420 for more information on shuffling.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.d.</div><div class="rule-text">Each player may shuffle the Main Deck and Rune Deck of each of their opponents.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.d.</div><div class="rule-text">Each player must present their Main Deck, Rune Deck, and sideboard (if applicable to the format) to their opponents.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.d.1.</div><div class="rule-text">In team competitions, each player may shuffle the Main Deck and Rune Deck of one of their team&#x27;s opponents.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.e.</div><div class="rule-text">Each player may shuffle the Main Deck and Rune Deck of each of their opponents.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.d.2.</div><div class="rule-text">At Professional OPL, this is required.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.e.1.</div><div class="rule-text">In team competitions, each player may shuffle the Main Deck and Rune Deck of one of their team&#x27;s opponents.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.d.3.</div><div class="rule-text">A player may request a judge shuffle their deck in lieu of an opponent, to be honored at judge discretion.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.e.2.</div><div class="rule-text">At Professional OPL, this is required.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.e.</div><div class="rule-text">For the first game of a match, start of game procedures may be performed as soon as both players reach their assigned seat, even before the start of the round clock. Gameplay must wait for the round clock to begin.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.e.3.</div><div class="rule-text">A player may request a judge shuffle their deck in lieu of an opponent, to be honored at judge discretion.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.f.</div><div class="rule-text">For competitions run using a &quot;best of 1&quot; format instead of a &quot;best of 3&quot; format, the head judge may opt to use the altered initial setup process listed below to closer mirror the &quot;best of 3&quot; experience:</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.f.</div><div class="rule-text">For the first game of a match, start of game procedures may be performed as soon as both players reach their assigned seat, even before the start of the round clock. Gameplay must wait for the round clock to begin.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.1.</div><div class="rule-text">Each player separates their Champion Legend and places it in the Legend Zone.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">406.1.g.</div><div class="rule-text">For competitions run using a &quot;best of 1&quot; format instead of a &quot;best of 3&quot; format, the head judge may opt to use the altered initial setup process listed below to closer mirror the &quot;best of 3&quot; experience:</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.2.</div><div class="rule-text">Each player randomly selects one of their three Battlefields, and places it into the Battlefield Zone.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.1.</div><div class="rule-text">Each player separates their Champion Legend and places it in the Legend Zone.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.3.</div><div class="rule-text">Players use the Play First Rule listed below to determine the designated player. See 407 for more information on the Play First Rule.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.2.</div><div class="rule-text">Each player randomly selects one of their three Battlefields, and places it into the Battlefield Zone.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.4.</div><div class="rule-text">The designated player chooses if they would like to go first or last.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.3.</div><div class="rule-text">Players use the Play First Rule listed below to determine the designated player. See 407 for more information on the Play First Rule.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.5.</div><div class="rule-text">Players then have the opportunity to sideboard as if they were in between games of a &quot;best of 3&quot; match. See 403 for more information on sideboards.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.4.</div><div class="rule-text">The designated player chooses if they would like to go first or last.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.6.</div><div class="rule-text">After sideboarding is complete, each player separates their Chosen Champion and places it in the Champion Zone.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.5.</div><div class="rule-text">Players then have the opportunity to sideboard as if they were in between games of a &quot;best of 3&quot; match. See 403 for more information on sideboards.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.f.7.</div><div class="rule-text">Players perform shuffling steps 406.1.b.-406.1.d.3. listed above, then proceed to CR 116. Setup Process .</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.6.</div><div class="rule-text">After sideboarding is complete, each player separates their Chosen Champion and places it in the Champion Zone.</div></div>
+
+<div class="rule-row rule-plain level-3"><div class="rule-id">406.1.g.7.</div><div class="rule-text">Players perform shuffling steps 406.1.c.-406.1.e.3. listed above, then proceed to CR 116. Setup Process .</div></div>
 
 <div class="rule-row rule-heading level-0"><div class="rule-id">407.</div><div class="rule-text">Play First Rule</div></div>
 
@@ -710,6 +714,8 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">502.10.</div><div class="rule-text">Judges are encouraged to help players determine public information, but not derived information.</div></div>
 
+<div class="rule-row rule-plain level-1"><div class="rule-id">502.11.</div><div class="rule-text">In 2v2, teammates may share Private information, including directly showing each other the cards in their hand as defined by 484.8.e. in the Core Rules.</div></div>
+
 <div class="rule-row rule-heading level-0"><div class="rule-id">503.</div><div class="rule-text">Shortcuts</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">503.1.</div><div class="rule-text">In competitions, players may take actions that skip parts of the technically precise play sequence without explicitly announcing that sequence.</div></div>
@@ -864,7 +870,7 @@
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">509.3.</div><div class="rule-text">At low OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) as long as no new action has been taken by either player. The change in decision does not need to be immediate.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">509.4.</div><div class="rule-text">At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player, a judge allows it, and the following is true:</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">509.4.</div><div class="rule-text">At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player and the following is true:</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">509.4.a.</div><div class="rule-text">The player wants to make a different decision for a spell or ability immediately after all choices have been made and communicated for putting it onto the chain. Example:</div></div>
 
@@ -876,7 +882,7 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">509.4.c.</div><div class="rule-text">The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">509.4.c.1.</div><div class="rule-text">1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">509.4.c.1.</div><div class="rule-text">A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">509.4.d.</div><div class="rule-text">The player wants to undo a decision to exhaust or recycle runes.</div></div>
 
@@ -922,6 +928,12 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">601.2.d.</div><div class="rule-text">If a card is banned in a specific format, that card may not be included in a deck.</div></div>
 
+<div class="rule-row rule-plain level-3"><div class="rule-id">601.2.d.1.</div><div class="rule-text">Riftbound&#x27;s list of banned cards can be found here.</div></div>
+
+<div class="rule-row rule-plain level-3"><div class="rule-id">601.2.d.2.</div><div class="rule-text">At low OPL, if a player is using the exact deck configuration of a preconstructed Riftbound deck product, they are allowed to play with cards on the banned list. For example:</div></div>
+
+<div class="rule-row rule-plain level-4"><div class="rule-id">601.2.d.2.a.</div><div class="rule-text">At Nexus Nights, if a player is playing a deck matching the exact contents of the preconstructed Jinx Champion Deck, they are allowed to use the banned cards in the deck, such as Fight or Flight, Scrapheap and Reaver&#x27;s Row. If the player makes any changes or adds a sideboard, they can no longer include the banned cards.</div></div>
+
 <div class="rule-row rule-heading level-1"><div class="rule-id">601.3.</div><div class="rule-text">Standard</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">601.3.a.</div><div class="rule-text">Standard is a format consisting of the most recent 5-8 sets.</div></div>
@@ -948,13 +960,13 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">602.1.a.</div><div class="rule-text">A limited competition is one where all product needed for play is provided during the competition.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">602.1.a.</div><div class="rule-text">1 A card may only be included in a limited deck if it is provided to the player as part of the competition.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">602.1.a.1.</div><div class="rule-text">A card may only be included in a limited deck if it is provided to the player as part of the competition.</div></div>
 
 <div class="rule-row rule-plain level-4"><div class="rule-id">602.1.a.1.a.</div><div class="rule-text"></div></div>
 
 <div class="rule-row rule-cont level-1"><div class="rule-id"></div><div class="rule-text">For some limited competitions, players may be given additional promotional cards that the head judge will specify are not part of that player&#x27;s limited card pool and can&#x27;t be used for that event.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">602.1.a.</div><div class="rule-text">2 Players may utilize any number of the 6 basic Runes from any source, even if they are not in the player&#x27;s provided card pool.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">602.1.a.2.</div><div class="rule-text">Players may utilize any number of the 6 basic Runes from any source, even if they are not in the player&#x27;s provided card pool.</div></div>
 
 <div class="rule-row rule-cont level-1"><div class="rule-id"></div><div class="rule-text">Players may utilize as many &quot;blank&quot; battlefields as they need for limited gameplay. See 602.3.d. below for more information on &quot;blank&quot; battlefields.</div></div>
 
@@ -1114,7 +1126,9 @@
 
 <div class="rule-row rule-plain level-4"><div class="rule-id">602.4.b.4.b.</div><div class="rule-text">A draft deck may contain any signature spells that are fully included in its domain identity, even if the deck does not include the corresponding champion.</div></div>
 
-<div class="rule-row rule-plain level-5"><div class="rule-id">602.4.b.4.b.1.</div><div class="rule-text">Example: A draft deck with a domain identity of Fury/Body/Order could use signature spells that are Fury/Order or Body/Order, but not signature spells that are Fury/Mind or Body/Chaos.</div></div>
+<div class="rule-row rule-plain level-5"><div class="rule-id">602.4.b.4.b.1.</div><div class="rule-text">Example: A draft deck with a domain identity of Fury/Body/Order could use signature spells that are</div></div>
+
+<div class="rule-row rule-plain level-0"><div class="rule-id"></div><div class="rule-text">Fury/Order or Body/Order, but not signature spells that are Fury/Mind or Body/Chaos.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">602.4.b.5.</div><div class="rule-text">Players may only include Runes from any source in their Rune Deck that match the domain identity of their draft deck.</div></div>
 
@@ -1320,7 +1334,7 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">702.1.c.</div><div class="rule-text">At low OPL, penalties should generally be less harsh and rewinds may be applied even if the erroring player gains an information advantage.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">702.1.c.1.</div><div class="rule-text">Penalties that require an opponent of the erroring player to make a choice can be made at random or by a judge if they can&#x27;t be avoided by a rewind.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">702.1.c.1.</div><div class="rule-text">At low OPL, penalties that require an opponent of the erroring player to make a choice are made at random by a judge when they can&#x27;t be avoided by a rewind.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">702.2.</div><div class="rule-text">Missed Trigger [ No Penalty ]: The accountable player for a triggered ability doesn&#x27;t demonstrate awareness of the trigger before the first time it would have an observable impact on the game.</div></div>
 
@@ -1360,15 +1374,21 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">702.4.b.</div><div class="rule-text">If forgetting to draw was advantageous to the erroring player (example: the player is near burning out), this penalty is a [ Warning ] instead.</div></div>
 
-<div class="rule-row rule-plain level-1"><div class="rule-id">702.5.</div><div class="rule-text">Looking at Extra Cards [ Warning ]: A player takes an action that enables them to see the faces of cards they are not entitled to see.</div></div>
+<div class="rule-row rule-plain level-1"><div class="rule-id">702.5.</div><div class="rule-text">Looking at Extra Cards [ Warning ]: While taking a game action that allows a player to look at cards from a deck, they look at more cards than they are entitled to.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">702.5.a.</div><div class="rule-text">Players are not entitled to see cards that are private (to another player) or secret.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">702.5.a.</div><div class="rule-text">Cards being looked at from secret information such as a deck are added to a private information group while they are being looked at.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">702.5.b.</div><div class="rule-text">Cards in a deck are considered to be in that deck unless and until they touch cards in another private or secret group. If that happens, the error is instead a Secret Card Error.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">702.5.b.</div><div class="rule-text">Once extra cards being looked at have touched a new private or secret group from their original source, they become part of that group. If the extra cards have not touched a new group, this is instead a Looking at Secret Information error. See 702.10. for more on Looking at Secret Information errors.</div></div>
+
+<div class="rule-row rule-plain level-3"><div class="rule-id">702.5.b.1.</div><div class="rule-text">For example, if a player plays a Stacked Deck and adds a fourth card to the private set of cards they are looking at, it is Looking at Extra Cards. If they correctly look at the top three, but knock the top card of their Main Deck over without adding it to the private group, it is Looking at Secret Information.</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">702.5.c.</div><div class="rule-text">Remedies :</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">702.5.c.1.</div><div class="rule-text">If the cards remain in a single deck, shuffle the deck appropriately to remove the information advantage.</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">702.5.c.1.</div><div class="rule-text">If the error is caught while the erroring player is looking at the extra cards, the next opponent in turn order of the erroring player looks at the private group and chooses the appropriate number of extra cards to shuffle back into the randomized portion of the appropriate deck.</div></div>
+
+<div class="rule-row rule-plain level-4"><div class="rule-id">702.5.c.1.a.</div><div class="rule-text">If one or more of the cards has already been added to a new group of cards, the next opponent in turn order of the erroring player looks at that group and chooses the appropriate number of cards to return to the original group of cards being looked at. Then perform 702.5.c.1</div></div>
+
+<div class="rule-row rule-plain level-3"><div class="rule-id">702.5.c.2.</div><div class="rule-text">If the error is caught at a later stage in the game, instruct players to continue playing.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">702.6.</div><div class="rule-text">Channeling Too Many Runes [ Warning ]: A player channels a number of runes greater than they are entitled to under the Core Rules as the result of a limited action.</div></div>
 
@@ -1564,15 +1584,17 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">703.4.a.</div><div class="rule-text">Examples:</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.1.</div><div class="rule-text">A player deck does not match their registered decklist.</div></div>
-
 <div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.1.</div><div class="rule-text">A player submits a battlefield they have already used in the match.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.2.</div><div class="rule-text">A player forgets to restore their deck to a pre-sideboard state for the first game of a match.</div></div>
 
 <div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.3.</div><div class="rule-text">A player forgets to take their chosen champion from their main deck and place it in the chosen champion zone.</div></div>
 
-<div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.4.</div><div class="rule-text">A player&#x27;s deck is the incorrect deck size. See 402 for more information about deck size. (Example: A player misplaced a card or forgot to shuffle their banished cards back into their deck between games)</div></div>
+<div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.4.</div><div class="rule-text">A player&#x27;s deck is the incorrect deck size. See 402 for more information about deck size. (Examples: A player misplaced a card, a player forgot to shuffle their banished cards back into their deck between games, a player&#x27;s deck has an extra card or is missing a card due to an effect like Possession from a previous game.)</div></div>
+
+<div class="rule-row rule-plain level-3"><div class="rule-id">703.4.a.5.</div><div class="rule-text">A player has cards in their deck box with their deck that are not part of the registered contents of their decklist. Promotional cards given out as part of the event, tokens, and damaged cards replaced with official proxies are allowed to be stored this way and do not warrant this error.</div></div>
+
+<div class="rule-row rule-plain level-4"><div class="rule-id">703.4.a.5.a.</div><div class="rule-text">At Professional OPL, extra cards stored in the deck box this way upgrades to a [ Game Loss ].</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">703.4.b.</div><div class="rule-text">Remedies:</div></div>
 
@@ -1656,11 +1678,13 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">703.9.b.</div><div class="rule-text">If the player receiving the advice solicited the advice, it is cheating. See 704.8 for more information about cheating.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.c.</div><div class="rule-text">Spectators providing advice may be barred from the tournament venue if the advice was given maliciously or knowingly.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.c.</div><div class="rule-text">If the spectator giving the outside assistance is also a player in the event, this penalty is also applied to them.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.d.</div><div class="rule-text">It is not outside assistance to receive strategic advice from a teammate in the 2v2 format or in other team formats when specified.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.d.</div><div class="rule-text">Spectators providing advice may be barred from the tournament venue if the advice was given maliciously or knowingly.</div></div>
 
-<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.e.</div><div class="rule-text">At a judge&#x27;s discretion, a player may receive assistance with the physical logistics of the competition, including game actions such as shuffling or card movement. This is not considered outside assistance.</div></div>
+<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.e.</div><div class="rule-text">It is not outside assistance to receive strategic advice from a teammate in the 2v2 format or in other team formats when specified.</div></div>
+
+<div class="rule-row rule-plain level-2"><div class="rule-id">703.9.f.</div><div class="rule-text">At a judge&#x27;s discretion, a player may receive assistance with the physical logistics of the competition, including game actions such as shuffling or card movement. This is not considered outside assistance.</div></div>
 
 <div class="rule-row rule-plain level-1"><div class="rule-id">703.10.</div><div class="rule-text">Improperly Determining a Winner [ Match Loss ]: Games and matches of Riftbound must be decided by playing Riftbound appropriate to the tournament format.</div></div>
 
@@ -1696,11 +1720,13 @@
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">704.3.a.</div><div class="rule-text">Examples include but are not limited to:</div></div>
 
-<div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.1.</div><div class="rule-text">Hate speech</div></div>
+<div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.1.</div><div class="rule-text">Use of racial slurs</div></div>
 
-<div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.2.</div><div class="rule-text">Physical violence</div></div>
+<div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.2.</div><div class="rule-text">Physical violence or the threat of physical violence</div></div>
 
 <div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.3.</div><div class="rule-text">Displaying aggression</div></div>
+
+<div class="rule-row rule-heading level-3"><div class="rule-id">704.3.a.4.</div><div class="rule-text">Intentionally misgendering an event attendee</div></div>
 
 <div class="rule-row rule-plain level-2"><div class="rule-id">704.3.b.</div><div class="rule-text">This penalty often comes with ejection from the venue at the discretion of tournament officials.</div></div>
 

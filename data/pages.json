@@ -17,14 +17,6 @@
   },
   {
     "kind": "rule_page",
-    "id": "riftbound-tournament-rules-2026-03-30",
-    "title": "Riftbound Tournament Rules (2026-03-30)",
-    "summary": "Text version converted from PDF for online reading.",
-    "file": "content/pages/riftbound-tournament-rules-2026-03-30.md",
-    "updatedAt": "2026-03-30"
-  },
-  {
-    "kind": "rule_page",
     "id": "rq-vegas-2026-rulings",
     "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
     "summary": "Judge clarifications and tournament policy notes for the 2026 Vegas Regional Qualifier.",
@@ -46,5 +38,13 @@
     "summary": "Here's the latest updates to the Tournament Rules for Riftbound.",
     "file": "content/pages/march-2026-tournament-rules-update--changelog.md",
     "updatedAt": "2026-03-30"
+  },
+  {
+    "kind": "rule_page",
+    "id": "riftbound-tournament-rules-2026-05-02",
+    "title": "Riftbound Tournament Rules (2026-05-02)",
+    "summary": "Text version converted from PDF for online reading.",
+    "file": "content/pages/riftbound-tournament-rules-2026-05-02.md",
+    "updatedAt": "2026-05-02"
   }
 ]

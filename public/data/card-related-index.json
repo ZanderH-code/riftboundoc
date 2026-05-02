@@ -215,16 +215,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
+              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
               "query": "Pouty Poro",
               "jumpQuery": "Pouty Poro",
               "anchorText": "Pouty Poro",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.4.b."
             }
@@ -822,16 +822,16 @@
           ]
         },
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "204.5. Floor Judge: Floor judges respond to players and spectators who have questions about rules and regulations, and/or need judgment on the same, and their responsibilities include:\n\n204.5.a. Answering questions about rules, interactions among cards, providing Watcher wordings, or derived game state.\n\n204.5.a.1. At high OPL, judges may not answer direct questions about the results of game actions a player has not yet taken. In these situations, players must ask hypothetical questions about the rules. Examples:\n\n204.5.a.1.a. Inappropriate question: &quot;If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?&quot;\n\n204.5.a.1.b. Appropriate question: &quot;Can point scoring abilities like Tryndamere&#x27;s score you the winning point?&quot;\n\n204.5.a.1.c. Judges may ask players to rephrase their questions to be appropriate where possible.\n\n204.5.b. Provide rulings related to game and policy violations brought to their attention.",
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "204.5."
             }
@@ -1208,16 +1208,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.3. At low OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) as long as no new action has been taken by either player. The change in decision does not need to be immediate.\n\n509.4. At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player, a judge allows it, and the following is true:\n\n509.4.a. The player wants to make a different decision for a spell or ability immediately after all choices have been made and communicated for putting it onto the chain. Example:\n\n509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all.\n\n509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:",
+              "snippet": "509.3. At low OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) as long as no new action has been taken by either player. The change in decision does not need to be immediate.\n\n509.4. At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player and the following is true:\n\n509.4.a. The player wants to make a different decision for a spell or ability immediately after all choices have been made and communicated for putting it onto the chain. Example:\n\n509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all.\n\n509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:",
               "query": "Discipline",
               "jumpQuery": "Discipline",
               "anchorText": "Discipline",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.3."
             }
@@ -1291,16 +1291,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.b. Players ruled to be abusing this rule to intentionally forget mandatory triggers that they are the accountable player for will be penalized. See 702.2 for more information about missed triggers as a penalty.\n\n506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)",
               "query": "Ahri, Alluring",
               "jumpQuery": "Ahri, Alluring",
               "anchorText": "Ahri, Alluring",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.b."
             }
@@ -1313,16 +1313,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.b. Players ruled to be abusing this rule to intentionally forget mandatory triggers that they are the accountable player for will be penalized. See 702.2 for more information about missed triggers as a penalty.\n\n506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)",
               "query": "Ahri, Alluring",
               "jumpQuery": "Ahri, Alluring",
               "anchorText": "Ahri, Alluring",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.b."
             }
@@ -1826,16 +1826,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)",
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.1."
             }
@@ -2667,16 +2667,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)",
               "query": "Miss Fortune, Captain",
               "jumpQuery": "Miss Fortune, Captain",
               "anchorText": "Miss Fortune, Captain",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.3."
             }
@@ -2689,16 +2689,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)",
               "query": "Miss Fortune, Captain",
               "jumpQuery": "Miss Fortune, Captain",
               "anchorText": "Miss Fortune, Captain",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.3."
             }
@@ -2711,16 +2711,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)",
               "query": "Sett, Brawler",
               "jumpQuery": "Sett, Brawler",
               "anchorText": "Sett, Brawler",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d."
             }
@@ -2733,16 +2733,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)",
               "query": "Sett, Brawler",
               "jumpQuery": "Sett, Brawler",
               "anchorText": "Sett, Brawler",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d."
             }
@@ -2835,6 +2835,22 @@
               "ruleId": "359.3.e.15."
             }
           ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "601.2.d. If a card is banned in a specific format, that card may not be included in a deck.\n\n601.2.d.1. Riftbound&#x27;s list of banned cards can be found here.\n\n601.2.d.2. At low OPL, if a player is using the exact deck configuration of a preconstructed Riftbound deck product, they are allowed to play with cards on the banned list. For example:\n\n601.2.d.2.a. At Nexus Nights, if a player is playing a deck matching the exact contents of the preconstructed Jinx Champion Deck, they are allowed to use the banned cards in the deck, such as Fight or Flight, Scrapheap and Reaver&#x27;s Row. If the player makes any changes or adds a sideboard, they can no longer include the banned cards.\n\n601.3. Standard\n\n601.3.a. Standard is a format consisting of the most recent 58 sets.\n\n601.3.b. Each Standard consists of the current year&#x27;s sets plus the previous year&#x27;s sets.",
+              "query": "Fight or Flight",
+              "jumpQuery": "Fight or Flight",
+              "anchorText": "Fight or Flight",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "601.2.d."
+            }
+          ]
         }
       ]
     },
@@ -2865,16 +2881,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)\n\n506.4. A triggered ability that was forgotten never goes on the chain.",
               "query": "Stealthy Pursuer",
               "jumpQuery": "Stealthy Pursuer",
               "anchorText": "Stealthy Pursuer",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.4."
             }
@@ -2943,6 +2959,28 @@
       ],
       "rule": []
     },
+    "ogn-182-298": {
+      "faq": [],
+      "errata": [],
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "601.2.d. If a card is banned in a specific format, that card may not be included in a deck.\n\n601.2.d.1. Riftbound&#x27;s list of banned cards can be found here.\n\n601.2.d.2. At low OPL, if a player is using the exact deck configuration of a preconstructed Riftbound deck product, they are allowed to play with cards on the banned list. For example:\n\n601.2.d.2.a. At Nexus Nights, if a player is playing a deck matching the exact contents of the preconstructed Jinx Champion Deck, they are allowed to use the banned cards in the deck, such as Fight or Flight, Scrapheap and Reaver&#x27;s Row. If the player makes any changes or adds a sideboard, they can no longer include the banned cards.\n\n601.3. Standard\n\n601.3.a. Standard is a format consisting of the most recent 58 sets.\n\n601.3.b. Each Standard consists of the current year&#x27;s sets plus the previous year&#x27;s sets.",
+              "query": "Scrapheap",
+              "jumpQuery": "Scrapheap",
+              "anchorText": "Scrapheap",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "601.2.d."
+            }
+          ]
+        }
+      ]
+    },
     "ogn-183-298": {
       "faq": [
         {
@@ -2963,7 +3001,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "702.5. Looking at Extra Cards [ Warning ]: While taking a game action that allows a player to look at cards from a deck, they look at more cards than they are entitled to.\n\n702.5.a. Cards being looked at from secret information such as a deck are added to a private information group while they are being looked at.\n\n702.5.b. Once extra cards being looked at have touched a new private or secret group from their original source, they become part of that group. If the extra cards have not touched a new group, this is instead a Looking at Secret Information error. See 702.10. for more on Looking at Secret Information errors.\n\n702.5.b.1. For example, if a player plays a Stacked Deck and adds a fourth card to the private set of cards they are looking at, it is Looking at Extra Cards. If they correctly look at the top three, but knock the top card of their Main Deck over without adding it to the private group, it is Looking at Secret Information.\n\n702.5.c. Remedies :\n\n702.5.c.1. If the error is caught while the erroring player is looking at the extra cards, the next opponent in turn order of the erroring player looks at the private group and chooses the appropriate number of extra cards to shuffle back into the randomized portion of the appropriate deck.\n\n702.5.c.1.a. If one or more of the cards has already been added to a new group of cards, the next opponent in turn order of the erroring player looks at that group and chooses the appropriate number of cards to return to the original group of cards being looked at. Then perform 702.5.c.1",
+              "query": "Stacked Deck",
+              "jumpQuery": "Stacked Deck",
+              "anchorText": "Stacked Deck",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "702.5."
+            }
+          ]
+        }
+      ]
     },
     "ogn-184-298": {
       "faq": [
@@ -3009,16 +3064,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.",
               "query": "Traveling Merchant",
               "jumpQuery": "Traveling Merchant",
               "anchorText": "Traveling Merchant",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.2."
             }
@@ -3303,16 +3358,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "414.2. If a player drops before the competition begins, they never participated in the competition.\n\n414.3. Players who wish to drop must inform the scorekeeper before pairings for the next round of the competition are generated.\n\n414.4. If a player doesn&#x27;t show up for their match, they are automatically dropped from the competition unless they report to the scorekeeper.\n\n414.5. Players who drop from limited format tournaments own the cards that they correctly have in their possession at the time of dropping, including unopened packs.\n\n414.6. If a player drops from a competition after a top placement cut has been made, no player is advanced in replacement. The highest ranked remaining player receives a bye if the drop happens before pairings.\n\n414.7. Players who have dropped may reenter the competition before the start of the following round at the discretion of the head judge.\n\n414.8. Players can&#x27;t reenter a competition if they missed a portion where a deck construction activity was required.",
               "query": "Possession",
               "jumpQuery": "Possession",
               "anchorText": "Possession",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "414.2."
             }
@@ -4274,16 +4329,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3. The accountable player must acknowledge their triggers by the time they would have an observable impact on the game. If they do not, they are forgotten.\n\n506.3.a. A trigger is considered forgotten once its point of observable impact has been reached and a new game action is taken without the accountable player acknowledging the trigger.\n\n506.3.b. Players ruled to be abusing this rule to intentionally forget mandatory triggers that they are the accountable player for will be penalized. See 702.2 for more information about missed triggers as a penalty.\n\n506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)",
               "query": "Obelisk of Power",
               "jumpQuery": "Obelisk of Power",
               "anchorText": "Obelisk of Power",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3."
             }
@@ -4357,16 +4412,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)",
               "query": "Startipped Peak",
               "jumpQuery": "Startipped Peak",
               "anchorText": "Startipped Peak",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.c."
             }
@@ -4528,16 +4583,16 @@
           ]
         },
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
+              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.4.b."
             }
@@ -5900,16 +5955,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)\n\n506.4. A triggered ability that was forgotten never goes on the chain.\n\n506.5. A triggered ability that was forgotten is still considered to have triggered for the purpose of nonoptional &quot;First time&quot; or similarly restricted triggers.\n\n507. Teams in Separate Matches",
               "query": "Overzealous Fan",
               "jumpQuery": "Overzealous Fan",
               "anchorText": "Overzealous Fan",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.6."
             }
@@ -6813,16 +6868,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)",
               "query": "Sett, Brawler",
               "jumpQuery": "Sett, Brawler",
               "anchorText": "Sett, Brawler",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d."
             }
@@ -6835,16 +6890,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)",
               "query": "Sett, Brawler",
               "jumpQuery": "Sett, Brawler",
               "anchorText": "Sett, Brawler",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d."
             }
@@ -8086,16 +8141,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
+              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
               "query": "Pouty Poro",
               "jumpQuery": "Pouty Poro",
               "anchorText": "Pouty Poro",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.4.b."
             }
@@ -8552,16 +8607,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.b. Players ruled to be abusing this rule to intentionally forget mandatory triggers that they are the accountable player for will be penalized. See 702.2 for more information about missed triggers as a penalty.\n\n506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)",
               "query": "Ahri, Alluring",
               "jumpQuery": "Ahri, Alluring",
               "anchorText": "Ahri, Alluring",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.b."
             }
@@ -10513,16 +10568,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.3. At low OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) as long as no new action has been taken by either player. The change in decision does not need to be immediate.\n\n509.4. At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player, a judge allows it, and the following is true:\n\n509.4.a. The player wants to make a different decision for a spell or ability immediately after all choices have been made and communicated for putting it onto the chain. Example:\n\n509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all.\n\n509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:",
+              "snippet": "509.3. At low OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) as long as no new action has been taken by either player. The change in decision does not need to be immediate.\n\n509.4. At high OPL, a player can reverse their most recent action and make a different decision for that action (including not taking it at all) if no new action has been taken by either player and the following is true:\n\n509.4.a. The player wants to make a different decision for a spell or ability immediately after all choices have been made and communicated for putting it onto the chain. Example:\n\n509.4.a.1. A player plays Discipline indicating a unit. They immediately change their mind and choose a different unit, or choose not to play the Discipline at all.\n\n509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:",
               "query": "Discipline",
               "jumpQuery": "Discipline",
               "anchorText": "Discipline",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.3."
             }
@@ -11200,6 +11255,22 @@
               "anchorHeading": "Riftbound Core Rules v1.3",
               "anchorIndex": 1,
               "ruleId": "359.3.e.15."
+            }
+          ]
+        },
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "601.2.d. If a card is banned in a specific format, that card may not be included in a deck.\n\n601.2.d.1. Riftbound&#x27;s list of banned cards can be found here.\n\n601.2.d.2. At low OPL, if a player is using the exact deck configuration of a preconstructed Riftbound deck product, they are allowed to play with cards on the banned list. For example:\n\n601.2.d.2.a. At Nexus Nights, if a player is playing a deck matching the exact contents of the preconstructed Jinx Champion Deck, they are allowed to use the banned cards in the deck, such as Fight or Flight, Scrapheap and Reaver&#x27;s Row. If the player makes any changes or adds a sideboard, they can no longer include the banned cards.\n\n601.3. Standard\n\n601.3.a. Standard is a format consisting of the most recent 58 sets.\n\n601.3.b. Each Standard consists of the current year&#x27;s sets plus the previous year&#x27;s sets.",
+              "query": "Fight or Flight",
+              "jumpQuery": "Fight or Flight",
+              "anchorText": "Fight or Flight",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "601.2.d."
             }
           ]
         }
@@ -13369,16 +13440,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)",
               "query": "Miss Fortune, Captain",
               "jumpQuery": "Miss Fortune, Captain",
               "anchorText": "Miss Fortune, Captain",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.3."
             }
@@ -13616,16 +13687,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3. The accountable player must acknowledge their triggers by the time they would have an observable impact on the game. If they do not, they are forgotten.\n\n506.3.a. A trigger is considered forgotten once its point of observable impact has been reached and a new game action is taken without the accountable player acknowledging the trigger.\n\n506.3.b. Players ruled to be abusing this rule to intentionally forget mandatory triggers that they are the accountable player for will be penalized. See 702.2 for more information about missed triggers as a penalty.\n\n506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)",
               "query": "Obelisk of Power",
               "jumpQuery": "Obelisk of Power",
               "anchorText": "Obelisk of Power",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3."
             }
@@ -13707,16 +13778,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)\n\n506.4. A triggered ability that was forgotten never goes on the chain.\n\n506.5. A triggered ability that was forgotten is still considered to have triggered for the purpose of nonoptional &quot;First time&quot; or similarly restricted triggers.\n\n507. Teams in Separate Matches",
               "query": "Overzealous Fan",
               "jumpQuery": "Overzealous Fan",
               "anchorText": "Overzealous Fan",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.6."
             }
@@ -13970,16 +14041,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "414.2. If a player drops before the competition begins, they never participated in the competition.\n\n414.3. Players who wish to drop must inform the scorekeeper before pairings for the next round of the competition are generated.\n\n414.4. If a player doesn&#x27;t show up for their match, they are automatically dropped from the competition unless they report to the scorekeeper.\n\n414.5. Players who drop from limited format tournaments own the cards that they correctly have in their possession at the time of dropping, including unopened packs.\n\n414.6. If a player drops from a competition after a top placement cut has been made, no player is advanced in replacement. The highest ranked remaining player receives a bye if the drop happens before pairings.\n\n414.7. Players who have dropped may reenter the competition before the start of the following round at the discretion of the head judge.\n\n414.8. Players can&#x27;t reenter a competition if they missed a portion where a deck construction activity was required.",
               "query": "Possession",
               "jumpQuery": "Possession",
               "anchorText": "Possession",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "414.2."
             }
@@ -13992,16 +14063,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
+              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
               "query": "Pouty Poro",
               "jumpQuery": "Pouty Poro",
               "anchorText": "Pouty Poro",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.4.b."
             }
@@ -14220,16 +14291,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)",
               "query": "Ravenbloom Student",
               "jumpQuery": "Ravenbloom Student",
               "anchorText": "Ravenbloom Student",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.1."
             }
@@ -14937,7 +15008,24 @@
     "scrapheap": {
       "faq": [],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "601.2.d. If a card is banned in a specific format, that card may not be included in a deck.\n\n601.2.d.1. Riftbound&#x27;s list of banned cards can be found here.\n\n601.2.d.2. At low OPL, if a player is using the exact deck configuration of a preconstructed Riftbound deck product, they are allowed to play with cards on the banned list. For example:\n\n601.2.d.2.a. At Nexus Nights, if a player is playing a deck matching the exact contents of the preconstructed Jinx Champion Deck, they are allowed to use the banned cards in the deck, such as Fight or Flight, Scrapheap and Reaver&#x27;s Row. If the player makes any changes or adds a sideboard, they can no longer include the banned cards.\n\n601.3. Standard\n\n601.3.a. Standard is a format consisting of the most recent 58 sets.\n\n601.3.b. Each Standard consists of the current year&#x27;s sets plus the previous year&#x27;s sets.",
+              "query": "Scrapheap",
+              "jumpQuery": "Scrapheap",
+              "anchorText": "Scrapheap",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "601.2.d."
+            }
+          ]
+        }
+      ]
     },
     "scrapyard champion": {
       "faq": [],
@@ -15014,16 +15102,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)",
               "query": "Sett, Brawler",
               "jumpQuery": "Sett, Brawler",
               "anchorText": "Sett, Brawler",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d."
             }
@@ -15554,7 +15642,24 @@
         }
       ],
       "errata": [],
-      "rule": []
+      "rule": [
+        {
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
+          "matches": [
+            {
+              "snippet": "702.5. Looking at Extra Cards [ Warning ]: While taking a game action that allows a player to look at cards from a deck, they look at more cards than they are entitled to.\n\n702.5.a. Cards being looked at from secret information such as a deck are added to a private information group while they are being looked at.\n\n702.5.b. Once extra cards being looked at have touched a new private or secret group from their original source, they become part of that group. If the extra cards have not touched a new group, this is instead a Looking at Secret Information error. See 702.10. for more on Looking at Secret Information errors.\n\n702.5.b.1. For example, if a player plays a Stacked Deck and adds a fourth card to the private set of cards they are looking at, it is Looking at Extra Cards. If they correctly look at the top three, but knock the top card of their Main Deck over without adding it to the private group, it is Looking at Secret Information.\n\n702.5.c. Remedies :\n\n702.5.c.1. If the error is caught while the erroring player is looking at the extra cards, the next opponent in turn order of the erroring player looks at the private group and chooses the appropriate number of extra cards to shuffle back into the randomized portion of the appropriate deck.\n\n702.5.c.1.a. If one or more of the cards has already been added to a new group of cards, the next opponent in turn order of the erroring player looks at that group and chooses the appropriate number of cards to return to the original group of cards being looked at. Then perform 702.5.c.1",
+              "query": "Stacked Deck",
+              "jumpQuery": "Stacked Deck",
+              "anchorText": "Stacked Deck",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
+              "anchorIndex": 1,
+              "ruleId": "702.5."
+            }
+          ]
+        }
+      ]
     },
     "stalking wolf": {
       "faq": [],
@@ -15664,16 +15769,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.c. For triggers that occur &quot;At the start of each player&#x27;s first Beginning Phase&quot;, the accountable player has the full duration of the turn in which the trigger occurs to acknowledge the trigger before it&#x27;s considered forgotten, regardless of its observable impact. (Example cards: Obelisk of Power and The Arena&#x27;s Greatest.)\n\n506.3.d. Examples of observable impact:\n\n506.3.d.1. The trigger would change a point total. (Example card: Ahri, Alluring)\n\n506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)",
               "query": "Startipped Peak",
               "jumpQuery": "Startipped Peak",
               "anchorText": "Startipped Peak",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.c."
             }
@@ -15686,16 +15791,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.\n\n506.3.d.9. A player would be required to make a choice of whether or not to place an optional trigger on the chain. (Example: Overzealous Fan)\n\n506.4. A triggered ability that was forgotten never goes on the chain.",
               "query": "Stealthy Pursuer",
               "jumpQuery": "Stealthy Pursuer",
               "anchorText": "Stealthy Pursuer",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.4."
             }
@@ -16510,16 +16615,16 @@
       "errata": [],
       "rule": [
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "506.3.d.2. The trigger would change a rune total. (Example card: Startipped Peak)\n\n506.3.d.3. The trigger would add a Buff token to a unit. (Example card: Sett, Brawler)\n\n506.3.d.4. The trigger would impact combat or other game procedures. A card that reads &quot;When you play a spell, give me +1 Might this turn.&quot; does NOT have an immediate observable impact. It has an observable impact once it&#x27;s Might would be relevant. (Example card: Ravenbloom Student)\n\n506.3.d.5. A trigger would cause a player to draw or discard. (Example card: Traveling Merchant)\n\n506.3.d.6. A trigger would cause a game object to be exhausted or readied. (Example card: Miss Fortune, Captain)\n\n506.3.d.7. A trigger would cause a unit to move. (Example card: Stealthy Pursuer)\n\n506.3.d.8. A player asks for public information that would be impacted by a trigger. See 502 for more information on public information.",
               "query": "Traveling Merchant",
               "jumpQuery": "Traveling Merchant",
               "anchorText": "Traveling Merchant",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "506.3.d.2."
             }
@@ -16682,16 +16787,16 @@
           ]
         },
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
               "snippet": "204.5. Floor Judge: Floor judges respond to players and spectators who have questions about rules and regulations, and/or need judgment on the same, and their responsibilities include:\n\n204.5.a. Answering questions about rules, interactions among cards, providing Watcher wordings, or derived game state.\n\n204.5.a.1. At high OPL, judges may not answer direct questions about the results of game actions a player has not yet taken. In these situations, players must ask hypothetical questions about the rules. Examples:\n\n204.5.a.1.a. Inappropriate question: &quot;If I attack and conquer this battlefield with my Tryndamere, Barbarian, will I score the winning point?&quot;\n\n204.5.a.1.b. Appropriate question: &quot;Can point scoring abilities like Tryndamere&#x27;s score you the winning point?&quot;\n\n204.5.a.1.c. Judges may ask players to rephrase their questions to be appropriate where possible.\n\n204.5.b. Provide rulings related to game and policy violations brought to their attention.",
               "query": "Tryndamere, Barbarian",
               "jumpQuery": "Tryndamere, Barbarian",
               "anchorText": "Tryndamere, Barbarian",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "204.5."
             }
@@ -17214,16 +17319,16 @@
           ]
         },
         {
-          "id": "riftbound-tournament-rules-2026-03-30",
-          "title": "Riftbound Tournament Rules (2026-03-30)",
-          "sourceTitle": "Riftbound Tournament Rules (2026-03-30)",
+          "id": "riftbound-tournament-rules-2026-05-02",
+          "title": "Riftbound Tournament Rules (2026-05-02)",
+          "sourceTitle": "Riftbound Tournament Rules (2026-05-02)",
           "matches": [
             {
-              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. 1 A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
+              "snippet": "509.4.b. The player wants to make a different decision for playing a unit or gear immediately after playing it to a location. Example:\n\n509.4.b.1. A player plays Traveling Merchant to Reaver&#x27;s Row. They immediately change their mind and choose to play it to their base instead, or choose not to play it at all.\n\n509.4.c. The player wants to make a different decision immediately after making a choice such as moving a unit to a location or discarding a card. Example:\n\n509.4.c.1. A player moves Pouty Poro to Void Gate. They immediately change their mind and choose to move an additional unit there as well, or they decide not to move at all.\n\n509.4.d. The player wants to undo a decision to exhaust or recycle runes.\n\n509.4.d.1. A player exhausts two Calm runes. Before taking a new game action, the player decides they do not want to exhaust them, and readies them.\n\n509.5. Intentionally attempting to reverse decisions to gain information from an opponent is considered angle shooting. Players may not change their decisions based on an opponent&#x27;s physical reaction or as a response to an opponent starting to take a game action. See 704.4. for more information on angle shooting.",
               "query": "Void Gate",
               "jumpQuery": "Void Gate",
               "anchorText": "Void Gate",
-              "anchorHeading": "Riftbound Tournament Rules (2026-03-30)",
+              "anchorHeading": "Riftbound Tournament Rules (2026-05-02)",
               "anchorIndex": 1,
               "ruleId": "509.4.b."
             }
@@ -17757,6 +17862,6 @@
     }
   },
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-04-30T18:38:41Z",
+  "generatedAt": "2026-05-02T13:36:17Z",
   "source": "riftboundoc derived card related index"
 }
