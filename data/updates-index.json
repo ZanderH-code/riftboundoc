@@ -11,37 +11,37 @@
       "kind": "FAQ",
       "title": "Unleashed Rules FAQ and Clarifications",
       "updatedAt": "2026-04-30",
-      "hrefPath": "faq-detail/?id=unleashed-rules-faq-and-clarifications"
+      "hrefPath": "faq/unleashed-rules-faq-and-clarifications/"
     },
     {
       "kind": "FAQ",
       "title": "Riftbound Spiritforged FAQ",
       "updatedAt": "2026-04-30",
-      "hrefPath": "faq-detail/?id=riftbound-spiritforged-faq"
+      "hrefPath": "faq/riftbound-spiritforged-faq/"
     },
     {
       "kind": "FAQ",
       "title": "Riftbound Origins FAQ",
       "updatedAt": "2026-04-30",
-      "hrefPath": "faq-detail/?id=riftbound-origins-faq"
+      "hrefPath": "faq/riftbound-origins-faq/"
     },
     {
       "kind": "Errata",
       "title": "Unleashed Errata Updates",
       "updatedAt": "2026-04-03",
-      "hrefPath": "errata-detail/?id=unleashed-errata-updates"
+      "hrefPath": "errata/unleashed-errata-updates/"
     },
     {
       "kind": "Errata",
       "title": "Riftbound Spiritforged Errata",
       "updatedAt": "2026-04-03",
-      "hrefPath": "errata-detail/?id=riftbound-spiritforged-errata"
+      "hrefPath": "errata/riftbound-spiritforged-errata/"
     },
     {
       "kind": "Errata",
       "title": "Riftbound: Origins Card Errata",
       "updatedAt": "2026-04-03",
-      "hrefPath": "errata-detail/?id=riftbound-origins-card-errata"
+      "hrefPath": "errata/riftbound-origins-card-errata/"
     },
     {
       "kind": "Rule",
@@ -68,11 +68,11 @@
       "kind": "FAQ",
       "title": "Quick Rules / FAQ for Regional Qualifier Las Vegas 2026",
       "updatedAt": "2026-02-25",
-      "hrefPath": "faq-detail/?id=rq-vegas-2026-rulings"
+      "hrefPath": "faq/rq-vegas-2026-rulings/"
     }
   ],
   "count": 11,
   "dataVersion": "1.0.0",
-  "generatedAt": "2026-05-02T13:36:17Z",
+  "generatedAt": "2026-05-11T01:10:55Z",
   "source": "riftboundoc derived updates index"
 }

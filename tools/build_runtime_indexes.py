@@ -525,7 +525,7 @@ def build_all() -> None:
             "kind": "FAQ",
             "title": row.get("title") or "Untitled FAQ",
             "updatedAt": row.get("updatedAt") or "",
-            "hrefPath": f"faq-detail/?id={quote(str(row.get('id') or ''))}",
+            "hrefPath": f"faq/{quote(str(row.get('id') or ''))}/",
         }
         for row in faqs
     )
@@ -534,7 +534,7 @@ def build_all() -> None:
             "kind": "Errata",
             "title": row.get("title") or "Untitled errata",
             "updatedAt": row.get("updatedAt") or "",
-            "hrefPath": f"errata-detail/?id={quote(str(row.get('id') or ''))}",
+            "hrefPath": f"errata/{quote(str(row.get('id') or ''))}/",
         }
         for row in errata
     )
@@ -651,7 +651,7 @@ def build_all() -> None:
             {
                 "kind": "FAQ",
                 "title": row.get("title") or "Untitled FAQ",
-                "hrefPath": f"faq-detail/?id={quote(str(row.get('id') or ''))}",
+                "hrefPath": f"faq/{quote(str(row.get('id') or ''))}/",
                 "text": markdown_to_plain("\n".join([str(row.get("title") or ""), str(row.get("summary") or ""), str(row.get("content") or "")])),
             }
         )
@@ -661,7 +661,7 @@ def build_all() -> None:
             {
                 "kind": "Errata",
                 "title": row.get("title") or "Untitled errata",
-                "hrefPath": f"errata-detail/?id={quote(str(row.get('id') or ''))}",
+                "hrefPath": f"errata/{quote(str(row.get('id') or ''))}/",
                 "text": markdown_to_plain("\n".join([str(row.get("title") or ""), str(row.get("summary") or ""), str(row.get("content") or "")])),
             }
         )

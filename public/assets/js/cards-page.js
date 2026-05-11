@@ -1190,9 +1190,9 @@
         String(hitLike?.ruleId || "").trim() ||
         extractRuleId(hitLike?.anchorText || hitLike?.jumpQuery || hitLike?.query || "");
       const relIndex = Math.max(1, Number.parseInt(hitLike?.anchorIndex || "1", 10) || 1);
-      let baseHref = route(`errata-detail/?id=${encodeURIComponent(id)}`);
+      let baseHref = route(`errata/${encodeURIComponent(id)}/`);
       if (kind === "faq") {
-        baseHref = route(`faq-detail/?id=${encodeURIComponent(id)}`);
+        baseHref = route(`faq/${encodeURIComponent(id)}/`);
       } else if (kind === "rule") {
         baseHref = route(`pages/${encodeURIComponent(id)}/`);
       }

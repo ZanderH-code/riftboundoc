@@ -260,7 +260,7 @@ function renderFaq(items, target, options = {}) {
     `;
       }
       const preview = docPreview(it, 180);
-      const href = route(`faq-detail/?id=${encodeURIComponent(it.id || "")}`);
+      const href = route(`faq/${encodeURIComponent(it.id || "")}/`);
       return `
       <article class="item page-card" data-href="${href}" tabindex="0" role="link">
         <h3>${it.title || "Untitled FAQ"}</h3>
@@ -285,7 +285,7 @@ function renderErrata(items, target, options = {}) {
   target.innerHTML = asItems(items)
     .map((it) => {
       const preview = docPreview(it, 180);
-      const href = route(`errata-detail/?id=${encodeURIComponent(it.id || "")}`);
+      const href = route(`errata/${encodeURIComponent(it.id || "")}/`);
 
       if (compact) {
         return `
@@ -1170,7 +1170,7 @@ async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
     docs.push({
       kind: "FAQ",
       title: item.title || "Untitled FAQ",
-      href: route(`faq-detail/?id=${encodeURIComponent(item.id || "")}`),
+      href: route(`faq/${encodeURIComponent(item.id || "")}/`),
       text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.content || ""}`),
     });
   }
@@ -1179,7 +1179,7 @@ async function buildSearchIndex(pages, faqs, errata, rules, cards = []) {
     docs.push({
       kind: "Errata",
       title: item.title || "Untitled errata",
-      href: route(`errata-detail/?id=${encodeURIComponent(item.id || "")}`),
+      href: route(`errata/${encodeURIComponent(item.id || "")}/`),
       text: markdownToPlain(`${item.title || ""}\n${item.summary || ""}\n${item.content || ""}`),
     });
   }

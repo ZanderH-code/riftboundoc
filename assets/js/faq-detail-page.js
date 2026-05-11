@@ -252,7 +252,9 @@
       initReaderPrefs,
       initMobileTocDrawer,
     } = resolveDeps(deps);
-    const id = new URLSearchParams(window.location.search).get("id");
+    const pathParts = String(window.location.pathname || "").split("/").filter(Boolean);
+    const pathId = pathParts.length >= 2 && pathParts[pathParts.length - 2] === "faq" ? decodeURIComponent(pathParts[pathParts.length - 1]) : "";
+    const id = new URLSearchParams(window.location.search).get("id") || pathId;
     const faqs = await getJson("data/faqs.json", []);
     const ordered = sortByUpdated(faqs);
     const one = ordered.find((it) => it.id === id) || ordered[0];

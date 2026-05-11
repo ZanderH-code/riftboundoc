@@ -106,13 +106,13 @@
                 kind: "FAQ",
                 title: x.title || "Untitled FAQ",
                 updatedAt: x.updatedAt,
-                href: route(`faq-detail/?id=${encodeURIComponent(x.id || "")}`),
+                href: route(`faq/${encodeURIComponent(x.id || "")}/`),
               })),
               ...asItems(errata).map((x) => ({
                 kind: "Errata",
                 title: x.title || "Untitled errata",
                 updatedAt: x.updatedAt,
-                href: route(`errata-detail/?id=${encodeURIComponent(x.id || "")}`),
+                href: route(`errata/${encodeURIComponent(x.id || "")}/`),
               })),
               ...asItems(rules).map((x) => ({
                 kind: "Rule",

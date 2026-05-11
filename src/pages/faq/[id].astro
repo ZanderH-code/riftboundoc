@@ -1,0 +1,62 @@
+---
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+type FaqItem = { id: string; title?: string; summary?: string };
+
+function stripMarkdown(value: string): string {
+  return String(value || "")
+    .replace(/\[\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/^#+\s*/gm, "")
+    .replace(/[*_`>-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function getStaticPaths() {
+  const faqsPath = resolve(process.cwd(), "data", "faqs.json");
+  const faqs = JSON.parse(readFileSync(faqsPath, "utf8")) as FaqItem[];
+  return faqs.filter((x) => x?.id).map((x) => ({ params: { id: x.id } }));
+}
+
+const id = Astro.params.id || "";
+const faqsPath = resolve(process.cwd(), "data", "faqs.json");
+const faqs = JSON.parse(readFileSync(faqsPath, "utf8")) as FaqItem[];
+const current = faqs.find((x) => x.id === id);
+if (!current) return Astro.redirect("/faq/");
+
+const pageTitle = `${current.title || "FAQ"} - riftboundoc`;
+const metaDescription = stripMarkdown(current.summary || "") || "Official Riftbound FAQ entry.";
+const canonicalUrl = new URL(`${import.meta.env.BASE_URL}faq/${encodeURIComponent(id)}/`, Astro.site ?? Astro.url).toString();
+const runtimeScripts = ["faq-detail-page.js"];
+---
+<BaseLayout title={pageTitle} description={metaDescription} canonicalUrl={canonicalUrl} runtimeScripts={runtimeScripts} needsMarked={true}>
+  <main class="container container-content page-shell">
+    <article class="reading-layout reading-layout-enhanced">
+      <aside class="side-panel">
+        <section class="card elevated-panel">
+          <h2>Reader</h2>
+          <div id="reader-prefs"></div>
+        </section>
+        <nav class="toc" id="faq-toc">
+          <strong>Contents</strong>
+          <p class="muted">Sections appear after loading.</p>
+        </nav>
+      </aside>
+      <article class="doc-shell">
+        <div class="doc-meta">
+          <h1 id="faq-title" class="doc-title">Loading...</h1>
+          <p class="muted" id="faq-meta">-</p>
+          <p id="faq-source"></p>
+        </div>
+        <div id="faq-content" class="doc-content"></div>
+      </article>
+    </article>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initFaqDetail();
+  </script>
+</BaseLayout>

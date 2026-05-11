@@ -1,0 +1,62 @@
+---
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+type ErrataItem = { id: string; title?: string; summary?: string };
+
+function stripMarkdown(value: string): string {
+  return String(value || "")
+    .replace(/\[\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/^#+\s*/gm, "")
+    .replace(/[*_`>-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function getStaticPaths() {
+  const path = resolve(process.cwd(), "data", "errata.json");
+  const rows = JSON.parse(readFileSync(path, "utf8")) as ErrataItem[];
+  return rows.filter((x) => x?.id).map((x) => ({ params: { id: x.id } }));
+}
+
+const id = Astro.params.id || "";
+const path = resolve(process.cwd(), "data", "errata.json");
+const rows = JSON.parse(readFileSync(path, "utf8")) as ErrataItem[];
+const current = rows.find((x) => x.id === id);
+if (!current) return Astro.redirect("/errata/");
+
+const pageTitle = `${current.title || "Errata"} - riftboundoc`;
+const metaDescription = stripMarkdown(current.summary || "") || "Official Riftbound errata entry.";
+const canonicalUrl = new URL(`${import.meta.env.BASE_URL}errata/${encodeURIComponent(id)}/`, Astro.site ?? Astro.url).toString();
+const runtimeScripts = ["errata-detail-page.js"];
+---
+<BaseLayout title={pageTitle} description={metaDescription} canonicalUrl={canonicalUrl} runtimeScripts={runtimeScripts} needsMarked={true}>
+  <main class="container container-content page-shell">
+    <article class="reading-layout reading-layout-enhanced">
+      <aside class="side-panel">
+        <section class="card elevated-panel">
+          <h2>Reader</h2>
+          <div id="reader-prefs"></div>
+        </section>
+        <nav class="toc" id="errata-toc">
+          <strong>Contents</strong>
+          <p class="muted">Sections appear after loading.</p>
+        </nav>
+      </aside>
+      <article class="doc-shell">
+        <div class="doc-meta">
+          <h1 id="errata-title" class="doc-title">Loading...</h1>
+          <p class="muted" id="errata-meta">-</p>
+          <p id="errata-source"></p>
+        </div>
+        <div id="errata-content" class="doc-content"></div>
+      </article>
+    </article>
+  </main>
+  <script is:inline>
+    window.site.navActive();
+    window.site.initErrataDetail();
+  </script>
+</BaseLayout>
