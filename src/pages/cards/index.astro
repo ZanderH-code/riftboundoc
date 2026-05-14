@@ -32,12 +32,13 @@ const runtimeScripts = ["cards-page.js"];
         </div>
 
         <div id="cards-active-filters" class="cards-active-filters" hidden></div>
+        <button id="cards-filter-backdrop" class="cards-filter-backdrop" type="button" aria-label="Close filter menu" hidden></button>
 
         <div class="cards-filter-body" id="cards-filter-body">
           <div class="cards-filter-row">
             <div id="cards-domain-icons" class="cards-domain-icons" aria-label="Filter by domain"></div>
             <div class="cards-select-grid">
-              <label class="cards-select-field">
+              <div class="cards-select-field">
                 <span>Set</span>
                 <div class="cards-multi">
                   <button id="cards-set-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -45,8 +46,8 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-set-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
-              <label class="cards-select-field">
+              </div>
+              <div class="cards-select-field">
                 <span>Type</span>
                 <div class="cards-multi">
                   <button id="cards-type-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -54,8 +55,8 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-type-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
-              <label class="cards-select-field">
+              </div>
+              <div class="cards-select-field">
                 <span>Supertype</span>
                 <div class="cards-multi">
                   <button id="cards-supertype-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -63,8 +64,8 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-supertype-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
-              <label class="cards-select-field">
+              </div>
+              <div class="cards-select-field">
                 <span>Variant</span>
                 <div class="cards-multi">
                   <button id="cards-variant-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -72,8 +73,8 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-variant-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
-              <label class="cards-select-field">
+              </div>
+              <div class="cards-select-field">
                 <span>Rarity</span>
                 <div class="cards-multi">
                   <button id="cards-rarity-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -81,8 +82,8 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-rarity-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
-              <label class="cards-select-field">
+              </div>
+              <div class="cards-select-field">
                 <span>Legality</span>
                 <div class="cards-multi">
                   <button id="cards-legality-toggle" class="cards-multi-toggle" type="button" aria-haspopup="true" aria-expanded="false">
@@ -90,7 +91,7 @@ const runtimeScripts = ["cards-page.js"];
                   </button>
                   <div id="cards-legality-menu" class="cards-multi-menu" hidden></div>
                 </div>
-              </label>
+              </div>
             </div>
           </div>
 

@@ -163,6 +163,7 @@
   const filterRoot = q("#cards-filters");
   const filterToggle = q("#cards-filter-toggle");
   const filterClear = q("#cards-filter-clear");
+  const filterBackdrop = q("#cards-filter-backdrop");
   const activeFiltersWrap = q("#cards-active-filters");
   const filterBody = q("#cards-filter-body");
   const sortKeySelect = q("#cards-sort-key");
@@ -218,6 +219,7 @@
     !filterRoot ||
     !filterToggle ||
     !filterClear ||
+    !filterBackdrop ||
     !activeFiltersWrap ||
     !filterBody ||
     !sortKeySelect ||
@@ -626,10 +628,27 @@
   };
 
   const multiMenus = [];
+  const multiMenuToggles = new Map();
+  const filterSheetQuery =
+    typeof window !== "undefined" && window.matchMedia
+      ? window.matchMedia("(max-width: 680px)")
+      : null;
+  const isFilterSheetMode = () => !!(filterSheetQuery && filterSheetQuery.matches);
+  const updateFilterMenuLayer = () => {
+    const hasOpenMenu = multiMenus.some((m) => !m.hidden);
+    const showSheetLayer = hasOpenMenu && isFilterSheetMode();
+    filterBackdrop.hidden = !showSheetLayer;
+    document.body.classList.toggle("cards-filter-menu-open", showSheetLayer);
+  };
   const closeMultiMenus = (except = null) => {
     multiMenus.forEach((m) => {
-      if (except && m === except) return;
+      const shell = m.closest(".cards-multi");
+      if (except && m === except) {
+        if (shell) shell.classList.add("is-open");
+        return;
+      }
       m.hidden = true;
+      if (shell) shell.classList.remove("is-open");
     });
     [
       setToggle,
@@ -641,10 +660,27 @@
     ].forEach((btn) => {
       if (btn) btn.setAttribute("aria-expanded", "false");
     });
+    if (except) {
+      const exceptToggle = multiMenuToggles.get(except);
+      if (exceptToggle) exceptToggle.setAttribute("aria-expanded", "true");
+    }
+    updateFilterMenuLayer();
+  };
+  const openOrCloseMenu = (toggle, menu) => {
+    const willOpen = menu.hidden;
+    closeMultiMenus(menu);
+    menu.hidden = !willOpen;
+    const shell = menu.closest(".cards-multi");
+    if (shell) shell.classList.toggle("is-open", willOpen);
+    toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    updateFilterMenuLayer();
   };
 
   const bindMultiFilter = ({ toggle, label, menu, options, selected }) => {
     multiMenus.push(menu);
+    multiMenuToggles.set(menu, toggle);
+    const title = toggle.closest(".cards-select-field")?.querySelector(":scope > span")?.textContent || "Filter";
+    menu.setAttribute("data-menu-title", title);
     const updateLabel = () => {
       if (!selected.size) {
         label.textContent = "All";
@@ -677,17 +713,15 @@
         });
       });
     };
-    toggle.addEventListener("click", () => {
-      const willOpen = menu.hidden;
-      closeMultiMenus(menu);
-      menu.hidden = !willOpen;
-      toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
-    });
+    toggle.addEventListener("click", () => openOrCloseMenu(toggle, menu));
     updateLabel();
     renderMenu();
   };
   const bindLegalityFilter = ({ toggle, label, menu }) => {
     multiMenus.push(menu);
+    multiMenuToggles.set(menu, toggle);
+    const title = toggle.closest(".cards-select-field")?.querySelector(":scope > span")?.textContent || "Filter";
+    menu.setAttribute("data-menu-title", title);
     const options = [
       { value: "all", text: "All" },
       { value: "legal", text: "Legal" },
@@ -706,12 +740,7 @@
         })
         .join("");
     };
-    toggle.addEventListener("click", () => {
-      const willOpen = menu.hidden;
-      closeMultiMenus(menu);
-      menu.hidden = !willOpen;
-      toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
-    });
+    toggle.addEventListener("click", () => openOrCloseMenu(toggle, menu));
     menu.addEventListener("click", (ev) => {
       const btn = ev.target && ev.target.closest ? ev.target.closest("[data-legality-value]") : null;
       if (!btn) return;
@@ -719,8 +748,12 @@
       state.legality = ["all", "legal", "banned"].includes(value) ? value : "all";
       updateLabel();
       renderMenu();
-      closeMultiMenus();
       render(1);
+      closeMultiMenus();
+      menu.hidden = true;
+      menu.closest(".cards-multi")?.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      updateFilterMenuLayer();
     });
     updateLabel();
     renderMenu();
@@ -1833,6 +1866,16 @@
     resetCardsFilters();
     render(1);
   });
+
+  filterBackdrop.addEventListener("click", () => closeMultiMenus());
+  if (filterSheetQuery) {
+    const syncFilterSheetMode = () => updateFilterMenuLayer();
+    if (filterSheetQuery.addEventListener) {
+      filterSheetQuery.addEventListener("change", syncFilterSheetMode);
+    } else if (filterSheetQuery.addListener) {
+      filterSheetQuery.addListener(syncFilterSheetMode);
+    }
+  }
 
   activeFiltersWrap.addEventListener("click", (ev) => {
     const btn = ev.target && ev.target.closest ? ev.target.closest(".cards-chip") : null;

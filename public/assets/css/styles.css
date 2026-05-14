@@ -558,7 +558,7 @@ main > section h2 {
 }
 
 .cards-page .cards-filter-shell {
-  animation: cards-fade-in 320ms ease-out both;
+  animation: cards-opacity-in 320ms ease-out both;
   position: relative;
   z-index: 48;
   overflow: visible;
@@ -597,14 +597,21 @@ main > section h2 {
   }
 }
 
-@keyframes page-rise {
+@keyframes cards-opacity-in {
   from {
     opacity: 0;
-    transform: translateY(8px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+@keyframes page-rise {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -781,6 +788,22 @@ main > section h2 {
   z-index: 3;
 }
 
+.cards-multi.is-open {
+  z-index: 180;
+}
+
+.cards-filter-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 155;
+  display: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(5, 10, 18, 0.58);
+  backdrop-filter: blur(3px);
+}
+
 .cards-multi-toggle {
   width: 100%;
   text-align: left;
@@ -823,9 +846,14 @@ main > section h2 {
   background: linear-gradient(180deg, rgba(24, 33, 47, 0.98), rgba(18, 26, 38, 0.98));
   max-height: 280px;
   overflow: auto;
+  overscroll-behavior: contain;
   padding: 8px;
   box-shadow: 0 18px 36px rgba(5, 10, 18, 0.62), inset 0 1px 0 rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(2px);
+}
+
+.cards-multi-menu[hidden] {
+  display: none;
 }
 
 .cards-multi-item {
@@ -833,6 +861,7 @@ main > section h2 {
   align-items: center;
   gap: 10px;
   padding: 9px 10px;
+  min-height: 40px;
   border-radius: 10px;
   cursor: pointer;
   color: #dce6f3;
@@ -2539,24 +2568,81 @@ body.reader-immersive .pdf-frame {
   }
 
   .cards-select-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .cards-select-field {
+    min-width: 0;
+  }
+
+  .cards-select-field span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cards-filter-backdrop:not([hidden]) {
+    display: block;
+  }
+
+  body.cards-filter-menu-open {
+    overflow: hidden;
   }
 
   .cards-multi-menu {
     position: fixed;
-    left: 10px;
-    right: 10px;
+    left: max(12px, env(safe-area-inset-left, 0px));
+    right: max(12px, env(safe-area-inset-right, 0px));
     top: auto;
-    bottom: 10px;
-    max-height: min(58vh, 460px);
+    bottom: max(12px, env(safe-area-inset-bottom, 0px));
+    max-height: min(64dvh, 520px);
     z-index: 170;
-    border-radius: 14px;
-    padding: 10px;
-    box-shadow: 0 22px 46px rgba(5, 10, 18, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border-color: rgba(102, 142, 180, 0.68);
+    border-radius: 18px;
+    padding: 50px 10px 12px;
+    box-shadow: 0 26px 60px rgba(5, 10, 18, 0.78), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    animation: cards-filter-sheet-in 160ms ease-out;
+  }
+
+  .cards-multi-menu::before {
+    content: attr(data-menu-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 42px;
+    padding: 12px 14px 10px;
+    border-bottom: 1px solid rgba(102, 142, 180, 0.26);
+    border-radius: 18px 18px 0 0;
+    background: linear-gradient(180deg, rgba(34, 48, 67, 0.98), rgba(24, 34, 49, 0.98));
+    color: #eaf3fc;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
   }
 
   .cards-multi-item {
-    padding: 11px 10px;
+    min-height: 46px;
+    padding: 12px 10px;
+  }
+
+  @keyframes cards-filter-sheet-in {
+    from {
+      opacity: 0.72;
+      transform: translateY(18px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 360px) {
+    .cards-select-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   .updates-type-btn {
