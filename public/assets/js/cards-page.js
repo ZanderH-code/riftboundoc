@@ -736,7 +736,9 @@
           const checked = state.legality === it.value;
           return `<button type="button" class="cards-multi-item${checked ? " is-selected" : ""}" data-legality-value="${escapeHtml(
             it.value
-          )}" aria-pressed="${checked ? "true" : "false"}">${escapeHtml(it.text)}</button>`;
+          )}" aria-pressed="${checked ? "true" : "false"}"><span class="cards-multi-mark" aria-hidden="true"></span><span>${escapeHtml(
+            it.text
+          )}</span></button>`;
         })
         .join("");
     };
