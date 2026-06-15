@@ -1425,6 +1425,7 @@ async function initFaqDetail() {
   if (window.faqDetailPage && typeof window.faqDetailPage.initFaqDetailPage === "function") {
     return window.faqDetailPage.initFaqDetailPage({
       q,
+      route,
       getJson,
       sortByUpdated,
       formatDate,
