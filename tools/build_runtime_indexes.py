@@ -106,6 +106,46 @@ def normalize_card_title_key(value: str) -> str:
     return re.sub(r"\s*\(revised text\)\s*$", "", normalize_for_match(plain), flags=re.I).strip()
 
 
+def is_faq_question_paragraph(text: str) -> bool:
+    plain = markdown_to_plain(text).strip()
+    if not plain:
+        return False
+    if re.match(r"^q[:：]", plain, flags=re.I):
+        return True
+    if plain.endswith("?"):
+        return True
+    return False
+
+
+def split_faq_blocks(paragraphs: list[str], known_card_needles: set[str] | None = None) -> list[list[str]]:
+    blocks: list[list[str]] = []
+    current: list[str] = []
+    known = known_card_needles or set()
+
+    def is_card_title(text: str) -> bool:
+        norm = normalize_card_title_key(text)
+        return bool(norm and norm in known)
+
+    for paragraph in paragraphs:
+        text = str(paragraph or "").strip()
+        if not text:
+            continue
+        if is_card_title(text):
+            if current:
+                blocks.append(list(current))
+            current = [text]
+            continue
+        if is_faq_question_paragraph(text) and current and not (
+            len(current) == 1 and is_card_title(current[0])
+        ):
+            blocks.append(list(current))
+            current = []
+        current.append(text)
+    if current:
+        blocks.append(list(current))
+    return blocks
+
+
 def faq_match_for_card(content: str, card_name: str, known_card_needles: set[str]) -> dict:
     lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
     sections: list[dict] = []
@@ -167,25 +207,7 @@ def faq_match_for_card(content: str, card_name: str, known_card_needles: set[str
     if not clean:
         return {"snippet": "", "heading": ""}
 
-    blocks: list[list[str]] = []
-    current_block: list[str] = []
-    for paragraph in clean:
-        text = str(paragraph or "").strip()
-        if not text:
-            continue
-        if is_card_title_paragraph(text):
-            if current_block:
-                blocks.append(list(current_block))
-            current_block = [text]
-            continue
-        if re.match(r"^q[:：]", text, flags=re.I) and current_block and not (
-            len(current_block) == 1 and is_card_title_paragraph(current_block[0])
-        ):
-            blocks.append(list(current_block))
-            current_block = []
-        current_block.append(text)
-    if current_block:
-        blocks.append(list(current_block))
+    blocks = split_faq_blocks(clean, known_card_needles)
 
     preferred = next((b for b in blocks if any(re.match(r"^q[:：]", str(x or "").strip(), flags=re.I) for x in b)), None)
     chosen = preferred or (blocks[0] if blocks else clean)
@@ -310,6 +332,53 @@ def contextual_match_for_needle(content: str, needle: str, fallback_heading: str
             snippet = to_text(lines[start:end])
             if snippet:
                 return {"snippet": snippet, "heading": current_heading}
+    return {"snippet": "", "heading": str(fallback_heading or "").strip()}
+
+
+def faq_contextual_match_for_needle(
+    content: str, needle: str, fallback_heading: str, known_card_needles: set[str]
+) -> dict:
+    lines = str(content or "").replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    current_heading = str(fallback_heading or "").strip()
+    target = normalize_for_match(needle)
+    section_heading = current_heading
+    section_lines: list[str] = []
+    sections: list[dict] = []
+
+    def push_section():
+        if section_lines:
+            sections.append({"heading": section_heading, "body": list(section_lines)})
+
+    for raw in lines:
+        line = str(raw or "")
+        if re.match(r"^##\s+", line):
+            push_section()
+            section_heading = re.sub(r"^##\s+", "", line).strip() or current_heading
+            section_lines = []
+            continue
+        if re.match(r"^###\s+", line):
+            push_section()
+            section_heading = re.sub(r"^###\s+", "", line).strip() or section_heading
+            section_lines = []
+            continue
+        section_lines.append(line)
+    push_section()
+
+    for section in sections or [{"heading": current_heading, "body": lines}]:
+        body_text = "\n".join(section.get("body") or [])
+        paragraphs = [
+            markdown_to_plain(x).strip()
+            for x in re.split(r"\n\s*\n+", body_text)
+            if markdown_to_plain(x).strip()
+        ]
+        for block in split_faq_blocks(paragraphs, known_card_needles):
+            block_text = "\n\n".join(block)
+            plain = normalize_for_match(block_text)
+            if re.search(rf"(^|[^a-z0-9]){re.escape(target)}(?=$|[^a-z0-9])", plain):
+                return {
+                    "snippet": "\n\n".join(block[:4]).strip(),
+                    "heading": str(section.get("heading") or fallback_heading or "").strip(),
+                }
     return {"snippet": "", "heading": str(fallback_heading or "").strip()}
 
 
@@ -439,7 +508,12 @@ def group_related_rows(cards: list[dict], docs: list[dict], kind: str) -> tuple[
                 snippet = str(errata_match.get("snippet") or "")
                 anchor_heading = str(errata_match.get("heading") or "") or title
             if not snippet:
-                local_match = contextual_match_for_needle(str(doc.get("content") or ""), card["name"], title)
+                if kind == "faq":
+                    local_match = faq_contextual_match_for_needle(
+                        str(doc.get("content") or ""), card["name"], title, known_card_needles
+                    )
+                else:
+                    local_match = contextual_match_for_needle(str(doc.get("content") or ""), card["name"], title)
                 snippet = str(local_match.get("snippet") or "")
                 anchor_heading = str(local_match.get("heading") or "") or title
             if not snippet:

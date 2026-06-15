@@ -1017,6 +1017,11 @@
         };
       };
 
+      const isFaqQuestionParagraph = (text) => {
+        const clean = String(text || "").trim();
+        return /^q[:：]/i.test(clean) || clean.endsWith("?");
+      };
+
       if (isFaqDoc) {
         const splitFaqBlocks = (paragraphs) => {
           const blocks = [];
@@ -1029,7 +1034,7 @@
               current = [text];
               continue;
             }
-            if (/^q[:：]/i.test(text) && current.length && !(current.length === 1 && isCardTitleParagraph(current[0]))) {
+            if (isFaqQuestionParagraph(text) && current.length && !(current.length === 1 && isCardTitleParagraph(current[0]))) {
               blocks.push(current);
               current = [];
             }
@@ -1159,7 +1164,7 @@
           matchedParagraphs.push(paragraph);
           if (isFaqDoc) {
             const next = String(paragraphs[idx + 1] || "").trim();
-            if (next && !/^q[:：]/i.test(next) && !isOtherCardTitleParagraph(next)) matchedParagraphs.push(next);
+            if (next && !isFaqQuestionParagraph(next) && !isOtherCardTitleParagraph(next)) matchedParagraphs.push(next);
           }
           if (!isFaqDoc && matchedParagraphs.length >= 2) break;
         }

@@ -15,6 +15,13 @@ const getFirstFaqSnippet = (cardName) => {
   return String(hit?.snippet || "");
 };
 
+const getFirstRuleSnippet = (cardName) => {
+  const key = normalize(cardName);
+  const row = cardRelatedIndex.byCardName?.[key]?.rule?.[0];
+  const hit = row?.matches?.[0];
+  return String(hit?.snippet || "");
+};
+
 describe("card related FAQ snippets", () => {
   it("keeps faq snippet scoped to Yone without leaking Tianna body", () => {
     const yone = getFirstFaqSnippet("Yone, Blademaster");
@@ -48,6 +55,37 @@ describe("card related FAQ snippets", () => {
       const snippet = getFirstFaqSnippet(name);
       expect(snippet.length).toBeGreaterThan(0);
       expect(normalize(snippet)).toContain(normalize(name));
+    }
+  });
+
+  it("keeps plain-question FAQ snippets scoped to Turn to Dust", () => {
+    const snippet = getFirstFaqSnippet("Turn to Dust");
+    const text = normalize(snippet);
+
+    expect(snippet.length).toBeGreaterThan(0);
+    expect(text).toContain(normalize("If I play Turn to Dust on an attached Equipment"));
+    expect(text).toContain(normalize("Attached Equipment only have their printed rules text made inactive"));
+    expect(text).not.toContain(normalize("What happens if you Brush a Brush"));
+    expect(text).not.toContain(normalize("swap back"));
+    expect(text).not.toContain(normalize("The Brush token will cease to exist"));
+  });
+
+  it("keeps related rules snippets scoped to concrete rule examples", () => {
+    const examples = [
+      ["Annie, Fiery", "715.2", "Bonus Damage"],
+      ["Cleave", "807.2", "Assault"],
+      ["Brush", "184.8", "Brush battlefield token"],
+      ["Baron Pit", "184.9", "Baron Pit battlefield token"],
+      ["Rocket Barrage", "820.2.a", "Rocket Barrage"],
+      ["Stalwart Poro", "814.2", "Shield"],
+    ];
+
+    for (const [name, ruleId, phrase] of examples) {
+      const snippet = getFirstRuleSnippet(name);
+      const text = normalize(snippet);
+      expect(snippet.length).toBeGreaterThan(0);
+      expect(text).toContain(normalize(ruleId));
+      expect(text).toContain(normalize(phrase));
     }
   });
 });
