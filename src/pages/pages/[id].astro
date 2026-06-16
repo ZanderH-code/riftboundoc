@@ -53,6 +53,7 @@ const canonicalUrl = new URL(
   canonicalUrl={canonicalUrl}
   runtimeScripts={runtimeScripts}
   needsMarked={true}
+  bodyClass="has-toc-drawer"
 >
   <main class="container container-content page-shell">
     <section class="page-hero">
@@ -61,7 +62,7 @@ const canonicalUrl = new URL(
       <p class="muted">Read structured rules and guides in web-native format.</p>
     </section>
     <div class="reading-layout reading-layout-enhanced">
-      <aside class="side-panel">
+      <aside class="side-panel toc-drawer" id="toc-drawer" aria-label="Reader controls and contents" aria-hidden="true">
         <section class="card elevated-panel">
           <h2>Reader</h2>
           <div id="reader-prefs"></div>

@@ -65,3 +65,45 @@ test("mobile key shells stay within viewport width", async ({ page }) => {
     }
   }
 });
+
+test("mobile article toc drawer starts hidden and toggles cleanly", async ({ page }) => {
+  await page.setViewportSize({ width: 393, height: 851 });
+  await page.goto("faq/riftbound-spiritforged-faq/");
+  await expect(page.locator("#faq-title")).not.toHaveText("Loading...", { timeout: 30_000 });
+
+  const panel = page.locator(".side-panel.toc-drawer");
+  const fab = page.locator("#toc-fab");
+  await expect(fab).toBeVisible();
+  await expect(panel).toHaveAttribute("aria-hidden", "true");
+  await expect(panel).toHaveCSS("opacity", "0");
+
+  await fab.click();
+  await expect(panel).toHaveAttribute("aria-hidden", "false");
+  await expect(panel).toHaveCSS("opacity", "1");
+  await expect(page.locator("#toc-backdrop")).toHaveCSS("opacity", "1");
+
+  await page.locator(".toc-drawer-close").click();
+  await expect(panel).toHaveAttribute("aria-hidden", "true");
+  await expect(panel).toHaveCSS("opacity", "0");
+});
+
+test("desktop article toc drawer starts hidden and toggles cleanly", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto("faq/riftbound-spiritforged-faq/");
+  await expect(page.locator("#faq-title")).not.toHaveText("Loading...", { timeout: 30_000 });
+
+  const panel = page.locator(".side-panel.toc-drawer");
+  const fab = page.locator("#toc-fab");
+  await expect(fab).toBeVisible();
+  await expect(panel).toHaveAttribute("aria-hidden", "true");
+  await expect(panel).toHaveCSS("opacity", "0");
+
+  await fab.click();
+  await expect(panel).toHaveAttribute("aria-hidden", "false");
+  await expect(panel).toHaveCSS("opacity", "1");
+  await expect(page.locator("#toc-backdrop")).toHaveCSS("opacity", "1");
+
+  await page.locator(".toc-drawer-close").click();
+  await expect(panel).toHaveAttribute("aria-hidden", "true");
+  await expect(panel).toHaveCSS("opacity", "0");
+});

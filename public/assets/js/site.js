@@ -875,10 +875,12 @@ function initMobileTocDrawer() {
   openBtn.className = "toc-fab";
   openBtn.setAttribute("aria-controls", "toc-drawer");
   openBtn.setAttribute("aria-expanded", "false");
+  openBtn.setAttribute("aria-label", "Open contents panel");
   openBtn.textContent = "Contents";
 
   panel.id = panel.id || "toc-drawer";
   panel.classList.add("toc-drawer");
+  panel.setAttribute("aria-hidden", "true");
 
   const header = document.createElement("div");
   header.className = "toc-drawer-head";
@@ -891,19 +893,48 @@ function initMobileTocDrawer() {
   header.appendChild(closeBtn);
 
   if (!panel.querySelector(".toc-drawer-head")) panel.prepend(header);
+  let backdrop = q("#toc-backdrop");
+  if (!backdrop) {
+    backdrop = document.createElement("button");
+    backdrop.type = "button";
+    backdrop.id = "toc-backdrop";
+    backdrop.className = "toc-backdrop";
+    backdrop.setAttribute("aria-label", "Close contents panel");
+    document.body.appendChild(backdrop);
+  }
   document.body.appendChild(openBtn);
 
+  let lastFocus = null;
+  const syncDrawerMode = () => {
+    const isOpen = document.body.classList.contains("toc-drawer-open");
+    panel.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    openBtn.hidden = false;
+    openBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  };
   const closeDrawer = () => {
     document.body.classList.remove("toc-drawer-open");
+    document.body.classList.remove("toc-drawer-lock");
     openBtn.setAttribute("aria-expanded", "false");
+    syncDrawerMode();
+    if (lastFocus && typeof lastFocus.focus === "function") {
+      lastFocus.focus({ preventScroll: true });
+    }
   };
-  const openDrawer = () => {
+  const openDrawer = (ev) => {
+    if (ev) ev.stopPropagation();
+    lastFocus = document.activeElement;
     document.body.classList.add("toc-drawer-open");
+    document.body.classList.add("toc-drawer-lock");
     openBtn.setAttribute("aria-expanded", "true");
+    syncDrawerMode();
+    const firstLink = panel.querySelector(".toc-link");
+    const target = firstLink || closeBtn;
+    requestAnimationFrame(() => target.focus({ preventScroll: true }));
   };
 
   openBtn.addEventListener("click", openDrawer);
   closeBtn.addEventListener("click", closeDrawer);
+  backdrop.addEventListener("click", closeDrawer);
   panel.addEventListener("click", (ev) => {
     if (ev.target && ev.target.closest(".toc-link")) closeDrawer();
   });
@@ -915,8 +946,9 @@ function initMobileTocDrawer() {
     closeDrawer();
   });
   window.addEventListener("keydown", (ev) => {
-    if (ev.key === "Escape") closeDrawer();
+    if (ev.key === "Escape" && document.body.classList.contains("toc-drawer-open")) closeDrawer();
   });
+  syncDrawerMode();
 
   // Keep collapsed by default; open only on explicit user action.
 }

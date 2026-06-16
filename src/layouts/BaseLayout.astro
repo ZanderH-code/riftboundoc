@@ -7,6 +7,7 @@ interface Props {
   canonicalUrl?: string;
   runtimeScripts?: string[];
   needsMarked?: boolean;
+  bodyClass?: string;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   canonicalUrl = "",
   runtimeScripts = [],
   needsMarked = false,
+  bodyClass = "",
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const resolvedCanonical =
@@ -76,7 +78,7 @@ const scriptVersion = SITE_META.assetVersion;
     <script src={`${base}assets/js/site.js?v=${scriptVersion}`}></script>
     {runtimeScripts.map((file) => <script src={`${base}assets/js/${file}?v=${scriptVersion}`}></script>)}
   </head>
-  <body>
+  <body class={bodyClass}>
     <header class="topbar">
       <div class="container">
         <a class="brand" href={base} aria-label="riftboundoc home">

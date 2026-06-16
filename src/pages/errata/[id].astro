@@ -32,10 +32,10 @@ const metaDescription = stripMarkdown(current.summary || "") || "Official Riftbo
 const canonicalUrl = new URL(`${import.meta.env.BASE_URL}errata/${encodeURIComponent(id)}/`, Astro.site ?? Astro.url).toString();
 const runtimeScripts = ["errata-detail-page.js"];
 ---
-<BaseLayout title={pageTitle} description={metaDescription} canonicalUrl={canonicalUrl} runtimeScripts={runtimeScripts} needsMarked={true}>
+<BaseLayout title={pageTitle} description={metaDescription} canonicalUrl={canonicalUrl} runtimeScripts={runtimeScripts} needsMarked={true} bodyClass="has-toc-drawer">
   <main class="container container-content page-shell">
     <article class="reading-layout reading-layout-enhanced">
-      <aside class="side-panel">
+      <aside class="side-panel toc-drawer" id="toc-drawer" aria-label="Reader controls and contents" aria-hidden="true">
         <section class="card elevated-panel">
           <h2>Reader</h2>
           <div id="reader-prefs"></div>
