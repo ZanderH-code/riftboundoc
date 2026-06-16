@@ -27,6 +27,15 @@
     };
   }
 
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   async function initPageDetailPage(deps = {}) {
     const {
       q,
@@ -60,17 +69,22 @@
     }
 
     try {
-      const markdown = await fetch(route(one.file), { cache: "no-store" }).then((response) => response.text());
+      if (!one.file) throw new Error("Missing page file");
+      const response = await fetch(route(one.file), { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const markdown = await response.text();
       const normalized = markdown.includes('<div class="rule-sheet">')
         ? markdown
         : normalizeDocumentMarkdown(markdown, "page");
       if (window.marked && typeof window.marked.parse === "function") {
         q("#page-content").innerHTML = window.marked.parse(normalized);
       } else {
-        q("#page-content").innerHTML = `<pre>${normalized}</pre>`;
+        q("#page-content").innerHTML = `<pre>${escapeHtml(normalized)}</pre>`;
       }
-    } catch {
-      showStatus(`Failed to load page content: ${one.file}`);
+    } catch (error) {
+      if (q("#page-content")) q("#page-content").textContent = "";
+      showStatus(`Failed to load page content: ${one.file || one.id || "unknown"}`);
+      console.warn("Page content load failed", error);
     }
 
     tagRuleRowsForAnchors("#page-content");

@@ -21,6 +21,37 @@
     };
   }
 
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function safeExternalUrl(value) {
+    try {
+      const url = new URL(String(value || ""), window.location.href);
+      return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+    } catch {
+      return "";
+    }
+  }
+
+  function mountSourceLink(host, href) {
+    if (!host) return;
+    const safeHref = safeExternalUrl(href);
+    host.textContent = "";
+    if (!safeHref) return;
+    const link = document.createElement("a");
+    link.href = safeHref;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Official Source";
+    host.appendChild(link);
+  }
+
   async function initErrataDetailPage(deps = {}) {
     const {
       q,
@@ -50,15 +81,13 @@
         one.publishedAt
       )} | Updated: ${formatDate(one.updatedAt)}`;
     }
-    if (q("#errata-source")) {
-      q("#errata-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
-    }
+    mountSourceLink(q("#errata-source"), one.originUrl);
 
     const body = normalizeDocumentMarkdown(String(one.content || "").trim(), "errata");
     if (window.marked && typeof window.marked.parse === "function") {
       q("#errata-content").innerHTML = window.marked.parse(body);
     } else {
-      q("#errata-content").innerHTML = `<pre>${body}</pre>`;
+      q("#errata-content").innerHTML = `<pre>${escapeHtml(body)}</pre>`;
     }
 
     initReaderPrefs({

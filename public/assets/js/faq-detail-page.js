@@ -22,6 +22,41 @@
     };
   }
 
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function escapeAttr(value) {
+    return escapeHtml(value);
+  }
+
+  function safeExternalUrl(value) {
+    try {
+      const url = new URL(String(value || ""), window.location.href);
+      return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+    } catch {
+      return "";
+    }
+  }
+
+  function mountSourceLink(host, href) {
+    if (!host) return;
+    const safeHref = safeExternalUrl(href);
+    host.textContent = "";
+    if (!safeHref) return;
+    const link = document.createElement("a");
+    link.href = safeHref;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Official Source";
+    host.appendChild(link);
+  }
+
   function findBestCardMatch(contextText, cards) {
     const hay = String(contextText || "").toLowerCase();
     if (!hay) return null;
@@ -181,11 +216,11 @@
     const href = `${route("cards/")}?q=${encodeURIComponent(card.name || "")}`;
     return `
       <figure class="faq-card-embed${isLandscape ? " is-landscape" : ""}">
-        <a class="faq-card-embed-link" href="${href}">
-          <img class="faq-card-embed-image" src="${image}" alt="${String(card.name || "Card")}" loading="lazy" />
+        <a class="faq-card-embed-link" href="${escapeAttr(href)}">
+          <img class="faq-card-embed-image" src="${escapeAttr(image)}" alt="${escapeAttr(card.name || "Card")}" loading="lazy" />
           <figcaption class="faq-card-embed-meta">
-            <strong>${String(card.name || "Card")}</strong>
-            <span>${code}${setName ? ` · ${setName}` : ""}</span>
+            <strong>${escapeHtml(card.name || "Card")}</strong>
+            <span>${escapeHtml(code)}${setName ? ` · ${escapeHtml(setName)}` : ""}</span>
           </figcaption>
         </a>
       </figure>
@@ -268,15 +303,13 @@
         one.publishedAt
       )} | Updated: ${formatDate(one.updatedAt)}`;
     }
-    if (q("#faq-source")) {
-      q("#faq-source").innerHTML = `<a href="${one.originUrl || "#"}" target="_blank" rel="noopener noreferrer">Official Source</a>`;
-    }
+    mountSourceLink(q("#faq-source"), one.originUrl);
     let body = String(one.content || "").trim();
     body = normalizeDocumentMarkdown(body, "faq");
     if (window.marked && typeof window.marked.parse === "function") {
       q("#faq-content").innerHTML = window.marked.parse(body);
     } else {
-      q("#faq-content").innerHTML = `<pre>${body}</pre>`;
+      q("#faq-content").innerHTML = `<pre>${escapeHtml(body)}</pre>`;
     }
     await replaceFaqImagesWithCardEmbeds(q("#faq-content"), getJson, route);
 

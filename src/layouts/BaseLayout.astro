@@ -69,8 +69,7 @@ const scriptVersion = SITE_META.assetVersion;
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register(`${base}sw.js?v=${scriptVersion}`)
-            .then(reg => console.log('SW registered'))
-            .catch(err => console.log('SW failed', err));
+            .catch(err => console.warn('SW registration failed', err));
         });
       }
     </script>
